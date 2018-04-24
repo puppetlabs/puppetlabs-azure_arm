@@ -4,7 +4,8 @@
   "author": "Puppet",
   "summary": "Azure ARM module for management of Azure ARM Resources",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "https://github.com/puppetlabs/puppetlabs-azure_arm",
+  "project_page": "https://github.com/puppetlabs/puppetlabs-azure_arm",
   "dependencies": [
 
   ],

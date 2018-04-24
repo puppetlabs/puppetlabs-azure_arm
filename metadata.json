@@ -1,11 +1,10 @@
 {
   "name": "puppetlabs-azure_arm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Puppet",
   "summary": "Azure ARM module for management of Azure ARM Resources",
   "license": "Apache-2.0",
-  "source": "https://github.com/puppetlabs/puppetlabs-azure_arm",
-  "project_page": "https://github.com/puppetlabs/puppetlabs-azure_arm",
+  "source": "",
   "dependencies": [
 
   ],

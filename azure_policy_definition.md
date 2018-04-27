@@ -7,7 +7,6 @@ Path: "/root/specs/specification/resources/resource-manager/Microsoft.Authorizat
 azure_policy_definition {
   api_version => "api_version",
   id => "id (optional)",
-  management_group_id => "management_group_id",
   name => "name (optional)",
   parameters => "parameters",
   properties => $azure_policy_definition_properties
@@ -19,7 +18,6 @@ azure_policy_definition {
 | ------------- | ------------- | ------------- | ------------- |
 |api_version | String | true | The API version to use for the operation. |
 |id | String | false | The ID of the policy definition. |
-|management_group_id | String | true | The ID of the management group. |
 |name | String | false | The name of the policy definition. |
 |parameters | Hash | true | The policy definition properties. |
 |properties | [PolicyDefinitionProperties](#policydefinitionproperties) | false | The policy definition properties. |
@@ -57,9 +55,9 @@ Here is a list of endpoints that we use to create, read, update and delete the P
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Put|Creates or updates a policy definition at management group level.|PolicyDefinitions_CreateOrUpdateAtManagementGroup|
+|Create|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Put|Creates or updates a policy definition.|PolicyDefinitions_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions`|Get|Gets all the policy definitions for a subscription.|PolicyDefinitions_List|
-|List - get one|`/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Get|Gets the policy definition at management group level.|PolicyDefinitions_GetAtManagementGroup|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions`|Get|Gets all the policy definitions for a subscription.|PolicyDefinitions_List|
-|Update|`/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Put|Creates or updates a policy definition at management group level.|PolicyDefinitions_CreateOrUpdateAtManagementGroup|
-|Delete|`/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Delete|Deletes a policy definition at management group level.|PolicyDefinitions_DeleteAtManagementGroup|
+|List - get one|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Get|Gets the policy definition.|PolicyDefinitions_Get|
+|List - get list using params|`/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions`|Get|Gets all the policy definitions for a subscription at management group level.|PolicyDefinitions_ListByManagementGroup|
+|Update|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Put|Creates or updates a policy definition.|PolicyDefinitions_CreateOrUpdate|
+|Delete|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}`|Delete|Deletes a policy definition.|PolicyDefinitions_Delete|

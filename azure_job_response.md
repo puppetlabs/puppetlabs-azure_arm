@@ -223,6 +223,6 @@ Here is a list of endpoints that we use to create, read, update and delete the J
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ImportExport/jobs/%{job_name}`|Put|Creates a new job or updates an existing job in the specified subscription.|Jobs_Create|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.ImportExport/jobs`|Get|Returns all active and completed jobs in a subscription.|Jobs_ListBySubscription|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ImportExport/jobs/%{job_name}`|Get|Gets information about an existing job.|Jobs_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.ImportExport/jobs`|Get|Returns all active and completed jobs in a subscription.|Jobs_ListBySubscription|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ImportExport/jobs`|Get|Returns all active and completed jobs in a resource group.|Jobs_ListByResourceGroup|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ImportExport/jobs/%{job_name}`|Put|Creates a new job or updates an existing job in the specified subscription.|Jobs_Create|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ImportExport/jobs/%{job_name}`|Delete|Deletes an existing job. Only jobs in the Creating or Completed states can be deleted.|Jobs_Delete|

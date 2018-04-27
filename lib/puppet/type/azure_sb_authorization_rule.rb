@@ -12,6 +12,7 @@ Puppet::Type.newtype(:azure_sb_authorization_rule) do
       :parameters,
       :queue_name,
       :resource_group_name,
+      :topic_name,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well

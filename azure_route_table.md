@@ -55,19 +55,29 @@ $azure_route_table_properties_format = {
 
 ```puppet
 $azure_route = {
+  api-version => "api-version",
   etag => "etag (optional)",
   id => "id (optional)",
   name => "name (optional)",
   properties => $azure_route_properties_format
+  resourceGroupName => "resourceGroupName",
+  routeParameters => "routeParameters",
+  routeTableName => "routeTableName",
+  subscriptionId => "subscriptionId",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
+|api-version | String | true | Client API version. |
 |etag | String | false | A unique read-only string that changes whenever the resource is updated. |
 |id | String | false | Resource ID. |
 |name | String | false | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
 |properties | [RoutePropertiesFormat](#routepropertiesformat) | false | Properties of the route. |
+|resourceGroupName | String | true | The name of the resource group. |
+|routeParameters | Hash | true | Parameters supplied to the create or update route operation. |
+|routeTableName | String | true | The name of the route table. |
+|subscriptionId | String | true | The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
         
 ## RoutePropertiesFormat
 

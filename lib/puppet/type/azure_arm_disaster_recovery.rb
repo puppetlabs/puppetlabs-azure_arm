@@ -51,13 +51,13 @@ Puppet::Type.newtype(:azure_arm_disaster_recovery) do
     end
   end
   newparam(:api_version) do
-    desc "Client API Version."
+    desc "Client API version."
     validate do |value|
       true
     end
   end
   newparam(:namespace_name) do
-    desc "The Namespace name"
+    desc "The namespace name"
     validate do |value|
       true
     end
@@ -69,7 +69,7 @@ Puppet::Type.newtype(:azure_arm_disaster_recovery) do
     end
   end
   newparam(:resource_group_name) do
-    desc "Name of the resource group within the azure subscription."
+    desc "Name of the Resource group within the Azure subscription."
     validate do |value|
       true
     end

@@ -248,7 +248,7 @@ Puppet::Type.type(:azure_sb_authorization_rule).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Namespaces_ListAuthorizationRules")
+    Puppet.info("Calling operation Topics_ListAuthorizationRules")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -264,7 +264,10 @@ Puppet::Type.type(:azure_sb_authorization_rule).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceBus/namespaces/%{namespace_name}/AuthorizationRules" % path_params
+    path_params[:topic_name] = key_values["topicName"] unless key_values["topicName"].nil?
+    path_params[:topic_name] = ENV["azure_topic_name"] unless ENV["azure_topic_name"].nil?
+    path_params[:topic_name] = resource[:topic_name] unless resource.nil? or resource[:topic_name].nil?
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceBus/namespaces/%{namespace_name}/topics/%{topic_name}/authorizationRules" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

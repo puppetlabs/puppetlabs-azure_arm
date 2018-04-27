@@ -9,7 +9,6 @@ Puppet::Type.newtype(:azure_site_extension_info) do
     required_properties = [
       :resource_group_name,
       :site_extension_id,
-      :slot,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -63,12 +62,6 @@ Puppet::Type.newtype(:azure_site_extension_info) do
   end
   newparam(:site_extension_id) do
     desc "Site extension name."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:slot) do
-    desc "Name of the deployment slot. If a slot is not specified, the API deletes a deployment for the production slot."
     validate do |value|
       true
     end

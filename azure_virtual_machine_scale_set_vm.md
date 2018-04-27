@@ -708,23 +708,35 @@ $azure_os_disk = {
 
 ```puppet
 $azure_virtual_machine_extension = {
+  api-version => "api-version",
+  extensionParameters => "extensionParameters",
   id => "id (optional)",
   location => "location (optional)",
   name => "name (optional)",
   properties => $azure_virtual_machine_extension_properties
+  resourceGroupName => "resourceGroupName",
+  subscriptionId => "subscriptionId",
   tags => "tags (optional)",
   type => "type (optional)",
+  vmExtensionName => "vmExtensionName",
+  vmName => "vmName",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
+|api-version | String | true | Client Api Version. |
+|extensionParameters | Hash | true | Parameters supplied to the Create Virtual Machine Extension operation. |
 |id | String | false | Resource Id |
 |location | String | false | Resource location |
 |name | String | false | Resource name |
 |properties | [VirtualMachineExtensionProperties](#virtualmachineextensionproperties) | false |  |
+|resourceGroupName | String | true | The name of the resource group. |
+|subscriptionId | String | true | Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
 |tags | Hash | false | Resource tags |
 |type | String | false | Resource type |
+|vmExtensionName | String | true | The name of the virtual machine extension. |
+|vmName | String | true | The name of the virtual machine where the extension should be created or updated. |
         
 ## VirtualMachineExtensionProperties
 

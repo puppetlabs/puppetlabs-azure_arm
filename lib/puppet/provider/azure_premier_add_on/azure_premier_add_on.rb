@@ -125,7 +125,7 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_AddPremierAddOnSlot")
+    Puppet.info("Calling operation WebApps_AddPremierAddOn")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -144,13 +144,10 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/premieraddons/%{premier_add_on_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/premieraddons/%{premier_add_on_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -174,7 +171,7 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_AddPremierAddOnSlot")
+    Puppet.info("Calling operation WebApps_AddPremierAddOn")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -193,13 +190,10 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/premieraddons/%{premier_add_on_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/premieraddons/%{premier_add_on_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -223,7 +217,7 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_DeletePremierAddOnSlot")
+    Puppet.info("Calling operation WebApps_DeletePremierAddOn")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -239,13 +233,10 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/premieraddons/%{premier_add_on_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/premieraddons/%{premier_add_on_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -270,7 +261,7 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_GetPremierAddOnSlot")
+    Puppet.info("Calling operation WebApps_GetPremierAddOn")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -286,13 +277,10 @@ Puppet::Type.type(:azure_premier_add_on).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/premieraddons/%{premier_add_on_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/premieraddons/%{premier_add_on_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

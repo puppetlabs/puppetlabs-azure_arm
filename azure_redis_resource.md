@@ -110,6 +110,6 @@ Here is a list of endpoints that we use to create, read, update and delete the R
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Cache/Redis/%{name}`|Put|Create or replace (overwrite/recreate, with potential downtime) an existing Redis cache.|Redis_Create|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Cache/Redis`|Get|Gets all Redis caches in the specified subscription.|Redis_List|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Cache/Redis/%{name}`|Get|Gets a Redis cache (resource description).|Redis_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Cache/Redis`|Get|Lists all Redis caches in a resource group.|Redis_ListByResourceGroup|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Cache/Redis`|Get|Gets all Redis caches in the specified subscription.|Redis_List|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Cache/Redis/%{name}`|Put|Create or replace (overwrite/recreate, with potential downtime) an existing Redis cache.|Redis_Create|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Cache/Redis/%{name}`|Delete|Deletes a Redis cache.|Redis_Delete|

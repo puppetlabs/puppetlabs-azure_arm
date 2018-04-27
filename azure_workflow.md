@@ -143,6 +143,6 @@ Here is a list of endpoints that we use to create, read, update and delete the W
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Logic/workflows/%{workflow_name}`|Put|Creates or updates a workflow.|Workflows_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Logic/workflows`|Get|Gets a list of workflows by subscription.|Workflows_ListBySubscription|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Logic/workflows/%{workflow_name}`|Get|Gets a workflow.|Workflows_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Logic/workflows`|Get|Gets a list of workflows by resource group.|Workflows_ListByResourceGroup|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Logic/workflows`|Get|Gets a list of workflows by subscription.|Workflows_ListBySubscription|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Logic/workflows/%{workflow_name}`|Put|Creates or updates a workflow.|Workflows_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Logic/workflows/%{workflow_name}`|Delete|Deletes a workflow.|Workflows_Delete|

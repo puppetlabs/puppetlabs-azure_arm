@@ -87,6 +87,12 @@ Puppet::Type.newtype(:azure_relay_service_connection_entity) do
       true
     end
   end
+  newparam(:slot) do
+    desc "The name of the slot for the web app."
+    validate do |value|
+      true
+    end
+  end
   newparam(:subscription_id) do
     desc "Subscription Id"
     validate do |value|

@@ -266,7 +266,7 @@ Puppet::Type.type(:azure_assessment).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Assessments_ListByProject")
+    Puppet.info("Calling operation Assessments_ListByGroup")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -276,6 +276,9 @@ Puppet::Type.type(:azure_assessment).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:group_name] = key_values["groupName"] unless key_values["groupName"].nil?
+    path_params[:group_name] = ENV["azure_group_name"] unless ENV["azure_group_name"].nil?
+    path_params[:group_name] = resource[:group_name] unless resource.nil? or resource[:group_name].nil?
     path_params[:project_name] = key_values["projectName"] unless key_values["projectName"].nil?
     path_params[:project_name] = ENV["azure_project_name"] unless ENV["azure_project_name"].nil?
     path_params[:project_name] = resource[:project_name] unless resource.nil? or resource[:project_name].nil?
@@ -285,7 +288,7 @@ Puppet::Type.type(:azure_assessment).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Migrate/projects/%{project_name}/assessments" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Migrate/projects/%{project_name}/groups/%{group_name}/assessments" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

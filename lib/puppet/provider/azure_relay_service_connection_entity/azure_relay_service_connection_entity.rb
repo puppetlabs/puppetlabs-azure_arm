@@ -125,7 +125,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_CreateOrUpdateSiteRelayServiceConnection")
+    Puppet.info("Calling operation Sites_CreateOrUpdateSiteRelayServiceConnectionSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -144,10 +144,13 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
+    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
+    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
+    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
@@ -171,7 +174,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_CreateOrUpdateSiteRelayServiceConnection")
+    Puppet.info("Calling operation Sites_CreateOrUpdateSiteRelayServiceConnectionSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -190,10 +193,13 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
+    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
+    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
+    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
@@ -217,7 +223,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_DeleteSiteRelayServiceConnection")
+    Puppet.info("Calling operation Sites_DeleteSiteRelayServiceConnectionSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -233,10 +239,13 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
+    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
+    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
+    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
@@ -261,13 +270,16 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_ListSiteRelayServiceConnectionsSlot")
+    Puppet.info("Calling operation Sites_GetSiteRelayServiceConnectionSlot")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:entity_name] = key_values["entityName"] unless key_values["entityName"].nil?
+    path_params[:entity_name] = ENV["azure_entity_name"] unless ENV["azure_entity_name"].nil?
+    path_params[:entity_name] = resource[:entity_name] unless resource.nil? or resource[:entity_name].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
@@ -280,7 +292,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)

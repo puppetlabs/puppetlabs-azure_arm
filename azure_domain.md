@@ -43,7 +43,7 @@ Here is a list of endpoints that we use to create, read, update and delete the D
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DomainRegistration/domains/%{domain_name}`|Put||Domains_CreateOrUpdateDomain|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.DomainRegistration/domains`|Get||GlobalDomainRegistration_GetAllDomains|
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DomainRegistration/domains/%{domain_name}`|Get||Domains_GetDomain|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.DomainRegistration/domains`|Get||GlobalDomainRegistration_GetAllDomains|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DomainRegistration/domains/%{domain_name}/operationresults/%{operation_id}`|Get||Domains_GetDomainOperation|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DomainRegistration/domains`|Get||Domains_GetDomains|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DomainRegistration/domains/%{domain_name}`|Put||Domains_CreateOrUpdateDomain|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DomainRegistration/domains/%{domain_name}`|Delete||Domains_DeleteDomain|

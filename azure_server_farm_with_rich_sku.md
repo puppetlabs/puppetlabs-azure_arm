@@ -66,6 +66,6 @@ Here is a list of endpoints that we use to create, read, update and delete the S
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}`|Put||ServerFarms_CreateOrUpdateServerFarm|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/serverfarms`|Get||Global_GetAllServerFarms|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/operationresults/%{operation_id}`|Get||ServerFarms_GetServerFarmOperation|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms`|Get||ServerFarms_GetServerFarms|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/hostingEnvironments/%{name}/serverfarms`|Get||HostingEnvironments_GetHostingEnvironmentServerFarms|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}`|Put||ServerFarms_CreateOrUpdateServerFarm|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}`|Delete||ServerFarms_DeleteServerFarm|

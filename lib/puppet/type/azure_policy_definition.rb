@@ -7,7 +7,6 @@ Puppet::Type.newtype(:azure_policy_definition) do
 
   validate do
     required_properties = [
-      :management_group_id,
       :parameters,
     ]
     required_properties.each do |property|
@@ -38,12 +37,6 @@ Puppet::Type.newtype(:azure_policy_definition) do
   end
   newparam(:api_version) do
     desc "The API version to use for the operation."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:management_group_id) do
-    desc "The ID of the management group."
     validate do |value|
       true
     end

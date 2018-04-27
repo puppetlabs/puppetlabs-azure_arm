@@ -253,21 +253,33 @@ $azure_express_route_circuit_stats = {
 
 ```puppet
 $azure_route_filter_rule = {
+  api-version => "api-version",
   etag => "etag (optional)",
   id => "id (optional)",
   location => "location (optional)",
   name => "name (optional)",
   properties => $azure_route_filter_rule_properties_format
+  resourceGroupName => "resourceGroupName",
+  routeFilterName => "routeFilterName",
+  routeFilterRuleParameters => "routeFilterRuleParameters",
+  ruleName => "ruleName",
+  subscriptionId => "subscriptionId",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
+|api-version | String | true | Client API version. |
 |etag | String | false | A unique read-only string that changes whenever the resource is updated. |
 |id | String | false | Resource ID. |
 |location | String | false | Resource location. |
 |name | String | false | The name of the resource that is unique within a resource group. This name can be used to access the resource. |
 |properties | [RouteFilterRulePropertiesFormat](#routefilterrulepropertiesformat) | false |  |
+|resourceGroupName | String | true | The name of the resource group. |
+|routeFilterName | String | true | The name of the route filter. |
+|routeFilterRuleParameters | Hash | true | Parameters supplied to the create or update route filter rule operation. |
+|ruleName | String | true | The name of the route filter rule. |
+|subscriptionId | String | true | The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
         
 ## RouteFilterRulePropertiesFormat
 

@@ -1,5 +1,5 @@
 Document: "storage"
-Path: "/root/specs/specification/storage/resource-manager/Microsoft.Storage/stable/2017-10-01/storage.json")
+Path: "/root/specs/specification/storage/resource-manager/Microsoft.Storage/stable/2018-02-01/storage.json")
 
 ## StorageAccount
 
@@ -25,19 +25,19 @@ azure_storage_account {
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
 |account_name | String | true | The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only. |
-|api_version | String | true | Client Api Version. |
-|id | String | false | Resource Id |
+|api_version | String | true | The API version to use for this operation. |
+|id | String | false | Fully qualified resource Id for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName} |
 |identity | [Identity](#identity) | false | The identity of the resource. |
 |kind | String | false | Gets the Kind. |
-|location | String | false | Resource location |
-|name | String | false | Resource name |
+|location | String | false | The geo-location where the resource lives |
+|name | String | false | The name of the resource |
 |parameters | Hash | true | The parameters to provide for the created account. |
 |properties | [StorageAccountProperties](#storageaccountproperties) | false | Properties of the storage account. |
 |resource_group_name | String | true | The name of the resource group within the user's subscription. The name is case insensitive. |
 |sku | [Sku](#sku) | false | Gets the SKU. |
-|subscription_id | String | true | Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
-|tags | Hash | false | Tags assigned to a resource; can be used for viewing and grouping a resource (across resource groups). |
-|type | String | false | Resource type |
+|subscription_id | String | true | The ID of the target subscription. |
+|tags | Hash | false | Resource tags. |
+|type | String | false | The type of the resource. Ex- Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts. |
         
 ## Identity
 
@@ -45,7 +45,7 @@ azure_storage_account {
 $azure_identity = {
   principalId => "principalId (optional)",
   tenantId => "tenantId (optional)",
-  type => "type",
+  type => "type (optional)",
 }
 ```
 
@@ -53,7 +53,7 @@ $azure_identity = {
 | ------------- | ------------- | ------------- | ------------- |
 |principalId | String | false | The principal ID of resource identity. |
 |tenantId | String | false | The tenant ID of resource. |
-|type | String | true | The identity type. |
+|type | String | false | The identity type. |
         
 ## StorageAccountProperties
 
@@ -245,55 +245,21 @@ $azure_endpoints = {
 
 ```puppet
 $azure_sku = {
-  capabilities => $azure_sku_capability
-  kind => "kind (optional)",
-  locations => "locations (optional)",
+  capacity => "1234 (optional)",
+  family => "family (optional)",
   name => "name",
-  resourceType => "resourceType (optional)",
-  restrictions => $azure_restriction
+  size => "size (optional)",
   tier => "tier (optional)",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
-|capabilities | [SKUCapability](#skucapability) | false | The capability information in the specified sku, including file encryption, network acls, change notification, etc. |
-|kind | String | false | Indicates the type of storage account. |
-|locations | Array | false | The set of locations that the SKU is available. This will be supported and registered Azure Geo Regions (e.g. West US, East US, Southeast Asia, etc.). |
-|name | String | true | Gets or sets the sku name. Required for account creation; optional for update. Note that in older versions, sku name was called accountType. |
-|resourceType | String | false | The type of the resource, usually it is 'storageAccounts'. |
-|restrictions | [Restriction](#restriction) | false | The restrictions because of which SKU cannot be used. This is empty if there are no restrictions. |
-|tier | String | false | Gets the sku tier. This is based on the SKU name. |
-        
-## SKUCapability
-
-```puppet
-$azure_sku_capability = {
-  name => "name (optional)",
-  value => "value (optional)",
-}
-```
-
-| Name        | Type           | Required       | Description       |
-| ------------- | ------------- | ------------- | ------------- |
-|name | String | false | The name of capability, The capability information in the specified sku, including file encryption, network acls, change notification, etc. |
-|value | String | false | A string value to indicate states of given capability. Possibly 'true' or 'false'. |
-        
-## Restriction
-
-```puppet
-$azure_restriction = {
-  reasonCode => "reasonCode (optional)",
-  type => "type (optional)",
-  values => "values (optional)",
-}
-```
-
-| Name        | Type           | Required       | Description       |
-| ------------- | ------------- | ------------- | ------------- |
-|reasonCode | String | false | The reason for the restriction. As of now this can be “QuotaId” or “NotAvailableForSubscription”. Quota Id is set when the SKU has requiredQuotas parameter as the subscription does not belong to that quota. The “NotAvailableForSubscription” is related to capacity at DC. |
-|type | String | false | The type of restrictions. As of now only possible value for this is location. |
-|values | Array | false | The value of restrictions. If the restriction type is set to location. This would be different locations where the SKU is restricted. |
+|capacity | Integer | false | If the SKU supports scale out/in then the capacity integer should be included. If scale out/in is not possible for the resource this may be omitted. |
+|family | String | false | If the service has different generations of hardware, for the same SKU, then that can be captured here. |
+|name | String | true | The name of the SKU. Ex - P3. It is typically a letter+number code |
+|size | String | false | The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code.  |
+|tier | String | false | This field is required to be implemented by the Resource Provider if the service has more than one tier, but is not required on a PUT. |
 
 
 
@@ -306,6 +272,6 @@ Here is a list of endpoints that we use to create, read, update and delete the S
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Storage/storageAccounts/%{account_name}`|Put|Asynchronously creates a new storage account with the specified parameters. If an account is already created and a subsequent create request is issued with different properties, the account properties will be updated. If an account is already created and a subsequent create or update request is issued with the exact same set of properties, the request will succeed.|StorageAccounts_Create|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Storage/storageAccounts`|Get|Lists all the storage accounts available under the subscription. Note that storage keys are not returned; use the ListKeys operation for this.|StorageAccounts_List|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Storage/storageAccounts/%{account_name}`|Get|Returns the properties for the specified storage account including but not limited to name, SKU name, location, and account status. The ListKeys operation should be used to retrieve storage keys.|StorageAccounts_GetProperties|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Storage/storageAccounts`|Get|Lists all the storage accounts available under the subscription. Note that storage keys are not returned; use the ListKeys operation for this.|StorageAccounts_List|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Storage/storageAccounts`|Get|Lists all the storage accounts available under the given resource group. Note that storage keys are not returned; use the ListKeys operation for this.|StorageAccounts_ListByResourceGroup|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Storage/storageAccounts/%{account_name}`|Put|Asynchronously creates a new storage account with the specified parameters. If an account is already created and a subsequent create request is issued with different properties, the account properties will be updated. If an account is already created and a subsequent create or update request is issued with the exact same set of properties, the request will succeed.|StorageAccounts_Create|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Storage/storageAccounts/%{account_name}`|Delete|Deletes a storage account in Microsoft Azure.|StorageAccounts_Delete|

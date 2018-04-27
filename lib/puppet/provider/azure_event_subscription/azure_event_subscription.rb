@@ -322,23 +322,23 @@ Puppet::Type.type(:azure_event_subscription).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation EventSubscriptions_ListGlobalByResourceGroupForTopicType")
+    Puppet.info("Calling operation EventSubscriptions_ListRegionalBySubscriptionForTopicType")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
-    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
-    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
+    path_params[:location] = key_values["location"] unless key_values["location"].nil?
+    path_params[:location] = ENV["azure_location"] unless ENV["azure_location"].nil?
+    path_params[:location] = resource[:location] unless resource.nil? or resource[:location].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
     path_params[:topic_type_name] = key_values["topicTypeName"] unless key_values["topicTypeName"].nil?
     path_params[:topic_type_name] = ENV["azure_topic_type_name"] unless ENV["azure_topic_type_name"].nil?
     path_params[:topic_type_name] = resource[:topic_type_name] unless resource.nil? or resource[:topic_type_name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventGrid/topicTypes/%{topic_type_name}/eventSubscriptions" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.EventGrid/locations/%{location}/topicTypes/%{topic_type_name}/eventSubscriptions" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

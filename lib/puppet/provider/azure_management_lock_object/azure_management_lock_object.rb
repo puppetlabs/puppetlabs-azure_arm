@@ -56,6 +56,7 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
           name: item["name"],
           parameters: item["parameters"],
           properties: item["properties"],
+          resource_group_name: item["resourceGroupName"],
           scope: item["scope"],
           subscription_id: item["subscriptionId"],
           type: item["type"],
@@ -93,6 +94,7 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
       name: instance.name.respond_to?(:to_hash) ? instance.name.to_hash : instance.name,
       parameters: instance.parameters.respond_to?(:to_hash) ? instance.parameters.to_hash : instance.parameters,
       properties: instance.properties.respond_to?(:to_hash) ? instance.properties.to_hash : instance.properties,
+      resource_group_name: instance.resource_group_name.respond_to?(:to_hash) ? instance.resource_group_name.to_hash : instance.resource_group_name,
       scope: instance.scope.respond_to?(:to_hash) ? instance.scope.to_hash : instance.scope,
       subscription_id: instance.subscription_id.respond_to?(:to_hash) ? instance.subscription_id.to_hash : instance.subscription_id,
       type: instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type,
@@ -210,7 +212,7 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation ManagementLocks_CreateOrUpdateAtSubscriptionLevel")
+    Puppet.info("Calling operation ManagementLocks_CreateOrUpdateAtResourceGroupLevel")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -223,10 +225,13 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
+    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
+    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
+    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/locks/%{lock_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/locks/%{lock_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -290,7 +295,7 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation ManagementLocks_DeleteAtSubscriptionLevel")
+    Puppet.info("Calling operation ManagementLocks_DeleteAtResourceGroupLevel")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -300,10 +305,13 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
     path_params[:lock_name] = key_values["lockName"] unless key_values["lockName"].nil?
     path_params[:lock_name] = ENV["azure_lock_name"] unless ENV["azure_lock_name"].nil?
     path_params[:lock_name] = resource[:lock_name] unless resource.nil? or resource[:lock_name].nil?
+    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
+    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
+    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/locks/%{lock_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/locks/%{lock_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -367,7 +375,7 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation ManagementLocks_GetAtSubscriptionLevel")
+    Puppet.info("Calling operation ManagementLocks_GetAtResourceGroupLevel")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -377,10 +385,13 @@ Puppet::Type.type(:azure_management_lock_object).provide(:arm) do
     path_params[:lock_name] = key_values["lockName"] unless key_values["lockName"].nil?
     path_params[:lock_name] = ENV["azure_lock_name"] unless ENV["azure_lock_name"].nil?
     path_params[:lock_name] = resource[:lock_name] unless resource.nil? or resource[:lock_name].nil?
+    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
+    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
+    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/locks/%{lock_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/locks/%{lock_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

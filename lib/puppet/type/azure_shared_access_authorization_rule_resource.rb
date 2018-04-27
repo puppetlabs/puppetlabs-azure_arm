@@ -71,7 +71,7 @@ Puppet::Type.newtype(:azure_shared_access_authorization_rule_resource) do
     end
   end
   newparam(:authorization_rule_name) do
-    desc "Authorization Rule Name."
+    desc "Aauthorization Rule Name."
     validate do |value|
       true
     end

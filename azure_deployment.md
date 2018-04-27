@@ -8,13 +8,11 @@ azure_deployment {
   api_version => "api_version",
   deployment => "deployment",
   id => "id (optional)",
-  instance_id => "instance_id",
   kind => "kind (optional)",
   location => "location (optional)",
   name => "name (optional)",
   properties => "properties (optional)",
   resource_group_name => "resource_group_name",
-  slot => "slot",
   subscription_id => "subscription_id",
   tags => "tags (optional)",
   type => "type (optional)",
@@ -26,13 +24,11 @@ azure_deployment {
 |api_version | String | true | API Version |
 |deployment | Hash | true | Details of deployment |
 |id | String | false | Resource Id |
-|instance_id | String | true | Id of web app instance |
 |kind | String | false | Kind of resource |
 |location | String | false | Resource Location |
 |name | String | false | Resource Name |
 |properties | String | false |  |
 |resource_group_name | String | true | Name of resource group |
-|slot | String | true | Name of web app slot. If not specified then will default to production slot. |
 |subscription_id | String | true | Subscription Id |
 |tags | Hash | false | Resource tags |
 |type | String | false | Resource type |
@@ -45,9 +41,9 @@ Here is a list of endpoints that we use to create, read, update and delete the D
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}`|Put||Sites_CreateInstanceDeploymentSlot|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}`|Put||Sites_CreateDeployment|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}`|Get||Sites_GetInstanceDeploymentSlot|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/deployments`|Get||Sites_GetDeploymentsSlot|
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}`|Put||Sites_CreateInstanceDeploymentSlot|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}`|Delete||Sites_DeleteInstanceDeploymentSlot|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}`|Get||Sites_GetDeployment|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments`|Get||Sites_GetDeployments|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}`|Put||Sites_CreateDeployment|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}`|Delete||Sites_DeleteDeployment|

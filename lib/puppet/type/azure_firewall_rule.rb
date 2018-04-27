@@ -1,7 +1,7 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_firewall_rule) do
-  @doc = "Data Lake Analytics firewall rule information."
+  @doc = "Data Lake Store firewall rule information."
 
   ensurable
 
@@ -44,7 +44,7 @@ Puppet::Type.newtype(:azure_firewall_rule) do
     end
   end
   newparam(:account_name) do
-    desc "The name of the Data Lake Analytics account."
+    desc "The name of the Data Lake Store account."
     validate do |value|
       true
     end
@@ -68,7 +68,7 @@ Puppet::Type.newtype(:azure_firewall_rule) do
     end
   end
   newparam(:subscription_id) do
-    desc "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
+    desc "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
     validate do |value|
       true
     end

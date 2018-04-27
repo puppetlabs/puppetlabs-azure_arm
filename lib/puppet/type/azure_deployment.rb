@@ -9,9 +9,7 @@ Puppet::Type.newtype(:azure_deployment) do
     required_properties = [
       :location,
       :deployment,
-      :instance_id,
       :resource_group_name,
-      :slot,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -75,20 +73,8 @@ Puppet::Type.newtype(:azure_deployment) do
       true
     end
   end
-  newparam(:instance_id) do
-    desc "Id of web app instance"
-    validate do |value|
-      true
-    end
-  end
   newparam(:resource_group_name) do
     desc "Name of resource group"
-    validate do |value|
-      true
-    end
-  end
-  newparam(:slot) do
-    desc "Name of web app slot. If not specified then will default to production slot."
     validate do |value|
       true
     end

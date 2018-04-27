@@ -356,7 +356,7 @@ Puppet::Type.type(:azure_file_server).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation FileServers_ListByResourceGroup")
+    Puppet.info("Calling operation FileServers_List")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -372,13 +372,10 @@ Puppet::Type.type(:azure_file_server).provide(:arm) do
     query_params["maxresults"] = key_values["maxresults"] unless key_values["maxresults"].nil?
     query_params["maxresults"] = ENV["azure_maxresults"] unless ENV["azure_maxresults"].nil?
     query_params["maxresults"] = resource[:maxresults] unless resource.nil? or resource[:maxresults].nil?
-    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
-    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
-    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/fileServers" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.BatchAI/fileServers" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

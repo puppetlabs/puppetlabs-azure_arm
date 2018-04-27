@@ -243,19 +243,29 @@ $azure_application_security_group_properties_format = {
 
 ```puppet
 $azure_inbound_nat_rule = {
+  api-version => "api-version",
   etag => "etag (optional)",
   id => "id (optional)",
+  inboundNatRuleParameters => "inboundNatRuleParameters",
+  loadBalancerName => "loadBalancerName",
   name => "name (optional)",
   properties => $azure_inbound_nat_rule_properties_format
+  resourceGroupName => "resourceGroupName",
+  subscriptionId => "subscriptionId",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
+|api-version | String | true | Client API version. |
 |etag | String | false | A unique read-only string that changes whenever the resource is updated. |
 |id | String | false | Resource ID. |
+|inboundNatRuleParameters | Hash | true | Parameters supplied to the create or update inbound nat rule operation. |
+|loadBalancerName | String | true | The name of the load balancer. |
 |name | String | false | Gets name of the resource that is unique within a resource group. This name can be used to access the resource. |
 |properties | [InboundNatRulePropertiesFormat](#inboundnatrulepropertiesformat) | false | Properties of load balancer inbound nat rule. |
+|resourceGroupName | String | true | The name of the resource group. |
+|subscriptionId | String | true | The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
         
 ## InboundNatRulePropertiesFormat
 
@@ -1064,6 +1074,6 @@ Here is a list of endpoints that we use to create, read, update and delete the L
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/loadBalancers/%{load_balancer_name}`|Put|Creates or updates a load balancer.|LoadBalancers_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/loadBalancers`|Get|Gets all the load balancers in a subscription.|LoadBalancers_ListAll|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/loadBalancers/%{load_balancer_name}`|Get|Gets the specified load balancer.|LoadBalancers_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/loadBalancers`|Get|Gets all the load balancers in a resource group.|LoadBalancers_List|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/loadBalancers`|Get|Gets all the load balancers in a subscription.|LoadBalancers_ListAll|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/loadBalancers/%{load_balancer_name}`|Put|Creates or updates a load balancer.|LoadBalancers_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/loadBalancers/%{load_balancer_name}`|Delete|Deletes the specified load balancer.|LoadBalancers_Delete|

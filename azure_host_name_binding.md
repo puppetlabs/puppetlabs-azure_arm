@@ -48,6 +48,6 @@ Here is a list of endpoints that we use to create, read, update and delete the H
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Put||Sites_CreateOrUpdateSiteHostNameBindingSlot|
 |List - list all|``||||
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Get||Sites_GetSiteHostNameBindingSlot|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings`|Get||Sites_GetSiteHostNameBindingsSlot|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hostNameBindings`|Get||Sites_GetSiteHostNameBindings|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Put||Sites_CreateOrUpdateSiteHostNameBindingSlot|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Delete||Sites_DeleteSiteHostNameBindingSlot|

@@ -10,6 +10,7 @@ Puppet::Type.newtype(:azure_site_source_control) do
       :location,
       :resource_group_name,
       :site_source_control,
+      :slot,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -75,6 +76,12 @@ Puppet::Type.newtype(:azure_site_source_control) do
   end
   newparam(:site_source_control) do
     desc "Request body that contains the source control parameters"
+    validate do |value|
+      true
+    end
+  end
+  newparam(:slot) do
+    desc "Name of web app slot. If not specified then will default to production slot."
     validate do |value|
       true
     end

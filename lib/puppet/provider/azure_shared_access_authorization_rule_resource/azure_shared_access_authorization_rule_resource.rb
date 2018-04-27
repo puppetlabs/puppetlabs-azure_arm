@@ -125,7 +125,7 @@ Puppet::Type.type(:azure_shared_access_authorization_rule_resource).provide(:arm
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation NotificationHubs_CreateOrUpdateAuthorizationRule")
+    Puppet.info("Calling operation Namespaces_CreateOrUpdateAuthorizationRule")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -138,9 +138,6 @@ Puppet::Type.type(:azure_shared_access_authorization_rule_resource).provide(:arm
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
-    path_params[:notification_hub_name] = key_values["notificationHubName"] unless key_values["notificationHubName"].nil?
-    path_params[:notification_hub_name] = ENV["azure_notification_hub_name"] unless ENV["azure_notification_hub_name"].nil?
-    path_params[:notification_hub_name] = resource[:notification_hub_name] unless resource.nil? or resource[:notification_hub_name].nil?
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
@@ -150,7 +147,7 @@ Puppet::Type.type(:azure_shared_access_authorization_rule_resource).provide(:arm
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/notificationHubs/%{notification_hub_name}/AuthorizationRules/%{authorization_rule_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/AuthorizationRules/%{authorization_rule_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -223,7 +220,7 @@ Puppet::Type.type(:azure_shared_access_authorization_rule_resource).provide(:arm
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation NotificationHubs_DeleteAuthorizationRule")
+    Puppet.info("Calling operation Namespaces_DeleteAuthorizationRule")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -236,16 +233,13 @@ Puppet::Type.type(:azure_shared_access_authorization_rule_resource).provide(:arm
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
-    path_params[:notification_hub_name] = key_values["notificationHubName"] unless key_values["notificationHubName"].nil?
-    path_params[:notification_hub_name] = ENV["azure_notification_hub_name"] unless ENV["azure_notification_hub_name"].nil?
-    path_params[:notification_hub_name] = resource[:notification_hub_name] unless resource.nil? or resource[:notification_hub_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/notificationHubs/%{notification_hub_name}/AuthorizationRules/%{authorization_rule_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/AuthorizationRules/%{authorization_rule_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -309,7 +303,7 @@ Puppet::Type.type(:azure_shared_access_authorization_rule_resource).provide(:arm
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation NotificationHubs_GetAuthorizationRule")
+    Puppet.info("Calling operation Namespaces_GetAuthorizationRule")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -322,16 +316,13 @@ Puppet::Type.type(:azure_shared_access_authorization_rule_resource).provide(:arm
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
-    path_params[:notification_hub_name] = key_values["notificationHubName"] unless key_values["notificationHubName"].nil?
-    path_params[:notification_hub_name] = ENV["azure_notification_hub_name"] unless ENV["azure_notification_hub_name"].nil?
-    path_params[:notification_hub_name] = resource[:notification_hub_name] unless resource.nil? or resource[:notification_hub_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/notificationHubs/%{notification_hub_name}/AuthorizationRules/%{authorization_rule_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/AuthorizationRules/%{authorization_rule_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

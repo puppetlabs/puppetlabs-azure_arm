@@ -1,7 +1,7 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_certificate) do
-  @doc = "App certificate"
+  @doc = "SSL certificate for an app."
 
   ensurable
 
@@ -19,44 +19,44 @@ Puppet::Type.newtype(:azure_certificate) do
     end
   end
   newproperty(:id) do
-    desc "Resource Id"
+    desc "Resource Id."
     validate do |value|
       true
     end
   end
   newproperty(:kind) do
-    desc "Kind of resource"
+    desc "Kind of resource."
     validate do |value|
       true
     end
   end
   newproperty(:location) do
-    desc "Resource Location"
+    desc "Resource Location."
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "Resource Name"
+    desc "Resource Name."
     validate do |value|
       true
     end
   end
   newproperty(:properties) do
-    desc ""
+    desc "Certificate resource specific properties"
     validate do |value|
       true
     end
   end
   newproperty(:tags) do
-    desc "Resource tags"
+    desc "Resource tags."
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "Resource type"
+    desc "Resource type."
     validate do |value|
       true
     end
@@ -68,19 +68,19 @@ Puppet::Type.newtype(:azure_certificate) do
     end
   end
   newparam(:certificate_envelope) do
-    desc "Details of certificate if it exists already."
+    desc "Details of certificate, if it exists already."
     validate do |value|
       true
     end
   end
   newparam(:resource_group_name) do
-    desc "Name of the resource group"
+    desc "Name of the resource group to which the resource belongs."
     validate do |value|
       true
     end
   end
   newparam(:subscription_id) do
-    desc "Subscription Id"
+    desc "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000)."
     validate do |value|
       true
     end

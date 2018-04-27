@@ -12,6 +12,7 @@ azure_public_certificate {
   properties => "properties (optional)",
   public_certificate => "publicCertificate",
   resource_group_name => "resource_group_name",
+  slot => "slot",
   subscription_id => "subscription_id",
   type => "type (optional)",
 }
@@ -26,6 +27,7 @@ azure_public_certificate {
 |properties | String | false | PublicCertificate resource specific properties |
 |public_certificate | Hash | true | Public certificate details. This is the JSON representation of a PublicCertificate object. |
 |resource_group_name | String | true | Name of the resource group to which the resource belongs. |
+|slot | String | true | Name of the deployment slot. If a slot is not specified, the API will create a binding for the production slot. |
 |subscription_id | String | true | Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000). |
 |type | String | false | Resource type. |
 
@@ -37,9 +39,9 @@ Here is a list of endpoints that we use to create, read, update and delete the P
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/publicCertificates/%{public_certificate_name}`|Put|Creates a hostname binding for an app.|WebApps_CreateOrUpdatePublicCertificate|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/publicCertificates/%{public_certificate_name}`|Put|Creates a hostname binding for an app.|WebApps_CreateOrUpdatePublicCertificateSlot|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/publicCertificates/%{public_certificate_name}`|Get|Get the named public certificate for an app (or deployment slot, if specified).|WebApps_GetPublicCertificate|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/publicCertificates/%{public_certificate_name}`|Get|Get the named public certificate for an app (or deployment slot, if specified).|WebApps_GetPublicCertificateSlot|
 |List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/publicCertificates`|Get|Get public certificates for an app or a deployment slot.|WebApps_ListPublicCertificatesSlot|
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/publicCertificates/%{public_certificate_name}`|Put|Creates a hostname binding for an app.|WebApps_CreateOrUpdatePublicCertificate|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/publicCertificates/%{public_certificate_name}`|Delete|Deletes a hostname binding for an app.|WebApps_DeletePublicCertificate|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/publicCertificates/%{public_certificate_name}`|Put|Creates a hostname binding for an app.|WebApps_CreateOrUpdatePublicCertificateSlot|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/publicCertificates/%{public_certificate_name}`|Delete|Deletes a hostname binding for an app.|WebApps_DeletePublicCertificateSlot|

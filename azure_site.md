@@ -46,6 +46,6 @@ Here is a list of endpoints that we use to create, read, update and delete the S
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}`|Put||Sites_CreateOrUpdateSiteSlot|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/sites`|Get||Global_GetAllSites|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}`|Get||Sites_GetSiteSlot|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/managedHostingEnvironments/%{name}/sites`|Get||ManagedHostingEnvironments_GetManagedHostingEnvironmentSites|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/sites`|Get||Global_GetAllSites|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}`|Put||Sites_CreateOrUpdateSiteSlot|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}`|Delete||Sites_DeleteSiteSlot|

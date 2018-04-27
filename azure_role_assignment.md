@@ -52,6 +52,6 @@ Here is a list of endpoints that we use to create, read, update and delete the R
 |Create|`/%{role_assignment_id}`|Put|Creates a role assignment by ID.|RoleAssignments_CreateById|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/roleAssignments`|Get|Gets all role assignments for the subscription.|RoleAssignments_List|
 |List - get one|`/%{role_assignment_id}`|Get|Gets a role assignment by ID.|RoleAssignments_GetById|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourcegroups/%{resource_group_name}/providers/%{resource_provider_namespace}/%{parent_resource_path}/%{resource_type}/%{resource_name}/providers/Microsoft.Authorization/roleAssignments`|Get|Gets role assignments for a resource.|RoleAssignments_ListForResource|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/roleAssignments`|Get|Gets role assignments for a resource group.|RoleAssignments_ListForResourceGroup|
 |Update|`/%{role_assignment_id}`|Put|Creates a role assignment by ID.|RoleAssignments_CreateById|
 |Delete|`/%{role_assignment_id}`|Delete|Deletes a role assignment.|RoleAssignments_DeleteById|

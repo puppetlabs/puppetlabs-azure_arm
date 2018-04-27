@@ -1,16 +1,15 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_authorization_rule) do
-  @doc = "Description of a namespace authorization rule."
+  @doc = "Single item in a List or Get AuthorizationRule operation"
 
   ensurable
 
   validate do
     required_properties = [
-      :properties,
+      :event_hub_name,
       :namespace_name,
       :parameters,
-      :relay_name,
       :resource_group_name,
     ]
     required_properties.each do |property|
@@ -21,62 +20,62 @@ Puppet::Type.newtype(:azure_authorization_rule) do
     end
   end
   newproperty(:id) do
-    desc "Resource ID."
+    desc "Resource Id"
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "Resource name."
+    desc "Resource name"
     validate do |value|
       true
     end
   end
   newproperty(:properties) do
-    desc "Authorization rule properties."
+    desc "Properties supplied to create or update AuthorizationRule"
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "Resource type."
+    desc "Resource type"
     validate do |value|
       true
     end
   end
   newparam(:api_version) do
-    desc "Client API version."
+    desc "Client API Version."
+    validate do |value|
+      true
+    end
+  end
+  newparam(:event_hub_name) do
+    desc "The Event Hub name"
     validate do |value|
       true
     end
   end
   newparam(:namespace_name) do
-    desc "The namespace name"
+    desc "The Namespace name"
     validate do |value|
       true
     end
   end
   newparam(:parameters) do
-    desc "The authorization rule parameters."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:relay_name) do
-    desc "The relay name."
+    desc "The shared access AuthorizationRule."
     validate do |value|
       true
     end
   end
   newparam(:resource_group_name) do
-    desc "Name of the Resource group within the Azure subscription."
+    desc "Name of the resource group within the azure subscription."
     validate do |value|
       true
     end
   end
   newparam(:subscription_id) do
-    desc "Subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
+    desc "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
     validate do |value|
       true
     end

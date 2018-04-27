@@ -125,7 +125,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_CreateInstanceDeploymentSlot")
+    Puppet.info("Calling operation Sites_CreateDeployment")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -138,22 +138,16 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
-    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
-    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
@@ -177,7 +171,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_CreateInstanceDeploymentSlot")
+    Puppet.info("Calling operation Sites_CreateDeployment")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -190,22 +184,16 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
-    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
-    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
@@ -229,7 +217,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_DeleteInstanceDeploymentSlot")
+    Puppet.info("Calling operation Sites_DeleteDeployment")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -239,22 +227,16 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
-    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
-    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
@@ -278,7 +260,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_GetDeploymentsSlot")
+    Puppet.info("Calling operation Sites_GetDeployments")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -291,13 +273,10 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/deployments" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
@@ -321,7 +300,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Sites_GetInstanceDeploymentSlot")
+    Puppet.info("Calling operation Sites_GetDeployment")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -331,22 +310,16 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
-    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
-    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)

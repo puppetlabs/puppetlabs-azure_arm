@@ -255,6 +255,12 @@ Puppet::Type.type(:azure_sb_subscription).provide(:arm) do
     path_params = {}
     query_params = {}
     header_params = {}
+    query_params["$skip"] = key_values["$skip"] unless key_values["$skip"].nil?
+    query_params["$skip"] = ENV["azure_$skip"] unless ENV["azure_$skip"].nil?
+    query_params["$skip"] = resource[:$skip] unless resource.nil? or resource[:$skip].nil?
+    query_params["$top"] = key_values["$top"] unless key_values["$top"].nil?
+    query_params["$top"] = ENV["azure_$top"] unless ENV["azure_$top"].nil?
+    query_params["$top"] = resource[:$top] unless resource.nil? or resource[:$top].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?

@@ -1,12 +1,13 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_cluster) do
-  @doc = "Contains information about a Cluster."
+  @doc = "The cluster resource"
 
   ensurable
 
   validate do
     required_properties = [
+      :location,
       :parameters,
       :resource_group_name,
     ]
@@ -18,62 +19,62 @@ Puppet::Type.newtype(:azure_cluster) do
     end
   end
   newproperty(:id) do
-    desc "The ID of the resource"
+    desc "Resource ID."
     validate do |value|
       true
     end
   end
   newproperty(:location) do
-    desc "The location of the resource"
+    desc "Resource location."
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "The name of the resource"
+    desc "Resource name."
     validate do |value|
       true
     end
   end
   newproperty(:properties) do
-    desc "The properties associated with the Cluster."
+    desc ""
     validate do |value|
       true
     end
   end
   newproperty(:tags) do
-    desc "The tags of the resource"
+    desc "Resource tags."
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "The type of the resource"
+    desc "Resource type."
     validate do |value|
       true
     end
   end
   newparam(:api_version) do
-    desc "Specifies the version of API used for this request."
+    desc "The version of the ServiceFabric resouce provider api"
     validate do |value|
       true
     end
   end
   newparam(:parameters) do
-    desc "The parameters to provide for cluster creation."
+    desc "Put Request"
     validate do |value|
       true
     end
   end
   newparam(:resource_group_name) do
-    desc "Name of the resource group to which the resource belongs."
+    desc "The name of the resource group to which the resource belongs or get created"
     validate do |value|
       true
     end
   end
   newparam(:subscription_id) do
-    desc "The subscriptionID for the Azure user."
+    desc "The customer subscription identifier"
     validate do |value|
       true
     end

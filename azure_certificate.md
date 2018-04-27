@@ -1,5 +1,5 @@
-Document: "service"
-Path: "/root/specs/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json")
+Document: "Certificates"
+Path: "/root/specs/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/Certificates.json")
 
 ## Certificate
 
@@ -22,16 +22,16 @@ azure_certificate {
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
 |api_version | String | true | API Version |
-|certificate_envelope | Hash | true | Details of certificate if it exists already. |
-|id | String | false | Resource Id |
-|kind | String | false | Kind of resource |
-|location | String | false | Resource Location |
-|name | String | false | Resource Name |
-|properties | String | false |  |
-|resource_group_name | String | true | Name of the resource group |
-|subscription_id | String | true | Subscription Id |
-|tags | Hash | false | Resource tags |
-|type | String | false | Resource type |
+|certificate_envelope | Hash | true | Details of certificate, if it exists already. |
+|id | String | false | Resource Id. |
+|kind | String | false | Kind of resource. |
+|location | String | false | Resource Location. |
+|name | String | false | Resource Name. |
+|properties | String | false | Certificate resource specific properties |
+|resource_group_name | String | true | Name of the resource group to which the resource belongs. |
+|subscription_id | String | true | Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000). |
+|tags | Hash | false | Resource tags. |
+|type | String | false | Resource type. |
 
 
 
@@ -41,9 +41,9 @@ Here is a list of endpoints that we use to create, read, update and delete the C
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Put||Certificates_CreateOrUpdateCertificate|
-|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/certificates`|Get||Global_GetAllCertificates|
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Get||Certificates_GetCertificate|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/certificates`|Get||Global_GetAllCertificates|
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Put||Certificates_CreateOrUpdateCertificate|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Delete||Certificates_DeleteCertificate|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Put|Create or update a certificate.|Certificates_CreateOrUpdate|
+|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/certificates`|Get|Get all certificates for a subscription.|Certificates_List|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Get|Get a certificate.|Certificates_Get|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/certificates`|Get|Get all certificates for a subscription.|Certificates_List|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Put|Create or update a certificate.|Certificates_CreateOrUpdate|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/certificates/%{name}`|Delete|Delete a certificate.|Certificates_Delete|

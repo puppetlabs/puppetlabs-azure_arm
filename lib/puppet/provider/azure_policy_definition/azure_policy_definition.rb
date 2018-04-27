@@ -47,7 +47,6 @@ Puppet::Type.type(:azure_policy_definition).provide(:arm) do
 
           api_version: item["api-version"],
           id: item["id"],
-          management_group_id: item["managementGroupId"],
           name: item["name"],
           parameters: item["parameters"],
           properties: item["properties"],
@@ -82,7 +81,6 @@ Puppet::Type.type(:azure_policy_definition).provide(:arm) do
 
       api_version: instance.api_version.respond_to?(:to_hash) ? instance.api_version.to_hash : instance.api_version,
       id: instance.id.respond_to?(:to_hash) ? instance.id.to_hash : instance.id,
-      management_group_id: instance.management_group_id.respond_to?(:to_hash) ? instance.management_group_id.to_hash : instance.management_group_id,
       name: instance.name.respond_to?(:to_hash) ? instance.name.to_hash : instance.name,
       parameters: instance.parameters.respond_to?(:to_hash) ? instance.parameters.to_hash : instance.parameters,
       properties: instance.properties.respond_to?(:to_hash) ? instance.properties.to_hash : instance.properties,
@@ -197,23 +195,23 @@ Puppet::Type.type(:azure_policy_definition).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyDefinitions_CreateOrUpdateAtManagementGroup")
+    Puppet.info("Calling operation PolicyDefinitions_CreateOrUpdate")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:management_group_id] = key_values["managementGroupId"] unless key_values["managementGroupId"].nil?
-    path_params[:management_group_id] = ENV["azure_management_group_id"] unless ENV["azure_management_group_id"].nil?
-    path_params[:management_group_id] = resource[:management_group_id] unless resource.nil? or resource[:management_group_id].nil?
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
     path_params[:policy_definition_name] = key_values["policyDefinitionName"] unless key_values["policyDefinitionName"].nil?
     path_params[:policy_definition_name] = ENV["azure_policy_definition_name"] unless ENV["azure_policy_definition_name"].nil?
     path_params[:policy_definition_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
+    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
+    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
+    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -237,23 +235,23 @@ Puppet::Type.type(:azure_policy_definition).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyDefinitions_CreateOrUpdateAtManagementGroup")
+    Puppet.info("Calling operation PolicyDefinitions_CreateOrUpdate")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:management_group_id] = key_values["managementGroupId"] unless key_values["managementGroupId"].nil?
-    path_params[:management_group_id] = ENV["azure_management_group_id"] unless ENV["azure_management_group_id"].nil?
-    path_params[:management_group_id] = resource[:management_group_id] unless resource.nil? or resource[:management_group_id].nil?
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
     path_params[:policy_definition_name] = key_values["policyDefinitionName"] unless key_values["policyDefinitionName"].nil?
     path_params[:policy_definition_name] = ENV["azure_policy_definition_name"] unless ENV["azure_policy_definition_name"].nil?
     path_params[:policy_definition_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
+    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
+    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
+    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -277,20 +275,20 @@ Puppet::Type.type(:azure_policy_definition).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyDefinitions_DeleteAtManagementGroup")
+    Puppet.info("Calling operation PolicyDefinitions_Delete")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:management_group_id] = key_values["managementGroupId"] unless key_values["managementGroupId"].nil?
-    path_params[:management_group_id] = ENV["azure_management_group_id"] unless ENV["azure_management_group_id"].nil?
-    path_params[:management_group_id] = resource[:management_group_id] unless resource.nil? or resource[:management_group_id].nil?
     path_params[:policy_definition_name] = key_values["policyDefinitionName"] unless key_values["policyDefinitionName"].nil?
     path_params[:policy_definition_name] = ENV["azure_policy_definition_name"] unless ENV["azure_policy_definition_name"].nil?
     path_params[:policy_definition_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
+    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
+    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
+    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -314,17 +312,17 @@ Puppet::Type.type(:azure_policy_definition).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyDefinitions_List")
+    Puppet.info("Calling operation PolicyDefinitions_ListByManagementGroup")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
-    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
-    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions" % path_params
+    path_params[:management_group_id] = key_values["managementGroupId"] unless key_values["managementGroupId"].nil?
+    path_params[:management_group_id] = ENV["azure_management_group_id"] unless ENV["azure_management_group_id"].nil?
+    path_params[:management_group_id] = resource[:management_group_id] unless resource.nil? or resource[:management_group_id].nil?
+    uri_string = "https://management.azure.com/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -348,20 +346,20 @@ Puppet::Type.type(:azure_policy_definition).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyDefinitions_GetAtManagementGroup")
+    Puppet.info("Calling operation PolicyDefinitions_Get")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:management_group_id] = key_values["managementGroupId"] unless key_values["managementGroupId"].nil?
-    path_params[:management_group_id] = ENV["azure_management_group_id"] unless ENV["azure_management_group_id"].nil?
-    path_params[:management_group_id] = resource[:management_group_id] unless resource.nil? or resource[:management_group_id].nil?
     path_params[:policy_definition_name] = key_values["policyDefinitionName"] unless key_values["policyDefinitionName"].nil?
     path_params[:policy_definition_name] = ENV["azure_policy_definition_name"] unless ENV["azure_policy_definition_name"].nil?
     path_params[:policy_definition_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/providers/Microsoft.Management/managementgroups/%{management_group_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
+    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
+    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
+    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyDefinitions/%{policy_definition_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)

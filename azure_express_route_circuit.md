@@ -105,31 +105,19 @@ $azure_authorization_properties_format = {
 
 ```puppet
 $azure_express_route_circuit_peering = {
-  api-version => "api-version",
-  circuitName => "circuitName",
   etag => "etag (optional)",
   id => "id (optional)",
   name => "name (optional)",
-  peeringName => "peeringName",
-  peeringParameters => "peeringParameters",
   properties => $azure_express_route_circuit_peering_properties_format
-  resourceGroupName => "resourceGroupName",
-  subscriptionId => "subscriptionId",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
-|api-version | String | true | Client API version. |
-|circuitName | String | true | The name of the express route circuit. |
 |etag | String | false | A unique read-only string that changes whenever the resource is updated. |
 |id | String | false | Resource ID. |
 |name | String | false | Gets name of the resource that is unique within a resource group. This name can be used to access the resource. |
-|peeringName | String | true | The name of the peering. |
-|peeringParameters | Hash | true | Parameters supplied to the create or update express route circuit peering operation. |
 |properties | [ExpressRouteCircuitPeeringPropertiesFormat](#expressroutecircuitpeeringpropertiesformat) | false |  |
-|resourceGroupName | String | true | The name of the resource group. |
-|subscriptionId | String | true | The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
         
 ## ExpressRouteCircuitPeeringPropertiesFormat
 

@@ -11,6 +11,7 @@ azure_management_lock_object {
   name => "name (optional)",
   parameters => "parameters",
   properties => $azure_management_lock_properties
+  resource_group_name => "resource_group_name",
   scope => "scope",
   subscription_id => "subscription_id",
   type => "type (optional)",
@@ -21,10 +22,11 @@ azure_management_lock_object {
 | ------------- | ------------- | ------------- | ------------- |
 |api_version | String | true | The API version to use for the operation. |
 |id | String | false | The resource ID of the lock. |
-|lock_name | String | true | The name of lock. The lock name can be a maximum of 260 characters. It cannot contain <, > %, &, :, \, ?, /, or any control characters. |
+|lock_name | String | true | The lock name. The lock name can be a maximum of 260 characters. It cannot contain <, > %, &, :, \, ?, /, or any control characters. |
 |name | String | false | The name of the lock. |
 |parameters | Hash | true | The management lock parameters. |
 |properties | [ManagementLockProperties](#managementlockproperties) | true | The properties of the lock. |
+|resource_group_name | String | true | The name of the resource group to lock. |
 |scope | String | true | The scope for the lock. When providing a scope for the assignment, use '/subscriptions/{subscriptionId}' for subscriptions, '/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}' for resource groups, and '/subscriptions/{subscriptionId}/resourcegroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{parentResourcePathIfPresent}/{resourceType}/{resourceName}' for resources. |
 |subscription_id | String | true | The ID of the target subscription. |
 |type | String | false | The resource type of the lock - Microsoft.Authorization/locks. |
@@ -65,9 +67,9 @@ Here is a list of endpoints that we use to create, read, update and delete the M
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/locks/%{lock_name}`|Put|When you apply a lock at a parent scope, all child resources inherit the same lock. To create management locks, you must have access to Microsoft.Authorization/* or Microsoft.Authorization/locks/* actions. Of the built-in roles, only Owner and User Access Administrator are granted those actions.|ManagementLocks_CreateOrUpdateAtSubscriptionLevel|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/locks/%{lock_name}`|Put|When you apply a lock at a parent scope, all child resources inherit the same lock. To create management locks, you must have access to Microsoft.Authorization/* or Microsoft.Authorization/locks/* actions. Of the built-in roles, only Owner and User Access Administrator are granted those actions.|ManagementLocks_CreateOrUpdateAtResourceGroupLevel|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/locks`|Get|Gets all the management locks for a subscription.|ManagementLocks_ListAtSubscriptionLevel|
-|List - get one|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/locks/%{lock_name}`|Get|Gets a management lock at the subscription level.|ManagementLocks_GetAtSubscriptionLevel|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/locks/%{lock_name}`|Get|Gets a management lock at the resource group level.|ManagementLocks_GetAtResourceGroupLevel|
 |List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/locks`|Get|Gets all the management locks for a resource group.|ManagementLocks_ListAtResourceGroupLevel|
 |Update|`/%{scope}/providers/Microsoft.Authorization/locks/%{lock_name}`|Put|Create or update a management lock by scope.|ManagementLocks_CreateOrUpdateByScope|
-|Delete|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/locks/%{lock_name}`|Delete|To delete management locks, you must have access to Microsoft.Authorization/* or Microsoft.Authorization/locks/* actions. Of the built-in roles, only Owner and User Access Administrator are granted those actions.|ManagementLocks_DeleteAtSubscriptionLevel|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/locks/%{lock_name}`|Delete|To delete management locks, you must have access to Microsoft.Authorization/* or Microsoft.Authorization/locks/* actions. Of the built-in roles, only Owner and User Access Administrator are granted those actions.|ManagementLocks_DeleteAtResourceGroupLevel|

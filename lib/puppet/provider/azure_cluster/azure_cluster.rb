@@ -161,7 +161,7 @@ Puppet::Type.type(:azure_cluster).provide(:arm) do
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2018-03-01"
+    key_values["api-version"] = "2016-09-01"
     key_values
   end
 
@@ -191,22 +191,13 @@ Puppet::Type.type(:azure_cluster).provide(:arm) do
     path_params = {}
     query_params = {}
     header_params = {}
-    query_params["$filter"] = key_values["$filter"] unless key_values["$filter"].nil?
-    query_params["$filter"] = ENV["azure_$filter"] unless ENV["azure_$filter"].nil?
-    query_params["$filter"] = resource[:$filter] unless resource.nil? or resource[:$filter].nil?
-    query_params["$select"] = key_values["$select"] unless key_values["$select"].nil?
-    query_params["$select"] = ENV["azure_$select"] unless ENV["azure_$select"].nil?
-    query_params["$select"] = resource[:$select] unless resource.nil? or resource[:$select].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    query_params["maxresults"] = key_values["maxresults"] unless key_values["maxresults"].nil?
-    query_params["maxresults"] = ENV["azure_maxresults"] unless ENV["azure_maxresults"].nil?
-    query_params["maxresults"] = resource[:maxresults] unless resource.nil? or resource[:maxresults].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.BatchAI/clusters" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.ServiceFabric/clusters" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -249,7 +240,7 @@ Puppet::Type.type(:azure_cluster).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/clusters/%{cluster_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceFabric/clusters/%{cluster_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -292,7 +283,7 @@ Puppet::Type.type(:azure_cluster).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/clusters/%{cluster_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceFabric/clusters/%{cluster_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -332,7 +323,7 @@ Puppet::Type.type(:azure_cluster).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/clusters/%{cluster_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceFabric/clusters/%{cluster_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -360,25 +351,16 @@ Puppet::Type.type(:azure_cluster).provide(:arm) do
     path_params = {}
     query_params = {}
     header_params = {}
-    query_params["$filter"] = key_values["$filter"] unless key_values["$filter"].nil?
-    query_params["$filter"] = ENV["azure_$filter"] unless ENV["azure_$filter"].nil?
-    query_params["$filter"] = resource[:$filter] unless resource.nil? or resource[:$filter].nil?
-    query_params["$select"] = key_values["$select"] unless key_values["$select"].nil?
-    query_params["$select"] = ENV["azure_$select"] unless ENV["azure_$select"].nil?
-    query_params["$select"] = resource[:$select] unless resource.nil? or resource[:$select].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    query_params["maxresults"] = key_values["maxresults"] unless key_values["maxresults"].nil?
-    query_params["maxresults"] = ENV["azure_maxresults"] unless ENV["azure_maxresults"].nil?
-    query_params["maxresults"] = resource[:maxresults] unless resource.nil? or resource[:maxresults].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/clusters" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourcegroups/%{resource_group_name}/providers/Microsoft.ServiceFabric/clusters" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -418,7 +400,7 @@ Puppet::Type.type(:azure_cluster).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/clusters/%{cluster_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceFabric/clusters/%{cluster_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

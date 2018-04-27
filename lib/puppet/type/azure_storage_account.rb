@@ -7,6 +7,7 @@ Puppet::Type.newtype(:azure_storage_account) do
 
   validate do
     required_properties = [
+      :location,
       :account_name,
       :parameters,
       :resource_group_name,
@@ -19,7 +20,7 @@ Puppet::Type.newtype(:azure_storage_account) do
     end
   end
   newproperty(:id) do
-    desc "Resource Id"
+    desc "Fully qualified resource Id for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}"
     validate do |value|
       true
     end
@@ -37,14 +38,14 @@ Puppet::Type.newtype(:azure_storage_account) do
     end
   end
   newproperty(:location) do
-    desc "Resource location"
+    desc "The geo-location where the resource lives"
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "Resource name"
+    desc "The name of the resource"
     validate do |value|
       true
     end
@@ -62,13 +63,13 @@ Puppet::Type.newtype(:azure_storage_account) do
     end
   end
   newproperty(:tags) do
-    desc "Tags assigned to a resource; can be used for viewing and grouping a resource (across resource groups)."
+    desc "Resource tags."
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "Resource type"
+    desc "The type of the resource. Ex- Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts."
     validate do |value|
       true
     end
@@ -80,7 +81,7 @@ Puppet::Type.newtype(:azure_storage_account) do
     end
   end
   newparam(:api_version) do
-    desc "Client Api Version."
+    desc "The API version to use for this operation."
     validate do |value|
       true
     end
@@ -98,7 +99,7 @@ Puppet::Type.newtype(:azure_storage_account) do
     end
   end
   newparam(:subscription_id) do
-    desc "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
+    desc "The ID of the target subscription."
     validate do |value|
       true
     end

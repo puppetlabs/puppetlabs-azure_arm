@@ -300,7 +300,7 @@ Puppet::Type.type(:azure_vnet_info).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation ServerFarms_GetVnetFromServerFarm")
+    Puppet.info("Calling operation Sites_GetSiteVNETConnection")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -319,7 +319,7 @@ Puppet::Type.type(:azure_vnet_info).provide(:arm) do
     path_params[:vnet_name] = key_values["vnetName"] unless key_values["vnetName"].nil?
     path_params[:vnet_name] = ENV["azure_vnet_name"] unless ENV["azure_vnet_name"].nil?
     path_params[:vnet_name] = resource[:vnet_name] unless resource.nil? or resource[:vnet_name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections/%{vnet_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/virtualNetworkConnections/%{vnet_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)

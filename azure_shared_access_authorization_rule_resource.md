@@ -25,7 +25,7 @@ azure_shared_access_authorization_rule_resource {
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
 |api_version | String | true | Client Api Version. |
-|authorization_rule_name | String | true | Authorization Rule Name. |
+|authorization_rule_name | String | true | Aauthorization Rule Name. |
 |id | String | false | Resource Id |
 |location | String | false | Resource location |
 |name | String | false | Resource name |
@@ -59,9 +59,9 @@ Here is a list of endpoints that we use to create, read, update and delete the S
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/notificationHubs/%{notification_hub_name}/AuthorizationRules/%{authorization_rule_name}`|Put|Creates/Updates an authorization rule for a NotificationHub|NotificationHubs_CreateOrUpdateAuthorizationRule|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/AuthorizationRules/%{authorization_rule_name}`|Put|Creates an authorization rule for a namespace|Namespaces_CreateOrUpdateAuthorizationRule|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/notificationHubs/%{notification_hub_name}/AuthorizationRules/%{authorization_rule_name}`|Get|Gets an authorization rule for a NotificationHub by name.|NotificationHubs_GetAuthorizationRule|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/AuthorizationRules/%{authorization_rule_name}`|Get|Gets an authorization rule for a namespace by name.|Namespaces_GetAuthorizationRule|
 |List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/AuthorizationRules`|Get|Gets the authorization rules for a namespace.|Namespaces_ListAuthorizationRules|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/notificationHubs/%{notification_hub_name}/AuthorizationRules/%{authorization_rule_name}`|Put|Creates/Updates an authorization rule for a NotificationHub|NotificationHubs_CreateOrUpdateAuthorizationRule|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/notificationHubs/%{notification_hub_name}/AuthorizationRules/%{authorization_rule_name}`|Delete|Deletes a notificationHub authorization rule|NotificationHubs_DeleteAuthorizationRule|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.NotificationHubs/namespaces/%{namespace_name}/AuthorizationRules/%{authorization_rule_name}`|Delete|Deletes a namespace authorization rule|Namespaces_DeleteAuthorizationRule|

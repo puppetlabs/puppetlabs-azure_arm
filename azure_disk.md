@@ -175,6 +175,6 @@ Here is a list of endpoints that we use to create, read, update and delete the D
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/disks/%{disk_name}`|Put|Creates or updates a disk.|Disks_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Compute/disks`|Get|Lists all the disks under a subscription.|Disks_List|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/disks/%{disk_name}`|Get|Gets information about a disk.|Disks_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/disks`|Get|Lists all the disks under a resource group.|Disks_ListByResourceGroup|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Compute/disks`|Get|Lists all the disks under a subscription.|Disks_List|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/disks/%{disk_name}`|Put|Creates or updates a disk.|Disks_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/disks/%{disk_name}`|Delete|Deletes a disk.|Disks_Delete|

@@ -11,6 +11,7 @@ Puppet::Type.newtype(:azure_tag_contract) do
       :api_id,
       :operation_id,
       :parameters,
+      :product_id,
       :resource_group_name,
       :service_name,
       :tag_id,

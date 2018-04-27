@@ -14,6 +14,7 @@ azure_relay_service_connection_entity {
   name => "name (optional)",
   properties => "properties (optional)",
   resource_group_name => "resource_group_name",
+  slot => "slot",
   subscription_id => "subscription_id",
   tags => "tags (optional)",
   type => "type (optional)",
@@ -31,6 +32,7 @@ azure_relay_service_connection_entity {
 |name | String | false | Resource Name |
 |properties | String | false |  |
 |resource_group_name | String | true | The resource group name |
+|slot | String | true | The name of the slot for the web app. |
 |subscription_id | String | true | Subscription Id |
 |tags | Hash | false | Resource tags |
 |type | String | false | Resource type |
@@ -43,9 +45,9 @@ Here is a list of endpoints that we use to create, read, update and delete the R
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Put||Sites_CreateOrUpdateSiteRelayServiceConnection|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}`|Put||Sites_CreateOrUpdateSiteRelayServiceConnectionSlot|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection`|Get||Sites_ListSiteRelayServiceConnectionsSlot|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}`|Get||Sites_GetSiteRelayServiceConnectionSlot|
 |List - get list using params|``||||
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Put||Sites_CreateOrUpdateSiteRelayServiceConnection|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Delete||Sites_DeleteSiteRelayServiceConnection|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}`|Put||Sites_CreateOrUpdateSiteRelayServiceConnectionSlot|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection/%{entity_name}`|Delete||Sites_DeleteSiteRelayServiceConnectionSlot|

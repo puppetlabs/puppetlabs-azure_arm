@@ -56,6 +56,6 @@ Here is a list of endpoints that we use to create, read, update and delete the T
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventGrid/topics/%{topic_name}`|Put|Asynchronously creates a new topic with the specified parameters.|Topics_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.EventGrid/topics`|Get|List all the topics under an Azure subscription|Topics_ListBySubscription|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventGrid/topics/%{topic_name}`|Get|Get properties of a topic|Topics_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventGrid/topics`|Get|List all the topics under a resource group|Topics_ListByResourceGroup|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.EventGrid/topics`|Get|List all the topics under an Azure subscription|Topics_ListBySubscription|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventGrid/topics/%{topic_name}`|Put|Asynchronously creates a new topic with the specified parameters.|Topics_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventGrid/topics/%{topic_name}`|Delete|Delete existing topic|Topics_Delete|

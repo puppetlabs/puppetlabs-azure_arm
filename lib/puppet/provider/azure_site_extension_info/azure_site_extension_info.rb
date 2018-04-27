@@ -113,7 +113,7 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_InstallSiteExtensionSlot")
+    Puppet.info("Calling operation WebApps_InstallSiteExtension")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -129,13 +129,10 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
     path_params[:site_extension_id] = key_values["siteExtensionId"] unless key_values["siteExtensionId"].nil?
     path_params[:site_extension_id] = ENV["azure_site_extension_id"] unless ENV["azure_site_extension_id"].nil?
     path_params[:site_extension_id] = resource[:site_extension_id] unless resource.nil? or resource[:site_extension_id].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/siteextensions/%{site_extension_id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/siteextensions/%{site_extension_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -159,7 +156,7 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_InstallSiteExtensionSlot")
+    Puppet.info("Calling operation WebApps_InstallSiteExtension")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -175,13 +172,10 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
     path_params[:site_extension_id] = key_values["siteExtensionId"] unless key_values["siteExtensionId"].nil?
     path_params[:site_extension_id] = ENV["azure_site_extension_id"] unless ENV["azure_site_extension_id"].nil?
     path_params[:site_extension_id] = resource[:site_extension_id] unless resource.nil? or resource[:site_extension_id].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/siteextensions/%{site_extension_id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/siteextensions/%{site_extension_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -205,7 +199,7 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_DeleteSiteExtensionSlot")
+    Puppet.info("Calling operation WebApps_DeleteSiteExtension")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -221,13 +215,10 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
     path_params[:site_extension_id] = key_values["siteExtensionId"] unless key_values["siteExtensionId"].nil?
     path_params[:site_extension_id] = ENV["azure_site_extension_id"] unless ENV["azure_site_extension_id"].nil?
     path_params[:site_extension_id] = resource[:site_extension_id] unless resource.nil? or resource[:site_extension_id].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/siteextensions/%{site_extension_id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/siteextensions/%{site_extension_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -291,7 +282,7 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_GetSiteExtensionSlot")
+    Puppet.info("Calling operation WebApps_GetSiteExtension")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -307,13 +298,10 @@ Puppet::Type.type(:azure_site_extension_info).provide(:arm) do
     path_params[:site_extension_id] = key_values["siteExtensionId"] unless key_values["siteExtensionId"].nil?
     path_params[:site_extension_id] = ENV["azure_site_extension_id"] unless ENV["azure_site_extension_id"].nil?
     path_params[:site_extension_id] = resource[:site_extension_id] unless resource.nil? or resource[:site_extension_id].nil?
-    path_params[:slot] = key_values["slot"] unless key_values["slot"].nil?
-    path_params[:slot] = ENV["azure_slot"] unless ENV["azure_slot"].nil?
-    path_params[:slot] = resource[:slot] unless resource.nil? or resource[:slot].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/siteextensions/%{site_extension_id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/siteextensions/%{site_extension_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

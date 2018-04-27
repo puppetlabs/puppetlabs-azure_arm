@@ -13,6 +13,7 @@ azure_site_source_control {
   properties => "properties (optional)",
   resource_group_name => "resource_group_name",
   site_source_control => "siteSourceControl",
+  slot => "slot",
   subscription_id => "subscription_id",
   tags => "tags (optional)",
   type => "type (optional)",
@@ -29,6 +30,7 @@ azure_site_source_control {
 |properties | String | false |  |
 |resource_group_name | String | true | Name of resource group |
 |site_source_control | Hash | true | Request body that contains the source control parameters |
+|slot | String | true | Name of web app slot. If not specified then will default to production slot. |
 |subscription_id | String | true | Subscription Id |
 |tags | Hash | false | Resource tags |
 |type | String | false | Resource type |
@@ -41,9 +43,9 @@ Here is a list of endpoints that we use to create, read, update and delete the S
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/sourcecontrols/web`|Put||Sites_CreateOrUpdateSiteSourceControl|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/sourcecontrols/web`|Put||Sites_CreateOrUpdateSiteSourceControlSlot|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/sourcecontrols/web`|Get||Sites_GetSiteSourceControl|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/sourcecontrols/web`|Get||Sites_GetSiteSourceControlSlot|
 |List - get list using params|``||||
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/sourcecontrols/web`|Put||Sites_CreateOrUpdateSiteSourceControl|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/sourcecontrols/web`|Delete||Sites_DeleteSiteSourceControl|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/sourcecontrols/web`|Put||Sites_CreateOrUpdateSiteSourceControlSlot|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/sourcecontrols/web`|Delete||Sites_DeleteSiteSourceControlSlot|

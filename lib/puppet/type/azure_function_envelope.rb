@@ -74,6 +74,12 @@ Puppet::Type.newtype(:azure_function_envelope) do
       true
     end
   end
+  newparam(:slot) do
+    desc "Name of the deployment slot. If a slot is not specified, the API deletes a deployment for the production slot."
+    validate do |value|
+      true
+    end
+  end
   newparam(:subscription_id) do
     desc "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000)."
     validate do |value|

@@ -1,12 +1,13 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_site_source_control) do
-  @doc = "Source control configuration for an app."
+  @doc = "Describes the source control configuration for web app"
 
   ensurable
 
   validate do
     required_properties = [
+      :location,
       :resource_group_name,
       :site_source_control,
     ]
@@ -18,32 +19,44 @@ Puppet::Type.newtype(:azure_site_source_control) do
     end
   end
   newproperty(:id) do
-    desc "Resource Id."
+    desc "Resource Id"
     validate do |value|
       true
     end
   end
   newproperty(:kind) do
-    desc "Kind of resource."
+    desc "Kind of resource"
+    validate do |value|
+      true
+    end
+  end
+  newproperty(:location) do
+    desc "Resource Location"
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "Resource Name."
+    desc "Resource Name"
     validate do |value|
       true
     end
   end
   newproperty(:properties) do
-    desc "SiteSourceControl resource specific properties"
+    desc ""
+    validate do |value|
+      true
+    end
+  end
+  newproperty(:tags) do
+    desc "Resource tags"
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "Resource type."
+    desc "Resource type"
     validate do |value|
       true
     end
@@ -55,19 +68,19 @@ Puppet::Type.newtype(:azure_site_source_control) do
     end
   end
   newparam(:resource_group_name) do
-    desc "Name of the resource group to which the resource belongs."
+    desc "Name of resource group"
     validate do |value|
       true
     end
   end
   newparam(:site_source_control) do
-    desc "JSON representation of a SiteSourceControl object. See example."
+    desc "Request body that contains the source control parameters"
     validate do |value|
       true
     end
   end
   newparam(:subscription_id) do
-    desc "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000)."
+    desc "Subscription Id"
     validate do |value|
       true
     end

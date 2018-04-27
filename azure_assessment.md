@@ -99,10 +99,10 @@ When assessment is under computation, any PUT will lead to a 400 - Bad Request e
 |Assessments_Create|
 |List - list all|``||||
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Migrate/projects/%{project_name}/groups/%{group_name}/assessments/%{assessment_name}`|Get|Get an existing assessment with the specified name. Returns a json object of type 'assessment' as specified in Models section.|Assessments_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Migrate/projects/%{project_name}/groups/%{group_name}/assessments`|Get|Get all assessments created for the specified group.
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Migrate/projects/%{project_name}/assessments`|Get|Get all assessments created in the project.
 
 Returns a json array of objects of type 'assessment' as specified in Models section.
-|Assessments_ListByGroup|
+|Assessments_ListByProject|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Migrate/projects/%{project_name}/groups/%{group_name}/assessments/%{assessment_name}`|Put|Create a new assessment with the given name and the specified settings. Since name of an assessment in a project is a unique identiefier, if an assessment with the name provided already exists, then the existing assessment is updated.
 
 Any PUT operation, resulting in either create or update on an assessment, will cause the assessment to go in a "InProgress" state. This will be indicated by the field 'computationState' on the Assessment object. During this time no other PUT operation will be allowed on that assessment object, nor will a Delete operation. Once the computation for the assessment is complete, the field 'computationState' will be updated to 'Ready', and then other PUT or DELETE operations can happen on the assessment.

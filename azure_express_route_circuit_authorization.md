@@ -1,5 +1,5 @@
 Document: "expressRouteCircuit"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/expressRouteCircuit.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/expressRouteCircuit.json")
 
 ## ExpressRouteCircuitAuthorization
 

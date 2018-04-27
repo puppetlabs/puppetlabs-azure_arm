@@ -80,7 +80,7 @@ Puppet::Type.type(:azure_express_route_cross_connection_peering).provide(:arm) d
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2018-02-01"
+    key_values["api-version"] = "2018-04-01"
     key_values
   end
 

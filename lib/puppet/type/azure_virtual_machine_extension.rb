@@ -9,9 +9,11 @@ Puppet::Type.newtype(:azure_virtual_machine_extension) do
     required_properties = [
       :location,
       :extension_parameters,
+      :instance_id,
       :resource_group_name,
       :vm_extension_name,
       :vm_name,
+      :vm_scale_set_name,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well

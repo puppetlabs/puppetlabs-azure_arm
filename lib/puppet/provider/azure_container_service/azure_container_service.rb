@@ -27,11 +27,6 @@ Puppet::Type.type(:azure_container_service).provide(:arm) do
     @property_flush[:name] = value
   end
 
-  def properties=(value)
-    Puppet.info("properties setter called to change to #{value}")
-    @property_flush[:properties] = value
-  end
-
   def tags=(value)
     Puppet.info("tags setter called to change to #{value}")
     @property_flush[:tags] = value
@@ -65,7 +60,6 @@ Puppet::Type.type(:azure_container_service).provide(:arm) do
           location: item["location"],
           name: item["name"],
           parameters: item["parameters"],
-          properties: item["properties"],
           resource_group_name: item["resourceGroupName"],
           subscription_id: item["subscriptionId"],
           tags: item["tags"],
@@ -103,7 +97,6 @@ Puppet::Type.type(:azure_container_service).provide(:arm) do
       location: instance.location.respond_to?(:to_hash) ? instance.location.to_hash : instance.location,
       name: instance.name.respond_to?(:to_hash) ? instance.name.to_hash : instance.name,
       parameters: instance.parameters.respond_to?(:to_hash) ? instance.parameters.to_hash : instance.parameters,
-      properties: instance.properties.respond_to?(:to_hash) ? instance.properties.to_hash : instance.properties,
       resource_group_name: instance.resource_group_name.respond_to?(:to_hash) ? instance.resource_group_name.to_hash : instance.resource_group_name,
       subscription_id: instance.subscription_id.respond_to?(:to_hash) ? instance.subscription_id.to_hash : instance.subscription_id,
       tags: instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags,
@@ -153,7 +146,6 @@ Puppet::Type.type(:azure_container_service).provide(:arm) do
     container_service["id"] = resource[:id] unless resource[:id].nil?
     container_service["location"] = resource[:location] unless resource[:location].nil?
     container_service["name"] = resource[:name] unless resource[:name].nil?
-    container_service["properties"] = resource[:properties] unless resource[:properties].nil?
     container_service["tags"] = resource[:tags] unless resource[:tags].nil?
     container_service["type"] = resource[:type] unless resource[:type].nil?
     return container_service
@@ -161,7 +153,7 @@ Puppet::Type.type(:azure_container_service).provide(:arm) do
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2017-01-31"
+    key_values["api-version"] = "2017-07-01"
     key_values
   end
 

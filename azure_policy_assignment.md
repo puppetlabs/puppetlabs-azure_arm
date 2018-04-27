@@ -1,5 +1,5 @@
-Document: "policyAssignments"
-Path: "/root/specs/specification/resources/resource-manager/Microsoft.Authorization/stable/2016-12-01/policyAssignments.json")
+Document: "policy"
+Path: "/root/specs/specification/resources/resource-manager/Microsoft.Authorization/stable/2016-04-01/policy.json")
 
 ## PolicyAssignment
 
@@ -21,7 +21,7 @@ azure_policy_assignment {
 |api_version | String | true | The API version to use for the operation. |
 |id | String | false | The ID of the policy assignment. |
 |name | String | false | The name of the policy assignment. |
-|parameters | Hash | true | Parameters for policy assignment. |
+|parameters | Hash | true | Parameters for the policy assignment. |
 |properties | [PolicyAssignmentProperties](#policyassignmentproperties) | false | Properties for the policy assignment. |
 |scope | String | true | The scope of the policy assignment. |
 |subscription_id | String | true | The ID of the target subscription. |
@@ -31,9 +31,7 @@ azure_policy_assignment {
 
 ```puppet
 $azure_policy_assignment_properties = {
-  description => "description (optional)",
   displayName => "displayName (optional)",
-  parameters => "parameters (optional)",
   policyDefinitionId => "policyDefinitionId (optional)",
   scope => "scope (optional)",
 }
@@ -41,9 +39,7 @@ $azure_policy_assignment_properties = {
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
-|description | String | false | This message will be part of response in case of policy violation. |
 |displayName | String | false | The display name of the policy assignment. |
-|parameters | Hash | false | Required if a parameter is used in policy rule. |
 |policyDefinitionId | String | false | The ID of the policy definition. |
 |scope | String | false | The scope for the policy assignment. |
 
@@ -55,9 +51,9 @@ Here is a list of endpoints that we use to create, read, update and delete the P
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/%{policy_assignment_id}`|Put|Policy assignments are inherited by child resources. For example, when you apply a policy to a resource group that policy is assigned to all resources in the group. When providing a scope for the assigment, use '/subscriptions/{subscription-id}/' for subscriptions, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for resource groups, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}' for resources.|PolicyAssignments_CreateById|
-|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyAssignments`|Get|Gets all the policy assignments for a subscription.|PolicyAssignments_List|
-|List - get one|`/%{policy_assignment_id}`|Get|When providing a scope for the assigment, use '/subscriptions/{subscription-id}/' for subscriptions, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for resource groups, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}' for resources.|PolicyAssignments_GetById|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyAssignments`|Get|Gets all the policy assignments for a subscription.|PolicyAssignments_List|
-|Update|`/%{policy_assignment_id}`|Put|Policy assignments are inherited by child resources. For example, when you apply a policy to a resource group that policy is assigned to all resources in the group. When providing a scope for the assigment, use '/subscriptions/{subscription-id}/' for subscriptions, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for resource groups, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider-namespace}/{resource-type}/{resource-name}' for resources.|PolicyAssignments_CreateById|
-|Delete|`/%{scope}/providers/Microsoft.Authorization/policyAssignments/%{policy_assignment_name}`|Delete|Deletes a policy assignment.|PolicyAssignments_Delete|
+|Create|`/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}`|Put|Policy assignments are inherited by child resources. For example, when you apply a policy to a resource group that policy is assigned to all resources in the group.|PolicyAssignments_Create|
+|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyassignments`|Get|Gets all the policy assignments for a subscription.|PolicyAssignments_List|
+|List - get one|`/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}`|Get|Gets a policy assignment.|PolicyAssignments_Get|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/policyAssignments`|Get|Gets policy assignments for the resource group.|PolicyAssignments_ListForResourceGroup|
+|Update|`/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}`|Put|Policy assignments are inherited by child resources. For example, when you apply a policy to a resource group that policy is assigned to all resources in the group.|PolicyAssignments_Create|
+|Delete|`/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}`|Delete|Deletes a policy assignment.|PolicyAssignments_Delete|

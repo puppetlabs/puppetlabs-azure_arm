@@ -161,28 +161,18 @@ $azure_firewall_rule_properties = {
 
 ```puppet
 $azure_trusted_id_provider = {
-  accountName => "accountName",
-  api-version => "api-version",
   id => "id (optional)",
   name => "name (optional)",
-  parameters => "parameters",
   properties => $azure_trusted_id_provider_properties
-  resourceGroupName => "resourceGroupName",
-  subscriptionId => "subscriptionId",
   type => "type (optional)",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
-|accountName | String | true | The name of the Data Lake Store account. |
-|api-version | String | true | Client Api Version. |
 |id | String | false | The resource identifier. |
 |name | String | false | The resource name. |
-|parameters | Hash | true | Parameters supplied to create or replace the trusted identity provider. |
 |properties | [TrustedIdProviderProperties](#trustedidproviderproperties) | false | The trusted identity provider properties. |
-|resourceGroupName | String | true | The name of the Azure resource group. |
-|subscriptionId | String | true | Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
 |type | String | false | The resource type. |
         
 ## TrustedIdProviderProperties

@@ -1,5 +1,5 @@
 Document: "expressRouteCircuit"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/expressRouteCircuit.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/expressRouteCircuit.json")
 
 ## ExpressRouteCircuit
 
@@ -105,19 +105,31 @@ $azure_authorization_properties_format = {
 
 ```puppet
 $azure_express_route_circuit_peering = {
+  api-version => "api-version",
+  circuitName => "circuitName",
   etag => "etag (optional)",
   id => "id (optional)",
   name => "name (optional)",
+  peeringName => "peeringName",
+  peeringParameters => "peeringParameters",
   properties => $azure_express_route_circuit_peering_properties_format
+  resourceGroupName => "resourceGroupName",
+  subscriptionId => "subscriptionId",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
+|api-version | String | true | Client API version. |
+|circuitName | String | true | The name of the express route circuit. |
 |etag | String | false | A unique read-only string that changes whenever the resource is updated. |
 |id | String | false | Resource ID. |
 |name | String | false | Gets name of the resource that is unique within a resource group. This name can be used to access the resource. |
+|peeringName | String | true | The name of the peering. |
+|peeringParameters | Hash | true | Parameters supplied to the create or update express route circuit peering operation. |
 |properties | [ExpressRouteCircuitPeeringPropertiesFormat](#expressroutecircuitpeeringpropertiesformat) | false |  |
+|resourceGroupName | String | true | The name of the resource group. |
+|subscriptionId | String | true | The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
         
 ## ExpressRouteCircuitPeeringPropertiesFormat
 
@@ -422,6 +434,6 @@ Here is a list of endpoints that we use to create, read, update and delete the E
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/expressRouteCircuits/%{circuit_name}`|Put|Creates or updates an express route circuit.|ExpressRouteCircuits_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/expressRouteCircuits`|Get|Gets all the express route circuits in a subscription.|ExpressRouteCircuits_ListAll|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/expressRouteCircuits/%{circuit_name}`|Get|Gets information about the specified express route circuit.|ExpressRouteCircuits_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/expressRouteCircuits`|Get|Gets all the express route circuits in a subscription.|ExpressRouteCircuits_ListAll|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/expressRouteCircuits`|Get|Gets all the express route circuits in a resource group.|ExpressRouteCircuits_List|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/expressRouteCircuits/%{circuit_name}`|Put|Creates or updates an express route circuit.|ExpressRouteCircuits_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/expressRouteCircuits/%{circuit_name}`|Delete|Deletes the specified express route circuit.|ExpressRouteCircuits_Delete|

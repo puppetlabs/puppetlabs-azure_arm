@@ -266,23 +266,29 @@ Puppet::Type.type(:azure_storage_classification_mapping).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation ReplicationStorageClassificationMappings_List")
+    Puppet.info("Calling operation ReplicationStorageClassificationMappings_ListByReplicationStorageClassifications")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:fabric_name] = key_values["fabricName"] unless key_values["fabricName"].nil?
+    path_params[:fabric_name] = ENV["azure_fabric_name"] unless ENV["azure_fabric_name"].nil?
+    path_params[:fabric_name] = resource[:fabric_name] unless resource.nil? or resource[:fabric_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:resource_name] = key_values["resourceName"] unless key_values["resourceName"].nil?
     path_params[:resource_name] = ENV["azure_resource_name"] unless ENV["azure_resource_name"].nil?
     path_params[:resource_name] = resource[:resource_name] unless resource.nil? or resource[:resource_name].nil?
+    path_params[:storage_classification_name] = key_values["storageClassificationName"] unless key_values["storageClassificationName"].nil?
+    path_params[:storage_classification_name] = ENV["azure_storage_classification_name"] unless ENV["azure_storage_classification_name"].nil?
+    path_params[:storage_classification_name] = resource[:storage_classification_name] unless resource.nil? or resource[:storage_classification_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/Subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{resource_name}/replicationStorageClassificationMappings" % path_params
+    uri_string = "https://management.azure.com/Subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{resource_name}/replicationFabrics/%{fabric_name}/replicationStorageClassifications/%{storage_classification_name}/replicationStorageClassificationMappings" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

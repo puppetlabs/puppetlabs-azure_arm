@@ -10,7 +10,6 @@ Puppet::Type.newtype(:azure_vnet_info) do
       :location,
       :connection_envelope,
       :resource_group_name,
-      :slot,
       :vnet_name,
     ]
     required_properties.each do |property|

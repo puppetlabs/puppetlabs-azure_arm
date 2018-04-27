@@ -303,16 +303,13 @@ Puppet::Type.type(:azure_protection_policy_resource).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation ProtectionPolicyOperationResults_Get")
+    Puppet.info("Calling operation ProtectionPolicies_Get")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:operation_id] = key_values["operationId"] unless key_values["operationId"].nil?
-    path_params[:operation_id] = ENV["azure_operation_id"] unless ENV["azure_operation_id"].nil?
-    path_params[:operation_id] = resource[:operation_id] unless resource.nil? or resource[:operation_id].nil?
     path_params[:policy_name] = key_values["policyName"] unless key_values["policyName"].nil?
     path_params[:policy_name] = ENV["azure_policy_name"] unless ENV["azure_policy_name"].nil?
     path_params[:policy_name] = resource[:policy_name] unless resource.nil? or resource[:policy_name].nil?
@@ -325,7 +322,7 @@ Puppet::Type.type(:azure_protection_policy_resource).provide(:arm) do
     path_params[:vault_name] = key_values["vaultName"] unless key_values["vaultName"].nil?
     path_params[:vault_name] = ENV["azure_vault_name"] unless ENV["azure_vault_name"].nil?
     path_params[:vault_name] = resource[:vault_name] unless resource.nil? or resource[:vault_name].nil?
-    uri_string = "https://management.azure.com/Subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}/backupPolicies/%{policy_name}/operationResults/%{operation_id}" % path_params
+    uri_string = "https://management.azure.com/Subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}/backupPolicies/%{policy_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

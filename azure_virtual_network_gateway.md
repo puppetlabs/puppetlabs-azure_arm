@@ -1,5 +1,5 @@
 Document: "virtualNetworkGateway"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/virtualNetworkGateway.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/virtualNetworkGateway.json")
 
 ## VirtualNetworkGateway
 

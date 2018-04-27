@@ -8,7 +8,6 @@ Puppet::Type.newtype(:azure_role_assignment) do
   validate do
     required_properties = [
       :parameters,
-      :scope,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -50,12 +49,6 @@ Puppet::Type.newtype(:azure_role_assignment) do
   end
   newparam(:parameters) do
     desc "Parameters for the role assignment."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:scope) do
-    desc "The scope of the role assignment to create. The scope can be any REST resource instance. For example, use '/subscriptions/{subscription-id}/' for a subscription, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for a resource group, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' for a resource."
     validate do |value|
       true
     end

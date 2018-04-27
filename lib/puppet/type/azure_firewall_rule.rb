@@ -1,16 +1,15 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_firewall_rule) do
-  @doc = "Represents a server firewall rule."
+  @doc = "Data Lake Analytics firewall rule information."
 
   ensurable
 
   validate do
     required_properties = [
-      :properties,
+      :account_name,
       :parameters,
       :resource_group_name,
-      :server_name,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -20,56 +19,56 @@ Puppet::Type.newtype(:azure_firewall_rule) do
     end
   end
   newproperty(:id) do
-    desc "Resource ID"
+    desc "The resource identifier."
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "Resource name."
+    desc "The resource name."
     validate do |value|
       true
     end
   end
   newproperty(:properties) do
-    desc "The properties of a firewall rule."
+    desc "The firewall rule properties."
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "Resource type."
+    desc "The resource type."
+    validate do |value|
+      true
+    end
+  end
+  newparam(:account_name) do
+    desc "The name of the Data Lake Analytics account."
     validate do |value|
       true
     end
   end
   newparam(:api_version) do
-    desc "The API version to use for the request."
+    desc "Client Api Version."
     validate do |value|
       true
     end
   end
   newparam(:parameters) do
-    desc "The required parameters for creating or updating a firewall rule."
+    desc "Parameters supplied to create or update the firewall rule."
     validate do |value|
       true
     end
   end
   newparam(:resource_group_name) do
-    desc "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:server_name) do
-    desc "The name of the server."
+    desc "The name of the Azure resource group."
     validate do |value|
       true
     end
   end
   newparam(:subscription_id) do
-    desc "The subscription ID that identifies an Azure subscription."
+    desc "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
     validate do |value|
       true
     end

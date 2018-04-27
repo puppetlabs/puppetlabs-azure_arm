@@ -12,11 +12,6 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
     @is_delete = false
   end
 
-  def e_tag=(value)
-    Puppet.info("e_tag setter called to change to #{value}")
-    @property_flush[:e_tag] = value
-  end
-
   def id=(value)
     Puppet.info("id setter called to change to #{value}")
     @property_flush[:id] = value
@@ -35,11 +30,6 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
   def properties=(value)
     Puppet.info("properties setter called to change to #{value}")
     @property_flush[:properties] = value
-  end
-
-  def sku=(value)
-    Puppet.info("sku setter called to change to #{value}")
-    @property_flush[:sku] = value
   end
 
   def tags=(value)
@@ -71,17 +61,15 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
         hash = {
 
           api_version: item["api-version"],
-          e_tag: item["eTag"],
           id: item["id"],
           location: item["location"],
           name: item["name"],
+          parameters: item["parameters"],
           properties: item["properties"],
           resource_group_name: item["resourceGroupName"],
-          sku: item["sku"],
           subscription_id: item["subscriptionId"],
           tags: item["tags"],
           type: item["type"],
-          vault: item["vault"],
           ensure: :present,
         }
         Puppet.debug("Adding to collection: #{item}")
@@ -111,17 +99,15 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
       ensure: :present,
 
       api_version: instance.api_version.respond_to?(:to_hash) ? instance.api_version.to_hash : instance.api_version,
-      e_tag: instance.e_tag.respond_to?(:to_hash) ? instance.e_tag.to_hash : instance.e_tag,
       id: instance.id.respond_to?(:to_hash) ? instance.id.to_hash : instance.id,
       location: instance.location.respond_to?(:to_hash) ? instance.location.to_hash : instance.location,
       name: instance.name.respond_to?(:to_hash) ? instance.name.to_hash : instance.name,
+      parameters: instance.parameters.respond_to?(:to_hash) ? instance.parameters.to_hash : instance.parameters,
       properties: instance.properties.respond_to?(:to_hash) ? instance.properties.to_hash : instance.properties,
       resource_group_name: instance.resource_group_name.respond_to?(:to_hash) ? instance.resource_group_name.to_hash : instance.resource_group_name,
-      sku: instance.sku.respond_to?(:to_hash) ? instance.sku.to_hash : instance.sku,
       subscription_id: instance.subscription_id.respond_to?(:to_hash) ? instance.subscription_id.to_hash : instance.subscription_id,
       tags: instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags,
       type: instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type,
-      vault: instance.vault.respond_to?(:to_hash) ? instance.vault.to_hash : instance.vault,
       object: instance,
     }
   end
@@ -164,12 +150,10 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
 
   def build_hash
     vault = {}
-    vault["eTag"] = resource[:e_tag] unless resource[:e_tag].nil?
     vault["id"] = resource[:id] unless resource[:id].nil?
     vault["location"] = resource[:location] unless resource[:location].nil?
     vault["name"] = resource[:name] unless resource[:name].nil?
     vault["properties"] = resource[:properties] unless resource[:properties].nil?
-    vault["sku"] = resource[:sku] unless resource[:sku].nil?
     vault["tags"] = resource[:tags] unless resource[:tags].nil?
     vault["type"] = resource[:type] unless resource[:type].nil?
     return vault
@@ -177,7 +161,7 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2016-06-01"
+    key_values["api-version"] = "2016-10-01"
     key_values
   end
 
@@ -203,19 +187,22 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
 
   def self.invoke_list_all(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Vaults_ListBySubscriptionId")
+    Puppet.info("Calling operation Vaults_ListBySubscription")
     path_params = {}
     query_params = {}
     header_params = {}
+    query_params["$top"] = key_values["$top"] unless key_values["$top"].nil?
+    query_params["$top"] = ENV["azure_$top"] unless ENV["azure_$top"].nil?
+    query_params["$top"] = resource[:$top] unless resource.nil? or resource[:$top].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.RecoveryServices/vaults" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.KeyVault/vaults" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -244,21 +231,21 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
+    path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
+    path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    path_params[:vault] = key_values["vault"] unless key_values["vault"].nil?
-    path_params[:vault] = ENV["azure_vault"] unless ENV["azure_vault"].nil?
-    path_params[:vault] = resource[:vault] unless resource.nil? or resource[:vault].nil?
     path_params[:vault_name] = key_values["vaultName"] unless key_values["vaultName"].nil?
     path_params[:vault_name] = ENV["azure_vault_name"] unless ENV["azure_vault_name"].nil?
     path_params[:vault_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -287,21 +274,21 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
+    path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
+    path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    path_params[:vault] = key_values["vault"] unless key_values["vault"].nil?
-    path_params[:vault] = ENV["azure_vault"] unless ENV["azure_vault"].nil?
-    path_params[:vault] = resource[:vault] unless resource.nil? or resource[:vault].nil?
     path_params[:vault_name] = key_values["vaultName"] unless key_values["vaultName"].nil?
     path_params[:vault_name] = ENV["azure_vault_name"] unless ENV["azure_vault_name"].nil?
     path_params[:vault_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -339,9 +326,9 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
     path_params[:vault_name] = key_values["vaultName"] unless key_values["vaultName"].nil?
     path_params[:vault_name] = ENV["azure_vault_name"] unless ENV["azure_vault_name"].nil?
     path_params[:vault_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -363,19 +350,22 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Vaults_ListBySubscriptionId")
+    Puppet.info("Calling operation Vaults_ListBySubscription")
     path_params = {}
     query_params = {}
     header_params = {}
+    query_params["$top"] = key_values["$top"] unless key_values["$top"].nil?
+    query_params["$top"] = ENV["azure_$top"] unless ENV["azure_$top"].nil?
+    query_params["$top"] = resource[:$top] unless resource.nil? or resource[:$top].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.RecoveryServices/vaults" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.KeyVault/vaults" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -413,9 +403,9 @@ Puppet::Type.type(:azure_vault).provide(:arm) do
     path_params[:vault_name] = key_values["vaultName"] unless key_values["vaultName"].nil?
     path_params[:vault_name] = ENV["azure_vault_name"] unless ENV["azure_vault_name"].nil?
     path_params[:vault_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)

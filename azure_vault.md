@@ -1,93 +1,115 @@
-Document: "vaults"
-Path: "/root/specs/specification/recoveryservices/resource-manager/Microsoft.RecoveryServices/stable/2016-06-01/vaults.json")
+Document: "keyvault"
+Path: "/root/specs/specification/keyvault/resource-manager/Microsoft.KeyVault/stable/2016-10-01/keyvault.json")
 
 ## Vault
 
 ```puppet
 azure_vault {
   api_version => "api_version",
-  e_tag => "e_tag (optional)",
   id => "id (optional)",
   location => "location (optional)",
   name => "name (optional)",
+  parameters => "parameters",
   properties => $azure_vault_properties
   resource_group_name => "resource_group_name",
-  sku => $azure_sku
   subscription_id => "subscription_id",
   tags => "tags (optional)",
   type => "type (optional)",
-  vault => "vault",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
 |api_version | String | true | Client Api Version. |
-|e_tag | String | false | Optional ETag. |
-|id | String | false | Resource Id represents the complete path to the resource. |
-|location | String | false | Resource location. |
-|name | String | false | Resource name associated with the resource. |
-|properties | [VaultProperties](#vaultproperties) | false |  |
-|resource_group_name | String | true | The name of the resource group where the recovery services vault is present. |
-|sku | [Sku](#sku) | false |  |
-|subscription_id | String | true | The subscription Id. |
-|tags | Hash | false | Resource tags. |
-|type | String | false | Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/... |
-|vault | Hash | true | Recovery Services Vault to be created. |
+|id | String | false | The Azure Resource Manager resource ID for the key vault. |
+|location | String | false | The supported Azure location where the key vault should be created. |
+|name | String | false | The name of the key vault. |
+|parameters | Hash | true | Parameters to create or update the vault |
+|properties | [VaultProperties](#vaultproperties) | true | Properties of the vault |
+|resource_group_name | String | true | The name of the Resource Group to which the server belongs. |
+|subscription_id | String | true | Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
+|tags | Hash | false | The tags that will be assigned to the key vault.  |
+|type | String | false | The resource type of the key vault. |
         
 ## VaultProperties
 
 ```puppet
 $azure_vault_properties = {
-  provisioningState => "provisioningState (optional)",
-  upgradeDetails => $azure_upgrade_details
+  accessPolicies => $azure_access_policy_entry
+  createMode => "createMode (optional)",
+  enabledForDeployment => "enabledForDeployment (optional)",
+  enabledForDiskEncryption => "enabledForDiskEncryption (optional)",
+  enabledForTemplateDeployment => "enabledForTemplateDeployment (optional)",
+  enablePurgeProtection => "enablePurgeProtection (optional)",
+  enableSoftDelete => "enableSoftDelete (optional)",
+  sku => $azure_sku
+  tenantId => "tenantId",
+  vaultUri => "vaultUri (optional)",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
-|provisioningState | String | false | Provisioning State. |
-|upgradeDetails | [UpgradeDetails](#upgradedetails) | false |  |
+|accessPolicies | [AccessPolicyEntry](#accesspolicyentry) | false | An array of 0 to 16 identities that have access to the key vault. All identities in the array must use the same tenant ID as the key vault's tenant ID. |
+|createMode | String | false | The vault's create mode to indicate whether the vault need to be recovered or not. |
+|enabledForDeployment | Boolean | false | Property to specify whether Azure Virtual Machines are permitted to retrieve certificates stored as secrets from the key vault. |
+|enabledForDiskEncryption | Boolean | false | Property to specify whether Azure Disk Encryption is permitted to retrieve secrets from the vault and unwrap keys. |
+|enabledForTemplateDeployment | Boolean | false | Property to specify whether Azure Resource Manager is permitted to retrieve secrets from the key vault. |
+|enablePurgeProtection | Boolean | false | Property specifying whether protection against purge is enabled for this vault. Setting this property to true activates protection against purge for this vault and its content - only the Key Vault service may initiate a hard, irrecoverable deletion. The setting is effective only if soft delete is also enabled. Enabling this functionality is irreversible - that is, the property does not accept false as its value. |
+|enableSoftDelete | Boolean | false | Property specifying whether recoverable deletion is enabled for this key vault. Setting this property to true activates the soft delete feature, whereby vaults or vault entities can be recovered after deletion. Enabling this functionality is irreversible - that is, the property does not accept false as its value. |
+|sku | [Sku](#sku) | true | SKU details |
+|tenantId | String | true | The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault. |
+|vaultUri | String | false | The URI of the vault for performing operations on keys and secrets. |
         
-## UpgradeDetails
+## AccessPolicyEntry
 
 ```puppet
-$azure_upgrade_details = {
-  endTimeUtc => "endTimeUtc (optional)",
-  lastUpdatedTimeUtc => "lastUpdatedTimeUtc (optional)",
-  message => "message (optional)",
-  operationId => "operationId (optional)",
-  previousResourceId => "previousResourceId (optional)",
-  startTimeUtc => "startTimeUtc (optional)",
-  status => "status (optional)",
-  triggerType => "triggerType (optional)",
-  upgradedResourceId => "upgradedResourceId (optional)",
+$azure_access_policy_entry = {
+  applicationId => "applicationId (optional)",
+  objectId => "objectId",
+  permissions => $azure_permissions
+  tenantId => "tenantId",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
-|endTimeUtc | String | false | UTC time at which the upgrade operation has ended. |
-|lastUpdatedTimeUtc | String | false | UTC time at which the upgrade operation status was last updated. |
-|message | String | false | Message to the user containing information about the upgrade operation. |
-|operationId | String | false | ID of the vault upgrade operation. |
-|previousResourceId | String | false | Resource ID of the vault before the upgrade. |
-|startTimeUtc | String | false | UTC time at which the upgrade operation has started. |
-|status | String | false | Status of the vault upgrade operation. |
-|triggerType | String | false | The way the vault upgradation was triggered. |
-|upgradedResourceId | String | false | Resource ID of the upgraded vault. |
+|applicationId | String | false |  Application ID of the client making request on behalf of a principal |
+|objectId | String | true | The object ID of a user, service principal or security group in the Azure Active Directory tenant for the vault. The object ID must be unique for the list of access policies. |
+|permissions | [Permissions](#permissions) | true | Permissions the identity has for keys, secrets and certificates. |
+|tenantId | String | true | The Azure Active Directory tenant ID that should be used for authenticating requests to the key vault. |
+        
+## Permissions
+
+```puppet
+$azure_permissions = {
+  certificates => "certificates (optional)",
+  keys => "keys (optional)",
+  secrets => "secrets (optional)",
+  storage => "storage (optional)",
+}
+```
+
+| Name        | Type           | Required       | Description       |
+| ------------- | ------------- | ------------- | ------------- |
+|certificates | Array | false | Permissions to certificates |
+|keys | Array | false | Permissions to keys |
+|secrets | Array | false | Permissions to secrets |
+|storage | Array | false | Permissions to storage accounts |
         
 ## Sku
 
 ```puppet
 $azure_sku = {
+  family => "family",
   name => "name",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
-|name | String | true | The Sku name. |
+|family | String | true | SKU family name |
+|name | String | true | SKU name to specify whether the key vault is a standard vault or a premium vault. |
 
 
 
@@ -97,9 +119,9 @@ Here is a list of endpoints that we use to create, read, update and delete the V
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}`|Put|Creates or updates a Recovery Services vault.|Vaults_CreateOrUpdate|
-|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.RecoveryServices/vaults`|Get|Fetches all the resources of the specified type in the subscription.|Vaults_ListBySubscriptionId|
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}`|Get|Get the Vault details.|Vaults_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.RecoveryServices/vaults`|Get|Fetches all the resources of the specified type in the subscription.|Vaults_ListBySubscriptionId|
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}`|Put|Creates or updates a Recovery Services vault.|Vaults_CreateOrUpdate|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{vault_name}`|Delete|Deletes a vault.|Vaults_Delete|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}`|Put|Create or update a key vault in the specified subscription.|Vaults_CreateOrUpdate|
+|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.KeyVault/vaults`|Get|The List operation gets information about the vaults associated with the subscription.|Vaults_ListBySubscription|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}`|Get|Gets the specified Azure key vault.|Vaults_Get|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.KeyVault/vaults`|Get|The List operation gets information about the vaults associated with the subscription.|Vaults_ListBySubscription|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}`|Put|Create or update a key vault in the specified subscription.|Vaults_CreateOrUpdate|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.KeyVault/vaults/%{vault_name}`|Delete|Deletes the specified Azure key vault.|Vaults_Delete|

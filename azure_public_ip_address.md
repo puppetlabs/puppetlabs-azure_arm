@@ -1,5 +1,5 @@
 Document: "publicIpAddress"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/publicIpAddress.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/publicIpAddress.json")
 
 ## PublicIPAddress
 

@@ -52,6 +52,6 @@ Here is a list of endpoints that we use to create, read, update and delete the R
 |Create|`/%{link_id}`|Put|Creates or updates a resource link between the specified resources.|ResourceLinks_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Resources/links`|Get|Gets all the linked resources for the subscription.|ResourceLinks_ListAtSubscription|
 |List - get one|`/%{link_id}`|Get|Gets a resource link with the specified ID.|ResourceLinks_Get|
-|List - get list using params|`/%{scope}/providers/Microsoft.Resources/links`|Get|Gets a list of resource links at and below the specified source scope.|ResourceLinks_ListAtSourceScope|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Resources/links`|Get|Gets all the linked resources for the subscription.|ResourceLinks_ListAtSubscription|
 |Update|`/%{link_id}`|Put|Creates or updates a resource link between the specified resources.|ResourceLinks_CreateOrUpdate|
 |Delete|`/%{link_id}`|Delete|Deletes a resource link with the specified ID.|ResourceLinks_Delete|

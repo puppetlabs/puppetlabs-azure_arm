@@ -218,9 +218,6 @@ Puppet::Type.type(:azure_workbook).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    query_params["location"] = key_values["location"] unless key_values["location"].nil?
-    query_params["location"] = ENV["azure_location"] unless ENV["azure_location"].nil?
-    query_params["location"] = resource[:location] unless resource.nil? or resource[:location].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
@@ -267,9 +264,6 @@ Puppet::Type.type(:azure_workbook).provide(:arm) do
     query_params["category"] = key_values["category"] unless key_values["category"].nil?
     query_params["category"] = ENV["azure_category"] unless ENV["azure_category"].nil?
     query_params["category"] = resource[:category] unless resource.nil? or resource[:category].nil?
-    query_params["location"] = key_values["location"] unless key_values["location"].nil?
-    query_params["location"] = ENV["azure_location"] unless ENV["azure_location"].nil?
-    query_params["location"] = resource[:location] unless resource.nil? or resource[:location].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
@@ -310,9 +304,6 @@ Puppet::Type.type(:azure_workbook).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    query_params["location"] = key_values["location"] unless key_values["location"].nil?
-    query_params["location"] = ENV["azure_location"] unless ENV["azure_location"].nil?
-    query_params["location"] = resource[:location] unless resource.nil? or resource[:location].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?

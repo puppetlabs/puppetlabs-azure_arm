@@ -1,5 +1,5 @@
-Document: "mysql"
-Path: "/root/specs/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/mysql.json")
+Document: "postgresql"
+Path: "/root/specs/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2017-12-01/postgresql.json")
 
 ## Server
 
@@ -121,9 +121,9 @@ Here is a list of endpoints that we use to create, read, update and delete the S
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}`|Put|Creates a new server or updates an existing server. The update action will overwrite the existing server.|Servers_Create|
-|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.DBforMySQL/servers`|Get|List all the servers in a given subscription.|Servers_List|
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}`|Get|Gets information about a server.|Servers_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.DBforMySQL/servers`|Get|List all the servers in a given subscription.|Servers_List|
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}`|Put|Creates a new server or updates an existing server. The update action will overwrite the existing server.|Servers_Create|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}`|Delete|Deletes a server.|Servers_Delete|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}`|Put|Creates a new server, or will overwrite an existing server.|Servers_Create|
+|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.DBforPostgreSQL/servers`|Get|List all the servers in a given subscription.|Servers_List|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}`|Get|Gets information about a server.|Servers_Get|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers`|Get|List all the servers in a given resource group.|Servers_ListByResourceGroup|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}`|Put|Creates a new server, or will overwrite an existing server.|Servers_Create|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}`|Delete|Deletes a server.|Servers_Delete|

@@ -9,6 +9,7 @@ Puppet::Type.newtype(:azure_public_certificate) do
     required_properties = [
       :public_certificate,
       :resource_group_name,
+      :slot,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well

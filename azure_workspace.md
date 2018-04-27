@@ -102,6 +102,6 @@ Here is a list of endpoints that we use to create, read, update and delete the W
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Databricks/workspaces/%{workspace_name}`|Put|Creates a new workspace.|Workspaces_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Databricks/workspaces`|Get|Gets all the workspaces within a subscription.|Workspaces_ListBySubscription|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Databricks/workspaces/%{workspace_name}`|Get|Gets the workspace.|Workspaces_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Databricks/workspaces`|Get|Gets all the workspaces within a subscription.|Workspaces_ListBySubscription|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Databricks/workspaces`|Get|Gets all the workspaces within a resource group.|Workspaces_ListByResourceGroup|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Databricks/workspaces/%{workspace_name}`|Put|Creates a new workspace.|Workspaces_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Databricks/workspaces/%{workspace_name}`|Delete|Deletes the workspace.|Workspaces_Delete|

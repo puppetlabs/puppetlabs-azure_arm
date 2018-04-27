@@ -177,7 +177,7 @@ Puppet::Type.type(:azure_load_balancer).provide(:arm) do
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2018-02-01"
+    key_values["api-version"] = "2018-04-01"
     key_values
   end
 

@@ -84,6 +84,6 @@ Here is a list of endpoints that we use to create, read, update and delete the M
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.StorSimple/managers/%{manager_name}`|Put|Creates or updates the manager.|Managers_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.StorSimple/managers`|Get|Retrieves all the managers in a subscription.|Managers_List|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.StorSimple/managers/%{manager_name}`|Get|Returns the properties of the specified manager name.|Managers_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.StorSimple/managers`|Get|Retrieves all the managers in a subscription.|Managers_List|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.StorSimple/managers`|Get|Retrieves all the managers in a resource group.|Managers_ListByResourceGroup|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.StorSimple/managers/%{manager_name}`|Put|Creates or updates the manager.|Managers_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.StorSimple/managers/%{manager_name}`|Delete|Deletes the manager.|Managers_Delete|

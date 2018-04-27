@@ -91,18 +91,28 @@ $azure_data_lake_analytics_account_properties = {
 
 ```puppet
 $azure_compute_policy = {
+  accountName => "accountName",
+  api-version => "api-version",
   id => "id (optional)",
   name => "name (optional)",
+  parameters => "parameters",
   properties => $azure_compute_policy_properties
+  resourceGroupName => "resourceGroupName",
+  subscriptionId => "subscriptionId",
   type => "type (optional)",
 }
 ```
 
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
+|accountName | String | true | The name of the Data Lake Analytics account. |
+|api-version | String | true | Client Api Version. |
 |id | String | false | The resource identifier. |
 |name | String | false | The resource name. |
+|parameters | Hash | true | Parameters supplied to create or update the compute policy. The max degree of parallelism per job property, min priority per job property, or both must be present. |
 |properties | [ComputePolicyProperties](#computepolicyproperties) | false | The compute policy properties. |
+|resourceGroupName | String | true | The name of the Azure resource group. |
+|subscriptionId | String | true | Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
 |type | String | false | The resource type. |
         
 ## ComputePolicyProperties

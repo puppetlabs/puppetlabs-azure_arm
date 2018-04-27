@@ -110,6 +110,6 @@ Here is a list of endpoints that we use to create, read, update and delete the G
 |Create|`/%{resource_id}`|Put|Create a resource by ID.|Resources_CreateOrUpdateById|
 |List - list all|`/subscriptions/%{subscription_id}/resources`|Get|Get all the resources in a subscription.|Resources_List|
 |List - get one|`/%{resource_id}`|Get|Gets a resource by ID.|Resources_GetById|
-|List - get list using params|`/subscriptions/%{subscription_id}/resources`|Get|Get all the resources in a subscription.|Resources_List|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/resources`|Get|Get all the resources for a resource group.|Resources_ListByResourceGroup|
 |Update|`/%{resource_id}`|Put|Create a resource by ID.|Resources_CreateOrUpdateById|
 |Delete|`/%{resource_id}`|Delete|Deletes a resource by ID.|Resources_DeleteById|

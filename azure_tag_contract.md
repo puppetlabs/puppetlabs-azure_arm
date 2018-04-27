@@ -56,6 +56,6 @@ Here is a list of endpoints that we use to create, read, update and delete the T
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/tags/%{tag_id}`|Put|Creates a tag.|Tag_CreateOrUpdate|
 |List - list all|``||||
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/tags/%{tag_id}`|Get|Gets the details of the tag specified by its identifier.|Tag_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/products/%{product_id}/tags`|Get|Lists all Tags associated with the Product.|Tag_ListByProduct|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/apis/%{api_id}/operations/%{operation_id}/tags`|Get|Lists all Tags associated with the Operation.|Tag_ListByOperation|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/tags/%{tag_id}`|Put|Creates a tag.|Tag_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/tags/%{tag_id}`|Delete|Deletes specific tag of the API Management service instance.|Tag_Delete|

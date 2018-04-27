@@ -1,12 +1,13 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_host_name_binding) do
-  @doc = "A hostname binding object."
+  @doc = "A host name binding object"
 
   ensurable
 
   validate do
     required_properties = [
+      :location,
       :host_name,
       :host_name_binding,
       :resource_group_name,
@@ -20,32 +21,44 @@ Puppet::Type.newtype(:azure_host_name_binding) do
     end
   end
   newproperty(:id) do
-    desc "Resource Id."
+    desc "Resource Id"
     validate do |value|
       true
     end
   end
   newproperty(:kind) do
-    desc "Kind of resource."
+    desc "Kind of resource"
+    validate do |value|
+      true
+    end
+  end
+  newproperty(:location) do
+    desc "Resource Location"
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "Resource Name."
+    desc "Resource Name"
     validate do |value|
       true
     end
   end
   newproperty(:properties) do
-    desc "HostNameBinding resource specific properties"
+    desc ""
+    validate do |value|
+      true
+    end
+  end
+  newproperty(:tags) do
+    desc "Resource tags"
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "Resource type."
+    desc "Resource type"
     validate do |value|
       true
     end
@@ -57,25 +70,31 @@ Puppet::Type.newtype(:azure_host_name_binding) do
     end
   end
   newparam(:host_name) do
-    desc "Hostname in the hostname binding."
+    desc "Name of host"
     validate do |value|
       true
     end
   end
   newparam(:host_name_binding) do
-    desc "Binding details. This is the JSON representation of a HostNameBinding object."
+    desc "Host name binding information"
     validate do |value|
       true
     end
   end
   newparam(:resource_group_name) do
-    desc "Name of the resource group to which the resource belongs."
+    desc "Name of resource group"
+    validate do |value|
+      true
+    end
+  end
+  newparam(:slot) do
+    desc "Name of web app slot. If not specified then will default to production slot."
     validate do |value|
       true
     end
   end
   newparam(:subscription_id) do
-    desc "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000)."
+    desc "Subscription Id"
     validate do |value|
       true
     end

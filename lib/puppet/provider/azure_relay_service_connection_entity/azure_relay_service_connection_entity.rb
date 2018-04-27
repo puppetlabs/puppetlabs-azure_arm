@@ -22,6 +22,11 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     @property_flush[:kind] = value
   end
 
+  def location=(value)
+    Puppet.info("location setter called to change to #{value}")
+    @property_flush[:location] = value
+  end
+
   def name=(value)
     Puppet.info("name setter called to change to #{value}")
     @property_flush[:name] = value
@@ -30,6 +35,11 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
   def properties=(value)
     Puppet.info("properties setter called to change to #{value}")
     @property_flush[:properties] = value
+  end
+
+  def tags=(value)
+    Puppet.info("tags setter called to change to #{value}")
+    @property_flush[:tags] = value
   end
 
   def type=(value)
@@ -78,15 +88,17 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     relay_service_connection_entity = {}
     relay_service_connection_entity["id"] = resource[:id] unless resource[:id].nil?
     relay_service_connection_entity["kind"] = resource[:kind] unless resource[:kind].nil?
+    relay_service_connection_entity["location"] = resource[:location] unless resource[:location].nil?
     relay_service_connection_entity["name"] = resource[:name] unless resource[:name].nil?
     relay_service_connection_entity["properties"] = resource[:properties] unless resource[:properties].nil?
+    relay_service_connection_entity["tags"] = resource[:tags] unless resource[:tags].nil?
     relay_service_connection_entity["type"] = resource[:type] unless resource[:type].nil?
     return relay_service_connection_entity
   end
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2018-02-01"
+    key_values["api-version"] = "2015-08-01"
     key_values
   end
 
@@ -113,7 +125,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_CreateOrUpdateRelayServiceConnection")
+    Puppet.info("Calling operation Sites_CreateOrUpdateSiteRelayServiceConnection")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -137,7 +149,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
     uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -159,7 +171,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_CreateOrUpdateRelayServiceConnection")
+    Puppet.info("Calling operation Sites_CreateOrUpdateSiteRelayServiceConnection")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -183,7 +195,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
     uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -205,7 +217,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_DeleteRelayServiceConnection")
+    Puppet.info("Calling operation Sites_DeleteSiteRelayServiceConnection")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -226,7 +238,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
     uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -249,7 +261,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_ListRelayServiceConnectionsSlot")
+    Puppet.info("Calling operation Sites_ListSiteRelayServiceConnectionsSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -270,7 +282,7 @@ Puppet::Type.type(:azure_relay_service_connection_entity).provide(:arm) do
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
     uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)

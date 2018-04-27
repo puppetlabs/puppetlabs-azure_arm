@@ -1,5 +1,5 @@
 Document: "applicationGateway"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/applicationGateway.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/applicationGateway.json")
 
 ## ApplicationGateway
 
@@ -1500,6 +1500,6 @@ Here is a list of endpoints that we use to create, read, update and delete the A
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/applicationGateways/%{application_gateway_name}`|Put|Creates or updates the specified application gateway.|ApplicationGateways_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/applicationGateways`|Get|Gets all the application gateways in a subscription.|ApplicationGateways_ListAll|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/applicationGateways/%{application_gateway_name}`|Get|Gets the specified application gateway.|ApplicationGateways_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/applicationGateways`|Get|Gets all the application gateways in a subscription.|ApplicationGateways_ListAll|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/applicationGateways`|Get|Lists all application gateways in a resource group.|ApplicationGateways_List|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/applicationGateways/%{application_gateway_name}`|Put|Creates or updates the specified application gateway.|ApplicationGateways_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/applicationGateways/%{application_gateway_name}`|Delete|Deletes the specified application gateway.|ApplicationGateways_Delete|

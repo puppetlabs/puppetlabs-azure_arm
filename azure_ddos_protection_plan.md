@@ -1,5 +1,5 @@
 Document: "ddosProtectionPlan"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/ddosProtectionPlan.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/ddosProtectionPlan.json")
 
 ## DdosProtectionPlan
 

@@ -1,5 +1,5 @@
-Document: "WebApps"
-Path: "/root/specs/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json")
+Document: "service"
+Path: "/root/specs/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json")
 
 ## RelayServiceConnectionEntity
 
@@ -10,10 +10,12 @@ azure_relay_service_connection_entity {
   entity_name => "entity_name",
   id => "id (optional)",
   kind => "kind (optional)",
+  location => "location (optional)",
   name => "name (optional)",
   properties => "properties (optional)",
   resource_group_name => "resource_group_name",
   subscription_id => "subscription_id",
+  tags => "tags (optional)",
   type => "type (optional)",
 }
 ```
@@ -21,15 +23,17 @@ azure_relay_service_connection_entity {
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
 |api_version | String | true | API Version |
-|connection_envelope | Hash | true | Details of the hybrid connection configuration. |
-|entity_name | String | true | Name of the hybrid connection configuration. |
-|id | String | false | Resource Id. |
-|kind | String | false | Kind of resource. |
-|name | String | false | Resource Name. |
-|properties | String | false | RelayServiceConnectionEntity resource specific properties |
-|resource_group_name | String | true | Name of the resource group to which the resource belongs. |
-|subscription_id | String | true | Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000). |
-|type | String | false | Resource type. |
+|connection_envelope | Hash | true | The details of the Hybrid Connection |
+|entity_name | String | true | The name by which the Hybrid Connection is identified |
+|id | String | false | Resource Id |
+|kind | String | false | Kind of resource |
+|location | String | false | Resource Location |
+|name | String | false | Resource Name |
+|properties | String | false |  |
+|resource_group_name | String | true | The resource group name |
+|subscription_id | String | true | Subscription Id |
+|tags | Hash | false | Resource tags |
+|type | String | false | Resource type |
 
 
 
@@ -39,9 +43,9 @@ Here is a list of endpoints that we use to create, read, update and delete the R
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Put|Creates a new hybrid connection configuration (PUT), or updates an existing one (PATCH).|WebApps_CreateOrUpdateRelayServiceConnection|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Put||Sites_CreateOrUpdateSiteRelayServiceConnection|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection`|Get|Gets hybrid connections configured for an app (or deployment slot, if specified).|WebApps_ListRelayServiceConnectionsSlot|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hybridconnection`|Get||Sites_ListSiteRelayServiceConnectionsSlot|
 |List - get list using params|``||||
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Put|Creates a new hybrid connection configuration (PUT), or updates an existing one (PATCH).|WebApps_CreateOrUpdateRelayServiceConnection|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Delete|Deletes a relay service connection by its name.|WebApps_DeleteRelayServiceConnection|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Put||Sites_CreateOrUpdateSiteRelayServiceConnection|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hybridconnection/%{entity_name}`|Delete||Sites_DeleteSiteRelayServiceConnection|

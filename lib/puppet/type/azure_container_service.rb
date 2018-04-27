@@ -37,12 +37,6 @@ Puppet::Type.newtype(:azure_container_service) do
       true
     end
   end
-  newproperty(:properties) do
-    desc ""
-    validate do |value|
-      true
-    end
-  end
   newproperty(:tags) do
     desc "Resource tags"
     validate do |value|

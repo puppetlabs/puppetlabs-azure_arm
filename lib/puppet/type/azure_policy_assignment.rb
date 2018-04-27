@@ -49,7 +49,7 @@ Puppet::Type.newtype(:azure_policy_assignment) do
     end
   end
   newparam(:parameters) do
-    desc "Parameters for policy assignment."
+    desc "Parameters for the policy assignment."
     validate do |value|
       true
     end

@@ -245,7 +245,7 @@ Puppet::Type.type(:azure_tag_contract).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Tag_ListByProduct")
+    Puppet.info("Calling operation Tag_ListByOperation")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -261,9 +261,12 @@ Puppet::Type.type(:azure_tag_contract).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:product_id] = key_values["productId"] unless key_values["productId"].nil?
-    path_params[:product_id] = ENV["azure_product_id"] unless ENV["azure_product_id"].nil?
-    path_params[:product_id] = resource[:product_id] unless resource.nil? or resource[:product_id].nil?
+    path_params[:api_id] = key_values["apiId"] unless key_values["apiId"].nil?
+    path_params[:api_id] = ENV["azure_api_id"] unless ENV["azure_api_id"].nil?
+    path_params[:api_id] = resource[:api_id] unless resource.nil? or resource[:api_id].nil?
+    path_params[:operation_id] = key_values["operationId"] unless key_values["operationId"].nil?
+    path_params[:operation_id] = ENV["azure_operation_id"] unless ENV["azure_operation_id"].nil?
+    path_params[:operation_id] = resource[:operation_id] unless resource.nil? or resource[:operation_id].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
@@ -273,7 +276,7 @@ Puppet::Type.type(:azure_tag_contract).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/products/%{product_id}/tags" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ApiManagement/service/%{service_name}/apis/%{api_id}/operations/%{operation_id}/tags" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

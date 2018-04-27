@@ -254,23 +254,26 @@ Puppet::Type.type(:azure_virtual_machine_extension).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation VirtualMachines_Get")
+    Puppet.info("Calling operation VirtualMachineScaleSetVMs_Get")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
+    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
+    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    path_params[:vm_name] = key_values["vmName"] unless key_values["vmName"].nil?
-    path_params[:vm_name] = ENV["azure_vm_name"] unless ENV["azure_vm_name"].nil?
-    path_params[:vm_name] = resource[:vm_name] unless resource.nil? or resource[:vm_name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/virtualMachines/%{vm_name}" % path_params
+    path_params[:vm_scale_set_name] = key_values["vmScaleSetName"] unless key_values["vmScaleSetName"].nil?
+    path_params[:vm_scale_set_name] = ENV["azure_vm_scale_set_name"] unless ENV["azure_vm_scale_set_name"].nil?
+    path_params[:vm_scale_set_name] = resource[:vm_scale_set_name] unless resource.nil? or resource[:vm_scale_set_name].nil?
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/virtualMachineScaleSets/%{vm_scale_set_name}/virtualmachines/%{instance_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

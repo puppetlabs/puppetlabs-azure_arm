@@ -1,5 +1,5 @@
 Document: "networkInterface"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/networkInterface.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/networkInterface.json")
 
 ## NetworkInterface
 

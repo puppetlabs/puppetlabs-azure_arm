@@ -1,5 +1,5 @@
-Document: "mysql"
-Path: "/root/specs/specification/mysql/resource-manager/Microsoft.DBforMySQL/stable/2017-12-01/mysql.json")
+Document: "postgresql"
+Path: "/root/specs/specification/postgresql/resource-manager/Microsoft.DBforPostgreSQL/stable/2017-12-01/postgresql.json")
 
 ## Database
 
@@ -51,9 +51,9 @@ Here is a list of endpoints that we use to create, read, update and delete the D
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}/databases/%{database_name}`|Put|Creates a new database or updates an existing database.|Databases_CreateOrUpdate|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}/databases/%{database_name}`|Put|Creates a new database or updates an existing database.|Databases_CreateOrUpdate|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}/databases/%{database_name}`|Get|Gets information about a database.|Databases_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}/databases`|Get|List all the databases in a given server.|Databases_ListByServer|
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}/databases/%{database_name}`|Put|Creates a new database or updates an existing database.|Databases_CreateOrUpdate|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforMySQL/servers/%{server_name}/databases/%{database_name}`|Delete|Deletes a database.|Databases_Delete|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}/databases/%{database_name}`|Get|Gets information about a database.|Databases_Get|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}/databases`|Get|List all the databases in a given server.|Databases_ListByServer|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}/databases/%{database_name}`|Put|Creates a new database or updates an existing database.|Databases_CreateOrUpdate|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.DBforPostgreSQL/servers/%{server_name}/databases/%{database_name}`|Delete|Deletes a database.|Databases_Delete|

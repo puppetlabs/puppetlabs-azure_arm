@@ -1,15 +1,14 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_application) do
-  @doc = "Information about managed application."
+  @doc = "Active Directory application information."
 
   ensurable
 
   validate do
     required_properties = [
-      :kind,
-      :properties,
       :parameters,
+      :tenant_id,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -18,87 +17,87 @@ Puppet::Type.newtype(:azure_application) do
       end
     end
   end
-  newproperty(:id) do
-    desc "Resource ID"
+  newproperty(:app_id) do
+    desc "The application ID."
     validate do |value|
       true
     end
   end
-  newproperty(:identity) do
-    desc "The identity of the resource."
+  newproperty(:app_permissions) do
+    desc "The application permissions."
     validate do |value|
       true
     end
   end
-  newproperty(:kind) do
-    desc "The kind of the managed application. Allowed values are MarketPlace and ServiceCatalog."
+  newproperty(:available_to_other_tenants) do
+    desc "Whether the application is be available to other tenants."
     validate do |value|
       true
     end
   end
-  newproperty(:location) do
-    desc "Resource location"
+  newproperty(:deletion_timestamp) do
+    desc "The time at which the directory object was deleted."
     validate do |value|
       true
     end
   end
-  newproperty(:managed_by) do
-    desc "ID of the resource that manages this resource."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:name) do
+  newparam(:display_name) do
     isnamevar
-    desc "Resource name"
+    desc "The display name of the application."
     validate do |value|
       true
     end
   end
-  newproperty(:plan) do
-    desc "The plan information."
+  newproperty(:homepage) do
+    desc "The home page of the application."
     validate do |value|
       true
     end
   end
-  newproperty(:properties) do
-    desc "The managed application properties."
+  newproperty(:identifier_uris) do
+    desc "A collection of URIs for the application."
     validate do |value|
       true
     end
   end
-  newproperty(:sku) do
-    desc "The SKU of the resource."
+  newproperty(:oauth2_allow_implicit_flow) do
+    desc "Whether to allow implicit grant flow for OAuth2"
     validate do |value|
       true
     end
   end
-  newproperty(:tags) do
-    desc "Resource tags"
+  newproperty(:object_id) do
+    desc "The object ID."
     validate do |value|
       true
     end
   end
-  newproperty(:type) do
-    desc "Resource type"
+  newproperty(:object_type) do
+    desc "The object type."
+    validate do |value|
+      true
+    end
+  end
+  newproperty(:reply_urls) do
+    desc "A collection of reply URLs for the application."
     validate do |value|
       true
     end
   end
   newparam(:api_version) do
-    desc "The API version to use for this operation."
+    desc "Client API version."
     validate do |value|
       true
     end
   end
   newparam(:parameters) do
-    desc "Parameters supplied to the create or update a managed application."
+    desc "The parameters for creating an application."
     validate do |value|
       true
     end
   end
-  newparam(:subscription_id) do
-    desc "The ID of the target subscription."
+  newparam(:tenant_id) do
+    desc "The tenant ID."
     validate do |value|
       true
     end

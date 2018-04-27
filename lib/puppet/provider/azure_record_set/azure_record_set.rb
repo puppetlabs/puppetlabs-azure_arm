@@ -272,7 +272,7 @@ Puppet::Type.type(:azure_record_set).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation RecordSets_ListAllByDnsZone")
+    Puppet.info("Calling operation RecordSets_ListByType")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -285,6 +285,9 @@ Puppet::Type.type(:azure_record_set).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:record_type] = key_values["recordType"] unless key_values["recordType"].nil?
+    path_params[:record_type] = ENV["azure_record_type"] unless ENV["azure_record_type"].nil?
+    path_params[:record_type] = resource[:record_type] unless resource.nil? or resource[:record_type].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
@@ -294,7 +297,7 @@ Puppet::Type.type(:azure_record_set).provide(:arm) do
     path_params[:zone_name] = key_values["zoneName"] unless key_values["zoneName"].nil?
     path_params[:zone_name] = ENV["azure_zone_name"] unless ENV["azure_zone_name"].nil?
     path_params[:zone_name] = resource[:zone_name] unless resource.nil? or resource[:zone_name].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/dnsZones/%{zone_name}/all" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/dnsZones/%{zone_name}/%{record_type}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

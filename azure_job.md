@@ -489,6 +489,6 @@ Here is a list of endpoints that we use to create, read, update and delete the J
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/jobs/%{job_name}`|Put|Adds a Job that gets executed on a cluster.|Jobs_Create|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.BatchAI/jobs`|Get|Gets information about the jobs associated with the subscription.|Jobs_List|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/jobs/%{job_name}`|Get|Gets information about the specified Batch AI job.|Jobs_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/jobs`|Get|Gets information about the Batch AI jobs associated within the specified resource group.|Jobs_ListByResourceGroup|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.BatchAI/jobs`|Get|Gets information about the jobs associated with the subscription.|Jobs_List|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/jobs/%{job_name}`|Put|Adds a Job that gets executed on a cluster.|Jobs_Create|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.BatchAI/jobs/%{job_name}`|Delete|Deletes the specified Batch AI job.|Jobs_Delete|

@@ -248,7 +248,7 @@ Puppet::Type.type(:azure_sb_authorization_rule).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Queues_ListAuthorizationRules")
+    Puppet.info("Calling operation Namespaces_ListAuthorizationRules")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -258,16 +258,13 @@ Puppet::Type.type(:azure_sb_authorization_rule).provide(:arm) do
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
-    path_params[:queue_name] = key_values["queueName"] unless key_values["queueName"].nil?
-    path_params[:queue_name] = ENV["azure_queue_name"] unless ENV["azure_queue_name"].nil?
-    path_params[:queue_name] = resource[:queue_name] unless resource.nil? or resource[:queue_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceBus/namespaces/%{namespace_name}/queues/%{queue_name}/authorizationRules" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.ServiceBus/namespaces/%{namespace_name}/AuthorizationRules" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

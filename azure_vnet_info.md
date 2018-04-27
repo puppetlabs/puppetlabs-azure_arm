@@ -45,7 +45,7 @@ Here is a list of endpoints that we use to create, read, update and delete the V
 | ------------- | ------------- | ------------- | ------------- | ------------- |
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/virtualNetworkConnections/%{vnet_name}`|Put||Sites_CreateOrUpdateSiteVNETConnection|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/virtualNetworkConnections/%{vnet_name}`|Get||Sites_GetSiteVNETConnection|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/virtualNetworkConnections`|Get||Sites_GetSiteVNETConnectionsSlot|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections/%{vnet_name}`|Get||ServerFarms_GetVnetFromServerFarm|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections`|Get||ServerFarms_GetVnetsForServerFarm|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/virtualNetworkConnections/%{vnet_name}`|Put||Sites_CreateOrUpdateSiteVNETConnection|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/virtualNetworkConnections/%{vnet_name}`|Delete||Sites_DeleteSiteVNETConnection|

@@ -1,5 +1,5 @@
-Document: "WebApps"
-Path: "/root/specs/specification/web/resource-manager/Microsoft.Web/stable/2018-02-01/WebApps.json")
+Document: "service"
+Path: "/root/specs/specification/web/resource-manager/Microsoft.Web/stable/2015-08-01/service.json")
 
 ## HostNameBinding
 
@@ -10,10 +10,13 @@ azure_host_name_binding {
   host_name_binding => "hostNameBinding",
   id => "id (optional)",
   kind => "kind (optional)",
+  location => "location (optional)",
   name => "name (optional)",
   properties => "properties (optional)",
   resource_group_name => "resource_group_name",
+  slot => "slot",
   subscription_id => "subscription_id",
+  tags => "tags (optional)",
   type => "type (optional)",
 }
 ```
@@ -21,15 +24,18 @@ azure_host_name_binding {
 | Name        | Type           | Required       | Description       |
 | ------------- | ------------- | ------------- | ------------- |
 |api_version | String | true | API Version |
-|host_name | String | true | Hostname in the hostname binding. |
-|host_name_binding | Hash | true | Binding details. This is the JSON representation of a HostNameBinding object. |
-|id | String | false | Resource Id. |
-|kind | String | false | Kind of resource. |
-|name | String | false | Resource Name. |
-|properties | String | false | HostNameBinding resource specific properties |
-|resource_group_name | String | true | Name of the resource group to which the resource belongs. |
-|subscription_id | String | true | Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000). |
-|type | String | false | Resource type. |
+|host_name | String | true | Name of host |
+|host_name_binding | Hash | true | Host name binding information |
+|id | String | false | Resource Id |
+|kind | String | false | Kind of resource |
+|location | String | false | Resource Location |
+|name | String | false | Resource Name |
+|properties | String | false |  |
+|resource_group_name | String | true | Name of resource group |
+|slot | String | true | Name of web app slot. If not specified then will default to production slot. |
+|subscription_id | String | true | Subscription Id |
+|tags | Hash | false | Resource tags |
+|type | String | false | Resource type |
 
 
 
@@ -39,9 +45,9 @@ Here is a list of endpoints that we use to create, read, update and delete the H
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hostNameBindings/%{host_name}`|Put|Creates a hostname binding for an app.|WebApps_CreateOrUpdateHostNameBinding|
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Put||Sites_CreateOrUpdateSiteHostNameBindingSlot|
 |List - list all|``||||
-|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hostNameBindings/%{host_name}`|Get|Get the named hostname binding for an app (or deployment slot, if specified).|WebApps_GetHostNameBinding|
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings`|Get|Get hostname bindings for an app or a deployment slot.|WebApps_ListHostNameBindingsSlot|
-|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hostNameBindings/%{host_name}`|Put|Creates a hostname binding for an app.|WebApps_CreateOrUpdateHostNameBinding|
-|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/hostNameBindings/%{host_name}`|Delete|Deletes a hostname binding for an app.|WebApps_DeleteHostNameBinding|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Get||Sites_GetSiteHostNameBindingSlot|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings`|Get||Sites_GetSiteHostNameBindingsSlot|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Put||Sites_CreateOrUpdateSiteHostNameBindingSlot|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/hostNameBindings/%{host_name}`|Delete||Sites_DeleteSiteHostNameBindingSlot|

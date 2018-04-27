@@ -1,5 +1,5 @@
 Document: "expressRouteCrossConnection"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/expressRouteCrossConnection.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/expressRouteCrossConnection.json")
 
 ## ExpressRouteCrossConnectionPeering
 

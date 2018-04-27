@@ -44,6 +44,6 @@ Here is a list of endpoints that we use to create, read, update and delete the H
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/hostingEnvironments/%{name}`|Put||HostingEnvironments_CreateOrUpdateHostingEnvironment|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/hostingEnvironments`|Get||Global_GetAllHostingEnvironments|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/hostingEnvironments/%{name}`|Get||HostingEnvironments_GetHostingEnvironment|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Web/hostingEnvironments`|Get||Global_GetAllHostingEnvironments|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/managedHostingEnvironments`|Get||ManagedHostingEnvironments_GetManagedHostingEnvironments|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/hostingEnvironments/%{name}`|Put||HostingEnvironments_CreateOrUpdateHostingEnvironment|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/hostingEnvironments/%{name}`|Delete||HostingEnvironments_DeleteHostingEnvironment|

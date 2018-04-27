@@ -48,6 +48,6 @@ Here is a list of endpoints that we use to create, read, update and delete the V
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections/%{vnet_name}/routes/%{route_name}`|Put||ServerFarms_CreateOrUpdateVnetRoute|
 |List - list all|``||||
 |List - get one|``||||
-|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections/%{vnet_name}/routes/%{route_name}`|Get||ServerFarms_GetRouteForVnet|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections/%{vnet_name}/routes`|Get||ServerFarms_GetRoutesForVnet|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections/%{vnet_name}/routes/%{route_name}`|Put||ServerFarms_CreateOrUpdateVnetRoute|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/serverfarms/%{name}/virtualNetworkConnections/%{vnet_name}/routes/%{route_name}`|Delete||ServerFarms_DeleteVnetRoute|

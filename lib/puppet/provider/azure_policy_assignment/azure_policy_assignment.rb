@@ -145,7 +145,7 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2016-12-01"
+    key_values["api-version"] = "2016-04-01"
     key_values
   end
 
@@ -184,7 +184,7 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyAssignments" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyassignments" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -208,7 +208,7 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyAssignments_CreateById")
+    Puppet.info("Calling operation PolicyAssignments_Create")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -218,10 +218,13 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
-    path_params[:policy_assignment_id] = key_values["policyAssignmentId"] unless key_values["policyAssignmentId"].nil?
-    path_params[:policy_assignment_id] = ENV["azure_policy_assignment_id"] unless ENV["azure_policy_assignment_id"].nil?
-    path_params[:policy_assignment_id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    uri_string = "https://management.azure.com/%{policy_assignment_id}" % path_params
+    path_params[:policy_assignment_name] = key_values["policyAssignmentName"] unless key_values["policyAssignmentName"].nil?
+    path_params[:policy_assignment_name] = ENV["azure_policy_assignment_name"] unless ENV["azure_policy_assignment_name"].nil?
+    path_params[:policy_assignment_name] = resource[:name] unless resource.nil? or resource[:name].nil?
+    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
+    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
+    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
+    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -245,7 +248,7 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyAssignments_CreateById")
+    Puppet.info("Calling operation PolicyAssignments_Create")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -255,10 +258,13 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
-    path_params[:policy_assignment_id] = key_values["policyAssignmentId"] unless key_values["policyAssignmentId"].nil?
-    path_params[:policy_assignment_id] = ENV["azure_policy_assignment_id"] unless ENV["azure_policy_assignment_id"].nil?
-    path_params[:policy_assignment_id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    uri_string = "https://management.azure.com/%{policy_assignment_id}" % path_params
+    path_params[:policy_assignment_name] = key_values["policyAssignmentName"] unless key_values["policyAssignmentName"].nil?
+    path_params[:policy_assignment_name] = ENV["azure_policy_assignment_name"] unless ENV["azure_policy_assignment_name"].nil?
+    path_params[:policy_assignment_name] = resource[:name] unless resource.nil? or resource[:name].nil?
+    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
+    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
+    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
+    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -295,7 +301,7 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
     path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
     path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
     path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
-    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/policyAssignments/%{policy_assignment_name}" % path_params
+    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -319,7 +325,7 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyAssignments_List")
+    Puppet.info("Calling operation PolicyAssignments_ListForResourceGroup")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -329,10 +335,13 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
+    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
+    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Authorization/policyAssignments" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Authorization/policyAssignments" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -356,17 +365,20 @@ Puppet::Type.type(:azure_policy_assignment).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation PolicyAssignments_GetById")
+    Puppet.info("Calling operation PolicyAssignments_Get")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:policy_assignment_id] = key_values["policyAssignmentId"] unless key_values["policyAssignmentId"].nil?
-    path_params[:policy_assignment_id] = ENV["azure_policy_assignment_id"] unless ENV["azure_policy_assignment_id"].nil?
-    path_params[:policy_assignment_id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    uri_string = "https://management.azure.com/%{policy_assignment_id}" % path_params
+    path_params[:policy_assignment_name] = key_values["policyAssignmentName"] unless key_values["policyAssignmentName"].nil?
+    path_params[:policy_assignment_name] = ENV["azure_policy_assignment_name"] unless ENV["azure_policy_assignment_name"].nil?
+    path_params[:policy_assignment_name] = resource[:name] unless resource.nil? or resource[:name].nil?
+    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
+    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
+    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
+    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/policyassignments/%{policy_assignment_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)

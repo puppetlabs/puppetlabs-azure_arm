@@ -10,7 +10,6 @@ Puppet::Type.newtype(:azure_management_lock_object) do
       :properties,
       :lock_name,
       :parameters,
-      :resource_group_name,
       :scope,
     ]
     required_properties.each do |property|
@@ -52,19 +51,13 @@ Puppet::Type.newtype(:azure_management_lock_object) do
     end
   end
   newparam(:lock_name) do
-    desc "The lock name. The lock name can be a maximum of 260 characters. It cannot contain <, > %, &, :, \, ?, /, or any control characters."
+    desc "The name of lock. The lock name can be a maximum of 260 characters. It cannot contain <, > %, &, :, \, ?, /, or any control characters."
     validate do |value|
       true
     end
   end
   newparam(:parameters) do
     desc "The management lock parameters."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:resource_group_name) do
-    desc "The name of the resource group to lock."
     validate do |value|
       true
     end

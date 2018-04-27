@@ -12,138 +12,61 @@ Puppet::Type.type(:azure_application).provide(:arm) do
     @is_delete = false
   end
 
-  def id=(value)
-    Puppet.info("id setter called to change to #{value}")
-    @property_flush[:id] = value
+  def app_id=(value)
+    Puppet.info("app_id setter called to change to #{value}")
+    @property_flush[:app_id] = value
   end
 
-  def identity=(value)
-    Puppet.info("identity setter called to change to #{value}")
-    @property_flush[:identity] = value
+  def app_permissions=(value)
+    Puppet.info("app_permissions setter called to change to #{value}")
+    @property_flush[:app_permissions] = value
   end
 
-  def kind=(value)
-    Puppet.info("kind setter called to change to #{value}")
-    @property_flush[:kind] = value
+  def available_to_other_tenants=(value)
+    Puppet.info("available_to_other_tenants setter called to change to #{value}")
+    @property_flush[:available_to_other_tenants] = value
   end
 
-  def location=(value)
-    Puppet.info("location setter called to change to #{value}")
-    @property_flush[:location] = value
+  def deletion_timestamp=(value)
+    Puppet.info("deletion_timestamp setter called to change to #{value}")
+    @property_flush[:deletion_timestamp] = value
   end
 
-  def managed_by=(value)
-    Puppet.info("managed_by setter called to change to #{value}")
-    @property_flush[:managed_by] = value
+  def display_name=(value)
+    Puppet.info("display_name setter called to change to #{value}")
+    @property_flush[:display_name] = value
   end
 
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
+  def homepage=(value)
+    Puppet.info("homepage setter called to change to #{value}")
+    @property_flush[:homepage] = value
   end
 
-  def plan=(value)
-    Puppet.info("plan setter called to change to #{value}")
-    @property_flush[:plan] = value
+  def identifier_uris=(value)
+    Puppet.info("identifier_uris setter called to change to #{value}")
+    @property_flush[:identifier_uris] = value
   end
 
-  def properties=(value)
-    Puppet.info("properties setter called to change to #{value}")
-    @property_flush[:properties] = value
+  def oauth2_allow_implicit_flow=(value)
+    Puppet.info("oauth2_allow_implicit_flow setter called to change to #{value}")
+    @property_flush[:oauth2_allow_implicit_flow] = value
   end
 
-  def sku=(value)
-    Puppet.info("sku setter called to change to #{value}")
-    @property_flush[:sku] = value
+  def object_id=(value)
+    Puppet.info("object_id setter called to change to #{value}")
+    @property_flush[:object_id] = value
   end
 
-  def tags=(value)
-    Puppet.info("tags setter called to change to #{value}")
-    @property_flush[:tags] = value
+  def object_type=(value)
+    Puppet.info("object_type setter called to change to #{value}")
+    @property_flush[:object_type] = value
   end
 
-  def type=(value)
-    Puppet.info("type setter called to change to #{value}")
-    @property_flush[:type] = value
+  def reply_urls=(value)
+    Puppet.info("reply_urls setter called to change to #{value}")
+    @property_flush[:reply_urls] = value
   end
 
-  def self.instances
-    fetch_all_as_hash
-  end
-
-  def self.prefetch(resources)
-    instances.each do |prov|
-      if (resource = (resources.find { |k, v| k.casecmp(prov.name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.fetch_all_as_hash
-    items = self.fetch_all
-    if items
-      items.collect do |item|
-        hash = {
-
-          api_version: item["api-version"],
-          id: item["id"],
-          identity: item["identity"],
-          kind: item["kind"],
-          location: item["location"],
-          managed_by: item["managedBy"],
-          name: item["name"],
-          parameters: item["parameters"],
-          plan: item["plan"],
-          properties: item["properties"],
-          sku: item["sku"],
-          subscription_id: item["subscriptionId"],
-          tags: item["tags"],
-          type: item["type"],
-          ensure: :present,
-        }
-        Puppet.debug("Adding to collection: #{item}")
-
-        new(hash) if hash
-      end.compact
-    else
-        []      
-    end
-  rescue Exception => ex
-    Puppet.alert("ex is #{ex} and backtrace is #{ex.backtrace}")
-    raise
-  end
-
-  def self.fetch_all
-    response = invoke_list_all
-    if response.kind_of? Net::HTTPSuccess
-      body = JSON.parse(response.body)
-      if body.is_a? Hash and body.key? "value"
-        return body["value"]
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
-    {
-      ensure: :present,
-
-      api_version: instance.api_version.respond_to?(:to_hash) ? instance.api_version.to_hash : instance.api_version,
-      id: instance.id.respond_to?(:to_hash) ? instance.id.to_hash : instance.id,
-      identity: instance.identity.respond_to?(:to_hash) ? instance.identity.to_hash : instance.identity,
-      kind: instance.kind.respond_to?(:to_hash) ? instance.kind.to_hash : instance.kind,
-      location: instance.location.respond_to?(:to_hash) ? instance.location.to_hash : instance.location,
-      managed_by: instance.managed_by.respond_to?(:to_hash) ? instance.managed_by.to_hash : instance.managed_by,
-      name: instance.name.respond_to?(:to_hash) ? instance.name.to_hash : instance.name,
-      parameters: instance.parameters.respond_to?(:to_hash) ? instance.parameters.to_hash : instance.parameters,
-      plan: instance.plan.respond_to?(:to_hash) ? instance.plan.to_hash : instance.plan,
-      properties: instance.properties.respond_to?(:to_hash) ? instance.properties.to_hash : instance.properties,
-      sku: instance.sku.respond_to?(:to_hash) ? instance.sku.to_hash : instance.sku,
-      subscription_id: instance.subscription_id.respond_to?(:to_hash) ? instance.subscription_id.to_hash : instance.subscription_id,
-      tags: instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags,
-      type: instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type,
-      object: instance,
-    }
-  end
 
   def create
     @is_create = true
@@ -183,23 +106,23 @@ Puppet::Type.type(:azure_application).provide(:arm) do
 
   def build_hash
     application = {}
-    application["id"] = resource[:id] unless resource[:id].nil?
-    application["identity"] = resource[:identity] unless resource[:identity].nil?
-    application["kind"] = resource[:kind] unless resource[:kind].nil?
-    application["location"] = resource[:location] unless resource[:location].nil?
-    application["managedBy"] = resource[:managed_by] unless resource[:managed_by].nil?
-    application["name"] = resource[:name] unless resource[:name].nil?
-    application["plan"] = resource[:plan] unless resource[:plan].nil?
-    application["properties"] = resource[:properties] unless resource[:properties].nil?
-    application["sku"] = resource[:sku] unless resource[:sku].nil?
-    application["tags"] = resource[:tags] unless resource[:tags].nil?
-    application["type"] = resource[:type] unless resource[:type].nil?
+    application["appId"] = resource[:app_id] unless resource[:app_id].nil?
+    application["appPermissions"] = resource[:app_permissions] unless resource[:app_permissions].nil?
+    application["availableToOtherTenants"] = resource[:available_to_other_tenants] unless resource[:available_to_other_tenants].nil?
+    application["deletionTimestamp"] = resource[:deletion_timestamp] unless resource[:deletion_timestamp].nil?
+    application["displayName"] = resource[:display_name] unless resource[:display_name].nil?
+    application["homepage"] = resource[:homepage] unless resource[:homepage].nil?
+    application["identifierUris"] = resource[:identifier_uris] unless resource[:identifier_uris].nil?
+    application["oauth2AllowImplicitFlow"] = resource[:oauth2_allow_implicit_flow] unless resource[:oauth2_allow_implicit_flow].nil?
+    application["objectId"] = resource[:object_id] unless resource[:object_id].nil?
+    application["objectType"] = resource[:object_type] unless resource[:object_type].nil?
+    application["replyUrls"] = resource[:reply_urls] unless resource[:reply_urls].nil?
     return application
   end
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2017-09-01"
+    key_values["api-version"] = "1.6"
     key_values
   end
 
@@ -223,72 +146,39 @@ Puppet::Type.type(:azure_application).provide(:arm) do
     raise
   end
 
-  def self.invoke_list_all(resource = nil, body_params = nil)
-    key_values = self.build_key_values
-    Puppet.info("Calling operation Applications_ListBySubscription")
-    path_params = {}
-    query_params = {}
-    header_params = {}
-    query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
-    query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
-    query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
-    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
-    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/providers/Microsoft.Solutions/applications" % path_params
-    uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
-    if authenticate(path_params, query_params, header_params, body_params)
-      Puppet.info("Authentication succeeded")
-      uri = URI(uri_string)
-      Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
-        req = Net::HTTP::Get.new(uri)
-        add_keys_to_request(req, header_params)
-        if body_params
-          req.body = body_params.to_json
-        end
-        Puppet.debug("URI is (Get) #{uri}, body is #{body_params}, query params are #{query_params}, headers are #{header_params}")
-        response = http.request req # Net::HTTPResponse object
-        Puppet.debug("response code is #{response.code} and body is #{response.body}")
-        success = response.is_a? Net::HTTPSuccess
-        Puppet.info("Called (Get) endpoint at #{uri}, success was #{success}")
-        return response
-      end
-    end
-  end
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Applications_CreateOrUpdateById")
+    Puppet.info("Calling operation Applications_Create")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:application_id] = key_values["applicationId"] unless key_values["applicationId"].nil?
-    path_params[:application_id] = ENV["azure_application_id"] unless ENV["azure_application_id"].nil?
-    path_params[:application_id] = resource[:id] unless resource.nil? or resource[:id].nil?
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
-    uri_string = "https://management.azure.com/%{application_id}" % path_params
+    path_params[:tenant_id] = key_values["tenantID"] unless key_values["tenantID"].nil?
+    path_params[:tenant_id] = ENV["azure_tenant_id"] unless ENV["azure_tenant_id"].nil?
+    path_params[:tenant_id] = resource[:tenant_id] unless resource.nil? or resource[:tenant_id].nil?
+    uri_string = "https://graph.windows.net/%{tenant_id}/applications" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
       Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
-        req = Net::HTTP::Put.new(uri)
+        req = Net::HTTP::Post.new(uri)
         add_keys_to_request(req, header_params)
         if body_params
           req.body = body_params.to_json
         end
-        Puppet.debug("URI is (Put) #{uri}, body is #{body_params}, query params are #{query_params}, headers are #{header_params}")
+        Puppet.debug("URI is (Post) #{uri}, body is #{body_params}, query params are #{query_params}, headers are #{header_params}")
         response = http.request req # Net::HTTPResponse object
         Puppet.debug("response code is #{response.code} and body is #{response.body}")
         success = response.is_a? Net::HTTPSuccess
-        Puppet.info("Called (Put) endpoint at #{uri}, success was #{success}")
+        Puppet.info("Called (Post) endpoint at #{uri}, success was #{success}")
         return response
       end
     end
@@ -296,36 +186,36 @@ Puppet::Type.type(:azure_application).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Applications_CreateOrUpdateById")
+    Puppet.info("Calling operation Applications_Create")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:application_id] = key_values["applicationId"] unless key_values["applicationId"].nil?
-    path_params[:application_id] = ENV["azure_application_id"] unless ENV["azure_application_id"].nil?
-    path_params[:application_id] = resource[:id] unless resource.nil? or resource[:id].nil?
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
-    uri_string = "https://management.azure.com/%{application_id}" % path_params
+    path_params[:tenant_id] = key_values["tenantID"] unless key_values["tenantID"].nil?
+    path_params[:tenant_id] = ENV["azure_tenant_id"] unless ENV["azure_tenant_id"].nil?
+    path_params[:tenant_id] = resource[:tenant_id] unless resource.nil? or resource[:tenant_id].nil?
+    uri_string = "https://graph.windows.net/%{tenant_id}/applications" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
       Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
-        req = Net::HTTP::Put.new(uri)
+        req = Net::HTTP::Post.new(uri)
         add_keys_to_request(req, header_params)
         if body_params
           req.body = body_params.to_json
         end
-        Puppet.debug("URI is (Put) #{uri}, body is #{body_params}, query params are #{query_params}, headers are #{header_params}")
+        Puppet.debug("URI is (Post) #{uri}, body is #{body_params}, query params are #{query_params}, headers are #{header_params}")
         response = http.request req # Net::HTTPResponse object
         Puppet.debug("response code is #{response.code} and body is #{response.body}")
         success = response.is_a? Net::HTTPSuccess
-        Puppet.info("Called (Put) endpoint at #{uri}, success was #{success}")
+        Puppet.info("Called (Post) endpoint at #{uri}, success was #{success}")
         return response
       end
     end
@@ -333,19 +223,22 @@ Puppet::Type.type(:azure_application).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Applications_DeleteById")
+    Puppet.info("Calling operation Applications_Delete")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:application_id] = key_values["applicationId"] unless key_values["applicationId"].nil?
-    path_params[:application_id] = ENV["azure_application_id"] unless ENV["azure_application_id"].nil?
-    path_params[:application_id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    uri_string = "https://management.azure.com/%{application_id}" % path_params
+    path_params[:application_object_id] = key_values["applicationObjectId"] unless key_values["applicationObjectId"].nil?
+    path_params[:application_object_id] = ENV["azure_application_object_id"] unless ENV["azure_application_object_id"].nil?
+    path_params[:application_object_id] = resource[:objectid] unless resource.nil? or resource[:objectid].nil?
+    path_params[:tenant_id] = key_values["tenantID"] unless key_values["tenantID"].nil?
+    path_params[:tenant_id] = ENV["azure_tenant_id"] unless ENV["azure_tenant_id"].nil?
+    path_params[:tenant_id] = resource[:tenant_id] unless resource.nil? or resource[:tenant_id].nil?
+    uri_string = "https://graph.windows.net/%{tenant_id}/applications/%{application_object_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -367,22 +260,22 @@ Puppet::Type.type(:azure_application).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Applications_ListByResourceGroup")
+    Puppet.info("Calling operation Applications_List")
     path_params = {}
     query_params = {}
     header_params = {}
+    query_params["$filter"] = key_values["$filter"] unless key_values["$filter"].nil?
+    query_params["$filter"] = ENV["azure_$filter"] unless ENV["azure_$filter"].nil?
+    query_params["$filter"] = resource[:$filter] unless resource.nil? or resource[:$filter].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
-    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
-    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
-    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
-    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
-    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Solutions/applications" % path_params
+    path_params[:tenant_id] = key_values["tenantID"] unless key_values["tenantID"].nil?
+    path_params[:tenant_id] = ENV["azure_tenant_id"] unless ENV["azure_tenant_id"].nil?
+    path_params[:tenant_id] = resource[:tenant_id] unless resource.nil? or resource[:tenant_id].nil?
+    uri_string = "https://graph.windows.net/%{tenant_id}/applications" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -404,19 +297,22 @@ Puppet::Type.type(:azure_application).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation Applications_GetById")
+    Puppet.info("Calling operation Applications_Get")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:application_id] = key_values["applicationId"] unless key_values["applicationId"].nil?
-    path_params[:application_id] = ENV["azure_application_id"] unless ENV["azure_application_id"].nil?
-    path_params[:application_id] = resource[:id] unless resource.nil? or resource[:id].nil?
-    uri_string = "https://management.azure.com/%{application_id}" % path_params
+    path_params[:application_object_id] = key_values["applicationObjectId"] unless key_values["applicationObjectId"].nil?
+    path_params[:application_object_id] = ENV["azure_application_object_id"] unless ENV["azure_application_object_id"].nil?
+    path_params[:application_object_id] = resource[:objectid] unless resource.nil? or resource[:objectid].nil?
+    path_params[:tenant_id] = key_values["tenantID"] unless key_values["tenantID"].nil?
+    path_params[:tenant_id] = ENV["azure_tenant_id"] unless ENV["azure_tenant_id"].nil?
+    path_params[:tenant_id] = resource[:tenant_id] unless resource.nil? or resource[:tenant_id].nil?
+    uri_string = "https://graph.windows.net/%{tenant_id}/applications/%{application_object_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -468,11 +364,23 @@ Puppet::Type.type(:azure_application).provide(:arm) do
   end
 
   def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+    Puppet.info("exists_one for resource #{name} of type <no value>")
+    return exists_one(resource)
   end
 
+  
+  def exists_one(resource)
+    response = self.class.invoke_get_one(resource)
+
+    if response.is_a? Net::HTTPSuccess
+      return true
+    else
+      return false
+    end
+  rescue Exception => ex
+    Puppet.alert("Exception during exists_one. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
+  end
   def self.add_keys_to_request(request, hash)
     if hash
       hash.each { |x, v| request[x] = v }

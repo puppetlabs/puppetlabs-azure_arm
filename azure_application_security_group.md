@@ -1,5 +1,5 @@
 Document: "applicationSecurityGroup"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/applicationSecurityGroup.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/applicationSecurityGroup.json")
 
 ## ApplicationSecurityGroup
 

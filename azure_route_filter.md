@@ -1,5 +1,5 @@
 Document: "routeFilter"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/routeFilter.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/routeFilter.json")
 
 ## RouteFilter
 
@@ -298,6 +298,6 @@ Here is a list of endpoints that we use to create, read, update and delete the R
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/routeFilters/%{route_filter_name}`|Put|Creates or updates a route filter in a specified resource group.|RouteFilters_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/routeFilters`|Get|Gets all route filters in a subscription.|RouteFilters_List|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/routeFilters/%{route_filter_name}`|Get|Gets the specified route filter.|RouteFilters_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/routeFilters`|Get|Gets all route filters in a subscription.|RouteFilters_List|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/routeFilters`|Get|Gets all route filters in a resource group.|RouteFilters_ListByResourceGroup|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/routeFilters/%{route_filter_name}`|Put|Creates or updates a route filter in a specified resource group.|RouteFilters_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/routeFilters/%{route_filter_name}`|Delete|Deletes the specified route filter.|RouteFilters_Delete|

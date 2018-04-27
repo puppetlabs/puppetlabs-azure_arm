@@ -1,15 +1,16 @@
 require 'puppet/parameter/boolean'
 
 Puppet::Type.newtype(:azure_vault) do
-  @doc = "Resource information, as returned by the resource provider."
+  @doc = "Resource information with extended details."
 
   ensurable
 
   validate do
     required_properties = [
       :location,
+      :properties,
+      :parameters,
       :resource_group_name,
-      :vault,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -18,51 +19,39 @@ Puppet::Type.newtype(:azure_vault) do
       end
     end
   end
-  newproperty(:e_tag) do
-    desc "Optional ETag."
-    validate do |value|
-      true
-    end
-  end
   newproperty(:id) do
-    desc "Resource Id represents the complete path to the resource."
+    desc "The Azure Resource Manager resource ID for the key vault."
     validate do |value|
       true
     end
   end
   newproperty(:location) do
-    desc "Resource location."
+    desc "The supported Azure location where the key vault should be created."
     validate do |value|
       true
     end
   end
   newparam(:name) do
     isnamevar
-    desc "Resource name associated with the resource."
+    desc "The name of the key vault."
     validate do |value|
       true
     end
   end
   newproperty(:properties) do
-    desc ""
-    validate do |value|
-      true
-    end
-  end
-  newproperty(:sku) do
-    desc ""
+    desc "Properties of the vault"
     validate do |value|
       true
     end
   end
   newproperty(:tags) do
-    desc "Resource tags."
+    desc "The tags that will be assigned to the key vault. "
     validate do |value|
       true
     end
   end
   newproperty(:type) do
-    desc "Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/..."
+    desc "The resource type of the key vault."
     validate do |value|
       true
     end
@@ -73,20 +62,20 @@ Puppet::Type.newtype(:azure_vault) do
       true
     end
   end
+  newparam(:parameters) do
+    desc "Parameters to create or update the vault"
+    validate do |value|
+      true
+    end
+  end
   newparam(:resource_group_name) do
-    desc "The name of the resource group where the recovery services vault is present."
+    desc "The name of the Resource Group to which the server belongs."
     validate do |value|
       true
     end
   end
   newparam(:subscription_id) do
-    desc "The subscription Id."
-    validate do |value|
-      true
-    end
-  end
-  newparam(:vault) do
-    desc "Recovery Services Vault to be created."
+    desc "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call."
     validate do |value|
       true
     end

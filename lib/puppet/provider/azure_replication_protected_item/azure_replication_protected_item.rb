@@ -266,29 +266,29 @@ Puppet::Type.type(:azure_replication_protected_item).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation ReplicationProtectedItems_List")
+    Puppet.info("Calling operation ReplicationProtectedItems_ListByReplicationProtectionContainers")
     path_params = {}
     query_params = {}
     header_params = {}
-    query_params["$filter"] = key_values["$filter"] unless key_values["$filter"].nil?
-    query_params["$filter"] = ENV["azure_$filter"] unless ENV["azure_$filter"].nil?
-    query_params["$filter"] = resource[:$filter] unless resource.nil? or resource[:$filter].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
+    path_params[:fabric_name] = key_values["fabricName"] unless key_values["fabricName"].nil?
+    path_params[:fabric_name] = ENV["azure_fabric_name"] unless ENV["azure_fabric_name"].nil?
+    path_params[:fabric_name] = resource[:fabric_name] unless resource.nil? or resource[:fabric_name].nil?
+    path_params[:protection_container_name] = key_values["protectionContainerName"] unless key_values["protectionContainerName"].nil?
+    path_params[:protection_container_name] = ENV["azure_protection_container_name"] unless ENV["azure_protection_container_name"].nil?
+    path_params[:protection_container_name] = resource[:protection_container_name] unless resource.nil? or resource[:protection_container_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:resource_name] = key_values["resourceName"] unless key_values["resourceName"].nil?
     path_params[:resource_name] = ENV["azure_resource_name"] unless ENV["azure_resource_name"].nil?
     path_params[:resource_name] = resource[:resource_name] unless resource.nil? or resource[:resource_name].nil?
-    query_params["skipToken"] = key_values["skipToken"] unless key_values["skipToken"].nil?
-    query_params["skipToken"] = ENV["azure_skip_token"] unless ENV["azure_skip_token"].nil?
-    query_params["skipToken"] = resource[:skip_token] unless resource.nil? or resource[:skip_token].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/Subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{resource_name}/replicationProtectedItems" % path_params
+    uri_string = "https://management.azure.com/Subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.RecoveryServices/vaults/%{resource_name}/replicationFabrics/%{fabric_name}/replicationProtectionContainers/%{protection_container_name}/replicationProtectedItems" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

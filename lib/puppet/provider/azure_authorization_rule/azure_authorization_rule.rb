@@ -107,7 +107,7 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation EventHubs_CreateOrUpdateAuthorizationRule")
+    Puppet.info("Calling operation WCFRelays_CreateOrUpdateAuthorizationRule")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -117,22 +117,22 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
     path_params[:authorization_rule_name] = key_values["authorizationRuleName"] unless key_values["authorizationRuleName"].nil?
     path_params[:authorization_rule_name] = ENV["azure_authorization_rule_name"] unless ENV["azure_authorization_rule_name"].nil?
     path_params[:authorization_rule_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    path_params[:event_hub_name] = key_values["eventHubName"] unless key_values["eventHubName"].nil?
-    path_params[:event_hub_name] = ENV["azure_event_hub_name"] unless ENV["azure_event_hub_name"].nil?
-    path_params[:event_hub_name] = resource[:event_hub_name] unless resource.nil? or resource[:event_hub_name].nil?
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
+    path_params[:relay_name] = key_values["relayName"] unless key_values["relayName"].nil?
+    path_params[:relay_name] = ENV["azure_relay_name"] unless ENV["azure_relay_name"].nil?
+    path_params[:relay_name] = resource[:relay_name] unless resource.nil? or resource[:relay_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventHub/namespaces/%{namespace_name}/eventhubs/%{event_hub_name}/authorizationRules/%{authorization_rule_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Relay/namespaces/%{namespace_name}/wcfRelays/%{relay_name}/authorizationRules/%{authorization_rule_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -156,7 +156,7 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation EventHubs_CreateOrUpdateAuthorizationRule")
+    Puppet.info("Calling operation WCFRelays_CreateOrUpdateAuthorizationRule")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -166,22 +166,22 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
     path_params[:authorization_rule_name] = key_values["authorizationRuleName"] unless key_values["authorizationRuleName"].nil?
     path_params[:authorization_rule_name] = ENV["azure_authorization_rule_name"] unless ENV["azure_authorization_rule_name"].nil?
     path_params[:authorization_rule_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    path_params[:event_hub_name] = key_values["eventHubName"] unless key_values["eventHubName"].nil?
-    path_params[:event_hub_name] = ENV["azure_event_hub_name"] unless ENV["azure_event_hub_name"].nil?
-    path_params[:event_hub_name] = resource[:event_hub_name] unless resource.nil? or resource[:event_hub_name].nil?
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
+    path_params[:relay_name] = key_values["relayName"] unless key_values["relayName"].nil?
+    path_params[:relay_name] = ENV["azure_relay_name"] unless ENV["azure_relay_name"].nil?
+    path_params[:relay_name] = resource[:relay_name] unless resource.nil? or resource[:relay_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventHub/namespaces/%{namespace_name}/eventhubs/%{event_hub_name}/authorizationRules/%{authorization_rule_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Relay/namespaces/%{namespace_name}/wcfRelays/%{relay_name}/authorizationRules/%{authorization_rule_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -205,7 +205,7 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation EventHubs_DeleteAuthorizationRule")
+    Puppet.info("Calling operation WCFRelays_DeleteAuthorizationRule")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -215,19 +215,19 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
     path_params[:authorization_rule_name] = key_values["authorizationRuleName"] unless key_values["authorizationRuleName"].nil?
     path_params[:authorization_rule_name] = ENV["azure_authorization_rule_name"] unless ENV["azure_authorization_rule_name"].nil?
     path_params[:authorization_rule_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    path_params[:event_hub_name] = key_values["eventHubName"] unless key_values["eventHubName"].nil?
-    path_params[:event_hub_name] = ENV["azure_event_hub_name"] unless ENV["azure_event_hub_name"].nil?
-    path_params[:event_hub_name] = resource[:event_hub_name] unless resource.nil? or resource[:event_hub_name].nil?
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
+    path_params[:relay_name] = key_values["relayName"] unless key_values["relayName"].nil?
+    path_params[:relay_name] = ENV["azure_relay_name"] unless ENV["azure_relay_name"].nil?
+    path_params[:relay_name] = resource[:relay_name] unless resource.nil? or resource[:relay_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventHub/namespaces/%{namespace_name}/eventhubs/%{event_hub_name}/authorizationRules/%{authorization_rule_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Relay/namespaces/%{namespace_name}/wcfRelays/%{relay_name}/authorizationRules/%{authorization_rule_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -251,16 +251,13 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation EventHubs_ListAuthorizationRules")
+    Puppet.info("Calling operation Namespaces_ListAuthorizationRules")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:event_hub_name] = key_values["eventHubName"] unless key_values["eventHubName"].nil?
-    path_params[:event_hub_name] = ENV["azure_event_hub_name"] unless ENV["azure_event_hub_name"].nil?
-    path_params[:event_hub_name] = resource[:event_hub_name] unless resource.nil? or resource[:event_hub_name].nil?
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
@@ -270,7 +267,7 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventHub/namespaces/%{namespace_name}/eventhubs/%{event_hub_name}/authorizationRules" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Relay/namespaces/%{namespace_name}/authorizationRules" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -294,13 +291,10 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation DisasterRecoveryConfigs_GetAuthorizationRule")
+    Puppet.info("Calling operation WCFRelays_GetAuthorizationRule")
     path_params = {}
     query_params = {}
     header_params = {}
-    path_params[:alias] = key_values["alias"] unless key_values["alias"].nil?
-    path_params[:alias] = ENV["azure_alias"] unless ENV["azure_alias"].nil?
-    path_params[:alias] = resource[:alias] unless resource.nil? or resource[:alias].nil?
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
@@ -310,13 +304,16 @@ Puppet::Type.type(:azure_authorization_rule).provide(:arm) do
     path_params[:namespace_name] = key_values["namespaceName"] unless key_values["namespaceName"].nil?
     path_params[:namespace_name] = ENV["azure_namespace_name"] unless ENV["azure_namespace_name"].nil?
     path_params[:namespace_name] = resource[:namespace_name] unless resource.nil? or resource[:namespace_name].nil?
+    path_params[:relay_name] = key_values["relayName"] unless key_values["relayName"].nil?
+    path_params[:relay_name] = ENV["azure_relay_name"] unless ENV["azure_relay_name"].nil?
+    path_params[:relay_name] = resource[:relay_name] unless resource.nil? or resource[:relay_name].nil?
     path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
     path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
     path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.EventHub/namespaces/%{namespace_name}/disasterRecoveryConfigs/%{alias}/AuthorizationRules/%{authorization_rule_name}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Relay/namespaces/%{namespace_name}/wcfRelays/%{relay_name}/authorizationRules/%{authorization_rule_name}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json]
     if authenticate(path_params, query_params, header_params, body_params)

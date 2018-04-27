@@ -7,7 +7,6 @@ Puppet::Type.newtype(:azure_protection_policy_resource) do
 
   validate do
     required_properties = [
-      :operation_id,
       :policy_name,
       :resource_group_name,
       :resource_protection_policy,

@@ -1,5 +1,5 @@
 Document: "networkSecurityGroup"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/networkSecurityGroup.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/networkSecurityGroup.json")
 
 ## NetworkSecurityGroup
 
@@ -772,6 +772,6 @@ Here is a list of endpoints that we use to create, read, update and delete the N
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkSecurityGroups/%{network_security_group_name}`|Put|Creates or updates a network security group in the specified resource group.|NetworkSecurityGroups_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/networkSecurityGroups`|Get|Gets all network security groups in a subscription.|NetworkSecurityGroups_ListAll|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkSecurityGroups/%{network_security_group_name}`|Get|Gets the specified network security group.|NetworkSecurityGroups_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/networkSecurityGroups`|Get|Gets all network security groups in a subscription.|NetworkSecurityGroups_ListAll|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkSecurityGroups`|Get|Gets all network security groups in a resource group.|NetworkSecurityGroups_List|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkSecurityGroups/%{network_security_group_name}`|Put|Creates or updates a network security group in the specified resource group.|NetworkSecurityGroups_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkSecurityGroups/%{network_security_group_name}`|Delete|Deletes the specified network security group.|NetworkSecurityGroups_Delete|

@@ -173,6 +173,6 @@ Here is a list of endpoints that we use to create, read, update and delete the S
 |Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/snapshots/%{snapshot_name}`|Put|Creates or updates a snapshot.|Snapshots_CreateOrUpdate|
 |List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Compute/snapshots`|Get|Lists snapshots under a subscription.|Snapshots_List|
 |List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/snapshots/%{snapshot_name}`|Get|Gets information about a snapshot.|Snapshots_Get|
-|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Compute/snapshots`|Get|Lists snapshots under a subscription.|Snapshots_List|
+|List - get list using params|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/snapshots`|Get|Lists snapshots under a resource group.|Snapshots_ListByResourceGroup|
 |Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/snapshots/%{snapshot_name}`|Put|Creates or updates a snapshot.|Snapshots_CreateOrUpdate|
 |Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Compute/snapshots/%{snapshot_name}`|Delete|Deletes a snapshot.|Snapshots_Delete|

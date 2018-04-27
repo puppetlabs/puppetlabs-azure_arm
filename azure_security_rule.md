@@ -1,5 +1,5 @@
 Document: "networkSecurityGroup"
-Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-02-01/networkSecurityGroup.json")
+Path: "/root/specs/specification/network/resource-manager/Microsoft.Network/stable/2018-04-01/networkSecurityGroup.json")
 
 ## SecurityRule
 

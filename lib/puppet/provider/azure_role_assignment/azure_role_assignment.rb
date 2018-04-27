@@ -55,7 +55,6 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
           name: item["name"],
           parameters: item["parameters"],
           properties: item["properties"],
-          scope: item["scope"],
           subscription_id: item["subscriptionId"],
           type: item["type"],
           ensure: :present,
@@ -91,7 +90,6 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
       name: instance.name.respond_to?(:to_hash) ? instance.name.to_hash : instance.name,
       parameters: instance.parameters.respond_to?(:to_hash) ? instance.parameters.to_hash : instance.parameters,
       properties: instance.properties.respond_to?(:to_hash) ? instance.properties.to_hash : instance.properties,
-      scope: instance.scope.respond_to?(:to_hash) ? instance.scope.to_hash : instance.scope,
       subscription_id: instance.subscription_id.respond_to?(:to_hash) ? instance.subscription_id.to_hash : instance.subscription_id,
       type: instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type,
       object: instance,
@@ -208,7 +206,7 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation RoleAssignments_Create")
+    Puppet.info("Calling operation RoleAssignments_CreateById")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -218,13 +216,10 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
-    path_params[:role_assignment_name] = key_values["roleAssignmentName"] unless key_values["roleAssignmentName"].nil?
-    path_params[:role_assignment_name] = ENV["azure_role_assignment_name"] unless ENV["azure_role_assignment_name"].nil?
-    path_params[:role_assignment_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
-    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
-    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
-    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/roleAssignments/%{role_assignment_name}" % path_params
+    path_params[:role_assignment_id] = key_values["roleAssignmentId"] unless key_values["roleAssignmentId"].nil?
+    path_params[:role_assignment_id] = ENV["azure_role_assignment_id"] unless ENV["azure_role_assignment_id"].nil?
+    path_params[:role_assignment_id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    uri_string = "https://management.azure.com/%{role_assignment_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -248,7 +243,7 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation RoleAssignments_Create")
+    Puppet.info("Calling operation RoleAssignments_CreateById")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -258,13 +253,10 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
     path_params[:parameters] = key_values["parameters"] unless key_values["parameters"].nil?
     path_params[:parameters] = ENV["azure_parameters"] unless ENV["azure_parameters"].nil?
     path_params[:parameters] = resource[:parameters] unless resource.nil? or resource[:parameters].nil?
-    path_params[:role_assignment_name] = key_values["roleAssignmentName"] unless key_values["roleAssignmentName"].nil?
-    path_params[:role_assignment_name] = ENV["azure_role_assignment_name"] unless ENV["azure_role_assignment_name"].nil?
-    path_params[:role_assignment_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
-    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
-    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
-    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/roleAssignments/%{role_assignment_name}" % path_params
+    path_params[:role_assignment_id] = key_values["roleAssignmentId"] unless key_values["roleAssignmentId"].nil?
+    path_params[:role_assignment_id] = ENV["azure_role_assignment_id"] unless ENV["azure_role_assignment_id"].nil?
+    path_params[:role_assignment_id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    uri_string = "https://management.azure.com/%{role_assignment_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -288,20 +280,17 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation RoleAssignments_Delete")
+    Puppet.info("Calling operation RoleAssignments_DeleteById")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:role_assignment_name] = key_values["roleAssignmentName"] unless key_values["roleAssignmentName"].nil?
-    path_params[:role_assignment_name] = ENV["azure_role_assignment_name"] unless ENV["azure_role_assignment_name"].nil?
-    path_params[:role_assignment_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
-    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
-    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
-    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/roleAssignments/%{role_assignment_name}" % path_params
+    path_params[:role_assignment_id] = key_values["roleAssignmentId"] unless key_values["roleAssignmentId"].nil?
+    path_params[:role_assignment_id] = ENV["azure_role_assignment_id"] unless ENV["azure_role_assignment_id"].nil?
+    path_params[:role_assignment_id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    uri_string = "https://management.azure.com/%{role_assignment_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -325,7 +314,7 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation RoleAssignments_ListForScope")
+    Puppet.info("Calling operation RoleAssignments_ListForResource")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -335,10 +324,25 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
-    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
-    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
-    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/roleAssignments" % path_params
+    path_params[:parent_resource_path] = key_values["parentResourcePath"] unless key_values["parentResourcePath"].nil?
+    path_params[:parent_resource_path] = ENV["azure_parent_resource_path"] unless ENV["azure_parent_resource_path"].nil?
+    path_params[:parent_resource_path] = resource[:parent_resource_path] unless resource.nil? or resource[:parent_resource_path].nil?
+    path_params[:resource_group_name] = key_values["resourceGroupName"] unless key_values["resourceGroupName"].nil?
+    path_params[:resource_group_name] = ENV["azure_resource_group_name"] unless ENV["azure_resource_group_name"].nil?
+    path_params[:resource_group_name] = resource[:resource_group_name] unless resource.nil? or resource[:resource_group_name].nil?
+    path_params[:resource_name] = key_values["resourceName"] unless key_values["resourceName"].nil?
+    path_params[:resource_name] = ENV["azure_resource_name"] unless ENV["azure_resource_name"].nil?
+    path_params[:resource_name] = resource[:resource_name] unless resource.nil? or resource[:resource_name].nil?
+    path_params[:resource_provider_namespace] = key_values["resourceProviderNamespace"] unless key_values["resourceProviderNamespace"].nil?
+    path_params[:resource_provider_namespace] = ENV["azure_resource_provider_namespace"] unless ENV["azure_resource_provider_namespace"].nil?
+    path_params[:resource_provider_namespace] = resource[:resource_provider_namespace] unless resource.nil? or resource[:resource_provider_namespace].nil?
+    path_params[:resource_type] = key_values["resourceType"] unless key_values["resourceType"].nil?
+    path_params[:resource_type] = ENV["azure_resource_type"] unless ENV["azure_resource_type"].nil?
+    path_params[:resource_type] = resource[:resource_type] unless resource.nil? or resource[:resource_type].nil?
+    path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
+    path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
+    path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourcegroups/%{resource_group_name}/providers/%{resource_provider_namespace}/%{parent_resource_path}/%{resource_type}/%{resource_name}/providers/Microsoft.Authorization/roleAssignments" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)
@@ -362,20 +366,17 @@ Puppet::Type.type(:azure_role_assignment).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation RoleAssignments_Get")
+    Puppet.info("Calling operation RoleAssignments_GetById")
     path_params = {}
     query_params = {}
     header_params = {}
     query_params["api-version"] = key_values["api-version"] unless key_values["api-version"].nil?
     query_params["api-version"] = ENV["azure_api_version"] unless ENV["azure_api_version"].nil?
     query_params["api-version"] = resource[:api_version] unless resource.nil? or resource[:api_version].nil?
-    path_params[:role_assignment_name] = key_values["roleAssignmentName"] unless key_values["roleAssignmentName"].nil?
-    path_params[:role_assignment_name] = ENV["azure_role_assignment_name"] unless ENV["azure_role_assignment_name"].nil?
-    path_params[:role_assignment_name] = resource[:name] unless resource.nil? or resource[:name].nil?
-    path_params[:scope] = key_values["scope"] unless key_values["scope"].nil?
-    path_params[:scope] = ENV["azure_scope"] unless ENV["azure_scope"].nil?
-    path_params[:scope] = resource[:scope] unless resource.nil? or resource[:scope].nil?
-    uri_string = "https://management.azure.com/%{scope}/providers/Microsoft.Authorization/roleAssignments/%{role_assignment_name}" % path_params
+    path_params[:role_assignment_id] = key_values["roleAssignmentId"] unless key_values["roleAssignmentId"].nil?
+    path_params[:role_assignment_id] = ENV["azure_role_assignment_id"] unless ENV["azure_role_assignment_id"].nil?
+    path_params[:role_assignment_id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    uri_string = "https://management.azure.com/%{role_assignment_id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
     header_params['Content-Type'] = 'application/json' # first of [application/json text/json]
     if authenticate(path_params, query_params, header_params, body_params)

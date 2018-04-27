@@ -22,6 +22,11 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     @property_flush[:kind] = value
   end
 
+  def location=(value)
+    Puppet.info("location setter called to change to #{value}")
+    @property_flush[:location] = value
+  end
+
   def name=(value)
     Puppet.info("name setter called to change to #{value}")
     @property_flush[:name] = value
@@ -30,6 +35,11 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
   def properties=(value)
     Puppet.info("properties setter called to change to #{value}")
     @property_flush[:properties] = value
+  end
+
+  def tags=(value)
+    Puppet.info("tags setter called to change to #{value}")
+    @property_flush[:tags] = value
   end
 
   def type=(value)
@@ -78,15 +88,17 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     deployment = {}
     deployment["id"] = resource[:id] unless resource[:id].nil?
     deployment["kind"] = resource[:kind] unless resource[:kind].nil?
+    deployment["location"] = resource[:location] unless resource[:location].nil?
     deployment["name"] = resource[:name] unless resource[:name].nil?
     deployment["properties"] = resource[:properties] unless resource[:properties].nil?
+    deployment["tags"] = resource[:tags] unless resource[:tags].nil?
     deployment["type"] = resource[:type] unless resource[:type].nil?
     return deployment
   end
 
   def self.build_key_values
     key_values = {}
-    key_values["api-version"] = "2018-02-01"
+    key_values["api-version"] = "2015-08-01"
     key_values
   end
 
@@ -113,7 +125,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_create(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_CreateDeploymentSlot")
+    Puppet.info("Calling operation Sites_CreateInstanceDeploymentSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -126,6 +138,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
+    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
+    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
@@ -138,9 +153,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -162,7 +177,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_update(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_CreateDeploymentSlot")
+    Puppet.info("Calling operation Sites_CreateInstanceDeploymentSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -175,6 +190,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
+    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
+    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
@@ -187,9 +205,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -211,7 +229,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_delete(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_DeleteDeploymentSlot")
+    Puppet.info("Calling operation Sites_DeleteInstanceDeploymentSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -221,6 +239,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
+    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
+    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
@@ -233,9 +254,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -257,7 +278,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_list_with_params(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_ListDeploymentsSlot")
+    Puppet.info("Calling operation Sites_GetDeploymentsSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -278,7 +299,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
     uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/deployments" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)
@@ -300,7 +321,7 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
 
   def self.invoke_get_one(resource = nil, body_params = nil)
     key_values = self.build_key_values
-    Puppet.info("Calling operation WebApps_GetDeploymentSlot")
+    Puppet.info("Calling operation Sites_GetInstanceDeploymentSlot")
     path_params = {}
     query_params = {}
     header_params = {}
@@ -310,6 +331,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:id] = key_values["id"] unless key_values["id"].nil?
     path_params[:id] = ENV["azure_id"] unless ENV["azure_id"].nil?
     path_params[:id] = resource[:id] unless resource.nil? or resource[:id].nil?
+    path_params[:instance_id] = key_values["instanceId"] unless key_values["instanceId"].nil?
+    path_params[:instance_id] = ENV["azure_instance_id"] unless ENV["azure_instance_id"].nil?
+    path_params[:instance_id] = resource[:instance_id] unless resource.nil? or resource[:instance_id].nil?
     path_params[:name] = key_values["name"] unless key_values["name"].nil?
     path_params[:name] = ENV["azure_name"] unless ENV["azure_name"].nil?
     path_params[:name] = resource[:name] unless resource.nil? or resource[:name].nil?
@@ -322,9 +346,9 @@ Puppet::Type.type(:azure_deployment).provide(:arm) do
     path_params[:subscription_id] = key_values["subscriptionId"] unless key_values["subscriptionId"].nil?
     path_params[:subscription_id] = ENV["azure_subscription_id"] unless ENV["azure_subscription_id"].nil?
     path_params[:subscription_id] = resource[:subscription_id] unless resource.nil? or resource[:subscription_id].nil?
-    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/deployments/%{id}" % path_params
+    uri_string = "https://management.azure.com/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Web/sites/%{name}/slots/%{slot}/instances/%{instance_id}/deployments/%{id}" % path_params
     uri_string = uri_string + "?" + to_query(query_params)
-    header_params['Content-Type'] = 'application/json' # first of [application/json]
+    header_params['Content-Type'] = 'application/json' # first of []
     if authenticate(path_params, query_params, header_params, body_params)
       Puppet.info("Authentication succeeded")
       uri = URI(uri_string)

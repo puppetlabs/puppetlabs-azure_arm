@@ -10,6 +10,7 @@ Puppet::Type.newtype(:azure_premier_add_on) do
       :location,
       :premier_add_on,
       :resource_group_name,
+      :slot,
     ]
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
@@ -75,6 +76,12 @@ Puppet::Type.newtype(:azure_premier_add_on) do
   end
   newparam(:resource_group_name) do
     desc "Name of the resource group to which the resource belongs."
+    validate do |value|
+      true
+    end
+  end
+  newparam(:slot) do
+    desc "Name of the deployment slot. If a slot is not specified, the API will update the named add-on for the production slot."
     validate do |value|
       true
     end

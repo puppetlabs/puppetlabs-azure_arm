@@ -1,0 +1,52 @@
+{
+	"description": "The operation to resume an Azure Site Recovery job",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resume_job_params":{
+			   "description": "Resume rob comments.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Resume job properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "Job identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

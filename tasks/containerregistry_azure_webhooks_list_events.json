@@ -1,0 +1,52 @@
+{
+	"description": "Lists recent events for the specified webhook.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"webhook_name":{
+			   "description": "The name of the webhook.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URI that can be used to request the next list of events.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of events. Since this list may be incomplete, the nextLink field should be used to request the next list of events.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Microsoft Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group to which the container registry belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_name":{
+			   "description": "The name of the container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,82 @@
+{
+	"description": "Clones the backup element as a new volume.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetaccesscontrolrecordids":{
+			   "description": "The list of path IDs of the access control records to be associated to the new cloned volume.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backupelement":{
+			   "description": "The backup element that is cloned.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_name":{
+			   "description": "The device name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The clone request object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetdeviceid":{
+			   "description": "The path ID of the device which will act as the clone target.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetvolumename":{
+			   "description": "The name of the new volume which will be created and the backup will be cloned into.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backup_name":{
+			   "description": "The backup name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backup_element_name":{
+			   "description": "The backup element name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

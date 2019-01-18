@@ -1,0 +1,40 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_ids":{
+			   "description": "Ids of the images to be deleted. Limited to 256 images per batch.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isbatchsuccessful":{
+			   "description": "True if all of the images in the batch were created successfully, otherwise false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"images":{
+			   "description": "List of the image creation results.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

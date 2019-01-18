@@ -1,0 +1,148 @@
+{
+	"description": "Retrieves the list of all statistics in a database from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"count":{
+			   "description": "The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"colnames":{
+			   "description": "the list of column names associated with these statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statisticsname":{
+			   "description": "the name of the table statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isusercreated":{
+			   "description": "the switch indicating if these statistics are user created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tablename":{
+			   "description": "the name of the table.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of items to return. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userstatname":{
+			   "description": "the name of the user statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isautocreated":{
+			   "description": "the switch indicating if these statistics are automatically created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statdatapath":{
+			   "description": "the path to the statistics data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hasfilter":{
+			   "description": "the switch indicating if these statistics have a filter.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"updatetime":{
+			   "description": "the last time the statistics were updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip":{
+			   "description": "The number of items to skip over before returning elements. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"createtime":{
+			   "description": "the creation time of the statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filterdefinition":{
+			   "description": "the filter definition for the statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schemaname":{
+			   "description": "the name of the schema associated with this table and database.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

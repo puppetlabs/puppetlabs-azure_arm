@@ -1,0 +1,52 @@
+{
+	"description": "Renews the connection certificate for the ASR replication fabric.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "fabric name to renew certs for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"renew_certificate":{
+			   "description": "Renew certificate input.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Renew certificate input properties.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

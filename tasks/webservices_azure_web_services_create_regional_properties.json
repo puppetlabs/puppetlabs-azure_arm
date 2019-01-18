@@ -1,0 +1,82 @@
+{
+	"description": "Creates an encrypted credentials parameter blob for the specified region. To get the web service from a region other than the region in which it has been created, you must first call Create Regional Web Services Properties to create a copy of the encrypted credential parameter blob in that region. You only need to do this before the first time that you get the web service in the new region.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group in which the web service is located.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the Microsoft.MachineLearning resource provider API to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioningstate":{
+			   "description": "Read Only: The provisioning state of the web service. Valid values are Unknown, Provisioning, Succeeded, and Failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starttime":{
+			   "description": "The date time that the async operation started.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endtime":{
+			   "description": "The date time that the async operation finished.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorinfo":{
+			   "description": "If the async operation fails, this structure contains the error details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Async operation id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"web_service_name":{
+			   "description": "The name of the web service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"region":{
+			   "description": "The region for which encrypted credential parameters are created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"percentcomplete":{
+			   "description": "Async operation progress.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Async operation name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

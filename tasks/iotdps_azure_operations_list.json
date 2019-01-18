@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the available Microsoft.Devices REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"display":{
+			   "description": "The object that represents the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{read | write | action | delete}",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

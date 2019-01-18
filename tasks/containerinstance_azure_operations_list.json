@@ -1,0 +1,40 @@
+{
+	"description": "List the operations for Azure Container Instance service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"display":{
+			   "description": "The display information of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The additional properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "The intended executor of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

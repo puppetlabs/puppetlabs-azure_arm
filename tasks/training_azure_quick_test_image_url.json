@@ -1,0 +1,40 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"iteration_id":{
+			   "description": "Optional. Specifies the id of a particular iteration to evaluate against.            The default iteration for the project will be used when not specified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"url":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project to evaluate against.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_url":{
+			   "description": "An {Iris.Web.Api.Models.ImageUrl} that contains the url of the image to be evaluated.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"status":{
+			   "description": "Status of the export.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"downloaduri":{
+			   "description": "URI used to download the model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"newerversionavailable":{
+			   "description": "Indicates an updated version of the export package is available and should be re-exported for the latest changes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iteration_id":{
+			   "description": "The iteration id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"platform":{
+			   "description": "Platform of the export.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"flavor":{
+			   "description": "Flavor of the export.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

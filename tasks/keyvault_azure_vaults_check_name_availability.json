@@ -1,0 +1,46 @@
+{
+	"description": "Checks that the vault name is valid and is not already in use.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"message":{
+			   "description": "An error message explaining the Reason value in more detail.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nameavailable":{
+			   "description": "A boolean value that indicates whether the name is available for you to use. If true, the name is available. If false, the name has already been taken or is invalid and cannot be used.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reason":{
+			   "description": "The reason that a vault name could not be used. The Reason element is only returned if NameAvailable is false.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

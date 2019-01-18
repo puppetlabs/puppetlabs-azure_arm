@@ -1,0 +1,28 @@
+{
+	"description": "To get even more information on each recognized entity we recommend using the Bing Entity Search API by querying for the recognized entities names. See the Supported languages in Text Analytics API for the list of enabled languages.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"input":{
+			   "description": "Collection of documents to analyze.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"documents":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

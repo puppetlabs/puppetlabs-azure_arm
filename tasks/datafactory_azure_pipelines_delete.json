@@ -1,0 +1,82 @@
+{
+	"description": "Deletes a pipeline.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pipeline_name":{
+			   "description": "The pipeline name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"concurrency":{
+			   "description": "The max number of concurrent runs for the pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"annotations":{
+			   "description": "List of tags that can be used for describing the Pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "List of parameters for pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"variables":{
+			   "description": "List of variables for pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"factory_name":{
+			   "description": "The factory name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"folder":{
+			   "description": "The folder that this Pipeline is in. If not specified, Pipeline will appear at the root level.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "The description of the pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"activities":{
+			   "description": "List of activities in pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

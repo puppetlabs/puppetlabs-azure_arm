@@ -1,0 +1,52 @@
+{
+	"description": "Checks whether or not the given Search service name is available for use. Search service names must be globally unique since they are part of the service URI (https://.search.windows.net).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"nameavailable":{
+			   "description": "A value indicating whether the name is available.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"check_name_availability_input":{
+			   "description": "The resource name and type to check.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x_ms_client_request_id":{
+			   "description": "A client-generated GUID value that identifies this request. If specified, this will be included in response information as a way to track the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for each request. The current version is 2015-08-19.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reason":{
+			   "description": "The reason why the name is not available. 'Invalid' indicates the name provided does not match the naming requirements (incorrect length, unsupported characters, etc.). 'AlreadyExists' indicates that the name is already in use and is therefore unavailable.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message that explains why the name is invalid and provides resource naming requirements. Available only if 'Invalid' is returned in the 'reason' property.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

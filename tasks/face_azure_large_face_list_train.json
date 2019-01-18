@@ -1,0 +1,22 @@
+{
+	"description": "Queue a large face list training task, the training task may not be started immediately.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_face_list_id":{
+			   "description": "Id referencing a particular large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

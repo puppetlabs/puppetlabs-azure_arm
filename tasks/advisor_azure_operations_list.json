@@ -1,0 +1,28 @@
+{
+	"description": "Lists all the available Advisor REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "The operation supported by Advisor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "The GetCertificateIssuers operation returns the set of certificate issuer resources in the specified key vault. This operation requires the certificates/manageissuers/getissuers permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Certificate Identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provider":{
+			   "description": "The issuer provider.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

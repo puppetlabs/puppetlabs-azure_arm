@@ -1,0 +1,100 @@
+{
+	"description": "Detects profanity in more than 100 languages and match against custom and shared blacklists.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"classify":{
+			   "description": "Classify input.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"autocorrectedtext":{
+			   "description": "The autocorrected text",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trackingid":{
+			   "description": "Unique Content Moderator transaction Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"normalizedtext":{
+			   "description": "The normalized text.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"autocorrect":{
+			   "description": "Autocorrect text.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"list_id":{
+			   "description": "The list Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"misrepresentation":{
+			   "description": "The misrepresentation text.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"terms":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pii":{
+			   "description": "Personal Identifier Information details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"text_content":{
+			   "description": "Content to screen.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "The evaluate status.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"originaltext":{
+			   "description": "The original text.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language":{
+			   "description": "Language of the input text content.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classification":{
+			   "description": "The classification details of the text.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

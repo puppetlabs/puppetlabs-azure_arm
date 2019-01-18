@@ -1,0 +1,40 @@
+{
+	"description": "Updates the name of an intent classifier.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intent_id":{
+			   "description": "The intent classifier ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"model_update_object":{
+			   "description": "A model object containing the new intent classifier name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

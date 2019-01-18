@@ -1,0 +1,52 @@
+{
+	"description": "Triggers Server certificate rollover.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"server_id":{
+			   "description": "Server Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Body of Trigger Rollover request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"servercertificate":{
+			   "description": "Certificate Data",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storage_sync_service_name":{
+			   "description": "Name of Storage Sync Service resource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

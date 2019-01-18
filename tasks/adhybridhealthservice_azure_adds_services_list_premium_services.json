@@ -1,0 +1,184 @@
+{
+	"description": "Gets the details of Active Directory Domain Services for a tenant having Azure AD Premium license and is onboarded to Azure Active Directory Connect Health.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"createddate":{
+			   "description": "The date and time, in UTC, when the service was onboarded to Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resolvedalerts":{
+			   "description": "The total count of alerts that has been resolved for the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitoringconfigurationscomputed":{
+			   "description": "The monitoring configuration of the service which determines what activities are monitored by Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"originaldisabledstate":{
+			   "description": "Gets the original disable state.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_type":{
+			   "description": "The service type for the services onboarded to Azure Active Directory Connect Health. Depending on whether the service is monitoring, ADFS, Sync or ADDS roles, the service type can either be AdFederationService or AadSyncService or AdDomainService.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationemailenabledforglobaladmins":{
+			   "description": "Indicates if email notification is enabled for global administrators of the tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The id of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationemailenabled":{
+			   "description": "Indicates if email notification is enabled or not.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationemailsenabledforglobaladmins":{
+			   "description": "Indicates if email notification is enabled for global administrators of the tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastdisabled":{
+			   "description": "The date and time, in UTC, when the service was last disabled.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"serviceid":{
+			   "description": "The id of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The id of the tenant to which the service is registered to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip_count":{
+			   "description": "The skip count, which specifies the number of elements that can be bypassed from a sequence and then return the remaining elements.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"take_count":{
+			   "description": "The take count , which specifies the number of elements that can be returned from a sequence.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disabled":{
+			   "description": "Indicates if the service is disabled or not.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additionalinformation":{
+			   "description": "The additional information related to the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationemails":{
+			   "description": "The list of emails to whom service notifications will be sent.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"activealerts":{
+			   "description": "The count of alerts that are currently active for the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The service type for the services onboarded to Azure Active Directory Connect Health. Depending on whether the service is monitoring, ADFS, Sync or ADDS roles, the service type can either be AdFederationService or AadSyncService or AdDomainService.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signature":{
+			   "description": "The signature of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"customnotificationemails":{
+			   "description": "The list of additional emails that are configured to receive notifications about the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"health":{
+			   "description": "The health of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The service property filter to apply.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"simpleproperties":{
+			   "description": "List of service specific configuration properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastupdated":{
+			   "description": "The date or time , in UTC, when the service properties were last updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"servicename":{
+			   "description": "The name of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "The display name of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitoringconfigurationscustomized":{
+			   "description": "The customized monitoring configuration of the service which determines what activities are monitored by Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

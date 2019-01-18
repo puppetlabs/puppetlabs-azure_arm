@@ -1,0 +1,46 @@
+{
+	"description": "Returns all failover sets for a given device and their eligibility for participating in a failover. A failover set refers to a set of volume containers that need to be failed-over as a single unit to maintain data integrity.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of failover sets.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_name":{
+			   "description": "The device name",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

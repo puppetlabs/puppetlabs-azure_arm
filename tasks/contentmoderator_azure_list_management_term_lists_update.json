@@ -1,0 +1,34 @@
+{
+	"description": "Updates an Term List.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"list_id":{
+			   "description": "List Id of the image list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "Schema of the body.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

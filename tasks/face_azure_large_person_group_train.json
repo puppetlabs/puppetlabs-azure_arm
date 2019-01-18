@@ -1,0 +1,22 @@
+{
+	"description": "Queue a large person group training task, the training task may not be started immediately.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"large_person_group_id":{
+			   "description": "Id referencing a particular large person group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

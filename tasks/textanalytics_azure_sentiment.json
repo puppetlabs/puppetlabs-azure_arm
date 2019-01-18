@@ -1,0 +1,40 @@
+{
+	"description": "Scores close to 1 indicate positive sentiment, while scores close to 0 indicate negative sentiment. A score of 0.5 indicates the lack of sentiment (e.g. a factoid statement). See the Text Analytics Documentation for details about the languages that are supported by sentiment analysis.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"innererror":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input":{
+			   "description": "Collection of documents to analyze.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

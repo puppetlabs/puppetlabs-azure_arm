@@ -1,0 +1,76 @@
+{
+	"description": "Export logs that show Api requests made by this subscription in the given time window to show throttling activities.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"groupbyresourcename":{
+			   "description": "Group query result by Resource Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to the LogAnalytics getRequestRateByInterval Api.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The location upon which virtual-machine-sizes is queried.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"totime":{
+			   "description": "To time of the query",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intervallength":{
+			   "description": "Interval value in minutes used to create LogAnalytics call rate logs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"groupbythrottlepolicy":{
+			   "description": "Group query result by Throttle Policy applied.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"groupbyoperationname":{
+			   "description": "Group query result by Operation Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"blobcontainersasuri":{
+			   "description": "SAS Uri of the logging blob container to which LogAnalytics Api writes output logs to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fromtime":{
+			   "description": "From time of the query",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

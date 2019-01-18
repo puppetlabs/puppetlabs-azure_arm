@@ -1,0 +1,52 @@
+{
+	"description": "This operation creates or updates a policy set definition in the given subscription with the given name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_set_definition_name":{
+			   "description": "The name of the policy set definition to create.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The policy set definition properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errormessage":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"httpstatus":{
+			   "description": "Http status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorcode":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

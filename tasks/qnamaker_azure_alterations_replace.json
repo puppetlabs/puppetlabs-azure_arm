@@ -1,0 +1,22 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"word_alterations":{
+			   "description": "New alterations data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error object.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

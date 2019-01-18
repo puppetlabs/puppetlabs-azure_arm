@@ -1,0 +1,34 @@
+{
+	"description": "Split a `Reservation` into two `Reservation`s with specified quantity distribution.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"body":{
+			   "description": "Information needed to Split a reservation item",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reservation_order_id":{
+			   "description": "Order Id of the reservation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Supported version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

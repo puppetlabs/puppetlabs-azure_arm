@@ -1,0 +1,34 @@
+{
+	"description": "Returns the DNS records specified by the referencing targetResourceIds.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"properties":{
+			   "description": "The properties of the Resource Reference Request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Specifies the API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Properties for dns resource reference request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

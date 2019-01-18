@@ -1,0 +1,34 @@
+{
+	"description": "Returns the list of operations supported by the import/export resource provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Specifies the API version to use for this request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "Specifies the preferred language for the response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "operation display properties",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

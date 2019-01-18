@@ -1,0 +1,106 @@
+{
+	"description": "Creates a service principal in the directory.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accountenabled":{
+			   "description": "Whether the account is enabled",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keycredentials":{
+			   "description": "A collection of KeyCredential objects.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters to create a service principal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"appid":{
+			   "description": "application Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "The display name for the service principal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"homepage":{
+			   "description": "The URL to the homepage of the associated application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"passwordcredentials":{
+			   "description": "A collection of PasswordCredential objects",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"approleassignmentrequired":{
+			   "description": "Specifies whether an AppRoleAssignment to a user or group is required before Azure AD will issue a user or access token to the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replyurls":{
+			   "description": "A collection of reply URLs for the service principal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorurl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"publishername":{
+			   "description": "The display name of the tenant in which the associated application is specified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"serviceprincipalnames":{
+			   "description": "A collection of service principal names.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"samlmetadataurl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

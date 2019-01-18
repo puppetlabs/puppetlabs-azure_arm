@@ -1,0 +1,58 @@
+{
+	"description": "Failovers a set of volume containers from a specified source device to a target device.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"source_device_name":{
+			   "description": "The source device name on which failover is performed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "FailoverRequest containing the source device and the list of volume containers to be failed over.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetdeviceid":{
+			   "description": "The ARM path ID of the device which will act as the failover target.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"volumecontainers":{
+			   "description": "The list of path IDs of the volume containers which needs to be failed-over to the target device.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

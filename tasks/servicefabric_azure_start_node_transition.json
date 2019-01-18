@@ -1,0 +1,58 @@
+{
+	"description": "Starts or stops a cluster node.  A cluster node is a process, not the OS instance itself.  To start a node, pass in 'Start' for the NodeTransitionType parameter.To stop a node, pass in 'Stop' for the NodeTransitionType parameter.  This API starts the operation - when the API returns the node may not have finished transitioning yet.Call GetNodeTransitionProgress with the same OperationId to get the progress of the operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error object containing error code and error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.0'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accept any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0, but if the runtime is 6.1, in order to make it easier to write the clients, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"node_name":{
+			   "description": "The name of the node.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_id":{
+			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"node_transition_type":{
+			   "description": "Indicates the type of transition to perform.  NodeTransitionType.Start will start a stopped node.  NodeTransitionType.Stop will stop a node that is up.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"node_instance_id":{
+			   "description": "The node instance ID of the target node.  This can be determined through GetNodeInfo API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stop_duration_in_seconds":{
+			   "description": "The duration, in seconds, to keep the node stopped.  The minimum value is 600, the maximum is 14400.  After this time expires, the node will automatically come back up.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

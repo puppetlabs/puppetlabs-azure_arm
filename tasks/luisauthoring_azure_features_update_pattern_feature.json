@@ -1,0 +1,52 @@
+{
+	"description": "[DEPRECATED NOTICE: This operation will soon be removed] Updates the pattern, the name and the state of the pattern feature.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pattern_id":{
+			   "description": "The pattern feature ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pattern_update_object":{
+			   "description": "The new values for: - Just a boolean called IsActive, in which case the status of the feature will be changed. - Name, Pattern and a boolean called IsActive to update the feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isactive":{
+			   "description": "Indicates if the Pattern feature is enabled.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pattern":{
+			   "description": "The Regular Expression to match.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

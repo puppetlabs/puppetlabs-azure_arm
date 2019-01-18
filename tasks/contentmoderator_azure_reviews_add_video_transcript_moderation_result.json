@@ -1,0 +1,40 @@
+{
+	"description": "This API adds a transcript screen text result file for a video review. Transcript screen text result file is a result of Screen Text API . In order to generate transcript screen text result file , a transcript file has to be screened for profanity using Screen Text API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"team_name":{
+			   "description": "Your team name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"review_id":{
+			   "description": "Id of the review.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transcript_moderation_body":{
+			   "description": "Body for add video transcript moderation result API",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

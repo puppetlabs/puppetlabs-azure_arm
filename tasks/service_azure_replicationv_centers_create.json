@@ -1,0 +1,58 @@
+{
+	"description": "The operation to create a vCenter object..",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Fabric name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"v_center_name":{
+			   "description": "vCenter name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"add_v_center_request":{
+			   "description": "The input to the add vCenter operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The properties of an add vCenter request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

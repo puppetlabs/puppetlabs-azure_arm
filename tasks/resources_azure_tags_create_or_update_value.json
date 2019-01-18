@@ -1,0 +1,52 @@
+{
+	"description": "Creates a tag value. The name of the tag must already exist.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The tag ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"count":{
+			   "description": "The tag value count.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_name":{
+			   "description": "The name of the tag.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tagvalue":{
+			   "description": "The tag value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

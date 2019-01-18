@@ -1,0 +1,28 @@
+{
+	"description": "Verify whether two faces belong to a same person or whether one face belongs to a person.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"body":{
+			   "description": "Request body for face to face verification.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"faceid1":{
+			   "description": "FaceId of the first face, comes from Face - Detect",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"faceid2":{
+			   "description": "FaceId of the second face, comes from Face - Detect",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

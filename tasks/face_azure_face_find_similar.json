@@ -1,0 +1,16 @@
+{
+	"description": "Given query face's faceId, find the similar-looking faces from a faceId array, a face list or a large face list.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"body":{
+			   "description": "Request body for Find Similar.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

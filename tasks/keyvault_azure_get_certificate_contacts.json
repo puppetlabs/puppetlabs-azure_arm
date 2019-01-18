@@ -1,0 +1,34 @@
+{
+	"description": "The GetCertificateContacts operation returns the set of certificate contact resources in the specified key vault. This operation requires the certificates/managecontacts permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"phone":{
+			   "description": "Phone number.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"email":{
+			   "description": "Email address.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

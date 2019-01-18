@@ -1,0 +1,52 @@
+{
+	"description": "Get the details (e.g IP address, port etc) of all the compute nodes in the compute.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workspace_name":{
+			   "description": "Name of Azure Machine Learning workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"compute_name":{
+			   "description": "Name of the Azure Machine Learning compute.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of Azure Machine Learning resource provider API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computetype":{
+			   "description": "The type of compute",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The continuation token.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group in which workspace is located.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

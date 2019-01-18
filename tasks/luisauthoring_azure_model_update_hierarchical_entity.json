@@ -1,0 +1,40 @@
+{
+	"description": "Updates the name and children of a hierarchical entity model.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"h_entity_id":{
+			   "description": "The hierarchical entity extractor ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hierarchical_model_update_object":{
+			   "description": "Model containing names of the children of the hierarchical entity.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

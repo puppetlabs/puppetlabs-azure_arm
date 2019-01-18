@@ -1,0 +1,76 @@
+{
+	"description": "Submits a job to the specified Data Lake Analytics account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"properties":{
+			   "description": "the job specific properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "the friendly name of the job to submit.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"degreeofparallelism":{
+			   "description": "the degree of parallelism used for this job. At most one of degreeOfParallelism and degreeOfParallelismPercent should be specified. If none, a default value of 1 will be used.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"degreeofparallelismpercent":{
+			   "description": "the degree of parallelism in percentage used for this job. At most one of degreeOfParallelism and degreeOfParallelismPercent should be specified. If none, a default value of 1 will be used for degreeOfParallelism.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"logfilepatterns":{
+			   "description": "the list of log file name patterns to find in the logFolder. '*' is the only matching character allowed. Example format: jobExecution*.log or *mylog*.txt",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_identity":{
+			   "description": "Job identifier. Uniquely identifies the job across all jobs submitted to the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters to submit a job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"priority":{
+			   "description": "the priority value to use for the current job. Lower numbers have a higher priority. By default, a job has a priority of 1000. This must be greater than 0.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"related":{
+			   "description": "the recurring job relationship information properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "the job type of the current job (Hive or USql).",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

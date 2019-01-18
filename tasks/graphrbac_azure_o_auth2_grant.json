@@ -1,0 +1,76 @@
+{
+	"description": "Grants OAuth2 permissions for the relevant resource Ids of an app.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expirytime":{
+			   "description": "Expiry time for TTL",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatatype":{
+			   "description": "Microsoft.DirectoryServices.OAuth2PermissionGrant",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"clientid":{
+			   "description": "The objectId of the Service Principal associated with the app",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"consenttype":{
+			   "description": "Typically set to AllPrincipals",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "The relevant app Service Principal Object Id and the Service Principal Object Id you want to grant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourceid":{
+			   "description": "Service Principal Id of the resource you want to grant",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scope":{
+			   "description": "Typically set to user_impersonation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starttime":{
+			   "description": "Start time for TTL",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"principalid":{
+			   "description": "Set to null if AllPrincipals is set",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

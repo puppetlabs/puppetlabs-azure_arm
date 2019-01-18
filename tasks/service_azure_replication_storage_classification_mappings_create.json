@@ -1,0 +1,64 @@
+{
+	"description": "The operation to create a storage classification mapping.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Fabric name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Storage mapping input properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storage_classification_name":{
+			   "description": "Storage classification name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storage_classification_mapping_name":{
+			   "description": "Storage classification mapping name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pairing_input":{
+			   "description": "Pairing input.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

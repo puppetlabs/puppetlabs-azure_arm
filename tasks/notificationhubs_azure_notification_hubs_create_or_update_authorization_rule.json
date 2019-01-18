@@ -1,0 +1,58 @@
+{
+	"description": "Creates/Updates an authorization rule for a NotificationHub",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"notification_hub_name":{
+			   "description": "The notification hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authorization_rule_name":{
+			   "description": "Authorization Rule Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The shared access authorization rule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the Namespace AuthorizationRules.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"namespace_name":{
+			   "description": "The namespace name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

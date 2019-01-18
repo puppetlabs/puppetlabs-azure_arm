@@ -1,0 +1,46 @@
+{
+	"description": "Captures the specified resource group as a template.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "Parameters for exporting the template.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"template":{
+			   "description": "The template content.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group to export as a template.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

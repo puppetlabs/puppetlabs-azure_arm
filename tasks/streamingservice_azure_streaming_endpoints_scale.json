@@ -1,0 +1,52 @@
+{
+	"description": "Scales an existing StreamingEndpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"account_name":{
+			   "description": "The Media Services account name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"streaming_endpoint_name":{
+			   "description": "The name of the StreamingEndpoint.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "StreamingEndpoint scale parameters",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scaleunit":{
+			   "description": "The scale unit number of the StreamingEndpoint.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

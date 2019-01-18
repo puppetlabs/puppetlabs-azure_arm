@@ -1,0 +1,46 @@
+{
+	"description": "The Recover Deleted Key operation is applicable for deleted keys in soft-delete enabled vaults. It recovers the deleted key back to its latest version under /keys. An attempt to recover an non-deleted key will return an error. Consider this the inverse of the delete operation on soft-delete enabled vaults. This operation requires the keys/recover permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key":{
+			   "description": "The Json web key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "The key management attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"managed":{
+			   "description": "True if the key's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_name":{
+			   "description": "The name of the deleted key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

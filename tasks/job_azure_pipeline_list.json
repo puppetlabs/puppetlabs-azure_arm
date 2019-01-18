@@ -1,0 +1,100 @@
+{
+	"description": "Lists all pipelines.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"end_date_time":{
+			   "description": "The end date for when to get the list of pipelines. The startDateTime and endDateTime can be no more than 30 days apart.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"numjobssucceeded":{
+			   "description": "the number of jobs in this pipeline that have succeeded.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"auhoursfailed":{
+			   "description": "the number of job execution hours that resulted in failed jobs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"numjobscanceled":{
+			   "description": "the number of jobs in this pipeline that have been canceled.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recurrences":{
+			   "description": "the list of recurrence identifiers representing each recurrence in this pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"runs":{
+			   "description": "the list of run identifiers representing each run of this pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pipelinename":{
+			   "description": "the friendly name of the job relationship pipeline, which does not need to be unique.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"numjobsfailed":{
+			   "description": "the number of jobs in this pipeline that have failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_date_time":{
+			   "description": "The start date for when to get the list of pipelines. The startDateTime and endDateTime can be no more than 30 days apart.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"auhourssucceeded":{
+			   "description": "the number of job execution hours that resulted in successful jobs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pipelineuri":{
+			   "description": "the pipeline uri, unique, links to the originating service for this pipeline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"auhourscanceled":{
+			   "description": "the number of job execution hours that resulted in canceled jobs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastsubmittime":{
+			   "description": "the last time a job in this pipeline was submitted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pipelineid":{
+			   "description": "the job relationship pipeline identifier (a GUID).",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

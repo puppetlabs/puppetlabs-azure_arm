@@ -1,0 +1,40 @@
+{
+	"description": "Gets a collection of object IDs of groups of which the specified group is a member.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "Group filtering parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A collection of group IDs of which the group is a member.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"object_id":{
+			   "description": "The object ID of the group for which to get group membership.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

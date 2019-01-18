@@ -1,0 +1,106 @@
+{
+	"description": "Restores the specified backup data. This is an asynchronous operation. To know the status of this API call, use GetProtectedItemOperationResult API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"location":{
+			   "description": "Resource location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container_name":{
+			   "description": "The container name associated with the backup items.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_restore_request":{
+			   "description": "The resource restore request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name associated with the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recovery_point_id":{
+			   "description": "The recovery point ID for the backup data to be restored.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "The fabric name associated with the backup items.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource ID represents the complete path to the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Resource tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group associated with the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protected_item_name":{
+			   "description": "The backup item to be restored.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"etag":{
+			   "description": "Optional ETag.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/...",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

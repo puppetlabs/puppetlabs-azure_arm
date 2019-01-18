@@ -1,0 +1,52 @@
+{
+	"description": "Grants access to a disk.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"grant_access_data":{
+			   "description": "Access data object supplied in the body of the get disk access operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"access":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"durationinseconds":{
+			   "description": "Time duration in seconds until the SAS access expires.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disk_name":{
+			   "description": "The name of the managed disk that is being created. The name can't be changed after the disk is created. Supported characters for the name are a-z, A-Z, 0-9 and _. The maximum name length is 80 characters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

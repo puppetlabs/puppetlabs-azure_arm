@@ -1,0 +1,28 @@
+{
+	"description": "Restores a backed up certificate, and all its versions, to a vault. This operation requires the certificates/restore permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "The parameters to restore the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The backup blob associated with a certificate bundle.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"description": "Summarizes policy states for the resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"filter":{
+			   "description": "OData filter expression.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "Summarize action results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_states_summary_resource":{
+			   "description": "The virtual resource under PolicyStates resource type for summarize action. In a given time range, 'latest' represents the latest policy state(s) and is the only allowed value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "Maximum number of records to return.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"from":{
+			   "description": "ISO 8601 formatted timestamp specifying the start time of the interval to query. When not specified, the service uses ($to - 1-day).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatacontext":{
+			   "description": "OData context string; used by OData clients to resolve type information based on metadata.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatacount":{
+			   "description": "OData entity count; represents the number of summaries returned; always set to 1.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "Resource ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version to use with the client requests.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"to":{
+			   "description": "ISO 8601 formatted timestamp specifying the end time of the interval to query. When not specified, the service uses request time.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

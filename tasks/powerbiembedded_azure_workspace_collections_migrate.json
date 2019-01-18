@@ -1,0 +1,46 @@
+{
+	"description": "Migrates an existing Power BI Workspace Collection to a different resource group and/or subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"body":{
+			   "description": "Workspace migration request",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetresourcegroup":{
+			   "description": "Name of the resource group the Power BI workspace collections will be migrated to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Azure resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Fuzzily match an image against one of your custom Image Lists. You can create and manage your custom image lists using this API. Returns ID and tags of matching image.Note: Refresh Index must be run on the corresponding Image List before additions and removals are reflected in the response.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"list_id":{
+			   "description": "The list Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_image":{
+			   "description": "Whether to retain the submitted image for future use; defaults to false if omitted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

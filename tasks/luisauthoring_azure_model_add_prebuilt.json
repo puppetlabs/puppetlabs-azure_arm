@@ -1,0 +1,28 @@
+{
+	"description": "Adds a list of prebuilt entity extractors to the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prebuilt_extractor_names":{
+			   "description": "An array of prebuilt entity extractor names.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

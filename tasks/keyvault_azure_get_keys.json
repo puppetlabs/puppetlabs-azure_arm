@@ -1,0 +1,46 @@
+{
+	"description": "Retrieves a list of the keys in the Key Vault as JSON Web Key structures that contain the public part of a stored key. The LIST operation is applicable to all key types, however only the base key identifier, attributes, and tags are provided in the response. Individual versions of a key are not listed in the response. This operation requires the keys/list permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"managed":{
+			   "description": "True if the key's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kid":{
+			   "description": "Key identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "The key management attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,88 @@
+{
+	"description": "List SAS credentials of a storage account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"account_name":{
+			   "description": "The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signedstart":{
+			   "description": "The time at which the SAS becomes valid.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signedprotocol":{
+			   "description": "The protocol permitted for a request made with the account SAS.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signedip":{
+			   "description": "An IP address or a range of IP addresses from which to accept requests.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the user's subscription. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters to provide to list SAS credentials for the storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signedexpiry":{
+			   "description": "The time at which the shared access signature becomes invalid.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keytosign":{
+			   "description": "The key to sign the account SAS token with.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signedservices":{
+			   "description": "The signed services accessible with the account SAS. Possible values include: Blob (b), Queue (q), Table (t), File (f).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signedresourcetypes":{
+			   "description": "The signed resource types that are accessible with the account SAS. Service (s): Access to service-level APIs; Container (c): Access to container-level APIs; Object (o): Access to object-level APIs for blobs, queue messages, table entities, and files.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signedpermission":{
+			   "description": "The signed permissions for the account SAS. Possible values include: Read (r), Write (w), Delete (d), List (l), Add (a), Create (c), Update (u) and Process (p).",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

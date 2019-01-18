@@ -1,0 +1,28 @@
+{
+	"description": "List all operations available through Azure Alerts Management Resource Provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"display":{
+			   "description": "Properties of the operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the operation",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

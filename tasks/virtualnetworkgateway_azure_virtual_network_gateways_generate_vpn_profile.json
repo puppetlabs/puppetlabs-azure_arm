@@ -1,0 +1,64 @@
+{
+	"description": "Generates VPN profile for P2S client of the virtual network gateway in the specified resource group. Used for IKEV2 and radius based authentication.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"virtual_network_gateway_name":{
+			   "description": "The name of the virtual network gateway.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authenticationmethod":{
+			   "description": "VPN client Authentication Method. Possible values are: 'EAPTLS' and 'EAPMSCHAPv2'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"radiusserverauthcertificate":{
+			   "description": "The public certificate data for the radius server authentication certificate as a Base-64 encoded string. Required only if external radius authentication has been configured with EAPTLS authentication.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"clientrootcertificates":{
+			   "description": "A list of client root certificates public certificate data encoded as Base-64 strings. Optional parameter for external radius based authentication with EAPTLS.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"processorarchitecture":{
+			   "description": "VPN client Processor Architecture. Possible values are: 'AMD64' and 'X86'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to the generate virtual network gateway VPN client package operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

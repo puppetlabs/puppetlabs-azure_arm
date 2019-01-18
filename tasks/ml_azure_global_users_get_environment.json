@@ -1,0 +1,34 @@
+{
+	"description": "Gets the virtual machine details",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"environment_operations_payload":{
+			   "description": "Represents payload for any Environment operations like get, start, stop, connect",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environmentid":{
+			   "description": "The resourceId of the environment",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_name":{
+			   "description": "The name of the user.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

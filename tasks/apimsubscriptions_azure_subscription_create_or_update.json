@@ -1,0 +1,64 @@
+{
+	"description": "Creates or updates the subscription of specified user to the specified product.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sid":{
+			   "description": "Subscription entity Identifier. The entity represents the association between a user and a product in API Management.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "ETag of the Entity. Not required when creating an entity, but required when updating an entity.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Subscription contract properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_name":{
+			   "description": "The name of the API Management service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Create parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notify":{
+			   "description": "Notify change in Subscription State.  - If false, do not send any email notification for change of state of subscription  - If true, send email notification of change of state of subscription ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

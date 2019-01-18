@@ -1,0 +1,40 @@
+{
+	"description": "Deletes a sublist of a specific closed list model.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cl_entity_id":{
+			   "description": "The closed list entity extractor ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sub_list_id":{
+			   "description": "The sublist ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

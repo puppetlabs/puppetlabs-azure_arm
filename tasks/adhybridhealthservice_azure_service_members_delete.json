@@ -1,0 +1,190 @@
+{
+	"description": "Deletes a server that has been onboarded to Azure Active Directory Connect Health Service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"serviceid":{
+			   "description": "The service id to whom this server belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastdisabled":{
+			   "description": "The date and time , in UTC, when the server was last disabled.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"servicememberid":{
+			   "description": "The id of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastupdated":{
+			   "description": "The date and time, in UTC, when the server properties were last updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"osname":{
+			   "description": "The name of the operating system installed in the machine.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastreboot":{
+			   "description": "The date and time, in UTC, when the server was last rebooted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"osversion":{
+			   "description": "The version of the operating system installed in the machine.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"activealerts":{
+			   "description": "The total number of alerts that are currently active for the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The tenant id to whom this server belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recommendedqfes":{
+			   "description": "The list of recommended hotfixes for the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"createddate":{
+			   "description": "The date time , in UTC, when the server was onboarded to Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"confirm":{
+			   "description": "Indicates if the server will be permanently deleted or disabled. True indicates that the server will be permanently deleted and False indicates that the server will be marked disabled and then deleted after 30 days, if it is not re-registered.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitoringconfigurationscustomized":{
+			   "description": "The customized monitoring configuration of the server which determines what activities are monitored by Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"installedqfes":{
+			   "description": "The list of installed QFEs for the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastserverreportedmonitoringlevelchange":{
+			   "description": "The date and time, in UTC, when the server's data monitoring configuration was last changed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitoringconfigurationscomputed":{
+			   "description": "The monitoring configuration of the server which determines what activities are monitored by Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Server specific properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_name":{
+			   "description": "The name of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disabledreason":{
+			   "description": "The reason for disabling the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disabled":{
+			   "description": "Indicates if the server is disabled or not. ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resolvedalerts":{
+			   "description": "The total count of alerts that are resolved for this server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"machinename":{
+			   "description": "The name of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dimensions":{
+			   "description": "The server specific configuration related dimensions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additionalinformation":{
+			   "description": "The additional information, if any, for the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"serverreportedmonitoringlevel":{
+			   "description": "The monitoring level reported by the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_member_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"machineid":{
+			   "description": "The id of the machine.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role":{
+			   "description": "The service role that is being monitored in the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "The health status of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "Create a lab in a lab account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lab_account_name":{
+			   "description": "The name of the lab Account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"create_lab_properties":{
+			   "description": "Properties for creating a managed lab and a default environment setting",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

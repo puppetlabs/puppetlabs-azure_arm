@@ -1,0 +1,52 @@
+{
+	"description": "Lists the available SKUs supported by Microsoft.Storage for given subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tier":{
+			   "description": "This field is required to be implemented by the Resource Provider if the service has more than one tier, but is not required on a PUT.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"size":{
+			   "description": "The SKU size. When the name field is the combination of tier and some other value, this would be the standalone code. ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"family":{
+			   "description": "If the service has different generations of hardware, for the same SKU, then that can be captured here.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"capacity":{
+			   "description": "If the SKU supports scale out/in then the capacity integer should be included. If scale out/in is not possible for the resource this may be omitted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the SKU. Ex - P3. It is typically a letter+number code",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

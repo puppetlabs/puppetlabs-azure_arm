@@ -1,0 +1,52 @@
+{
+	"description": "The import key operation may be used to import any key type into an Azure Key Vault. If the named key already exists, Azure Key Vault creates a new version of the key. This operation requires the keys/import permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key":{
+			   "description": "The Json web key",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "The key management attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_name":{
+			   "description": "Name for the imported key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters to import a key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hsm":{
+			   "description": "Whether to import as a hardware key (HSM) or software key.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

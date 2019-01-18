@@ -1,0 +1,52 @@
+{
+	"description": "Gives the sas-url to download the configurations for vpn-sites in a resource group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"virtual_wan_name":{
+			   "description": "The name of the VirtualWAN for which configuration of all vpn-sites is needed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request":{
+			   "description": "Parameters supplied to download vpn-sites configuration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpnsites":{
+			   "description": "List of resource-ids of the vpn-sites for which config is to be downloaded.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"outputblobsasurl":{
+			   "description": "The sas-url to download the configurations for vpn-sites",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

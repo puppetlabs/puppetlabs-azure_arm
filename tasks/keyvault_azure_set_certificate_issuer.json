@@ -1,0 +1,52 @@
+{
+	"description": "The SetCertificateIssuer operation adds or updates the specified certificate issuer. This operation requires the certificates/setissuers permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"issuer_name":{
+			   "description": "The name of the issuer.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameter":{
+			   "description": "Certificate issuer set parameter.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "Attributes of the issuer object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provider":{
+			   "description": "The issuer provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"credentials":{
+			   "description": "The credentials to be used for the issuer.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"org_details":{
+			   "description": "Details of the organization as provided to the issuer.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

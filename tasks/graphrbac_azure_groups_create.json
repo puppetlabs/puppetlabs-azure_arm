@@ -1,0 +1,52 @@
+{
+	"description": "Create a group in the directory.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"mailenabled":{
+			   "description": "Whether the group is mail-enabled. Must be false. This is because only pure security groups can be created using the Graph API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mailnickname":{
+			   "description": "Mail nickname",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"securityenabled":{
+			   "description": "Whether the group is a security group. Must be true. This is because only pure security groups can be created using the Graph API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "Group display name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters for the group to create.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

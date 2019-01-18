@@ -1,0 +1,28 @@
+{
+	"description": "Replaces the current users access list with the one sent in the body. If an empty list is sent, all access to other users will be removed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"collaborators":{
+			   "description": "A model containing a list of user's email addresses.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"emails":{
+			   "description": "The email address of the users.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

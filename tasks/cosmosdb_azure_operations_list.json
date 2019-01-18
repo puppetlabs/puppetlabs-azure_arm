@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the available Cosmos DB Resource Provider operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"display":{
+			   "description": "The object that represents the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2015-04-08.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

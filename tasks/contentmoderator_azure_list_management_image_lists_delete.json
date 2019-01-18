@@ -1,0 +1,22 @@
+{
+	"description": "Deletes image list with the list Id equal to list Id passed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"list_id":{
+			   "description": "List Id of the image list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

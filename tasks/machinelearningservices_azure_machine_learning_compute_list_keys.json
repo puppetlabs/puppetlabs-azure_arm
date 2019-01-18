@@ -1,0 +1,46 @@
+{
+	"description": "Gets secrets related to Machine Learning compute (storage keys, service credentials, etc).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Azure subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group in which workspace is located.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workspace_name":{
+			   "description": "Name of Azure Machine Learning workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"compute_name":{
+			   "description": "Name of the Azure Machine Learning compute.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of Azure Machine Learning resource provider API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error response.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Adds a user to the allowed list of users to access this LUIS application. Users are added using their email address.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_to_add":{
+			   "description": "A model containing the user's email address.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

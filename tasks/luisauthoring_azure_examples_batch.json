@@ -1,0 +1,28 @@
+{
+	"description": "Adds a batch of labeled examples to the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"example_label_object_array":{
+			   "description": "Array of examples.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"description": "Deletes an existing custom domain within an endpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"custom_domain_name":{
+			   "description": "Name of the custom domain within an endpoint.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"profile_name":{
+			   "description": "Name of the CDN profile which is unique within the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpoint_name":{
+			   "description": "Name of the endpoint under the profile which is unique globally.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

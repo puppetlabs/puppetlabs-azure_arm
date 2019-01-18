@@ -1,0 +1,64 @@
+{
+	"description": "Use EventsHealthStateFilter to filter the collection of health events reported on the service based on the health state.Use ReplicasHealthStateFilter to filter the collection of ReplicaHealthState objects on the partition.If you specify a partition that does not exist in the health store, this request returns an error.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"partitionid":{
+			   "description": "The ID of the partition to which this replica belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"events_health_state_filter":{
+			   "description": "Allows filtering the collection of HealthEvent objects returned based on health state.The possible values for this parameter include integer value of one of the following health states.Only events that match the filter are returned. All events are used to evaluate the aggregated health state.If not specified, all entries are returned. The state values are flag-based enumeration, so the value could be a combination of these values, obtained using the bitwise 'OR' operator. For example, If the provided value is 6 then all of the events with HealthState value of OK (2) and Warning (4) are returned.- Default - Default value. Matches any HealthState. The value is zero.- None - Filter that doesn't match any HealthState value. Used in order to return no results on a given collection of states. The value is 1.- Ok - Filter that matches input with HealthState value Ok. The value is 2.- Warning - Filter that matches input with HealthState value Warning. The value is 4.- Error - Filter that matches input with HealthState value Error. The value is 8.- All - Filter that matches input with any HealthState value. The value is 65535.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exclude_health_statistics":{
+			   "description": "Indicates whether the health statistics should be returned as part of the query result. False by default.The statistics show the number of children entities in health state Ok, Warning, and Error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"servicekind":{
+			   "description": "The kind of service (Stateless or Stateful).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"aggregatedhealthstate":{
+			   "description": "The health state of a Service Fabric entity such as Cluster, Node, Application, Service, Partition, Replica etc.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.0'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accept any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0, but if the runtime is 6.1, in order to make it easier to write the clients, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replicas_health_state_filter":{
+			   "description": "Allows filtering the collection of ReplicaHealthState objects on the partition. The value can be obtained from members or bitwise operations on members of HealthStateFilter. Only replicas that match the filter will be returned. All replicas will be used to evaluate the aggregated health state. If not specified, all entries will be returned.The state values are flag-based enumeration, so the value could be a combination of these values obtained using bitwise 'OR' operator. For example, If the provided value is 6 then all of the events with HealthState value of OK (2) and Warning (4) will be returned. The possible values for this parameter include integer value of one of the following health states.- Default - Default value. Matches any HealthState. The value is zero.- None - Filter that doesn't match any HealthState value. Used in order to return no results on a given collection of states. The value is 1.- Ok - Filter that matches input with HealthState value Ok. The value is 2.- Warning - Filter that matches input with HealthState value Warning. The value is 4.- Error - Filter that matches input with HealthState value Error. The value is 8.- All - Filter that matches input with any HealthState value. The value is 65535.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

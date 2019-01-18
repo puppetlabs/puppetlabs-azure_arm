@@ -1,0 +1,28 @@
+{
+	"description": "Adds an intent classifier to the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intent_create_object":{
+			   "description": "A model object containing the name of the new intent classifier.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

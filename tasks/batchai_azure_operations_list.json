@@ -1,0 +1,40 @@
+{
+	"description": "Lists available operations for the Microsoft.BatchAI provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"origin":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "This is of the format {provider}/{resource}/{operation}",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "The object that describes the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Specifies the version of API used for this request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

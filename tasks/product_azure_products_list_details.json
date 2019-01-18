@@ -1,0 +1,58 @@
+{
+	"description": "Returns the extended properties of a product.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group":{
+			   "description": "Name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registration_name":{
+			   "description": "Name of the Azure Stack registration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"product_name":{
+			   "description": "Name of the product.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"productkind":{
+			   "description": "Specifies the kind of the product (virtualMachine or virtualMachineExtension).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Specifies additional properties describing the product.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallerypackageblobsasuri":{
+			   "description": "The URI to the .azpkg file that provides information required for showing product in the gallery.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

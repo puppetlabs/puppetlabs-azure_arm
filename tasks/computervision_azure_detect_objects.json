@@ -1,0 +1,34 @@
+{
+	"description": "Performs object detection on the specified image.Two input methods are supported -- (1) Uploading an image or (2) specifying an image URL.A successful response will be returned in JSON. If the request failed, the response will contain an error code and a message to help understand what went wrong.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"objects":{
+			   "description": "An array of detected objects.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"requestid":{
+			   "description": "Id of the REST API request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metadata":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

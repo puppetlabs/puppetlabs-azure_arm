@@ -1,0 +1,52 @@
+{
+	"description": "Create a new action group or update an existing one.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action_group_name":{
+			   "description": "The name of the action group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action_group":{
+			   "description": "The action group to create or use for the update.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

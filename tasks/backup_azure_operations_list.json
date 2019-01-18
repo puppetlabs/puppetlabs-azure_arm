@@ -1,0 +1,28 @@
+{
+	"description": "Returns the list of support REST operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the operation being performed on this particular object. This name should match the name that appears in RBAC or the event service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Contains the localized display information for this particular operation / action.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

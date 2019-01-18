@@ -1,0 +1,40 @@
+{
+	"description": "Returns Azure Stack Activation Key.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group":{
+			   "description": "Name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registration_name":{
+			   "description": "Name of the Azure Stack registration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"activationkey":{
+			   "description": "Azure Stack activation key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "The resources to move must be in the same source resource group. The target resource group may be in a different subscription. When moving resources, both the source group and the target group are locked for the duration of the operation. Write and delete operations are blocked on the groups until the move completes. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resources":{
+			   "description": "The IDs of the resources.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetresourcegroup":{
+			   "description": "The target resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"source_resource_group_name":{
+			   "description": "The name of the resource group containing the resources to move.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters for moving resources.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

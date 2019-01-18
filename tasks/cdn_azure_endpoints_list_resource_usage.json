@@ -1,0 +1,52 @@
+{
+	"description": "Checks the quota and usage of geo filters and custom domains under the given endpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "List of resource usages.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "URL to get the next set of custom domain objects if there are any.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"profile_name":{
+			   "description": "Name of the CDN profile which is unique within the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpoint_name":{
+			   "description": "Name of the endpoint under the profile which is unique globally.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

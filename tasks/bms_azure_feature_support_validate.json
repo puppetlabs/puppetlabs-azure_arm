@@ -1,0 +1,40 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"azure_region":{
+			   "description": "Azure region to hit Api",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Feature support request object",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"supportstatus":{
+			   "description": "Support status of feature",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

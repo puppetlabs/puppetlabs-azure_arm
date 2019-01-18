@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the available Azure Machine Learning Studio REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Display name of operation",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,70 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"description":{
+			   "description": "Gets or sets the description of the project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_id":{
+			   "description": "The id of the domain to use for this project. Defaults to General.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
+			   "description": "Gets the date this project was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Gets or sets the name of the project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classification_type":{
+			   "description": "The type of classifier to create for this project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastmodified":{
+			   "description": "Gets the date this project was last modified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thumbnailuri":{
+			   "description": "Gets the thumbnail url representing the project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Gets The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"settings":{
+			   "description": "Gets or sets the project settings.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

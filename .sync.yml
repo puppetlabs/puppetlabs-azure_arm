@@ -1,0 +1,121 @@
+---
+.rubocop.yml:
+  profiles:
+    strict:
+      configs:
+        AllCops:
+          TargetRubyVersion: '2.2'
+        Lint/ScriptPermission:
+          Enabled: false
+        Style/NestedTernaryOperator:
+          Enabled: false
+        Layout/EmptyLines:
+          Enabled: false
+        Layout/EmptyLineBetweenDefs:
+          Enabled: false
+        Metrics/LineLength:
+          Enabled: false
+        Lint/UnusedBlockArgument:
+          Enabled: false
+        Style/Semicolon:
+          Enabled: false
+        Style/MultilineIfModifier:
+          Enabled: false
+        Style/EachWithObject:
+          Enabled: false
+        Style/BlockDelimiters:
+          Description: Prefer braces for chaining. Mostly an aesthetical choice. Better to
+            be consistent then.
+          EnforcedStyle: semantic
+          Exclude:
+            - lib/puppet/provider/**/*
+            - lib/puppet/type/*
+        Style/StringLiterals:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure* 
+        Style/HashSyntax:
+          UseHashRocketsWithSymbolValues: true
+          Exclude:
+          - autogen_provider.rb
+          - lib/puppet/provider/**/azure*
+          - lib/puppet/type/azure*
+        Style/RedundantReturn:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure*
+        Style/RedundantSelf:
+          Enabled: true
+          Exclude: 
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure* 
+        Style/NegatedIf:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure*
+        Style/GuardClause:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure*
+        Style/CollectionMethods:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure*
+        Style/ClassCheck:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+        Style/AndOr:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+        Style/MethodCalledOnDoEndBlock:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+        Style/IfInsideElse:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+        Layout/EmptyLines:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+        Layout/EmptyLineBetweenDefs:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+        Layout/SpaceInsideHashLiteralBraces:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+        Lint/UnusedMethodArgument:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure*
+        Lint/RescueException:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure*
+        Lint/UnusedBlockArgument:
+          Enabled: true
+          Exclude:
+            - lib/puppet/provider/**/azure*
+            - lib/puppet/type/azure*
+        GetText/DecorateString: ---
+        Style/TrailingCommaInArguments: ---
+        Style/TrailingCommaInLiteral: ---
+      
+
+.gitlab-ci.yml:
+  delete: true
+
+appveyor.yml:
+  delete: true

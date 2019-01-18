@@ -1,0 +1,46 @@
+{
+	"description": "List storage accounts managed by the specified key vault. This operation requires the storage/list permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"attributes":{
+			   "description": "The storage account management attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Storage identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourceid":{
+			   "description": "Storage account resource Id.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"description": "Updates the policies for the specified container registry.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"trustpolicy":{
+			   "description": "An object that represents content trust policy for a container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Microsoft Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group to which the container registry belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_name":{
+			   "description": "The name of the container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_policies_update_parameters":{
+			   "description": "The parameters for updating policies of a container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"quarantinepolicy":{
+			   "description": "An object that represents quarantine policy for a container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

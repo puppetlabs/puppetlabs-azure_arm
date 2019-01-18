@@ -1,0 +1,22 @@
+{
+	"description": "Delete an existing large face list according to faceListId. Persisted face images in the large face list will also be deleted.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_face_list_id":{
+			   "description": "Id referencing a particular large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

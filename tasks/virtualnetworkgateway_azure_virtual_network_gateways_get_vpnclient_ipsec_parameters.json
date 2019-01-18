@@ -1,0 +1,82 @@
+{
+	"description": "The Get VpnclientIpsecParameters operation retrieves information about the vpnclient ipsec policy for P2S client of virtual network gateway in the specified resource group through Network resource provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"ikeintegrity":{
+			   "description": "The IKE integrity algorithm (IKE phase 2).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dhgroup":{
+			   "description": "The DH Groups used in IKE Phase 1 for initial SA.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sadatasizekilobytes":{
+			   "description": "The IPSec Security Association (also called Quick Mode or Phase 2 SA) payload size in KB for P2S client..",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ipsecintegrity":{
+			   "description": "The IPSec integrity algorithm (IKE phase 1).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pfsgroup":{
+			   "description": "The Pfs Groups used in IKE Phase 2 for new child SA.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"salifetimeseconds":{
+			   "description": "The IPSec Security Association (also called Quick Mode or Phase 2 SA) lifetime in seconds for P2S client.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ipsecencryption":{
+			   "description": "The IPSec encryption algorithm (IKE phase 1).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ikeencryption":{
+			   "description": "The IKE encryption algorithm (IKE phase 2).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"virtual_network_gateway_name":{
+			   "description": "The virtual network gateway name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

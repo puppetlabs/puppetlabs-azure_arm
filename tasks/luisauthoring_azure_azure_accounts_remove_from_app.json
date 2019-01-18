@@ -1,0 +1,34 @@
+{
+	"description": "Removes assigned azure account from the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authorization":{
+			   "description": "The bearer authorization header to use; containing the user's ARM token used to validate azure accounts information.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"azure_account_info_object":{
+			   "description": "The azure account information object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "List labs for the user.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"user_name":{
+			   "description": "The name of the user.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"labs":{
+			   "description": "List of all the labs",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

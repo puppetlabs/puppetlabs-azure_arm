@@ -1,0 +1,46 @@
+{
+	"description": "Checks whether the project name is available in the specified region.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "Properties needed to check the availability of a name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name to check for availability",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The resource type. Must be set to Microsoft.Migrate/projects",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location_name":{
+			   "description": "The desired region for the name check.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Standard request header. Used by service to identify API version used by client.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription Id in which project was created.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

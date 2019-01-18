@@ -1,0 +1,58 @@
+{
+	"description": "Verifies the certificate's private key possession by providing the leaf cert issued by the verifying pre uploaded certificate.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"certificate_name":{
+			   "description": "The name of the certificate",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate_verification_body":{
+			   "description": "The name of the certificate",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "ETag of the Certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate":{
+			   "description": "base-64 representation of X509 certificate .cer file or just .pem file content.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the IoT hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the IoT hub.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "The GetBgpPeerStatus operation retrieves the status of all BGP peers.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"peer":{
+			   "description": "The IP address of the peer to retrieve the status of.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of BGP peers",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"virtual_network_gateway_name":{
+			   "description": "The name of the virtual network gateway.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"description": "Captures the VM by copying virtual hard disks of the VM and outputs a template that can be used to create similar VMs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "parameters of the captured virtual machine",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vm_name":{
+			   "description": "The name of the virtual machine.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema":{
+			   "description": "the schema of the captured virtual machine",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contentversion":{
+			   "description": "the version of the content",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resources":{
+			   "description": "a list of resource items of the captured virtual machine",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

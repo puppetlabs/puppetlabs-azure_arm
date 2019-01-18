@@ -1,0 +1,40 @@
+{
+	"description": "Adds a labeled example to the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"example_label_object":{
+			   "description": "An example label with the expected intent and entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"utterancetext":{
+			   "description": "The sample's utterance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exampleid":{
+			   "description": "The newly created sample ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "Creates a Application resource with the specified name, description and properties. If Application resource with the same name exists, then it is updated with the specified description and properties.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_resource_name":{
+			   "description": "The identity of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_resource_description":{
+			   "description": "Description for creating a Application resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error object containing error code and error message.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

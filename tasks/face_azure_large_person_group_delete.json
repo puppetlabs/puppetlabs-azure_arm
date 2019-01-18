@@ -1,0 +1,22 @@
+{
+	"description": "Delete an existing large person group. Persisted face features of all people in the large person group will also be deleted.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_person_group_id":{
+			   "description": "Id referencing a particular large person group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

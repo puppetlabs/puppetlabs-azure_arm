@@ -1,0 +1,58 @@
+{
+	"description": "Confirms consent code of a connection",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"objectid":{
+			   "description": "AAD object ID. This is userId",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Code that was returned during consent flow",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connection_name":{
+			   "description": "Connection name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"confirm_consent_code":{
+			   "description": "The consent code confirmation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "Tenant Id",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

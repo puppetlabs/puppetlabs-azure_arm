@@ -1,0 +1,46 @@
+{
+	"description": "Refreshes the index of the list with list Id equal to list Id passed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"advancedinfo":{
+			   "description": "Advanced info list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Refresh index status.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trackingid":{
+			   "description": "Tracking Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contentsourceid":{
+			   "description": "Content source Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"list_id":{
+			   "description": "List Id of the image list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isupdatesuccess":{
+			   "description": "Update success status.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

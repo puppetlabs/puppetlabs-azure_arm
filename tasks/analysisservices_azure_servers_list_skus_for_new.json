@@ -1,0 +1,40 @@
+{
+	"description": "Lists eligible SKUs for Analysis Services resource provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "A unique identifier for a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the SKU level.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tier":{
+			   "description": "The name of the Azure pricing tier to which the SKU applies.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"capacity":{
+			   "description": "The number of instances in the read only query pool.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

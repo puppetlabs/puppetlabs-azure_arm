@@ -1,0 +1,34 @@
+{
+	"description": "Create an empty large face list. Up to 64 large face lists are allowed to exist in one subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_face_list_id":{
+			   "description": "Id referencing a particular large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "Request body for creating a large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "User defined name, maximum length is 128.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userdata":{
+			   "description": "User specified data. Length should not exceed 16KB.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

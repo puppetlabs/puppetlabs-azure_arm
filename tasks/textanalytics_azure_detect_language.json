@@ -1,0 +1,40 @@
+{
+	"description": "Scores close to 1 indicate 100% certainty that the identified language is true. A total of 120 languages are supported.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"message":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"innererror":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input":{
+			   "description": "Collection of documents to analyze.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

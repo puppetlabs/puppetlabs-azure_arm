@@ -1,0 +1,82 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"azure_region":{
+			   "description": "Azure region to hit Api",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Container Backup Status Request",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errormessage":{
+			   "description": "ErrorMessage in case of intent failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policyname":{
+			   "description": "Specifies the policy name which is used for protection",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registrationstatus":{
+			   "description": "Container registration status",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorcode":{
+			   "description": "ErrorCode in case of intent failed",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protectionstatus":{
+			   "description": "Specifies whether the container is registered or not",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabricname":{
+			   "description": "Specifies the fabric name - Azure or AD",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"containername":{
+			   "description": "Specifies the product specific container name. E.g. iaasvmcontainer;iaasvmcontainer;csname;vmname.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protecteditemname":{
+			   "description": "Specifies the product specific ds name. E.g. vm;iaasvmcontainer;csname;vmname.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"description": "Retrieves the default definition of a function based on the parameters specified.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"function_retrieve_default_definition_parameters":{
+			   "description": "Parameters used to specify the type of function to retrieve the default definition for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "GUID which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "The name of the streaming job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"function_name":{
+			   "description": "The name of the function.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bindingtype":{
+			   "description": "Indicates the function binding type.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

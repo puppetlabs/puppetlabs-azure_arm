@@ -1,0 +1,82 @@
+{
+	"description": "Exports a database to a bacpac.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"server_name":{
+			   "description": "The name of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "The name of the database to be exported.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storagekey":{
+			   "description": "The storage key to use.  If storage key type is SharedAccessKey, it must be preceded with a '?.'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"administratorlogin":{
+			   "description": "The name of the SQL administrator.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authenticationtype":{
+			   "description": "The authentication type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID that identifies an Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storagekeytype":{
+			   "description": "The type of the storage key to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storageuri":{
+			   "description": "The storage uri to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"administratorloginpassword":{
+			   "description": "The password of the SQL administrator.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The required parameters for exporting a database.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

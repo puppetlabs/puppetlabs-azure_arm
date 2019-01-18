@@ -1,0 +1,58 @@
+{
+	"description": "Create or update a gallery Image Version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_image_version":{
+			   "description": "Parameters supplied to the create or update gallery Image Version operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_name":{
+			   "description": "The name of the Shared Image Gallery in which the Image Definition resides.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_image_name":{
+			   "description": "The name of the gallery Image Definition in which the Image Version is to be created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_image_version_name":{
+			   "description": "The name of the gallery Image Version to be created. Needs to follow semantic version name pattern: The allowed characters are digit and period. Digits must be within the range of a 32-bit integer. Format: ..",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

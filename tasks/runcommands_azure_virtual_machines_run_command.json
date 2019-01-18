@@ -1,0 +1,52 @@
+{
+	"description": "Run command on the VM.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vm_name":{
+			   "description": "The name of the virtual machine.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The run command parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"script":{
+			   "description": "Optional. The script to be executed.  When this value is given, the given script will override the default script of the command.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"commandid":{
+			   "description": "The run command id.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

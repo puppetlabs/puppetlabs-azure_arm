@@ -1,0 +1,28 @@
+{
+	"description": "Restores a backed up storage account to a vault. This operation requires the storage/restore permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "The parameters to restore the storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The backup blob associated with a storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

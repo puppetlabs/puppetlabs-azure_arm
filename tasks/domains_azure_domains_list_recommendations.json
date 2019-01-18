@@ -1,0 +1,40 @@
+{
+	"description": "Get domain name recommendations based on keywords.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keywords":{
+			   "description": "Keywords to be used for generating domain recommendations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxdomainrecommendations":{
+			   "description": "Maximum number of recommendations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Search parameters for domain name recommendations.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

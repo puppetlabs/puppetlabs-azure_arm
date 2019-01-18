@@ -1,0 +1,46 @@
+{
+	"description": "Deletes the event source with the specified name in the specified subscription, resource group, and environment",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of an Azure Resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment_name":{
+			   "description": "The name of the Time Series Insights environment associated with the specified resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_source_name":{
+			   "description": "The name of the Time Series Insights event source associated with the specified environment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Describes a particular API error with an error code and a message.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "If this is the first version, the certificate resource is created. This operation requires the certificates/create permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "The parameters to create a certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy":{
+			   "description": "The management policy for the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "The attributes of the certificate (optional).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate_name":{
+			   "description": "The name of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

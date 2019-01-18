@@ -1,0 +1,52 @@
+{
+	"description": "Applies the configuration settings from the target slot onto the current slot.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetslot":{
+			   "description": "Destination deployment slot during swap operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"preservevnet":{
+			   "description": "true to preserve Virtual Network to the slot during swap; otherwise, false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the app.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"slot_swap_entity":{
+			   "description": "JSON object that contains the target slot name. See example.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

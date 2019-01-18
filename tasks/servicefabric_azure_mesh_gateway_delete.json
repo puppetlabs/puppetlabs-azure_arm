@@ -1,0 +1,34 @@
+{
+	"description": "Deletes the Gateway resource identified by the name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gateway_resource_name":{
+			   "description": "The identity of the gateway.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the Gateway resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Describes properties of a gateway resource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Lists all the available REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the Microsoft.MachineLearning resource provider API to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "The API operation info.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "The reviews created would show up for Reviewers on your team. As Reviewers complete reviewing, results of the Review would be POSTED (i.e. HTTP POST) on the specified CallBackEndpoint.CallBack Schemas Review Completion CallBack Sample{  'ReviewId': '',  'ModifiedOn': '2016-10-11T22:36:32.9934851Z',  'ModifiedBy': '',  'CallBackType': 'Review',  'ContentId': '',  'Metadata': {    'adultscore': '0.xxx',    'a': 'False',    'racyscore': '0.xxx',    'r': 'True'  },  'ReviewerResultTags': {    'a': 'False',    'r': 'True'  }}.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"team_name":{
+			   "description": "Your team name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"review_id":{
+			   "description": "Id of the review.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timescale":{
+			   "description": "Timescale of the video you are adding frames to.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

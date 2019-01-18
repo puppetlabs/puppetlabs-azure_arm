@@ -1,0 +1,40 @@
+{
+	"description": "Add a face to a large face list. The input face is specified as an image with a targetFace rectangle. It returns a persistedFaceId representing the added face, and persistedFaceId will not expire.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"persistedfaceid":{
+			   "description": "The persistedFaceId of the target face, which is persisted and will not expire. Different from faceId created by Face - Detect and will expire in 24 hours after the detection call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"large_face_list_id":{
+			   "description": "Id referencing a particular large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userdata":{
+			   "description": "User-provided data attached to the face. The size limit is 1KB.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_face":{
+			   "description": "A face rectangle to specify the target face to be added to a person in the format of 'targetFace=left,top,width,height'. E.g. 'targetFace=10,10,100,100'. If there is more than one face in the image, targetFace is required to specify which face to add. No targetFace means there is only one face detected in the entire image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

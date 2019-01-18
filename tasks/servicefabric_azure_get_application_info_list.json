@@ -1,0 +1,100 @@
+{
+	"description": "Gets the information about the applications that were created or in the process of being created in the Service Fabric cluster and match the specified filters. The response includes the name, type, status, parameters, and other details about the application. If the applications do not fit in a page, one page of results is returned as well as a continuation token, which can be used to get the next page. Filters ApplicationTypeName and ApplicationDefinitionKindFilter cannot be specified at the same time.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"typeversion":{
+			   "description": "The version of the application type as defined in the application manifest.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "List of application parameters with overridden values from their default values specified in the application manifest.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"typename":{
+			   "description": "The application type name as defined in the application manifest.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_definition_kind_filter":{
+			   "description": "Used to filter on ApplicationDefinitionKind, which is the mechanism used to define a Service Fabric application.- Default - Default value, which performs the same function as selecting 'All'. The value is 0.- All - Filter that matches input with any ApplicationDefinitionKind value. The value is 65535.- ServiceFabricApplicationDescription - Filter that matches input with ApplicationDefinitionKind value ServiceFabricApplicationDescription. The value is 1.- Compose - Filter that matches input with ApplicationDefinitionKind value Compose. The value is 2.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_type_name":{
+			   "description": "The application type name used to filter the applications to query for. This value should not contain the application type version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "The maximum number of results to be returned as part of the paged queries. This parameter defines the upper bound on the number of results returned. The results returned can be less than the specified maximum results if they do not fit in the message as per the max message size restrictions defined in the configuration. If this parameter is zero or not specified, the paged query includes as many results as possible that fit in the return message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"healthstate":{
+			   "description": "The health state of a Service Fabric entity such as Cluster, Node, Application, Service, Partition, Replica etc.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"applicationdefinitionkind":{
+			   "description": "The mechanism used to define a Service Fabric application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exclude_application_parameters":{
+			   "description": "The flag that specifies whether application parameters will be excluded from the result.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the application, including the 'fabric:' URI scheme.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.1'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accept any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0, but if the runtime is 6.1, in order to make it easier to write the clients, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuation_token":{
+			   "description": "The continuation token parameter is used to obtain next set of results. A continuation token with a non-empty value is included in the response of the API when the results from the system do not fit in a single response. When this value is passed to the next API call, the API returns next set of results. If there are no further results, then the continuation token does not contain a value. The value of this parameter should not be URL encoded.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "The status of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The identity of the application. This is an encoded representation of the application name. This is used in the REST APIs to identify the application resource.Starting in version 6.0, hierarchical names are delimited with the '\\~' character. For example, if the application name is 'fabric:/myapp/app1',the application identity would be 'myapp\\~app1' in 6.0+ and 'myapp/app1' in previous versions.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

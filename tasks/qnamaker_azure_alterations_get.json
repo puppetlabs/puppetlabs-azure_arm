@@ -1,0 +1,16 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"alterations":{
+			   "description": "Words that are synonymous with each other.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

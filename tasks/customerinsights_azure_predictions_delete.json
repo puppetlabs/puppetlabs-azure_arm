@@ -1,0 +1,142 @@
+{
+	"description": "Deletes a Prediction in the hub.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"primaryprofiletype":{
+			   "description": "Primary profile type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"involvedkpitypes":{
+			   "description": "KPI types involved in the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "Display name of the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"autoanalyze":{
+			   "description": "Whether do auto analyze.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scorelabel":{
+			   "description": "Score label.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"systemgeneratedentities":{
+			   "description": "System generated entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hub_name":{
+			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "Description of the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioningstate":{
+			   "description": "Provisioning state.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prediction_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"negativeoutcomeexpression":{
+			   "description": "Negative outcome expression.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scopeexpression":{
+			   "description": "Scope expression.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"grades":{
+			   "description": "The prediction grades.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"involvedinteractiontypes":{
+			   "description": "Interaction types involved in the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"predictionname":{
+			   "description": "Name of the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"involvedrelationships":{
+			   "description": "Relationships involved in the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"positiveoutcomeexpression":{
+			   "description": "Positive outcome expression.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mappings":{
+			   "description": "Definition of the link mapping of prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

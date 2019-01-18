@@ -1,0 +1,46 @@
+{
+	"description": "Regenerates an access key for the specified Azure Cosmos DB database account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key_to_regenerate":{
+			   "description": "The name of the key to regenerate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keykind":{
+			   "description": "The access key to regenerate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of an Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "Cosmos DB database account name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2015-04-08.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

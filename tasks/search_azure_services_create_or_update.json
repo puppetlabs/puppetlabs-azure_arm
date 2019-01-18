@@ -1,0 +1,52 @@
+{
+	"description": "Creates or updates a Search service in the given resource group. If the Search service already exists, all properties will be updated with the given values.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the current subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"search_service_name":{
+			   "description": "The name of the Azure Search service to create or update. Search service names must only contain lowercase letters, digits or dashes, cannot use dash as the first two or last one characters, cannot contain consecutive dashes, and must be between 2 and 60 characters in length. Search service names must be globally unique since they are part of the service URI (https://.search.windows.net). You cannot change the service name after the service is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service":{
+			   "description": "The definition of the Search service to create or update.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x_ms_client_request_id":{
+			   "description": "A client-generated GUID value that identifies this request. If specified, this will be included in response information as a way to track the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for each request. The current version is 2015-08-19.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Describes a particular API error with an error code and a message.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

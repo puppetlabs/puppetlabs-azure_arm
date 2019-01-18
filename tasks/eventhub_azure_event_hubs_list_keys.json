@@ -1,0 +1,58 @@
+{
+	"description": "Gets the ACS and SAS connection strings for the Event Hub.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group within the azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"namespace_name":{
+			   "description": "The Namespace name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_hub_name":{
+			   "description": "The Event Hub name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authorization_rule_name":{
+			   "description": "The authorization rule name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

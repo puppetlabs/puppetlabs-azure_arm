@@ -1,0 +1,46 @@
+{
+	"description": "List the primary and secondary keys for a provisioning service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"nextlink":{
+			   "description": "The next link.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioning_service_name":{
+			   "description": "The provisioning service name to get the shared access keys for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of shared access policies.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

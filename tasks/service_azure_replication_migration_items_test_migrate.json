@@ -1,0 +1,64 @@
+{
+	"description": "The operation to initiate test migration of the item.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Fabric name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protection_container_name":{
+			   "description": "Protection container name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"migration_item_name":{
+			   "description": "Migration item name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"test_migrate_input":{
+			   "description": "Test migrate input.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Test migrate input properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

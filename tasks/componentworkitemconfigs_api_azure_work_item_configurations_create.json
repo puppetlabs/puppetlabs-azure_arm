@@ -1,0 +1,64 @@
+{
+	"description": "Create a work item configuration for an Application Insights component.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"work_item_configuration_properties":{
+			   "description": "Properties that need to be specified to create a work item configuration of a Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workitemproperties":{
+			   "description": "Custom work item properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connectorid":{
+			   "description": "Unique connector id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connectordataconfiguration":{
+			   "description": "Serialized JSON object for detailed properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"validateonly":{
+			   "description": "Boolean indicating validate only",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

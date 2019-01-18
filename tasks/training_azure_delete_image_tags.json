@@ -1,0 +1,52 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"exceeded":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_ids":{
+			   "description": "Image ids. Limited to 64 images.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_ids":{
+			   "description": "Tags to be deleted from the specified images. Limited to 20 tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"duplicated":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

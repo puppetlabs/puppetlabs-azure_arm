@@ -1,0 +1,58 @@
+{
+	"description": "Delete environment. This operation can take a while to complete",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"lab_account_name":{
+			   "description": "The name of the lab Account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lab_name":{
+			   "description": "The name of the lab.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment_setting_name":{
+			   "description": "The name of the environment Setting.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment_name":{
+			   "description": "The name of the environment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "Sets or removes the expiration time on the specified file. This operation can only be executed against files. Folders are not supported.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"remoteexception":{
+			   "description": "the object representing the actual WebHDFS exception being returned.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"path":{
+			   "description": "The Data Lake Store path (starting with '/') of the file on which to set or remove the expiration time.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expiry_option":{
+			   "description": "Indicates the type of expiration to use for the file: 1. NeverExpire: ExpireTime is ignored. 2. RelativeToNow: ExpireTime is an integer in milliseconds representing the expiration date relative to when file expiration is updated. 3. RelativeToCreationDate: ExpireTime is an integer in milliseconds representing the expiration date relative to file creation. 4. Absolute: ExpireTime is an integer in milliseconds, as a Unix timestamp relative to 1/1/1970 00:00:00.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expire_time":{
+			   "description": "The time that the file will expire, corresponding to the ExpiryOption that was set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"op":{
+			   "description": "The constant value for the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

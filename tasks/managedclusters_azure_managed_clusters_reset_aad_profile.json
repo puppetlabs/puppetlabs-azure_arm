@@ -1,0 +1,64 @@
+{
+	"description": "Update the AAD Profile for a managed cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the managed cluster resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The AAD tenant ID to use for authentication. If not specified, will use the tenant of the deployment subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to the Reset AAD Profile operation for a Managed Cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"clientappid":{
+			   "description": "The client AAD application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"serverappid":{
+			   "description": "The server AAD application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"serverappsecret":{
+			   "description": "The server AAD application secret.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "Check if a domain is available for registration.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domaintype":{
+			   "description": "Valid values are Regular domain: Azure will charge the full price of domain registration, SoftDeleted: Purchasing this domain will simply restore it and this operation will not cost anything.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"identifier":{
+			   "description": "Name of the domain.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the domain.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"available":{
+			   "description": "true if domain can be purchased using CreateDomain API; otherwise, false.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

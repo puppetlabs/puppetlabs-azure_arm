@@ -1,0 +1,28 @@
+{
+	"description": "Deletes the certificate contacts for a specified key vault certificate. This operation requires the certificates/managecontacts permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Identifier for the contacts collection.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contacts":{
+			   "description": "The contact list for the vault certificates.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

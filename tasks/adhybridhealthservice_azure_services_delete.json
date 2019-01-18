@@ -1,0 +1,52 @@
+{
+	"description": "Deletes a service which is onboarded to Azure Active Directory Connect Health.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"totalcount":{
+			   "description": "The total count of service elements.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuationtoken":{
+			   "description": "The continuation token for paginated calls.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The link used to get the next page of operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_name":{
+			   "description": "The name of the service which needs to be deleted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"confirm":{
+			   "description": "Indicates if the service will be permanently deleted or disabled. True indicates that the service will be permanently deleted and False indicates that the service will be marked disabled and then deleted after 30 days, if it is not re-registered.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The value returned by the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "Detect human faces in an image and returns face locations, and optionally with faceIds, landmarks, and attributes.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"return_face_id":{
+			   "description": "A value indicating whether the operation should return faceIds of detected faces.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"return_face_landmarks":{
+			   "description": "A value indicating whether the operation should return landmarks of the detected faces.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"return_face_attributes":{
+			   "description": "Analyze and return the one or more specified face attributes in the comma-separated string like 'returnFaceAttributes=age,gender'. Supported face attributes include age, gender, headPose, smile, facialHair, glasses and emotion. Note that each face attribute analysis has additional computational and time cost.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

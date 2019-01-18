@@ -1,0 +1,58 @@
+{
+	"description": "Delete an assessment from the project. The machines remain in the assessment. Deleting a non-existent assessment results in a no-operation.When an assessment is under computation, as indicated by the 'computationState' field, it cannot be deleted. Any such attempt will return a 400 - Bad Request.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Standard request header. Used by service to identify API version used by client.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription Id in which project was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the Azure Resource Group that project is part of.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_name":{
+			   "description": "Name of the Azure Migrate project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"group_name":{
+			   "description": "Unique name of a group within a project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"assessment_name":{
+			   "description": "Unique name of an assessment within a project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "Standard request header. Used by service to respond to client in appropriate language.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

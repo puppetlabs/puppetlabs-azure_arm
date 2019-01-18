@@ -1,0 +1,28 @@
+{
+	"description": "Get a list of REST API supported by Microsoft.Migrate provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "Name of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Displayable properties of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "Origin of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

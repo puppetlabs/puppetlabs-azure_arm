@@ -1,0 +1,88 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"projectid":{
+			   "description": "Gets The project id. of the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastmodified":{
+			   "description": "Gets the time this iteration was last modified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trainedat":{
+			   "description": "Gets the time this iteration was last modified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domainid":{
+			   "description": "Get or sets a guid of the domain the iteration has been trained on.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classificationtype":{
+			   "description": "Gets the classification type of the project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Gets or sets the name of the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isdefault":{
+			   "description": "Gets or sets a value indicating whether the iteration is the default iteration for the project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Gets the id of the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Gets the current iteration status.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
+			   "description": "Gets the time this iteration was completed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exportable":{
+			   "description": "Whether the iteration can be exported to another format for download.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

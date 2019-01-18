@@ -1,0 +1,40 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pattern":{
+			   "description": "The pattern text.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The pattern ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intent":{
+			   "description": "The intent's name where the pattern belongs to.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

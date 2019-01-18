@@ -1,0 +1,64 @@
+{
+	"description": "Regenerates the primary policy key of the specified authorization policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authorization_policy_name":{
+			   "description": "The name of the policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primarykey":{
+			   "description": "Primary key associated with the policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondarykey":{
+			   "description": "Secondary key associated with the policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hub_name":{
+			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policyname":{
+			   "description": "Name of the policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"permissions":{
+			   "description": "The permissions associated with the policy.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

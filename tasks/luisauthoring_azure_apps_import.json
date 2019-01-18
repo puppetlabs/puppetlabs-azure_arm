@@ -1,0 +1,22 @@
+{
+	"description": "Imports an application to LUIS, the application's structure should be included in the request body.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_name":{
+			   "description": "The application name to create. If not specified, the application name will be read from the imported object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"luis_app":{
+			   "description": "A LUIS application structure.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

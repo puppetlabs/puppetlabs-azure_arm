@@ -1,0 +1,58 @@
+{
+	"description": "A job Id will be returned for the content posted on this endpoint. Once the content is evaluated against the Workflow provided the review will be created or ignored based on the workflow expression.CallBack Schemas Job Completion CallBack Sample{  'JobId': ',  'ReviewId': '',  'WorkFlowId': 'default',  'Status': '',  'ContentType': 'Image',  'ContentId': '',  'CallBackType': 'Job',  'Metadata': {    'adultscore': '0.xxx',    'a': 'False',    'racyscore': '0.xxx',    'r': 'True'  }}Review Completion CallBack Sample{  'ReviewId': '',  'ModifiedOn': '2016-10-11T22:36:32.9934851Z',  'ModifiedBy': '',  'CallBackType': 'Review',  'ContentId': '',  'Metadata': {    'adultscore': '0.xxx',    'a': 'False',    'racyscore': '0.xxx',    'r': 'True'  },  'ReviewerResultTags': {    'a': 'False',    'r': 'True'  }}.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"team_name":{
+			   "description": "Your team name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "Image, Text or Video.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_id":{
+			   "description": "Id/Name to identify the content submitted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workflow_name":{
+			   "description": "Workflow Name that you want to invoke.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"call_back_endpoint":{
+			   "description": "Callback endpoint for posting the create job result.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content":{
+			   "description": "Content to evaluate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"jobid":{
+			   "description": "Id of the created job.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

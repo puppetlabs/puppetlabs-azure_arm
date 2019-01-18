@@ -1,0 +1,46 @@
+{
+	"description": "Check if a resource name is available.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"request":{
+			   "description": "Name availability request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nameavailable":{
+			   "description": "true indicates name is valid and available. false indicates the name is invalid, unavailable, or both.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reason":{
+			   "description": "Invalid indicates the name provided does not match Azure App Service naming requirements. AlreadyExists indicates that the name is already in use and is therefore unavailable.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "If reason == invalid, provide the user with the reason why the given name is invalid, and provide the resource naming requirements so that the user can select a valid name. If reason == AlreadyExists, explain that resource name is already in use, and direct them to select a different name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

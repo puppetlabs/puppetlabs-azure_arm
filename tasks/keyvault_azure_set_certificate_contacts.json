@@ -1,0 +1,28 @@
+{
+	"description": "Sets the certificate contacts for the specified key vault. This operation requires the certificates/managecontacts permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"contacts":{
+			   "description": "The contact list for the vault certificates.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Identifier for the contacts collection.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

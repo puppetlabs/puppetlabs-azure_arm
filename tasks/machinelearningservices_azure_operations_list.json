@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the available Azure Machine Learning Workspaces REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Version of Azure Machine Learning resource provider API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Display name of operation",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

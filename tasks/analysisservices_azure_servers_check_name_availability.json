@@ -1,0 +1,52 @@
+{
+	"description": "Check the name availability in the target location.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"reason":{
+			   "description": "The reason of unavailability.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The detailed message of the request unavailability.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The region name which the operation will lookup into.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_parameters":{
+			   "description": "Contains the information used to provision the Analysis Services server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "A unique identifier for a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nameavailable":{
+			   "description": "Indicator of available of the server name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

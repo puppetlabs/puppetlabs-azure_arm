@@ -1,0 +1,52 @@
+{
+	"description": "Clear the alerts.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "The clear alert request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resolutionmessage":{
+			   "description": "The resolution message while clearing the alert",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alerts":{
+			   "description": "The list of alert IDs to be cleared",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

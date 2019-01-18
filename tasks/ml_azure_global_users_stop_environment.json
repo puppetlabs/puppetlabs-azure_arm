@@ -1,0 +1,34 @@
+{
+	"description": "Stops an environment by stopping all resources inside the environment This operation can take a while to complete",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"user_name":{
+			   "description": "The name of the user.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment_operations_payload":{
+			   "description": "Represents payload for any Environment operations like get, start, stop, connect",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environmentid":{
+			   "description": "The resourceId of the environment",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

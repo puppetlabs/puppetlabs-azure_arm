@@ -1,0 +1,52 @@
+{
+	"description": "Returns the symmetric encrypted public encryption key of the manager.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"valuecertificatethumbprint":{
+			   "description": "The thumbprint of the cert that was used to encrypt 'Value'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encryptionalgorithm":{
+			   "description": "The algorithm used to encrypt the 'Value'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The value of the secret itself. If the secret is in plaintext or null then EncryptionAlgorithm will be none.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"description": "This operation generates a thumbnail image with the user-specified width and height. By default, the service analyzes the image, identifies the region of interest (ROI), and generates smart cropping coordinates based on the ROI. Smart cropping helps when you specify an aspect ratio that differs from that of the input image.A successful response contains the thumbnail image binary. If the request failed, the response contains an error code and a message to help determine what went wrong.Upon failure, the error code and an error message are returned. The error code could be one of InvalidImageUrl, InvalidImageFormat, InvalidImageSize, InvalidThumbnailSize, NotSupportedImage, FailedToProcess, Timeout, or InternalServerError.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"width":{
+			   "description": "Width of the thumbnail, in pixels. It must be between 1 and 1024. Recommended minimum of 50.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"height":{
+			   "description": "Height of the thumbnail, in pixels. It must be between 1 and 1024. Recommended minimum of 50.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"smart_cropping":{
+			   "description": "Boolean flag for enabling smart cropping.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"requestid":{
+			   "description": "A unique request identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

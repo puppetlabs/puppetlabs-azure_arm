@@ -1,0 +1,94 @@
+{
+	"description": "This operation extracts a rich set of visual features based on the image content.Two input methods are supported -- (1) Uploading an image or (2) specifying an image URL. Within your request, there is an optional parameter to allow you to choose which features to return. By default, image categories are returned in the response.A successful response will be returned in JSON. If the request failed, the response will contain an error code and a message to help understand what went wrong.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"color":{
+			   "description": "An object providing additional metadata describing color attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "A list of tags with confidence level.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"categories":{
+			   "description": "An array indicating identified categories.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"objects":{
+			   "description": "Array of objects describing what was detected in the image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metadata":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language":{
+			   "description": "The desired language for output generation. If this parameter is not specified, the default value is &quot;en&quot;.Supported languages:en - English, Default. es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"imagetype":{
+			   "description": "An object providing possible image types and matching confidence levels.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"details":{
+			   "description": "A string indicating which domain-specific details to return. Multiple values should be comma-separated. Valid visual feature types include: Celebrities - identifies celebrities if detected in the image, Landmarks - identifies notable landmarks in the image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"visual_features":{
+			   "description": "A string indicating what visual feature types to return. Multiple values should be comma-separated. Valid visual feature types include: Categories - categorizes image content according to a taxonomy defined in documentation. Tags - tags the image with a detailed list of words related to the image content. Description - describes the image content with a complete English sentence. Faces - detects if faces are present. If present, generate coordinates, gender and age. ImageType - detects if image is clipart or a line drawing. Color - determines the accent color, dominant color, and whether an image is black&white. Adult - detects if the image is pornographic in nature (depicts nudity or a sex act).  Sexually suggestive content is also detected. Objects - detects various objects within an image, including the approximate location. The Objects argument is only available in English.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"adult":{
+			   "description": "An object describing whether the image contains adult-oriented content and/or is racy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"requestid":{
+			   "description": "Id of the REST API request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "A collection of content tags, along with a list of captions sorted by confidence level, and image metadata.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"faces":{
+			   "description": "An array of possible faces within the image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"description": "The operation to disable replication on a replication protected item. This will also remove the item.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Fabric name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disable_protection_input":{
+			   "description": "Disable protection input.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Disable protection input properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protection_container_name":{
+			   "description": "Protection container name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replicated_protected_item_name":{
+			   "description": "Replication protected item name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"description": "Get the number of free and paid iot hubs in the subscription",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"currentvalue":{
+			   "description": "Current number of IotHub type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "Numerical limit on IotHub type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "IotHub type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "IotHub type id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Response type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unit":{
+			   "description": "Unit of IotHub type",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

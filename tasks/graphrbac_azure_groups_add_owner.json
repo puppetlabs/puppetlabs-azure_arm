@@ -1,0 +1,40 @@
+{
+	"description": "Add an owner to a group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"url":{
+			   "description": "A owner object URL, such as 'https://graph.windows.net/0b1f9851-1bf0-433f-aec3-cb9272f093dc/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd', where '0b1f9851-1bf0-433f-aec3-cb9272f093dc' is the tenantId and 'f260bbc4-c254-447b-94cf-293b5ec434dd' is the objectId of the owner (user, application, servicePrincipal, group) to be added.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"object_id":{
+			   "description": "The object ID of the application to which to add the owner.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The URL of the owner object, such as https://graph.windows.net/0b1f9851-1bf0-433f-aec3-cb9272f093dc/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

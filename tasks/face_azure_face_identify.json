@@ -1,0 +1,16 @@
+{
+	"description": "1-to-many identification to find the closest matches of the specific query person face from a person group or large person group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"body":{
+			   "description": "Request body for identify operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Executes an Analytics query for data. [Here](https://dev.loganalytics.io/documentation/Using-the-API) is an example for using POST with an Analytics query.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workspace_id":{
+			   "description": "ID of the workspace. This is Workspace ID from the Properties blade in the Azure portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "The Analytics query. Learn more about the [Analytics query syntax](https://azure.microsoft.com/documentation/articles/app-insights-analytics-reference/)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tables":{
+			   "description": "The list of tables, columns and rows.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

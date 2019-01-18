@@ -1,0 +1,22 @@
+{
+	"description": "This operation returns the list of domain-specific models that are supported by the Computer Vision API. Currently, the API supports following domain-specific models: celebrity recognizer, landmark recognizer.A successful response will be returned in JSON. If the request failed, the response will contain an error code and a message to help understand what went wrong.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"categories":{
+			   "description": "Categories of the model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the model.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

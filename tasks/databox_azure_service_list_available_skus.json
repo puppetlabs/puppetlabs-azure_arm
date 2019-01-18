@@ -1,0 +1,52 @@
+{
+	"description": "This method provides the list of available skus for the given subscription and location.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"country":{
+			   "description": "ISO country code. Country for hardware shipment. For codes check: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skunames":{
+			   "description": "Sku Names to filter for available skus",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Location for data transfer. For locations check: https://management.azure.com/subscriptions/SUBSCRIPTIONID/locations?api-version=2018-01-01",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"available_sku_request":{
+			   "description": "Filters for showing the available skus.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transfertype":{
+			   "description": "Type of the transfer.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

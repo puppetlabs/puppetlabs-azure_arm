@@ -1,0 +1,34 @@
+{
+	"description": "Create a new person in a specified large person group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_person_group_id":{
+			   "description": "Id referencing a particular large person group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "Request body for creating new person.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "User defined name, maximum length is 128.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userdata":{
+			   "description": "User specified data. Length should not exceed 16KB.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

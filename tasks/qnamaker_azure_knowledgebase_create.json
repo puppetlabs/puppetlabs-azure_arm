@@ -1,0 +1,22 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"create_kb_payload":{
+			   "description": "Post body of the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error object.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

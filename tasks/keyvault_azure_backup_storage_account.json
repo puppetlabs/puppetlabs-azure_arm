@@ -1,0 +1,28 @@
+{
+	"description": "Requests that a backup of the specified storage account be downloaded to the client. This operation requires the storage/backup permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"storage_account_name":{
+			   "description": "The name of the storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The backup blob containing the backed up storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

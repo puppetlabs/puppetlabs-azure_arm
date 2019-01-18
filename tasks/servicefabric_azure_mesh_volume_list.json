@@ -1,0 +1,28 @@
+{
+	"description": "Gets the information about all volume resources in a given resource group. The information include the description and other properties of the Volume.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the Volume resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Describes properties of a volume resource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

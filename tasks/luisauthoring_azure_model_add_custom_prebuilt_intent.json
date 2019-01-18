@@ -1,0 +1,28 @@
+{
+	"description": "Adds a custom prebuilt intent model to the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prebuilt_domain_model_create_object":{
+			   "description": "A model object containing the name of the custom prebuilt intent and the name of the domain to which this model belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

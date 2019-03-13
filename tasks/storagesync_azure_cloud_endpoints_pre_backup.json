@@ -7,6 +7,30 @@
 		
 		
 		    
+			"sync_group_name":{
+			   "description": "Name of Sync Group resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Body of Backup request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error details of the given entry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"innererror":{
+			   "description": "Error details of the given entry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
@@ -31,26 +55,8 @@
 			}
 			,
 		    
-			"sync_group_name":{
-			   "description": "Name of Sync Group resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"cloud_endpoint_name":{
 			   "description": "Name of Cloud Endpoint object.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Body of Backup request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"azurefileshare":{
-			   "description": "Azure File Share.",
 			   "type": "Optional[String[1]]"
 			}
 			

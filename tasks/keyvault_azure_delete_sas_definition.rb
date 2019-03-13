@@ -75,15 +75,9 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('attributes', 'body', 'attributes', 'attributes'),
-      op_param('id', 'body', 'id', 'id'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('sas-definition-name', 'path', 'sas_definition_name', 'sas_definition_name'),
-      op_param('sastype', 'body', 'sas_type', 'sastype'),
-      op_param('sid', 'body', 'sid', 'sid'),
       op_param('storage-account-name', 'path', 'storage_account_name', 'storage_account_name'),
-      op_param('tags', 'body', 'tags', 'tags'),
-      op_param('templateuri', 'body', 'template_uri', 'templateuri'),
-      op_param('validityperiod', 'body', 'validity_period', 'validityperiod'),
     ]
   op_params.each do |i|
     location = i[:location]

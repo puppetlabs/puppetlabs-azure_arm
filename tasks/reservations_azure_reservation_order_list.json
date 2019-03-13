@@ -7,8 +7,20 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Supported version.",
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of resource. 'Microsoft.Capacity/reservations'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"etag":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,20 +37,8 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Type of resource. 'Microsoft.Capacity/reservations'",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"etag":{
-			   "description": "",
+			"api_version":{
+			   "description": "Supported version.",
 			   "type": "Optional[String[1]]"
 			}
 			

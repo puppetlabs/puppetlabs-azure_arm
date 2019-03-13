@@ -19,14 +19,8 @@
 			}
 			,
 		    
-			"x5t":{
-			   "description": "Thumbprint of the certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Certificate identifier.",
+			"include_pending":{
+			   "description": "Specifies whether to include certificates which are not completely provisioned.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,8 +31,8 @@
 			}
 			,
 		    
-			"include_pending":{
-			   "description": "Specifies whether to include certificates which are not completely provisioned.",
+			"deleteddate":{
+			   "description": "The time when the certificate was deleted, in UTC",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +49,20 @@
 			}
 			,
 		    
-			"deleteddate":{
-			   "description": "The time when the certificate was deleted, in UTC",
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"maxresults":{
-			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			"x5t":{
+			   "description": "Thumbprint of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Certificate identifier.",
 			   "type": "Optional[String[1]]"
 			}
 			

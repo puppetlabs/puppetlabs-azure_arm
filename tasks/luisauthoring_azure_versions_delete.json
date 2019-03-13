@@ -7,6 +7,12 @@
 		
 		
 		    
+			"message":{
+			   "description": "Status details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"app_id":{
 			   "description": "The application ID.",
 			   "type": "Optional[String[1]]"
@@ -19,8 +25,8 @@
 			}
 			,
 		    
-			"errortype":{
-			   "description": "",
+			"code":{
+			   "description": "Status Code.",
 			   "type": "Optional[String[1]]"
 			}
 			

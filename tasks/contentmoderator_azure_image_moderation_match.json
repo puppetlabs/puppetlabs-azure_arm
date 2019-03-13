@@ -7,6 +7,36 @@
 		
 		
 		    
+			"matches":{
+			   "description": "The match details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "The evaluate status",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trackingid":{
+			   "description": "The tracking id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cacheid":{
+			   "description": "The cache id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ismatch":{
+			   "description": "Indicates if there is a match.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"list_id":{
 			   "description": "The list Id.",
 			   "type": "Optional[String[1]]"
@@ -15,12 +45,6 @@
 		    
 			"cache_image":{
 			   "description": "Whether to retain the submitted image for future use; defaults to false if omitted.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

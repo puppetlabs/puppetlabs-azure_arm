@@ -78,7 +78,7 @@ def format_params(key_values)
       op_param('id', 'body', 'id', 'id'),
       op_param('location', 'body', 'location', 'location'),
       op_param('name', 'body', 'name', 'name'),
-      op_param('resourceId', 'path', 'id', 'resource_id'),
+      op_param('resourceId', 'path', 'resource_id', 'resource_id'),
       op_param('tags', 'body', 'tags', 'tags'),
       op_param('type', 'body', 'type', 'type'),
     ]

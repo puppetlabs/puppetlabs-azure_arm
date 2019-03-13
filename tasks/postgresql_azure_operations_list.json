@@ -7,8 +7,14 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version to use for the request.",
+			"origin":{
+			   "description": "The intended executor of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Additional descriptions for the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,20 +25,14 @@
 			}
 			,
 		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"display":{
 			   "description": "The localized display information for this particular operation or action.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
-			   "description": "The intended executor of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Additional descriptions for the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

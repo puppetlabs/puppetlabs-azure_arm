@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "Describes properties of a application resource.",
+			"name":{
+			   "description": "Name of the Application resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the Application resource.",
+			"properties":{
+			   "description": "Describes properties of a application resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

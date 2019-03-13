@@ -7,6 +7,30 @@
 		
 		
 		    
+			"example_label_object":{
+			   "description": "An example label with the expected intent and entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entitylabels":{
+			   "description": "The identified entities within the utterance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intentname":{
+			   "description": "The identified intent representing the utterance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"text":{
+			   "description": "The sample's utterance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"app_id":{
 			   "description": "The application ID.",
 			   "type": "Optional[String[1]]"
@@ -15,24 +39,6 @@
 		    
 			"version_id":{
 			   "description": "The version ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"example_label_object":{
-			   "description": "An example label with the expected intent and entities.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"utterancetext":{
-			   "description": "The sample's utterance.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"exampleid":{
-			   "description": "The newly created sample ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

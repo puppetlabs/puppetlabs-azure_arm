@@ -1,0 +1,40 @@
+{
+	"description": "Generate a single sign-on request for the domain management portal.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"postparameterkey":{
+			   "description": "Post parameter key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"postparametervalue":{
+			   "description": "Post parameter value. Client should use 'application/x-www-form-urlencoded' encoding for this value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"url":{
+			   "description": "URL where the single sign-on request is to be made.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of an Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"account_name":{
 			   "description": "Cosmos DB database account name.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"properties":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Azure subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of an Azure resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			

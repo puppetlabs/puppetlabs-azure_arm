@@ -7,6 +7,18 @@
 		
 		
 		    
+			"key_name":{
+			   "description": "The name of the key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_version":{
+			   "description": "The version of the key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameters":{
 			   "description": "The parameters for the key operation.",
 			   "type": "Optional[String[1]]"
@@ -19,26 +31,14 @@
 			}
 			,
 		    
-			"alg":{
-			   "description": "algorithm identifier",
+			"kid":{
+			   "description": "Key identifier",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"value":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"key_name":{
-			   "description": "The name of the key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"key_version":{
-			   "description": "The version of the key.",
 			   "type": "Optional[String[1]]"
 			}
 			

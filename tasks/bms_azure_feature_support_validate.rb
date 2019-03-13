@@ -76,9 +76,9 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('azureRegion', 'path', 'azure_region', 'azure_region'),
+      op_param('featuretype', 'body', 'feature_type', 'featuretype'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('supportstatus', 'body', 'support_status', 'supportstatus'),
     ]
   op_params.each do |i|
     location = i[:location]

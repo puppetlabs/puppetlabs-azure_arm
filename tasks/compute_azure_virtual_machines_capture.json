@@ -13,6 +13,18 @@
 			}
 			,
 		    
+			"vm_name":{
+			   "description": "The name of the virtual machine.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema":{
+			   "description": "the schema of the captured virtual machine",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameters":{
 			   "description": "parameters of the captured virtual machine",
 			   "type": "Optional[String[1]]"
@@ -25,26 +37,14 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vm_name":{
-			   "description": "The name of the virtual machine.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"schema":{
-			   "description": "the schema of the captured virtual machine",
+			"resources":{
+			   "description": "a list of resource items of the captured virtual machine",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +55,8 @@
 			}
 			,
 		    
-			"resources":{
-			   "description": "a list of resource items of the captured virtual machine",
+			"id":{
+			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			

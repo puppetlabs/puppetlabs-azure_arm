@@ -7,12 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"value":{
 			   "description": "the invariant value.",
 			   "type": "Optional[String[1]]"
@@ -21,6 +15,12 @@
 		    
 			"localizedvalue":{
 			   "description": "the locale specific value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

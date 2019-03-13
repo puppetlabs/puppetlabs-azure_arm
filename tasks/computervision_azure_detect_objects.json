@@ -7,8 +7,8 @@
 		
 		
 		    
-			"objects":{
-			   "description": "An array of detected objects.",
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -20,13 +20,13 @@
 			,
 		    
 			"requestid":{
-			   "description": "Id of the REST API request.",
+			   "description": "A unique request identifier.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"metadata":{
-			   "description": "",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

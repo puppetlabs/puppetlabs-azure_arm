@@ -1,0 +1,52 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"entity_id":{
+			   "description": "The entity ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_id":{
+			   "description": "The entity role ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entity_role_update_object":{
+			   "description": "The new entity role.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Status details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Status Code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

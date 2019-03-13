@@ -7,18 +7,6 @@
 		
 		
 		    
-			"error":{
-			   "description": "Validation error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group the template will be deployed to. The name is case insensitive.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"deployment_name":{
 			   "description": "The name of the deployment.",
 			   "type": "Optional[String[1]]"
@@ -43,8 +31,20 @@
 			}
 			,
 		    
+			"location":{
+			   "description": "The location to store the deployment data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"properties":{
-			   "description": "The template deployment properties.",
+			   "description": "The deployment properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group the template will be deployed to. The name is case insensitive.",
 			   "type": "Optional[String[1]]"
 			}
 			

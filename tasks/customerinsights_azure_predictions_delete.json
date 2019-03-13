@@ -13,8 +13,8 @@
 			}
 			,
 		    
-			"involvedkpitypes":{
-			   "description": "KPI types involved in the prediction.",
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,26 +25,26 @@
 			}
 			,
 		    
-			"displayname":{
-			   "description": "Display name of the prediction.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"autoanalyze":{
 			   "description": "Whether do auto analyze.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"scorelabel":{
-			   "description": "Score label.",
+			"involvedkpitypes":{
+			   "description": "KPI types involved in the prediction.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"systemgeneratedentities":{
-			   "description": "System generated entities.",
+			"mappings":{
+			   "description": "Definition of the link mapping of prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scorelabel":{
+			   "description": "Score label.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,14 +61,26 @@
 			}
 			,
 		    
-			"description":{
-			   "description": "Description of the prediction.",
+			"grades":{
+			   "description": "The prediction grades.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"provisioningstate":{
 			   "description": "Provisioning state.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"involvedinteractiontypes":{
+			   "description": "Interaction types involved in the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"systemgeneratedentities":{
+			   "description": "System generated entities.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -91,38 +103,8 @@
 			}
 			,
 		    
-			"grades":{
-			   "description": "The prediction grades.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"involvedinteractiontypes":{
-			   "description": "Interaction types involved in the prediction.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"tenantid":{
 			   "description": "The hub name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"predictionname":{
-			   "description": "Name of the prediction.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"involvedrelationships":{
-			   "description": "Relationships involved in the prediction.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -133,8 +115,26 @@
 			}
 			,
 		    
-			"mappings":{
-			   "description": "Definition of the link mapping of prediction.",
+			"predictionname":{
+			   "description": "Name of the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "Display name of the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "Description of the prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"involvedrelationships":{
+			   "description": "Relationships involved in the prediction.",
 			   "type": "Optional[String[1]]"
 			}
 			

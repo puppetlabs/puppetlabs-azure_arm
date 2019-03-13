@@ -1,0 +1,61 @@
+Document: "networkWatcher"
+
+
+Path: "https://github.com/Azure/azure-rest-api-specs/blob/c9269dbd9a589cd49775b3f65b87c556c2f52cce/specification/network/resource-manager/Microsoft.Network/stable/2018-11-01/networkWatcher.json")
+
+## NetworkWatcher
+
+Network watcher in a resource group.
+
+```puppet
+azure_network_watcher {
+  api_version => "api_version",
+  etag => "etag (optional)",
+  id => "id (optional)",
+  location => "location (optional)",
+  parameters => "parameters",
+  properties => $azure_network_watcher_properties_format
+  resource_group_name => "resource_group_name",
+  subscription_id => "subscription_id",
+  tags => "tags (optional)",
+}
+```
+
+| Name        | Type           | Required       | Description       |
+| ------------- | ------------- | ------------- | ------------- |
+|api_version | String | true | Client API version. |
+|etag | String | false | A unique read-only string that changes whenever the resource is updated. |
+|id | String | false | Resource ID. |
+|location | String | false | Resource location. |
+|parameters | Hash | true | Parameters that define the network watcher resource. |
+|properties | [NetworkWatcherPropertiesFormat](#networkwatcherpropertiesformat) | false |  |
+|resource_group_name | String | true | The name of the resource group. |
+|subscription_id | String | true | The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call. |
+|tags | Hash | false | Resource tags. |
+        
+## NetworkWatcherPropertiesFormat
+
+The network watcher properties.
+
+```puppet
+$azure_network_watcher_properties_format = {
+}
+```
+
+| Name        | Type           | Required       | Description       |
+| ------------- | ------------- | ------------- | ------------- |
+
+
+
+## CRUD operations
+
+Here is a list of endpoints that we use to create, read, update and delete the NetworkWatcher
+
+| Operation | Path | Verb | Description | OperationID |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+|Create|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkWatchers/%{network_watcher_name}`|Put|Creates or updates a network watcher in the specified resource group.|NetworkWatchers_CreateOrUpdate|
+|List - list all|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/networkWatchers`|Get|Gets all network watchers by subscription.|NetworkWatchers_ListAll|
+|List - get one|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkWatchers/%{network_watcher_name}`|Get|Gets the specified network watcher by resource group.|NetworkWatchers_Get|
+|List - get list using params|`/subscriptions/%{subscription_id}/providers/Microsoft.Network/networkWatchers`|Get|Gets all network watchers by subscription.|NetworkWatchers_ListAll|
+|Update|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkWatchers/%{network_watcher_name}`|Put|Creates or updates a network watcher in the specified resource group.|NetworkWatchers_CreateOrUpdate|
+|Delete|`/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Network/networkWatchers/%{network_watcher_name}`|Delete|Deletes the specified network watcher resource.|NetworkWatchers_Delete|

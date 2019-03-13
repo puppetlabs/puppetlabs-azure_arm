@@ -75,14 +75,14 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('blockingcharacteristics', 'body', 'blocking_characteristics', 'blockingcharacteristics'),
-      op_param('blockingfeatures', 'body', 'blocking_features', 'blockingfeatures'),
+      op_param('blockingcharacteristics', 'body', 'blockingcharacteristics', 'blockingcharacteristics'),
+      op_param('blockingfeatures', 'body', 'blockingfeatures', 'blockingfeatures'),
       op_param('name', 'path', 'name', 'name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('result', 'body', 'result', 'result'),
       op_param('slot', 'path', 'slot', 'slot'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('unsupportedfeatures', 'body', 'unsupported_features', 'unsupportedfeatures'),
+      op_param('unsupportedfeatures', 'body', 'unsupportedfeatures', 'unsupportedfeatures'),
     ]
   op_params.each do |i|
     location = i[:location]

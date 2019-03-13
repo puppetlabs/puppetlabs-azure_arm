@@ -7,12 +7,6 @@
 		
 		
 		    
-			"key_to_regenerate":{
-			   "description": "The name of the key to regenerate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"keykind":{
 			   "description": "The access key to regenerate.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"api_version":{
 			   "description": "Version of the API to be used with the client request. The current version is 2015-04-08.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_to_regenerate":{
+			   "description": "The name of the key to regenerate.",
 			   "type": "Optional[String[1]]"
 			}
 			

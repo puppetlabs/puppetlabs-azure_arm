@@ -7,12 +7,6 @@
 		
 		
 		    
-			"isvalid":{
-			   "description": "Indicates whether the probe URL is accepted or not.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"validate_probe_input":{
 			   "description": "Input to check.",
 			   "type": "Optional[String[1]]"
@@ -31,14 +25,8 @@
 			}
 			,
 		    
-			"errorcode":{
-			   "description": "Specifies the error code when the probe url is not accepted.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "The detailed error message describing why the probe URL is not accepted.",
+			"probeurl":{
+			   "description": "The probe URL to validate.",
 			   "type": "Optional[String[1]]"
 			}
 			

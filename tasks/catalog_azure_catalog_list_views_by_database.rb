@@ -81,13 +81,13 @@ def format_params(key_values)
       op_param('$skip', 'query', '$skip', '$skip'),
       op_param('$top', 'query', '$top', '$top'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('computeaccountname', 'body', 'computeaccountname', 'computeaccountname'),
+      op_param('computeaccountname', 'body', 'compute_account_name', 'computeaccountname'),
       op_param('database_name', 'path', 'database_name', 'database_name'),
-      op_param('databasename', 'body', 'databasename', 'databasename'),
+      op_param('databasename', 'body', 'database_name', 'databasename'),
       op_param('definition', 'body', 'definition', 'definition'),
-      op_param('schemaname', 'body', 'schemaname', 'schemaname'),
+      op_param('schemaname', 'body', 'schema_name', 'schemaname'),
       op_param('version', 'body', 'version', 'version'),
-      op_param('viewname', 'body', 'viewname', 'viewname'),
+      op_param('viewname', 'body', 'view_name', 'viewname'),
     ]
   op_params.each do |i|
     location = i[:location]

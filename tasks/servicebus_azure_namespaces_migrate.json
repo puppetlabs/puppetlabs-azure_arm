@@ -19,8 +19,14 @@
 			}
 			,
 		    
-			"targetnamespacetype":{
-			   "description": "Type of namespaces",
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
 			   "type": "Optional[String[1]]"
 			}
 			,

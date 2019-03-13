@@ -1,0 +1,28 @@
+{
+	"description": "Adds a prebuilt domain along with its models as a new application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domainname":{
+			   "description": "The domain name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prebuilt_domain_create_object":{
+			   "description": "A prebuilt domain create object containing the name and culture of the domain.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"culture":{
+			   "description": "The culture of the new domain.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

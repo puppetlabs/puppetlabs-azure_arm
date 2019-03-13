@@ -7,20 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Type of integration runtime.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "Integration runtime description.",
+			"error":{
+			   "description": "Error data",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -45,6 +33,12 @@
 		    
 			"integration_runtime_name":{
 			   "description": "The integration runtime name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

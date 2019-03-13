@@ -7,18 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vault_name":{
-			   "description": "The name of the recovery services vault.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group where the recovery services vault is present.",
 			   "type": "Optional[String[1]]"
@@ -37,8 +25,20 @@
 			}
 			,
 		    
-			"objecttype":{
-			   "description": "This property will be used as the discriminator for deciding the specific types in the polymorphic chain of types.",
+			"validateoperationresponse":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the recovery services vault.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -75,7 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('environmentid', 'body', 'environment_id', 'environmentid'),
+      op_param('environment', 'body', 'environment', 'environment'),
       op_param('environmentOperationsPayload', 'body', 'environment_operations_payload', 'environment_operations_payload'),
       op_param('userName', 'path', 'user_name', 'user_name'),
     ]

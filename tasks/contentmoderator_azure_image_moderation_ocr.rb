@@ -74,15 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('cacheid', 'body', 'cache_id', 'cacheid'),
       op_param('CacheImage', 'query', 'cache_image', 'cache_image'),
-      op_param('candidates', 'body', 'candidates', 'candidates'),
       op_param('enhanced', 'query', 'enhanced', 'enhanced'),
-      op_param('language', 'body', 'language', 'language'),
-      op_param('metadata', 'body', 'metadata', 'metadata'),
-      op_param('status', 'body', 'status', 'status'),
-      op_param('text', 'body', 'text', 'text'),
-      op_param('trackingid', 'body', 'tracking_id', 'trackingid'),
+      op_param('error', 'body', 'error', 'error'),
+      op_param('language', 'query', 'language', 'language'),
     ]
   op_params.each do |i|
     location = i[:location]

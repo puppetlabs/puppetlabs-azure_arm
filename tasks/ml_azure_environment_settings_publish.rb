@@ -76,12 +76,12 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('environmentSettingName', 'path', 'environment_setting_name', 'environment_setting_name'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('labAccountName', 'path', 'lab_account_name', 'lab_account_name'),
       op_param('labName', 'path', 'lab_name', 'lab_name'),
       op_param('publishPayload', 'body', 'publish_payload', 'publish_payload'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('useexistingimage', 'body', 'use_existing_image', 'useexistingimage'),
     ]
   op_params.each do |i|
     location = i[:location]

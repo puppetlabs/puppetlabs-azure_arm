@@ -7,18 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Webspace",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Website Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"slot":{
 			   "description": "Website Slot",
 			   "type": "Optional[String[1]]"
@@ -33,6 +21,18 @@
 		    
 			"api_version":{
 			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Webspace",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Website Name",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,14 +7,32 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "Name of resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metadata":{
+			   "description": "Meta data of web app",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Subscription Id",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"api_version":{
-			   "description": "API Version",
+			"type":{
+			   "description": "Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,6 +49,18 @@
 			}
 			,
 		    
+			"name":{
+			   "description": "Resource Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"properties":{
 			   "description": "Settings",
 			   "type": "Optional[String[1]]"
@@ -39,36 +69,6 @@
 		    
 			"tags":{
 			   "description": "Resource tags",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of resource group",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"metadata":{
-			   "description": "Meta data of web app",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"version_id":{
 			   "description": "The version ID.",
 			   "type": "Optional[String[1]]"
@@ -31,14 +37,14 @@
 			}
 			,
 		    
-			"errortype":{
-			   "description": "",
+			"list":{
+			   "description": "List of synonym words.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"app_id":{
-			   "description": "The application ID.",
+			"canonicalform":{
+			   "description": "The standard form that the list represents.",
 			   "type": "Optional[String[1]]"
 			}
 			

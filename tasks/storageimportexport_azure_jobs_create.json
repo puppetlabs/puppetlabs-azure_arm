@@ -7,14 +7,26 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The resource group name uniquely identifies the resource group within the user subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Specifies the API version to use for this request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"body":{
 			   "description": "The parameters used for creating the job",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"error":{
-			   "description": "Describes the error information.",
+			"location":{
+			   "description": "Specifies the supported Azure location where the job should be created",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,18 +43,6 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The resource group name uniquely identifies the resource group within the user subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Specifies the API version to use for this request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"accept_language":{
 			   "description": "Specifies the preferred language for the response.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +51,18 @@
 		    
 			"x_ms_client_tenant_id":{
 			   "description": "The tenant ID of the client making the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Specifies the tags that will be assigned to the job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Specifies the job properties",
 			   "type": "Optional[String[1]]"
 			}
 			

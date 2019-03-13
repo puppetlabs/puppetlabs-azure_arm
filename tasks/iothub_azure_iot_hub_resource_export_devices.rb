@@ -75,9 +75,11 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('excludekeys', 'body', 'exclude_keys', 'excludekeys'),
-      op_param('exportblobcontaineruri', 'body', 'export_blob_container_uri', 'exportblobcontaineruri'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('details', 'body', 'details', 'details'),
       op_param('exportDevicesParameters', 'body', 'export_devices_parameters', 'export_devices_parameters'),
+      op_param('httpstatuscode', 'body', 'httpstatuscode', 'httpstatuscode'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('resourceName', 'path', 'resource_name', 'resource_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),

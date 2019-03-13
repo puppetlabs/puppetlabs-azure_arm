@@ -7,26 +7,8 @@
 		
 		
 		    
-			"iot_hub_name":{
-			   "description": "IotHub to be tested",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The version of the API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "The error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"httpstatuscode":{
-			   "description": "The HTTP status code.",
+			"message":{
+			   "description": "The error message.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +37,26 @@
 			}
 			,
 		    
-			"message":{
-			   "description": "The error message.",
+			"httpstatuscode":{
+			   "description": "The HTTP status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iot_hub_name":{
+			   "description": "IotHub to be tested",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

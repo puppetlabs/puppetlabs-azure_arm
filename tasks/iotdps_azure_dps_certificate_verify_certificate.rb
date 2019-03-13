@@ -75,6 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('certificate', 'body', 'certificate', 'certificate'),
       op_param('certificate.created', 'query', 'certificate.created', 'certificate.created'),
       op_param('certificate.hasPrivateKey', 'query', 'certificate.has_private_key', 'certificate.has_private_key'),
       op_param('certificate.isVerified', 'query', 'certificate.is_verified', 'certificate.is_verified'),
@@ -84,11 +85,7 @@ def format_params(key_values)
       op_param('certificate.purpose', 'query', 'certificate.purpose', 'certificate.purpose'),
       op_param('certificate.rawBytes', 'query', 'certificate.raw_bytes', 'certificate.raw_bytes'),
       op_param('certificateName', 'path', 'certificate_name', 'certificate_name'),
-      op_param('code', 'body', 'code', 'code'),
-      op_param('details', 'body', 'details', 'details'),
-      op_param('httpstatuscode', 'body', 'httpstatuscode', 'httpstatuscode'),
       op_param('If-Match', 'header', 'if_match', 'if_match'),
-      op_param('message', 'body', 'message', 'message'),
       op_param('provisioningServiceName', 'path', 'provisioning_service_name', 'provisioning_service_name'),
       op_param('request', 'body', 'request', 'request'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),

@@ -7,20 +7,8 @@
 		
 		
 		    
-			"kind":{
-			   "description": "Kind of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"request":{
-			   "description": "Backup configuration. You can use the JSON response from the POST action as input here.",
+			"name":{
+			   "description": "Resource Name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,8 +25,8 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "BackupItem resource specific properties",
+			"kind":{
+			   "description": "Kind of resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +37,26 @@
 			}
 			,
 		    
+			"id":{
+			   "description": "Resource Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "BackupRequest resource specific properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource Name.",
+			"request":{
+			   "description": "Backup configuration. You can use the JSON response from the POST action as input here.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"user_name":{
+			   "description": "The name of the user.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"lab_name":{
 			   "description": "The name of the lab.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"user_name":{
-			   "description": "The name of the user.",
 			   "type": "Optional[String[1]]"
 			}
 			

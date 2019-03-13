@@ -7,14 +7,38 @@
 		
 		
 		    
+			"publisher_id":{
+			   "description": "Publisher identifier string of image being deployed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"offer_id":{
+			   "description": "Offer identifier string of image being deployed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"plan_id":{
+			   "description": "Plan identifier string of image being deployed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to the Create Marketplace Terms operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"properties":{
 			   "description": "Represents the properties of the resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource ID.",
+			"type":{
+			   "description": "Resource type.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,38 +61,14 @@
 			}
 			,
 		    
-			"publisher_id":{
-			   "description": "Publisher identifier string of image being deployed.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"offer_id":{
-			   "description": "Offer identifier string of image being deployed.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"plan_id":{
-			   "description": "Plan identifier string of image being deployed.",
+			"id":{
+			   "description": "Resource ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"name":{
 			   "description": "Resource name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameters supplied to the Create Marketplace Terms operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
 			   "type": "Optional[String[1]]"
 			}
 			

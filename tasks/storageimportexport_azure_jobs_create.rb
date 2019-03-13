@@ -77,10 +77,12 @@ def format_params(key_values)
       op_param('Accept-Language', 'header', 'accept_language', 'accept_language'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('body', 'body', 'body', 'body'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('jobName', 'path', 'job_name', 'job_name'),
+      op_param('location', 'body', 'location', 'location'),
+      op_param('properties', 'body', 'properties', 'properties'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('tags', 'body', 'tags', 'tags'),
       op_param('x-ms-client-tenant-id', 'header', 'x_ms_client_tenant_id', 'x_ms_client_tenant_id'),
     ]
   op_params.each do |i|

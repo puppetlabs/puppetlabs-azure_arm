@@ -25,12 +25,6 @@
 			}
 			,
 		    
-			"x5c":{
-			   "description": "The certificate or the certificate chain to merge.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"attributes":{
 			   "description": "The attributes of the certificate (optional).",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"tags":{
 			   "description": "Application specific metadata in the form of key-value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x5c":{
+			   "description": "The certificate or the certificate chain to merge.",
 			   "type": "Optional[String[1]]"
 			}
 			

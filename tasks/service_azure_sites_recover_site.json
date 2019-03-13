@@ -7,6 +7,30 @@
 		
 		
 		    
+			"name":{
+			   "description": "Name of web app",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sitename":{
+			   "description": "[Optional] Destination web app name into which web app should be recovered. This is case when new web app should be created instead.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recoverconfig":{
+			   "description": "If true, then the website's configuration will be reverted to its state at SnapshotTime",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "Name of resource group",
 			   "type": "Optional[String[1]]"
@@ -19,20 +43,8 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "Subscription Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sitename":{
-			   "description": "[Optional] Destination web app name into which web app should be recovered. This is case when new web app should be created instead.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +55,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of web app",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"snapshottime":{
 			   "description": "Point in time in which the site recover should be attempted.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"recoverconfig":{
-			   "description": "If true, then the website's configuration will be reverted to its state at SnapshotTime",
 			   "type": "Optional[String[1]]"
 			}
 			

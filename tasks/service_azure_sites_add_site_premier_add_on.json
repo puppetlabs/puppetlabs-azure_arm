@@ -7,12 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +14,6 @@
 			,
 		    
 			"premier_add_on_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"premier_add_on":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -39,6 +27,48 @@
 		    
 			"api_version":{
 			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Geo region resource belongs to e.g. SouthCentralUS, SouthEastAsia",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Tags associated with resource",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sku":{
+			   "description": "Sku description of the resource",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"premier_add_on":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"plan":{
+			   "description": "Azure resource manager plan",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -74,10 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('alg', 'body', 'alg', 'alg'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('key-name', 'path', 'key_name', 'key_name'),
       op_param('key-version', 'path', 'key_version', 'key_version'),
+      op_param('kid', 'body', 'kid', 'kid'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('value', 'body', 'value', 'value'),
     ]

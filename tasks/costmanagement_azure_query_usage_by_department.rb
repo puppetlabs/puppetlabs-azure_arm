@@ -76,9 +76,12 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('billingAccountId', 'path', 'billing_account_id', 'billing_account_id'),
+      op_param('dataset', 'body', 'dataset', 'dataset'),
       op_param('departmentId', 'path', 'department_id', 'department_id'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
-      op_param('value', 'body', 'value', 'value'),
+      op_param('timeframe', 'body', 'timeframe', 'timeframe'),
+      op_param('timeperiod', 'body', 'timeperiod', 'timeperiod'),
+      op_param('type', 'body', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

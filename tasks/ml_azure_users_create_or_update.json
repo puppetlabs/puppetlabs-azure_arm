@@ -7,18 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"lab_account_name":{
 			   "description": "The name of the lab Account.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +39,18 @@
 		    
 			"error":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			

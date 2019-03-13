@@ -7,8 +7,14 @@
 		
 		
 		    
-			"id":{
-			   "description": "The resource ID.",
+			"skip_token":{
+			   "description": "The page-continuation token to use with a paged version of this API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The properties of the recommendation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,14 +49,8 @@
 			}
 			,
 		    
-			"skip_token":{
-			   "description": "The page-continuation token to use with a paged version of this API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The properties of the recommendation.",
+			"id":{
+			   "description": "The resource ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,

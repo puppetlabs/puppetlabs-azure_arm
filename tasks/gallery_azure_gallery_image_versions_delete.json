@@ -7,24 +7,6 @@
 		
 		
 		    
-			"gallery_name":{
-			   "description": "The name of the Shared Image Gallery in which the Image Definition resides.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"gallery_image_name":{
-			   "description": "The name of the gallery Image Definition in which the Image Version resides.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"gallery_image_version_name":{
-			   "description": "The name of the gallery Image Version to be deleted.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +27,24 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_name":{
+			   "description": "The name of the Shared Image Gallery in which the Image Definition resides.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_image_name":{
+			   "description": "The name of the gallery Image Definition in which the Image Version resides.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_image_version_name":{
+			   "description": "The name of the gallery Image Version to be deleted.",
 			   "type": "Optional[String[1]]"
 			}
 			

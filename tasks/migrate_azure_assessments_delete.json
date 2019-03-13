@@ -7,6 +7,12 @@
 		
 		
 		    
+			"accept_language":{
+			   "description": "Standard request header. Used by service to respond to client in appropriate language.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Standard request header. Used by service to identify API version used by client.",
 			   "type": "Optional[String[1]]"
@@ -45,12 +51,6 @@
 		    
 			"assessment_name":{
 			   "description": "Unique name of an assessment within a project.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"accept_language":{
-			   "description": "Standard request header. Used by service to respond to client in appropriate language.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -74,10 +74,20 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('accountenabled', 'body', 'account_enabled', 'accountenabled'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('odata.error', 'body', 'odata.error', 'odata.error'),
+      op_param('displayname', 'body', 'display_name', 'displayname'),
+      op_param('givenname', 'body', 'given_name', 'givenname'),
+      op_param('immutableid', 'body', 'immutable_id', 'immutableid'),
+      op_param('mail', 'body', 'mail', 'mail'),
+      op_param('mailnickname', 'body', 'mail_nickname', 'mailnickname'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
+      op_param('passwordprofile', 'body', 'password_profile', 'passwordprofile'),
+      op_param('surname', 'body', 'surname', 'surname'),
       op_param('tenantID', 'path', 'tenant_id', 'tenant_id'),
+      op_param('usagelocation', 'body', 'usage_location', 'usagelocation'),
+      op_param('userprincipalname', 'body', 'user_principal_name', 'userprincipalname'),
+      op_param('usertype', 'body', 'user_type', 'usertype'),
     ]
   op_params.each do |i|
     location = i[:location]

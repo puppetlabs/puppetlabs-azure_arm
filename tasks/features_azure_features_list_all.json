@@ -7,18 +7,6 @@
 		
 		
 		    
-			"id":{
-			   "description": "The resource ID of the feature.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "The resource type of the feature.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +27,18 @@
 		    
 			"properties":{
 			   "description": "Properties of the previewed feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The resource ID of the feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The resource type of the feature.",
 			   "type": "Optional[String[1]]"
 			}
 			

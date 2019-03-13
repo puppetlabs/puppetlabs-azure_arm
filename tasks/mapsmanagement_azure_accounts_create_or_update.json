@@ -7,14 +7,14 @@
 		
 		
 		    
-			"details":{
-			   "description": "If available, a list of additional details about the error.",
+			"target":{
+			   "description": "If available, the component generating the error.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"code":{
-			   "description": "Error code.",
+			"message":{
+			   "description": "If available, a human readable description of the error.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,6 +37,12 @@
 			}
 			,
 		    
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"account_name":{
 			   "description": "The name of the Maps Account.",
 			   "type": "Optional[String[1]]"
@@ -49,14 +55,8 @@
 			}
 			,
 		    
-			"target":{
-			   "description": "If available, the component generating the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "If available, a human readable description of the error.",
+			"details":{
+			   "description": "If available, a list of additional details about the error.",
 			   "type": "Optional[String[1]]"
 			}
 			

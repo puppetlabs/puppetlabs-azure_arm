@@ -23,6 +23,12 @@
 			   "description": "A model object containing the name of the new intent classifier.",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"name":{
+			   "description": "Name of the new entity extractor.",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

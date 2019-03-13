@@ -1,0 +1,64 @@
+{
+	"description": "Create or update an event source under the specified environment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "Name of an Azure Resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_source_name":{
+			   "description": "Name of the event source.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "The kind of the event source.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The location of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Key-value pairs of additional properties for the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters for creating an event source resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment_name":{
+			   "description": "The name of the Time Series Insights environment associated with the specified resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

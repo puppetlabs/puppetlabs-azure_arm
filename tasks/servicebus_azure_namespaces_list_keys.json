@@ -7,6 +7,12 @@
 		
 		
 		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "Name of the Resource group within the Azure subscription.",
 			   "type": "Optional[String[1]]"
@@ -37,44 +43,8 @@
 			}
 			,
 		    
-			"keyname":{
-			   "description": "A string that describes the authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondaryconnectionstring":{
-			   "description": "Secondary connection string of the created namespace authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"aliasprimaryconnectionstring":{
-			   "description": "Primary connection string of the alias if GEO DR is enabled",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"aliassecondaryconnectionstring":{
-			   "description": "Secondary  connection string of the alias if GEO DR is enabled",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primaryconnectionstring":{
-			   "description": "Primary connection string of the created namespace authorization rule.",
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

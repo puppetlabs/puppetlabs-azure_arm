@@ -31,26 +31,8 @@
 			}
 			,
 		    
-			"type":{
-			   "description": "Azure resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Azure resource name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
+			"error":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Azure resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			

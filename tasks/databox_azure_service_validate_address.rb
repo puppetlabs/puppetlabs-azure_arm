@@ -75,9 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('devicetype', 'body', 'device_type', 'devicetype'),
       op_param('location', 'path', 'location', 'location'),
-      op_param('shippingaddress', 'body', 'shipping_address', 'shippingaddress'),
+      op_param('properties', 'body', 'properties', 'properties'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('validateAddress', 'body', 'validate_address', 'validate_address'),
     ]

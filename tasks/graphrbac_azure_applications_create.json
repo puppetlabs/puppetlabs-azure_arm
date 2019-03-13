@@ -7,8 +7,26 @@
 		
 		
 		    
-			"odataerror":{
-			   "description": "A Graph API error.",
+			"keycredentials":{
+			   "description": "The list of KeyCredential objects.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"requiredresourceaccess":{
+			   "description": "Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "The display name of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replyurls":{
+			   "description": "A collection of reply URLs for the application.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,8 +43,44 @@
 			}
 			,
 		    
+			"identifieruris":{
+			   "description": "A collection of URIs for the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"passwordcredentials":{
+			   "description": "The list of PasswordCredential objects.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"oauth2allowimplicitflow":{
+			   "description": "Whether to allow implicit grant flow for OAuth2",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"availabletoothertenants":{
+			   "description": "Whether the application is available to other tenants.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"homepage":{
+			   "description": "The home page of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tenant_id":{
 			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"approles":{
+			   "description": "The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals.",
 			   "type": "Optional[String[1]]"
 			}
 			

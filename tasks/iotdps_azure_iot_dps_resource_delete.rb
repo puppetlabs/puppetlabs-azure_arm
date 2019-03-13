@@ -77,7 +77,7 @@ def format_params(key_values)
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('code', 'body', 'code', 'code'),
       op_param('details', 'body', 'details', 'details'),
-      op_param('httpstatuscode', 'body', 'http_status_code', 'httpstatuscode'),
+      op_param('httpstatuscode', 'body', 'httpstatuscode', 'httpstatuscode'),
       op_param('message', 'body', 'message', 'message'),
       op_param('provisioningServiceName', 'path', 'provisioning_service_name', 'provisioning_service_name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),

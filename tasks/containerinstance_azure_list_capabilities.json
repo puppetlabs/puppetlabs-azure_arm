@@ -7,6 +7,12 @@
 		
 		
 		    
+			"ipaddresstype":{
+			   "description": "The ip address type that this capability describes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"gpu":{
 			   "description": "The GPU sku that this capability describes.",
 			   "type": "Optional[String[1]]"
@@ -15,6 +21,18 @@
 		    
 			"capabilities":{
 			   "description": "The supported capabilities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourcetype":{
+			   "description": "The resource type that this capability describes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ostype":{
+			   "description": "The OS type that this capability describes.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,24 +51,6 @@
 		    
 			"api_version":{
 			   "description": "Client API version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resourcetype":{
-			   "description": "The resource type that this capability describes.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ostype":{
-			   "description": "The OS type that this capability describes.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ipaddresstype":{
-			   "description": "The ip address type that this capability describes.",
 			   "type": "Optional[String[1]]"
 			}
 			

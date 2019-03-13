@@ -7,6 +7,12 @@
 		
 		
 		    
+			"trigger_name":{
+			   "description": "The trigger name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"rerun_trigger_name":{
 			   "description": "The rerun trigger name.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"factory_name":{
 			   "description": "The factory name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"trigger_name":{
-			   "description": "The trigger name.",
 			   "type": "Optional[String[1]]"
 			}
 			

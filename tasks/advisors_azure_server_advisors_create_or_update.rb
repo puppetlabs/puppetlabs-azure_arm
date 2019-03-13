@@ -74,7 +74,7 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('advisorName', 'path', 'advisor_name', 'advisor_name'),
+      op_param('advisorName', 'path', 'name', 'advisor_name'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('id', 'body', 'id', 'id'),
       op_param('kind', 'body', 'kind', 'kind'),

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"tags":{
+			   "description": "Resource tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"filter":{
 			   "description": "May be used to filter forecasts by properties/usageDate (Utc time), properties/chargeType or properties/grain. The filter supports 'eq', 'lt', 'gt', 'le', 'ge', and 'and'. It does not currently support 'ne', 'or', or 'not'.",
 			   "type": "Optional[String[1]]"
@@ -25,12 +37,6 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"id":{
 			   "description": "Resource Id.",
 			   "type": "Optional[String[1]]"
@@ -45,12 +51,6 @@
 		    
 			"type":{
 			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Resource tags.",
 			   "type": "Optional[String[1]]"
 			}
 			

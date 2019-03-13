@@ -1,0 +1,28 @@
+{
+	"description": "Creates an image list.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "Schema of the body.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

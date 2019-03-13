@@ -7,12 +7,6 @@
 		
 		
 		    
-			"origin":{
-			   "description": "The origin.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
@@ -27,6 +21,12 @@
 		    
 			"display":{
 			   "description": "The operation supported by storage sync.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "The origin.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "The name of the operation being performed on this particular object. This name should match the action name that appears in RBAC / the event service.",
 			   "type": "Optional[String[1]]"
@@ -15,12 +21,6 @@
 		    
 			"display":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

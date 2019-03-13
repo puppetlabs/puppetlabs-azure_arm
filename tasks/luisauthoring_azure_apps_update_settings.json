@@ -19,8 +19,14 @@
 			}
 			,
 		    
-			"errortype":{
-			   "description": "",
+			"message":{
+			   "description": "Status details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Status Code.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,64 @@
+{
+	"description": "The operation to update(push update) the installed mobility service software on a replication protected item to the latest available version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protection_container_name":{
+			   "description": "The name of the container containing the protected item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replication_protected_item_name":{
+			   "description": "The name of the protected item on which the agent is to be updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"update_mobility_service_request":{
+			   "description": "Request to update the mobility service on the protected item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "The name of the fabric containing the protected item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The properties of the update mobility service request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

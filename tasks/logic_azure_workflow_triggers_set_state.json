@@ -7,24 +7,6 @@
 		
 		
 		    
-			"trigger_name":{
-			   "description": "The workflow trigger name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"set_state":{
-			   "description": "The workflow trigger state.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"source":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -45,6 +27,24 @@
 		    
 			"workflow_name":{
 			   "description": "The workflow name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trigger_name":{
+			   "description": "The workflow trigger name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"set_state":{
+			   "description": "The workflow trigger state.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

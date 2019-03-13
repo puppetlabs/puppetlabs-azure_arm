@@ -7,18 +7,6 @@
 		
 		
 		    
-			"nextlink":{
-			   "description": "The next link.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"provisioning_service_name":{
-			   "description": "The provisioning service name to get the shared access keys for.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription identifier.",
 			   "type": "Optional[String[1]]"
@@ -37,8 +25,32 @@
 			}
 			,
 		    
-			"value":{
-			   "description": "The list of shared access policies.",
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"httpstatuscode":{
+			   "description": "The HTTP status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"details":{
+			   "description": "The error details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioning_service_name":{
+			   "description": "The provisioning service name to get the shared access keys for.",
 			   "type": "Optional[String[1]]"
 			}
 			

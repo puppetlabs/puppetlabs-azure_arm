@@ -1,0 +1,46 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entity_id":{
+			   "description": "The pattern.any entity id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"item_id":{
+			   "description": "The explicit list item which will be deleted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Status Code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Status details.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

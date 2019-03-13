@@ -7,8 +7,8 @@
 		
 		
 		    
-			"display":{
-			   "description": "The object that represents the operation.",
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,8 +19,8 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
+			"display":{
+			   "description": "The object that represents the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

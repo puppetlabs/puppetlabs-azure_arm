@@ -74,19 +74,12 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('adult', 'body', 'adult', 'adult'),
-      op_param('categories', 'body', 'categories', 'categories'),
-      op_param('color', 'body', 'color', 'color'),
-      op_param('description', 'body', 'description', 'description'),
+      op_param('code', 'body', 'code', 'code'),
       op_param('details', 'query', 'details', 'details'),
-      op_param('faces', 'body', 'faces', 'faces'),
-      op_param('imagetype', 'body', 'image_type', 'imagetype'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),
       op_param('language', 'query', 'language', 'language'),
-      op_param('metadata', 'body', 'metadata', 'metadata'),
-      op_param('objects', 'body', 'objects', 'objects'),
-      op_param('requestid', 'body', 'request_id', 'requestid'),
-      op_param('tags', 'body', 'tags', 'tags'),
+      op_param('message', 'body', 'message', 'message'),
+      op_param('requestid', 'body', 'requestid', 'requestid'),
       op_param('visualFeatures', 'query', 'visual_features', 'visual_features'),
     ]
   op_params.each do |i|

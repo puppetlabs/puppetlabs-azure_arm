@@ -7,6 +7,12 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2018-05-31.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "Operation name: {provider}/{resource}/{operation}.",
 			   "type": "Optional[String[1]]"
@@ -15,12 +21,6 @@
 		    
 			"display":{
 			   "description": "The object that represents the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. The current version is 2018-05-31.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,24 @@
 		
 		
 		    
+			"name":{
+			   "description": "Gets or sets the name of the tag.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "Gets or sets the description of the tag.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Gets or sets the type of the tag.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"training_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"project_id":{
 			   "description": "The project id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Gets or sets the name of the tag.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "Gets or sets the description of the tag.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Gets or sets the type of the tag.",
 			   "type": "Optional[String[1]]"
 			}
 			

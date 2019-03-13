@@ -7,14 +7,8 @@
 		
 		
 		    
-			"slot":{
-			   "description": "Name of the deployment slot. By default, this API returns information on the production slot.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"blockingcharacteristics":{
-			   "description": "List of blocking application characteristics.",
+			"result":{
+			   "description": "Name of app.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,8 +19,32 @@
 			}
 			,
 		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unsupportedfeatures":{
+			   "description": "List of features enabled on app that are non-blocking but cannot be cloned. The app can still be clonedbut the features in this list will not be set up on cloned app.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"blockingcharacteristics":{
+			   "description": "List of blocking application characteristics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "Name of the app.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"slot":{
+			   "description": "Name of the deployment slot. By default, this API returns information on the production slot.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,26 +55,8 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"result":{
-			   "description": "Name of app.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"blockingfeatures":{
 			   "description": "List of features enabled on app that prevent cloning.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"unsupportedfeatures":{
-			   "description": "List of features enabled on app that are non-blocking but cannot be cloned. The app can still be clonedbut the features in this list will not be set up on cloned app.",
 			   "type": "Optional[String[1]]"
 			}
 			

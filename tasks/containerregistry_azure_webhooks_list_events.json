@@ -7,12 +7,6 @@
 		
 		
 		    
-			"webhook_name":{
-			   "description": "The name of the webhook.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"nextlink":{
 			   "description": "The URI that can be used to request the next list of events.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +39,12 @@
 		    
 			"registry_name":{
 			   "description": "The name of the container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"webhook_name":{
+			   "description": "The name of the webhook.",
 			   "type": "Optional[String[1]]"
 			}
 			

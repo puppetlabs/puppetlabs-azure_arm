@@ -7,8 +7,20 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "Subscription Id",
+			"name":{
+			   "description": "Resource Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Settings",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "Kind of resource",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,8 +31,8 @@
 			}
 			,
 		    
-			"kind":{
-			   "description": "Kind of resource",
+			"id":{
+			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,32 +49,20 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"slot":{
 			   "description": "Name of web app slot. If not specified then will default to production slot.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"subscription_id":{
+			   "description": "Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Settings",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			,

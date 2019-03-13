@@ -1,0 +1,106 @@
+{
+	"description": "Gets model status of the prediction.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"predictionname":{
+			   "description": "The prediction name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prediction_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hub_name":{
+			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"predictionguidid":{
+			   "description": "The prediction GUID ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"validationsetcount":{
+			   "description": "Count of the validation set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"testsetcount":{
+			   "description": "Count of the test set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The model status message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"modelversion":{
+			   "description": "Version of the model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trainingaccuracy":{
+			   "description": "The training accuracy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signalsused":{
+			   "description": "The signals used.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Prediction model life cycle.  When prediction is in PendingModelConfirmation status, it is allowed to update the status to PendingFeaturing or Active through API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trainingsetcount":{
+			   "description": "Count of the training set.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -76,7 +76,7 @@ def format_params(key_values)
   op_params = [
       op_param('accountName', 'path', 'account_name', 'account_name'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('keyname', 'body', 'key_name', 'keyname'),
+      op_param('keys', 'body', 'keys', 'keys'),
       op_param('regenerateKey', 'body', 'regenerate_key', 'regenerate_key'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),

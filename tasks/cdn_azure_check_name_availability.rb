@@ -76,8 +76,9 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('checkNameAvailabilityInput', 'body', 'check_name_availability_input', 'check_name_availability_input'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('type', 'body', 'type', 'type'),
+      op_param('message', 'body', 'message', 'message'),
+      op_param('nameavailable', 'body', 'nameavailable', 'nameavailable'),
+      op_param('reason', 'body', 'reason', 'reason'),
     ]
   op_params.each do |i|
     location = i[:location]

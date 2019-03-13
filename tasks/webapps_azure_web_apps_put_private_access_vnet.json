@@ -7,14 +7,8 @@
 		
 		
 		    
-			"name":{
-			   "description": "Resource Name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id.",
+			"api_version":{
+			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,14 +25,8 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"access":{
-			   "description": "The information for the private access",
+			"name":{
+			   "description": "Resource Name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +37,26 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "API Version",
+			"id":{
+			   "description": "Resource Id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"type":{
 			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"access":{
+			   "description": "The information for the private access",
 			   "type": "Optional[String[1]]"
 			}
 			

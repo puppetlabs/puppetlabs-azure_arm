@@ -1,0 +1,34 @@
+{
+	"description": "Add an image to the list with list Id equal to list Id passed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"list_id":{
+			   "description": "List Id of the image list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag":{
+			   "description": "Tag for the image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"label":{
+			   "description": "The image label.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

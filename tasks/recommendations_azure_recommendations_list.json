@@ -13,6 +13,30 @@
 			}
 			,
 		    
+			"properties":{
+			   "description": "Recommendation resource specific properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "Kind of resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"featured":{
+			   "description": "Specify true to return only the most critical recommendations. The default is false, which returns all recommendations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "Filter is specified by using OData syntax. Example: $filter=channel eq 'Api' or channel eq 'Notification' and startTime eq 2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq duration'[PT1H|PT1M|P1D]",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"id":{
 			   "description": "Resource Id.",
 			   "type": "Optional[String[1]]"
@@ -25,18 +49,6 @@
 			}
 			,
 		    
-			"kind":{
-			   "description": "Kind of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter":{
-			   "description": "Filter is specified by using OData syntax. Example: $filter=channel eq 'Api' or channel eq 'Notification' and startTime eq 2014-01-01T00:00:00Z and endTime eq 2014-12-31T23:59:59Z and timeGrain eq duration'[PT1H|PT1M|P1D]",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "API Version",
 			   "type": "Optional[String[1]]"
@@ -45,18 +57,6 @@
 		    
 			"type":{
 			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Recommendation resource specific properties",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"featured":{
-			   "description": "Specify true to return only the most critical recommendations. The default is false, which returns all recommendations.",
 			   "type": "Optional[String[1]]"
 			}
 			

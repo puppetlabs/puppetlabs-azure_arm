@@ -76,15 +76,11 @@ def format_params(key_values)
   op_params = [
       op_param('alertSettingName', 'path', 'alert_setting_name', 'alert_setting_name'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('location', 'body', 'location', 'location'),
-      op_param('name', 'body', 'name', 'name'),
       op_param('properties', 'body', 'properties', 'properties'),
       op_param('request', 'body', 'request', 'request'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('resourceName', 'path', 'resource_name', 'resource_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('type', 'body', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

@@ -19,14 +19,14 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "Error code.",
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"message":{
-			   "description": "Error message indicating why the operation failed.",
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,

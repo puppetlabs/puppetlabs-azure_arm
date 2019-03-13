@@ -7,20 +7,14 @@
 		
 		
 		    
-			"name":{
-			   "description": "the friendly name of the job to build.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "the job type of the current job (Hive or USql).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"properties":{
 			   "description": "the job specific properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "the friendly name of the job to build.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,6 +27,12 @@
 		    
 			"api_version":{
 			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "the job type of the current job (Hive or USql).",
 			   "type": "Optional[String[1]]"
 			}
 			

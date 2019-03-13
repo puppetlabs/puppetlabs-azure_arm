@@ -7,6 +7,18 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"useexistingimage":{
+			   "description": "Whether to use existing VM custom image when publishing.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "The subscription ID.",
 			   "type": "Optional[String[1]]"
@@ -39,18 +51,6 @@
 		    
 			"publish_payload":{
 			   "description": "Payload for Publish operation on EnvironmentSetting.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

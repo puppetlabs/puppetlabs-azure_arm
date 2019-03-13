@@ -76,9 +76,9 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('authorizationRuleName', 'path', 'authorization_rule_name', 'authorization_rule_name'),
+      op_param('code', 'body', 'code', 'code'),
       op_param('eventHubName', 'path', 'event_hub_name', 'event_hub_name'),
-      op_param('key', 'body', 'key', 'key'),
-      op_param('keytype', 'body', 'key_type', 'keytype'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('namespaceName', 'path', 'namespace_name', 'namespace_name'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),

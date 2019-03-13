@@ -1,0 +1,52 @@
+{
+	"description": "Verify domain ownership for this certificate order.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lighttheme":{
+			   "description": "If true use the light color theme for site seal; otherwise, use the default color theme.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"locale":{
+			   "description": "Locale of site seal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate_order_name":{
+			   "description": "Name of the certificate order.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"site_seal_request":{
+			   "description": "Site seal request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

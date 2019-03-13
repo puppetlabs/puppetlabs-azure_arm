@@ -1,0 +1,34 @@
+{
+	"description": "Rollback a service fabric compose deployment upgrade.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_name":{
+			   "description": "The identity of the deployment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error object containing error code and error message.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

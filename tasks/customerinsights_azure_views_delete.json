@@ -7,48 +7,6 @@
 		
 		
 		    
-			"displayname":{
-			   "description": "Localized display name for the view.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"view_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tenantid":{
-			   "description": "the hub name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"viewname":{
-			   "description": "Name of the view.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"userid":{
-			   "description": "the user ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"definition":{
 			   "description": "View definition.",
 			   "type": "Optional[String[1]]"
@@ -61,8 +19,44 @@
 			}
 			,
 		    
+			"displayname":{
+			   "description": "Localized display name for the view.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"view_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"viewname":{
+			   "description": "Name of the view.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userid":{
+			   "description": "the user ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"created":{
 			   "description": "Date time when view was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "the hub name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -75,6 +69,12 @@
 		    
 			"hub_name":{
 			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -75,8 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('body', 'body', 'body', 'body'),
-      op_param('faceid1', 'body', 'face_id1', 'faceid1'),
-      op_param('faceid2', 'body', 'face_id2', 'faceid2'),
+      op_param('error', 'body', 'error', 'error'),
     ]
   op_params.each do |i|
     location = i[:location]

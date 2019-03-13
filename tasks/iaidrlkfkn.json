@@ -1,0 +1,64 @@
+{
+	"description": "List primary and secondary keys for a specific key name",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key_name":{
+			   "description": "Logical key name to get key-values for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"details":{
+			   "description": "The error details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioning_service_name":{
+			   "description": "Name of the provisioning service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the provisioning service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"httpstatuscode":{
+			   "description": "The HTTP status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The error message.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

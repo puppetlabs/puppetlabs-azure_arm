@@ -7,6 +7,18 @@
 		
 		
 		    
+			"certificatehas_private_key":{
+			   "description": "Indicates if the certificate contains private key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"request":{
 			   "description": "The name of the certificate",
 			   "type": "Optional[String[1]]"
@@ -19,8 +31,8 @@
 			}
 			,
 		    
-			"certificateis_verified":{
-			   "description": "Indicates if the certificate has been verified by owner of the private key.",
+			"certificateraw_bytes":{
+			   "description": "Raw data of certificate.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,38 +43,8 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "The error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificateraw_bytes":{
-			   "description": "Raw data of certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The version of the API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "The error message.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"details":{
-			   "description": "The error details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificate_name":{
-			   "description": "The mandatory logical name of the certificate, that the provisioning service uses to access.",
+			"certificatelast_updated":{
+			   "description": "Certificate last updated time.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -73,32 +55,26 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Resource group name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificatename":{
-			   "description": "Common Name for the certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"httpstatuscode":{
-			   "description": "The HTTP status code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificatenonce":{
-			   "description": "Random number generated to indicate Proof of Possession.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"provisioning_service_name":{
 			   "description": "Provisioning service name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate_name":{
+			   "description": "The mandatory logical name of the certificate, that the provisioning service uses to access.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificateis_verified":{
+			   "description": "Indicates if the certificate has been verified by owner of the private key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -109,14 +85,20 @@
 			}
 			,
 		    
-			"certificatelast_updated":{
-			   "description": "Certificate last updated time.",
+			"certificatenonce":{
+			   "description": "Random number generated to indicate Proof of Possession.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"certificatehas_private_key":{
-			   "description": "Indicates if the certificate contains private key.",
+			"certificate":{
+			   "description": "base-64 representation of X509 certificate .cer file or just .pem file content.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificatename":{
+			   "description": "Common Name for the certificate.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,8 +7,8 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
+			"request":{
+			   "description": "Backup configuration. You can use the JSON response from the POST action as input here.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,14 +19,14 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			"api_version":{
+			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"properties":{
-			   "description": "BackupItem resource specific properties",
+			   "description": "BackupRequest resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +37,8 @@
 			}
 			,
 		    
-			"request":{
-			   "description": "Backup configuration. You can use the JSON response from the POST action as input here.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "API Version",
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -63,6 +57,12 @@
 		    
 			"id":{
 			   "description": "Resource Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			

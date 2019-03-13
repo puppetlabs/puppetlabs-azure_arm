@@ -7,14 +7,104 @@
 		
 		
 		    
-			"app_name":{
-			   "description": "The application name to create. If not specified, the application name will be read from the imported object.",
+			"prebuiltentities":{
+			   "description": "List of prebuilt entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"regex_features":{
+			   "description": "List of pattern features.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"luis_app":{
 			   "description": "A LUIS application structure.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"desc":{
+			   "description": "The description of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_name":{
+			   "description": "The application name to create. If not specified, the application name will be read from the imported object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intents":{
+			   "description": "List of intents.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"culture":{
+			   "description": "The culture of the application. E.g.: en-us.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patterns":{
+			   "description": "List of patterns.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"composites":{
+			   "description": "List of composite entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"versionid":{
+			   "description": "The version ID of the application that was exported.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entities":{
+			   "description": "List of entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"utterances":{
+			   "description": "List of sample utterances.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"model_features":{
+			   "description": "List of model features.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"regex_entities":{
+			   "description": "List of regular expression entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"closedlists":{
+			   "description": "List of closed lists.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patternanyentities":{
+			   "description": "List of Pattern.Any entities.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"display":{
-			   "description": "The display information of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The additional properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client API version",
 			   "type": "Optional[String[1]]"
@@ -33,6 +21,18 @@
 		    
 			"name":{
 			   "description": "The name of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "The display information of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The additional properties.",
 			   "type": "Optional[String[1]]"
 			}
 			

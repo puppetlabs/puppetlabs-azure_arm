@@ -7,18 +7,6 @@
 		
 		
 		    
-			"id":{
-			   "description": "The tag ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_value":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"tag_name":{
 			   "description": "The name of the tag.",
 			   "type": "Optional[String[1]]"
@@ -43,8 +31,20 @@
 			}
 			,
 		    
+			"id":{
+			   "description": "The tag ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"count":{
 			   "description": "The tag value count.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_value":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

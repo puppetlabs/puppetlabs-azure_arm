@@ -7,20 +7,20 @@
 		
 		
 		    
+			"storage_account_name":{
+			   "description": "The name of the storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resourceid":{
-			   "description": "The storage account resource id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"activekeyname":{
-			   "description": "The current active storage account key name.",
+			"autoregeneratekey":{
+			   "description": "whether keyvault should manage the storage account for the user.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +37,14 @@
 			}
 			,
 		    
-			"storage_account_name":{
-			   "description": "The name of the storage account.",
+			"resourceid":{
+			   "description": "The storage account resource id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"autoregeneratekey":{
-			   "description": "whether keyvault should manage the storage account for the user.",
+			"activekeyname":{
+			   "description": "The current active storage account key name.",
 			   "type": "Optional[String[1]]"
 			}
 			,

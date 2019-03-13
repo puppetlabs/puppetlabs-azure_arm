@@ -74,16 +74,16 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('affectedobjecttypes', 'body', 'affected_object_types', 'affectedobjecttypes'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('id', 'body', 'id', 'id'),
+      op_param('endtime', 'body', 'end_time', 'endtime'),
+      op_param('fabricid', 'body', 'fabric_id', 'fabricid'),
       op_param('jobQueryParameter', 'body', 'job_query_parameter', 'job_query_parameter'),
-      op_param('location', 'body', 'location', 'location'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('properties', 'body', 'properties', 'properties'),
+      op_param('jobstatus', 'body', 'job_status', 'jobstatus'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('resourceName', 'path', 'resource_name', 'resource_name'),
+      op_param('starttime', 'body', 'start_time', 'starttime'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('type', 'body', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

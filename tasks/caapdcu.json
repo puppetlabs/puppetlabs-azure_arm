@@ -1,0 +1,88 @@
+{
+	"description": "Update the ProactiveDetection configuration for this configuration id.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"configuration_id":{
+			   "description": "The ProactiveDetection configuration ID. This is unique within a Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"proactive_detection_properties":{
+			   "description": "Properties that need to be specified to update the ProactiveDetection configuration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ruledefinitions":{
+			   "description": "Static definitions of the ProactiveDetection configuration rule (same values for all components).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enabled":{
+			   "description": "A flag that indicates whether this rule is enabled by the user",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sendemailstosubscriptionowners":{
+			   "description": "A flag that indicated whether notifications on this rule should be sent to subscription owners",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"customemails":{
+			   "description": "Custom email addresses for this rule notifications",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastupdatedtime":{
+			   "description": "The last time this rule was updated",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The rule name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"configuration_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,14 +7,14 @@
 		
 		
 		    
-			"error":{
-			   "description": "",
+			"person_group_id":{
+			   "description": "Id referencing a particular person group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"person_group_id":{
-			   "description": "Id referencing a particular person group.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

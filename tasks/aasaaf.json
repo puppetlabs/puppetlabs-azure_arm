@@ -1,0 +1,76 @@
+{
+	"description": "Adds an alert feedback submitted by customer.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"service_name":{
+			   "description": "The name of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alert_feedback":{
+			   "description": "The alert feedback.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"comment":{
+			   "description": "Additional comments related to the alert.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"consentedtoshare":{
+			   "description": "Indicates if the alert feedback can be shared from product team.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"servicememberid":{
+			   "description": "The server Id of the alert.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"createddate":{
+			   "description": "The date and time,in UTC,when the alert was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"level":{
+			   "description": "The alert level which indicates the severity of the alert.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"state":{
+			   "description": "The alert state which can be either active or resolved with multiple resolution types.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"shortname":{
+			   "description": "The alert short name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"feedback":{
+			   "description": "The feedback for the alert which indicates if the customer likes or dislikes the alert.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -74,10 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('api-version', 'query', 'error', 'api_version'),
-      op_param('body', 'body', 'error', 'body'),
+      op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('body', 'body', 'body', 'body'),
       op_param('error', 'body', 'error', 'error'),
-      op_param('reservationOrderId', 'path', 'error', 'reservation_order_id'),
+      op_param('reservationOrderId', 'path', 'reservation_order_id', 'reservation_order_id'),
     ]
   op_params.each do |i|
     location = i[:location]

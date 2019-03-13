@@ -7,20 +7,26 @@
 		
 		
 		    
+			"parameters":{
+			   "description": "Specifies which key to regenerate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"primarykey":{
-			   "description": "The current primary key that clients can use to authenticate with Redis cache.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondarykey":{
-			   "description": "The current secondary key that clients can use to authenticate with Redis cache.",
+			"keytype":{
+			   "description": "The Redis access key to regenerate.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,18 +39,6 @@
 		    
 			"name":{
 			   "description": "The name of the Redis cache.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Specifies which key to regenerate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

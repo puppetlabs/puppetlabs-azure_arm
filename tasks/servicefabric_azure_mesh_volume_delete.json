@@ -7,20 +7,26 @@
 		
 		
 		    
-			"volume_resource_name":{
-			   "description": "The identity of the volume.",
+			"properties":{
+			   "description": "Describes properties of a volume resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"error":{
-			   "description": "Error object containing error code and error message.",
+			"name":{
+			   "description": "Name of the Volume resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"api_version":{
 			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"volume_resource_name":{
+			   "description": "The identity of the volume.",
 			   "type": "Optional[String[1]]"
 			}
 			

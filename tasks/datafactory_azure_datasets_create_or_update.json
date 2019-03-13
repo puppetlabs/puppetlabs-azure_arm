@@ -7,30 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"if_match":{
-			   "description": "ETag of the dataset entity.  Should only be specified for update, for which it should match existing entity or can be * for unconditional update.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dataset":{
-			   "description": "Dataset resource definition.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "Error data",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription identifier.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +27,30 @@
 		    
 			"dataset_name":{
 			   "description": "The dataset name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "ETag of the dataset entity.  Should only be specified for update, for which it should match existing entity or can be * for unconditional update.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dataset":{
+			   "description": "Dataset resource definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error data",
 			   "type": "Optional[String[1]]"
 			}
 			

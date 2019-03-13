@@ -25,6 +25,12 @@
 			}
 			,
 		    
+			"value":{
+			   "description": "The value returned by the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"service_name":{
 			   "description": "The name of the service which needs to be deleted.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"api_version":{
 			   "description": "The version of the API to be used with the client request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"value":{
-			   "description": "The value returned by the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

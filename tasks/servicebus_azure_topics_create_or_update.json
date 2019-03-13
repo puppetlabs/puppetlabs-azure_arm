@@ -7,6 +7,18 @@
 		
 		
 		    
+			"topic_name":{
+			   "description": "The topic name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to create a topic resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -39,18 +51,6 @@
 		    
 			"namespace_name":{
 			   "description": "The namespace name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"topic_name":{
-			   "description": "The topic name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameters supplied to create a topic resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

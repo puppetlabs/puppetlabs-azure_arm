@@ -25,6 +25,18 @@
 			}
 			,
 		    
+			"subscription_name":{
+			   "description": "The subscription name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rule_name":{
+			   "description": "The rule name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -37,26 +49,14 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "Error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "Name of the Resource group within the Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_name":{
-			   "description": "The subscription name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rule_name":{
-			   "description": "The rule name.",
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

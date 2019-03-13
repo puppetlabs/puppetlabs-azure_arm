@@ -7,6 +7,12 @@
 		
 		
 		    
+			"user_name":{
+			   "description": "The name of the user.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"register_payload":{
 			   "description": "Represents payload for Register action.",
 			   "type": "Optional[String[1]]"
@@ -19,14 +25,8 @@
 			}
 			,
 		    
-			"registrationcode":{
-			   "description": "The registration code of the lab.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"user_name":{
-			   "description": "The name of the user.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

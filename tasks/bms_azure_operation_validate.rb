@@ -75,10 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('objecttype', 'body', 'object_type', 'objecttype'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('validateoperationresponse', 'body', 'validate_operation_response', 'validateoperationresponse'),
       op_param('vaultName', 'path', 'vault_name', 'vault_name'),
     ]
   op_params.each do |i|

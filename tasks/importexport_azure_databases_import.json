@@ -7,38 +7,8 @@
 		
 		
 		    
-			"maxsizebytes":{
-			   "description": "The maximum size for the newly imported database.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"storagekey":{
-			   "description": "The storage key to use.  If storage key type is SharedAccessKey, it must be preceded with a '?.'",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"databasename":{
-			   "description": "The name of the database to import.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"administratorloginpassword":{
-			   "description": "The password of the SQL administrator.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"storagekeytype":{
-			   "description": "The type of the storage key to use.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"authenticationtype":{
-			   "description": "The authentication type.",
+			"api_version":{
+			   "description": "The API version to use for the request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,8 +19,14 @@
 			}
 			,
 		    
-			"serviceobjectivename":{
-			   "description": "The name of the service objective to assign to the database.",
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -67,32 +43,20 @@
 			}
 			,
 		    
-			"edition":{
-			   "description": "The edition for the database being created.",
+			"properties":{
+			   "description": "The import/export operation properties.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"administratorlogin":{
-			   "description": "The name of the SQL administrator.",
+			"id":{
+			   "description": "Resource ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"storageuri":{
-			   "description": "The storage uri to use.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version to use for the request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			"name":{
+			   "description": "Resource name.",
 			   "type": "Optional[String[1]]"
 			}
 			

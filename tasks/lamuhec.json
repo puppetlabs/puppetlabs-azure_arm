@@ -1,0 +1,52 @@
+{
+	"description": "Renames a single child in an existing hierarchical entity model.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"h_entity_id":{
+			   "description": "The hierarchical entity extractor ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"h_child_id":{
+			   "description": "The hierarchical entity extractor child ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hierarchical_child_model_update_object":{
+			   "description": "Model object containing new name of the hierarchical entity child.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Status Code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Status details.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

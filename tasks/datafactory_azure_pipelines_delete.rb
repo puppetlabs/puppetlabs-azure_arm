@@ -74,18 +74,12 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('activities', 'body', 'activities', 'activities'),
-      op_param('annotations', 'body', 'annotations', 'annotations'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('concurrency', 'body', 'concurrency', 'concurrency'),
-      op_param('description', 'body', 'description', 'description'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('factoryName', 'path', 'factory_name', 'factory_name'),
-      op_param('folder', 'body', 'folder', 'folder'),
-      op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('pipelineName', 'path', 'pipeline_name', 'pipeline_name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('variables', 'body', 'variables', 'variables'),
     ]
   op_params.each do |i|
     location = i[:location]

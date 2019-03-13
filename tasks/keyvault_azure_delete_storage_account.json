@@ -7,6 +7,12 @@
 		
 		
 		    
+			"regenerationperiod":{
+			   "description": "The key regeneration time duration specified in ISO-8601 format.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"storage_account_name":{
 			   "description": "The name of the storage account.",
 			   "type": "Optional[String[1]]"
@@ -33,12 +39,6 @@
 		    
 			"api_version":{
 			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"regenerationperiod":{
-			   "description": "The key regeneration time duration specified in ISO-8601 format.",
 			   "type": "Optional[String[1]]"
 			}
 			,

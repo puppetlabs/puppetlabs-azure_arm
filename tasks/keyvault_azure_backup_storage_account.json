@@ -19,8 +19,8 @@
 			}
 			,
 		    
-			"value":{
-			   "description": "The backup blob containing the backed up storage account.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

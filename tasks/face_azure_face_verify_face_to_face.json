@@ -13,14 +13,8 @@
 			}
 			,
 		    
-			"faceid1":{
-			   "description": "FaceId of the first face, comes from Face - Detect",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"faceid2":{
-			   "description": "FaceId of the second face, comes from Face - Detect",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

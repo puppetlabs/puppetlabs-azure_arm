@@ -7,18 +7,6 @@
 		
 		
 		    
-			"alg":{
-			   "description": "algorithm identifier",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"value":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"key_name":{
 			   "description": "The name of the key.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +27,18 @@
 		    
 			"api_version":{
 			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kid":{
+			   "description": "Key identifier",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

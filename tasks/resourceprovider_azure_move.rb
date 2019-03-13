@@ -79,7 +79,7 @@ def format_params(key_values)
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('resources', 'body', 'resources', 'resources'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('targetresourcegroup', 'body', 'targetresourcegroup', 'targetresourcegroup'),
+      op_param('targetresourcegroup', 'body', 'target_resource_group', 'targetresourcegroup'),
     ]
   op_params.each do |i|
     location = i[:location]

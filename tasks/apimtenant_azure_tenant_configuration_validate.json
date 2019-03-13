@@ -7,8 +7,38 @@
 		
 		
 		    
+			"service_name":{
+			   "description": "The name of the API Management service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Operation result identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Status of an async operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Validate Configuration parameters.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,32 +55,32 @@
 			}
 			,
 		    
-			"branch":{
-			   "description": "The name of the Git branch from which the configuration is to be deployed to the configuration database.",
+			"updated":{
+			   "description": "Last update time of an async operation. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"force":{
-			   "description": "The value enforcing deleting subscriptions to products that are deleted in this update.",
+			"resultinfo":{
+			   "description": "Optional result info.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
+			"error":{
+			   "description": "Error Body Contract",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"service_name":{
-			   "description": "The name of the API Management service.",
+			"actionlog":{
+			   "description": "This property if only provided as part of the TenantConfiguration_Validate operation. It contains the log the entities which will be updated/created/deleted as part of the TenantConfiguration_Deploy operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"parameters":{
-			   "description": "Validate Configuration parameters.",
+			"started":{
+			   "description": "Start time of an async operation. The date conforms to the following format: `yyyy-MM-ddTHH:mm:ssZ` as specified by the ISO 8601 standard.",
 			   "type": "Optional[String[1]]"
 			}
 			

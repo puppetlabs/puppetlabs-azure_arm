@@ -1,0 +1,58 @@
+{
+	"description": "Detects profanity in more than 100 languages and match against custom and shared blacklists.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"language":{
+			   "description": "Language of the text.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"autocorrect":{
+			   "description": "Autocorrect text.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pii":{
+			   "description": "Detect personal identifiable information.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"list_id":{
+			   "description": "The list Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classify":{
+			   "description": "Classify input.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"text_content":{
+			   "description": "Content to screen.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

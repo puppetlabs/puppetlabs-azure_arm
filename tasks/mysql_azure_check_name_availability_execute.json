@@ -7,6 +7,24 @@
 		
 		
 		    
+			"name_availability_request":{
+			   "description": "The required parameters for checking if resource name is available.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name to verify.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type used for verification.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "The API version to use for the request.",
 			   "type": "Optional[String[1]]"
@@ -15,30 +33,6 @@
 		    
 			"subscription_id":{
 			   "description": "The subscription ID that identifies an Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name_availability_request":{
-			   "description": "The required parameters for checking if resource name is available.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "Error Message.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"nameavailable":{
-			   "description": "Indicates whether the resource name is available.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"reason":{
-			   "description": "Reason for name being unavailable.",
 			   "type": "Optional[String[1]]"
 			}
 			

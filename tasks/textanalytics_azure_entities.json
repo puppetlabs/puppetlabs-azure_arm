@@ -17,12 +17,6 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
-			,
-		    
-			"errors":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
 			
 	}
 }

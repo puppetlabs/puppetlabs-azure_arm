@@ -13,25 +13,7 @@
 			}
 			,
 		    
-			"innererror":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target":{
+			"documents":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -13,8 +13,20 @@
 			}
 			,
 		    
+			"properties":{
+			   "description": "BackupRequest resource specific properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"kind":{
 			   "description": "Kind of resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,18 +51,6 @@
 		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "BackupRequest resource specific properties",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
 			   "type": "Optional[String[1]]"
 			}
 			

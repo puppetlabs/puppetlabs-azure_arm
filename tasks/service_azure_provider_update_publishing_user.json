@@ -7,24 +7,6 @@
 		
 		
 		    
-			"type":{
-			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Resource tags",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"request_message":{
 			   "description": "Details of publishing user",
 			   "type": "Optional[String[1]]"
@@ -37,8 +19,26 @@
 			}
 			,
 		    
+			"tags":{
+			   "description": "Resource tags",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"location":{
 			   "description": "Resource Location",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,8 +49,8 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "API Version",
+			"name":{
+			   "description": "Resource Name",
 			   "type": "Optional[String[1]]"
 			}
 			,

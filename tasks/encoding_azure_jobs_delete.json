@@ -7,6 +7,24 @@
 		
 		
 		    
+			"transform_name":{
+			   "description": "The Transform name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "The Job name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"error":{
 			   "description": "The error properties.",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"account_name":{
 			   "description": "The Media Services account name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"transform_name":{
-			   "description": "The Transform name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"job_name":{
-			   "description": "The Job name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The Version of the API to be used with the client request.",
 			   "type": "Optional[String[1]]"
 			}
 			

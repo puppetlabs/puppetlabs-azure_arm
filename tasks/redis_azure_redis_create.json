@@ -13,20 +13,20 @@
 			}
 			,
 		    
+			"name":{
+			   "description": "The name of the Redis cache.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameters":{
 			   "description": "Parameters supplied to the Create Redis operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "Redis cache properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"zones":{
-			   "description": "A list of availability zones denoting where the resource needs to come from.",
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,8 +37,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The name of the Redis cache.",
+			"zones":{
+			   "description": "A list of availability zones denoting where the resource needs to come from.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,8 +49,8 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			"properties":{
+			   "description": "Redis cache properties.",
 			   "type": "Optional[String[1]]"
 			}
 			,

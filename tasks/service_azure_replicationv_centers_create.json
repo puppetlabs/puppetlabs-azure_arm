@@ -7,18 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The subscription Id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fabric_name":{
-			   "description": "Fabric name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"v_center_name":{
 			   "description": "vCenter name.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +39,18 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Fabric name.",
 			   "type": "Optional[String[1]]"
 			}
 			

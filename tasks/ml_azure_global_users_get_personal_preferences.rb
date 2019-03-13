@@ -75,8 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('favoritelabresourceids', 'body', 'favorite_lab_resource_ids', 'favoritelabresourceids'),
-      op_param('id', 'body', 'id', 'id'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('personalPreferencesOperationsPayload', 'body', 'personal_preferences_operations_payload', 'personal_preferences_operations_payload'),
       op_param('userName', 'path', 'user_name', 'user_name'),
     ]

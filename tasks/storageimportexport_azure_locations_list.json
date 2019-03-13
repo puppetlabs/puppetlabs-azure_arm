@@ -7,8 +7,26 @@
 		
 		
 		    
+			"name":{
+			   "description": "Specifies the name of the location. Use List Locations to get all supported locations. ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Specifies the API version to use for this request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"accept_language":{
 			   "description": "Specifies the preferred language for the response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Specifies the type of the location. ",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -21,24 +39,6 @@
 		    
 			"id":{
 			   "description": "Specifies the resource identifier of the location. ",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Specifies the name of the location. Use List Locations to get all supported locations. ",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Specifies the type of the location. ",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Specifies the API version to use for this request.",
 			   "type": "Optional[String[1]]"
 			}
 			

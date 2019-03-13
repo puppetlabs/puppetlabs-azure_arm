@@ -1,0 +1,40 @@
+{
+	"description": "Gets the supported optimization types for the current profile. A user can create an endpoint with an optimization type from the listed values.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"profile_name":{
+			   "description": "Name of the CDN profile which is unique within the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"supportedoptimizationtypes":{
+			   "description": "Supported optimization types for a profile.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

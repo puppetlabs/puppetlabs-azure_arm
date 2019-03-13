@@ -7,30 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group within the user's subscription. The name is case insensitive.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"account_name":{
-			   "description": "The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"container_name":{
-			   "description": "The name of the blob container within the specified storage account. Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or number.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version to use for this operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +27,30 @@
 		    
 			"tags":{
 			   "description": "Each tag should be 3 to 23 alphanumeric characters and is normalized to lower case at SRP.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the user's subscription. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The name of the storage account within the specified resource group. Storage account names must be between 3 and 24 characters in length and use numbers and lower-case letters only.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container_name":{
+			   "description": "The name of the blob container within the specified storage account. Blob container names must be between 3 and 63 characters in length and use numbers, lower-case letters and dash (-) only. Every dash (-) character must be immediately preceded and followed by a letter or number.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

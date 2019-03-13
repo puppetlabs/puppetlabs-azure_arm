@@ -7,7 +7,7 @@
 		
 		
 		    
-			"innererror":{
+			"documents":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -15,24 +15,6 @@
 		    
 			"input":{
 			   "description": "Collection of documents to analyze.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target":{
-			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

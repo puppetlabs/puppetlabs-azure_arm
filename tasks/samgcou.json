@@ -1,0 +1,40 @@
+{
+	"description": "Creates a Gateway resource with the specified name, description and properties. If Gateway resource with the same name exists, then it is updated with the specified description and properties. Use Gateway resource to provide public connectivity to application services.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gateway_resource_name":{
+			   "description": "The identity of the gateway.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gateway_resource_description":{
+			   "description": "Description for creating a Gateway resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the Gateway resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Describes properties of a gateway resource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

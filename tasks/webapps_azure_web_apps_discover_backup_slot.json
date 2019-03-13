@@ -7,8 +7,8 @@
 		
 		
 		    
-			"slot":{
-			   "description": "Name of the deployment slot. If a slot is not specified, the API will perform discovery for the production slot.",
+			"id":{
+			   "description": "Resource Id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,14 +19,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource Name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "API Version",
+			"slot":{
+			   "description": "Name of the deployment slot. If a slot is not specified, the API will perform discovery for the production slot.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,20 +31,26 @@
 			}
 			,
 		    
-			"type":{
-			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id.",
+			"api_version":{
+			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"properties":{
 			   "description": "RestoreRequest resource specific properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource Name.",
 			   "type": "Optional[String[1]]"
 			}
 			,

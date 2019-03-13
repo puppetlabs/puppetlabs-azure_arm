@@ -7,14 +7,14 @@
 		
 		
 		    
-			"categories":{
-			   "description": "Categories of the model.",
+			"name":{
+			   "description": "The name of the model.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "The name of the model.",
+			"categories":{
+			   "description": "Categories of the model.",
 			   "type": "Optional[String[1]]"
 			}
 			

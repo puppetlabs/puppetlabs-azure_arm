@@ -77,7 +77,8 @@ def format_params(key_values)
       op_param('appId', 'path', 'app_id', 'app_id'),
       op_param('clEntityId', 'path', 'cl_entity_id', 'cl_entity_id'),
       op_param('closedListModelUpdateObject', 'body', 'closed_list_model_update_object', 'closed_list_model_update_object'),
-      op_param('errortype', 'body', 'error_type', 'errortype'),
+      op_param('name', 'body', 'name', 'name'),
+      op_param('sublists', 'body', 'sub_lists', 'sublists'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
     ]
   op_params.each do |i|

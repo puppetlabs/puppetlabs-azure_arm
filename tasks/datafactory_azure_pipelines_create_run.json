@@ -7,24 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"reference_pipeline_run_id":{
-			   "description": "The pipeline run identifier. If run ID is specified the parameters of the specified run will be used to create a new run.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameters of the pipeline run. These parameters will be used only if the runId is not specified.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"error":{
 			   "description": "Error data",
 			   "type": "Optional[String[1]]"
@@ -51,6 +33,24 @@
 		    
 			"pipeline_name":{
 			   "description": "The pipeline name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reference_pipeline_run_id":{
+			   "description": "The pipeline run identifier. If run ID is specified the parameters of the specified run will be used to create a new run.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters of the pipeline run. These parameters will be used only if the runId is not specified.",
 			   "type": "Optional[String[1]]"
 			}
 			

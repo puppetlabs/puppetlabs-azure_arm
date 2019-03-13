@@ -7,6 +7,12 @@
 		
 		
 		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"return_face_id":{
 			   "description": "A value indicating whether the operation should return faceIds of detected faces.",
 			   "type": "Optional[String[1]]"

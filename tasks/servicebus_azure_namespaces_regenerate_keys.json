@@ -7,6 +7,18 @@
 		
 		
 		    
+			"key":{
+			   "description": "Optional, if the key value provided, is reset for KeyType value or autogenerate Key value set for keyType",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"namespace_name":{
 			   "description": "The namespace name",
 			   "type": "Optional[String[1]]"
@@ -15,6 +27,12 @@
 		    
 			"authorization_rule_name":{
 			   "description": "The authorizationrule name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to regenerate the authorization rule.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,56 +49,8 @@
 			}
 			,
 		    
-			"secondaryconnectionstring":{
-			   "description": "Secondary connection string of the created namespace authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the Resource group within the Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameters supplied to regenerate the authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"aliasprimaryconnectionstring":{
-			   "description": "Primary connection string of the alias if GEO DR is enabled",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"aliassecondaryconnectionstring":{
-			   "description": "Secondary  connection string of the alias if GEO DR is enabled",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"keyname":{
-			   "description": "A string that describes the authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primaryconnectionstring":{
-			   "description": "Primary connection string of the created namespace authorization rule.",
+			"keytype":{
+			   "description": "The access key to regenerate.",
 			   "type": "Optional[String[1]]"
 			}
 			

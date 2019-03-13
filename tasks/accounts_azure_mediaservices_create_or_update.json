@@ -7,12 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The Version of the API to be used with the client request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"error":{
 			   "description": "The error properties.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"parameters":{
 			   "description": "The request parameters",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The Version of the API to be used with the client request.",
 			   "type": "Optional[String[1]]"
 			}
 			

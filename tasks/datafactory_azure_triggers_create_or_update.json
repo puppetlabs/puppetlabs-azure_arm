@@ -7,30 +7,6 @@
 		
 		
 		    
-			"error":{
-			   "description": "Error data",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The resource group name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"factory_name":{
-			   "description": "The factory name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"trigger_name":{
 			   "description": "The trigger name.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +27,30 @@
 		    
 			"trigger":{
 			   "description": "Trigger resource definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error data",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"factory_name":{
+			   "description": "The factory name.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -75,7 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
+      op_param('name', 'body', 'name', 'name'),
+      op_param('properties', 'body', 'properties', 'properties'),
       op_param('volumeResourceName', 'path', 'volume_resource_name', 'volume_resource_name'),
     ]
   op_params.each do |i|

@@ -1,0 +1,40 @@
+{
+	"description": "Updates a factory's repo information.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "Error data",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location_id":{
+			   "description": "The location identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"factory_repo_update":{
+			   "description": "Update factory repo request definition.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"gallery_image_name":{
+			   "description": "The name of the gallery Image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallery_image":{
+			   "description": "Represents an image from the Azure Marketplace",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"lab_account_name":{
 			   "description": "The name of the lab Account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"gallery_image_name":{
-			   "description": "The name of the gallery Image.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"gallery_image":{
-			   "description": "Represents an image from the Azure Marketplace",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,64 @@
+{
+	"description": "The operation to create an ASR network mapping.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"network_mapping_name":{
+			   "description": "Network mapping name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input":{
+			   "description": "Create network mapping input.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Input properties for creating network mapping.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_name":{
+			   "description": "Primary network name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Primary fabric name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

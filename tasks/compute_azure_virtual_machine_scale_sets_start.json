@@ -7,6 +7,12 @@
 		
 		
 		    
+			"vm_scale_set_name":{
+			   "description": "The name of the VM scale set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"vm_instance_i_ds":{
 			   "description": "A list of virtual machine instance IDs from the VM scale set.",
 			   "type": "Optional[String[1]]"
@@ -33,12 +39,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vm_scale_set_name":{
-			   "description": "The name of the VM scale set.",
 			   "type": "Optional[String[1]]"
 			}
 			

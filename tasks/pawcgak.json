@@ -1,0 +1,46 @@
+{
+	"description": "Retrieves the primary and secondary access keys for the specified Power BI Workspace Collection.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key1":{
+			   "description": "Access key 1",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key2":{
+			   "description": "Access key 2",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Azure resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workspace_collection_name":{
+			   "description": "Power BI Embedded Workspace Collection name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,24 +7,6 @@
 		
 		
 		    
-			"attributes":{
-			   "description": "The key management attributes.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"managed":{
-			   "description": "True if the key's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "The parameters to restore the key.",
 			   "type": "Optional[String[1]]"
@@ -37,8 +19,8 @@
 			}
 			,
 		    
-			"key":{
-			   "description": "The Json web key.",
+			"value":{
+			   "description": "The backup blob associated with a key bundle.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -76,9 +76,11 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('customDomainProperties', 'body', 'custom_domain_properties', 'custom_domain_properties'),
+      op_param('customdomainvalidated', 'body', 'custom_domain_validated', 'customdomainvalidated'),
       op_param('endpointName', 'path', 'endpoint_name', 'endpoint_name'),
-      op_param('hostname', 'body', 'host_name', 'hostname'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('profileName', 'path', 'profile_name', 'profile_name'),
+      op_param('reason', 'body', 'reason', 'reason'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"value":{
 			   "description": "List of resource usages.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"endpoint_name":{
 			   "description": "Name of the endpoint under the profile which is unique globally.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Azure Subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
 			   "type": "Optional[String[1]]"
 			}
 			

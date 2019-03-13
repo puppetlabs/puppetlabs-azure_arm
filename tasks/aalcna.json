@@ -1,0 +1,40 @@
+{
+	"description": "Checks whether the Media Service resource name is available.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "The request parameters",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location_name":{
+			   "description": "The name of the location",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

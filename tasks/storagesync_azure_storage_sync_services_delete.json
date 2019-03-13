@@ -7,6 +7,12 @@
 		
 		
 		    
+			"innererror":{
+			   "description": "Error details of the given entry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"error":{
-			   "description": "Error details of the given entry.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"innererror":{
 			   "description": "Error details of the given entry.",
 			   "type": "Optional[String[1]]"
 			}

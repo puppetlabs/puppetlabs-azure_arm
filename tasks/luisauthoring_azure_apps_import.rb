@@ -75,7 +75,22 @@ def format_params(key_values)
 
   op_params = [
       op_param('appName', 'query', 'app_name', 'app_name'),
+      op_param('closedlists', 'body', 'closedlists', 'closedlists'),
+      op_param('composites', 'body', 'composites', 'composites'),
+      op_param('culture', 'body', 'culture', 'culture'),
+      op_param('desc', 'body', 'desc', 'desc'),
+      op_param('entities', 'body', 'entities', 'entities'),
+      op_param('intents', 'body', 'intents', 'intents'),
       op_param('luisApp', 'body', 'luis_app', 'luis_app'),
+      op_param('model_features', 'body', 'model_features', 'model_features'),
+      op_param('name', 'body', 'name', 'name'),
+      op_param('patternanyentities', 'body', 'patternanyentities', 'patternanyentities'),
+      op_param('patterns', 'body', 'patterns', 'patterns'),
+      op_param('prebuiltentities', 'body', 'prebuiltentities', 'prebuiltentities'),
+      op_param('regex_entities', 'body', 'regex_entities', 'regex_entities'),
+      op_param('regex_features', 'body', 'regex_features', 'regex_features'),
+      op_param('utterances', 'body', 'utterances', 'utterances'),
+      op_param('versionid', 'body', 'versionid', 'versionid'),
     ]
   op_params.each do |i|
     location = i[:location]

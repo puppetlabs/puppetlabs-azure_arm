@@ -7,6 +7,18 @@
 		
 		
 		    
+			"registrationstate":{
+			   "description": "The registration state of the provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_provider_namespace":{
+			   "description": "The namespace of the resource provider to register.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
@@ -15,18 +27,6 @@
 		    
 			"subscription_id":{
 			   "description": "The ID of the target subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"namespace":{
-			   "description": "The namespace of the resource provider.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"registrationstate":{
-			   "description": "The registration state of the provider.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +43,8 @@
 			}
 			,
 		    
-			"resource_provider_namespace":{
-			   "description": "The namespace of the resource provider to register.",
+			"namespace":{
+			   "description": "The namespace of the resource provider.",
 			   "type": "Optional[String[1]]"
 			}
 			

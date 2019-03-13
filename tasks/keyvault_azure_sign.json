@@ -31,14 +31,14 @@
 			}
 			,
 		    
-			"value":{
-			   "description": "",
+			"kid":{
+			   "description": "Key identifier",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"alg":{
-			   "description": "The signing/verification algorithm identifier. For more information on possible algorithm types, see JsonWebKeySignatureAlgorithm.",
+			"value":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

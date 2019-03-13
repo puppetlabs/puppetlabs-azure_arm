@@ -1,0 +1,58 @@
+{
+	"description": "Lists a workflow run expression trace.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repetition_name":{
+			   "description": "The workflow repetition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"inputs":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workflow_name":{
+			   "description": "The workflow name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"run_name":{
+			   "description": "The workflow run name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action_name":{
+			   "description": "The workflow action name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

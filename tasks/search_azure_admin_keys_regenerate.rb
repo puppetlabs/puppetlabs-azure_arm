@@ -76,10 +76,10 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('keyKind', 'path', 'key_kind', 'key_kind'),
-      op_param('primarykey', 'body', 'primarykey', 'primarykey'),
+      op_param('primarykey', 'body', 'primary_key', 'primarykey'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('searchServiceName', 'path', 'search_service_name', 'search_service_name'),
-      op_param('secondarykey', 'body', 'secondarykey', 'secondarykey'),
+      op_param('secondarykey', 'body', 'secondary_key', 'secondarykey'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('x-ms-client-request-id', 'header', 'x_ms_client_request_id', 'x_ms_client_request_id'),
     ]

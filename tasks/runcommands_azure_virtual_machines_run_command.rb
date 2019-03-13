@@ -75,11 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('commandid', 'body', 'commandid', 'commandid'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
-      op_param('script', 'body', 'script', 'script'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('value', 'body', 'value', 'value'),
       op_param('vmName', 'path', 'vm_name', 'vm_name'),
     ]
   op_params.each do |i|

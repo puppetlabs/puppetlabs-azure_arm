@@ -82,7 +82,7 @@ def format_params(key_values)
       op_param('cc', 'query', 'cc', 'cc'),
       op_param('ClientMachineName', 'query', 'client_machine_name', 'client_machine_name'),
       op_param('DocId', 'query', 'doc_id', 'doc_id'),
-      op_param('errors', 'body', 'errors', 'errors'),
+      op_param('flaggedtokens', 'body', 'flagged_tokens', 'flaggedtokens'),
       op_param('id', 'body', 'id', 'id'),
       op_param('mkt', 'query', 'mkt', 'mkt'),
       op_param('Mode', 'formData', 'mode', 'mode'),

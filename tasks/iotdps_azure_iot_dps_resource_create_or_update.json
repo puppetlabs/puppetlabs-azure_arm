@@ -13,8 +13,8 @@
 			}
 			,
 		    
-			"provisioning_service_name":{
-			   "description": "Name of provisioning service to create or update.",
+			"iot_dps_description":{
+			   "description": "Description of the provisioning service to create or update.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,6 +31,18 @@
 			}
 			,
 		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioning_service_name":{
+			   "description": "Name of provisioning service to create or update.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"code":{
 			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
@@ -43,20 +55,8 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"message":{
 			   "description": "The error message.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"iot_dps_description":{
-			   "description": "Description of the provisioning service to create or update.",
 			   "type": "Optional[String[1]]"
 			}
 			

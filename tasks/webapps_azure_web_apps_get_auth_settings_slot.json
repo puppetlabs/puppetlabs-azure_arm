@@ -7,20 +7,26 @@
 		
 		
 		    
+			"id":{
+			   "description": "Resource Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "Resource Name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"api_version":{
-			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "SiteAuthSettings resource specific properties",
+			"slot":{
+			   "description": "Name of the deployment slot. If a slot is not specified, the API will get the settings for the production slot.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +43,8 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"slot":{
-			   "description": "Name of the deployment slot. If a slot is not specified, the API will get the settings for the production slot.",
+			"properties":{
+			   "description": "SiteAuthSettings resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +55,8 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource Id.",
+			"api_version":{
+			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			

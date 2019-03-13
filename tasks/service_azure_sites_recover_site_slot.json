@@ -7,8 +7,20 @@
 		
 		
 		    
-			"name":{
-			   "description": "Name of web app",
+			"snapshottime":{
+			   "description": "Point in time in which the site recover should be attempted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"slot":{
+			   "description": "Name of web app slot. If not specified then will default to production slot.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,14 +31,14 @@
 			}
 			,
 		    
-			"recoverconfig":{
-			   "description": "If true, then the website's configuration will be reverted to its state at SnapshotTime",
+			"api_version":{
+			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"snapshottime":{
-			   "description": "Point in time in which the site recover should be attempted.",
+			"recoverconfig":{
+			   "description": "If true, then the website's configuration will be reverted to its state at SnapshotTime",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,26 +55,14 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Name of resource group",
+			"name":{
+			   "description": "Name of web app",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"recovery_entity":{
 			   "description": "Snapshot data used for web app recovery. Snapshot information can be obtained by calling GetDeletedSites or GetSiteSnapshots API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"slot":{
-			   "description": "Name of web app slot. If not specified then will default to production slot.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			

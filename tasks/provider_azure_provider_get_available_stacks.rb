@@ -78,7 +78,7 @@ def format_params(key_values)
       op_param('dependency', 'body', 'dependency', 'dependency'),
       op_param('display', 'body', 'display', 'display'),
       op_param('frameworks', 'body', 'frameworks', 'frameworks'),
-      op_param('majorversions', 'body', 'major_versions', 'majorversions'),
+      op_param('majorversions', 'body', 'majorversions', 'majorversions'),
       op_param('name', 'body', 'name', 'name'),
       op_param('osTypeSelected', 'query', 'os_type_selected', 'os_type_selected'),
     ]

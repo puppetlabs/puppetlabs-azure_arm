@@ -7,12 +7,6 @@
 		
 		
 		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"maxresults":{
 			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"attributes":{
 			   "description": "The key management attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,30 @@
 		
 		
 		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource Type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The custom data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
@@ -25,26 +49,8 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "The custom data.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_name":{
-			   "description": "The name of the recovery services vault.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription Id.",
+			"name":{
+			   "description": "Resource Name",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +61,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource Type",
+			"id":{
+			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			

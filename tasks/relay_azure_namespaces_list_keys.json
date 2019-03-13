@@ -7,8 +7,8 @@
 		
 		
 		    
-			"primaryconnectionstring":{
-			   "description": "Primary connection string of the created namespace authorization rule.",
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,14 +19,8 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "Subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,20 +43,26 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Name of the Resource group within the Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"authorization_rule_name":{
 			   "description": "The authorization rule name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Client API version.",
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primaryconnectionstring":{
+			   "description": "Primary connection string of the created namespace authorization rule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primarykey":{
+			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
 			   "type": "Optional[String[1]]"
 			}
 			

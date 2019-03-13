@@ -76,7 +76,7 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('name', 'path', 'name', 'name'),
-      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('nextlink', 'body', 'nextlink', 'nextlink'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('slot', 'path', 'slot', 'slot'),
       op_param('slotSwapEntity', 'body', 'slot_swap_entity', 'slot_swap_entity'),

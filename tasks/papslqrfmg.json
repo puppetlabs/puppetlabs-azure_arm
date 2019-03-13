@@ -1,0 +1,94 @@
+{
+	"description": "Queries policy states for the resources under the management group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "Query results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_states_resource":{
+			   "description": "The virtual resource under PolicyStates resource type. In a given time range, 'latest' represents the latest policy state(s), whereas 'default' represents all policy state(s).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter expression.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"apply":{
+			   "description": "OData apply expression for aggregations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version to use with the client requests.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "Maximum number of records to return.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"select":{
+			   "description": "Select expression using OData notation. Limits the columns on each record to just those requested, e.g. '$select=PolicyAssignmentId, ResourceId'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"from":{
+			   "description": "ISO 8601 formatted timestamp specifying the start time of the interval to query. When not specified, the service uses ($to - 1-day).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatacount":{
+			   "description": "OData entity count; represents the number of policy state records returned.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"management_groups_namespace":{
+			   "description": "The namespace for Microsoft Management RP; only 'Microsoft.Management' is allowed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"management_group_name":{
+			   "description": "Management group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "Ordering expression using OData notation. One or more comma-separated column names with an optional 'desc' (the default) or 'asc', e.g. '$orderby=PolicyAssignmentId, ResourceId asc'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"to":{
+			   "description": "ISO 8601 formatted timestamp specifying the end time of the interval to query. When not specified, the service uses request time.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatacontext":{
+			   "description": "OData context string; used by OData clients to resolve type information based on metadata.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

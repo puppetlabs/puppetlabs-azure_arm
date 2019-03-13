@@ -75,9 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('name', 'body', 'name', 'name'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('networkResourceName', 'path', 'network_resource_name', 'network_resource_name'),
-      op_param('properties', 'body', 'properties', 'properties'),
     ]
   op_params.each do |i|
     location = i[:location]

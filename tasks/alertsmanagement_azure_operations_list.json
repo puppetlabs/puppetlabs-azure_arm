@@ -7,12 +7,6 @@
 		
 		
 		    
-			"display":{
-			   "description": "Properties of the operation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "API version.",
 			   "type": "Optional[String[1]]"
@@ -21,6 +15,12 @@
 		    
 			"name":{
 			   "description": "Name of the operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Properties of the operation",
 			   "type": "Optional[String[1]]"
 			}
 			

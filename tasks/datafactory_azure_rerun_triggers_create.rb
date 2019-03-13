@@ -75,11 +75,13 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
+      op_param('endtime', 'body', 'end_time', 'endtime'),
       op_param('factoryName', 'path', 'factory_name', 'factory_name'),
+      op_param('maxconcurrency', 'body', 'max_concurrency', 'maxconcurrency'),
       op_param('rerunTriggerName', 'path', 'rerun_trigger_name', 'rerun_trigger_name'),
       op_param('rerunTumblingWindowTriggerActionParameters', 'body', 'rerun_tumbling_window_trigger_action_parameters', 'rerun_tumbling_window_trigger_action_parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
+      op_param('starttime', 'body', 'start_time', 'starttime'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('triggerName', 'path', 'trigger_name', 'trigger_name'),
     ]

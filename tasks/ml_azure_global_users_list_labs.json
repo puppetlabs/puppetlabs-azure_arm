@@ -19,8 +19,8 @@
 			}
 			,
 		    
-			"labs":{
-			   "description": "List of all the labs",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

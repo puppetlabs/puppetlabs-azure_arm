@@ -7,8 +7,20 @@
 		
 		
 		    
-			"resource_name":{
-			   "description": "The name of the recovery services vault.",
+			"name":{
+			   "description": "Resource Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Resource Location",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,8 +37,14 @@
 			}
 			,
 		    
-			"location":{
-			   "description": "Resource Location",
+			"properties":{
+			   "description": "The vault health related data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,26 +55,8 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The vault health related data.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"type":{
 			   "description": "Resource Type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource Name",
 			   "type": "Optional[String[1]]"
 			}
 			

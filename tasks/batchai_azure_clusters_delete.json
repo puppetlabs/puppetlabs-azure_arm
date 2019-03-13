@@ -7,6 +7,12 @@
 		
 		
 		    
+			"error":{
+			   "description": "An error response from the Batch AI service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
@@ -33,12 +39,6 @@
 		    
 			"subscription_id":{
 			   "description": "The subscriptionID for the Azure user.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "An error response from the Batch AI service.",
 			   "type": "Optional[String[1]]"
 			}
 			

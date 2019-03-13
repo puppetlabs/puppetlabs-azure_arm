@@ -7,96 +7,6 @@
 		
 		
 		    
-			"startrk":{
-			   "description": "The start of row key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"signedresource":{
-			   "description": "The signed services accessible with the service SAS. Possible values include: Blob (b), Container (c), File (f), Share (s).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"endrk":{
-			   "description": "The end of row key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"signedstart":{
-			   "description": "The time at which the SAS becomes valid.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "The parameters to provide to list service SAS credentials.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The ID of the target subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rsct":{
-			   "description": "The response header override for content type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"keytosign":{
-			   "description": "The key to sign the account SAS token with.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"signedidentifier":{
-			   "description": "A unique value up to 64 characters in length that correlates to an access policy specified for the container, queue, or table.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"signedip":{
-			   "description": "An IP address or a range of IP addresses from which to accept requests.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version to use for this operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"signedexpiry":{
-			   "description": "The time at which the shared access signature becomes invalid.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rscl":{
-			   "description": "The response header override for content language.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rsce":{
-			   "description": "The response header override for content encoding.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"endpk":{
-			   "description": "The end of partition key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group within the user's subscription. The name is case insensitive.",
 			   "type": "Optional[String[1]]"
@@ -109,38 +19,26 @@
 			}
 			,
 		    
-			"canonicalizedresource":{
-			   "description": "The canonical path to the signed resource.",
+			"parameters":{
+			   "description": "The parameters to provide to list service SAS credentials.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"rscd":{
-			   "description": "The response header override for content disposition.",
+			"api_version":{
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"signedpermission":{
-			   "description": "The signed permissions for the service SAS. Possible values include: Read (r), Write (w), Delete (d), List (l), Add (a), Create (c), Update (u) and Process (p).",
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"signedprotocol":{
-			   "description": "The protocol permitted for a request made with the account SAS.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"startpk":{
-			   "description": "The start of partition key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rscc":{
-			   "description": "The response header override for cache control.",
+			"servicesastoken":{
+			   "description": "List service SAS credentials of specific resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

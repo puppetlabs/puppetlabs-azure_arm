@@ -25,8 +25,14 @@
 			}
 			,
 		    
-			"errortype":{
-			   "description": "",
+			"sublists":{
+			   "description": "The new sublists for the feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The new name of the closed list feature.",
 			   "type": "Optional[String[1]]"
 			}
 			,

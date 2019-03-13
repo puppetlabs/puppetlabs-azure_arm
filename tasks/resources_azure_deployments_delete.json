@@ -7,6 +7,18 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The name of the resource group with the deployment to delete. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_name":{
+			   "description": "The name of the deployment to delete.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"properties":{
 			   "description": "The deployment properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group with the deployment to delete. The name is case insensitive.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployment_name":{
-			   "description": "The name of the deployment to delete.",
 			   "type": "Optional[String[1]]"
 			}
 			

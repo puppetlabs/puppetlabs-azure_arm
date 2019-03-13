@@ -7,20 +7,14 @@
 		
 		
 		    
+			"dependency":{
+			   "description": "Application stack dependency.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"majorversions":{
 			   "description": "List of major versions available.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"frameworks":{
-			   "description": "List of frameworks associated with application stack.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Application stack name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +31,20 @@
 			}
 			,
 		    
-			"display":{
-			   "description": "Application stack display name.",
+			"frameworks":{
+			   "description": "List of frameworks associated with application stack.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"dependency":{
-			   "description": "Application stack dependency.",
+			"name":{
+			   "description": "Application stack name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Application stack display name.",
 			   "type": "Optional[String[1]]"
 			}
 			

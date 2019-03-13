@@ -74,19 +74,14 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('aliasprimaryconnectionstring', 'body', 'aliasprimaryconnectionstring', 'aliasprimaryconnectionstring'),
-      op_param('aliassecondaryconnectionstring', 'body', 'aliassecondaryconnectionstring', 'aliassecondaryconnectionstring'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('authorizationRuleName', 'path', 'authorization_rule_name', 'authorization_rule_name'),
-      op_param('keyname', 'body', 'keyname', 'keyname'),
+      op_param('key', 'body', 'key', 'key'),
+      op_param('keytype', 'body', 'keytype', 'keytype'),
       op_param('namespaceName', 'path', 'namespace_name', 'namespace_name'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
-      op_param('primaryconnectionstring', 'body', 'primaryconnectionstring', 'primaryconnectionstring'),
-      op_param('primarykey', 'body', 'primarykey', 'primarykey'),
       op_param('queueName', 'path', 'queue_name', 'queue_name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
-      op_param('secondaryconnectionstring', 'body', 'secondaryconnectionstring', 'secondaryconnectionstring'),
-      op_param('secondarykey', 'body', 'secondarykey', 'secondarykey'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|

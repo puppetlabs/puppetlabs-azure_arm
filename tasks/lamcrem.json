@@ -1,0 +1,40 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"regex_entity_extractor_create_obj":{
+			   "description": "A model object containing the name and regex pattern for the new regex entity extractor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"regexpattern":{
+			   "description": "The regex entity pattern.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The model name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

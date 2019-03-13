@@ -7,20 +7,14 @@
 		
 		
 		    
-			"groups":{
-			   "description": "A partition of the original faces based on face similarity. Groups are ranked by number of faces",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"body":{
 			   "description": "Request body for grouping.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"messygroup":{
-			   "description": "Face ids array of faces that cannot find any similar faces from original faces.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

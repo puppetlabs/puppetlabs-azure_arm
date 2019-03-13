@@ -1,0 +1,46 @@
+{
+	"description": "Deletes a Streaming Locator in the Media Services account",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The Media Services account name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"streaming_locator_name":{
+			   "description": "The Streaming Locator name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error properties.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

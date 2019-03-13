@@ -7,6 +7,12 @@
 		
 		
 		    
+			"origin":{
+			   "description": "The intended executor of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"display":{
 			   "description": "Metadata associated with the operation.",
 			   "type": "Optional[String[1]]"
@@ -19,20 +25,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
-			   "description": "The intended executor of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
 			   "type": "Optional[String[1]]"
 			}
 			

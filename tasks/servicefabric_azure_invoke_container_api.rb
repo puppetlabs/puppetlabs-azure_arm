@@ -79,7 +79,7 @@ def format_params(key_values)
       op_param('CodePackageInstanceId', 'query', 'code_package_instance_id', 'code_package_instance_id'),
       op_param('CodePackageName', 'query', 'code_package_name', 'code_package_name'),
       op_param('ContainerApiRequestBody', 'body', 'container_api_request_body', 'container_api_request_body'),
-      op_param('containerapiresult', 'body', 'container_api_result', 'containerapiresult'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('nodeName', 'path', 'node_name', 'node_name'),
       op_param('ServiceManifestName', 'query', 'service_manifest_name', 'service_manifest_name'),
       op_param('timeout', 'query', 'timeout', 'timeout'),

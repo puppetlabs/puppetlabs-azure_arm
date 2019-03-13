@@ -1,0 +1,100 @@
+{
+	"description": "Update the Continuous Export configuration for this export id.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"export_id":{
+			   "description": "The Continuous Export configuration ID. This is unique within a Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"export_properties":{
+			   "description": "Properties that need to be specified to update the Continuous Export configuration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recordtypes":{
+			   "description": "The document types to be exported, as comma separated values. Allowed values include 'Requests', 'Event', 'Exceptions', 'Metrics', 'PageViews', 'PageViewPerformance', 'Rdd', 'PerformanceCounters', 'Availability', 'Messages'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationtype":{
+			   "description": "The Continuous Export destination type. This has to be 'Blob'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationqueueenabled":{
+			   "description": "Deprecated",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationstoragelocationid":{
+			   "description": "The location ID of the destination storage container.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isenabled":{
+			   "description": "Set to 'true' to create a Continuous Export configuration as enabled, otherwise set it to 'false'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationaddress":{
+			   "description": "The SAS URL for the destination storage container. It must grant write permission.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationqueueuri":{
+			   "description": "Deprecated",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationstoragesubscriptionid":{
+			   "description": "The subscription ID of the destination storage container.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationaccountid":{
+			   "description": "The name of destination storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

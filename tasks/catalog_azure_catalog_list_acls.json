@@ -19,20 +19,20 @@
 			}
 			,
 		    
-			"orderby":{
-			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
+			"acetype":{
+			   "description": "the access control list (ACL) entry type. UserObj and GroupObj denote the owning user and group, respectively.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"principalid":{
 			   "description": "the Azure AD object ID of the user or group being specified in the access control list (ACL) entry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"permission":{
+			   "description": "the permission type of the access control list (ACL) entry.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,20 +49,20 @@
 			}
 			,
 		    
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"count":{
 			   "description": "The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"permission":{
-			   "description": "the permission type of the access control list (ACL) entry.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"acetype":{
-			   "description": "the access control list (ACL) entry type. UserObj and GroupObj denote the owning user and group, respectively.",
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

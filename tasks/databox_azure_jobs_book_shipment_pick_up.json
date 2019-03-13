@@ -7,26 +7,8 @@
 		
 		
 		    
-			"shipment_pick_up_request":{
-			   "description": "Details of shipment pick up request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"endtime":{
-			   "description": "Maximum date before which the pick up should commence, this must be in local time of pick up area.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"shipmentlocation":{
 			   "description": "Shipment Location in the pickup place. Eg.front desk",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"starttime":{
-			   "description": "Minimum date after which the pick up should commence, this must be in local time of pick up area.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -51,6 +33,24 @@
 		    
 			"api_version":{
 			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"shipment_pick_up_request":{
+			   "description": "Details of shipment pick up request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starttime":{
+			   "description": "Minimum date after which the pick up should commence, this must be in local time of pick up area.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endtime":{
+			   "description": "Maximum date before which the pick up should commence, this must be in local time of pick up area.",
 			   "type": "Optional[String[1]]"
 			}
 			

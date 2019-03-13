@@ -7,7 +7,25 @@
 		
 		
 		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"region_ids":{
+			   "description": "Regions to delete. Limited to 64.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -21,24 +39,6 @@
 		    
 			"exceeded":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"created":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"project_id":{
-			   "description": "The project id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"region_ids":{
-			   "description": "Regions to delete. Limited to 64.",
 			   "type": "Optional[String[1]]"
 			}
 			

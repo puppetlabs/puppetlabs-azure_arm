@@ -31,14 +31,14 @@
 			}
 			,
 		    
-			"kind":{
-			   "description": "The kind of property batch info, determined by the results of a property batch. The following are the possible values.",
+			"properties":{
+			   "description": "A map containing the properties that were requested through any 'Get' property batch operations. The key represents the index of the 'Get' operation in the original request, in string form. The value is the property. If a property is not found, it will not be in the map.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "A map containing the properties that were requested through any 'Get' property batch operations. The key represents the index of the 'Get' operation in the original request, in string form. The value is the property. If a property is not found, it will not be in the map.",
+			"kind":{
+			   "description": "The kind of property batch info, determined by the results of a property batch. The following are the possible values.",
 			   "type": "Optional[String[1]]"
 			}
 			

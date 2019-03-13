@@ -7,8 +7,8 @@
 		
 		
 		    
-			"display":{
-			   "description": "Display name of the operation",
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,14 +25,14 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request.",
+			"name":{
+			   "description": "Name of the operation",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the operation",
+			"display":{
+			   "description": "Display name of the operation",
 			   "type": "Optional[String[1]]"
 			}
 			

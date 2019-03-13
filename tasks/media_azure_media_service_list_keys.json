@@ -7,38 +7,8 @@
 		
 		
 		    
-			"primarykey":{
-			   "description": "The primary key for the Media Service resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primaryauthendpoint":{
-			   "description": "The primary authorization endpoint.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"media_service_name":{
-			   "description": "Name of the Media Service.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondaryauthendpoint":{
-			   "description": "The secondary authorization endpoint.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondarykey":{
-			   "description": "The secondary key for the Media Service resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"scope":{
-			   "description": "The authorization scope.",
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -57,6 +27,18 @@
 		    
 			"resource_group_name":{
 			   "description": "Name of the resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"media_service_name":{
+			   "description": "Name of the Media Service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message.",
 			   "type": "Optional[String[1]]"
 			}
 			

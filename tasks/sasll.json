@@ -1,0 +1,58 @@
+{
+	"description": "This operation provides all the locations that are available for resource providers; however, each resource provider may support a subset of this list.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"displayname":{
+			   "description": "The display name of the location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"latitude":{
+			   "description": "The latitude of the location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"longitude":{
+			   "description": "The longitude of the location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The fully qualified ID of the location. For example, /subscriptions/00000000-0000-0000-0000-000000000000/locations/westus.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscriptionid":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The location name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

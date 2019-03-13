@@ -7,18 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "Azure Subscription Id in which project was created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the Azure Resource Group that project is part of.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"project_name":{
 			   "description": "Name of the Azure Migrate project.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +27,18 @@
 		    
 			"error":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription Id in which project was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the Azure Resource Group that project is part of.",
 			   "type": "Optional[String[1]]"
 			}
 			

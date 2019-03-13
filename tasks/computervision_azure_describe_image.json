@@ -7,6 +7,18 @@
 		
 		
 		    
+			"max_candidates":{
+			   "description": "Maximum number of candidate descriptions to be returned.  The default is 1.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language":{
+			   "description": "The desired language for output generation. If this parameter is not specified, the default value is &quot;en&quot;.Supported languages:en - English, Default. es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"image_url":{
 			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"requestid":{
 			   "description": "A unique request identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_candidates":{
-			   "description": "Maximum number of candidate descriptions to be returned.  The default is 1.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"language":{
-			   "description": "The desired language for output generation. If this parameter is not specified, the default value is &quot;en&quot;.Supported languages:en - English, Default. es - Spanish, ja - Japanese, pt - Portuguese, zh - Simplified Chinese.",
 			   "type": "Optional[String[1]]"
 			}
 			

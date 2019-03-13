@@ -75,7 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('labs', 'body', 'labs', 'labs'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('userName', 'path', 'user_name', 'user_name'),
     ]
   op_params.each do |i|

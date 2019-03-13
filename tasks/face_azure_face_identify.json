@@ -11,6 +11,12 @@
 			   "description": "Request body for identify operation.",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

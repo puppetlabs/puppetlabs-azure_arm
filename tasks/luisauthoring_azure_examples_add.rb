@@ -75,9 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
-      op_param('exampleid', 'body', 'example_id', 'exampleid'),
+      op_param('entitylabels', 'body', 'entity_labels', 'entitylabels'),
       op_param('exampleLabelObject', 'body', 'example_label_object', 'example_label_object'),
-      op_param('utterancetext', 'body', 'utterance_text', 'utterancetext'),
+      op_param('intentname', 'body', 'intent_name', 'intentname'),
+      op_param('text', 'body', 'text', 'text'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
     ]
   op_params.each do |i|

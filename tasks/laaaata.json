@@ -1,0 +1,46 @@
+{
+	"description": "Assigns an azure account to the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"azuresubscriptionid":{
+			   "description": "The id for the azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourcegroup":{
+			   "description": "The azure resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authorization":{
+			   "description": "The bearer authorization header to use; containing the user's ARM token used to validate azure accounts information.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"azure_account_info_object":{
+			   "description": "The azure account information object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accountname":{
+			   "description": "The azure account name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

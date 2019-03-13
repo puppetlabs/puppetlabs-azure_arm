@@ -1,0 +1,34 @@
+{
+	"description": "Updates an image list with list Id equal to list Id passed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"list_id":{
+			   "description": "List Id of the image list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "Schema of the body.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"resources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetresourcegroup":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targetresourcegroup":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resources":{
-			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

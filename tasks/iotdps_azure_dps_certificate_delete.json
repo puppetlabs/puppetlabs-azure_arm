@@ -7,72 +7,6 @@
 		
 		
 		    
-			"certificateraw_bytes":{
-			   "description": "Raw data within the certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificatelast_updated":{
-			   "description": "Time the certificate is last updated.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "The error message.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificatename":{
-			   "description": "This is optional, and it is the Common Name of the certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"provisioning_service_name":{
-			   "description": "The name of the provisioning service.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificatehas_private_key":{
-			   "description": "Indicates if the certificate contains a private key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificatenonce":{
-			   "description": "Random number generated to indicate Proof of Possession.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificate_name":{
-			   "description": "This is a mandatory field, and is the logical name of the certificate that the provisioning service will access by.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificateis_verified":{
-			   "description": "Indicates if certificate has been verified by owner of the private key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The version of the API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"code":{
 			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
@@ -85,8 +19,38 @@
 			}
 			,
 		    
+			"message":{
+			   "description": "The error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "ETag of the certificate",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificatenonce":{
+			   "description": "Random number generated to indicate Proof of Possession.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "Resource group identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioning_service_name":{
+			   "description": "The name of the provisioning service.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -97,20 +61,56 @@
 			}
 			,
 		    
-			"certificatecreated":{
-			   "description": "Time the certificate is created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"details":{
 			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"if_match":{
-			   "description": "ETag of the certificate",
+			"certificate_name":{
+			   "description": "This is a mandatory field, and is the logical name of the certificate that the provisioning service will access by.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificateraw_bytes":{
+			   "description": "Raw data within the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificatecreated":{
+			   "description": "Time the certificate is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificatelast_updated":{
+			   "description": "Time the certificate is last updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificatehas_private_key":{
+			   "description": "Indicates if the certificate contains a private key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificatename":{
+			   "description": "This is optional, and it is the Common Name of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificateis_verified":{
+			   "description": "Indicates if certificate has been verified by owner of the private key.",
 			   "type": "Optional[String[1]]"
 			}
 			

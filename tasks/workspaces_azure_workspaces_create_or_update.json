@@ -7,24 +7,6 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "The parameters for creating or updating a machine learning workspace.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "error code",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "error message",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The client API version.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +27,24 @@
 		    
 			"workspace_name":{
 			   "description": "The name of the machine learning workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters for creating or updating a machine learning workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "error code",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "error message",
 			   "type": "Optional[String[1]]"
 			}
 			

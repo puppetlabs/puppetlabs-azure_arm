@@ -7,6 +7,12 @@
 		
 		
 		    
+			"message":{
+			   "description": "A message that explains why the name is invalid and provides resource naming requirements. Available only if 'Invalid' is returned in the 'reason' property.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"nameavailable":{
 			   "description": "A value indicating whether the name is available.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"reason":{
 			   "description": "The reason why the name is not available. 'Invalid' indicates the name provided does not match the naming requirements (incorrect length, unsupported characters, etc.). 'AlreadyExists' indicates that the name is already in use and is therefore unavailable.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "A message that explains why the name is invalid and provides resource naming requirements. Available only if 'Invalid' is returned in the 'reason' property.",
 			   "type": "Optional[String[1]]"
 			}
 			

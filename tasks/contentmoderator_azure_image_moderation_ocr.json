@@ -7,30 +7,6 @@
 		
 		
 		    
-			"candidates":{
-			   "description": "The list of candidate text.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"metadata":{
-			   "description": "Array of KeyValue.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"trackingid":{
-			   "description": "The tracking id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cacheid":{
-			   "description": "The cache id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"cache_image":{
 			   "description": "Whether to retain the submitted image for future use; defaults to false if omitted.",
 			   "type": "Optional[String[1]]"
@@ -43,20 +19,14 @@
 			}
 			,
 		    
-			"text":{
-			   "description": "The found text.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"status":{
-			   "description": "The evaluate status",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"language":{
-			   "description": "The ISO 639-3 code.",
+			   "description": "Language of the terms.",
 			   "type": "Optional[String[1]]"
 			}
 			

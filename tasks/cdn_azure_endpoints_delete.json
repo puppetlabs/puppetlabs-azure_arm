@@ -7,6 +7,12 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"profile_name":{
 			   "description": "Name of the CDN profile which is unique within the resource group.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"message":{
 			   "description": "Error message indicating why the operation failed.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the Resource group within the Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			

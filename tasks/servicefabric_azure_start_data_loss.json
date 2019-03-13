@@ -7,18 +7,6 @@
 		
 		
 		    
-			"operation_id":{
-			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"data_loss_mode":{
-			   "description": "This enum is passed to the StartDataLoss API to indicate what type of data loss to induce.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"timeout":{
 			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +33,18 @@
 		    
 			"partition_id":{
 			   "description": "The identity of the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_id":{
+			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_loss_mode":{
+			   "description": "This enum is passed to the StartDataLoss API to indicate what type of data loss to induce.",
 			   "type": "Optional[String[1]]"
 			}
 			

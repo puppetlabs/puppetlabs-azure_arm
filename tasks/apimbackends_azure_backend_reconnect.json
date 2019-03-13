@@ -7,14 +7,14 @@
 		
 		
 		    
-			"backendid":{
-			   "description": "Identifier of the Backend entity. Must be unique in the current API Management service instance.",
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request.",
+			"backendid":{
+			   "description": "Identifier of the Backend entity. Must be unique in the current API Management service instance.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,32 +25,14 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type for API Management resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"properties":{
 			   "description": "Reconnect request properties.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
+			"id":{
+			   "description": "Resource ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -63,6 +45,24 @@
 		    
 			"parameters":{
 			   "description": "Reconnect request parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type for API Management resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"children":{
-			   "description": "Child entities.",
+			"name":{
+			   "description": "Entity name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Entity name.",
+			"children":{
+			   "description": "Child entities.",
 			   "type": "Optional[String[1]]"
 			}
 			,

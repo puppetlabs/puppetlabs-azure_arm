@@ -7,6 +7,18 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "Name of resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of web app",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"slot_swap_entity":{
 			   "description": "Request body that contains the target slot name",
 			   "type": "Optional[String[1]]"
@@ -21,18 +33,6 @@
 		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of resource group",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of web app",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -19,8 +19,14 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "",
+			"type":{
+			   "description": "Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Resource tags",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,14 +37,8 @@
 			}
 			,
 		    
-			"type":{
-			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Resource tags",
+			"properties":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,

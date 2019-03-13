@@ -7,12 +7,6 @@
 		
 		
 		    
-			"app_id":{
-			   "description": "The application ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"version_id":{
 			   "description": "The version ID.",
 			   "type": "Optional[String[1]]"
@@ -21,6 +15,24 @@
 		    
 			"closed_list_model_create_object":{
 			   "description": "A model containing the name and words for the new closed list entity extractor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sublists":{
+			   "description": "Sublists for the feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the closed list feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,14 +7,14 @@
 		
 		
 		    
-			"language":{
-			   "description": "The BCP-47 language code of the text to be detected in the image. The default value is 'unk'.",
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"image_url":{
-			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,14 +31,14 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "The error code.",
+			"detect_orientation":{
+			   "description": "Whether detect the text orientation in the image. With detectOrientation=true the OCR service tries to detect the image orientation and correct it before further processing (e.g. if it's upside-down).",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"detect_orientation":{
-			   "description": "Whether detect the text orientation in the image. With detectOrientation=true the OCR service tries to detect the image orientation and correct it before further processing (e.g. if it's upside-down).",
+			"language":{
+			   "description": "The BCP-47 language code of the text to be detected in the image. The default value is 'unk'.",
 			   "type": "Optional[String[1]]"
 			}
 			

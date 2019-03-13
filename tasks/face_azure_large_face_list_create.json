@@ -19,14 +19,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "User defined name, maximum length is 128.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"userdata":{
-			   "description": "User specified data. Length should not exceed 16KB.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,14 +7,14 @@
 		
 		
 		    
-			"mode":{
-			   "description": "Type of text to recognize.",
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"requestid":{
-			   "description": "A unique request identifier.",
+			"mode":{
+			   "description": "Type of text to recognize.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,8 +31,8 @@
 			}
 			,
 		    
-			"image_url":{
-			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			"requestid":{
+			   "description": "A unique request identifier.",
 			   "type": "Optional[String[1]]"
 			}
 			

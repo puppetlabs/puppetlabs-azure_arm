@@ -7,20 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version to use for the request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription ID that identifies an Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"server_name":{
-			   "description": "The name of the server.",
+			"tags":{
+			   "description": "Application-specific metadata in the form of key-value pairs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,20 +19,20 @@
 			}
 			,
 		    
-			"location":{
-			   "description": "The location the resource resides in.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Application-specific metadata in the form of key-value pairs.",
+			"subscription_id":{
+			   "description": "The subscription ID that identifies an Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_name":{
+			   "description": "The name of the server.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -57,6 +45,18 @@
 		    
 			"properties":{
 			   "description": "Properties of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The location the resource resides in.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
 			   "type": "Optional[String[1]]"
 			}
 			

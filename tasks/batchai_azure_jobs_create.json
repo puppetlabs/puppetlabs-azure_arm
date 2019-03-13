@@ -37,8 +37,8 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "The properties of the Job.",
+			"error":{
+			   "description": "An error response from the Batch AI service.",
 			   "type": "Optional[String[1]]"
 			}
 			,

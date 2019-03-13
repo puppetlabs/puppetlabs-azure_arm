@@ -7,6 +7,12 @@
 		
 		
 		    
+			"kb_id":{
+			   "description": "Knowledgebase id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"replace_kb":{
 			   "description": "An instance of ReplaceKbDTO which contains list of qnas to be uploaded",
 			   "type": "Optional[String[1]]"
@@ -15,12 +21,6 @@
 		    
 			"error":{
 			   "description": "The error object.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kb_id":{
-			   "description": "Knowledgebase id.",
 			   "type": "Optional[String[1]]"
 			}
 			

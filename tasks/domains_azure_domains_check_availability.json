@@ -7,12 +7,6 @@
 		
 		
 		    
-			"domaintype":{
-			   "description": "Valid values are Regular domain: Azure will charge the full price of domain registration, SoftDeleted: Purchasing this domain will simply restore it and this operation will not cost anything.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"identifier":{
 			   "description": "Name of the domain.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"available":{
 			   "description": "true if domain can be purchased using CreateDomain API; otherwise, false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domaintype":{
+			   "description": "Valid values are Regular domain: Azure will charge the full price of domain registration, SoftDeleted: Purchasing this domain will simply restore it and this operation will not cost anything.",
 			   "type": "Optional[String[1]]"
 			}
 			

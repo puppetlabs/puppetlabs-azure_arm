@@ -1,0 +1,142 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"endtime":{
+			   "description": "The end time of a range that the recommendation refers to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"score":{
+			   "description": "A metric value measured by the rule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextnotificationtime":{
+			   "description": "When to notify this recommendation next. Null means that this will never be notified anymore.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourcescope":{
+			   "description": "Name of a resource type this recommendation applies, e.g. Subscription, ServerFarm, Site.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notifiedtime":{
+			   "description": "Last timestamp this instance was actually notified. Null means that this recommendation hasn't been notified yet.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "The list of category tags that this recommendation belongs to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "Return only channels specified in the filter. Filter is specified by using OData syntax. Example: $filter=channels eq 'Api' or channel eq 'Notification'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "UI friendly name of the rule (may not be unique)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rulename":{
+			   "description": "Unique name of the rule",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enabled":{
+			   "description": "On/off flag indicating the rule is currently enabled or disabled.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recommendationid":{
+			   "description": "A GUID value that each recommendation object is associated with.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"featured":{
+			   "description": "If set, this API returns only the most critical recommendation among the others. Otherwise this API returns all recommendations available",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationexpirationtime":{
+			   "description": "Date and time when this notification expires.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourceid":{
+			   "description": "Full ARM resource ID string that this recommendation object is associated with.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"channels":{
+			   "description": "List of channels that this recommendation can apply.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"actionname":{
+			   "description": "Name of action recommended by this object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"creationtime":{
+			   "description": "Timestamp when this instance was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Localized text of recommendation, good for UI.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"level":{
+			   "description": "Level indicating how critical this recommendation can impact.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starttime":{
+			   "description": "The beginning time of a range that the recommendation refers to.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

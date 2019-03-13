@@ -1,0 +1,70 @@
+{
+	"description": "Submit a search for a given workspace. The response will contain an id to track the search. User can use the id to poll the search status and get the full search result later if the search takes long time to finish. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The Resource Group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workspace_name":{
+			   "description": "The Log Analytics Workspace name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start":{
+			   "description": "The start date filter, so the only query results returned are after this date.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end":{
+			   "description": "The end date filter, so the only query results returned are before this date.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"query":{
+			   "description": "The query to search.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters required to execute a search query.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number to get from the top.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"highlight":{
+			   "description": "The highlight that looks for all occurrences of a string.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

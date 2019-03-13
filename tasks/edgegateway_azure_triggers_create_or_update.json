@@ -7,6 +7,12 @@
 		
 		
 		    
+			"device_name":{
+			   "description": "Name of the edge device in which trigger needs to be added or updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "Name of trigger to be added or updated.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"error":{
 			   "description": "The error details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"device_name":{
-			   "description": "Name of the edge device in which trigger needs to be added or updated.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -76,7 +76,7 @@ def format_params(key_values)
   op_params = [
       op_param('batch', 'body', 'batch', 'batch'),
       op_param('images', 'body', 'images', 'images'),
-      op_param('isbatchsuccessful', 'body', 'isbatchsuccessful', 'isbatchsuccessful'),
+      op_param('isbatchsuccessful', 'body', 'is_batch_successful', 'isbatchsuccessful'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
     ]

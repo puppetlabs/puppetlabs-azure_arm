@@ -7,8 +7,20 @@
 		
 		
 		    
-			"environment_setting_name":{
-			   "description": "The name of the environment Setting.",
+			"lab_account_name":{
+			   "description": "The name of the lab Account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lab_name":{
+			   "description": "The name of the lab.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,20 +37,8 @@
 			}
 			,
 		    
-			"environment_name":{
-			   "description": "The name of the environment.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"environment":{
 			   "description": "Represents an environment instance",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +49,14 @@
 			}
 			,
 		    
-			"lab_account_name":{
-			   "description": "The name of the lab Account.",
+			"environment_setting_name":{
+			   "description": "The name of the environment Setting.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"lab_name":{
-			   "description": "The name of the lab.",
+			"environment_name":{
+			   "description": "The name of the environment.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,34 @@
+{
+	"description": "Get batch operation status",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"user_name":{
+			   "description": "The name of the user.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_batch_status_payload":{
+			   "description": "Payload to get the status of an operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"items":{
+			   "description": "Gets a collection of items that contain the operation url and status.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

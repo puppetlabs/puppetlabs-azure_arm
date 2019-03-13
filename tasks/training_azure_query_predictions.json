@@ -7,8 +7,38 @@
 		
 		
 		    
-			"project_id":{
-			   "description": "The project id.",
+			"training_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuation":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starttime":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"session":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,20 +49,32 @@
 			}
 			,
 		    
-			"training_key":{
+			"iterationid":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"token":{
+			"application":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"results":{
+			"endtime":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxcount":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
 			}
 			

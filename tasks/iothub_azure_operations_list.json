@@ -7,8 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The version of the API.",
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{read | write | action | delete}",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,8 +19,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{read | write | action | delete}",
+			"api_version":{
+			   "description": "The version of the API.",
 			   "type": "Optional[String[1]]"
 			}
 			

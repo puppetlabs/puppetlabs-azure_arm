@@ -25,8 +25,14 @@
 			}
 			,
 		    
-			"errortype":{
-			   "description": "",
+			"name":{
+			   "description": "The application version setting name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The application version setting value.",
 			   "type": "Optional[String[1]]"
 			}
 			

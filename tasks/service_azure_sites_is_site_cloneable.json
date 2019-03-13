@@ -7,6 +7,18 @@
 		
 		
 		    
+			"blockingcharacteristics":{
+			   "description": "List of blocking application characteristics",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "Name of the web app",
 			   "type": "Optional[String[1]]"
@@ -25,18 +37,6 @@
 			}
 			,
 		    
-			"unsupportedfeatures":{
-			   "description": "List of features enabled on web app that are non-blocking but cannot be cloned. The web app can still be cloned            but the features in this list will not be set up on cloned web app.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"blockingcharacteristics":{
-			   "description": "List of blocking application characteristics",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"result":{
 			   "description": "Name of web app",
 			   "type": "Optional[String[1]]"
@@ -49,8 +49,8 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group",
+			"unsupportedfeatures":{
+			   "description": "List of features enabled on web app that are non-blocking but cannot be cloned. The web app can still be cloned            but the features in this list will not be set up on cloned web app.",
 			   "type": "Optional[String[1]]"
 			}
 			

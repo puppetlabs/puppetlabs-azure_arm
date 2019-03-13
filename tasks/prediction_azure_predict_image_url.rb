@@ -75,15 +75,11 @@ def format_params(key_values)
 
   op_params = [
       op_param('application', 'query', 'application', 'application'),
-      op_param('created', 'body', 'created', 'created'),
-      op_param('id', 'body', 'id', 'id'),
       op_param('imageUrl', 'body', 'image_url', 'image_url'),
-      op_param('iteration', 'body', 'iteration', 'iteration'),
       op_param('iterationId', 'query', 'iteration_id', 'iteration_id'),
       op_param('Prediction-Key', 'header', 'prediction_key', 'prediction_key'),
-      op_param('predictions', 'body', 'predictions', 'predictions'),
-      op_param('project', 'body', 'project', 'project'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
+      op_param('url', 'body', 'url', 'url'),
     ]
   op_params.each do |i|
     location = i[:location]

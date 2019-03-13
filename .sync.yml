@@ -119,3 +119,6 @@
 
 appveyor.yml:
   delete: true
+
+.travis.yml:
+  delete: true

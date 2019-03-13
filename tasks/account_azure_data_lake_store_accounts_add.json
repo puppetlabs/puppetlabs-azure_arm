@@ -7,6 +7,18 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The name of the Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"data_lake_store_account_name":{
 			   "description": "The name of the Data Lake Store account to add.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"subscription_id":{
 			   "description": "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the Azure resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"account_name":{
-			   "description": "The name of the Data Lake Analytics account.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,24 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Certificate identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "The certificate management attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tags":{
 			   "description": "Application specific metadata in the form of key-value pairs.",
 			   "type": "Optional[String[1]]"
@@ -19,12 +37,6 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Certificate identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"maxresults":{
 			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"include_pending":{
 			   "description": "Specifies whether to include certificates which are not completely provisioned.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attributes":{
-			   "description": "The certificate management attributes.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The Subscription Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"location":{
 			   "description": "The location of the resource",
 			   "type": "Optional[String[1]]"
@@ -31,14 +25,14 @@
 			}
 			,
 		    
-			"shippingaddress":{
-			   "description": "Shipping address of the customer.",
+			"properties":{
+			   "description": "The address validation properties.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"devicetype":{
-			   "description": "Device type to be used for the job.",
+			"subscription_id":{
+			   "description": "The Subscription Id",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -76,6 +76,8 @@ def format_params(key_values)
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
       op_param('closedListModelCreateObject', 'body', 'closed_list_model_create_object', 'closed_list_model_create_object'),
+      op_param('name', 'body', 'name', 'name'),
+      op_param('sublists', 'body', 'sub_lists', 'sublists'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
     ]
   op_params.each do |i|

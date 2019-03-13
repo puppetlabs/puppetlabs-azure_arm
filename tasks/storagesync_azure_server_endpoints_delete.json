@@ -43,13 +43,13 @@
 			}
 			,
 		    
-			"error":{
+			"innererror":{
 			   "description": "Error details of the given entry.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"innererror":{
+			"error":{
 			   "description": "Error details of the given entry.",
 			   "type": "Optional[String[1]]"
 			}

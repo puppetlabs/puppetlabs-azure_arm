@@ -1,0 +1,46 @@
+{
+	"description": "Add a representative face to a person for identification. The input face is specified as an image with a targetFace rectangle.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"large_person_group_id":{
+			   "description": "Id referencing a particular large person group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"person_id":{
+			   "description": "Id referencing a particular person.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_data":{
+			   "description": "User-specified data about the face for any purpose. The maximum length is 1KB.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_face":{
+			   "description": "A face rectangle to specify the target face to be added to a person in the format of 'targetFace=left,top,width,height'. E.g. 'targetFace=10,10,100,100'. If there is more than one face in the image, targetFace is required to specify which face to add. No targetFace means there is only one face detected in the entire image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_url":{
+			   "description": "A JSON document with a URL pointing to the image that is to be analyzed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

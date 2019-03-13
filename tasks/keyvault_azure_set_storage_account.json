@@ -7,14 +7,14 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "The parameters to create a storage account.",
+			"attributes":{
+			   "description": "The storage account attributes.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"autoregeneratekey":{
-			   "description": "whether keyvault should manage the storage account for the user.",
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,14 +25,14 @@
 			}
 			,
 		    
-			"attributes":{
-			   "description": "The storage account attributes.",
+			"activekeyname":{
+			   "description": "The current active storage account key name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "The storage account id.",
+			"autoregeneratekey":{
+			   "description": "whether keyvault should manage the storage account for the user.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +43,20 @@
 			}
 			,
 		    
+			"parameters":{
+			   "description": "The parameters to create a storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"activekeyname":{
-			   "description": "The current active storage account key name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs",
+			"id":{
+			   "description": "The storage account id.",
 			   "type": "Optional[String[1]]"
 			}
 			,

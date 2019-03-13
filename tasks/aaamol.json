@@ -1,0 +1,40 @@
+{
+	"description": "Lists all of the available REST API operations of the Microsoft.ApiManagement provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "The object that describes the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "The operation origin.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The operation properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

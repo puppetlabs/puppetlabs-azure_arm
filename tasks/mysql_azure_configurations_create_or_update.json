@@ -13,26 +13,32 @@
 			}
 			,
 		    
+			"properties":{
+			   "description": "The properties of a configuration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "The subscription ID that identifies an Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"server_name":{
-			   "description": "The name of the server.",
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"configuration_name":{
+			   "description": "The name of the server configuration.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"parameters":{
 			   "description": "The required parameters for updating a server configuration.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The properties of a configuration.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +61,8 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"configuration_name":{
-			   "description": "The name of the server configuration.",
+			"server_name":{
+			   "description": "The name of the server.",
 			   "type": "Optional[String[1]]"
 			}
 			

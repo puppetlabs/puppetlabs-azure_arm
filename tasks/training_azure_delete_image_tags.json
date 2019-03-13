@@ -7,6 +7,18 @@
 		
 		
 		    
+			"created":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"duplicated":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"exceeded":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,18 +44,6 @@
 			,
 		    
 			"training_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"created":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"duplicated":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

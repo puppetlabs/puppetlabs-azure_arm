@@ -7,26 +7,20 @@
 		
 		
 		    
+			"person_group_id":{
+			   "description": "Id referencing a particular person group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"body":{
 			   "description": "Request body for creating new person group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "User defined name, maximum length is 128.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"userdata":{
-			   "description": "User specified data. Length should not exceed 16KB.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"person_group_id":{
-			   "description": "Id referencing a particular person group.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

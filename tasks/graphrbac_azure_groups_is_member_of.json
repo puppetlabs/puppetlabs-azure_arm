@@ -7,18 +7,6 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "The check group membership parameters.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"tenant_id":{
 			   "description": "The tenant ID.",
 			   "type": "Optional[String[1]]"
@@ -27,6 +15,18 @@
 		    
 			"value":{
 			   "description": "True if the specified user, group, contact, or service principal has either direct or transitive membership in the specified group; otherwise, false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The check group membership parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

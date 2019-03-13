@@ -7,8 +7,8 @@
 		
 		
 		    
-			"id":{
-			   "description": "The unique ID of the API key inside an Application Insights component. It is auto generated when the API key is created.",
+			"linkedreadproperties":{
+			   "description": "The read access rights of this API Key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,36 +25,6 @@
 			}
 			,
 		    
-			"resource_name":{
-			   "description": "The name of the Application Insights component resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_key_properties":{
-			   "description": "Properties that need to be specified to create an API key of a Application Insights component.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"createddate":{
-			   "description": "The create date of this API key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The name of the API key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"linkedreadproperties":{
-			   "description": "The read access rights of this API Key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
@@ -67,8 +37,20 @@
 			}
 			,
 		    
-			"apikey":{
-			   "description": "The API key value. It will be only return once when the API Key was created.",
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_key_properties":{
+			   "description": "Properties that need to be specified to create an API key of a Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the API Key.",
 			   "type": "Optional[String[1]]"
 			}
 			

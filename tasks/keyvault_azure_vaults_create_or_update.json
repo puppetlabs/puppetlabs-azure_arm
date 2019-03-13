@@ -7,6 +7,24 @@
 		
 		
 		    
+			"location":{
+			   "description": "The supported Azure location where the key vault should be created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "The tags that will be assigned to the key vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the vault",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The name of the Resource Group to which the server belongs.",
 			   "type": "Optional[String[1]]"
@@ -33,24 +51,6 @@
 		    
 			"subscription_id":{
 			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "The supported Azure location where the key vault should be created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "The tags that will be assigned to the key vault.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Properties of the vault",
 			   "type": "Optional[String[1]]"
 			}
 			

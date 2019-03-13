@@ -31,8 +31,8 @@
 			}
 			,
 		    
-			"supportstatus":{
-			   "description": "Support status of feature",
+			"featuretype":{
+			   "description": "backup support feature type.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,46 @@
+{
+	"description": "Gets the directory objects specified in a list of object IDs. You can also specify which resource collections (users, groups, etc.) should be searched by specifying the optional types parameter.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "Objects filtering parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"objectids":{
+			   "description": "The requested object IDs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"types":{
+			   "description": "The requested object types.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"includedirectoryobjectreferences":{
+			   "description": "If true, also searches for object IDs in the partner tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

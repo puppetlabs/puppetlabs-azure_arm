@@ -20,7 +20,7 @@
 			,
 		    
 			"parameters":{
-			   "description": "The run command parameters.",
+			   "description": "Parameters supplied to the Run command operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +37,8 @@
 			}
 			,
 		    
-			"script":{
-			   "description": "Optional. The script to be executed.  When this value is given, the given script will override the default script of the command.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"commandid":{
-			   "description": "The run command id.",
+			"value":{
+			   "description": "Run command operation response.",
 			   "type": "Optional[String[1]]"
 			}
 			

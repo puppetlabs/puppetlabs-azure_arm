@@ -13,8 +13,8 @@
 			}
 			,
 		    
-			"schemaname":{
-			   "description": "the name of the schema associated with this view and database.",
+			"top":{
+			   "description": "The number of items to return. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,56 +25,8 @@
 			}
 			,
 		    
-			"database_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"top":{
-			   "description": "The number of items to return. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"skip":{
-			   "description": "The number of items to skip over before returning elements. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"count":{
-			   "description": "The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"definition":{
-			   "description": "the defined query of the view.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter":{
-			   "description": "OData filter. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"viewname":{
-			   "description": "the name of the view.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schema_name":{
-			   "description": "",
+			"schemaname":{
+			   "description": "the name of the schema associated with this view and database.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -85,8 +37,56 @@
 			}
 			,
 		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"viewname":{
+			   "description": "the name of the view.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"definition":{
+			   "description": "the defined query of the view.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip":{
+			   "description": "The number of items to skip over before returning elements. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"orderby":{
 			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"count":{
+			   "description": "The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,

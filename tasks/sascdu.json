@@ -1,0 +1,40 @@
+{
+	"description": "Validates the supplied upgrade parameters and starts upgrading the deployment if the parameters are valid.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "Error object containing error code and error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be ''6.0-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_name":{
+			   "description": "The identity of the deployment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"compose_deployment_upgrade_description":{
+			   "description": "Parameters for upgrading compose deployment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

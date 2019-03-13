@@ -7,30 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kind":{
-			   "description": "Kind of resource",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"source_control_type":{
 			   "description": "Type of source control",
 			   "type": "Optional[String[1]]"
@@ -43,8 +19,38 @@
 			}
 			,
 		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Resource Location",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "Kind of resource",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tags":{
 			   "description": "Resource tags",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -57,12 +63,6 @@
 		    
 			"name":{
 			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "Resource Location",
 			   "type": "Optional[String[1]]"
 			}
 			

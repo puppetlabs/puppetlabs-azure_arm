@@ -13,26 +13,20 @@
 			}
 			,
 		    
-			"primarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"keyname":{
-			   "description": "A string that describes the authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"primaryconnectionstring":{
 			   "description": "Primary connection string of the created namespace authorization rule.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"parameters":{
-			   "description": "Parameters supplied to regenerate authorization rule.",
+			"secondarykey":{
+			   "description": "A base64-encoded 256-bit secondary key for signing and validating the SAS token.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keyname":{
+			   "description": "A string that describes the authorization rule.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,6 +43,12 @@
 			}
 			,
 		    
+			"parameters":{
+			   "description": "Parameters supplied to regenerate authorization rule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -61,8 +61,8 @@
 			}
 			,
 		    
-			"secondarykey":{
-			   "description": "A base64-encoded 256-bit secondary key for signing and validating the SAS token.",
+			"primarykey":{
+			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
 			   "type": "Optional[String[1]]"
 			}
 			,

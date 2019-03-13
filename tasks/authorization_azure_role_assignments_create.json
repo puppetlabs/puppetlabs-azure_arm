@@ -7,6 +7,12 @@
 		
 		
 		    
+			"role_assignment_name":{
+			   "description": "The name of the role assignment to create. It can be any valid GUID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameters":{
 			   "description": "Parameters for the role assignment.",
 			   "type": "Optional[String[1]]"
@@ -27,12 +33,6 @@
 		    
 			"scope":{
 			   "description": "The scope of the role assignment to create. The scope can be any REST resource instance. For example, use '/subscriptions/{subscription-id}/' for a subscription, '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}' for a resource group, and '/subscriptions/{subscription-id}/resourceGroups/{resource-group-name}/providers/{resource-provider}/{resource-type}/{resource-name}' for a resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"role_assignment_name":{
-			   "description": "The name of the role assignment to create. It can be any valid GUID.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,26 +7,8 @@
 		
 		
 		    
-			"country":{
-			   "description": "ISO country code. Country for hardware shipment. For codes check: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"skunames":{
-			   "description": "Sku Names to filter for available skus",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The Subscription Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"location":{
-			   "description": "Location for data transfer. For locations check: https://management.azure.com/subscriptions/SUBSCRIPTIONID/locations?api-version=2018-01-01",
+			   "description": "The location of the resource",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +25,20 @@
 			}
 			,
 		    
-			"transfertype":{
-			   "description": "Type of the transfer.",
+			"nextlink":{
+			   "description": "Link for the next set of skus.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of available skus.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
 			   "type": "Optional[String[1]]"
 			}
 			

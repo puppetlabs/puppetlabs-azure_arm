@@ -7,14 +7,8 @@
 		
 		
 		    
-			"kind":{
-			   "description": "Kind of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
+			"properties":{
+			   "description": "TopLevelDomain resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,6 +25,18 @@
 			}
 			,
 		    
+			"kind":{
+			   "description": "Kind of resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "TopLevelDomain resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			

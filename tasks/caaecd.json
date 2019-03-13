@@ -1,0 +1,154 @@
+{
+	"description": "Delete a Continuous Export configuration of an Application Insights component.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"destinationstoragesubscriptionid":{
+			   "description": "The destination storage account subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storagename":{
+			   "description": "The name of the destination storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastsuccesstime":{
+			   "description": "The last time data was successfully delivered to the destination storage container for this Continuous Export configuration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exportid":{
+			   "description": "The unique ID of the export configuration inside an Application Insights component. It is auto generated when the Continuous Export configuration is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"permanenterrorreason":{
+			   "description": "This is the reason the Continuous Export configuration started failing. It can be 'AzureStorageNotFound' or 'AzureStorageAccessDenied'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isuserenabled":{
+			   "description": "This will be 'true' if the Continuous Export configuration is enabled, otherwise it will be 'false'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notificationqueueenabled":{
+			   "description": "Deprecated",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instrumentationkey":{
+			   "description": "The instrumentation key of the Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationstoragelocationid":{
+			   "description": "The destination account location ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastuserupdate":{
+			   "description": "Last time the Continuous Export configuration was updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"applicationname":{
+			   "description": "The name of the Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recordtypes":{
+			   "description": "This comma separated list of document types that will be exported. The possible values include 'Requests', 'Event', 'Exceptions', 'Metrics', 'PageViews', 'PageViewPerformance', 'Rdd', 'PerformanceCounters', 'Availability', 'Messages'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscriptionid":{
+			   "description": "The subscription of the Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"containername":{
+			   "description": "The name of the destination storage container.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastgaptime":{
+			   "description": "The last time the Continuous Export configuration started failing.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationaccountid":{
+			   "description": "The name of destination account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinationtype":{
+			   "description": "The destination type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"export_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exportstatus":{
+			   "description": "This indicates current Continuous Export configuration status. The possible values are 'Preparing', 'Success', 'Failure'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourcegroup":{
+			   "description": "The resource group of the Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

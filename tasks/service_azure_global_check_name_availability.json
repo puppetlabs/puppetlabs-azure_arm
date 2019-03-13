@@ -7,6 +7,12 @@
 		
 		
 		    
+			"type":{
+			   "description": "Resource type used for verification",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"request":{
 			   "description": "Name availability request",
 			   "type": "Optional[String[1]]"
@@ -25,20 +31,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource name to verify",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type used for verification",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"isfqdn":{
 			   "description": "Is fully qualified domain name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name to verify",
 			   "type": "Optional[String[1]]"
 			}
 			

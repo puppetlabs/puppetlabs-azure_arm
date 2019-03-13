@@ -7,18 +7,6 @@
 		
 		
 		    
-			"resume_job_params":{
-			   "description": "Resume rob comments.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Resume job properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +33,18 @@
 		    
 			"job_name":{
 			   "description": "Job identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resume_job_params":{
+			   "description": "Resume rob comments.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Resume job properties.",
 			   "type": "Optional[String[1]]"
 			}
 			

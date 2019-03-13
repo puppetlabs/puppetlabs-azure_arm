@@ -43,8 +43,8 @@
 			}
 			,
 		    
-			"volumecontainers":{
-			   "description": "The list of path IDs of the volume containers that needs to be failed-over, for which we want to fetch the eligible targets.",
+			"value":{
+			   "description": "The list of all the failover targets.",
 			   "type": "Optional[String[1]]"
 			}
 			

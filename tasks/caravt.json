@@ -1,0 +1,40 @@
+{
+	"description": "This API adds a transcript file (text version of all the words spoken in a video) to a video review. The file should be a valid WebVTT format.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vttfile":{
+			   "description": "Transcript file of the video.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"team_name":{
+			   "description": "Your team name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"review_id":{
+			   "description": "Id of the review.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

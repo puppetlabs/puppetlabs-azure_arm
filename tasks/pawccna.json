@@ -1,0 +1,52 @@
+{
+	"description": "Verify the specified Power BI Workspace Collection name is valid and not already in use.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"message":{
+			   "description": "Message indicating an unavailable name due to a conflict, or a description of the naming rules that are violated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Azure location",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "Check name availability request",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nameavailable":{
+			   "description": "Specifies a Boolean value that indicates whether the specified Power BI Workspace Collection name is available to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reason":{
+			   "description": "Reason why the workspace collection name cannot be used.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

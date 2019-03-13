@@ -7,8 +7,8 @@
 		
 		
 		    
-			"sku":{
-			   "description": "Name of SKU used to filter the regions.",
+			"linux_workers_enabled":{
+			   "description": "Specify true if you want to filter to only regions that support Linux workers.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,26 +25,20 @@
 			}
 			,
 		    
-			"kind":{
-			   "description": "Kind of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "GeoRegion resource specific properties",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "Resource Name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"linux_workers_enabled":{
-			   "description": "Specify true if you want to filter to only regions that support Linux workers.",
+			"id":{
+			   "description": "Resource Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sku":{
+			   "description": "Name of SKU used to filter the regions.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,14 +55,20 @@
 			}
 			,
 		    
+			"kind":{
+			   "description": "Kind of resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"type":{
 			   "description": "Resource type.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource Id.",
+			"properties":{
+			   "description": "GeoRegion resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			

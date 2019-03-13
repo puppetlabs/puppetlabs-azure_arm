@@ -1,0 +1,46 @@
+{
+	"description": "Generates the upgraded definition for a workflow.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters for generating an upgraded definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetschemaversion":{
+			   "description": "The target schema version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workflow_name":{
+			   "description": "The workflow name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

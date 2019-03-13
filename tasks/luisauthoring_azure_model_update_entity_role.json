@@ -7,6 +7,18 @@
 		
 		
 		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"entity_id":{
 			   "description": "The entity ID.",
 			   "type": "Optional[String[1]]"
@@ -25,20 +37,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The entity role name.",
+			"message":{
+			   "description": "Status details.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"app_id":{
-			   "description": "The application ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version_id":{
-			   "description": "The version ID.",
+			"code":{
+			   "description": "Status Code.",
 			   "type": "Optional[String[1]]"
 			}
 			

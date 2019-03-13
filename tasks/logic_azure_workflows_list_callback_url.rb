@@ -75,15 +75,11 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('basepath', 'body', 'basepath', 'basepath'),
+      op_param('keytype', 'body', 'keytype', 'keytype'),
       op_param('listCallbackUrl', 'body', 'list_callback_url', 'list_callback_url'),
-      op_param('method', 'body', 'method', 'method'),
-      op_param('queries', 'body', 'queries', 'queries'),
-      op_param('relativepath', 'body', 'relativepath', 'relativepath'),
-      op_param('relativepathparameters', 'body', 'relativepathparameters', 'relativepathparameters'),
+      op_param('notafter', 'body', 'notafter', 'notafter'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('value', 'body', 'value', 'value'),
       op_param('workflowName', 'path', 'workflow_name', 'workflow_name'),
     ]
   op_params.each do |i|

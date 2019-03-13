@@ -1,0 +1,46 @@
+{
+	"description": "Get a list of workspaces which the current user has administrator privileges and are not associated with an Azure Subscription. The subscriptionId parameter in the Url is ignored.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"customerid":{
+			   "description": "The GUID that uniquely identifies the workspace. ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accountname":{
+			   "description": "The display name of the workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workspacename":{
+			   "description": "The DNS valid workspace name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The location of the workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

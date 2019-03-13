@@ -74,11 +74,8 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('code', 'body', 'code', 'code'),
-      op_param('innererror', 'body', 'inner_error', 'innererror'),
+      op_param('documents', 'body', 'documents', 'documents'),
       op_param('input', 'body', 'input', 'input'),
-      op_param('message', 'body', 'message', 'message'),
-      op_param('target', 'body', 'target', 'target'),
     ]
   op_params.each do |i|
     location = i[:location]

@@ -7,14 +7,8 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"restore_request":{
-			   "description": "Snapshot restore settings. Snapshot information can be obtained by calling GetDeletedSites or GetSiteSnapshots API.",
+			"id":{
+			   "description": "Resource Id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,14 +19,26 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource Id.",
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"name":{
 			   "description": "Resource Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restore_request":{
+			   "description": "Snapshot restore settings. Snapshot information can be obtained by calling GetDeletedSites or GetSiteSnapshots API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "SnapshotRestoreRequest resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -45,12 +51,6 @@
 		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "SnapshotRestoreRequest resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			,

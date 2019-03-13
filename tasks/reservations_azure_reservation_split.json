@@ -7,18 +7,6 @@
 		
 		
 		    
-			"body":{
-			   "description": "Information needed to Split a reservation item",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"reservation_order_id":{
 			   "description": "Order Id of the reservation",
 			   "type": "Optional[String[1]]"
@@ -27,6 +15,18 @@
 		    
 			"api_version":{
 			   "description": "Supported version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "Information needed to Split a reservation item",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

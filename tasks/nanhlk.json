@@ -1,0 +1,76 @@
+{
+	"description": "Gets the Primary and Secondary ConnectionStrings to the NotificationHub ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"namespace_name":{
+			   "description": "The namespace name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authorization_rule_name":{
+			   "description": "The connection string of the NotificationHub for the specified authorizationRule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondaryconnectionstring":{
+			   "description": "SecondaryConnectionString of the created AuthorizationRule",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primarykey":{
+			   "description": "PrimaryKey of the created AuthorizationRule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primaryconnectionstring":{
+			   "description": "PrimaryConnectionString of the AuthorizationRule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondarykey":{
+			   "description": "SecondaryKey of the created AuthorizationRule",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification_hub_name":{
+			   "description": "The notification hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keyname":{
+			   "description": "KeyName of the created AuthorizationRule",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,14 +7,44 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"httpstatuscode":{
+			   "description": "The HTTP status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input":{
+			   "description": "Input for testing all routes",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"iot_hub_name":{
 			   "description": "IotHub to be tested",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
+			"details":{
+			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -27,18 +57,6 @@
 		    
 			"api_version":{
 			   "description": "The version of the API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"routes":{
-			   "description": "JSON-serialized array of matched routes",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"input":{
-			   "description": "Input for testing all routes",
 			   "type": "Optional[String[1]]"
 			}
 			

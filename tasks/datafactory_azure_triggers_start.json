@@ -7,12 +7,6 @@
 		
 		
 		    
-			"error":{
-			   "description": "Error data",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription identifier.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"api_version":{
 			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error data",
 			   "type": "Optional[String[1]]"
 			}
 			

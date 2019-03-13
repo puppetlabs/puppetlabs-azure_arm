@@ -7,6 +7,12 @@
 		
 		
 		    
+			"timescale":{
+			   "description": "Timescale of the video you are adding frames to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"error":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -21,12 +27,6 @@
 		    
 			"review_id":{
 			   "description": "Id of the review.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"timescale":{
-			   "description": "Timescale of the video you are adding frames to.",
 			   "type": "Optional[String[1]]"
 			}
 			

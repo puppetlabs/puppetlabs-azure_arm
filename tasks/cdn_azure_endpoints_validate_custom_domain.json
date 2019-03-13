@@ -7,14 +7,20 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"hostname":{
-			   "description": "The host name of the custom domain. Must be a domain name.",
+			"customdomainvalidated":{
+			   "description": "Indicates whether the custom domain is valid or not.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message describing why the custom domain is not valid.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +49,14 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "Azure Subscription ID.",
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reason":{
+			   "description": "The reason why the custom domain is not valid.",
 			   "type": "Optional[String[1]]"
 			}
 			

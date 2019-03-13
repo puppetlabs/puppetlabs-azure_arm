@@ -19,8 +19,8 @@
 			}
 			,
 		    
-			"environmentid":{
-			   "description": "The resourceId of the environment",
+			"environment":{
+			   "description": "Details of the environment",
 			   "type": "Optional[String[1]]"
 			}
 			,

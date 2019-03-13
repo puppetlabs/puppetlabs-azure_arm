@@ -7,12 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Name of the Resource group within the Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"profile_name":{
 			   "description": "Name of the CDN profile which is unique within the resource group.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +39,12 @@
 		    
 			"contentpaths":{
 			   "description": "The path to the content to be purged. Can describe a file path or a wild card directory.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			

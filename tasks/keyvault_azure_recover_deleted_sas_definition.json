@@ -7,30 +7,6 @@
 		
 		
 		    
-			"id":{
-			   "description": "The SAS definition id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sastype":{
-			   "description": "The type of SAS token the SAS definition will create.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attributes":{
-			   "description": "The SAS definition attributes.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"validityperiod":{
-			   "description": "The validity period of SAS tokens created according to the SAS definition.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"storage_account_name":{
 			   "description": "The name of the storage account.",
 			   "type": "Optional[String[1]]"
@@ -49,20 +25,8 @@
 			}
 			,
 		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sid":{
-			   "description": "Storage account SAS definition secret id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"templateuri":{
-			   "description": "The SAS definition token template signed with an arbitrary key.  Tokens created according to the SAS definition will have the same properties as the template.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

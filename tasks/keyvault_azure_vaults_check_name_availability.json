@@ -7,26 +7,14 @@
 		
 		
 		    
-			"message":{
-			   "description": "An error message explaining the Reason value in more detail.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vault_name":{
-			   "description": "The name of the vault.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "An error message explaining the Reason value in more detail.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,6 +27,18 @@
 		    
 			"reason":{
 			   "description": "The reason that a vault name could not be used. The Reason element is only returned if NameAvailable is false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

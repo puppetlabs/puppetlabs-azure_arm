@@ -13,26 +13,14 @@
 			}
 			,
 		    
-			"account_name":{
-			   "description": "The name of the Maps Account.",
+			"resource_group_name":{
+			   "description": "The name of the Azure Resource Group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"target":{
 			   "description": "If available, the component generating the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"key_specification":{
-			   "description": "Which key to regenerate:  primary or secondary.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +37,26 @@
 			}
 			,
 		    
-			"message":{
-			   "description": "If available, a human readable description of the error.",
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the Azure Resource Group.",
+			"account_name":{
+			   "description": "The name of the Maps Account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_specification":{
+			   "description": "Which key to regenerate:  primary or secondary.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "If available, a human readable description of the error.",
 			   "type": "Optional[String[1]]"
 			}
 			

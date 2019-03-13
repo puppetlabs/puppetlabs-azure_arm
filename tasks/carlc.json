@@ -1,0 +1,46 @@
+{
+	"description": "Lists the login credentials for the specified container registry.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group to which the container registry belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_name":{
+			   "description": "The name of the container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"username":{
+			   "description": "The username for a container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"passwords":{
+			   "description": "The list of passwords for a container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Microsoft Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

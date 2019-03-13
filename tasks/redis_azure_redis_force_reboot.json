@@ -7,26 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"reboottype":{
-			   "description": "Which Redis node(s) to reboot. Depending on this value data loss is possible.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"shardid":{
-			   "description": "If clustering is enabled, the ID of the shard to be rebooted.",
+			"message":{
+			   "description": "Status message",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -45,6 +27,18 @@
 		    
 			"parameters":{
 			   "description": "Specifies which Redis node(s) to reboot.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			

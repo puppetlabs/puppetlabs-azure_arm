@@ -7,8 +7,14 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Supported version.",
+			"display":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,14 +25,8 @@
 			}
 			,
 		    
-			"display":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
-			   "description": "",
+			"api_version":{
+			   "description": "Supported version.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
+			"display":{
+			   "description": "Display name of operation",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "Display name of operation",
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
 			   "type": "Optional[String[1]]"
 			}
 			

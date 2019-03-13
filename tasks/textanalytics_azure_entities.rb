@@ -75,7 +75,6 @@ def format_params(key_values)
 
   op_params = [
       op_param('documents', 'body', 'documents', 'documents'),
-      op_param('errors', 'body', 'errors', 'errors'),
       op_param('input', 'body', 'input', 'input'),
     ]
   op_params.each do |i|

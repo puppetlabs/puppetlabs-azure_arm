@@ -7,18 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Specifies the API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"error":{
 			   "description": "The error message body",
 			   "type": "Optional[String[1]]"
@@ -51,6 +39,18 @@
 		    
 			"if_none_match":{
 			   "description": "Set to '*' to allow a new DNS zone to be created, but to prevent updating an existing zone. Other values will be ignored.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Specifies the API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			

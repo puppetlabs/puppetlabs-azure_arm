@@ -1,0 +1,88 @@
+{
+	"description": "Used to disable the backup job for an item within a container. This is an asynchronous operation. To learn the status of the request, call the GetItemOperationResult API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"protected_item_name":{
+			   "description": "The backup item to be deleted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": " The fabric name associated with the backup item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protecteditemtype":{
+			   "description": "The backup item type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backupmanagementtype":{
+			   "description": "The backup management type associated with the backup item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workloadtype":{
+			   "description": "The workload type for this item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sourceresourceid":{
+			   "description": "The ID of the resource to be backed up.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policyid":{
+			   "description": "The ID of the backup policy associated with this backup item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group associated with the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container_name":{
+			   "description": "The container name associated with the backup item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastrecoverypoint":{
+			   "description": "The timestamp when the most recent backup copy was created for this backup item.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

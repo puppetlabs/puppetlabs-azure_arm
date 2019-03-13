@@ -1,0 +1,28 @@
+{
+	"description": "This operation will detect the language of given input content. Returns the ISO 639-3 code for the predominant language comprising the submitted text. Over 110 languages supported.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "The content type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"text_content":{
+			   "description": "Content to screen.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

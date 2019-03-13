@@ -75,7 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
-      op_param('errortype', 'body', 'errortype', 'errortype'),
+      op_param('version', 'body', 'version', 'version'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
       op_param('versionUpdateObject', 'body', 'version_update_object', 'version_update_object'),
     ]

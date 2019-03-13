@@ -7,6 +7,18 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primarysharedkey":{
+			   "description": "The primary shared key of a workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"secondarysharedkey":{
 			   "description": "The secondary shared key of a workspace.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"workspace_name":{
 			   "description": "The Log Analytics Workspace name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primarysharedkey":{
-			   "description": "The primary shared key of a workspace.",
 			   "type": "Optional[String[1]]"
 			}
 			

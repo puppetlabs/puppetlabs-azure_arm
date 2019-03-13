@@ -7,6 +7,24 @@
 		
 		
 		    
+			"grant_access_data":{
+			   "description": "Access data object supplied in the body of the get snapshot access operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"access":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"durationinseconds":{
+			   "description": "Time duration in seconds until the SAS access expires.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"api_version":{
 			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"grant_access_data":{
-			   "description": "Access data object supplied in the body of the get snapshot access operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"access":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"durationinseconds":{
-			   "description": "Time duration in seconds until the SAS access expires.",
 			   "type": "Optional[String[1]]"
 			}
 			

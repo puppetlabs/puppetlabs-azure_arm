@@ -1,0 +1,46 @@
+{
+	"description": "Deletes virtual machines in a VM scale set.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"vm_scale_set_name":{
+			   "description": "The name of the VM scale set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vm_instance_i_ds":{
+			   "description": "A list of virtual machine instance IDs from the VM scale set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instanceids":{
+			   "description": "The virtual machine scale set instance ids.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

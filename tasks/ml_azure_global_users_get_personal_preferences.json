@@ -25,14 +25,8 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Id to be used by the cache orchestrator",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"favoritelabresourceids":{
-			   "description": "Array of favorite lab resource ids",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

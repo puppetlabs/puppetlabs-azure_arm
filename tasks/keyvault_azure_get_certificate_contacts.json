@@ -7,14 +7,8 @@
 		
 		
 		    
-			"name":{
-			   "description": "Name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"phone":{
-			   "description": "Phone number.",
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,8 +19,14 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Client API version.",
+			"name":{
+			   "description": "Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"phone":{
+			   "description": "Phone number.",
 			   "type": "Optional[String[1]]"
 			}
 			

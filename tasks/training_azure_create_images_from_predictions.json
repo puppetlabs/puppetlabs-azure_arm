@@ -25,14 +25,14 @@
 			}
 			,
 		    
-			"isbatchsuccessful":{
-			   "description": "True if all of the images in the batch were created successfully, otherwise false.",
+			"images":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"images":{
-			   "description": "List of the image creation results.",
+			"tagids":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

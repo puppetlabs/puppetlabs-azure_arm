@@ -7,12 +7,6 @@
 		
 		
 		    
-			"url_content_type":{
-			   "description": "The content type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"team_name":{
 			   "description": "Your team name.",
 			   "type": "Optional[String[1]]"
@@ -33,6 +27,12 @@
 		    
 			"error":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"url_content_type":{
+			   "description": "The content type.",
 			   "type": "Optional[String[1]]"
 			}
 			

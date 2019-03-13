@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"display":{
-			   "description": "The operation supported by Advisor.",
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}.",
+			"display":{
+			   "description": "The operation supported by Advisor.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,46 @@
+{
+	"description": "Get the upload location for the user to be able to upload the source.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group to which the container registry belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_name":{
+			   "description": "The name of the container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"uploadurl":{
+			   "description": "The URL where the client can upload the source.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relativepath":{
+			   "description": "The relative path to the source. This is used to submit the subsequent queue build request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Microsoft Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

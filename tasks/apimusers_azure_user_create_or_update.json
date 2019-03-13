@@ -7,12 +7,6 @@
 		
 		
 		    
-			"service_name":{
-			   "description": "The name of the API Management service.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"uid":{
 			   "description": "User identifier. Must be unique in the current API Management service instance.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +45,12 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_name":{
+			   "description": "The name of the API Management service.",
 			   "type": "Optional[String[1]]"
 			}
 			

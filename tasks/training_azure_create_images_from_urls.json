@@ -7,6 +7,12 @@
 		
 		
 		    
+			"images":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tagids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"training_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"images":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

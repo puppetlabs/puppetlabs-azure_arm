@@ -77,6 +77,7 @@ def format_params(key_values)
       op_param('appId', 'path', 'app_id', 'app_id'),
       op_param('entityId', 'path', 'entity_id', 'entity_id'),
       op_param('entityRoleCreateObject', 'body', 'entity_role_create_object', 'entity_role_create_object'),
+      op_param('name', 'body', 'name', 'name'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
     ]
   op_params.each do |i|

@@ -1,0 +1,52 @@
+{
+	"description": "Suggests relationships to create relationship links.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"suggestedrelationships":{
+			   "description": "Suggested relationships for the type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"interaction_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hub_name":{
+			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"interactionname":{
+			   "description": "The interaction name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

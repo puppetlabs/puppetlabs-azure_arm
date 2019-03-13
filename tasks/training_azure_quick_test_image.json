@@ -13,24 +13,6 @@
 			}
 			,
 		    
-			"image_data":{
-			   "description": "Binary image data.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"training_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"created":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +20,12 @@
 			,
 		    
 			"predictions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -51,6 +39,18 @@
 		    
 			"iteration_id":{
 			   "description": "Optional. Specifies the id of a particular iteration to evaluate against.            The default iteration for the project will be used when not specified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_data":{
+			   "description": "Binary image data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,

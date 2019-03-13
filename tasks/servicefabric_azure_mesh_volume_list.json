@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the Volume resource.",
+			"properties":{
+			   "description": "Describes properties of a volume resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "Describes properties of a volume resource.",
+			"name":{
+			   "description": "Name of the Volume resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

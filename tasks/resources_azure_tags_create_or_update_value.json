@@ -7,24 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The ID of the target subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "The tag ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"count":{
-			   "description": "The tag value count.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"tag_value":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -45,6 +27,24 @@
 		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The tag ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"count":{
+			   "description": "The tag value count.",
 			   "type": "Optional[String[1]]"
 			}
 			

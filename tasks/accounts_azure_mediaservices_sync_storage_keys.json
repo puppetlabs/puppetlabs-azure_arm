@@ -37,8 +37,8 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "The error properties.",
+			"id":{
+			   "description": "The ID of the storage account resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

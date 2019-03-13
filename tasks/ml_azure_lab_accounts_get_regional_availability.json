@@ -7,12 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
@@ -31,8 +25,14 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"regionalavailability":{
+			   "description": "Availability information for different size categories per region",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

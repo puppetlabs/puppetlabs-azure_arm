@@ -76,9 +76,9 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('applicationObjectId', 'path', 'application_object_id', 'application_object_id'),
+      op_param('odata.error', 'body', 'odata.error', 'odata.error'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('tenantID', 'path', 'tenant_id', 'tenant_id'),
-      op_param('url', 'body', 'url', 'url'),
     ]
   op_params.each do |i|
     location = i[:location]

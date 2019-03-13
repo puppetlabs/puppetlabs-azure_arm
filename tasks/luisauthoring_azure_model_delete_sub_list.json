@@ -7,20 +7,20 @@
 		
 		
 		    
-			"cl_entity_id":{
-			   "description": "The closed list entity extractor ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"sub_list_id":{
 			   "description": "The sublist ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"errortype":{
-			   "description": "",
+			"code":{
+			   "description": "Status Code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Status details.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,6 +33,12 @@
 		    
 			"version_id":{
 			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cl_entity_id":{
+			   "description": "The closed list entity extractor ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

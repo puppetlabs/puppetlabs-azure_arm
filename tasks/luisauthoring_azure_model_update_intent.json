@@ -7,18 +7,6 @@
 		
 		
 		    
-			"app_id":{
-			   "description": "The application ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version_id":{
-			   "description": "The version ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"intent_id":{
 			   "description": "The intent classifier ID.",
 			   "type": "Optional[String[1]]"
@@ -31,8 +19,20 @@
 			}
 			,
 		    
-			"errortype":{
-			   "description": "",
+			"name":{
+			   "description": "The entity's new name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

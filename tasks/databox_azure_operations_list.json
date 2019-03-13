@@ -7,6 +7,12 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"properties":{
 			   "description": "Operation properties.",
 			   "type": "Optional[String[1]]"
@@ -15,12 +21,6 @@
 		    
 			"origin":{
 			   "description": "Origin of the operation. Can be : user|system|user,system",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,

@@ -1,0 +1,52 @@
+{
+	"description": "Creates or updates the specified trusted identity provider. During update, the trusted identity provider with the specified name will be replaced with this new provider",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The trusted identity provider properties to use when creating a new trusted identity provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The name of the Data Lake Store account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trusted_id_provider_name":{
+			   "description": "The name of the trusted identity provider. This is used for differentiation of providers in the account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to create or replace the trusted identity provider.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

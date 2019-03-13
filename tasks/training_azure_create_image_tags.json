@@ -7,8 +7,14 @@
 		
 		
 		    
-			"created":{
+			"training_key":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Image Tag entries to include in this batch.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -21,24 +27,6 @@
 		    
 			"batch":{
 			   "description": "Batch of image tags. Limited to 128 tags per batch.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"training_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"duplicated":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"exceeded":{
-			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

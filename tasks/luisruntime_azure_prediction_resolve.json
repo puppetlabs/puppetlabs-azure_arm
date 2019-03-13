@@ -7,8 +7,38 @@
 		
 		
 		    
+			"compositeentities":{
+			   "description": "The composite entities extracted from the utterance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alteredquery":{
+			   "description": "The corrected utterance (when spell checking was enabled).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"q":{
+			   "description": "The utterance to predict.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"verbose":{
 			   "description": "If true, return all intents instead of just the top scoring intent.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"log":{
+			   "description": "Log query (default is true)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"topscoringintent":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,8 +61,14 @@
 			}
 			,
 		    
-			"log":{
-			   "description": "Log query (default is true)",
+			"entities":{
+			   "description": "The entities extracted from the utterance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sentimentanalysis":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,14 +79,20 @@
 			}
 			,
 		    
-			"q":{
-			   "description": "The utterance to predict.",
+			"timezone_offset":{
+			   "description": "The timezone offset for the location of the request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"timezone_offset":{
-			   "description": "The timezone offset for the location of the request.",
+			"query":{
+			   "description": "The input utterance that was analyzed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intents":{
+			   "description": "All the intents (and their score) that were detected from utterance.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"uid":{
 			   "description": "User identifier. Must be unique in the current API Management service instance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
 			   "type": "Optional[String[1]]"
 			}
 			

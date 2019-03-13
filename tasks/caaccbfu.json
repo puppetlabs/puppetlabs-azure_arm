@@ -1,0 +1,52 @@
+{
+	"description": "Update current billing features for an Application Insights component.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"billing_features_properties":{
+			   "description": "Properties that need to be specified to update billing features for an Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"currentbillingfeatures":{
+			   "description": "Current enabled pricing plan. When the component is in the Enterprise plan, this will list both 'Basic' and 'Application Insights Enterprise'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"datavolumecap":{
+			   "description": "An Application Insights component daily data volume cap",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"name":{
+			   "description": "The Data Lake Analytics name to check availability for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -33,12 +39,6 @@
 		    
 			"type":{
 			   "description": "The resource type. Note: This should not be set by the user, as the constant value is Microsoft.DataLakeAnalytics/accounts",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The Data Lake Analytics name to check availability for.",
 			   "type": "Optional[String[1]]"
 			}
 			

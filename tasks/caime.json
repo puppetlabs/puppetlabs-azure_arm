@@ -1,0 +1,22 @@
+{
+	"description": "Returns probabilities of the image containing racy or adult content.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cache_image":{
+			   "description": "Whether to retain the submitted image for future use; defaults to false if omitted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

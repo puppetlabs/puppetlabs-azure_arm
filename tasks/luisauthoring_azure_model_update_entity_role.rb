@@ -75,9 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
+      op_param('code', 'body', 'code', 'code'),
       op_param('entityId', 'path', 'entity_id', 'entity_id'),
       op_param('entityRoleUpdateObject', 'body', 'entity_role_update_object', 'entity_role_update_object'),
-      op_param('name', 'body', 'name', 'name'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('roleId', 'path', 'role_id', 'role_id'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
     ]

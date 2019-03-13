@@ -74,18 +74,16 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('administratorlogin', 'body', 'administrator_login', 'administratorlogin'),
-      op_param('administratorloginpassword', 'body', 'administrator_login_password', 'administratorloginpassword'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('authenticationtype', 'body', 'authentication_type', 'authenticationtype'),
       op_param('databaseName', 'path', 'database_name', 'database_name'),
+      op_param('id', 'body', 'id', 'id'),
+      op_param('name', 'body', 'name', 'name'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
+      op_param('properties', 'body', 'properties', 'properties'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('serverName', 'path', 'server_name', 'server_name'),
-      op_param('storagekey', 'body', 'storage_key', 'storagekey'),
-      op_param('storagekeytype', 'body', 'storage_key_type', 'storagekeytype'),
-      op_param('storageuri', 'body', 'storage_uri', 'storageuri'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('type', 'body', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

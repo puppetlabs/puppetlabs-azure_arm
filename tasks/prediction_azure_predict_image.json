@@ -7,13 +7,37 @@
 		
 		
 		    
+			"iteration_id":{
+			   "description": "Optional. Specifies the id of a particular iteration to evaluate against.            The default iteration for the project will be used when not specified",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_data":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prediction_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"predictions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
+			"project":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,37 +55,13 @@
 			}
 			,
 		    
-			"prediction_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"created":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"iteration_id":{
-			   "description": "Optional. Specifies the id of a particular iteration to evaluate against.            The default iteration for the project will be used when not specified",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"image_data":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"iteration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"project":{
+			"id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

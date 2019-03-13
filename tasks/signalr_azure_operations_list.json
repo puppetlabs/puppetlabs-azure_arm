@@ -7,14 +7,14 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
+			"properties":{
+			   "description": "Extra properties for the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "Extra properties for the operation.",
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,

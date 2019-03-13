@@ -74,11 +74,11 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('error', 'body', 'error', 'error'),
       op_param('faceListId', 'path', 'face_list_id', 'face_list_id'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),
-      op_param('persistedfaceid', 'body', 'persistedfaceid', 'persistedfaceid'),
       op_param('targetFace', 'query', 'target_face', 'target_face'),
-      op_param('userdata', 'body', 'userdata', 'userdata'),
+      op_param('userData', 'query', 'user_data', 'user_data'),
     ]
   op_params.each do |i|
     location = i[:location]

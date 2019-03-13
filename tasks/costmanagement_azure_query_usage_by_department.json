@@ -7,24 +7,6 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "Parameters supplied to the CreateOrUpdate Report Config operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"value":{
-			   "description": "The list of usage data.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. The current version is 2018-05-31.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"billing_account_id":{
 			   "description": "BillingAccount ID",
 			   "type": "Optional[String[1]]"
@@ -33,6 +15,42 @@
 		    
 			"department_id":{
 			   "description": "Department ID",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to the CreateOrUpdate Report Config operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The type of the report.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeframe":{
+			   "description": "The time frame for pulling data for the report. If custom, then a specific time period must be provided.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeperiod":{
+			   "description": "Has time period for pulling data for the report.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dataset":{
+			   "description": "Has definition for data in this report config.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2018-05-31.",
 			   "type": "Optional[String[1]]"
 			}
 			

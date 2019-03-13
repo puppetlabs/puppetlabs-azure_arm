@@ -7,6 +7,12 @@
 		
 		
 		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"application_publish_object":{
 			   "description": "The application publish object. The region is the target region that the application is published to.",
 			   "type": "Optional[String[1]]"
@@ -19,14 +25,14 @@
 			}
 			,
 		    
-			"endpointurl":{
-			   "description": "The Runtime endpoint URL for this model version.",
+			"region":{
+			   "description": "The target region that the application is published to.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"app_id":{
-			   "description": "The application ID.",
+			"assignedendpointkey":{
+			   "description": "The endpoint key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +61,8 @@
 			}
 			,
 		    
-			"region":{
-			   "description": "The target region that the application is published to.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"assignedendpointkey":{
-			   "description": "The endpoint key.",
+			"endpointurl":{
+			   "description": "The Runtime endpoint URL for this model version.",
 			   "type": "Optional[String[1]]"
 			}
 			

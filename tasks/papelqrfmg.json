@@ -1,0 +1,82 @@
+{
+	"description": "Queries policy events for the resources under the management group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"management_group_name":{
+			   "description": "Management group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "Maximum number of records to return.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "Ordering expression using OData notation. One or more comma-separated column names with an optional 'desc' (the default) or 'asc', e.g. '$orderby=PolicyAssignmentId, ResourceId asc'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"from":{
+			   "description": "ISO 8601 formatted timestamp specifying the start time of the interval to query. When not specified, the service uses ($to - 1-day).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter expression.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"apply":{
+			   "description": "OData apply expression for aggregations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"management_groups_namespace":{
+			   "description": "The namespace for Microsoft Management RP; only 'Microsoft.Management' is allowed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version to use with the client requests.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"select":{
+			   "description": "Select expression using OData notation. Limits the columns on each record to just those requested, e.g. '$select=PolicyAssignmentId, ResourceId'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"to":{
+			   "description": "ISO 8601 formatted timestamp specifying the end time of the interval to query. When not specified, the service uses request time.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_events_resource":{
+			   "description": "The name of the virtual resource under PolicyEvents resource type; only 'default' is allowed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

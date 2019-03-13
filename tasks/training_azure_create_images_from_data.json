@@ -7,6 +7,18 @@
 		
 		
 		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_ids":{
+			   "description": "The tags ids with which to tag each image. Limited to 20.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"image_data":{
 			   "description": "Binary image data.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"images":{
 			   "description": "List of the image creation results.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"project_id":{
-			   "description": "The project id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_ids":{
-			   "description": "The tags ids with which to tag each image. Limited to 20.",
 			   "type": "Optional[String[1]]"
 			}
 			

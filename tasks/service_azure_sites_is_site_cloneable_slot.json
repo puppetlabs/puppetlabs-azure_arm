@@ -7,14 +7,14 @@
 		
 		
 		    
-			"slot":{
-			   "description": "Name of web app slot. If not specified then will default to production slot.",
+			"resource_group_name":{
+			   "description": "Name of the resource group",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "Subscription Id",
+			"slot":{
+			   "description": "Name of web app slot. If not specified then will default to production slot.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,8 +25,8 @@
 			}
 			,
 		    
-			"result":{
-			   "description": "Name of web app",
+			"blockingfeatures":{
+			   "description": "List of features enabled on web app that prevent cloning",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,20 +37,20 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "Name of the web app",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"blockingfeatures":{
-			   "description": "List of features enabled on web app that prevent cloning",
+			"subscription_id":{
+			   "description": "Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"result":{
+			   "description": "Name of web app",
 			   "type": "Optional[String[1]]"
 			}
 			,

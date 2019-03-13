@@ -7,36 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"backup":{
-			   "description": "Backup location object.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "List of key value pairs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "URI of the resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"location":{
 			   "description": "Location of the resource.",
 			   "type": "Optional[String[1]]"
@@ -49,6 +19,42 @@
 			}
 			,
 		    
+			"backup":{
+			   "description": "Backup location object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "URI of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of a backup location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "List of key value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "Name of the resource.",
 			   "type": "Optional[String[1]]"
@@ -57,12 +63,6 @@
 		    
 			"type":{
 			   "description": "Type of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Properties of a backup location.",
 			   "type": "Optional[String[1]]"
 			}
 			

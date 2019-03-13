@@ -7,12 +7,6 @@
 		
 		
 		    
-			"error":{
-			   "description": "The error details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +33,12 @@
 		    
 			"parameters":{
 			   "description": "The cluster resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,20 +7,8 @@
 		
 		
 		    
-			"properties":{
-			   "description": "ShoeBox properties for the given operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the Operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,6 +21,18 @@
 		    
 			"origin":{
 			   "description": "The intended executor of the operation;governs the display of the operation in the RBAC UX and the audit logs UX",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "ShoeBox properties for the given operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the Operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

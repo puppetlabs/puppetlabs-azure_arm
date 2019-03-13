@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "Properties of the topic type info",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"id":{
 			   "description": "Fully qualified identifier of the resource",
 			   "type": "Optional[String[1]]"
@@ -33,6 +27,12 @@
 		    
 			"type":{
 			   "description": "Type of the resource",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the topic type info",
 			   "type": "Optional[String[1]]"
 			}
 			

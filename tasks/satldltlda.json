@@ -1,0 +1,46 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "Collection of resources",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the top level domain",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"agreement_option":{
+			   "description": "Domain agreement options",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "Link to next page of resources",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"description": "Restore Heartbeat a given CloudEndpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"storage_sync_service_name":{
+			   "description": "Name of Storage Sync Service resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sync_group_name":{
+			   "description": "Name of Sync Group resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cloud_endpoint_name":{
+			   "description": "Name of Cloud Endpoint object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error details of the given entry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"innererror":{
+			   "description": "Error details of the given entry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

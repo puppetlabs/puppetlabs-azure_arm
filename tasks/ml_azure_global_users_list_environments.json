@@ -25,8 +25,8 @@
 			}
 			,
 		    
-			"labid":{
-			   "description": "The resource Id of the lab",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,46 @@
+{
+	"description": "Reimages all the disks ( including data disks ) in the virtual machines in a VM scale set. This operation is only supported for managed disks.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instanceids":{
+			   "description": "The virtual machine scale set instance ids. Omitting the virtual machine scale set instance ids will result in the operation being performed on all virtual machines in the virtual machine scale set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vm_scale_set_name":{
+			   "description": "The name of the VM scale set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vm_instance_i_ds":{
+			   "description": "A list of virtual machine instance IDs from the VM scale set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "Deletes a term from the list with list Id equal to the list Id passed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"list_id":{
+			   "description": "List Id of the image list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"term":{
+			   "description": "Term to be deleted",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language":{
+			   "description": "Language of the terms.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

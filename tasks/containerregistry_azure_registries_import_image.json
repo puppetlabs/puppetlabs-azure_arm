@@ -7,38 +7,8 @@
 		
 		
 		    
-			"untaggedtargetrepositories":{
-			   "description": "List of strings of repository names to do a manifest only copy. No tag will be created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"mode":{
-			   "description": "When Force, any existing target tags will be overwritten. When NoForce, any existing target tags will fail the operation before any copying begins.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"source":{
-			   "description": "The source of the image.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The Microsoft Azure subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "The parameters specifying the image to copy and the source container registry.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"registry_name":{
-			   "description": "The name of the container registry.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +19,44 @@
 			}
 			,
 		    
+			"untaggedtargetrepositories":{
+			   "description": "List of strings of repository names to do a manifest only copy. No tag will be created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"source":{
+			   "description": "The source of the image.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "The client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"subscription_id":{
+			   "description": "The Microsoft Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The name of the resource group to which the container registry belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_name":{
+			   "description": "The name of the container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mode":{
+			   "description": "When Force, any existing target tags will be overwritten. When NoForce, any existing target tags will fail the operation before any copying begins.",
 			   "type": "Optional[String[1]]"
 			}
 			

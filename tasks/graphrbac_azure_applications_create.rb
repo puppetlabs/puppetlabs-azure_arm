@@ -75,8 +75,17 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('odata.error', 'body', 'odata.error', 'odata.error'),
+      op_param('approles', 'body', 'app_roles', 'approles'),
+      op_param('availabletoothertenants', 'body', 'available_to_other_tenants', 'availabletoothertenants'),
+      op_param('displayname', 'body', 'display_name', 'displayname'),
+      op_param('homepage', 'body', 'homepage', 'homepage'),
+      op_param('identifieruris', 'body', 'identifier_uris', 'identifieruris'),
+      op_param('keycredentials', 'body', 'key_credentials', 'keycredentials'),
+      op_param('oauth2allowimplicitflow', 'body', 'oauth2_allow_implicit_flow', 'oauth2allowimplicitflow'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
+      op_param('passwordcredentials', 'body', 'password_credentials', 'passwordcredentials'),
+      op_param('replyurls', 'body', 'reply_urls', 'replyurls'),
+      op_param('requiredresourceaccess', 'body', 'required_resource_access', 'requiredresourceaccess'),
       op_param('tenantID', 'path', 'tenant_id', 'tenant_id'),
     ]
   op_params.each do |i|

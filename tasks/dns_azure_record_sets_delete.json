@@ -7,6 +7,18 @@
 		
 		
 		    
+			"record_type":{
+			   "description": "The type of DNS record in this record set. Record sets of type SOA cannot be deleted (they are deleted when the DNS zone is deleted).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "The etag of the record set. Omit this value to always delete the current record set. Specify the last-seen etag value to prevent accidentally deleting any concurrent changes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Specifies the API version.",
 			   "type": "Optional[String[1]]"
@@ -39,18 +51,6 @@
 		    
 			"relative_record_set_name":{
 			   "description": "The name of the record set, relative to the name of the zone.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"record_type":{
-			   "description": "The type of DNS record in this record set. Record sets of type SOA cannot be deleted (they are deleted when the DNS zone is deleted).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"if_match":{
-			   "description": "The etag of the record set. Omit this value to always delete the current record set. Specify the last-seen etag value to prevent accidentally deleting any concurrent changes.",
 			   "type": "Optional[String[1]]"
 			}
 			

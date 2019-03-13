@@ -1,0 +1,34 @@
+{
+	"description": "Adds a customizable prebuilt domain along with all of its models to this application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prebuilt_domain_object":{
+			   "description": "A prebuilt domain create object containing the name of the domain.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domainname":{
+			   "description": "The domain name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

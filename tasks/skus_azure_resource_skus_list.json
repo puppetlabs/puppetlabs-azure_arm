@@ -7,32 +7,20 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"apiversions":{
-			   "description": "The api versions that support this SKU.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"capacity":{
-			   "description": "Specifies the number of virtual machines in the scale set.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resourcetype":{
-			   "description": "The type of resource the SKU applies to.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kind":{
-			   "description": "The Kind of resources that are supported in this SKU.",
+			"costs":{
+			   "description": "Metadata for retrieving price info.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +31,32 @@
 			}
 			,
 		    
-			"costs":{
-			   "description": "Metadata for retrieving price info.",
+			"restrictions":{
+			   "description": "The restrictions because of which SKU cannot be used. This is empty if there are no restrictions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "The Kind of resources that are supported in this SKU.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"locationinfo":{
+			   "description": "A list of locations and availability zones in those locations where the SKU is available.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourcetype":{
+			   "description": "The type of resource the SKU applies to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"apiversions":{
+			   "description": "The api versions that support this SKU.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,18 +73,6 @@
 			}
 			,
 		    
-			"family":{
-			   "description": "The Family of this particular SKU.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"capabilities":{
 			   "description": "A name value pair to describe the capability.",
 			   "type": "Optional[String[1]]"
@@ -85,14 +85,14 @@
 			}
 			,
 		    
-			"locationinfo":{
-			   "description": "A list of locations and availability zones in those locations where the SKU is available.",
+			"family":{
+			   "description": "The Family of this particular SKU.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"restrictions":{
-			   "description": "The restrictions because of which SKU cannot be used. This is empty if there are no restrictions.",
+			"capacity":{
+			   "description": "Specifies the number of virtual machines in the scale set.",
 			   "type": "Optional[String[1]]"
 			}
 			

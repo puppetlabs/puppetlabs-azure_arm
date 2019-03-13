@@ -7,6 +7,18 @@
 		
 		
 		    
+			"device_name":{
+			   "description": "The device name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the user who needs to be added/updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"user":{
 			   "description": "The user object containing the user details and encrypted password.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"error":{
 			   "description": "The error details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"device_name":{
-			   "description": "The device name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The name of the user who needs to be added/updated.",
 			   "type": "Optional[String[1]]"
 			}
 			

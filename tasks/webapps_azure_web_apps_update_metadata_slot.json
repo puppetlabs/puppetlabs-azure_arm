@@ -7,8 +7,20 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
+			"id":{
+			   "description": "Resource Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "Kind of resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,20 +37,8 @@
 			}
 			,
 		    
-			"slot":{
-			   "description": "Name of the deployment slot. If a slot is not specified, the API will update the metadata for the production slot.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "API Version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,20 +49,20 @@
 			}
 			,
 		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"slot":{
+			   "description": "Name of the deployment slot. If a slot is not specified, the API will update the metadata for the production slot.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kind":{
-			   "description": "Kind of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
 			   "type": "Optional[String[1]]"
 			}
 			

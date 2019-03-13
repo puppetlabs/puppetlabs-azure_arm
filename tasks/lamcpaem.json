@@ -1,0 +1,40 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"extractor_create_object":{
+			   "description": "A model object containing the name and explicit list for the new Pattern.Any entity extractor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The model name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"explicitlist":{
+			   "description": "The Pattern.Any explicit list.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

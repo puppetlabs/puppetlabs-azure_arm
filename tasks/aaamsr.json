@@ -1,0 +1,64 @@
+{
+	"description": "Restores a backup of an API Management service created using the ApiManagementService_Backup operation on the current service. This is a long running operation and could take several minutes to complete.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameters":{
+			   "description": "Parameters supplied to the Restore API Management service from backup operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accesskey":{
+			   "description": "Azure Cloud Storage account (used to place/retrieve the backup) access key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backupname":{
+			   "description": "The name of the backup file to create.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_name":{
+			   "description": "The name of the API Management service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"containername":{
+			   "description": "Azure Cloud Storage blob container name used to place/retrieve the backup.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storageaccount":{
+			   "description": "Azure Cloud Storage account (used to place/retrieve the backup) name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

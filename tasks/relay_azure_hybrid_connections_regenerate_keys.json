@@ -7,26 +7,20 @@
 		
 		
 		    
-			"authorization_rule_name":{
-			   "description": "The authorization rule name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "Parameters supplied to regenerate authorization rule.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"secondaryconnectionstring":{
-			   "description": "Secondary connection string of the created namespace authorization rule.",
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"primarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
+			"secondarykey":{
+			   "description": "A base64-encoded 256-bit secondary key for signing and validating the SAS token.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,8 +31,26 @@
 			}
 			,
 		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primarykey":{
+			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"keyname":{
 			   "description": "A string that describes the authorization rule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondaryconnectionstring":{
+			   "description": "Secondary connection string of the created namespace authorization rule.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,20 +73,8 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondarykey":{
-			   "description": "A base64-encoded 256-bit secondary key for signing and validating the SAS token.",
+			"authorization_rule_name":{
+			   "description": "The authorization rule name.",
 			   "type": "Optional[String[1]]"
 			}
 			

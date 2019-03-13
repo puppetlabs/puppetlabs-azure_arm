@@ -74,14 +74,19 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('actionlog', 'body', 'actionlog', 'actionlog'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('branch', 'body', 'branch', 'branch'),
       op_param('configurationName', 'path', 'configuration_name', 'configuration_name'),
-      op_param('force', 'body', 'force', 'force'),
+      op_param('error', 'body', 'error', 'error'),
+      op_param('id', 'body', 'id', 'id'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
+      op_param('resultinfo', 'body', 'resultinfo', 'resultinfo'),
       op_param('serviceName', 'path', 'service_name', 'service_name'),
+      op_param('started', 'body', 'started', 'started'),
+      op_param('status', 'body', 'status', 'status'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('updated', 'body', 'updated', 'updated'),
     ]
   op_params.each do |i|
     location = i[:location]

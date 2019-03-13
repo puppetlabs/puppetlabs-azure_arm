@@ -7,26 +7,14 @@
 		
 		
 		    
-			"cl_entity_id":{
-			   "description": "The closed list entity extractor ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"word_list_create_object":{
-			   "description": "Words list.",
+			"canonicalform":{
+			   "description": "The standard form that the list represents.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"list":{
 			   "description": "List of synonym words.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"canonicalform":{
-			   "description": "The standard form that the list represents.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,6 +27,18 @@
 		    
 			"version_id":{
 			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cl_entity_id":{
+			   "description": "The closed list entity extractor ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"word_list_create_object":{
+			   "description": "Words list.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -76,7 +76,7 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('deploymentName', 'path', 'deployment_name', 'deployment_name'),
-      op_param('error', 'body', 'error', 'error'),
+      op_param('location', 'body', 'location', 'location'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('properties', 'body', 'properties', 'properties'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),

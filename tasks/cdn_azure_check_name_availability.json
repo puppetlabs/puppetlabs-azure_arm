@@ -19,14 +19,20 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The resource name to validate.",
+			"nameavailable":{
+			   "description": "Indicates whether the name is available.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"type":{
-			   "description": "The type of the resource whose name is to be validated.",
+			"reason":{
+			   "description": "The reason why the name is not available.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The detailed error message describing why the name is not available.",
 			   "type": "Optional[String[1]]"
 			}
 			

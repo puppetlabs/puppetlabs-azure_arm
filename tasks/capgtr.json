@@ -1,0 +1,70 @@
+{
+	"description": "Gets training results.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"scorename":{
+			   "description": "Score name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primaryprofileinstancecount":{
+			   "description": "Instance count of the primary profile.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hub_name":{
+			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"predictiondistribution":{
+			   "description": "Prediction distribution.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"canonicalprofiles":{
+			   "description": "Canonical profiles.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prediction_name":{
+			   "description": "The name of the Prediction.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,31 +7,19 @@
 		
 		
 		    
-			"message":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"innererror":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"input":{
 			   "description": "Collection of documents to analyze.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"code":{
+			"errors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"documents":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,34 @@
+{
+	"description": "Creates a Network resource with the specified name, description and properties. If Network resource with the same name exists, then it is updated with the specified description and properties. Network resource provides connectivity between application services.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_resource_name":{
+			   "description": "The identity of the network.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_resource_description":{
+			   "description": "Description for creating a Network resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error object containing error code and error message.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

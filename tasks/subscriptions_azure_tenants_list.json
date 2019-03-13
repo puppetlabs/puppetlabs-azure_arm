@@ -7,12 +7,6 @@
 		
 		
 		    
-			"tenantid":{
-			   "description": "The tenant ID. For example, 00000000-0000-0000-0000-000000000000.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version to use for the operation.",
 			   "type": "Optional[String[1]]"
@@ -21,6 +15,12 @@
 		    
 			"id":{
 			   "description": "The fully qualified ID of the tenant. For example, /tenants/00000000-0000-0000-0000-000000000000.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The tenant ID. For example, 00000000-0000-0000-0000-000000000000.",
 			   "type": "Optional[String[1]]"
 			}
 			

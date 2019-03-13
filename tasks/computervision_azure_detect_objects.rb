@@ -74,9 +74,9 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('code', 'body', 'code', 'code'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),
-      op_param('metadata', 'body', 'metadata', 'metadata'),
-      op_param('objects', 'body', 'objects', 'objects'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('requestid', 'body', 'request_id', 'requestid'),
     ]
   op_params.each do |i|

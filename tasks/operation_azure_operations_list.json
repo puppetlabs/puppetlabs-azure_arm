@@ -7,18 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
-			   "description": "Origin of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"properties":{
 			   "description": "Operation properties format.",
 			   "type": "Optional[String[1]]"
@@ -33,6 +21,18 @@
 		    
 			"display":{
 			   "description": "Display metadata associated with the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "Origin of the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

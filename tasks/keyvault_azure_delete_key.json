@@ -7,18 +7,6 @@
 		
 		
 		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"managed":{
-			   "description": "True if the key's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"key_name":{
 			   "description": "The name of the key to delete.",
 			   "type": "Optional[String[1]]"
@@ -31,14 +19,8 @@
 			}
 			,
 		    
-			"key":{
-			   "description": "The Json web key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attributes":{
-			   "description": "The key management attributes.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

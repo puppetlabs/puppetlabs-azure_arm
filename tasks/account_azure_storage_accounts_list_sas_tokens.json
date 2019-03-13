@@ -7,18 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"value":{
-			   "description": "The results of the list operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"nextlink":{
 			   "description": "The link (url) to the next page of results.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +39,18 @@
 		    
 			"container_name":{
 			   "description": "The name of the Azure storage container for which the SAS token is being requested.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The results of the list operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,30 +7,6 @@
 		
 		
 		    
-			"properties":{
-			   "description": "Alert related data.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource Type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "Resource Location",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
@@ -49,12 +25,6 @@
 			}
 			,
 		    
-			"request":{
-			   "description": "The input to configure the email notification(alert).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription Id.",
 			   "type": "Optional[String[1]]"
@@ -67,8 +37,14 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource Id",
+			"request":{
+			   "description": "The input to configure the email notification(alert).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The properties of a configure alert request.",
 			   "type": "Optional[String[1]]"
 			}
 			

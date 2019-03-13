@@ -7,18 +7,6 @@
 		
 		
 		    
-			"connection_monitor_name":{
-			   "description": "The name of the connection monitor.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +27,18 @@
 		    
 			"network_watcher_name":{
 			   "description": "The name of the Network Watcher resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connection_monitor_name":{
+			   "description": "The name of the connection monitor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

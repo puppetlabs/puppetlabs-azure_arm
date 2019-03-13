@@ -25,6 +25,12 @@
 			}
 			,
 		    
+			"properties":{
+			   "description": "SourceControl resource specific properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"kind":{
 			   "description": "Kind of resource.",
 			   "type": "Optional[String[1]]"
@@ -33,12 +39,6 @@
 		    
 			"type":{
 			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "SourceControl resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,14 +7,26 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version.",
+			"subscription_id":{
+			   "description": "The subscription id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "Gets or sets the job properties.",
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "The job name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,32 +43,20 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The resource group name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"job_collection_name":{
 			   "description": "The job collection name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"properties":{
+			   "description": "Gets or sets the job properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"type":{
 			   "description": "Gets the job resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"job_name":{
-			   "description": "The job name.",
 			   "type": "Optional[String[1]]"
 			}
 			

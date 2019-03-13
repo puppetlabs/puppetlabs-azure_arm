@@ -1,0 +1,34 @@
+{
+	"description": "Creates a single child in an existing composite entity model.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"c_entity_id":{
+			   "description": "The composite entity extractor ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"composite_child_model_create_object":{
+			   "description": "A model object containing the name of the new composite child model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

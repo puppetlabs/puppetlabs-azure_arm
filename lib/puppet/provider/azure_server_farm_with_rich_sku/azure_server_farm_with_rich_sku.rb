@@ -268,7 +268,6 @@ Puppet::Type.type(:azure_server_farm_with_rich_sku).provide(:arm) do
     header_params["User-Agent"] = "puppetlabs-azure_arm/0.2.1"
 
     op_params = [
-      self.op_param("allowPendingState", "query", "allow_pending_state", "allow_pending_state"),
       self.op_param("api-version", "query", "api_version", "api_version"),
       self.op_param("id", "body", "id", "id"),
       self.op_param("kind", "body", "kind", "kind"),
@@ -309,7 +308,6 @@ Puppet::Type.type(:azure_server_farm_with_rich_sku).provide(:arm) do
     header_params["User-Agent"] = "puppetlabs-azure_arm/0.2.1"
 
     op_params = [
-      self.op_param("allowPendingState", "query", "allow_pending_state", "allow_pending_state"),
       self.op_param("api-version", "query", "api_version", "api_version"),
       self.op_param("id", "body", "id", "id"),
       self.op_param("kind", "body", "kind", "kind"),

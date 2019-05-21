@@ -281,7 +281,7 @@ Puppet::Type.type(:azure_sql_database).provide(:arm) do
         path_params[name_snake.to_sym] = resource[paramalias.to_sym] unless resource.nil? || resource[paramalias.to_sym].nil?
       end
     end
-    self.call_op(path_params, query_params, header_params, body_params, "management.azure.com", "/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Sql/servers/%{server_name}/elasticPools/%{elastic_pool_name}/databases", "Get", "[application/json]")
+    defined?(elastic_pool_name) && self.call_op(path_params, query_params, header_params, body_params, "management.azure.com", "/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Sql/servers/%{server_name}/elasticPools/%{elastic_pool_name}/databases", "Get", "[application/json]")
   end
 
   def self.invoke_get_one(resource = nil, body_params = nil)
@@ -322,7 +322,7 @@ Puppet::Type.type(:azure_sql_database).provide(:arm) do
         path_params[name_snake.to_sym] = resource[paramalias.to_sym] unless resource.nil? || resource[paramalias.to_sym].nil?
       end
     end
-    self.call_op(path_params, query_params, header_params, body_params, "management.azure.com", "/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Sql/servers/%{server_name}/recommendedElasticPools/%{recommended_elastic_pool_name}/databases/%{database_name}", "Get", "[application/json]")
+    defined?(recommended_elastic_pool_name) && self.call_op(path_params, query_params, header_params, body_params, "management.azure.com", "/subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.Sql/servers/%{server_name}/recommendedElasticPools/%{recommended_elastic_pool_name}/databases/%{database_name}", "Get", "[application/json]")
   end
 
   def self.authenticate(path_params, query_params, header_params, body_params)

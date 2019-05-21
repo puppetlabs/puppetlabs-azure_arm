@@ -10,9 +10,7 @@ Puppet::Type.newtype(:azure_sql_database) do
   validate do
     required_properties = [
       :location,
-      :elastic_pool_name,
       :parameters,
-      :recommended_elastic_pool_name,
       :resource_group_name,
       :server_name,
     ]
@@ -21,6 +19,18 @@ Puppet::Type.newtype(:azure_sql_database) do
       if self[:ensure] == :present && self[property].nil? && self.provider.send(property) == :absent
         raise Puppet::Error, "In azure_sql_database you must provide a value for #{property}"
       end
+    end
+  end
+  newproperty(:elastic_pool_name) do
+    desc "Elastic Pool Name."
+    validate do |value|
+      true
+    end
+  end
+  newproperty(:recommended_elastic_pool_name) do
+    desc "Recommended Elastic Pool Name."
+    validate do |value|
+      true
     end
   end
   newproperty(:id) do

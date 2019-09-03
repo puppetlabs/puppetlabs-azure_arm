@@ -7,18 +7,6 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "User filtering parameters.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"tenant_id":{
 			   "description": "The tenant ID.",
 			   "type": "Optional[String[1]]"
@@ -33,6 +21,18 @@
 		    
 			"object_id":{
 			   "description": "The object ID of the user for which to get group membership.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "User filtering parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

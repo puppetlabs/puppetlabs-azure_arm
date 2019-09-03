@@ -25,8 +25,8 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"environmentid":{
+			   "description": "The resourceId of the environment",
 			   "type": "Optional[String[1]]"
 			}
 			

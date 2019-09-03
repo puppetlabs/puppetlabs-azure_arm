@@ -7,20 +7,8 @@
 		
 		
 		    
-			"project_id":{
-			   "description": "The project id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"batch":{
-			   "description": "Image and tag ids. Limited to 64 images and 20 tags per batch.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"training_key":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,6 +21,18 @@
 		    
 			"tagids":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"batch":{
+			   "description": "Image and tag ids. Limited to 64 images and 20 tags per batch.",
 			   "type": "Optional[String[1]]"
 			}
 			

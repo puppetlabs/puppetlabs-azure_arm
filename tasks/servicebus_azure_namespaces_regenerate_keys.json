@@ -7,6 +7,24 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keytype":{
+			   "description": "The access key to regenerate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"key":{
 			   "description": "Optional, if the key value provided, is reset for KeyType value or autogenerate Key value set for keyType",
 			   "type": "Optional[String[1]]"
@@ -26,31 +44,13 @@
 			,
 		    
 			"authorization_rule_name":{
-			   "description": "The authorizationrule name.",
+			   "description": "The authorization rule name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"parameters":{
 			   "description": "Parameters supplied to regenerate the authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"keytype":{
-			   "description": "The access key to regenerate.",
 			   "type": "Optional[String[1]]"
 			}
 			

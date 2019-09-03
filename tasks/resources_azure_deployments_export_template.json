@@ -7,6 +7,18 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_name":{
+			   "description": "The name of the deployment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
@@ -19,20 +31,8 @@
 			}
 			,
 		    
-			"template":{
-			   "description": "The template content.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group. The name is case insensitive.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployment_name":{
-			   "description": "The name of the deployment from which to get the template.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

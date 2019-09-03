@@ -1,0 +1,100 @@
+{
+	"description": "Get a summarized count of your alerts grouped by various parameters (e.g. grouping by 'Severity' returns the count of alerts for each severity).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"include_smart_groups_count":{
+			   "description": "Include count of the SmartGroups as part of the summary. Default value is 'false'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alert_state":{
+			   "description": "Filter by state of the alert instance. Default value is to select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_time_range":{
+			   "description": "Filter by custom time range in the format /  where time is in (ISO-8601 format)'. Permissible values is within 30 days from  query time. Either timeRange or customTimeRange could be used but not both. Default is none.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_resource_group":{
+			   "description": "Filter by target resource group name. Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitor_service":{
+			   "description": "Filter by monitor service which generates the alert instance. Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_resource":{
+			   "description": "Filter by target resource( which is full ARM ID) Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_resource_type":{
+			   "description": "Filter by target resource type. Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitor_condition":{
+			   "description": "Filter by monitor condition which is either 'Fired' or 'Resolved'. Default value is to select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"severity":{
+			   "description": "Filter by severity.  Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scope":{
+			   "description": "scope here is resourceId for which alert is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"groupby":{
+			   "description": "This parameter allows the result set to be grouped by input fields. For example, groupby=severity,alertstate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alert_rule":{
+			   "description": "Filter by specific alert rule.  Default value is to select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"time_range":{
+			   "description": "Filter by time range by below listed values. Default value is 1 day.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

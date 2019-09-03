@@ -1,0 +1,28 @@
+{
+	"description": "Get applicable `Reservation`s that are applied to this subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Supported version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Id of the subscription",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

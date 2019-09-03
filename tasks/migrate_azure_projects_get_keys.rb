@@ -76,10 +76,11 @@ def format_params(key_values)
   op_params = [
       op_param('Accept-Language', 'header', 'accept_language', 'accept_language'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('projectName', 'path', 'project_name', 'project_name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('workspaceid', 'body', 'workspace_id', 'workspaceid'),
+      op_param('workspacekey', 'body', 'workspace_key', 'workspacekey'),
     ]
   op_params.each do |i|
     location = i[:location]

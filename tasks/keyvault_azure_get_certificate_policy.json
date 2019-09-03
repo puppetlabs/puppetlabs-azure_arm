@@ -1,0 +1,28 @@
+{
+	"description": "The GetCertificatePolicy operation returns the specified certificate policy resources in the specified key vault. This operation requires the certificates/get permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"certificate_name":{
+			   "description": "The name of the certificate in a given key vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

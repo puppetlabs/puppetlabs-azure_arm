@@ -7,12 +7,6 @@
 		
 		
 		    
-			"properties":{
-			   "description": "BillingMeter resource specific properties",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"billing_location":{
 			   "description": "Azure Location of billable resource",
 			   "type": "Optional[String[1]]"
@@ -37,26 +31,14 @@
 			}
 			,
 		    
-			"kind":{
-			   "description": "Kind of resource.",
+			"value":{
+			   "description": "Collection of resources.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"type":{
-			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource Name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id.",
+			"nextlink":{
+			   "description": "Link to next page of resources.",
 			   "type": "Optional[String[1]]"
 			}
 			

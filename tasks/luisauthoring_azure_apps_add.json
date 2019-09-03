@@ -7,14 +7,20 @@
 		
 		
 		    
-			"domain":{
-			   "description": "The domain for the new application. Optional. E.g.: Comics.",
+			"name":{
+			   "description": "The name for the new application.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"application_create_object":{
-			   "description": "A model containing Name, Description (optional), Culture, Usage Scenario (optional), Domain (optional) and initial version ID (optional) of the application. Default value for the version ID is 0.1. Note: the culture cannot be changed after the app is created.",
+			"culture":{
+			   "description": "The culture for the new application. It is the language that your app understands and speaks. E.g.: 'en-us'. Note: the culture cannot be changed after the app is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain":{
+			   "description": "The domain for the new application. Optional. E.g.: Comics.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,20 +37,14 @@
 			}
 			,
 		    
+			"application_create_object":{
+			   "description": "An application containing Name, Description (optional), Culture, Usage Scenario (optional), Domain (optional) and initial version ID (optional) of the application. Default value for the version ID is '0.1'. Note: the culture cannot be changed after the app is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"usagescenario":{
 			   "description": "Defines the scenario for the new application. Optional. E.g.: IoT.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The name for the new application.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"culture":{
-			   "description": "The culture for the new application. It is the language that your app understands and speaks. E.g.: 'en-us'. Note: the culture cannot be changed after the app is created.",
 			   "type": "Optional[String[1]]"
 			}
 			

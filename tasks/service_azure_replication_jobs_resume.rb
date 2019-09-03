@@ -75,12 +75,16 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('jobName', 'path', 'job_name', 'job_name'),
+      op_param('id', 'body', 'id', 'id'),
+      op_param('jobName', 'path', 'name', 'job_name'),
+      op_param('location', 'body', 'location', 'location'),
+      op_param('name', 'body', 'name', 'name'),
       op_param('properties', 'body', 'properties', 'properties'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('resourceName', 'path', 'resource_name', 'resource_name'),
       op_param('resumeJobParams', 'body', 'resume_job_params', 'resume_job_params'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('type', 'body', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

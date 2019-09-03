@@ -75,14 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('attributes', 'body', 'attributes', 'attributes'),
-      op_param('deleteddate', 'body', 'deleted_date', 'deleteddate'),
-      op_param('id', 'body', 'id', 'id'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('maxresults', 'query', 'maxresults', 'maxresults'),
-      op_param('recoveryid', 'body', 'recovery_id', 'recoveryid'),
-      op_param('resourceid', 'body', 'resource_id', 'resourceid'),
-      op_param('scheduledpurgedate', 'body', 'scheduled_purge_date', 'scheduledpurgedate'),
-      op_param('tags', 'body', 'tags', 'tags'),
     ]
   op_params.each do |i|
     location = i[:location]

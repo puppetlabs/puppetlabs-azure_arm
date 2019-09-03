@@ -75,9 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
+      op_param('errortype', 'body', 'errortype', 'errortype'),
       op_param('listOfAppVersionSettingObject', 'body', 'list_of_app_version_setting_object', 'list_of_app_version_setting_object'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('value', 'body', 'value', 'value'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
     ]
   op_params.each do |i|

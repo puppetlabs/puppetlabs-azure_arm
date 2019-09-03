@@ -75,8 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('storage-account-name', 'path', 'storage_account_name', 'storage_account_name'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

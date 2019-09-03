@@ -1,0 +1,40 @@
+{
+	"description": "Get the application publish settings including 'UseAllTrainingData'.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"sentimentanalysis":{
+			   "description": "Setting sentiment analysis as true returns the sentiment of the input utterance along with the response",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"speech":{
+			   "description": "Enables speech priming in your app",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"spellchecker":{
+			   "description": "Enables spell checking of the utterance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

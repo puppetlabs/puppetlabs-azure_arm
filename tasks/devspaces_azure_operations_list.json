@@ -1,0 +1,28 @@
+{
+	"description": "Lists all the supported operations by the Microsoft.DevSpaces resource provider along with their description.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"nextlink":{
+			   "description": "The URI that can be used to request the next page for list of Azure operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "Resource provider operations list.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,14 +7,8 @@
 		
 		
 		    
-			"name":{
-			   "description": "Resource Name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"slot":{
-			   "description": "Name of web app slot. If not specified then will default to production slot.",
+			"properties":{
+			   "description": "SnapshotRestoreRequest resource specific properties",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,26 +19,8 @@
 			}
 			,
 		    
-			"kind":{
-			   "description": "Kind of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"restore_request":{
-			   "description": "Snapshot restore settings. Snapshot information can be obtained by calling GetDeletedSites or GetSiteSnapshots API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			"slot":{
+			   "description": "Name of web app slot. If not specified then will default to production slot.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +31,38 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "SnapshotRestoreRequest resource specific properties",
+			"kind":{
+			   "description": "Kind of resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"type":{
 			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restore_request":{
+			   "description": "Snapshot restore settings. Snapshot information can be obtained by calling GetDeletedSites or GetSiteSnapshots API.",
 			   "type": "Optional[String[1]]"
 			}
 			

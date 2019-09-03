@@ -1,0 +1,52 @@
+{
+	"description": "Gets a record set.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error message body",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"zone_name":{
+			   "description": "The name of the DNS zone (without a terminating dot).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relative_record_set_name":{
+			   "description": "The name of the record set, relative to the name of the zone.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"record_type":{
+			   "description": "The type of DNS record in this record set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Specifies the API version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

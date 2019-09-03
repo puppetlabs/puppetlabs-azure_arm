@@ -7,6 +7,12 @@
 		
 		
 		    
+			"properties":{
+			   "description": "The Data Lake Analytics account properties to use for creating.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -45,12 +51,6 @@
 		    
 			"tags":{
 			   "description": "The resource tags.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The Data Lake Analytics account properties to use for creating.",
 			   "type": "Optional[String[1]]"
 			}
 			

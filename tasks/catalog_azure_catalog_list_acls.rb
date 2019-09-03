@@ -80,10 +80,9 @@ def format_params(key_values)
       op_param('$select', 'query', '$select', '$select'),
       op_param('$skip', 'query', '$skip', '$skip'),
       op_param('$top', 'query', '$top', '$top'),
-      op_param('acetype', 'body', 'ace_type', 'acetype'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('permission', 'body', 'permission', 'permission'),
-      op_param('principalid', 'body', 'principal_id', 'principalid'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

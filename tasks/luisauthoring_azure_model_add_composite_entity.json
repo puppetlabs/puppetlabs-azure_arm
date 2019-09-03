@@ -1,5 +1,5 @@
 {
-	"description": "Adds a composite entity extractor to the application.",
+	"description": "Adds a composite entity extractor to a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,14 +7,20 @@
 		
 		
 		    
-			"composite_model_create_object":{
-			   "description": "A model containing the name and children of the new entity extractor.",
+			"app_id":{
+			   "description": "The application ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Entity name.",
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"composite_model_create_object":{
+			   "description": "A model containing the name and children of the new entity extractor.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,14 +31,8 @@
 			}
 			,
 		    
-			"app_id":{
-			   "description": "The application ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version_id":{
-			   "description": "The version ID.",
+			"name":{
+			   "description": "Entity name.",
 			   "type": "Optional[String[1]]"
 			}
 			

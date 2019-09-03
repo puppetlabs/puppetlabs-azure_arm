@@ -1,0 +1,58 @@
+{
+	"description": "Returns the load information about the application that was created or in the process of being created in the Service Fabric cluster and whose name matches the one specified as the parameter. The response includes the name, minimum nodes, maximum nodes, the number of nodes the application is occupying currently, and application load metric information about the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"applicationloadmetricinformation":{
+			   "description": "List of application capacity metric description.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The identity of the application. This is an encoded representation of the application name. This is used in the REST APIs to identify the application resource.Starting in version 6.0, hierarchical names are delimited with the '~' character. For example, if the application name is 'fabric:/myapp/app1',the application identity would be 'myapp~app1' in 6.0+ and 'myapp/app1' in previous versions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"minimumnodes":{
+			   "description": "The minimum number of nodes for this application.It is the number of nodes where Service Fabric will reserve Capacity in the cluster which equals to ReservedLoad * MinimumNodes for this Application instance.For applications that do not have application capacity defined this value will be zero.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maximumnodes":{
+			   "description": "The maximum number of nodes where this application can be instantiated.It is the number of nodes this application is allowed to span.For applications that do not have application capacity defined this value will be zero.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nodecount":{
+			   "description": "The number of nodes on which this application is instantiated.For applications that do not have application capacity defined this value will be zero.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.0'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accept any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0, but if the runtime is 6.1, in order to make it easier to write the clients, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "The identity of the application. This is typically the full name of the application without the 'fabric:' URI scheme.Starting from version 6.0, hierarchical names are delimited with the '~' character.For example, if the application name is 'fabric:/myapp/app1', the application identity would be 'myapp~app1' in 6.0+ and 'myapp/app1' in previous versions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

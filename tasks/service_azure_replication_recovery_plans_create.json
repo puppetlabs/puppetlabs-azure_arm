@@ -7,24 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group where the recovery services vault is present.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription Id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"recovery_plan_name":{
-			   "description": "Recovery plan name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"input":{
 			   "description": "Recovery Plan creation input.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +27,24 @@
 		    
 			"resource_name":{
 			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recovery_plan_name":{
+			   "description": "Recovery plan name.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"tier":{
-			   "description": "The name of the Azure pricing tier to which the SKU applies.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The client API version.",
 			   "type": "Optional[String[1]]"
@@ -27,6 +21,12 @@
 		    
 			"name":{
 			   "description": "Name of the SKU level.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tier":{
+			   "description": "The name of the Azure pricing tier to which the SKU applies.",
 			   "type": "Optional[String[1]]"
 			}
 			

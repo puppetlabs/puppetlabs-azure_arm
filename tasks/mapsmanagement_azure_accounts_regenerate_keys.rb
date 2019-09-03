@@ -76,13 +76,12 @@ def format_params(key_values)
   op_params = [
       op_param('accountName', 'path', 'account_name', 'account_name'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('code', 'body', 'code', 'code'),
-      op_param('details', 'body', 'details', 'details'),
+      op_param('id', 'body', 'id', 'id'),
       op_param('keySpecification', 'body', 'key_specification', 'key_specification'),
-      op_param('message', 'body', 'message', 'message'),
+      op_param('primarykey', 'body', 'primarykey', 'primarykey'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
+      op_param('secondarykey', 'body', 'secondarykey', 'secondarykey'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('target', 'body', 'target', 'target'),
     ]
   op_params.each do |i|
     location = i[:location]

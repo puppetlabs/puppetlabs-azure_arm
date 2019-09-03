@@ -1,0 +1,58 @@
+{
+	"description": "Creates a new cognitive skillset in an Azure Search service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cognitiveservices":{
+			   "description": "Details about cognitive services to be used when running skills.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataetag":{
+			   "description": "The ETag of the skillset.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skillset":{
+			   "description": "The skillset containing one or more cognitive skills to create in an Azure Search service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the skillset.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "The description of the skillset.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skills":{
+			   "description": "A list of skills in the skillset.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

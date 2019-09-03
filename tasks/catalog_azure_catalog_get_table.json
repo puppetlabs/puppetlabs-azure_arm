@@ -1,0 +1,94 @@
+{
+	"description": "Retrieves the specified table from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tablename":{
+			   "description": "the name of the table.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"columnlist":{
+			   "description": "the list of columns in this table",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"indexlist":{
+			   "description": "the list of indices in this table",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partitionkeylist":{
+			   "description": "the list of partition keys in the table",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"externaltable":{
+			   "description": "the external table associated with the table.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"distributioninfo":{
+			   "description": "the distributions info of the table",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"table_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schemaname":{
+			   "description": "the name of the schema associated with this table and database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

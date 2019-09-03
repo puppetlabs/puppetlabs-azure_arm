@@ -8,19 +8,19 @@
 		
 		    
 			"api_version":{
-			   "description": "Client Api Version.",
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
+			"nextlink":{
+			   "description": "URL to get the next set of operation list results if there are any.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "The object that represents the operation.",
+			"value":{
+			   "description": "List of CDN operations supported by the CDN resource provider.",
 			   "type": "Optional[String[1]]"
 			}
 			

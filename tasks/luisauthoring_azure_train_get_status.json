@@ -1,0 +1,22 @@
+{
+	"description": "Gets the training status of all models (intents and entities) for the specified LUIS app. You must call the train API to train the LUIS app before you call this API to get training status. 'appID' specifies the LUIS app ID. 'versionId' specifies the version number of the LUIS app. For example, '0.1'.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

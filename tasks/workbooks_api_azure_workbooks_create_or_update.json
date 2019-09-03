@@ -7,6 +7,12 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_name":{
 			   "description": "The name of the Application Insights component resource.",
 			   "type": "Optional[String[1]]"
@@ -14,7 +20,7 @@
 			,
 		    
 			"api_version":{
-			   "description": "Client Api Version.",
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -44,13 +50,7 @@
 			,
 		    
 			"subscription_id":{
-			   "description": "The Azure subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
+			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,24 @@
 		
 		
 		    
+			"blockingcharacteristics":{
+			   "description": "List of blocking application characteristics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the app.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
 			   "type": "Optional[String[1]]"
@@ -33,24 +51,6 @@
 		    
 			"unsupportedfeatures":{
 			   "description": "List of features enabled on app that are non-blocking but cannot be cloned. The app can still be clonedbut the features in this list will not be set up on cloned app.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"blockingcharacteristics":{
-			   "description": "List of blocking application characteristics.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the app.",
 			   "type": "Optional[String[1]]"
 			}
 			

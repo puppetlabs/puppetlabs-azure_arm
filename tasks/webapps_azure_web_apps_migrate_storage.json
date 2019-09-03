@@ -7,14 +7,14 @@
 		
 		
 		    
-			"kind":{
-			   "description": "Kind of resource.",
+			"subscription_name":{
+			   "description": "Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"migration_options":{
-			   "description": "Migration migrationOptions.",
+			"name":{
+			   "description": "Resource Name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,8 +25,26 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource Name.",
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "Kind of resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"migration_options":{
+			   "description": "Migration migrationOptions.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,26 +61,8 @@
 			}
 			,
 		    
-			"type":{
-			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"id":{
 			   "description": "Resource Id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_name":{
-			   "description": "Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			

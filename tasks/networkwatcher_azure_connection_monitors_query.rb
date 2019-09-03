@@ -76,9 +76,10 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('connectionMonitorName', 'path', 'connection_monitor_name', 'connection_monitor_name'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('networkWatcherName', 'path', 'network_watcher_name', 'network_watcher_name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
+      op_param('sourcestatus', 'body', 'source_status', 'sourcestatus'),
+      op_param('states', 'body', 'states', 'states'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|

@@ -7,26 +7,50 @@
 		
 		
 		    
+			"name":{
+			   "description": "Resource Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource Type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"fabricid":{
-			   "description": "The Id of the fabric to search jobs under.",
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Resource Location",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The custom data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"resource_name":{
 			   "description": "The name of the recovery services vault.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group where the recovery services vault is present.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,30 +63,6 @@
 		    
 			"job_query_parameter":{
 			   "description": "job query filter.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"jobstatus":{
-			   "description": "The states of the job to be filtered can be in.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"starttime":{
-			   "description": "Date time to get jobs from.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"endtime":{
-			   "description": "Date time to get jobs up to.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"affectedobjecttypes":{
-			   "description": "The type of objects.",
 			   "type": "Optional[String[1]]"
 			}
 			

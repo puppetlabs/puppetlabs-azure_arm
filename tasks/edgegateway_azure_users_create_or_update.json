@@ -1,11 +1,17 @@
 {
-	"description": "Create a new user or update an existing user's information on a data box edge/gateway device.",
+	"description": "Creates a new user or updates an existing user's information on a data box edge/gateway device.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"error":{
+			   "description": "The error details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"device_name":{
 			   "description": "The device name.",
@@ -14,13 +20,13 @@
 			,
 		    
 			"name":{
-			   "description": "The name of the user who needs to be added/updated.",
+			   "description": "The user name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"user":{
-			   "description": "The user object containing the user details and encrypted password.",
+			   "description": "The user details.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,12 +45,6 @@
 		    
 			"api_version":{
 			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
 			}
 			

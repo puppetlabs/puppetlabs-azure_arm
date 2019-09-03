@@ -7,44 +7,44 @@
 		
 		
 		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
-			   "description": "Gets or sets the name of the tag.",
+			   "description": "The tag name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"description":{
-			   "description": "Gets or sets the description of the tag.",
+			   "description": "Optional description for the tag.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"type":{
-			   "description": "Gets or sets the type of the tag.",
+			   "description": "Optional type for the tag.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"training_key":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"imagecount":{
-			   "description": "Gets the number of images with this tag.",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Gets the Tag ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"project_id":{
-			   "description": "The project id.",
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
 			   "type": "Optional[String[1]]"
 			}
 			

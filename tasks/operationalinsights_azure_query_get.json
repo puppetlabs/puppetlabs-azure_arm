@@ -1,0 +1,34 @@
+{
+	"description": "Executes an Analytics query for data",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workspace_id":{
+			   "description": "ID of the workspace. This is Workspace ID from the Properties blade in the Azure portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"query":{
+			   "description": "The Analytics query. Learn more about the [Analytics query syntax](https://azure.microsoft.com/documentation/articles/app-insights-analytics-reference/)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timespan":{
+			   "description": "Optional. The timespan over which to query data. This is an ISO8601 time period value.  This timespan is applied in addition to any that are specified in the query expression.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error details.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

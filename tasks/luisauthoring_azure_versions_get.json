@@ -1,0 +1,28 @@
+{
+	"description": "Gets the version information such as date created, last modified date, endpoint URL, count of intents and entities, training and publishing status.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

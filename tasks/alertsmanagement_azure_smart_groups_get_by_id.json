@@ -1,0 +1,52 @@
+{
+	"description": "Get information related to a specific Smart Group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "Azure resource name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"smart_group_id":{
+			   "description": "Smart group unique id. ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Azure resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Azure resource type",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

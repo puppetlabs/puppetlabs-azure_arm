@@ -7,18 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Name of resource group",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"kind":{
 			   "description": "Kind of resource",
 			   "type": "Optional[String[1]]"
@@ -31,8 +19,20 @@
 			}
 			,
 		    
-			"type":{
-			   "description": "Resource type",
+			"resource_group_name":{
+			   "description": "Name of resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +55,14 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "API Version",
+			"location":{
+			   "description": "Resource Location",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"location":{
-			   "description": "Resource Location",
+			"type":{
+			   "description": "Resource type",
 			   "type": "Optional[String[1]]"
 			}
 			

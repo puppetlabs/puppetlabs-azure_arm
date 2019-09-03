@@ -1,0 +1,40 @@
+{
+	"description": "List cluster code versions by location",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"location":{
+			   "description": "The location for the cluster code versions, this is different from cluster location",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the ServiceFabric resource provider api",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The customer subscription identifier",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URL to use for getting the next set of results.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

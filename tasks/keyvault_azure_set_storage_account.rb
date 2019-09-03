@@ -78,7 +78,6 @@ def format_params(key_values)
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('attributes', 'body', 'attributes', 'attributes'),
       op_param('autoregeneratekey', 'body', 'auto_regenerate_key', 'autoregeneratekey'),
-      op_param('id', 'body', 'id', 'id'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('regenerationperiod', 'body', 'regeneration_period', 'regenerationperiod'),
       op_param('resourceid', 'body', 'resource_id', 'resourceid'),

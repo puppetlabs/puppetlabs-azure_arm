@@ -75,7 +75,6 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
-      op_param('id', 'body', 'id', 'id'),
       op_param('intent', 'body', 'intent', 'intent'),
       op_param('pattern', 'body', 'pattern', 'pattern'),
       op_param('versionId', 'path', 'version_id', 'version_id'),

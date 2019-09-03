@@ -1,0 +1,52 @@
+{
+	"description": "Gets the details of a server, for a given service, that are onboarded to Azure Active Directory Connect Health Service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"service_name":{
+			   "description": "The name of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_member_id":{
+			   "description": "The server Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The link used to get the next page of operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The value returned by the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"totalcount":{
+			   "description": "The total count of service elements.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuationtoken":{
+			   "description": "The continuation token for paginated calls.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

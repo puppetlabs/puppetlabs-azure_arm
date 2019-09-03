@@ -31,8 +31,14 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "The error body.",
+			"key1":{
+			   "description": "Gets the value of key 1.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key2":{
+			   "description": "Gets the value of key 2.",
 			   "type": "Optional[String[1]]"
 			}
 			

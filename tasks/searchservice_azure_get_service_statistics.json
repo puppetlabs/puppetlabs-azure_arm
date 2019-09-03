@@ -1,0 +1,34 @@
+{
+	"description": "Gets service level statistics for an Azure Search service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"limits":{
+			   "description": "Service level general limits.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"counters":{
+			   "description": "Service level resource counters.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

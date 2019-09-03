@@ -1,0 +1,40 @@
+{
+	"description": "Gives the supported security providers for the virtual wan.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"virtual_wan_name":{
+			   "description": "The name of the VirtualWAN for which supported security providers are needed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"supportedproviders":{
+			   "description": "List of VirtualWAN security providers.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,52 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"published_name":{
+			   "description": "Specifies the name of the model to evaluate against.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application":{
+			   "description": "Optional. Specifies the name of application using the endpoint.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_data":{
+			   "description": "Binary image data. Supported formats are JPEG, GIF, PNG, and BMP. Supports images up to 4MB.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prediction_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

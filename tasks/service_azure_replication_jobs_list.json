@@ -1,0 +1,52 @@
+{
+	"description": "Gets the list of Azure Site Recovery Jobs for the vault.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "The list of jobs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The value of next link.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter options.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

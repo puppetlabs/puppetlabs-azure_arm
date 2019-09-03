@@ -1,0 +1,70 @@
+{
+	"description": "Retrieves the specified view from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"schemaname":{
+			   "description": "the name of the schema associated with this view and database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"viewname":{
+			   "description": "the name of the view.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"definition":{
+			   "description": "the defined query of the view.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"view_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"name":{
+			   "description": "The name to check for availability",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The resource type. Must be set to Microsoft.Migrate/projects",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"location_name":{
 			   "description": "The desired region for the name check.",
 			   "type": "Optional[String[1]]"
@@ -27,12 +39,6 @@
 		    
 			"parameters":{
 			   "description": "Properties needed to check the availability of a name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,28 @@
+{
+	"description": "Gets the specified resource provider at the tenant level.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_provider_namespace":{
+			   "description": "The namespace of the resource provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

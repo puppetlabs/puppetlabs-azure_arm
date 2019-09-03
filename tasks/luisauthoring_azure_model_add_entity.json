@@ -1,5 +1,5 @@
 {
-	"description": "Adds an entity extractor to the application.",
+	"description": "Adds a simple entity extractor to a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -20,7 +20,7 @@
 			,
 		    
 			"model_create_object":{
-			   "description": "A model object containing the name for the new entity extractor.",
+			   "description": "A model object containing the name for the new simple entity extractor.",
 			   "type": "Optional[String[1]]"
 			}
 			,

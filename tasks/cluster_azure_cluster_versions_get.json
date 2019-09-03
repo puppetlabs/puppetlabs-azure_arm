@@ -1,0 +1,46 @@
+{
+	"description": "Gets information about an available Service Fabric cluster code version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"location":{
+			   "description": "The location for the cluster code versions. This is different from cluster location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the Service Fabric resource provider API. This is a required parameter and it's value must be '2019-03-01' for this specification.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The customer subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_version":{
+			   "description": "The cluster code version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URL to use for getting the next set of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

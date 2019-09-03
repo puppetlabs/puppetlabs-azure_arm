@@ -7,12 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "The name of the Redis cache.",
 			   "type": "Optional[String[1]]"
@@ -21,12 +15,6 @@
 		    
 			"parameters":{
 			   "description": "Parameters supplied to the Create Redis operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +31,32 @@
 			}
 			,
 		    
+			"location":{
+			   "description": "The geo-location where the resource lives",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "Redis cache properties.",
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"location":{
-			   "description": "The geo-location where the resource lives",
+			"properties":{
+			   "description": "Redis cache properties.",
 			   "type": "Optional[String[1]]"
 			}
 			

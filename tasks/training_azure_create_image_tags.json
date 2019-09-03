@@ -7,18 +7,6 @@
 		
 		
 		    
-			"training_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Image Tag entries to include in this batch.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"project_id":{
 			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
@@ -27,6 +15,18 @@
 		    
 			"batch":{
 			   "description": "Batch of image tags. Limited to 128 tags per batch.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Image Tag entries to include in this batch.",
 			   "type": "Optional[String[1]]"
 			}
 			

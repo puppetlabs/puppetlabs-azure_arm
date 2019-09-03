@@ -1,11 +1,17 @@
 {
-	"description": "Deletes an entity extractor from the application.",
+	"description": "Deletes an entity from a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"version_id":{
 			   "description": "The version ID.",
@@ -19,20 +25,8 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "Status Code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "Status details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"app_id":{
-			   "description": "The application ID.",
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

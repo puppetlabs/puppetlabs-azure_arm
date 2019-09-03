@@ -31,8 +31,14 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"sourcestatus":{
+			   "description": "Status of connection monitor source.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"states":{
+			   "description": "Information about connection states.",
 			   "type": "Optional[String[1]]"
 			}
 			,

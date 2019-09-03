@@ -1,0 +1,28 @@
+{
+	"description": "Get the list of available Service Fabric resource provider API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the Service Fabric resource provider API",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of operations supported by the Service Fabric resource provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "URL to get the next set of operation list results if there are any.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,11 +1,17 @@
 {
-	"description": "Updates one of the closed list's sublists.",
+	"description": "Updates one of the list entity's sublists in a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"app_id":{
 			   "description": "The application ID.",
@@ -20,7 +26,7 @@
 			,
 		    
 			"cl_entity_id":{
-			   "description": "The closed list entity extractor ID.",
+			   "description": "The list entity extractor ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,18 +39,6 @@
 		    
 			"word_list_base_update_object":{
 			   "description": "A sublist update object containing the new canonical form and the list of words.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"list":{
-			   "description": "List of synonym words.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"canonicalform":{
-			   "description": "The standard form that the list represents.",
 			   "type": "Optional[String[1]]"
 			}
 			

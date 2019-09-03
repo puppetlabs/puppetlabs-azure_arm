@@ -7,26 +7,50 @@
 		
 		
 		    
-			"resourcetype":{
-			   "description": "Container Type - VM, SQLPaaS, DPM, AzureFileShare...",
+			"azure_region":{
+			   "description": "Azure region to hit Api",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resourceid":{
-			   "description": "Entire ARM resource id of the resource",
+			"protecteditemname":{
+			   "description": "Specifies the product specific ds name. E.g. vm;iaasvmcontainer;csname;vmname.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policyname":{
+			   "description": "Specifies the policy name which is used for protection",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vaultid":{
+			   "description": "Specifies the arm resource id of the vault",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protectionstatus":{
+			   "description": "Specifies whether the container is registered or not",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"containername":{
+			   "description": "Specifies the product specific container name. E.g. iaasvmcontainer;iaasvmcontainer;csname;vmname.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorcode":{
+			   "description": "ErrorCode in case of intent failed",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"api_version":{
 			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"azure_region":{
-			   "description": "Azure region to hit Api",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +67,20 @@
 			}
 			,
 		    
-			"pologicalname":{
-			   "description": "Protectable Item Logical Name",
+			"fabricname":{
+			   "description": "Specifies the fabric name - Azure or AD",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errormessage":{
+			   "description": "ErrorMessage in case of intent failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registrationstatus":{
+			   "description": "Container registration status",
 			   "type": "Optional[String[1]]"
 			}
 			

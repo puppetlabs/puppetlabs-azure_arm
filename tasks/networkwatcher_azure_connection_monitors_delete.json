@@ -31,8 +31,20 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"tags":{
+			   "description": "Connection monitor tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the connection monitor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Connection monitor location.",
 			   "type": "Optional[String[1]]"
 			}
 			,

@@ -1,0 +1,58 @@
+{
+	"description": "Gets all the Event Hubs in a Namespace.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"skip":{
+			   "description": "Skip is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skip parameter that specifies a starting point to use for subsequent calls.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "May be used to limit the number of results to the most recent N usageDetails.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group within the azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"namespace_name":{
+			   "description": "The Namespace name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

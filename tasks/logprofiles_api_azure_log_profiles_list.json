@@ -1,0 +1,28 @@
+{
+	"description": "List the log profiles.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "the values of the log profiles.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

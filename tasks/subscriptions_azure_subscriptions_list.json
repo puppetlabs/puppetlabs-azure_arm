@@ -7,44 +7,20 @@
 		
 		
 		    
-			"subscriptionid":{
-			   "description": "The subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"displayname":{
-			   "description": "The subscription display name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"state":{
-			   "description": "The subscription state. Possible values are Enabled, Warned, PastDue, Disabled, and Deleted.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscriptionpolicies":{
-			   "description": "The subscription policies.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version to use for the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"authorizationsource":{
-			   "description": "The authorization source of the request. Valid values are one or more combinations of Legacy, RoleBased, Bypassed, Direct and Management. For example, 'Legacy, RoleBased'.",
+			"value":{
+			   "description": "An array of subscriptions.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "The fully qualified ID for the subscription. For example, /subscriptions/00000000-0000-0000-0000-000000000000.",
+			"nextlink":{
+			   "description": "The URL to get the next set of results.",
 			   "type": "Optional[String[1]]"
 			}
 			

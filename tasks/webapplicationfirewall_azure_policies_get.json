@@ -1,0 +1,46 @@
+{
+	"description": "Retrieve protection policy with specified name within a resource group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_name":{
+			   "description": "The name of the Web Application Firewall Policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

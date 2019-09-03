@@ -1,0 +1,64 @@
+{
+	"description": "Returns private cloud by its name",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"region_id":{
+			   "description": "The region Id (westus, eastus)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Private cloud properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pc_name":{
+			   "description": "The private cloud name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Azure Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Azure Id, e.g. '/subscriptions/4da99247-a172-4ed6-8ae9-ebed2d12f839/providers/Microsoft.VMwareCloudSimple/privateClouds/cloud123'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Location where private cloud created, e.g 'westus'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Private cloud name",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

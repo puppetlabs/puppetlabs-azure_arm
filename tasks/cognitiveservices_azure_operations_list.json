@@ -7,18 +7,6 @@
 		
 		
 		    
-			"origin":{
-			   "description": "The origin of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Additional properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Version of the API to be used with the client request. Current version is 2017-04-18",
 			   "type": "Optional[String[1]]"
@@ -33,6 +21,18 @@
 		    
 			"display":{
 			   "description": "The operation supported by Cognitive Services.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "The origin of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Additional properties.",
 			   "type": "Optional[String[1]]"
 			}
 			

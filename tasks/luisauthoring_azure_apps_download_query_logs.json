@@ -1,0 +1,22 @@
+{
+	"description": "Gets the logs of the past month's endpoint queries for the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

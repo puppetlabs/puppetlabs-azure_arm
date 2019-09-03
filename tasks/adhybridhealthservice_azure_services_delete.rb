@@ -76,10 +76,10 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('confirm', 'query', 'confirm', 'confirm'),
-      op_param('continuationtoken', 'body', 'continuationtoken', 'continuationtoken'),
-      op_param('nextlink', 'body', 'nextlink', 'nextlink'),
+      op_param('continuationtoken', 'body', 'continuation_token', 'continuationtoken'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
       op_param('serviceName', 'path', 'service_name', 'service_name'),
-      op_param('totalcount', 'body', 'totalcount', 'totalcount'),
+      op_param('totalcount', 'body', 'total_count', 'totalcount'),
       op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|

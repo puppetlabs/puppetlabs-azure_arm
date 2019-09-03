@@ -1,0 +1,58 @@
+{
+	"description": "Queries the resources managed by Azure Resource Manager for all subscriptions specified in the request.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"totalrecords":{
+			   "description": "Number of total records matching the query.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"count":{
+			   "description": "Number of records returned in the current response. In the case of paging, this is the number of records in the current page.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resulttruncated":{
+			   "description": "Indicates whether the query results are truncated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skiptoken":{
+			   "description": "When present, the value can be passed to a subsequent query call (together with the same query and subscriptions used in the current request) to retrieve the next page of data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data":{
+			   "description": "Query output in tabular format.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"facets":{
+			   "description": "Query facets.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"query":{
+			   "description": "Request specifying query and its options.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

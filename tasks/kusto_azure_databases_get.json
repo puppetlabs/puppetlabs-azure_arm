@@ -1,0 +1,46 @@
+{
+	"description": "Returns a database.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster_name":{
+			   "description": "The name of the Kusto cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "The name of the database in the Kusto cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "An error response from Kusto.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group containing the Kusto cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

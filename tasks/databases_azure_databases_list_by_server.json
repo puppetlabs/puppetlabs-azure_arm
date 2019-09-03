@@ -1,0 +1,52 @@
+{
+	"description": "Returns a list of databases in a server.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID that identifies an Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_name":{
+			   "description": "The name of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expand":{
+			   "description": "A comma separated list of child objects to expand in the response. Possible properties: serviceTierAdvisors, transparentDataEncryption.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "An OData filter expression that describes a subset of databases to return.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of databases housed in the server.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -8,19 +8,7 @@
 		
 		    
 			"tag_value":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_name":{
-			   "description": "The name of the tag.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tagvalue":{
-			   "description": "The tag value.",
+			   "description": "The value of the tag to create.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +25,14 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "The tag ID.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"count":{
-			   "description": "The tag value count.",
+			"tag_name":{
+			   "description": "The name of the tag.",
 			   "type": "Optional[String[1]]"
 			}
 			

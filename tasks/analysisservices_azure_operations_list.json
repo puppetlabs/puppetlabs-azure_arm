@@ -7,20 +7,20 @@
 		
 		
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "The object that represents the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of analysis services operations supported by the Microsoft.AnalysisServices resource provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "URL to get the next set of operation list results if there are any.",
 			   "type": "Optional[String[1]]"
 			}
 			

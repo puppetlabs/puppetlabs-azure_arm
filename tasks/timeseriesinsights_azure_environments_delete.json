@@ -7,6 +7,12 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "Name of an Azure Resource group.",
 			   "type": "Optional[String[1]]"
@@ -27,12 +33,6 @@
 		    
 			"error":{
 			   "description": "Describes a particular API error with an error code and a message.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Azure Subscription ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

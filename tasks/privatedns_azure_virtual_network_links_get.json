@@ -1,0 +1,46 @@
+{
+	"description": "Gets a virtual network link to the specified Private DNS zone.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"private_zone_name":{
+			   "description": "The name of the Private DNS zone (without a terminating dot).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"virtual_network_link_name":{
+			   "description": "The name of the virtual network link.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error message body",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

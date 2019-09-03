@@ -13,8 +13,14 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"id":{
+			   "description": "Identifier for the contacts collection.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contacts":{
+			   "description": "The contact list for the vault certificates.",
 			   "type": "Optional[String[1]]"
 			}
 			

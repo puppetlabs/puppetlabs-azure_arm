@@ -1,0 +1,58 @@
+{
+	"description": "Returns a list of backups available for the specified partition. The server enumerates all the backups available in the backup store configured in the backup policy. It also allows filtering of the result based on start and end datetime or just fetching the latest available backup for the partition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This version is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accepts any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0 and the runtime is 6.1, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"latest":{
+			   "description": "Specifies whether to get only the most recent backup available for a partition for the specified time range.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_date_time_filter":{
+			   "description": "Specify the start date time from which to enumerate backups, in datetime format. The date time must be specified in ISO8601 format. This is an optional parameter. If not specified, all backups from the beginning are enumerated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_date_time_filter":{
+			   "description": "Specify the end date time till which to enumerate backups, in datetime format. The date time must be specified in ISO8601 format. This is an optional parameter. If not specified, enumeration is done till the most recent backup.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuationtoken":{
+			   "description": "The continuation token parameter is used to obtain next set of results. The continuation token is included in the response of the API when the results from the system do not fit in a single response. When this value is passed to the next API call, the API returns next set of results. If there are no further results, then the continuation token is not included in the response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"items":{
+			   "description": "List of backup information.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_id":{
+			   "description": "The identity of the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

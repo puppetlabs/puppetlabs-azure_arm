@@ -75,14 +75,12 @@ def format_params(key_values)
 
   op_params = [
       op_param('classificationType', 'query', 'classification_type', 'classification_type'),
-      op_param('created', 'body', 'created', 'created'),
-      op_param('description', 'body', 'description', 'description'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('description', 'query', 'description', 'description'),
       op_param('domainId', 'query', 'domain_id', 'domain_id'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('lastmodified', 'body', 'last_modified', 'lastmodified'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('settings', 'body', 'settings', 'settings'),
-      op_param('thumbnailuri', 'body', 'thumbnail_uri', 'thumbnailuri'),
+      op_param('message', 'body', 'message', 'message'),
+      op_param('name', 'query', 'name', 'name'),
+      op_param('targetExportPlatforms', 'query', 'target_export_platforms', 'target_export_platforms'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
     ]
   op_params.each do |i|

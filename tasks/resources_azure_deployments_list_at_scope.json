@@ -1,0 +1,40 @@
+{
+	"description": "Get all the deployments at the given scope.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"scope":{
+			   "description": "The scope of a deployment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The filter to apply on the operation. For example, you can use $filter=provisioningState eq '{state}'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of results to get. If null is passed, returns all deployments.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

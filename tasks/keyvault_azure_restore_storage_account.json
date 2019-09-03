@@ -7,56 +7,20 @@
 		
 		
 		    
-			"resourceid":{
-			   "description": "The storage account resource id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"regenerationperiod":{
-			   "description": "The key regeneration time duration specified in ISO-8601 format.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attributes":{
-			   "description": "The storage account attributes.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"activekeyname":{
-			   "description": "The current active storage account key name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"autoregeneratekey":{
-			   "description": "whether keyvault should manage the storage account for the user.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "The parameters to restore the storage account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "The storage account id.",
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters to restore the storage account.",
 			   "type": "Optional[String[1]]"
 			}
 			

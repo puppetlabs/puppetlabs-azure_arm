@@ -1,0 +1,28 @@
+{
+	"description": "Get application package.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"incarnation_id":{
+			   "description": "Incarnation Id of the gallery application",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "This is the API version to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metadata":{
+			   "description": "This must be set to 'true'.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

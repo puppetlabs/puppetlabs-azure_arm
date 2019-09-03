@@ -75,12 +75,14 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('factoryName', 'path', 'factory_name', 'factory_name'),
+      op_param('isRecovery', 'query', 'is_recovery', 'is_recovery'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('pipelineName', 'path', 'pipeline_name', 'pipeline_name'),
       op_param('referencePipelineRunId', 'query', 'reference_pipeline_run_id', 'reference_pipeline_run_id'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
+      op_param('runid', 'body', 'run_id', 'runid'),
+      op_param('startActivityName', 'query', 'start_activity_name', 'start_activity_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"language":{
+			   "description": "Language of the terms.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"cache_image":{
 			   "description": "Whether to retain the submitted image for future use; defaults to false if omitted.",
 			   "type": "Optional[String[1]]"
@@ -21,12 +27,6 @@
 		    
 			"error":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"language":{
-			   "description": "Language of the terms.",
 			   "type": "Optional[String[1]]"
 			}
 			

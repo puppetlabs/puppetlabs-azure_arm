@@ -1,0 +1,46 @@
+{
+	"description": "List lab accounts in a subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The filter to apply to the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The maximum number of resources to return from the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "The ordering expression for the results, using OData notation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

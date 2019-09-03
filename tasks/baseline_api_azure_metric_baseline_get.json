@@ -1,0 +1,88 @@
+{
+	"description": "**Gets the baseline values for a specific metric**.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"result_type":{
+			   "description": "Allows retrieving only metadata of the baseline. On data request all information is retrieved.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metricnamespace":{
+			   "description": "Metric namespace to query metric definitions for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"highthresholds":{
+			   "description": "The high thresholds of the baseline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sensitivity":{
+			   "description": "The sensitivity of the baseline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metric_name":{
+			   "description": "The name of the metric to retrieve the baseline for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"aggregation":{
+			   "description": "The aggregation type of the metric to retrieve the baseline for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sensitivities":{
+			   "description": "The list of sensitivities (comma separated) to retrieve.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lowthresholds":{
+			   "description": "The low thresholds of the baseline.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The **$filter** is used to describe a set of dimensions with their concrete values which produce a specific metric's time series, in which a baseline is requested for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_uri":{
+			   "description": "The identifier of the resource. It has the following structure: subscriptions/{subscriptionName}/resourceGroups/{resourceGroupName}/providers/{providerName}/{resourceName}. For example: subscriptions/b368ca2f-e298-46b7-b0ab-012281956afa/resourceGroups/vms/providers/Microsoft.Compute/virtualMachines/vm1",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timespan":{
+			   "description": "The timespan of the query. It is a string with the following format 'startDateTime_ISO/endDateTime_ISO'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"interval":{
+			   "description": "The interval (i.e. timegrain) of the query.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "Gets a list of workflows by subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"filter":{
+			   "description": "The filter to apply on the operation. Options for filters include: State, Trigger, and ReferencedResourceId.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of workflows.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URL to get the next set of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of items to be included in the result.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"network_watcher_name":{
-			   "description": "The name of the network watcher.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"packet_capture_name":{
 			   "description": "The name of the packet capture session.",
 			   "type": "Optional[String[1]]"
@@ -38,7 +26,19 @@
 			,
 		    
 			"error":{
-			   "description": "",
+			   "description": "The error details object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_watcher_name":{
+			   "description": "The name of the network watcher.",
 			   "type": "Optional[String[1]]"
 			}
 			

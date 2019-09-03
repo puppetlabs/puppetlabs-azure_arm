@@ -7,6 +7,12 @@
 		
 		
 		    
+			"factory_name":{
+			   "description": "The factory name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"trigger_name":{
 			   "description": "The trigger name.",
 			   "type": "Optional[String[1]]"
@@ -45,12 +51,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The resource group name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"factory_name":{
-			   "description": "The factory name.",
 			   "type": "Optional[String[1]]"
 			}
 			

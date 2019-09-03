@@ -25,14 +25,14 @@
 			}
 			,
 		    
-			"value":{
-			   "description": "Collection of resources.",
+			"keywords":{
+			   "description": "Keywords to be used for generating domain recommendations.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"nextlink":{
-			   "description": "Link to next page of resources.",
+			"maxdomainrecommendations":{
+			   "description": "Maximum number of recommendations.",
 			   "type": "Optional[String[1]]"
 			}
 			

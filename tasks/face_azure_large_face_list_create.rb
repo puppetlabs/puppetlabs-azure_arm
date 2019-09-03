@@ -75,8 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('body', 'body', 'body', 'body'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('largeFaceListId', 'path', 'large_face_list_id', 'large_face_list_id'),
+      op_param('name', 'body', 'name', 'name'),
+      op_param('recognitionmodel', 'body', 'recognitionmodel', 'recognitionmodel'),
+      op_param('userdata', 'body', 'userdata', 'userdata'),
     ]
   op_params.each do |i|
     location = i[:location]

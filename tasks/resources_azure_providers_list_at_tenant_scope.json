@@ -1,0 +1,28 @@
+{
+	"description": "Gets all resource providers for the tenant.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of results to return. If null is passed returns all providers.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

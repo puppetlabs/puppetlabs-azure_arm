@@ -14,7 +14,7 @@ def smart_groups_get_all(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https:////subscriptions/%{subscription_id}/providers/Microsoft.AlertsManagement/smartGroups" % path_params
+  uri_string = "https://management.azure.com//subscriptions/%{subscription_id}/providers/Microsoft.AlertsManagement/smartGroups" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)

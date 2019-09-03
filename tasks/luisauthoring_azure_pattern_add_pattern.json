@@ -8,13 +8,7 @@
 		
 		    
 			"intent":{
-			   "description": "The intent's name where the pattern belongs to.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "The pattern ID.",
+			   "description": "The intent's name which the pattern belongs to.",
 			   "type": "Optional[String[1]]"
 			}
 			,

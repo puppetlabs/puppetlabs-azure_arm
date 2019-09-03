@@ -7,6 +7,12 @@
 		
 		
 		    
+			"name":{
+			   "description": "The name of the resource",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
@@ -43,14 +49,20 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "Error details of the given entry.",
+			"properties":{
+			   "description": "The parameters used to create the registered server.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"innererror":{
-			   "description": "Error details of the given entry.",
+			"type":{
+			   "description": "The type of the resource. Ex- Microsoft.Compute/virtualMachines or Microsoft.Storage/storageAccounts.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Fully qualified resource Id for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}",
 			   "type": "Optional[String[1]]"
 			}
 			

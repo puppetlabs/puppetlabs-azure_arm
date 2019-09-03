@@ -7,14 +7,14 @@
 		
 		
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
+			"value":{
+			   "description": "List of operations supported by the resource provider.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "The object that describes the operations",
+			"nextlink":{
+			   "description": "URL to get the next set of operation list results if there are any.",
 			   "type": "Optional[String[1]]"
 			}
 			,

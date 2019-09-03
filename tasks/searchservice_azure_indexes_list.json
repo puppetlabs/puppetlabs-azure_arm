@@ -1,0 +1,34 @@
+{
+	"description": "Lists all indexes available for an Azure Search service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"select":{
+			   "description": "Selects which properties of the index definitions to retrieve. Specified as a comma-separated list of JSON property names, or '*' for all properties. The default is all properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The indexes in the Search service.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

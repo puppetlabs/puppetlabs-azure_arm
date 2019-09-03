@@ -7,20 +7,8 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "Gets subscription Id which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sku":{
-			   "description": "The billing information of the resource.(e.g. basic vs. standard)",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Settings used to provision or configure the resource",
+			"location":{
+			   "description": "Azure GEO region: e.g. West US | East US | North Central US | South Central US | West Europe | North Europe | East Asia | Southeast Asia | etc. The geo region of a resource never changes after it is created.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,20 +19,8 @@
 			}
 			,
 		    
-			"parameters":{
-			   "description": "Parameters for the create or update operation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			"sku":{
+			   "description": "The billing information of the resource.(e.g. basic vs. standard)",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +31,32 @@
 			}
 			,
 		    
-			"location":{
-			   "description": "Azure GEO region: e.g. West US | East US | North Central US | South Central US | West Europe | North Europe | East Asia | Southeast Asia | etc. The geo region of a resource never changes after it is created.",
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription Id which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Settings used to provision or configure the resource",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters for the create or update operation",
 			   "type": "Optional[String[1]]"
 			}
 			

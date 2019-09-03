@@ -1,0 +1,28 @@
+{
+	"description": "Lists all exports at the given scope.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"scope":{
+			   "description": "The scope associated with export operations. This includes '/subscriptions/{subscriptionId}' for subscription scope, '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' for resourceGroup scope, '/providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope and '/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/departments/{departmentId}' for Department scope, '/providers/Microsoft.Billing/billingAccounts/{billingAccountId}/enrollmentAccounts/{enrollmentAccountId}' for EnrollmentAccount scope.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2018-05-31.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The details of the error.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

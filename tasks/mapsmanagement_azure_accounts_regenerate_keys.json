@@ -7,6 +7,18 @@
 		
 		
 		    
+			"secondarykey":{
+			   "description": "The secondary key for accessing the Maps REST APIs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -15,30 +27,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the Azure Resource Group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target":{
-			   "description": "If available, the component generating the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"details":{
-			   "description": "If available, a list of additional details about the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "Error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +43,14 @@
 			}
 			,
 		    
-			"message":{
-			   "description": "If available, a human readable description of the error.",
+			"id":{
+			   "description": "The full Azure resource identifier of the Maps Account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primarykey":{
+			   "description": "The primary key for accessing the Maps REST APIs.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,5 +1,5 @@
 {
-	"description": "Lists all of the available consumption REST API operations.",
+	"description": "Lists all of the available cost management REST API operations.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,14 +13,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "The object that represents the operation.",
+			"error":{
+			   "description": "The details of the error.",
 			   "type": "Optional[String[1]]"
 			}
 			

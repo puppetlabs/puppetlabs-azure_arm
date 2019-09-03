@@ -75,14 +75,9 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('autorestoreondataloss', 'body', 'auto_restore_on_data_loss', 'autorestoreondataloss'),
       op_param('ContinuationToken', 'query', 'continuation_token', 'continuation_token'),
-      op_param('maxincrementalbackups', 'body', 'max_incremental_backups', 'maxincrementalbackups'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('MaxResults', 'query', 'max_results', 'max_results'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('retentionpolicy', 'body', 'retention_policy', 'retentionpolicy'),
-      op_param('schedule', 'body', 'schedule', 'schedule'),
-      op_param('storage', 'body', 'storage', 'storage'),
       op_param('timeout', 'query', 'timeout', 'timeout'),
     ]
   op_params.each do |i|

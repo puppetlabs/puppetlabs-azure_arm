@@ -7,20 +7,20 @@
 		
 		
 		    
-			"properties":{
-			   "description": "Describes properties of a gateway resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the Gateway resource.",
+			"continuationtoken":{
+			   "description": "The continuation token parameter is used to obtain next set of results. The continuation token is included in the response of the API when the results from the system do not fit in a single response. When this value is passed to the next API call, the API returns next set of results. If there are no further results, then the continuation token is not included in the response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"items":{
+			   "description": "One page of the list.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,28 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "List of operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "Link for the next set of operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

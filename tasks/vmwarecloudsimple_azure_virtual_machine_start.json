@@ -1,0 +1,46 @@
+{
+	"description": "Power on virtual machine",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error's body",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"referer":{
+			   "description": "referer url",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"virtual_machine_name":{
+			   "description": "virtual machine name",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

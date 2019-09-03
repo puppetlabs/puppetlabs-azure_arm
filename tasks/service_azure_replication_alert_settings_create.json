@@ -7,18 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_name":{
-			   "description": "The name of the recovery services vault.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group where the recovery services vault is present.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +33,18 @@
 		    
 			"properties":{
 			   "description": "The properties of a configure alert request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
 			   "type": "Optional[String[1]]"
 			}
 			

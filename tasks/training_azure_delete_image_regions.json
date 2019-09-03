@@ -20,13 +20,7 @@
 			,
 		    
 			"training_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"created":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -38,6 +32,12 @@
 			,
 		    
 			"exceeded":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

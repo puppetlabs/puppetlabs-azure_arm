@@ -19,14 +19,8 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "Status Code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "Status details.",
+			"email":{
+			   "description": "The email address of the user.",
 			   "type": "Optional[String[1]]"
 			}
 			

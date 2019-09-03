@@ -75,9 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('groupid', 'body', 'group_id', 'groupid'),
+      op_param('memberid', 'body', 'member_id', 'memberid'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('tenantID', 'path', 'tenant_id', 'tenant_id'),
-      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

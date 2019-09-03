@@ -7,14 +7,8 @@
 		
 		
 		    
-			"compositeentities":{
-			   "description": "The composite entities extracted from the utterance.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"alteredquery":{
-			   "description": "The corrected utterance (when spell checking was enabled).",
+			"statuscode":{
+			   "description": "HTTP Status code",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,20 +19,8 @@
 			}
 			,
 		    
-			"verbose":{
-			   "description": "If true, return all intents instead of just the top scoring intent.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"log":{
-			   "description": "Log query (default is true)",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"topscoringintent":{
-			   "description": "",
+			"timezone_offset":{
+			   "description": "The timezone offset for the location of the request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -56,19 +38,7 @@
 			,
 		    
 			"bing_spell_check_subscription_key":{
-			   "description": "The subscription key to use when enabling bing spell check",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"entities":{
-			   "description": "The entities extracted from the utterance.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sentimentanalysis":{
-			   "description": "",
+			   "description": "The subscription key to use when enabling Bing spell check",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -79,20 +49,20 @@
 			}
 			,
 		    
-			"timezone_offset":{
-			   "description": "The timezone offset for the location of the request.",
+			"verbose":{
+			   "description": "If true, return all intents instead of just the top scoring intent.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"query":{
-			   "description": "The input utterance that was analyzed.",
+			"log":{
+			   "description": "Log query (default is true)",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"intents":{
-			   "description": "All the intents (and their score) that were detected from utterance.",
+			"message":{
+			   "description": "Cause of the error.",
 			   "type": "Optional[String[1]]"
 			}
 			

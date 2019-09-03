@@ -7,12 +7,6 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "regenerate key parameters.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Version of the API to be used with the client request. Current version is 2017-04-18",
 			   "type": "Optional[String[1]]"
@@ -25,8 +19,14 @@
 			}
 			,
 		    
-			"keyname":{
-			   "description": "key name to generate (Key1|Key2)",
+			"key1":{
+			   "description": "Gets the value of key 1.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key2":{
+			   "description": "Gets the value of key 2.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,6 +39,12 @@
 		    
 			"account_name":{
 			   "description": "The name of Cognitive Services account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "regenerate key parameters.",
 			   "type": "Optional[String[1]]"
 			}
 			

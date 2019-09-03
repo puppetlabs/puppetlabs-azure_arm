@@ -1,0 +1,22 @@
+{
+	"description": "Gets the endpoint URLs for the prebuilt Cortana applications.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"endpointkeys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpointurls":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,82 @@
+{
+	"description": "Retrieves a preview set of rows in given partition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"database_name":{
+			   "description": "The name of the database containing the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_name":{
+			   "description": "The name of the table partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_rows":{
+			   "description": "The maximum number of preview rows to be retrieved.Rows returned may be less than or equal to this number depending on row sizes and number of rows in the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_columns":{
+			   "description": "The maximum number of columns to be retrieved.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_name":{
+			   "description": "The name of the schema containing the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"table_name":{
+			   "description": "The name of the table containing the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema":{
+			   "description": "the schema of the table or partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"totalrowcount":{
+			   "description": "the total number of rows in the table or partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"totalcolumncount":{
+			   "description": "the total number of columns in the table or partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rows":{
+			   "description": "the rows of the table or partition preview, where each row is an array of string representations the row's values. Note: Byte arrays will appear as base-64 encoded values, SqlMap and SqlArray objects will appear as escaped JSON objects, and DateTime objects will appear as ISO formatted UTC date-times.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"truncated":{
+			   "description": "true if the amount of data in the response is less than expected due to the preview operation's size limitations. This can occur if the requested rows or row counts are too large.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

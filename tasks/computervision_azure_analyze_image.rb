@@ -75,11 +75,12 @@ def format_params(key_values)
 
   op_params = [
       op_param('code', 'body', 'code', 'code'),
+      op_param('descriptionExclude', 'query', 'description_exclude', 'description_exclude'),
       op_param('details', 'query', 'details', 'details'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),
       op_param('language', 'query', 'language', 'language'),
       op_param('message', 'body', 'message', 'message'),
-      op_param('requestid', 'body', 'requestid', 'requestid'),
+      op_param('requestid', 'body', 'request_id', 'requestid'),
       op_param('visualFeatures', 'query', 'visual_features', 'visual_features'),
     ]
   op_params.each do |i|

@@ -7,32 +7,8 @@
 		
 		
 		    
-			"capacity":{
-			   "description": "Min, max, and default scale values of the SKU.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"locations":{
-			   "description": "Locations of the SKU.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"capabilities":{
-			   "description": "Capabilities of the SKU, e.g., is traffic manager enabled?",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the resource SKU.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"size":{
-			   "description": "Size specifier of the resource SKU.",
+			"subscription_id":{
+			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +19,14 @@
 			}
 			,
 		    
-			"family":{
-			   "description": "Family code of the resource SKU.",
+			"resourcetype":{
+			   "description": "Resource type that this SKU applies to.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tier":{
-			   "description": "Service Tier of the resource SKU.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			"skus":{
+			   "description": "List of SKUs the subscription is able to use.",
 			   "type": "Optional[String[1]]"
 			}
 			

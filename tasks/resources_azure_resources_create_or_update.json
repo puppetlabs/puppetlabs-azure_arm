@@ -1,0 +1,64 @@
+{
+	"description": "Creates a resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parent_resource_path":{
+			   "description": "The parent resource identity.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the resource to create.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters for creating or updating the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group for the resource. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_provider_namespace":{
+			   "description": "The namespace of the resource provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_type":{
+			   "description": "The resource type of the resource to create.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

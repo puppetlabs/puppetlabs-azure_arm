@@ -7,20 +7,8 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "The resource group name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"manager_name":{
-			   "description": "The manager name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The api version",
+			"properties":{
+			   "description": "The properties of the configure device request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,14 +19,8 @@
 			}
 			,
 		    
-			"parameters":{
-			   "description": "The minimal properties to configure a device.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The properties of the configure device request.",
+			"kind":{
+			   "description": "The Kind of the object. Currently only Series8000 is supported",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +37,32 @@
 			}
 			,
 		    
-			"kind":{
-			   "description": "The Kind of the object. Currently only Series8000 is supported",
+			"parameters":{
+			   "description": "The minimal properties to configure a device.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"subscription_id":{
 			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
 			   "type": "Optional[String[1]]"
 			}
 			

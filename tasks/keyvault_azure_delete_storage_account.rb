@@ -74,15 +74,9 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('activekeyname', 'body', 'active_key_name', 'activekeyname'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('attributes', 'body', 'attributes', 'attributes'),
-      op_param('autoregeneratekey', 'body', 'auto_regenerate_key', 'autoregeneratekey'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('regenerationperiod', 'body', 'regeneration_period', 'regenerationperiod'),
-      op_param('resourceid', 'body', 'resource_id', 'resourceid'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('storage-account-name', 'path', 'storage_account_name', 'storage_account_name'),
-      op_param('tags', 'body', 'tags', 'tags'),
     ]
   op_params.each do |i|
     location = i[:location]

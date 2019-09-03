@@ -7,38 +7,8 @@
 		
 		
 		    
-			"target":{
-			   "description": "If available, the component generating the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "If available, a human readable description of the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the Azure Resource Group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +25,32 @@
 			}
 			,
 		    
-			"details":{
-			   "description": "If available, a list of additional details about the error.",
+			"location":{
+			   "description": "The location of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sku":{
+			   "description": "The SKU of this account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			

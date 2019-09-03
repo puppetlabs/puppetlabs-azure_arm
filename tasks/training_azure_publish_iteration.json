@@ -1,0 +1,52 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iteration_id":{
+			   "description": "The iteration id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"publish_name":{
+			   "description": "The name to give the published iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"prediction_id":{
+			   "description": "The id of the prediction resource to publish to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

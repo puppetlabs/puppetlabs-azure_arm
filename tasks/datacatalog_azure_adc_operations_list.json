@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"display":{
-			   "description": "The operation supported by Azure Data Catalog Service.",
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}.",
+			"display":{
+			   "description": "The operation supported by Azure Data Catalog Service.",
 			   "type": "Optional[String[1]]"
 			}
 			

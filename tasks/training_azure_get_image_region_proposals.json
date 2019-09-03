@@ -7,38 +7,32 @@
 		
 		
 		    
-			"imageid":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"training_key":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"proposals":{
-			   "description": "",
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"project_id":{
-			   "description": "",
+			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"image_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"projectid":{
-			   "description": "",
+			   "description": "The image id.",
 			   "type": "Optional[String[1]]"
 			}
 			

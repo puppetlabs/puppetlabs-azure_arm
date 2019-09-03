@@ -7,12 +7,6 @@
 		
 		
 		    
-			"error":{
-			   "description": "The error response.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Version of Azure Machine Learning resource provider API.",
 			   "type": "Optional[String[1]]"
@@ -33,6 +27,12 @@
 		    
 			"workspace_name":{
 			   "description": "Name of Azure Machine Learning workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error response.",
 			   "type": "Optional[String[1]]"
 			}
 			

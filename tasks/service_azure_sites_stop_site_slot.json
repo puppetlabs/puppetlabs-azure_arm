@@ -7,18 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Name of resource group",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of web app",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"slot":{
 			   "description": "Name of web app slot. If not specified then will default to production slot.",
 			   "type": "Optional[String[1]]"
@@ -33,6 +21,18 @@
 		    
 			"api_version":{
 			   "description": "API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of resource group",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of web app",
 			   "type": "Optional[String[1]]"
 			}
 			

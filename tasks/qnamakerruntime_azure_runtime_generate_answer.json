@@ -1,0 +1,28 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"kb_id":{
+			   "description": "Knowledgebase id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"generate_answer_payload":{
+			   "description": "Post body of the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"answers":{
+			   "description": "Represents Search Result list.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

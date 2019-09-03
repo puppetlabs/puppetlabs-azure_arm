@@ -13,26 +13,20 @@
 			}
 			,
 		    
-			"target_resource_group":{
-			   "description": "Filter by target resource group name. Default value is select all.",
+			"severity":{
+			   "description": "Filter by severity.  Default value is select all.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"monitor_service":{
-			   "description": "Filter by monitor service which generates the alert instance. Default value is select all.",
+			"sort_by":{
+			   "description": "Sort the query results by input field. Default value is sort by 'lastModifiedDateTime'.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"smart_group_state":{
-			   "description": "Filter by state of the smart group. Default value is to select all.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"time_range":{
-			   "description": "Filter by time range by below listed values. Default value is 1 day.",
+			"api_version":{
+			   "description": "API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +43,38 @@
 			}
 			,
 		    
-			"target_resource_type":{
-			   "description": "Filter by target resource type. Default value is select all.",
+			"monitor_service":{
+			   "description": "Filter by monitor service which generates the alert instance. Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"smart_group_state":{
+			   "description": "Filter by state of the smart group. Default value is to select all.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"id":{
 			   "description": "Azure resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_resource_type":{
+			   "description": "Filter by target resource type. Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitor_condition":{
+			   "description": "Filter by monitor condition which is either 'Fired' or 'Resolved'. Default value is to select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_order":{
+			   "description": "Sort the query results order in either ascending or descending.  Default value is 'desc' for time fields and 'asc' for others.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -73,38 +91,20 @@
 			}
 			,
 		    
-			"monitor_condition":{
-			   "description": "Filter by monitor condition which is either 'Fired' or 'Resolved'. Default value is to select all.",
+			"target_resource_group":{
+			   "description": "Filter by target resource group name. Default value is select all.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"severity":{
-			   "description": "Filter by severity.  Default value is select all.",
+			"time_range":{
+			   "description": "Filter by time range by below listed values. Default value is 1 day.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"page_count":{
 			   "description": "Determines number of alerts returned per page in response. Permissible value is between 1 to 250. When the 'includeContent'  filter is selected, maximum value allowed is 25. Default value is 25.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sort_order":{
-			   "description": "Sort the query results order in either ascending or descending.  Default value is 'desc' for time fields and 'asc' for others.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sort_by":{
-			   "description": "Sort the query results by input field. Default value is sort by 'lastModifiedDateTime'.",
 			   "type": "Optional[String[1]]"
 			}
 			

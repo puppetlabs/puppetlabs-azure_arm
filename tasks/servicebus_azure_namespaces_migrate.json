@@ -7,6 +7,18 @@
 		
 		
 		    
+			"namespace_name":{
+			   "description": "The namespace name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -19,32 +31,14 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "Error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "Error message indicating why the operation failed.",
+			"targetnamespacetype":{
+			   "description": "Type of namespaces",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"resource_group_name":{
 			   "description": "Name of the Resource group within the Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"namespace_name":{
-			   "description": "The namespace name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

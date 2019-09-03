@@ -7,8 +7,14 @@
 		
 		
 		    
-			"custom_domain_name":{
-			   "description": "Name of the custom domain within an endpoint.",
+			"resource_group_name":{
+			   "description": "Name of the Resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpoint_name":{
+			   "description": "Name of the endpoint under the profile which is unique globally.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,26 +37,26 @@
 			}
 			,
 		    
-			"message":{
-			   "description": "Error message indicating why the operation failed.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the Resource group within the Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"profile_name":{
 			   "description": "Name of the CDN profile which is unique within the resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"endpoint_name":{
-			   "description": "Name of the endpoint under the profile which is unique globally.",
+			"custom_domain_name":{
+			   "description": "Name of the custom domain within an endpoint.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_domain_https_parameters":{
+			   "description": "The configuration specifying how to enable HTTPS for the custom domain - using CDN managed certificate or user's own certificate. If not specified, enabling ssl uses CDN managed certificate by default.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
 			   "type": "Optional[String[1]]"
 			}
 			

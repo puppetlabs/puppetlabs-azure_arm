@@ -13,14 +13,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "Properties of the operation.",
+			"value":{
+			   "description": "List of operations available in the resourcehealth resource provider.",
 			   "type": "Optional[String[1]]"
 			}
 			

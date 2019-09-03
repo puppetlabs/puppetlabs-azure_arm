@@ -7,20 +7,20 @@
 		
 		
 		    
+			"nextlink":{
+			   "description": "The link used to get the next page of operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "The version of the API to be used with the client request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "The operation supported by Advisor.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"action_group_name":{
+			   "description": "The name of the action group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"action_group_name":{
-			   "description": "The name of the action group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The Azure subscription Id.",
 			   "type": "Optional[String[1]]"
 			}
 			

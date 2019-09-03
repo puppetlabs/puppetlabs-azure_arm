@@ -1,0 +1,28 @@
+{
+	"description": "Lists eligible SKUs for Kusto resource provider.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "An error response from Kusto.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

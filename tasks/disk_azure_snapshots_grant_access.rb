@@ -74,9 +74,8 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('access', 'body', 'access', 'access'),
+      op_param('accesssas', 'body', 'access_sas', 'accesssas'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('durationinseconds', 'body', 'duration_in_seconds', 'durationinseconds'),
       op_param('grantAccessData', 'body', 'grant_access_data', 'grant_access_data'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('snapshotName', 'path', 'snapshot_name', 'snapshot_name'),

@@ -75,6 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('code', 'body', 'code', 'code'),
+      op_param('descriptionExclude', 'query', 'description_exclude', 'description_exclude'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),
       op_param('language', 'query', 'language', 'language'),
       op_param('maxCandidates', 'query', 'max_candidates', 'max_candidates'),

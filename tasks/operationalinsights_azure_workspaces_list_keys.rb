@@ -75,9 +75,9 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('primarysharedkey', 'body', 'primary_shared_key', 'primarysharedkey'),
+      op_param('primarysharedkey', 'body', 'primarysharedkey', 'primarysharedkey'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
-      op_param('secondarysharedkey', 'body', 'secondary_shared_key', 'secondarysharedkey'),
+      op_param('secondarysharedkey', 'body', 'secondarysharedkey', 'secondarysharedkey'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('workspaceName', 'path', 'workspace_name', 'workspace_name'),
     ]

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"key_name":{
-			   "description": "Name for the imported key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "The parameters to import a key.",
 			   "type": "Optional[String[1]]"
@@ -25,8 +19,32 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"hsm":{
+			   "description": "Whether to import as a hardware key (HSM) or software key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key":{
+			   "description": "The Json web key",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "The key management attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_name":{
+			   "description": "Name for the imported key.",
 			   "type": "Optional[String[1]]"
 			}
 			

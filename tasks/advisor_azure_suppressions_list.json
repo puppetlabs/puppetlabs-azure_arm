@@ -1,0 +1,46 @@
+{
+	"description": "Retrieves the list of snoozed or dismissed suppressions for a subscription. The snoozed or dismissed attribute of a recommendation is referred to as a suppression.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of suppressions per page if a paged version of this API is being used.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip_token":{
+			   "description": "The page-continuation token to use with a paged version of this API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The link used to get the next page of suppressions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of suppressions.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,38 +7,14 @@
 		
 		
 		    
-			"node_name":{
-			   "description": "The name of the node.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"application_id":{
-			   "description": "The identity of the application. This is typically the full name of the application without the 'fabric:' URI scheme.Starting from version 6.0, hierarchical names are delimited with the '~' character.For example, if the application name is 'fabric:/myapp/app1', the application identity would be 'myapp~app1' in 6.0+ and 'myapp/app1' in previous versions.",
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.2'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This version is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accepts any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0 and the runtime is 6.1, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"service_manifest_name":{
 			   "description": "The name of a service manifest registered as part of an application type in a Service Fabric cluster.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code_package_name":{
-			   "description": "The name of code package specified in service manifest registered as part of an application type in a Service Fabric cluster.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"container_api_request_body":{
-			   "description": "Parameters for making container API call",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The version of the API. This parameter is required and its value must be '6.2'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This version is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accepts any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0 and the runtime is 6.1, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +31,32 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "Error object containing error code and error message.",
+			"node_name":{
+			   "description": "The name of the node.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "The identity of the application. This is typically the full name of the application without the 'fabric:' URI scheme.Starting from version 6.0, hierarchical names are delimited with the '~' character.For example, if the application name is 'fabric:/myapp/app1', the application identity would be 'myapp~app1' in 6.0+ and 'myapp/app1' in previous versions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code_package_name":{
+			   "description": "The name of code package specified in service manifest registered as part of an application type in a Service Fabric cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container_api_request_body":{
+			   "description": "Parameters for making container API call",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"containerapiresult":{
+			   "description": "Container API result.",
 			   "type": "Optional[String[1]]"
 			}
 			

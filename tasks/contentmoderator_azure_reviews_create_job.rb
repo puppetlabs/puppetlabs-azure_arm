@@ -74,14 +74,14 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('CallBackEndpoint', 'query', 'job_id', 'call_back_endpoint'),
-      op_param('Content', 'body', 'job_id', 'content'),
-      op_param('Content-Type', 'header', 'job_id', 'content_type'),
-      op_param('ContentId', 'query', 'job_id', 'content_id'),
-      op_param('ContentType', 'query', 'job_id', 'content_type'),
-      op_param('jobid', 'body', 'job_id', 'jobid'),
-      op_param('teamName', 'path', 'job_id', 'team_name'),
-      op_param('WorkflowName', 'query', 'job_id', 'workflow_name'),
+      op_param('CallBackEndpoint', 'query', 'call_back_endpoint', 'call_back_endpoint'),
+      op_param('Content', 'body', 'content', 'content'),
+      op_param('Content-Type', 'header', 'content_type', 'content_type'),
+      op_param('ContentId', 'query', 'content_id', 'content_id'),
+      op_param('ContentType', 'query', 'content_type', 'content_type'),
+      op_param('error', 'body', 'error', 'error'),
+      op_param('teamName', 'path', 'team_name', 'team_name'),
+      op_param('WorkflowName', 'query', 'workflow_name', 'workflow_name'),
     ]
   op_params.each do |i|
     location = i[:location]

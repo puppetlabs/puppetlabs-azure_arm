@@ -1,0 +1,82 @@
+{
+	"description": "Provides the details of the protection intent up item. This is an asynchronous operation. To know the status of the operation,call the GetItemOperationResult API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"sourceresourceid":{
+			   "description": "ARM ID of the resource to be backed up.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"itemid":{
+			   "description": "ID of the item which is getting protected, In case of Azure Vm , it is ProtectedItemId",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protectionintentitemtype":{
+			   "description": "backup protectionIntent type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protectionstate":{
+			   "description": "Backup state of this backup item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backupmanagementtype":{
+			   "description": "Type of backup management for the backed up item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Fabric name associated with the backed up item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intent_object_name":{
+			   "description": "Backed up item name whose details are to be fetched.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policyid":{
+			   "description": "ID of the backup policy with which this item is backed up.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

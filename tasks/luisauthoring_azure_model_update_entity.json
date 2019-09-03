@@ -1,5 +1,5 @@
 {
-	"description": "Updates the name of an entity extractor.",
+	"description": "Updates the name of an entity in a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,20 +7,8 @@
 		
 		
 		    
-			"entity_id":{
-			   "description": "The entity extractor ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"model_update_object":{
-			   "description": "A model object containing the new entity extractor name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The entity's new name.",
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,6 +21,18 @@
 		    
 			"version_id":{
 			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entity_id":{
+			   "description": "The entity extractor ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"model_update_object":{
+			   "description": "A model object containing the new entity extractor name.",
 			   "type": "Optional[String[1]]"
 			}
 			

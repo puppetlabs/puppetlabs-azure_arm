@@ -74,8 +74,7 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('categories', 'body', 'categories', 'categories'),
-      op_param('name', 'body', 'name', 'name'),
+      op_param('models', 'body', 'models', 'models'),
     ]
   op_params.each do |i|
     location = i[:location]

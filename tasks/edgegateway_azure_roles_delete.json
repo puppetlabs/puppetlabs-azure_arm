@@ -1,29 +1,11 @@
 {
-	"description": "Deletes the role on the gateway device.",
+	"description": "Deletes the role on the data box edge device.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
-		    
-			"device_name":{
-			   "description": "Name of the device.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the role which needs to be deleted.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
 		    
 			"resource_group_name":{
 			   "description": "The resource group name.",
@@ -39,6 +21,24 @@
 		    
 			"error":{
 			   "description": "The error details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_name":{
+			   "description": "The device name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The role name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

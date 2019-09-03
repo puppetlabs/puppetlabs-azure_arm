@@ -1,0 +1,70 @@
+{
+	"description": "Gets a deleted database that can be restored",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"properties":{
+			   "description": "The properties of a restorable dropped database",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID that identifies an Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restorable_droppeded_database_id":{
+			   "description": "The id of the deleted database in the form of databaseName,deletionTimeInFileTimeFormat",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The geo-location where the resource lives",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_name":{
+			   "description": "The name of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"version_update_object":{
-			   "description": "A model containing Name and Description of the application.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version":{
-			   "description": "The new version for the cloned model.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"app_id":{
 			   "description": "The application ID.",
 			   "type": "Optional[String[1]]"
@@ -27,6 +15,18 @@
 		    
 			"version_id":{
 			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_update_object":{
+			   "description": "A model containing Name and Description of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "The new version for the cloned model.",
 			   "type": "Optional[String[1]]"
 			}
 			

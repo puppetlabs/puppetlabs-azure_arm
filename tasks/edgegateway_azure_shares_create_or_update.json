@@ -7,18 +7,6 @@
 		
 		
 		    
-			"name":{
-			   "description": "Name of the share which needs to be added/updated.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"share":{
-			   "description": "The share object containing the share details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription ID.",
 			   "type": "Optional[String[1]]"
@@ -44,7 +32,19 @@
 			,
 		    
 			"device_name":{
-			   "description": "Name of the device.",
+			   "description": "The device name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The share name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"share":{
+			   "description": "The share properties.",
 			   "type": "Optional[String[1]]"
 			}
 			

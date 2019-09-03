@@ -7,32 +7,14 @@
 		
 		
 		    
-			"origin":{
-			   "description": "The intended executor of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Additional descriptions for the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The name of the operation being performed on this particular object.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version to use for the request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "The localized display information for this particular operation or action.",
+			"value":{
+			   "description": "The list of resource provider operations.",
 			   "type": "Optional[String[1]]"
 			}
 			

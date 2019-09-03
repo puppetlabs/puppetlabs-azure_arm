@@ -7,20 +7,14 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
+			"relative_record_set_name":{
+			   "description": "The name of the record set, relative to the name of the zone.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"record_type":{
 			   "description": "The type of DNS record in this record set. Record sets of type SOA can be updated but not created (they are created when the DNS zone is created).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameters supplied to the CreateOrUpdate operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +37,20 @@
 			}
 			,
 		    
+			"subscription_id":{
+			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"error":{
 			   "description": "The error message body",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +61,8 @@
 			}
 			,
 		    
-			"relative_record_set_name":{
-			   "description": "The name of the record set, relative to the name of the zone.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
+			"parameters":{
+			   "description": "Parameters supplied to the CreateOrUpdate operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

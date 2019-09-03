@@ -1,0 +1,34 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_id":{
+			   "description": "The id of the domain to get information about.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

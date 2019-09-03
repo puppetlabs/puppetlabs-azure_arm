@@ -1,0 +1,40 @@
+{
+	"description": "Queries OAuth2 permissions grants for the relevant SP ObjectId of an app.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "the list of oauth2 permissions grants",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatanextlink":{
+			   "description": "the URL to get the next set of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "This is the Service Principal ObjectId associated with the app",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

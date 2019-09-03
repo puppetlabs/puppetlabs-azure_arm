@@ -74,14 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('api-version', 'query', 'capabilities', 'api_version'),
-      op_param('capabilities', 'body', 'capabilities', 'capabilities'),
-      op_param('gpu', 'body', 'capabilities', 'gpu'),
-      op_param('ipaddresstype', 'body', 'capabilities', 'ipaddresstype'),
-      op_param('location', 'path', 'capabilities', 'location'),
-      op_param('ostype', 'body', 'capabilities', 'ostype'),
-      op_param('resourcetype', 'body', 'capabilities', 'resourcetype'),
-      op_param('subscriptionId', 'path', 'capabilities', 'subscription_id'),
+      op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('error', 'body', 'error', 'error'),
+      op_param('location', 'path', 'location', 'location'),
+      op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|
     location = i[:location]

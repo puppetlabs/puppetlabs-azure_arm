@@ -20,25 +20,25 @@
 			,
 		    
 			"image_data":{
-			   "description": "Binary image data.",
+			   "description": "Binary image data. Supported formats are JPEG, GIF, PNG, and BMP. Supports images up to 6MB.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"training_key":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"isbatchsuccessful":{
-			   "description": "True if all of the images in the batch were created successfully, otherwise false.",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"images":{
-			   "description": "List of the image creation results.",
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"code":{
-			   "description": "Service-defined error code. This code serves as a sub-status for the HTTP error code specified in the response.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"message":{
 			   "description": "Human-readable representation of the error.",
 			   "type": "Optional[String[1]]"
@@ -26,13 +20,13 @@
 			,
 		    
 			"subscription_id":{
-			   "description": "The Azure subscription ID.",
+			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"resource_group_name":{
-			   "description": "The name of the resource group.",
+			   "description": "The name of the resource group. The name is case insensitive.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -44,7 +38,13 @@
 			,
 		    
 			"api_version":{
-			   "description": "Client Api Version.",
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Service-defined error code. This code serves as a sub-status for the HTTP error code specified in the response.",
 			   "type": "Optional[String[1]]"
 			}
 			

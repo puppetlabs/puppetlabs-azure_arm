@@ -7,6 +7,12 @@
 		
 		
 		    
+			"name":{
+			   "description": "Name of the reservation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"properties":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,20 +31,14 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Identifier of the reservation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the reservation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Supported version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Identifier of the reservation",
 			   "type": "Optional[String[1]]"
 			}
 			

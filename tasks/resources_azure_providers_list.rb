@@ -76,10 +76,7 @@ def format_params(key_values)
   op_params = [
       op_param('$top', 'query', '$top', '$top'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('namespace', 'body', 'namespace', 'namespace'),
-      op_param('registrationstate', 'body', 'registration_state', 'registrationstate'),
-      op_param('resourcetypes', 'body', 'resource_types', 'resourcetypes'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|

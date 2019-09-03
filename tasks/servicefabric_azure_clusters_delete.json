@@ -7,6 +7,12 @@
 		
 		
 		    
+			"error":{
+			   "description": "The error detail ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The name of the resource group to which the resource belongs or get created",
 			   "type": "Optional[String[1]]"
@@ -20,19 +26,13 @@
 			,
 		    
 			"api_version":{
-			   "description": "The version of the ServiceFabric resouce provider api",
+			   "description": "The version of the ServiceFabric resource provider api",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"subscription_id":{
 			   "description": "The customer subscription identifier",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "The error detail ",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,46 @@
+{
+	"description": "This operation retrieves the list of all policy assignments associated with the given subscription that match the optional given $filter. Valid values for $filter are: 'atScope()' or 'policyDefinitionId eq '{value}''. If $filter is not provided, the unfiltered list includes all policy assignments associated with the subscription, including those that apply directly or from management groups that contain the given subscription, as well as any applied to objects contained within the subscription. If $filter=atScope() is provided, the returned list includes all policy assignments that apply to the subscription, which is everything in the unfiltered list except those applied to objects contained within the subscription. If $filter=policyDefinitionId eq '{value}' is provided, the returned list includes all policy assignments of the policy definition whose id is {value}.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"errormessage":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"httpstatus":{
+			   "description": "Http status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The filter to apply on the operation. Valid values for $filter are: 'atScope()' or 'policyDefinitionId eq '{value}''. If $filter is not provided, no filtering is performed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorcode":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

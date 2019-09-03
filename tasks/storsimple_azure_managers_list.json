@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves all the managers in a subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of StorSimple managers.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

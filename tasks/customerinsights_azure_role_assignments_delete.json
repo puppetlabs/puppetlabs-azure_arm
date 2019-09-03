@@ -7,62 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "Localized description for the metadata.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"relationshiplinks":{
-			   "description": "The Role assignments set for the relationship links.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"displayname":{
-			   "description": "Localized display names for the metadata.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"principals":{
-			   "description": "The principals being assigned to.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kpis":{
-			   "description": "Kpis set for the assignment.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"relationships":{
-			   "description": "The Role assignments set for the relationships.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tenantid":{
-			   "description": "The hub name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"profiles":{
-			   "description": "Profiles set for the assignment.",
+			"interactions":{
+			   "description": "Interactions set for the assignment.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -73,20 +19,26 @@
 			}
 			,
 		    
-			"role":{
-			   "description": "Type of roles.",
+			"saspolicies":{
+			   "description": "Sas Policies set for the assignment.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"widgettypes":{
-			   "description": "Widget types set for the assignment.",
+			"roleassignments":{
+			   "description": "The Role assignments set for the assignment.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"views":{
-			   "description": "Views set for the assignment.",
+			"tenantid":{
+			   "description": "The hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"links":{
+			   "description": "Links set for the assignment.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -103,26 +55,26 @@
 			}
 			,
 		    
-			"assignmentname":{
-			   "description": "The name of the metadata object.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"saspolicies":{
-			   "description": "Sas Policies set for the assignment.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"conflationpolicies":{
 			   "description": "Widget types set for the assignment.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"links":{
-			   "description": "Links set for the assignment.",
+			"kpis":{
+			   "description": "Kpis set for the assignment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"views":{
+			   "description": "Views set for the assignment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"profiles":{
+			   "description": "Profiles set for the assignment.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -133,8 +85,14 @@
 			}
 			,
 		    
-			"roleassignments":{
-			   "description": "The Role assignments set for the assignment.",
+			"relationshiplinks":{
+			   "description": "The Role assignments set for the relationship links.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "Localized display names for the metadata.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -145,14 +103,56 @@
 			}
 			,
 		    
-			"interactions":{
-			   "description": "Interactions set for the assignment.",
+			"widgettypes":{
+			   "description": "Widget types set for the assignment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"principals":{
+			   "description": "The principals being assigned to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role":{
+			   "description": "Type of roles.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "Localized description for the metadata.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relationships":{
+			   "description": "The Role assignments set for the relationships.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"assignment_name":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"assignmentname":{
+			   "description": "The name of the metadata object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

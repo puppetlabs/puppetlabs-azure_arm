@@ -7,6 +7,18 @@
 		
 		
 		    
+			"emailaddresses":{
+			   "description": "List of user emails addresses to add to the lab.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"api_version":{
 			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"emailaddresses":{
-			   "description": "List of user emails addresses to add to the lab.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

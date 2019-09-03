@@ -1,0 +1,28 @@
+{
+	"description": "Lists all the Dedicated capacities for the given subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "A unique identifier for a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "An array of Dedicated capacities resources.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

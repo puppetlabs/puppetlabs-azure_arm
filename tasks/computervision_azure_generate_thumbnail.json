@@ -7,14 +7,8 @@
 		
 		
 		    
-			"message":{
-			   "description": "A message explaining the error reported by the service.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"requestid":{
-			   "description": "A unique request identifier.",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +37,14 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "The error code.",
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"requestid":{
+			   "description": "A unique request identifier.",
 			   "type": "Optional[String[1]]"
 			}
 			

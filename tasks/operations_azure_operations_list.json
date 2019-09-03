@@ -13,26 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the Operation.",
+			"value":{
+			   "description": "List of available operations.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "Contains the localized display information for this particular operation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
-			   "description": "The intended executor of the operation;governs the display of the operation in the RBAC UX and the audit logs UX",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "ShoeBox properties for the given operation.",
+			"nextlink":{
+			   "description": "Link to the next chunk of Response.",
 			   "type": "Optional[String[1]]"
 			}
 			

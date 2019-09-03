@@ -1,0 +1,40 @@
+{
+	"description": "Gets all Service Fabric cluster resources created or in the process of being created in the resource group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the Service Fabric resource provider API. This is a required parameter and it's value must be '2019-03-01' for this specification.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The customer subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URL to use for getting the next set of results.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

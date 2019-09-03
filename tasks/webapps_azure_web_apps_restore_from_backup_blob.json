@@ -7,6 +7,12 @@
 		
 		
 		    
+			"request":{
+			   "description": "Information on restore request .",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "API Version",
 			   "type": "Optional[String[1]]"
@@ -19,8 +25,20 @@
 			}
 			,
 		    
-			"request":{
-			   "description": "Information on restore request .",
+			"id":{
+			   "description": "Resource Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,24 +57,6 @@
 		    
 			"kind":{
 			   "description": "Kind of resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			

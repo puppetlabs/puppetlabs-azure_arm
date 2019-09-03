@@ -1,0 +1,82 @@
+{
+	"description": "Gets a database data masking policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "The kind of data masking policy. Metadata, used for Azure portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The location of the data masking policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID that identifies an Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_name":{
+			   "description": "The name of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "The name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_masking_policy_name":{
+			   "description": "The name of the database for which the data masking rule applies.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The properties of the data masking policy.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

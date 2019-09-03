@@ -1,0 +1,64 @@
+{
+	"description": "Deletes an Azure Search synonym map.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_none_match":{
+			   "description": "Defines the If-None-Match condition. The operation will be performed only if the ETag on the server does not match this value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the synonym map.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"synonyms":{
+			   "description": "A series of synonym rules in the specified synonym map format. The rules must be separated by newlines.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"synonym_map_name":{
+			   "description": "The name of the synonym map to delete.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"format":{
+			   "description": "The format of the synonym map. Only the 'solr' format is currently supported.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataetag":{
+			   "description": "The ETag of the synonym map.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "Defines the If-Match condition. The operation will be performed only if the ETag on the server matches this value.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

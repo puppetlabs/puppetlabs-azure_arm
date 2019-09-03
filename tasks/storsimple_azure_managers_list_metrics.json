@@ -1,0 +1,46 @@
+{
+	"description": "Gets the metrics for the specified manager.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "The value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData Filter options",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

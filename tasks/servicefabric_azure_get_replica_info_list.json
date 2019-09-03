@@ -1,0 +1,40 @@
+{
+	"description": "The GetReplicas endpoint returns information about the replicas of the specified partition. The response includes the ID, role, status, health, node name, uptime, and other details about the replica.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"continuationtoken":{
+			   "description": "The continuation token parameter is used to obtain next set of results. The continuation token is included in the response of the API when the results from the system do not fit in a single response. When this value is passed to the next API call, the API returns next set of results. If there are no further results, then the continuation token is not included in the response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"items":{
+			   "description": "List of replica information.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.0'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accept any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0, but if the runtime is 6.1, in order to make it easier to write the clients, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_id":{
+			   "description": "The identity of the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"description": "This API supports batching and range selection. By default it will only return first 50 images matching images.Use the {take} and {skip} parameters to control how many images to return in a given batch.The filtering is on an and/or relationship. For example, if the provided tag ids are for the 'Dog' and'Cat' tags, then only images tagged with Dog and/or Cat will be returned",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iteration_id":{
+			   "description": "The iteration id. Defaults to workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_ids":{
+			   "description": "A list of tags ids to filter the images. Defaults to all tagged images when null. Limited to 20.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"order_by":{
+			   "description": "The ordering. Defaults to newest.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"take":{
+			   "description": "Maximum number of images to return. Defaults to 50, limited to 256.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip":{
+			   "description": "Number of images to skip before beginning the image batch. Defaults to 0.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -19,26 +19,8 @@
 			}
 			,
 		    
-			"namespace":{
-			   "description": "The namespace of the resource provider.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"registrationstate":{
-			   "description": "The registration state of the provider.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resourcetypes":{
-			   "description": "The collection of provider resource types.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "The provider ID.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,

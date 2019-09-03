@@ -1,0 +1,34 @@
+{
+	"description": "Get all IoT Central Applications in a subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The link used to get the next page of IoT Central Applications.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A list of IoT Central Applications.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

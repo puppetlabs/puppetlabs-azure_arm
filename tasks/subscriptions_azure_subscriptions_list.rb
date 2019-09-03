@@ -75,12 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('authorizationsource', 'body', 'authorization_source', 'authorizationsource'),
-      op_param('displayname', 'body', 'display_name', 'displayname'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('state', 'body', 'state', 'state'),
-      op_param('subscriptionid', 'body', 'id', 'subscriptionid'),
-      op_param('subscriptionpolicies', 'body', 'subscriptionpolicies', 'subscriptionpolicies'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

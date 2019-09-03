@@ -25,8 +25,8 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"registrationcode":{
+			   "description": "The registration code of the lab.",
 			   "type": "Optional[String[1]]"
 			}
 			

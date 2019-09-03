@@ -1,0 +1,34 @@
+{
+	"description": "Gets service principal information from the directory. Query by objectId or pass a filter to query by appId",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"object_id":{
+			   "description": "The object ID of the service principal to get.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataerror":{
+			   "description": "A Graph API error.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

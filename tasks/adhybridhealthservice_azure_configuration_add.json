@@ -7,68 +7,14 @@
 		
 		
 		    
-			"onboarded":{
-			   "description": "Indicates if the tenant is already onboarded to Azure Active Directory Connect Health.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"devopsttl":{
-			   "description": "The date and time, in UTC, till when the tenant data can be seen by Microsoft through Azure portal.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"globaladminsemail":{
-			   "description": "The list of global administrators for the tenant.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"tenantinquarantine":{
 			   "description": "Indicates if data collection for this tenant is disabled or not.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"pkscertificate":{
-			   "description": "The certificate associated with the tenant to onboard data to Azure Active Directory Connect Health.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"disabledreason":{
-			   "description": "The reason due to which the tenant was disabled in Azure Active Directory Connect Health.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tenantid":{
-			   "description": "The Id of the tenant.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"aadlicense":{
-			   "description": "The Azure Active Directory license of the tenant.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"lastverified":{
-			   "description": "The date and time, in UTC, when the tenant onboarding status in Azure Active Directory Connect Health was last verified.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tenantname":{
-			   "description": "The name of the tenant.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The version of the API to be used with the client request.",
+			"onboarded":{
+			   "description": "Indicates if the tenant is already onboarded to Azure Active Directory Connect Health.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -79,20 +25,50 @@
 			}
 			,
 		    
-			"agentautoupdate":{
-			   "description": "Indicates if the tenant is configured to automatically receive updates for Azure Active Directory Connect Health client side features.",
+			"alertsuppressiontimeinmins":{
+			   "description": "The time in minutes after which an alert will be auto-suppressed.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"createddate":{
-			   "description": "The date, in UTC, when the tenant was onboarded to Azure Active Directory Connect Health.",
+			"devopsttl":{
+			   "description": "The date and time, in UTC, till when the tenant data can be seen by Microsoft through Azure portal.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"disabled":{
 			   "description": "Indicates if the tenant is disabled in Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastdisabled":{
+			   "description": "The date and time, in UTC, when the tenant was last disabled in Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastverified":{
+			   "description": "The date and time, in UTC, when the tenant onboarding status in Azure Active Directory Connect Health was last verified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"consentedtomicrosoftdevops":{
+			   "description": "Indicates if the tenant data can be seen by Microsoft through Azure portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"aadlicense":{
+			   "description": "The Azure Active Directory license of the tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"agentautoupdate":{
+			   "description": "Indicates if the tenant is configured to automatically receive updates for Azure Active Directory Connect Health client side features.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -109,8 +85,32 @@
 			}
 			,
 		    
-			"aadpremium":{
-			   "description": "Indicate if the tenant has Azure Active Directory Premium license or not.",
+			"tenantid":{
+			   "description": "The Id of the tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantname":{
+			   "description": "The name of the tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"globaladminsemail":{
+			   "description": "The list of global administrators for the tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disabledreason":{
+			   "description": "The reason due to which the tenant was disabled in Azure Active Directory Connect Health.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -121,20 +121,20 @@
 			}
 			,
 		    
-			"lastdisabled":{
-			   "description": "The date and time, in UTC, when the tenant was last disabled in Azure Active Directory Connect Health.",
+			"aadpremium":{
+			   "description": "Indicate if the tenant has Azure Active Directory Premium license or not.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"alertsuppressiontimeinmins":{
-			   "description": "The time in minutes after which an alert will be auto-suppressed.",
+			"pkscertificate":{
+			   "description": "The certificate associated with the tenant to onboard data to Azure Active Directory Connect Health.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"consentedtomicrosoftdevops":{
-			   "description": "Indicates if the tenant data can be seen by Microsoft through Azure portal.",
+			"createddate":{
+			   "description": "The date, in UTC, when the tenant was onboarded to Azure Active Directory Connect Health.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,82 @@
+{
+	"description": "Gets extended information associated with the job.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"etag":{
+			   "description": "Optional ETag.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource ID represents the complete path to the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type represents the complete path of the form Namespace/ResourceType/ResourceType/...",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Resource tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "Name of the job associated with this GET operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name associated with the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Resource location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group associated with the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -75,9 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('azurefileshare', 'body', 'azurefileshare', 'azurefileshare'),
       op_param('cloudEndpointName', 'path', 'cloud_endpoint_name', 'cloud_endpoint_name'),
-      op_param('error', 'body', 'error', 'error'),
-      op_param('innererror', 'body', 'innererror', 'innererror'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('storageSyncServiceName', 'path', 'storage_sync_service_name', 'storage_sync_service_name'),

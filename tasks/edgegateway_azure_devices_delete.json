@@ -7,12 +7,6 @@
 		
 		
 		    
-			"error":{
-			   "description": "The error details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"device_name":{
 			   "description": "The device name.",
 			   "type": "Optional[String[1]]"
@@ -33,6 +27,12 @@
 		    
 			"api_version":{
 			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
 			}
 			

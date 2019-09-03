@@ -7,6 +7,12 @@
 		
 		
 		    
+			"certificate_name":{
+			   "description": "The name of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -15,12 +21,6 @@
 		    
 			"error":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificate_name":{
-			   "description": "The name of the certificate.",
 			   "type": "Optional[String[1]]"
 			}
 			

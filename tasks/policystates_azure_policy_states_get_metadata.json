@@ -1,0 +1,28 @@
+{
+	"description": "Gets OData metadata XML document.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"scope":{
+			   "description": "A valid scope, i.e. management group, subscription, resource group, or resource ID. Scope used has no effect on metadata returned.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version to use with the client requests.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error definition.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

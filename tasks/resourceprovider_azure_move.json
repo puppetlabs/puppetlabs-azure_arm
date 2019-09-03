@@ -31,13 +31,13 @@
 			}
 			,
 		    
-			"resources":{
+			"targetresourcegroup":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"targetresourcegroup":{
+			"resources":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

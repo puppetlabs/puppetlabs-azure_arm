@@ -75,8 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('batch', 'body', 'batch', 'batch'),
+      op_param('created', 'body', 'created', 'created'),
+      op_param('duplicated', 'body', 'duplicated', 'duplicated'),
+      op_param('exceeded', 'body', 'exceeded', 'exceeded'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
-      op_param('regions', 'body', 'regions', 'regions'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
     ]
   op_params.each do |i|

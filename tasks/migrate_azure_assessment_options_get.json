@@ -1,0 +1,40 @@
+{
+	"description": "Get the available options for the properties of an assessment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription Id in which project was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location_name":{
+			   "description": "Azure region in which the project is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Standard request header. Used by service to identify API version used by client.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "Standard request header. Used by service to respond to client in appropriate language.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

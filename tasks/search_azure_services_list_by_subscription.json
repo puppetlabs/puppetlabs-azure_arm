@@ -1,0 +1,34 @@
+{
+	"description": "Gets a list of all Search services in the given subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"x_ms_client_request_id":{
+			   "description": "A client-generated GUID value that identifies this request. If specified, this will be included in response information as a way to track the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for each request. The current version is 2015-08-19.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of Search services.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

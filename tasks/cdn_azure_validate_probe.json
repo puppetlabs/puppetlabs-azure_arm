@@ -25,8 +25,14 @@
 			}
 			,
 		    
-			"probeurl":{
-			   "description": "The probe URL to validate.",
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

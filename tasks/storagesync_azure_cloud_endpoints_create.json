@@ -7,14 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version to use for this operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cloud_endpoint_name":{
-			   "description": "Name of Cloud Endpoint object.",
+			"parameters":{
+			   "description": "Body of Cloud Endpoint resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,26 +19,20 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Fully qualified resource Id for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "The name of the resource",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The ID of the target subscription.",
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group. The name is case insensitive.",
+			"api_version":{
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,8 +49,20 @@
 			}
 			,
 		    
-			"parameters":{
-			   "description": "Body of Cloud Endpoint resource.",
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cloud_endpoint_name":{
+			   "description": "Name of Cloud Endpoint object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Fully qualified resource Id for the resource. Ex - /subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/{resourceProviderNamespace}/{resourceType}/{resourceName}",
 			   "type": "Optional[String[1]]"
 			}
 			,

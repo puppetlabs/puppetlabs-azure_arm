@@ -1,0 +1,46 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "The entity role ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The entity role name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entity_id":{
+			   "description": "entity ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_id":{
+			   "description": "entity role ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

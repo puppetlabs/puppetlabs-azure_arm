@@ -1,0 +1,28 @@
+{
+	"description": "Retrieve information about a persisted face (specified by persistedFaceId and its belonging largeFaceListId).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_face_list_id":{
+			   "description": "Id referencing a particular large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"persisted_face_id":{
+			   "description": "Id referencing a particular persistedFaceId of an existing face.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

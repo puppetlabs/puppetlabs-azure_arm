@@ -7,14 +7,8 @@
 		
 		
 		    
-			"result":{
-			   "description": "Name of app.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
+			"name":{
+			   "description": "Name of the app.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,8 +31,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the app.",
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -51,6 +45,12 @@
 		    
 			"subscription_id":{
 			   "description": "Your Azure subscription ID. This is a GUID-formatted string (e.g. 00000000-0000-0000-0000-000000000000).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"result":{
+			   "description": "Name of app.",
 			   "type": "Optional[String[1]]"
 			}
 			,

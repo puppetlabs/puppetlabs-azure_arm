@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the available Windows IoT Services REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "List of Windows IoT Device Service operations supported by the Microsoft.WindowsIoT resource provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "URL to get the next set of operation list results if there are any.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

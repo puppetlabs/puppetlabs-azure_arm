@@ -1,0 +1,40 @@
+{
+	"description": "Lists all the jobs available under the subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip_token":{
+			   "description": "$skipToken is supported on Get list of jobs, which provides the next page in the list of jobs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of job resources.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "Link for the next set of job resources.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -74,8 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('addremove', 'body', 'add_remove', 'addremove'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
+      op_param('labaccountresourceid', 'body', 'lab_account_resource_id', 'labaccountresourceid'),
+      op_param('labresourceid', 'body', 'lab_resource_id', 'labresourceid'),
       op_param('personalPreferencesOperationsPayload', 'body', 'personal_preferences_operations_payload', 'personal_preferences_operations_payload'),
       op_param('userName', 'path', 'user_name', 'user_name'),
     ]

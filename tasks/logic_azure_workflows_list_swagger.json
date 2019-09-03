@@ -7,12 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription id.",
 			   "type": "Optional[String[1]]"
@@ -27,6 +21,12 @@
 		    
 			"workflow_name":{
 			   "description": "The workflow name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

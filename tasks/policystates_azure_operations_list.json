@@ -13,14 +13,8 @@
 			}
 			,
 		    
-			"display":{
-			   "description": "Display metadata associated with the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Operation name.",
+			"error":{
+			   "description": "Error definition.",
 			   "type": "Optional[String[1]]"
 			}
 			

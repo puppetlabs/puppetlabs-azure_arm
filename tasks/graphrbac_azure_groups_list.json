@@ -1,0 +1,34 @@
+{
+	"description": "Gets list of groups for the current tenant.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataerror":{
+			   "description": "A Graph API error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The filter to apply to the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

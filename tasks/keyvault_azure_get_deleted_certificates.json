@@ -7,14 +7,8 @@
 		
 		
 		    
-			"attributes":{
-			   "description": "The certificate management attributes.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs.",
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,38 +25,8 @@
 			}
 			,
 		    
-			"deleteddate":{
-			   "description": "The time when the certificate was deleted, in UTC",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"recoveryid":{
-			   "description": "The url of the recovery object, used to identify and recover the deleted certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"scheduledpurgedate":{
-			   "description": "The time when the certificate is scheduled to be purged, in UTC",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"maxresults":{
-			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"x5t":{
-			   "description": "Thumbprint of the certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Certificate identifier.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -77,9 +77,10 @@ def format_params(key_values)
       op_param('accountName', 'path', 'account_name', 'account_name'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('primarymasterkey', 'body', 'primary_master_key', 'primarymasterkey'),
-      op_param('properties', 'body', 'properties', 'properties'),
+      op_param('primaryreadonlymasterkey', 'body', 'primary_readonly_master_key', 'primaryreadonlymasterkey'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('secondarymasterkey', 'body', 'secondary_master_key', 'secondarymasterkey'),
+      op_param('secondaryreadonlymasterkey', 'body', 'secondary_readonly_master_key', 'secondaryreadonlymasterkey'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|

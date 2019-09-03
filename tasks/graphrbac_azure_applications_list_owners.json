@@ -1,0 +1,34 @@
+{
+	"description": "The owners are a set of non-admin users who are allowed to modify this object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_object_id":{
+			   "description": "The object ID of the application for which to get owners.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataerror":{
+			   "description": "A Graph API error.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

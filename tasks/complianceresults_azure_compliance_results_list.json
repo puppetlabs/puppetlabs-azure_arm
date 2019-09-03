@@ -1,0 +1,34 @@
+{
+	"description": "Security compliance results in the subscription",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"nextlink":{
+			   "description": "The URI to fetch the next page.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of compliance results",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version for the operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scope":{
+			   "description": "Scope of the query, can be subscription (/subscriptions/0b06d9ea-afe6-4779-bd59-30e5c2d9d13f) or management group (/providers/Microsoft.Management/managementGroups/mgName).",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

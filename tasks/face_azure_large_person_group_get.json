@@ -1,0 +1,28 @@
+{
+	"description": "Retrieve the information of a large person group, including its name, userData and recognitionModel. This API returns large person group information only, use [LargePersonGroup Person - List](/docs/services/563879b61984550e40cbbe8d/operations/599adda06ac60f11b48b5aa1) instead to retrieve person information under the large person group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_person_group_id":{
+			   "description": "Id referencing a particular large person group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"return_recognition_model":{
+			   "description": "A value indicating whether the operation should return 'recognitionModel' in response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

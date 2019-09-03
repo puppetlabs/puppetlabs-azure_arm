@@ -1,0 +1,94 @@
+{
+	"description": "Create or update a Service Fabric service resource with the specified name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"type":{
+			   "description": "Azure resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The customer subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_name":{
+			   "description": "The name of the cluster resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the Service Fabric resource provider API. This is a required parameter and it's value must be '2019-03-01' for this specification.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The service resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Azure resource name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"etag":{
+			   "description": "Azure resource etag.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Azure resource identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
+			   "description": "The name of the application resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "It will be deprecated in New API, resource location depends on the parent resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The service resource properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Azure resource tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_name":{
+			   "description": "The name of the service resource in the format of {applicationName}~{serviceName}.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

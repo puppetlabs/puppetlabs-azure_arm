@@ -1,0 +1,22 @@
+{
+	"description": "Retrieve information about a snapshot. Snapshot is only accessible to the source subscription who took it, and target subscriptions included in the applyScope in Snapshot - Take.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"snapshot_id":{
+			   "description": "Id referencing a particular snapshot.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

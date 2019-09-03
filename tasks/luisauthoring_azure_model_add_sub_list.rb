@@ -75,9 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
-      op_param('canonicalform', 'body', 'canonical_form', 'canonicalform'),
       op_param('clEntityId', 'path', 'cl_entity_id', 'cl_entity_id'),
-      op_param('list', 'body', 'list', 'list'),
+      op_param('errortype', 'body', 'errortype', 'errortype'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
       op_param('wordListCreateObject', 'body', 'word_list_create_object', 'word_list_create_object'),
     ]

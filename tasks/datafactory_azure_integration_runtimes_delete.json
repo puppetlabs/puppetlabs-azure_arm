@@ -7,8 +7,8 @@
 		
 		
 		    
-			"error":{
-			   "description": "Error data",
+			"description":{
+			   "description": "Integration runtime description.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,6 +39,12 @@
 		    
 			"api_version":{
 			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of integration runtime.",
 			   "type": "Optional[String[1]]"
 			}
 			

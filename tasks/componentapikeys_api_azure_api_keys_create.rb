@@ -75,7 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('apikey', 'body', 'api_key', 'apikey'),
       op_param('APIKeyProperties', 'body', 'api_key_properties', 'api_key_properties'),
+      op_param('createddate', 'body', 'created_date', 'createddate'),
+      op_param('id', 'body', 'id', 'id'),
       op_param('linkedreadproperties', 'body', 'linked_read_properties', 'linkedreadproperties'),
       op_param('linkedwriteproperties', 'body', 'linked_write_properties', 'linkedwriteproperties'),
       op_param('name', 'body', 'name', 'name'),

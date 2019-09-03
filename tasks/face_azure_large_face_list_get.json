@@ -1,0 +1,28 @@
+{
+	"description": "Retrieve a large face list’s largeFaceListId, name, userData and recognitionModel.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_face_list_id":{
+			   "description": "Id referencing a particular large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"return_recognition_model":{
+			   "description": "A value indicating whether the operation should return 'recognitionModel' in response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

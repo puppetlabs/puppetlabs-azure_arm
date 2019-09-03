@@ -74,13 +74,12 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('downloaduri', 'body', 'download_uri', 'downloaduri'),
-      op_param('flavor', 'body', 'flavor', 'flavor'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('flavor', 'query', 'flavor', 'flavor'),
       op_param('iterationId', 'path', 'iteration_id', 'iteration_id'),
-      op_param('newerversionavailable', 'body', 'newer_version_available', 'newerversionavailable'),
-      op_param('platform', 'body', 'platform', 'platform'),
+      op_param('message', 'body', 'message', 'message'),
+      op_param('platform', 'query', 'platform', 'platform'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
-      op_param('status', 'body', 'status', 'status'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
     ]
   op_params.each do |i|

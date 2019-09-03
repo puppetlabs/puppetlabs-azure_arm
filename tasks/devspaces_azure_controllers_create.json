@@ -1,0 +1,46 @@
+{
+	"description": "Creates an Azure Dev Spaces Controller with the specified create parameters.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "Resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"controller":{
+			   "description": "Controller create parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The details of the error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

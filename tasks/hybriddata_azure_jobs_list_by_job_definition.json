@@ -1,0 +1,100 @@
+{
+	"description": "This method gets all the jobs of a given job definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"data_service_name":{
+			   "description": "The name of the data service of the job definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The Resource Group Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Id of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starttime":{
+			   "description": "Time at which the job was started in UTC ISO 8601 format.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endtime":{
+			   "description": "Time at which the job ended in UTC ISO 8601 format.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Job properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_definition_name":{
+			   "description": "The name of the job definition for which jobs are needed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData Filter options",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Status of the job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_manager_name":{
+			   "description": "The name of the DataManager Resource within the specified resource group. DataManager names must be between 3 and 24 characters in length and use any alphanumeric and underscore only",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Top level error for the job.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -74,13 +74,13 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('description', 'body', 'description', 'description'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('imagecount', 'body', 'image_count', 'imagecount'),
-      op_param('name', 'body', 'name', 'name'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('description', 'query', 'description', 'description'),
+      op_param('message', 'body', 'message', 'message'),
+      op_param('name', 'query', 'name', 'name'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
-      op_param('type', 'body', 'type', 'type'),
+      op_param('type', 'query', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

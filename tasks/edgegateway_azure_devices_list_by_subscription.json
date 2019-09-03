@@ -1,0 +1,28 @@
+{
+	"description": "Gets all the data box edge/gateway devices in a subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error details.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

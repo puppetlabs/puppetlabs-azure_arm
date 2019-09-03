@@ -7,38 +7,8 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The ID of the target subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version to use for this operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"status":{
-			   "description": "Pre Restore Azure status.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"pausewaitforsyncdraintimeperiodinseconds":{
-			   "description": "Pre Restore pause wait for sync drain time period in seconds.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"storage_sync_service_name":{
-			   "description": "Name of Storage Sync Service resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"replicagroup":{
-			   "description": "Pre Restore replica group.",
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +19,8 @@
 			}
 			,
 		    
-			"sync_group_name":{
-			   "description": "Name of Sync Group resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Body of Cloud Endpoint object.",
+			"azurefileshareuri":{
+			   "description": "Pre Restore Azure file share uri.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -67,26 +31,8 @@
 			}
 			,
 		    
-			"restorefilespec":{
-			   "description": "Pre Restore restore file spec array.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"partition":{
-			   "description": "Pre Restore partition.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"azurefileshareuri":{
-			   "description": "Pre Restore Azure file share uri.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group. The name is case insensitive.",
+			"api_version":{
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -97,8 +43,62 @@
 			}
 			,
 		    
+			"parameters":{
+			   "description": "Body of Cloud Endpoint object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Pre Restore Azure status.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition":{
+			   "description": "Pre Restore partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restorefilespec":{
+			   "description": "Pre Restore restore file spec array.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pausewaitforsyncdraintimeperiodinseconds":{
+			   "description": "Pre Restore pause wait for sync drain time period in seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"sourceazurefileshareuri":{
 			   "description": "Pre Restore Azure source azure file share uri.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storage_sync_service_name":{
+			   "description": "Name of Storage Sync Service resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sync_group_name":{
+			   "description": "Name of Sync Group resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replicagroup":{
+			   "description": "Pre Restore replica group.",
 			   "type": "Optional[String[1]]"
 			}
 			

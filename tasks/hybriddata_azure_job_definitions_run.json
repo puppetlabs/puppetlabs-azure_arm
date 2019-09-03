@@ -1,0 +1,70 @@
+{
+	"description": "This method runs a job instance of the given job definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"run_parameters":{
+			   "description": "Run time parameters for the job definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The Resource Group Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userconfirmation":{
+			   "description": "Enum to detect if user confirmation is required. If not passed will default to NotRequired.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dataserviceinput":{
+			   "description": "A generic json used differently by each data service type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_service_name":{
+			   "description": "The data service type of the job definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_definition_name":{
+			   "description": "Name of the job definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_manager_name":{
+			   "description": "The name of the DataManager Resource within the specified resource group. DataManager names must be between 3 and 24 characters in length and use any alphanumeric and underscore only",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"customersecrets":{
+			   "description": "List of customer secrets containing a key identifier and key value. The key identifier is a way for the specific data source to understand the key. Value contains customer secret encrypted by the encryptionKeys.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

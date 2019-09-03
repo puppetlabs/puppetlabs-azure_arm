@@ -75,13 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('keytype', 'body', 'key_type', 'keytype'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
-      op_param('primaryconnectionstring', 'body', 'primaryconnectionstring', 'primaryconnectionstring'),
-      op_param('primarykey', 'body', 'primarykey', 'primarykey'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('resourceName', 'path', 'resource_name', 'resource_name'),
-      op_param('secondaryconnectionstring', 'body', 'secondaryconnectionstring', 'secondaryconnectionstring'),
-      op_param('secondarykey', 'body', 'secondarykey', 'secondarykey'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|

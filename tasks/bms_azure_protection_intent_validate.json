@@ -7,12 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"azure_region":{
 			   "description": "Azure region to hit Api",
 			   "type": "Optional[String[1]]"
@@ -31,20 +25,14 @@
 			}
 			,
 		    
-			"errorcode":{
-			   "description": "Response error code",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"protecteditemname":{
-			   "description": "Specifies the product specific ds name. E.g. vm;iaasvmcontainer;rgname;vmname. This is required for portal",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"status":{
 			   "description": "Validation Status",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -62,7 +50,19 @@
 			,
 		    
 			"containername":{
-			   "description": "Specifies the product specific container name. E.g. iaasvmcontainer;iaasvmcontainer;rgname;vmname. This is required            for portal",
+			   "description": "Specifies the product specific container name. E.g. iaasvmcontainer;iaasvmcontainer;rgname;vmname. This is requiredfor portal",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protecteditemname":{
+			   "description": "Specifies the product specific ds name. E.g. vm;iaasvmcontainer;rgname;vmname. This is required for portal",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorcode":{
+			   "description": "Response error code",
 			   "type": "Optional[String[1]]"
 			}
 			

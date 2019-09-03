@@ -1,0 +1,52 @@
+{
+	"description": "Add Database principals permissions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "The list of Kusto database principals.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group containing the Kusto cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_name":{
+			   "description": "The name of the Kusto cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "The name of the database in the Kusto cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_principals_to_add":{
+			   "description": "List of database principals to add.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

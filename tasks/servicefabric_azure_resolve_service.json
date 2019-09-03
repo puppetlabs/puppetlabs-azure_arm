@@ -1,0 +1,70 @@
+{
+	"description": "Resolve a Service Fabric service partition to get the endpoints of the service replicas.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.0'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accept any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0, but if the runtime is 6.1, in order to make it easier to write the clients, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partitioninformation":{
+			   "description": "A representation of the resolved partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpoints":{
+			   "description": "List of resolved service endpoints of a service partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "The version of this resolved service partition result. This version should be passed in the next time the ResolveService call is made via the PreviousRspVersion query parameter.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The full name of the service with 'fabric:' URI scheme.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_id":{
+			   "description": "The identity of the service. This ID is typically the full name of the service without the 'fabric:' URI scheme.Starting from version 6.0, hierarchical names are delimited with the '~' character.For example, if the service name is 'fabric:/myapp/app1/svc1', the service identity would be 'myapp~app1~svc1' in 6.0+ and 'myapp/app1/svc1' in previous versions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_key_type":{
+			   "description": "Key type for the partition. This parameter is required if the partition scheme for the service is Int64Range or Named. The possible values are following.- None (1) - Indicates that the PartitionKeyValue parameter is not specified. This is valid for the partitions with partitioning scheme as Singleton. This is the default value. The value is 1.- Int64Range (2) - Indicates that the PartitionKeyValue parameter is an int64 partition key. This is valid for the partitions with partitioning scheme as Int64Range. The value is 2.- Named (3) - Indicates that the PartitionKeyValue parameter is a name of the partition. This is valid for the partitions with partitioning scheme as Named. The value is 3.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_key_value":{
+			   "description": "Partition key. This is required if the partition scheme for the service is Int64Range or Named. This is not the partition ID, but rather, either the integer key value, or the name of the partition ID.For example, if your service is using ranged partitions from 0 to 10, then they PartitionKeyValue would be aninteger in that range. Query service description to see the range or name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"previous_rsp_version":{
+			   "description": "The value in the Version field of the response that was received previously. This is required if the user knows that the result that was gotten previously is stale.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

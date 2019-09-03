@@ -19,6 +19,12 @@
 			}
 			,
 		    
+			"message":{
+			   "description": "The detailed error message describing why the name is not available.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"nameavailable":{
 			   "description": "Indicates whether the name is available.",
 			   "type": "Optional[String[1]]"
@@ -27,12 +33,6 @@
 		    
 			"reason":{
 			   "description": "The reason why the name is not available.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "The detailed error message describing why the name is not available.",
 			   "type": "Optional[String[1]]"
 			}
 			

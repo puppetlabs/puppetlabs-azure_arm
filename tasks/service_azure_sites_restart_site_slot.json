@@ -7,6 +7,24 @@
 		
 		
 		    
+			"slot":{
+			   "description": "Name of web app slot. If not specified then will default to production slot.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"soft_restart":{
+			   "description": "Soft restart applies the configuration settings and restarts the app if necessary. Hard restart always restarts and reprovisions the app",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"synchronous":{
+			   "description": "If true then the API will block until the app has been restarted",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Subscription Id",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"name":{
 			   "description": "Name of web app",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"slot":{
-			   "description": "Name of web app slot. If not specified then will default to production slot.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"soft_restart":{
-			   "description": "Soft restart applies the configuration settings and restarts the app if necessary. Hard restart always restarts and reprovisions the app",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"synchronous":{
-			   "description": "If true then the API will block until the app has been restarted",
 			   "type": "Optional[String[1]]"
 			}
 			

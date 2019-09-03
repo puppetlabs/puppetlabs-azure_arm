@@ -37,8 +37,14 @@
 			}
 			,
 		    
-			"contentpaths":{
-			   "description": "The path to the content to be purged. Can describe a file path or a wild card directory.",
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,

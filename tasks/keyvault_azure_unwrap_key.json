@@ -31,14 +31,14 @@
 			}
 			,
 		    
-			"kid":{
-			   "description": "Key identifier",
+			"value":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"value":{
-			   "description": "",
+			"alg":{
+			   "description": "algorithm identifier",
 			   "type": "Optional[String[1]]"
 			}
 			

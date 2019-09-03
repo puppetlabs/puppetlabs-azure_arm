@@ -13,20 +13,14 @@
 			}
 			,
 		    
-			"primarykey":{
-			   "description": "A base64-encoded 256-bit primary key for signing and validating the SAS token.",
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"secondarykey":{
-			   "description": "A base64-encoded 256-bit secondary key for signing and validating the SAS token.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"keyname":{
-			   "description": "A string that describes the authorization rule.",
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,6 +37,12 @@
 			}
 			,
 		    
+			"relay_name":{
+			   "description": "The relay name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"authorization_rule_name":{
 			   "description": "The authorization rule name.",
 			   "type": "Optional[String[1]]"
@@ -51,24 +51,6 @@
 		    
 			"api_version":{
 			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primaryconnectionstring":{
-			   "description": "Primary connection string of the created namespace authorization rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"relay_name":{
-			   "description": "The relay name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondaryconnectionstring":{
-			   "description": "Secondary connection string of the created namespace authorization rule.",
 			   "type": "Optional[String[1]]"
 			}
 			

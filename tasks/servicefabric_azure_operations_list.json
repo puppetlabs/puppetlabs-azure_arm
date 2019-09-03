@@ -7,20 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The version of the ServiceFabric resouce provider api",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Result name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"display":{
-			   "description": "Dispaly of the result",
+			   "description": "Display of the result",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,6 +21,18 @@
 		    
 			"nextlink":{
 			   "description": "The URL to use for getting the next set of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the ServiceFabric resource provider api",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Result name",
 			   "type": "Optional[String[1]]"
 			}
 			

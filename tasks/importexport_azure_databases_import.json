@@ -7,32 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version to use for the request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The subscription ID that identifies an Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"server_name":{
-			   "description": "The name of the server.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +19,80 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "The import/export operation properties.",
+			"storagekey":{
+			   "description": "The storage key to use.  If storage key type is SharedAccessKey, it must be preceded with a '?.'",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource ID.",
+			"storageuri":{
+			   "description": "The storage uri to use.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource name.",
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_name":{
+			   "description": "The name of the server.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storagekeytype":{
+			   "description": "The type of the storage key to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "The name of the database to import.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"administratorlogin":{
+			   "description": "The name of the SQL administrator.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authenticationtype":{
+			   "description": "The authentication type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"serviceobjectivename":{
+			   "description": "The name of the service objective to assign to the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"edition":{
+			   "description": "The edition for the database being created.The list of SKUs may vary by region and support offer. To determine the SKUs (including the SKU name, tier/edition, family, and capacity) that are available to your subscription in an Azure region, use the `Capabilities_ListByLocation` REST API or one of the following commands:```azurecliaz sql db list-editions -l  -o table```````powershellGet-AzSqlServerServiceObjective -Location ````",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxsizebytes":{
+			   "description": "The maximum size for the newly imported database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"administratorloginpassword":{
+			   "description": "The password of the SQL administrator.",
 			   "type": "Optional[String[1]]"
 			}
 			

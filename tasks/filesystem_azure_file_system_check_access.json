@@ -1,0 +1,40 @@
+{
+	"description": "Checks if the specified access is available at the given path.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"remoteexception":{
+			   "description": "the object representing the actual WebHDFS exception being returned.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"path":{
+			   "description": "The Data Lake Store path (starting with '/') of the file or directory for which to check access.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fsaction":{
+			   "description": "File system operation read/write/execute in string form, matching regex pattern '[rwx-]{3}'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"op":{
+			   "description": "The constant value for the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

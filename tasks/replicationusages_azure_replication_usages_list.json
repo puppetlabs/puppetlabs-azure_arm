@@ -1,0 +1,70 @@
+{
+	"description": "Fetches the replication usages of the vault.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"jobssummary":{
+			   "description": "Summary of the replication jobs data for this vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protecteditemcount":{
+			   "description": "Number of replication protected items for this vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"monitoringsummary":{
+			   "description": "Summary of the replication monitoring data for this vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recoveryservicesproviderauthtype":{
+			   "description": "The authentication type of recovery service providers in the vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recoveryplancount":{
+			   "description": "Number of replication recovery plans for this vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registeredserverscount":{
+			   "description": "Number of servers registered to this vault.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

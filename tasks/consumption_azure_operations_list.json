@@ -8,19 +8,19 @@
 		
 		    
 			"api_version":{
-			   "description": "Version of the API to be used with the client request. The current version is 2018-10-01.",
+			   "description": "Version of the API to be used with the client request. The current version is 2019-05-01.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}.",
+			"value":{
+			   "description": "List of consumption operations supported by the Microsoft.Consumption resource provider.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "The object that represents the operation.",
+			"nextlink":{
+			   "description": "URL to get the next set of operation list results if there are any.",
 			   "type": "Optional[String[1]]"
 			}
 			

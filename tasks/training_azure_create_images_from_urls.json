@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"tagids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"project_id":{
 			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tagids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

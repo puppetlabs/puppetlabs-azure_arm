@@ -1,0 +1,82 @@
+{
+	"description": "Grants OAuth2 permissions for the relevant resource Ids of an app.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"objectid":{
+			   "description": "The id of the permission grant",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starttime":{
+			   "description": "Start time for TTL",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatatype":{
+			   "description": "Microsoft.DirectoryServices.OAuth2PermissionGrant",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"clientid":{
+			   "description": "The id of the resource's service principal granted consent to impersonate the user when accessing the resource (represented by the resourceId property).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"consenttype":{
+			   "description": "Indicates if consent was provided by the administrator (on behalf of the organization) or by an individual.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expirytime":{
+			   "description": "Expiry time for TTL",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourceid":{
+			   "description": "Object Id of the resource you want to grant",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"principalid":{
+			   "description": "When consent type is Principal, this property specifies the id of the user that granted consent and applies only for that user.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scope":{
+			   "description": "Specifies the value of the scope claim that the resource application should expect in the OAuth 2.0 access token. For example, User.Read",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"body":{
+			   "description": "The relevant app Service Principal Object Id and the Service Principal Object Id you want to grant.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

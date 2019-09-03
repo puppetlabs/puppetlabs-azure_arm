@@ -1,0 +1,70 @@
+{
+	"description": "Gets predictions for a given utterance, in the form of intents and entities. The current maximum query size is 500 characters.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The LUIS application ID (guid).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timezone_offset":{
+			   "description": "The timezone offset for the location of the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"verbose":{
+			   "description": "If true, return all intents instead of just the top scoring intent.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"spell_check":{
+			   "description": "Enable spell checking.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Cause of the error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"q":{
+			   "description": "The utterance to predict.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"staging":{
+			   "description": "Use the staging endpoint slot.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bing_spell_check_subscription_key":{
+			   "description": "The subscription key to use when enabling Bing spell check",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"log":{
+			   "description": "Log query (default is true)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statuscode":{
+			   "description": "HTTP Status code",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

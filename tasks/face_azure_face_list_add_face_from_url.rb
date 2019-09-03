@@ -74,6 +74,7 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('detectionModel', 'query', 'detection_model', 'detection_model'),
       op_param('error', 'body', 'error', 'error'),
       op_param('faceListId', 'path', 'face_list_id', 'face_list_id'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),

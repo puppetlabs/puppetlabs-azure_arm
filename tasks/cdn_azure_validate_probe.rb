@@ -75,7 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('probeurl', 'body', 'probe_url', 'probeurl'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('validateProbeInput', 'body', 'validate_probe_input', 'validate_probe_input'),
     ]

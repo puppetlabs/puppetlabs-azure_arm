@@ -1,0 +1,64 @@
+{
+	"description": "Gets the information about the service replica with the given name. The information include the description and other properties of the service replica.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_resource_name":{
+			   "description": "The identity of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_resource_name":{
+			   "description": "The identity of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replicaname":{
+			   "description": "Name of the replica.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replica_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.4-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"networkrefs":{
+			   "description": "The names of the private networks that this service needs to be part of.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"diagnostics":{
+			   "description": "Reference to sinks in DiagnosticsDescription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ostype":{
+			   "description": "The operation system required by the code in service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"codepackages":{
+			   "description": "Describes the set of code packages that forms the service. A code package describes the container and the properties for running it. All the code packages are started together on the same host and share the same context (network, process etc.).",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

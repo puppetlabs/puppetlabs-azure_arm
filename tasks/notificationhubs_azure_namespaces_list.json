@@ -1,0 +1,40 @@
+{
+	"description": "Lists the available namespaces within a resourceGroup.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group. If resourceGroupName value is null the method lists all the namespaces within subscription",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "Link to the next set of results. Not empty if Value contains incomplete list of Namespaces",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "Result of the List Namespace operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

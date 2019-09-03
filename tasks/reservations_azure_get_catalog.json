@@ -7,32 +7,20 @@
 		
 		
 		    
-			"size":{
-			   "description": "The size of this SKU",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"capabilities":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Supported version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "Id of the subscription",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resourcetype":{
-			   "description": "The type of resource the SKU applies to.",
+			"size":{
+			   "description": "The size of this SKU",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restrictions":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +31,8 @@
 			}
 			,
 		    
-			"tier":{
-			   "description": "The tier of this SKU",
+			"api_version":{
+			   "description": "Supported version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,8 +49,20 @@
 			}
 			,
 		    
-			"restrictions":{
+			"capabilities":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resourcetype":{
+			   "description": "The type of resource the SKU applies to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tier":{
+			   "description": "The tier of this SKU",
 			   "type": "Optional[String[1]]"
 			}
 			

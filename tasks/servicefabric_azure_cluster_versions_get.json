@@ -1,0 +1,64 @@
+{
+	"description": "Get cluster code versions by environment and version",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"location":{
+			   "description": "The location for the cluster code versions, this is different from cluster location",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The customer subscription identifier",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The result resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment":{
+			   "description": "Cluster operating system, the default means all",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the ServiceFabric resource provider api",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_version":{
+			   "description": "The cluster code version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The identification of the result",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the result",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

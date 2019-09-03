@@ -7,6 +7,24 @@
 		
 		
 		    
+			"method":{
+			   "description": "Gets the workflow trigger callback URL HTTP method.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"basepath":{
+			   "description": "Gets the workflow trigger callback URL base path.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The resource group name.",
 			   "type": "Optional[String[1]]"
@@ -19,8 +37,8 @@
 			}
 			,
 		    
-			"version_id":{
-			   "description": "The workflow versionId.",
+			"trigger_name":{
+			   "description": "The workflow trigger name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,14 +49,20 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The subscription id.",
+			"queries":{
+			   "description": "Gets the workflow trigger callback URL query parameters.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"trigger_name":{
-			   "description": "The workflow trigger name.",
+			"relativepath":{
+			   "description": "Gets the workflow trigger callback URL relative path.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The workflow versionId.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +73,14 @@
 			}
 			,
 		    
-			"notafter":{
-			   "description": "The expiry time.",
+			"value":{
+			   "description": "Gets the workflow trigger callback URL.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"keytype":{
-			   "description": "The key type.",
+			"relativepathparameters":{
+			   "description": "Gets the workflow trigger callback URL relative path parameters.",
 			   "type": "Optional[String[1]]"
 			}
 			

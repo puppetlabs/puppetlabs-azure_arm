@@ -1,0 +1,70 @@
+{
+	"description": "Returns the specified product.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group":{
+			   "description": "Name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registration_name":{
+			   "description": "Name of the Azure Stack registration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"etag":{
+			   "description": "The entity tag used for optimistic concurrency when modifying the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "ID of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"product_name":{
+			   "description": "Name of the product.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the product resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of Resource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

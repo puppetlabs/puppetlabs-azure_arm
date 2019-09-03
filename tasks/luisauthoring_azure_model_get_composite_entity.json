@@ -1,0 +1,64 @@
+{
+	"description": "Gets information about a composite entity in a version of the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"readabletype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The ID of the Entity Model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"children":{
+			   "description": "List of child entities.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the Entity Model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"typeid":{
+			   "description": "The type ID of the Entity Model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"roles":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"c_entity_id":{
+			   "description": "The composite entity extractor ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -76,11 +76,17 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('azureRegion', 'path', 'azure_region', 'azure_region'),
+      op_param('containername', 'body', 'container_name', 'containername'),
+      op_param('errorcode', 'body', 'error_code', 'errorcode'),
+      op_param('errormessage', 'body', 'error_message', 'errormessage'),
+      op_param('fabricname', 'body', 'fabric_name', 'fabricname'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
-      op_param('pologicalname', 'body', 'po_logical_name', 'pologicalname'),
-      op_param('resourceid', 'body', 'resource_id', 'resourceid'),
-      op_param('resourcetype', 'body', 'resource_type', 'resourcetype'),
+      op_param('policyname', 'body', 'policy_name', 'policyname'),
+      op_param('protecteditemname', 'body', 'protected_item_name', 'protecteditemname'),
+      op_param('protectionstatus', 'body', 'protection_status', 'protectionstatus'),
+      op_param('registrationstatus', 'body', 'registration_status', 'registrationstatus'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('vaultid', 'body', 'vault_id', 'vaultid'),
     ]
   op_params.each do |i|
     location = i[:location]

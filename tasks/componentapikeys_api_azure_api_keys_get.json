@@ -1,0 +1,76 @@
+{
+	"description": "Get the API Key for this key id.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "The name of the API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"linkedreadproperties":{
+			   "description": "The read access rights of this API Key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"linkedwriteproperties":{
+			   "description": "The write access rights of this API Key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"apikey":{
+			   "description": "The API key value. It will be only return once when the API Key was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The unique ID of the API key inside an Application Insights component. It is auto generated when the API key is created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"createddate":{
+			   "description": "The create date of this API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_id":{
+			   "description": "The API Key ID. This is unique within a Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

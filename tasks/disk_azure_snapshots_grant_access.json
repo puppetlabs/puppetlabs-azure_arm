@@ -7,20 +7,20 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"grant_access_data":{
 			   "description": "Access data object supplied in the body of the get snapshot access operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"access":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"durationinseconds":{
-			   "description": "Time duration in seconds until the SAS access expires.",
+			"accesssas":{
+			   "description": "A SAS uri for accessing a disk.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,12 +39,6 @@
 		    
 			"snapshot_name":{
 			   "description": "The name of the snapshot that is being created. The name can't be changed after the snapshot is created. Supported characters for the name are a-z, A-Z, 0-9 and _. The max name length is 80 characters.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -14,7 +14,7 @@ def alerts_change_state(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https:////subscriptions/%{subscription_id}/providers/Microsoft.AlertsManagement/alerts/%{alert_id}/changestate" % path_params
+  uri_string = "https://management.azure.com//%{scope}/providers/Microsoft.AlertsManagement/alerts/%{alert_id}/changestate" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)
@@ -74,11 +74,14 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('alertId', 'path', 'alert_id', 'alert_id'),
+      op_param('alertId', 'path', 'id', 'alert_id'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
+      op_param('id', 'body', 'id', 'id'),
+      op_param('name', 'body', 'name', 'name'),
       op_param('newState', 'query', 'new_state', 'new_state'),
-      op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('properties', 'body', 'properties', 'properties'),
+      op_param('scope', 'path', 'scope', 'scope'),
+      op_param('type', 'body', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

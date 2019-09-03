@@ -7,6 +7,18 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vm_name":{
+			   "description": "The name of the virtual machine.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameters":{
 			   "description": "Parameters supplied to the Reimage Virtual Machine operation.",
 			   "type": "Optional[String[1]]"
@@ -26,19 +38,7 @@
 			,
 		    
 			"tempdisk":{
-			   "description": "Specifies whether to reimage temp disk. Default value: false.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vm_name":{
-			   "description": "The name of the virtual machine.",
+			   "description": "Specifies whether to reimage temp disk. Default value: false. Note: This temp disk reimage parameter is only supported for VM/VMSS with Ephemeral OS disk.",
 			   "type": "Optional[String[1]]"
 			}
 			

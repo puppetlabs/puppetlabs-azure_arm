@@ -7,20 +7,20 @@
 		
 		
 		    
-			"code":{
-			   "description": "Error code.",
+			"media_service_name":{
+			   "description": "Name of the Media Service.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The unique identifier for a Microsoft Azure subscription.",
+			"primaryauthendpoint":{
+			   "description": "The primary authorization endpoint.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. The current version is 2015-10-01.",
+			"secondaryauthendpoint":{
+			   "description": "The secondary authorization endpoint.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,14 +31,32 @@
 			}
 			,
 		    
-			"media_service_name":{
-			   "description": "Name of the Media Service.",
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2015-10-01.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"message":{
-			   "description": "Error message.",
+			"scope":{
+			   "description": "The authorization scope.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primarykey":{
+			   "description": "The primary key for the Media Service resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondarykey":{
+			   "description": "The secondary key for the Media Service resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			

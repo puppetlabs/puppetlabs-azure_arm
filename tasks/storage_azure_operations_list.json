@@ -13,26 +13,8 @@
 			}
 			,
 		    
-			"origin":{
-			   "description": "The origin of operations.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Properties of operation, include metric specifications.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "Display metadata associated with the operation.",
+			"value":{
+			   "description": "List of Storage operations supported by the Storage resource provider.",
 			   "type": "Optional[String[1]]"
 			}
 			

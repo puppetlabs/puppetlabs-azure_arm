@@ -7,12 +7,6 @@
 		
 		
 		    
-			"input":{
-			   "description": "Create policy input",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"properties":{
 			   "description": "Policy creation properties.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +39,12 @@
 		    
 			"policy_name":{
 			   "description": "Replication policy name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input":{
+			   "description": "Create policy input",
 			   "type": "Optional[String[1]]"
 			}
 			

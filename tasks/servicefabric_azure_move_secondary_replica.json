@@ -1,0 +1,52 @@
+{
+	"description": "This command moves the secondary replica of a partition of a stateful service, respecting all constraints.CurrentNodeName parameter must be specified to identify the replica that is moved.Source node name must be specified, but new node name can be omitted, and in that case replica is moved to a random node.If IgnoreConstraints parameter is specified and set to true, then secondary will be moved regardless of the constraints.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"current_node_name":{
+			   "description": "The name of the source node for secondary replica move.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"new_node_name":{
+			   "description": "The name of the target node for secondary replica move. If not specified, replica is moved to a random node.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ignore_constraints":{
+			   "description": "Ignore constraints when moving a replica. If this parameter is not specified, all constraints are honored.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error object containing error code and error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.5'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This version is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accepts any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0 and the runtime is 6.1, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_id":{
+			   "description": "The identity of the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error message body",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"api_version":{
 			   "description": "Specifies the API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "The error message body",
 			   "type": "Optional[String[1]]"
 			}
 			

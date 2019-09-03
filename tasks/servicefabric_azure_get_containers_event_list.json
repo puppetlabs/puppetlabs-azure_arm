@@ -1,0 +1,52 @@
+{
+	"description": "The response is list of ContainerInstanceEvent objects.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"skip_correlation_lookup":{
+			   "description": "This param disables the search of CorrelatedEvents information if true is passed. otherwise the CorrelationEvents get processed and HasCorrelatedEvents field in every FabricEvent gets populated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.2-preview'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_time_utc":{
+			   "description": "The start time of a lookup query in ISO UTC yyyy-MM-ddTHH:mm:ssZ.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_time_utc":{
+			   "description": "The end time of a lookup query in ISO UTC yyyy-MM-ddTHH:mm:ssZ.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"events_types_filter":{
+			   "description": "This is a comma separated string specifying the types of FabricEvents that should only be included in the response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exclude_analysis_events":{
+			   "description": "This param disables the retrieval of AnalysisEvents if true is passed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

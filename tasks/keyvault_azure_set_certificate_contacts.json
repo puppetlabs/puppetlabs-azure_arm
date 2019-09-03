@@ -7,32 +7,20 @@
 		
 		
 		    
-			"contacts":{
-			   "description": "The contacts for the key vault certificate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"email":{
-			   "description": "Email address.",
+			"id":{
+			   "description": "Identifier for the contacts collection.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"phone":{
-			   "description": "Phone number.",
+			"contacts":{
+			   "description": "The contact list for the vault certificates.",
 			   "type": "Optional[String[1]]"
 			}
 			

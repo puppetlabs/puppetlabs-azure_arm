@@ -7,8 +7,14 @@
 		
 		
 		    
-			"skip":{
-			   "description": "The number of items to skip over before returning elements. Optional.",
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,56 +31,38 @@
 			}
 			,
 		    
-			"schemaname":{
-			   "description": "the name of the schema.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"computeaccountname":{
-			   "description": "the name of the Data Lake Analytics account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"top":{
 			   "description": "The number of items to return. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filter":{
-			   "description": "OData filter. Optional.",
+			"skip":{
+			   "description": "The number of items to skip over before returning elements. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"select":{
-			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			"value":{
+			   "description": "the list of schemas in the database",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"orderby":{
-			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version":{
-			   "description": "the version of the catalog item.",
+			"nextlink":{
+			   "description": "the link to the next page of results.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"database_name":{
-			   "description": "",
+			   "description": "The name of the database containing the schema.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"databasename":{
-			   "description": "the name of the database.",
+			"filter":{
+			   "description": "OData filter. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			

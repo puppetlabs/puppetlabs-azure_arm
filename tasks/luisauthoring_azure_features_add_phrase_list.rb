@@ -75,7 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
+      op_param('isexchangeable', 'body', 'is_exchangeable', 'isexchangeable'),
+      op_param('name', 'body', 'name', 'name'),
       op_param('phraselistCreateObject', 'body', 'phraselist_create_object', 'phraselist_create_object'),
+      op_param('phrases', 'body', 'phrases', 'phrases'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
     ]
   op_params.each do |i|

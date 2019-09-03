@@ -7,8 +7,8 @@
 		
 		
 		    
-			"error":{
-			   "description": "An error response from the Batch AI service.",
+			"properties":{
+			   "description": "The properties of the File Server.",
 			   "type": "Optional[String[1]]"
 			}
 			,

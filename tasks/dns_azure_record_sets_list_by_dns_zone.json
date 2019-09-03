@@ -1,0 +1,52 @@
+{
+	"description": "Lists all record sets in a DNS zone.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Specifies the API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Specifies the Azure subscription ID, which uniquely identifies the Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error message body",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"zone_name":{
+			   "description": "The name of the DNS zone (without a terminating dot).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The maximum number of record sets to return. If not specified, returns up to 100 record sets.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recordsetnamesuffix":{
+			   "description": "The suffix label of the record set name that has to be used to filter the record set enumerations. If this parameter is specified, Enumeration will return only records that end with .",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

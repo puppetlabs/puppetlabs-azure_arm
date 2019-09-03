@@ -19,8 +19,8 @@
 			}
 			,
 		    
-			"tables":{
-			   "description": "The list of tables, columns and rows.",
+			"error":{
+			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
 			}
 			

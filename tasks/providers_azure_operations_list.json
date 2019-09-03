@@ -7,14 +7,14 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,

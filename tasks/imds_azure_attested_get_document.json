@@ -1,0 +1,40 @@
+{
+	"description": "Get Attested Data for the Virtual Machine.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "This is the API version to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nonce":{
+			   "description": "This is a string of up to 32 random alphanumeric characters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metadata":{
+			   "description": "This must be set to 'true'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signature":{
+			   "description": "This is the encoded string containing the VM ID, plan information, public key, timestamp, and nonce value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encoding":{
+			   "description": "This is the encoding scheme of the signature.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

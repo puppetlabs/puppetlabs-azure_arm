@@ -1,0 +1,34 @@
+{
+	"description": "Gets information about a SAS definition for the specified storage account. This operation requires the storage/getsas permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"sas_definition_name":{
+			   "description": "The name of the SAS definition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storage_account_name":{
+			   "description": "The name of the storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"project_id":{
 			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
@@ -20,19 +26,13 @@
 			,
 		    
 			"training_key":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"isbatchsuccessful":{
-			   "description": "True if all of the images in the batch were created successfully, otherwise false.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"images":{
-			   "description": "List of the image creation results.",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,14 +7,14 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"ssourivalue":{
-			   "description": "The URI used to login to the supplemental portal.",
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,6 +33,12 @@
 		    
 			"subscription_id":{
 			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-02.",
 			   "type": "Optional[String[1]]"
 			}
 			

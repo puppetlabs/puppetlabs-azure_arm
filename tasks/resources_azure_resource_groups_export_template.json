@@ -7,38 +7,32 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version to use for this operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resources":{
-			   "description": "The IDs of the resources. The only supported string currently is '*' (all resources). Future updates will support exporting specific resources.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"options":{
-			   "description": "The export template options. Supported values include 'IncludeParameterDefaultValue', 'IncludeComments' or 'IncludeParameterDefaultValue, IncludeComments",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
-			   "description": "The name of the resource group to export as a template.",
+			   "description": "The name of the resource group. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"parameters":{
 			   "description": "Parameters for exporting the template.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

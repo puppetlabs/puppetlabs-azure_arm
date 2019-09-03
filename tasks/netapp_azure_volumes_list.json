@@ -1,0 +1,46 @@
+{
+	"description": "List all volumes within the capacity pool",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The name of the NetApp account",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pool_name":{
+			   "description": "The name of the capacity pool",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of volumes",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

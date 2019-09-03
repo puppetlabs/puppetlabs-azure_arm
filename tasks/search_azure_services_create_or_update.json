@@ -7,6 +7,12 @@
 		
 		
 		    
+			"error":{
+			   "description": "Describes a particular API error with an error code and a message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The name of the resource group within the current subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"subscription_id":{
 			   "description": "The unique identifier for a Microsoft Azure subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "Describes a particular API error with an error code and a message.",
 			   "type": "Optional[String[1]]"
 			}
 			

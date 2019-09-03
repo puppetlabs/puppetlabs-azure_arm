@@ -7,18 +7,6 @@
 		
 		
 		    
-			"name":{
-			   "description": "Website Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "API Version",
 			   "type": "Optional[String[1]]"
@@ -27,6 +15,18 @@
 		    
 			"resource_group_name":{
 			   "description": "Webspace",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Website Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription Id",
 			   "type": "Optional[String[1]]"
 			}
 			

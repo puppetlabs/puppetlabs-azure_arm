@@ -1,0 +1,28 @@
+{
+	"description": "Lists all the Azure Dev Spaces Controllers with their properties in the subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The details of the error.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

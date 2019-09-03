@@ -1,0 +1,88 @@
+{
+	"description": "Deletes an Azure Search datasource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"if_match":{
+			   "description": "Defines the If-Match condition. The operation will be performed only if the ETag on the server matches this value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_none_match":{
+			   "description": "Defines the If-None-Match condition. The operation will be performed only if the ETag on the server does not match this value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataetag":{
+			   "description": "The ETag of the DataSource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "The description of the datasource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The type of the datasource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"credentials":{
+			   "description": "Credentials for the datasource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_source_name":{
+			   "description": "The name of the datasource to delete.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container":{
+			   "description": "The data container for the datasource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"datachangedetectionpolicy":{
+			   "description": "The data change detection policy for the datasource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"datadeletiondetectionpolicy":{
+			   "description": "The data deletion detection policy for the datasource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the datasource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

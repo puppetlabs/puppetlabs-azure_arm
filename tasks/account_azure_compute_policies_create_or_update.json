@@ -7,6 +7,24 @@
 		
 		
 		    
+			"parameters":{
+			   "description": "Parameters supplied to create or update the compute policy. The max degree of parallelism per job property, min priority per job property, or both must be present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The compute policy properties to use when creating a new compute policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"compute_policy_name":{
 			   "description": "The name of the compute policy to create or update.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameters supplied to create or update the compute policy. The max degree of parallelism per job property, min priority per job property, or both must be present.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The compute policy properties to use when creating a new compute policy.",
 			   "type": "Optional[String[1]]"
 			}
 			

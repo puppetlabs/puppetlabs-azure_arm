@@ -7,6 +7,18 @@
 		
 		
 		    
+			"quorum_loss_mode":{
+			   "description": "This enum is passed to the StartQuorumLoss API to indicate what type of quorum loss to induce.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"quorum_loss_duration":{
+			   "description": "The amount of time for which the partition will be kept in quorum loss.  This must be specified in seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"timeout":{
 			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
 			   "type": "Optional[String[1]]"
@@ -39,18 +51,6 @@
 		    
 			"operation_id":{
 			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"quorum_loss_mode":{
-			   "description": "This enum is passed to the StartQuorumLoss API to indicate what type of quorum loss to induce.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"quorum_loss_duration":{
-			   "description": "The amount of time for which the partition will be kept in quorum loss.  This must be specified in seconds.",
 			   "type": "Optional[String[1]]"
 			}
 			

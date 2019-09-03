@@ -1,0 +1,46 @@
+{
+	"description": "Get operation",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"status":{
+			   "description": "The operation status.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location_name":{
+			   "description": "The name of the location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_name":{
+			   "description": "The name of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error details for the operation in case of a failure.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"description": "Adds a list of prebuilt entity extractors to the application.",
+	"description": "Adds a list of prebuilt entities to a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		

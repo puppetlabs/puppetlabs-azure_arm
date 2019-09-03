@@ -7,14 +7,20 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "API Version",
+			"source_control_type":{
+			   "description": "Type of source control",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "SourceControl resource specific properties",
+			"request_message":{
+			   "description": "Source control token information",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,20 +43,14 @@
 			}
 			,
 		    
+			"properties":{
+			   "description": "SourceControl resource specific properties",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "Resource Name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"source_control_type":{
-			   "description": "Type of source control",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"request_message":{
-			   "description": "Source control token information",
 			   "type": "Optional[String[1]]"
 			}
 			

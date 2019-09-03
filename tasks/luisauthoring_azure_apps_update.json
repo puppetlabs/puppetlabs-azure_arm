@@ -7,26 +7,26 @@
 		
 		
 		    
-			"code":{
-			   "description": "Status Code.",
+			"application_update_object":{
+			   "description": "A model containing Name and Description of the application.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"message":{
-			   "description": "Status details.",
+			"name":{
+			   "description": "The application's new name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "The application's new description.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"app_id":{
 			   "description": "The application ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"application_update_object":{
-			   "description": "A model containing Name and Description of the application.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,40 @@
+{
+	"description": "The full key identifier, attributes, and tags are provided in the response. This operation requires the keys/list permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URL to get the next set of keys.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A response message containing a list of keys in the key vault along with a link to the next page of keys.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_name":{
+			   "description": "The name of the key.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

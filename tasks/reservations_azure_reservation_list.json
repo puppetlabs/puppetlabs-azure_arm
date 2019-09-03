@@ -1,0 +1,34 @@
+{
+	"description": "List `Reservation`s within a single `ReservationOrder`.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"reservation_order_id":{
+			   "description": "Order Id of the reservation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Supported version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "Url to get the next page of reservations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

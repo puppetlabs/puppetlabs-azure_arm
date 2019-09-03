@@ -1,0 +1,52 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"threshold":{
+			   "description": "The threshold used to determine true predictions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"overlap_threshold":{
+			   "description": "If applicable, the bounding box overlap threshold used to determine true predictions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The id of the project the iteration belongs to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iteration_id":{
+			   "description": "The id of the iteration to get.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

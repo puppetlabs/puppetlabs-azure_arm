@@ -1,0 +1,52 @@
+{
+	"description": "Power off virtual machine, options: shutdown, poweroff, and suspend",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"referer":{
+			   "description": "referer url",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"virtual_machine_name":{
+			   "description": "virtual machine name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"m":{
+			   "description": "body stop mode parameter (reboot, shutdown, etc...)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mode":{
+			   "description": "mode indicates a type of stop operation - reboot, suspend, shutdown or power-off",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

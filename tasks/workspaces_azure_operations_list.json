@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
+			"code":{
+			   "description": "error code",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "Display name of operation",
+			"message":{
+			   "description": "error message",
 			   "type": "Optional[String[1]]"
 			}
 			

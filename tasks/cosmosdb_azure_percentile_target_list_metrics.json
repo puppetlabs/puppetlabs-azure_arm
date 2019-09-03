@@ -1,0 +1,52 @@
+{
+	"description": "Retrieves the metrics determined by the given filter for the given account target region. This url is only for PBS and Replication Latency data",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "Name of an Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "Cosmos DB database account name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_region":{
+			   "description": "Target region to which data is written. Cosmos DB region, with spaces between words and each word capitalized.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2015-04-08.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "An OData filter expression that describes a subset of metrics to return. The parameters that can be filtered are name.value (name of the metric, can have an or of multiple names), startTime, endTime, and timeGrain. The supported operator is eq.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of percentile metrics for the account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

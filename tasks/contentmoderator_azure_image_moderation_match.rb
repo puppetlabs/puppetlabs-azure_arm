@@ -74,13 +74,9 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('cacheid', 'body', 'cache_id', 'cacheid'),
       op_param('CacheImage', 'query', 'cache_image', 'cache_image'),
-      op_param('ismatch', 'body', 'is_match', 'ismatch'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('listId', 'query', 'list_id', 'list_id'),
-      op_param('matches', 'body', 'matches', 'matches'),
-      op_param('status', 'body', 'status', 'status'),
-      op_param('trackingid', 'body', 'tracking_id', 'trackingid'),
     ]
   op_params.each do |i|
     location = i[:location]

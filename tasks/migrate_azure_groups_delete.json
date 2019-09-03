@@ -7,6 +7,18 @@
 		
 		
 		    
+			"group_name":{
+			   "description": "Unique name of a group within a project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "Standard request header. Used by service to respond to client in appropriate language.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Standard request header. Used by service to identify API version used by client.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"project_name":{
 			   "description": "Name of the Azure Migrate project.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"group_name":{
-			   "description": "Unique name of a group within a project.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"accept_language":{
-			   "description": "Standard request header. Used by service to respond to client in appropriate language.",
 			   "type": "Optional[String[1]]"
 			}
 			

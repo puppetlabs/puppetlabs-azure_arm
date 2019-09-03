@@ -7,6 +7,12 @@
 		
 		
 		    
+			"fabric_name":{
+			   "description": "Name of the ASR fabric.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"input":{
 			   "description": "Fabric creation input.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"subscription_id":{
 			   "description": "The subscription Id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fabric_name":{
-			   "description": "Name of the ASR fabric.",
 			   "type": "Optional[String[1]]"
 			}
 			

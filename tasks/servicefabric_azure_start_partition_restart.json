@@ -7,24 +7,6 @@
 		
 		
 		    
-			"partition_id":{
-			   "description": "The identity of the partition.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"operation_id":{
-			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"restart_partition_mode":{
-			   "description": "Describe which partitions to restart.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"timeout":{
 			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +27,24 @@
 		    
 			"service_id":{
 			   "description": "The identity of the service. This ID is typically the full name of the service without the 'fabric:' URI scheme.Starting from version 6.0, hierarchical names are delimited with the '~' character.For example, if the service name is 'fabric:/myapp/app1/svc1', the service identity would be 'myapp~app1~svc1' in 6.0+ and 'myapp/app1/svc1' in previous versions.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_id":{
+			   "description": "The identity of the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_id":{
+			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restart_partition_mode":{
+			   "description": "Describe which partitions to restart.",
 			   "type": "Optional[String[1]]"
 			}
 			

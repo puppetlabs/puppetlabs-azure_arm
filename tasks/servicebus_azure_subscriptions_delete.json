@@ -7,18 +7,6 @@
 		
 		
 		    
-			"topic_name":{
-			   "description": "The topic name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_name":{
-			   "description": "The subscription name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +39,18 @@
 		    
 			"namespace_name":{
 			   "description": "The namespace name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"topic_name":{
+			   "description": "The topic name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_name":{
+			   "description": "The subscription name.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,14 +7,26 @@
 		
 		
 		    
+			"top":{
+			   "description": "The number of recommendations per page if a paged version of this API is being used.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"skip_token":{
 			   "description": "The page-continuation token to use with a paged version of this API.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "The properties of the recommendation.",
+			"nextlink":{
+			   "description": "The link used to get the next page of recommendations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of recommendations.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,30 +45,6 @@
 		    
 			"filter":{
 			   "description": "The filter to apply to the recommendations.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"top":{
-			   "description": "The number of recommendations per page if a paged version of this API is being used.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "The type of the resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "The resource ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The name of the resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

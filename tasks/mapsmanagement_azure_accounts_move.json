@@ -7,32 +7,14 @@
 		
 		
 		    
-			"move_request":{
-			   "description": "The details of the Maps Account move.",
+			"targetresourcegroup":{
+			   "description": "The name of the destination resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"message":{
-			   "description": "If available, a human readable description of the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target":{
-			   "description": "If available, the component generating the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"details":{
-			   "description": "If available, a list of additional details about the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "Error code.",
+			"resourceids":{
+			   "description": "A list of resource names to move from the source resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -51,6 +33,12 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group that contains Maps Account to move.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"move_request":{
+			   "description": "The details of the Maps Account move.",
 			   "type": "Optional[String[1]]"
 			}
 			

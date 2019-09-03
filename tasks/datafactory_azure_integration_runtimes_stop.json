@@ -7,6 +7,18 @@
 		
 		
 		    
+			"integration_runtime_name":{
+			   "description": "The integration runtime name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"error":{
 			   "description": "Error data",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"factory_name":{
 			   "description": "The factory name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"integration_runtime_name":{
-			   "description": "The integration runtime name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

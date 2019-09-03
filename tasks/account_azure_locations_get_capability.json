@@ -1,0 +1,58 @@
+{
+	"description": "Gets subscription-level properties and limits for Data Lake Analytics specified by resource location.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"location":{
+			   "description": "The resource location without whitespace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxaccountcount":{
+			   "description": "The maximum supported number of accounts under this subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accountcount":{
+			   "description": "The current number of accounts under this subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"migrationstate":{
+			   "description": "The Boolean value of true or false to indicate the maintenance state.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"state":{
+			   "description": "The subscription state.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscriptionid":{
+			   "description": "The subscription credentials that uniquely identifies the subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -74,12 +74,12 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('code', 'body', 'code', 'code'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),
       op_param('language', 'query', 'language', 'language'),
-      op_param('message', 'body', 'message', 'message'),
+      op_param('metadata', 'body', 'metadata', 'metadata'),
       op_param('model', 'path', 'model', 'model'),
-      op_param('requestid', 'body', 'requestid', 'requestid'),
+      op_param('requestid', 'body', 'request_id', 'requestid'),
+      op_param('result', 'body', 'result', 'result'),
     ]
   op_params.each do |i|
     location = i[:location]

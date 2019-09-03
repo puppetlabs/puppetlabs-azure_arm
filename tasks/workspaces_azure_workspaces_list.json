@@ -1,0 +1,34 @@
+{
+	"description": "Lists all the available machine learning workspaces under the specified subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The Microsoft Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of machine learning workspaces. Since this list may be incomplete, the nextLink field should be used to request the next list of machine learning workspaces.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URI that can be used to request the next list of machine learning workspaces.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

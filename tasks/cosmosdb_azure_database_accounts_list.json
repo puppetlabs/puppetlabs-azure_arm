@@ -1,0 +1,28 @@
+{
+	"description": "Lists all the Azure Cosmos DB database accounts available under the subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2015-04-08.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of database account and their properties.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

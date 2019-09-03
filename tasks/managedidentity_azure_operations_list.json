@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The name of the REST Operation. This is of the format {provider}/{resource}/{operation}.",
+			"nextlink":{
+			   "description": "The url to get the next page of results, if any.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "The object that describes the operation.",
+			"value":{
+			   "description": "A list of operations supported by Microsoft.ManagedIdentity Resource Provider.",
 			   "type": "Optional[String[1]]"
 			}
 			

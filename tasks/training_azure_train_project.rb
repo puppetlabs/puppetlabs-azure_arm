@@ -78,15 +78,21 @@ def format_params(key_values)
       op_param('created', 'body', 'created', 'created'),
       op_param('domainid', 'body', 'domain_id', 'domainid'),
       op_param('exportable', 'body', 'exportable', 'exportable'),
+      op_param('exportableto', 'body', 'exportable_to', 'exportableto'),
+      op_param('forceTrain', 'query', 'force_train', 'force_train'),
       op_param('id', 'body', 'id', 'id'),
-      op_param('isdefault', 'body', 'is_default', 'isdefault'),
       op_param('lastmodified', 'body', 'last_modified', 'lastmodified'),
       op_param('name', 'body', 'name', 'name'),
+      op_param('notificationEmailAddress', 'query', 'notification_email_address', 'notification_email_address'),
+      op_param('originalpublishresourceid', 'body', 'original_publish_resource_id', 'originalpublishresourceid'),
       op_param('project_id', 'path', 'project_id', 'project_id'),
       op_param('projectid', 'body', 'project_id', 'projectid'),
+      op_param('publishname', 'body', 'publish_name', 'publishname'),
+      op_param('reservedbudgetinhours', 'body', 'reserved_budget_in_hours', 'reservedbudgetinhours'),
       op_param('status', 'body', 'status', 'status'),
       op_param('trainedat', 'body', 'trained_at', 'trainedat'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
+      op_param('trainingtype', 'body', 'training_type', 'trainingtype'),
     ]
   op_params.each do |i|
     location = i[:location]

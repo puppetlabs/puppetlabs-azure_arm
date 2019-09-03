@@ -7,14 +7,14 @@
 		
 		
 		    
-			"schema_name":{
-			   "description": "",
+			"nextlink":{
+			   "description": "the link to the next page of results.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"databasename":{
-			   "description": "the name of the database.",
+			"schema_name":{
+			   "description": "The name of the schema containing the tables.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,32 +25,8 @@
 			}
 			,
 		    
-			"skip":{
-			   "description": "The number of items to skip over before returning elements. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"computeaccountname":{
-			   "description": "the name of the Data Lake Analytics account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schemaname":{
-			   "description": "the name of the schema associated with this table and database.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"orderby":{
-			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,26 +37,20 @@
 			}
 			,
 		    
-			"externaltable":{
-			   "description": "the external table associated with the table.",
+			"basic":{
+			   "description": "The basic switch indicates what level of information to return when listing tables. When basic is true, only database_name, schema_name, table_name and version are returned for each table, otherwise all table metadata is returned. By default, it is false. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"columnlist":{
-			   "description": "the list of columns in this table",
+			"value":{
+			   "description": "the list of tables in the database and schema combination",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"indexlist":{
-			   "description": "the list of indices in this table",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"partitionkeylist":{
-			   "description": "the list of partition keys in the table",
+			"database_name":{
+			   "description": "The name of the database containing the tables.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -91,38 +61,20 @@
 			}
 			,
 		    
-			"select":{
-			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			"skip":{
+			   "description": "The number of items to skip over before returning elements. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"basic":{
-			   "description": "The basic switch indicates what level of information to return when listing tables. When basic is true, only database_name, schema_name, table_name and version are returned for each table, otherwise all table metadata is returned. By default, it is false. Optional.",
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"distributioninfo":{
-			   "description": "the distributions info of the table",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tablename":{
-			   "description": "the name of the table.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version":{
-			   "description": "the version of the catalog item.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"database_name":{
-			   "description": "",
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

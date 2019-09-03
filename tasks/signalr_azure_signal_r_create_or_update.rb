@@ -14,7 +14,7 @@ def signal_r_create_or_update(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https://management.azure.com//subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.SignalRService/SignalR/%{resource_name}" % path_params
+  uri_string = "https://management.azure.com//subscriptions/%{subscription_id}/resourceGroups/%{resource_group_name}/providers/Microsoft.SignalRService/signalR/%{resource_name}" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)

@@ -7,24 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "The content of the error.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group containing the Traffic Manager endpoint to be deleted.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +27,24 @@
 		    
 			"endpoint_name":{
 			   "description": "The name of the Traffic Manager endpoint to be deleted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The content of the error.",
 			   "type": "Optional[String[1]]"
 			}
 			

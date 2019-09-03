@@ -7,6 +7,12 @@
 		
 		
 		    
+			"nameavailable":{
+			   "description": "true indicates name is valid and available. false indicates the name is invalid, unavailable, or both.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"reason":{
 			   "description": "Invalid indicates the name provided does not match Azure App Service naming requirements. AlreadyExists indicates that the name is already in use and is therefore unavailable.",
 			   "type": "Optional[String[1]]"
@@ -15,12 +21,6 @@
 		    
 			"message":{
 			   "description": "If reason == invalid, provide the user with the reason why the given name is invalid, and provide the resource naming requirements so that the user can select a valid name. If reason == AlreadyExists, explain that resource name is already in use, and direct them to select a different name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"nameavailable":{
-			   "description": "true indicates name is valid and available. false indicates the name is invalid, unavailable, or both.",
 			   "type": "Optional[String[1]]"
 			}
 			,

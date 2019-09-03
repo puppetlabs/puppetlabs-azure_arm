@@ -1,0 +1,64 @@
+{
+	"description": "Gets the server related metrics for a given metric and group combination.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_key":{
+			   "description": "The group key",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"from_date":{
+			   "description": "The start date.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"to_date":{
+			   "description": "The end date.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timestamps":{
+			   "description": "The list of timestamps for each metric in the metric set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metric_name":{
+			   "description": "The metric name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"group_name":{
+			   "description": "The group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sets":{
+			   "description": "The list of metric set.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_name":{
+			   "description": "The name of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

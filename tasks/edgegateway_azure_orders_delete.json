@@ -20,7 +20,7 @@
 			,
 		    
 			"device_name":{
-			   "description": "Name of the device.",
+			   "description": "The device name.",
 			   "type": "Optional[String[1]]"
 			}
 			,

@@ -7,24 +7,6 @@
 		
 		
 		    
-			"kind":{
-			   "description": "Resource kind.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "Resource location.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"server_name":{
 			   "description": "The name of the server.",
 			   "type": "Optional[String[1]]"
@@ -43,14 +25,8 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "The API version to use for the request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource ID.",
+			"location":{
+			   "description": "Resource location.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,8 +37,32 @@
 			}
 			,
 		    
+			"kind":{
+			   "description": "Resource kind.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the resource. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"advisor_name":{
 			   "description": "The name of the Server Advisor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,

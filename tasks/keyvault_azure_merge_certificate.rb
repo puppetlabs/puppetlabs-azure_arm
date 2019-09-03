@@ -76,10 +76,16 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('attributes', 'body', 'attributes', 'attributes'),
+      op_param('cer', 'body', 'cer', 'cer'),
       op_param('certificate-name', 'path', 'certificate_name', 'certificate_name'),
+      op_param('contenttype', 'body', 'content_type', 'contenttype'),
+      op_param('id', 'body', 'id', 'id'),
+      op_param('kid', 'body', 'kid', 'kid'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
+      op_param('policy', 'body', 'policy', 'policy'),
+      op_param('sid', 'body', 'sid', 'sid'),
       op_param('tags', 'body', 'tags', 'tags'),
-      op_param('x5c', 'body', 'x5c', 'x5c'),
+      op_param('x5t', 'body', 'x5t', 'x5t'),
     ]
   op_params.each do |i|
     location = i[:location]

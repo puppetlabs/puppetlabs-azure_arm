@@ -1,0 +1,76 @@
+{
+	"description": "Gets group information from the directory.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"securityenabled":{
+			   "description": "Whether the group is security-enable.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "The display name of the group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mailenabled":{
+			   "description": "Whether the group is mail-enabled. Must be false. This is because only pure security groups can be created using the Graph API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mailnickname":{
+			   "description": "The mail alias for the group. ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"objecttype":{
+			   "description": "The object type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"object_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"objectid":{
+			   "description": "The object ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deletiontimestamp":{
+			   "description": "The time at which the directory object was deleted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mail":{
+			   "description": "The primary email address of the group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

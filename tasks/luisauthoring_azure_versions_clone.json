@@ -1,5 +1,5 @@
 {
-	"description": "Creates a new version using the current snapshot of the selected application version.",
+	"description": "Creates a new version from the selected version.",
 	"input_method": "stdin",
 	"parameters":{
 		

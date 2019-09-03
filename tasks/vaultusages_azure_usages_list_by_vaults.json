@@ -1,0 +1,70 @@
+{
+	"description": "Fetches the usages of the vault.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"quotaperiod":{
+			   "description": "Quota period of usage.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextresettime":{
+			   "description": "Next reset time of usage.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"currentvalue":{
+			   "description": "Current value of usage.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "Limit of usage.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of usage.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unit":{
+			   "description": "Unit of the usage.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

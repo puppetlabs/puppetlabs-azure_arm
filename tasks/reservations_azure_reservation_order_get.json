@@ -1,0 +1,52 @@
+{
+	"description": "Get the details of the `ReservationOrder`.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "Identifier of the reservation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the reservation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of resource. 'Microsoft.Capacity/reservations'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reservation_order_id":{
+			   "description": "Order Id of the reservation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Supported version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"etag":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

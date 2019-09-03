@@ -1,0 +1,28 @@
+{
+	"description": "Returns review details for the review Id passed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"team_name":{
+			   "description": "Your Team Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"review_id":{
+			   "description": "Id of the review.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

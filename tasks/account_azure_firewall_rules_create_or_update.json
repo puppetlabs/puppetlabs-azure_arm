@@ -7,6 +7,24 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"firewall_rule_name":{
 			   "description": "The name of the firewall rule to create or update.",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"properties":{
 			   "description": "The firewall rule properties to use when creating a new firewall rule.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Get subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the Azure resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"account_name":{
-			   "description": "The name of the Data Lake Analytics account.",
 			   "type": "Optional[String[1]]"
 			}
 			

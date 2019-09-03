@@ -7,24 +7,6 @@
 		
 		
 		    
-			"topic_name":{
-			   "description": "The topic name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameters supplied to create a topic resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +33,24 @@
 		    
 			"namespace_name":{
 			   "description": "The namespace name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"topic_name":{
+			   "description": "The topic name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to create a topic resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

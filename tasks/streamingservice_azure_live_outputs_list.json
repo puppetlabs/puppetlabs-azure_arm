@@ -1,0 +1,58 @@
+{
+	"description": "Lists the Live Outputs in the Live Event.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"live_event_name":{
+			   "description": "The name of the Live Event.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The result of the List Live Output operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatacount":{
+			   "description": "The number of result.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatanextlink":{
+			   "description": "Th link to the next set of results. Not empty if value contains incomplete list of Live Outputs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The Media Services account name.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

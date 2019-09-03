@@ -1,5 +1,5 @@
 {
-	"description": "List all registered topic types",
+	"description": "List all registered topic types.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,26 +13,8 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Fully qualified identifier of the resource",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the resource",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Type of the resource",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Properties of the topic type info",
+			"value":{
+			   "description": "A collection of topic types",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -75,20 +75,13 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('applicationdefinitionkind', 'body', 'application_definition_kind', 'applicationdefinitionkind'),
       op_param('ApplicationDefinitionKindFilter', 'query', 'application_definition_kind_filter', 'application_definition_kind_filter'),
       op_param('ApplicationTypeName', 'query', 'application_type_name', 'application_type_name'),
       op_param('ContinuationToken', 'query', 'continuation_token', 'continuation_token'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('ExcludeApplicationParameters', 'query', 'exclude_application_parameters', 'exclude_application_parameters'),
-      op_param('healthstate', 'body', 'health_state', 'healthstate'),
-      op_param('id', 'body', 'id', 'id'),
       op_param('MaxResults', 'query', 'max_results', 'max_results'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('parameters', 'body', 'parameters', 'parameters'),
-      op_param('status', 'body', 'status', 'status'),
       op_param('timeout', 'query', 'timeout', 'timeout'),
-      op_param('typename', 'body', 'type_name', 'typename'),
-      op_param('typeversion', 'body', 'type_version', 'typeversion'),
     ]
   op_params.each do |i|
     location = i[:location]

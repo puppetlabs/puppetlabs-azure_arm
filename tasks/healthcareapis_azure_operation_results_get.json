@@ -1,0 +1,76 @@
+{
+	"description": "Get the operation result for a long running operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"location_name":{
+			   "description": "The location of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The resource identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_result_id":{
+			   "description": "The ID of the operation result to get.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The resource name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "The kind of the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The resource location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "The resource tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"etag":{
+			   "description": "An etag associated with the resource, used for optimistic concurrency when editing it.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

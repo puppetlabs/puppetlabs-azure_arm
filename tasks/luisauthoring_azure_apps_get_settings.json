@@ -1,0 +1,28 @@
+{
+	"description": "Get the application settings including 'UseAllTrainingData'.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"public":{
+			   "description": "Setting your application as public allows other people to use your application's endpoint using their own keys for billing purposes.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

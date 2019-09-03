@@ -1,0 +1,130 @@
+{
+	"description": "Retrieves the specified table statistics from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isautocreated":{
+			   "description": "the switch indicating if these statistics are automatically created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hasfilter":{
+			   "description": "the switch indicating if these statistics have a filter.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isusercreated":{
+			   "description": "the switch indicating if these statistics are user created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"colnames":{
+			   "description": "the list of column names associated with these statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statistics_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statisticsname":{
+			   "description": "the name of the table statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"createtime":{
+			   "description": "the creation time of the statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schemaname":{
+			   "description": "the name of the schema associated with this table and database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statdatapath":{
+			   "description": "the path to the statistics data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"updatetime":{
+			   "description": "the last time the statistics were updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userstatname":{
+			   "description": "the name of the user statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"table_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tablename":{
+			   "description": "the name of the table.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filterdefinition":{
+			   "description": "the filter definition for the statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

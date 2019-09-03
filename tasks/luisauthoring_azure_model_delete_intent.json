@@ -1,11 +1,23 @@
 {
-	"description": "Deletes an intent classifier from the application.",
+	"description": "Deletes an intent from a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"version_id":{
 			   "description": "The version ID.",
@@ -20,25 +32,7 @@
 			,
 		    
 			"delete_utterances":{
-			   "description": "Also delete the intent's utterances (true). Or move the utterances to the None intent (false - the default value).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "Status Code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "Status details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"app_id":{
-			   "description": "The application ID.",
+			   "description": "If true, deletes the intent's example utterances. If false, moves the example utterances to the None intent. The default value is false.",
 			   "type": "Optional[String[1]]"
 			}
 			

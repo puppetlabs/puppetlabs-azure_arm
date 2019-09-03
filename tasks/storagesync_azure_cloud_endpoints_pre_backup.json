@@ -7,26 +7,14 @@
 		
 		
 		    
-			"sync_group_name":{
-			   "description": "Name of Sync Group resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "Body of Backup request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"error":{
-			   "description": "Error details of the given entry.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"innererror":{
-			   "description": "Error details of the given entry.",
+			"azurefileshare":{
+			   "description": "Azure File Share.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -51,6 +39,12 @@
 		    
 			"storage_sync_service_name":{
 			   "description": "Name of Storage Sync Service resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sync_group_name":{
+			   "description": "Name of Sync Group resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,

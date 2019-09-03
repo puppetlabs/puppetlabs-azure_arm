@@ -1,0 +1,40 @@
+{
+	"description": "Checks that the cluster name is valid and is not already in use.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Azure location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_name":{
+			   "description": "The name of the cluster.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "An error response from Kusto.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"description": "Shows how an analyzer breaks text into tokens.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"index_name":{
+			   "description": "The name of the index for which to test an analyzer.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request":{
+			   "description": "The text and analyzer or analysis components to test.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tokens":{
+			   "description": "The list of tokens returned by the analyzer specified in the request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Gets the list of user emails that have permissions to access your application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"owner":{
+			   "description": "The email address of owner of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"emails":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

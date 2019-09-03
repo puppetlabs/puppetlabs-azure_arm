@@ -1,0 +1,52 @@
+{
+	"description": "Settings of different configurations in security center",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"kind":{
+			   "description": "the kind of the settings string (DataExportSetting)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version for the operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"setting_name":{
+			   "description": "Name of setting: (MCAS/WDATP)",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

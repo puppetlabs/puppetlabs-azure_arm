@@ -7,18 +7,6 @@
 		
 		
 		    
-			"operation_id":{
-			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"node_transition_type":{
-			   "description": "Indicates the type of transition to perform.  NodeTransitionType.Start will start a stopped node.  NodeTransitionType.Stop will stop a node that is up.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"node_instance_id":{
 			   "description": "The node instance ID of the target node.  This can be determined through GetNodeInfo API.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +39,18 @@
 		    
 			"node_name":{
 			   "description": "The name of the node.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_id":{
+			   "description": "A GUID that identifies a call of this API.  This is passed into the corresponding GetProgress API",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"node_transition_type":{
+			   "description": "Indicates the type of transition to perform.  NodeTransitionType.Start will start a stopped node.  NodeTransitionType.Stop will stop a node that is up.",
 			   "type": "Optional[String[1]]"
 			}
 			

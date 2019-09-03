@@ -1,0 +1,52 @@
+{
+	"description": "Converts the text of a language in one script into another type of script. Example- Japanese script 'こんにちは'Same word in Latin script 'konnichiha'",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"language":{
+			   "description": "Specifies the language of the text to convert from one script to another. Possible languages are listed in the `transliteration` scope obtained by querying the service for its supported languages.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"from_script":{
+			   "description": "Specifies the script used by the input text. Lookup supported languages using the `transliteration` scope, to find input scripts available for the selected language.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"to_script":{
+			   "description": "Specifies the output script. Lookup supported languages using the `transliteration` scope, to find output scripts available for the selected combination of input language and input script.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x_client_trace_id":{
+			   "description": "A client-generated GUID to uniquely identify the request. Note that you can omit this header if you include the trace ID in the query string using a query parameter named ClientTraceId.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"texts":{
+			   "description": "# Request body  The body of the request is a JSON array. Each array element is a JSON object with a string property named `Text`, which represents the string to convert.  The following limitations apply:  * The array can have at most 10 elements.  * The text value of an array element cannot exceed 1,000 characters including spaces.  * The entire text included in the request cannot exceed 5,000 characters including spaces.  # Response body  A successful response is a JSON array with one result for each element in the input array. A result object includes the following properties:  * `text`- A string which is the result of converting the input string to the output script.  * `script`- A string specifying the script used in the output.  ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API requested by the client. Value must be **3.0**.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"description": "Delete an existing face list according to faceListId. Persisted face images in the face list will also be deleted.",
+	"description": "Delete a specified face list.",
 	"input_method": "stdin",
 	"parameters":{
 		

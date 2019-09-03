@@ -1,0 +1,52 @@
+{
+	"description": "List event types for a topic.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_name":{
+			   "description": "Name of the topic.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A collection of event types",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the user's subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provider_namespace":{
+			   "description": "Namespace of the provider of the topic.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_type_name":{
+			   "description": "Name of the topic type.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Retrieve the training status of a person group (completed or ongoing).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"person_group_id":{
+			   "description": "Id referencing a particular person group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

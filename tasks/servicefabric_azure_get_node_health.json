@@ -1,0 +1,64 @@
+{
+	"description": "Gets the health of a Service Fabric node. Use EventsHealthStateFilter to filter the collection of health events reported on the node based on the health state. If the node that you specify by name does not exist in the health store, this returns an error.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"node_name":{
+			   "description": "The name of the node.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"healthstatistics":{
+			   "description": "Shows the health statistics for all children types of the queried entity.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"healthevents":{
+			   "description": "The list of health events reported on the entity.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unhealthyevaluations":{
+			   "description": "The unhealthy evaluations that show why the current aggregated health state was returned by Health Manager.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API. This parameter is required and its value must be '6.0'.Service Fabric REST API version is based on the runtime version in which the API was introduced or was changed. Service Fabric runtime supports more than one version of the API. This is the latest supported version of the API. If a lower API version is passed, the returned response may be different from the one documented in this specification.Additionally the runtime accept any version that is higher than the latest supported version up to the current version of the runtime. So if the latest API version is 6.0, but if the runtime is 6.1, in order to make it easier to write the clients, the runtime will accept version 6.1 for that API. However the behavior of the API will be as per the documented 6.0 version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"events_health_state_filter":{
+			   "description": "Allows filtering the collection of HealthEvent objects returned based on health state.The possible values for this parameter include integer value of one of the following health states.Only events that match the filter are returned. All events are used to evaluate the aggregated health state.If not specified, all entries are returned. The state values are flag-based enumeration, so the value could be a combination of these values, obtained using the bitwise 'OR' operator. For example, If the provided value is 6 then all of the events with HealthState value of OK (2) and Warning (4) are returned.- Default - Default value. Matches any HealthState. The value is zero.- None - Filter that doesn't match any HealthState value. Used in order to return no results on a given collection of states. The value is 1.- Ok - Filter that matches input with HealthState value Ok. The value is 2.- Warning - Filter that matches input with HealthState value Warning. The value is 4.- Error - Filter that matches input with HealthState value Error. The value is 8.- All - Filter that matches input with any HealthState value. The value is 65535.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "The server timeout for performing the operation in seconds. This timeout specifies the time duration that the client is willing to wait for the requested operation to complete. The default value for this parameter is 60 seconds.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the node whose health information is described by this object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"aggregatedhealthstate":{
+			   "description": "The HealthState representing the aggregated health state of the entity computed by Health Manager.The health evaluation of the entity reflects all events reported on the entity and its children (if any).The aggregation is done by applying the desired health policy.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

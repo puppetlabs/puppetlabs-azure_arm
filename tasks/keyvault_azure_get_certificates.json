@@ -7,14 +7,14 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client API version.",
+			"include_pending":{
+			   "description": "Specifies whether to include certificates which are not completely provisioned.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Certificate identifier.",
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +37,14 @@
 			}
 			,
 		    
-			"maxresults":{
-			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			"id":{
+			   "description": "Certificate identifier.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"include_pending":{
-			   "description": "Specifies whether to include certificates which are not completely provisioned.",
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,38 +7,14 @@
 		
 		
 		    
-			"filter":{
-			   "description": "OData filter. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"orderby":{
-			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"definition":{
-			   "description": "the definition of the package.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"schema_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schemaname":{
-			   "description": "the name of the schema associated with this package and database.",
+			   "description": "The name of the schema containing the packages.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,32 +25,8 @@
 			}
 			,
 		    
-			"skip":{
-			   "description": "The number of items to skip over before returning elements. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"count":{
 			   "description": "The Boolean value of true or false to request a count of the matching resources included with the resources in the response, e.g. Categories?$count=true. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version":{
-			   "description": "the version of the catalog item.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"database_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"databasename":{
-			   "description": "the name of the database containing the package.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -85,14 +37,38 @@
 			}
 			,
 		    
-			"packagename":{
-			   "description": "the name of the package.",
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"computeaccountname":{
-			   "description": "the name of the Data Lake Analytics account.",
+			"value":{
+			   "description": "the list of packages in the database and schema combination",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "the link to the next page of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "The name of the database containing the packages.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip":{
+			   "description": "The number of items to skip over before returning elements. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			

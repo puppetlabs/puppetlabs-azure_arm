@@ -74,11 +74,9 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('@odata.nextlink', 'body', '@odata.next_link', '@odata.nextlink'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('display', 'body', 'display', 'display'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('origin', 'body', 'origin', 'origin'),
-      op_param('properties', 'body', 'properties', 'properties'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

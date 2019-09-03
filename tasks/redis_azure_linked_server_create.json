@@ -7,6 +7,12 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "The name of the Redis cache.",
 			   "type": "Optional[String[1]]"
@@ -39,12 +45,6 @@
 		    
 			"properties":{
 			   "description": "Properties required to create a linked server.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			

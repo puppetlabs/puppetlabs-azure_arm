@@ -1,5 +1,5 @@
 {
-	"description": "Updates the application version settings.",
+	"description": "Updates the settings in a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -25,14 +25,8 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The application version setting name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"value":{
-			   "description": "The application version setting value.",
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

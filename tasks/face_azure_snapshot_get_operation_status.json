@@ -1,0 +1,22 @@
+{
+	"description": "Retrieve the status of a take/apply snapshot operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"operation_id":{
+			   "description": "Id referencing a particular take/apply snapshot operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a closed list model from the application.",
+	"description": "Deletes a list entity model from a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -20,19 +20,13 @@
 			,
 		    
 			"cl_entity_id":{
-			   "description": "The closed list model ID.",
+			   "description": "The list entity model ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"code":{
-			   "description": "Status Code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "Status details.",
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

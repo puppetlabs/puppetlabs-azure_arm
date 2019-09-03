@@ -1,0 +1,34 @@
+{
+	"description": "Gets the members of a group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataerror":{
+			   "description": "A Graph API error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"object_id":{
+			   "description": "The object ID of the group whose members should be retrieved.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

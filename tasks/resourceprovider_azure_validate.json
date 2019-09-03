@@ -7,12 +7,6 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "Name of the resource group to which the resource belongs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"validate_request":{
 			   "description": "Request with the resources to validate.",
 			   "type": "Optional[String[1]]"
@@ -31,14 +25,32 @@
 			}
 			,
 		    
-			"status":{
-			   "description": "Result of validation.",
+			"type":{
+			   "description": "Resource type used for verification.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"error":{
-			   "description": "Error details for the case when validation fails.",
+			"location":{
+			   "description": "Expected location of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the resource to validate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name to verify.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group to which the resource belongs.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,34 @@
+{
+	"description": "This interface is used for getting OCR results of Read operation. The URL to this interface should be retrieved from 'Operation-Location' field returned from Batch Read File interface.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"requestid":{
+			   "description": "A unique request identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_id":{
+			   "description": "Id of read operation returned in the response of the 'Batch Read File' interface.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

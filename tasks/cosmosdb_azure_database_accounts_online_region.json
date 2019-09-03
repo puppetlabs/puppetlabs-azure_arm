@@ -7,12 +7,6 @@
 		
 		
 		    
-			"account_name":{
-			   "description": "Cosmos DB database account name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Version of the API to be used with the client request. The current version is 2015-04-08.",
 			   "type": "Optional[String[1]]"
@@ -25,14 +19,8 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "Error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "Error message indicating why the operation failed.",
+			"region":{
+			   "description": "Cosmos DB region, with spaces between words and each word capitalized.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -45,6 +33,12 @@
 		    
 			"resource_group_name":{
 			   "description": "Name of an Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "Cosmos DB database account name.",
 			   "type": "Optional[String[1]]"
 			}
 			

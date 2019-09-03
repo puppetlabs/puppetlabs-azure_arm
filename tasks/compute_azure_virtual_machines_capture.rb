@@ -74,14 +74,13 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('$schema', 'body', '$schema', '$schema'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('contentversion', 'body', 'content_version', 'contentversion'),
-      op_param('id', 'body', 'id', 'id'),
+      op_param('destinationcontainername', 'body', 'destination_container_name', 'destinationcontainername'),
+      op_param('overwritevhds', 'body', 'overwrite_vhds', 'overwritevhds'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
-      op_param('resources', 'body', 'resources', 'resources'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('vhdprefix', 'body', 'vhd_prefix', 'vhdprefix'),
       op_param('vmName', 'path', 'vm_name', 'vm_name'),
     ]
   op_params.each do |i|

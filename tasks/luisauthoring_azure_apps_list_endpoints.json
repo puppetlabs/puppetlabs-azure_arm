@@ -1,0 +1,16 @@
+{
+	"description": "Returns the available endpoint deployment regions and URLs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

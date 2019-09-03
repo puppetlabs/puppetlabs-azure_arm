@@ -7,14 +7,20 @@
 		
 		
 		    
-			"documents":{
-			   "description": "",
+			"show_stats":{
+			   "description": "(optional) if set to true, response will contain input and document level statistics.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"input":{
+			"multi_language_batch_input":{
 			   "description": "Collection of documents to analyze.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"documents":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

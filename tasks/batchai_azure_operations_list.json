@@ -13,26 +13,14 @@
 			}
 			,
 		    
-			"display":{
-			   "description": "The object that describes the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
+			"value":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
+			"nextlink":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "This is of the format {provider}/{resource}/{operation}",
 			   "type": "Optional[String[1]]"
 			}
 			

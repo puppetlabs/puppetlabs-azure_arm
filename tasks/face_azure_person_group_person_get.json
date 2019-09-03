@@ -1,0 +1,46 @@
+{
+	"description": "Retrieve a person's information, including registered persisted faces, name and userData.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"person_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"person_group_id":{
+			   "description": "Id referencing a particular person group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"personid":{
+			   "description": "PersonId of the target face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"persistedfaceids":{
+			   "description": "PersistedFaceIds of registered faces in the person. These persistedFaceIds are returned from Person - Add a Person Face, and will not expire.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "User defined name, maximum length is 128.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"userdata":{
+			   "description": "User specified data. Length should not exceed 16KB.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

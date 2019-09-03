@@ -1,0 +1,64 @@
+{
+	"description": "List filesystems and their properties in given account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"prefix":{
+			   "description": "Filters results to filesystems within the specified prefix.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuation":{
+			   "description": "The number of filesystems returned with each invocation is limited. If the number of filesystems to be returned exceeds this limit, a continuation token is returned in the response header x-ms-continuation. When a continuation token is  returned in the response, it must be specified in a subsequent invocation of the list operation to continue listing the filesystems.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x_ms_client_request_id":{
+			   "description": "A UUID recorded in the analytics logs for troubleshooting and correlation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "An optional operation timeout value in seconds. The period begins when the request is received by the service. If the timeout value elapses before the operation completes, the operation fails.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x_ms_version":{
+			   "description": "Specifies the version of the REST protocol used for processing the request. This is required when using shared key authorization.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource":{
+			   "description": "The value must be 'account' for all account operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x_ms_date":{
+			   "description": "Specifies the Coordinated Universal Time (UTC) for the request.  This is required when using shared key authorization.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filesystems":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "An optional value that specifies the maximum number of items to return. If omitted or greater than 5,000, the response will include up to 5,000 items.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

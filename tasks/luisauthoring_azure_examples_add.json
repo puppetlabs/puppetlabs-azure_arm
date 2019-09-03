@@ -1,5 +1,5 @@
 {
-	"description": "Adds a labeled example to the application.",
+	"description": "Adds a labeled example utterance in a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,26 +7,20 @@
 		
 		
 		    
-			"example_label_object":{
-			   "description": "An example label with the expected intent and entities.",
+			"text":{
+			   "description": "The example utterance.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"entitylabels":{
-			   "description": "The identified entities within the utterance.",
+			   "description": "The identified entities within the example utterance.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"intentname":{
-			   "description": "The identified intent representing the utterance.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"text":{
-			   "description": "The sample's utterance.",
+			   "description": "The identified intent representing the example utterance.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,6 +33,12 @@
 		    
 			"version_id":{
 			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"example_label_object":{
+			   "description": "A labeled example utterance with the expected intent and entities.",
 			   "type": "Optional[String[1]]"
 			}
 			

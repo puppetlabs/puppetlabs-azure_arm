@@ -75,11 +75,12 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
+      op_param('continuationtoken', 'body', 'continuation_token', 'continuationtoken'),
       op_param('factoryName', 'path', 'factory_name', 'factory_name'),
       op_param('filterParameters', 'body', 'filter_parameters', 'filter_parameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

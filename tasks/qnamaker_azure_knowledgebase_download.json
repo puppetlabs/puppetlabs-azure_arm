@@ -1,0 +1,28 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "The error object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kb_id":{
+			   "description": "Knowledgebase id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment":{
+			   "description": "Specifies whether environment is Test or Prod.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

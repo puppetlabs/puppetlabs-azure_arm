@@ -7,6 +7,18 @@
 		
 		
 		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataerror":{
+			   "description": "A Graph API error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"application_object_id":{
 			   "description": "The object ID of the application to which to add the owner.",
 			   "type": "Optional[String[1]]"
@@ -21,18 +33,6 @@
 		    
 			"api_version":{
 			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tenant_id":{
-			   "description": "The tenant ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"odataerror":{
-			   "description": "A Graph API error.",
 			   "type": "Optional[String[1]]"
 			}
 			

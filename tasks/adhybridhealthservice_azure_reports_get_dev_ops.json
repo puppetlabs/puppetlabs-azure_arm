@@ -1,0 +1,22 @@
+{
+	"description": "Checks if the user is enabled for Dev Ops access.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "The value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"description": "Gets the operation result of operation triggered by Export Jobs API. If the operation is successful, then it alsocontains URL of a Blob and a SAS key to access the same. The blob contains exported jobs in JSON serialized format.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_id":{
+			   "description": "OperationID which represents the export job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation":{
+			   "description": "OperationResultInfoBaseResource operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statuscode":{
+			   "description": "HTTP Status Code of the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"headers":{
+			   "description": "HTTP headers associated with this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

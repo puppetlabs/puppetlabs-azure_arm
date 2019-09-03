@@ -14,7 +14,7 @@ def marketplaces_list(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https://management.azure.com//subscriptions/%{subscription_id}/providers/Microsoft.Consumption/marketplaces" % path_params
+  uri_string = "https://management.azure.com//%{scope}/providers/Microsoft.Consumption/marketplaces" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)
@@ -78,12 +78,9 @@ def format_params(key_values)
       op_param('$skiptoken', 'query', '$skiptoken', '$skiptoken'),
       op_param('$top', 'query', '$top', '$top'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('properties', 'body', 'properties', 'properties'),
-      op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('tags', 'body', 'tags', 'tags'),
-      op_param('type', 'body', 'type', 'type'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('scope', 'path', 'scope', 'scope'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

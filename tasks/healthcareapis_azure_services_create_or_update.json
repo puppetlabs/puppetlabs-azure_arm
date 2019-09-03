@@ -1,0 +1,46 @@
+{
+	"description": "Create or update the metadata of a service instance.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the service instance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the service instance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_description":{
+			   "description": "The service instance metadata.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Object containing error details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

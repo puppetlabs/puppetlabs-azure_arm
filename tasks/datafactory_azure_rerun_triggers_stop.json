@@ -7,6 +7,24 @@
 		
 		
 		    
+			"rerun_trigger_name":{
+			   "description": "The rerun trigger name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error data",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "The subscription identifier.",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"trigger_name":{
 			   "description": "The trigger name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rerun_trigger_name":{
-			   "description": "The rerun trigger name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "Error data",
 			   "type": "Optional[String[1]]"
 			}
 			

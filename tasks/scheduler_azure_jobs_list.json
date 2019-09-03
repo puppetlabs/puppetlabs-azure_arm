@@ -1,0 +1,64 @@
+{
+	"description": "Lists all jobs under the specified job collection.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of jobs to request, in the of range of [1..100].",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "Gets or sets the URL to get the next set of jobs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "Gets or sets all jobs under job collection.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_collection_name":{
+			   "description": "The job collection name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip":{
+			   "description": "The (0-based) index of the job history list from which to begin requesting entries.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The filter to apply on the job state.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

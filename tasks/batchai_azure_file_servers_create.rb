@@ -75,9 +75,9 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
       op_param('fileServerName', 'path', 'file_server_name', 'file_server_name'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
+      op_param('properties', 'body', 'properties', 'properties'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('workspaceName', 'path', 'workspace_name', 'workspace_name'),

@@ -1,0 +1,34 @@
+{
+	"description": "List person groups’ personGroupId, name, userData and recognitionModel.* Person groups are stored in alphabetical order of personGroupId.* 'start' parameter (string, optional) is a user-provided personGroupId value that returned entries have larger ids by string comparison. 'start' set to empty to indicate return from the first item.* 'top' parameter (int, optional) specifies the number of entries to return. A maximal of 1000 entries can be returned in one call. To fetch more, you can specify 'start' with the last returned entry’s Id of the current call.For example, total 5 person groups: 'group1', ..., 'group5'. 'start=&top=' will return all 5 groups. 'start=&top=2' will return 'group1', 'group2'. 'start=group2&top=3' will return 'group3', 'group4', 'group5'.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"start":{
+			   "description": "List person groups from the least personGroupId greater than the 'start'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of person groups to list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"return_recognition_model":{
+			   "description": "A value indicating whether the operation should return 'recognitionModel' in response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

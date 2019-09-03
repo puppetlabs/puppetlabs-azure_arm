@@ -32,7 +32,7 @@
 			,
 		    
 			"error":{
-			   "description": "",
+			   "description": "The error details object.",
 			   "type": "Optional[String[1]]"
 			}
 			

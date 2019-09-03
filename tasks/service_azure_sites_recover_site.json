@@ -7,8 +7,8 @@
 		
 		
 		    
-			"name":{
-			   "description": "Name of web app",
+			"resource_group_name":{
+			   "description": "Name of resource group",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,14 +25,14 @@
 			}
 			,
 		    
-			"recoverconfig":{
-			   "description": "If true, then the website's configuration will be reverted to its state at SnapshotTime",
+			"snapshottime":{
+			   "description": "Point in time in which the site recover should be attempted.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "Name of resource group",
+			"name":{
+			   "description": "Name of web app",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +49,14 @@
 			}
 			,
 		    
-			"slotname":{
-			   "description": "[Optional] Destination web app slot name into which web app should be recovered",
+			"recoverconfig":{
+			   "description": "If true, then the website's configuration will be reverted to its state at SnapshotTime",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"snapshottime":{
-			   "description": "Point in time in which the site recover should be attempted.",
+			"slotname":{
+			   "description": "[Optional] Destination web app slot name into which web app should be recovered",
 			   "type": "Optional[String[1]]"
 			}
 			

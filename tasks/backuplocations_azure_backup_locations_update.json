@@ -7,6 +7,12 @@
 		
 		
 		    
+			"properties":{
+			   "description": "Properties of a backup location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"location":{
 			   "description": "Location of the resource.",
 			   "type": "Optional[String[1]]"
@@ -25,14 +31,20 @@
 			}
 			,
 		    
+			"tags":{
+			   "description": "List of key value pairs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"id":{
 			   "description": "URI of the resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "Properties of a backup location.",
+			"name":{
+			   "description": "Name of the resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -45,18 +57,6 @@
 		    
 			"resource_group_name":{
 			   "description": "Name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "List of key value pairs.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the resource.",
 			   "type": "Optional[String[1]]"
 			}
 			,

@@ -1,0 +1,76 @@
+{
+	"description": "Gets a linked service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"if_none_match":{
+			   "description": "ETag of the linked service entity. Should only be specified for get. If the ETag matches the existing entity tag, or if * was provided, then no content will be returned.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connectvia":{
+			   "description": "The integration runtime reference.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters for linked service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"factory_name":{
+			   "description": "The factory name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"linked_service_name":{
+			   "description": "The linked service name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "Linked service description.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"annotations":{
+			   "description": "List of tags that can be used for describing the linked service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of linked service.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

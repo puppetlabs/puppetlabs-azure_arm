@@ -7,12 +7,6 @@
 		
 		
 		    
-			"errortype":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"app_id":{
 			   "description": "The application ID.",
 			   "type": "Optional[String[1]]"
@@ -21,6 +15,12 @@
 		    
 			"version_id":{
 			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

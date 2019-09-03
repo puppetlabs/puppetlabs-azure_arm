@@ -1,0 +1,28 @@
+{
+	"description": "Gets a list of Serial Console API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "Serial Console operations",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

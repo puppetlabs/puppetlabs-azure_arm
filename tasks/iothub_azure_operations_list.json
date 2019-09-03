@@ -7,20 +7,32 @@
 		
 		
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{read | write | action | delete}",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "The object that represents the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"httpstatuscode":{
+			   "description": "The HTTP status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"details":{
+			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
 			}
 			

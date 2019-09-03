@@ -1,5 +1,5 @@
 {
-	"description": "Change the state of an alert.",
+	"description": "Change the state of an alert. If scope is a deleted resource then please use scope as parent resource of the delete resource. For example if my alert id is '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.Compute/virtualMachines/vm1/providers/Microsoft.AlertsManagement/alerts/{alertId}' and 'vm1' is deleted then if you want to change state of this particular alert then use parent resource of scope. So in this example change state call will look like this: '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroup}/providers/Microsoft.AlertsManagement/alerts/{alertId}'.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,8 +7,14 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			"properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scope":{
+			   "description": "scope here is resourceId for which alert is created.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,8 +37,20 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"id":{
+			   "description": "Azure resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Azure resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Azure resource name",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,26 +7,20 @@
 		
 		
 		    
-			"certificate_description":{
-			   "description": "The certificate body.",
+			"resource_name":{
+			   "description": "The name of the IoT hub.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"if_match":{
-			   "description": "ETag of the Certificate. Do not specify for creating a brand new certificate. Required to update an existing certificate.",
+			"certificate_name":{
+			   "description": "The name of the certificate",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"httpstatuscode":{
 			   "description": "The HTTP status code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "The error message.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,20 +43,26 @@
 			}
 			,
 		    
-			"resource_name":{
-			   "description": "The name of the IoT hub.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"certificate_name":{
-			   "description": "The name of the certificate",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"code":{
 			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "The error message.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate_description":{
+			   "description": "The certificate body.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "ETag of the Certificate. Do not specify for creating a brand new certificate. Required to update an existing certificate.",
 			   "type": "Optional[String[1]]"
 			}
 			,

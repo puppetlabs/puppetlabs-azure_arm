@@ -7,50 +7,38 @@
 		
 		
 		    
-			"description":{
-			   "description": "Gets or sets the description of the project.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"classification_type":{
-			   "description": "The type of classifier to create for this project.",
+			"target_export_platforms":{
+			   "description": "List of platforms the trained model is intending exporting to.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"training_key":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"created":{
-			   "description": "Gets the date this project was created.",
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"lastmodified":{
-			   "description": "Gets the date this project was last modified.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Gets The project id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"settings":{
-			   "description": "Gets or sets the project settings.",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"name":{
-			   "description": "Gets or sets the name of the project.",
+			   "description": "Name of the project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "The description of the project.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,8 +49,8 @@
 			}
 			,
 		    
-			"thumbnailuri":{
-			   "description": "Gets the thumbnail url representing the project.",
+			"classification_type":{
+			   "description": "The type of classifier to create for this project.",
 			   "type": "Optional[String[1]]"
 			}
 			

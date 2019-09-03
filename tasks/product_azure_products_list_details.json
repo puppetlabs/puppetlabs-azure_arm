@@ -7,20 +7,8 @@
 		
 		
 		    
-			"gallerypackageblobsasuri":{
-			   "description": "The URI to the .azpkg file that provides information required for showing product in the gallery.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"productkind":{
 			   "description": "Specifies the kind of the product (virtualMachine or virtualMachineExtension).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Specifies additional properties describing the product.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -51,6 +39,18 @@
 		    
 			"api_version":{
 			   "description": "Client API Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Specifies additional properties describing the product.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gallerypackageblobsasuri":{
+			   "description": "The URI to the .azpkg file that provides information required for showing product in the gallery.",
 			   "type": "Optional[String[1]]"
 			}
 			

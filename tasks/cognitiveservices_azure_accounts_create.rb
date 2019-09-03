@@ -74,12 +74,16 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('accountName', 'path', 'error', 'account_name'),
-      op_param('api-version', 'query', 'error', 'api_version'),
-      op_param('error', 'body', 'error', 'error'),
-      op_param('parameters', 'body', 'error', 'parameters'),
-      op_param('resourceGroupName', 'path', 'error', 'resource_group_name'),
-      op_param('subscriptionId', 'path', 'error', 'subscription_id'),
+      op_param('accountName', 'path', 'account_name', 'account_name'),
+      op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('kind', 'body', 'kind', 'kind'),
+      op_param('location', 'body', 'location', 'location'),
+      op_param('parameters', 'body', 'parameters', 'parameters'),
+      op_param('properties', 'body', 'properties', 'properties'),
+      op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
+      op_param('sku', 'body', 'sku', 'sku'),
+      op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('tags', 'body', 'tags', 'tags'),
     ]
   op_params.each do |i|
     location = i[:location]

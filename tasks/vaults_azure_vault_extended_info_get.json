@@ -1,0 +1,58 @@
+{
+	"description": "Get the vault extended info.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"integritykey":{
+			   "description": "Integrity key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encryptionkey":{
+			   "description": "Encryption key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encryptionkeythumbprint":{
+			   "description": "Encryption key thumbprint.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"algorithm":{
+			   "description": "Algorithm for Vault ExtendedInfo",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

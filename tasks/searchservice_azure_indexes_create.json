@@ -1,0 +1,94 @@
+{
+	"description": "Creates a new Azure Search index.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"index":{
+			   "description": "The definition of the index to create.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataetag":{
+			   "description": "The ETag of the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tokenizers":{
+			   "description": "The tokenizers for the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"defaultscoringprofile":{
+			   "description": "The name of the scoring profile to use if none is specified in the query. If this property is not set and no scoring profile is specified in the query, then default scoring (tf-idf) will be used.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"analyzers":{
+			   "description": "The analyzers for the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tokenfilters":{
+			   "description": "The token filters for the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fields":{
+			   "description": "The fields of the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scoringprofiles":{
+			   "description": "The scoring profiles for the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"charfilters":{
+			   "description": "The character filters for the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"suggesters":{
+			   "description": "The suggesters for the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"corsoptions":{
+			   "description": "Options to control Cross-Origin Resource Sharing (CORS) for the index.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"description": "Delete an existing large face list according to faceListId. Persisted face images in the large face list will also be deleted.",
+	"description": "Delete a specified large face list.",
 	"input_method": "stdin",
 	"parameters":{
 		

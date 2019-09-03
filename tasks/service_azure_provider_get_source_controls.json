@@ -7,50 +7,20 @@
 		
 		
 		    
-			"kind":{
-			   "description": "Kind of resource",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "Resource Location",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Resource tags",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "",
+			"nextlink":{
+			   "description": "Link to next page of resources",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Resource Name",
+			"value":{
+			   "description": "Collection of resources",
 			   "type": "Optional[String[1]]"
 			}
 			

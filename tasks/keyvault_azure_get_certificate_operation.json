@@ -1,0 +1,76 @@
+{
+	"description": "Gets the creation operation associated with a specified certificate. This operation requires the certificates/get permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The certificate id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"issuer":{
+			   "description": "Parameters for the issuer of the X509 component of a certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate_name":{
+			   "description": "The name of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Status of the certificate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status_details":{
+			   "description": "The status details of the certificate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"csr":{
+			   "description": "The certificate signing request (CSR) that is being used in the certificate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request_id":{
+			   "description": "Identifier for the certificate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cancellation_requested":{
+			   "description": "Indicates if cancellation was requested on the certificate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target":{
+			   "description": "Location which contains the result of the certificate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error encountered, if any, during the certificate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

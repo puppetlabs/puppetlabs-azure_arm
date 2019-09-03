@@ -7,8 +7,8 @@
 		
 		
 		    
-			"message":{
-			   "description": "Status details.",
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,12 +33,6 @@
 		    
 			"role_id":{
 			   "description": "The entity role Id.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "Status Code.",
 			   "type": "Optional[String[1]]"
 			}
 			

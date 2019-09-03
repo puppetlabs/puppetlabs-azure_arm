@@ -13,18 +13,6 @@
 			}
 			,
 		    
-			"duplicated":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"exceeded":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"project_id":{
 			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
@@ -44,6 +32,18 @@
 			,
 		    
 			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"duplicated":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exceeded":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

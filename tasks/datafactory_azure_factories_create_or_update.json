@@ -7,6 +7,18 @@
 		
 		
 		    
+			"factory_name":{
+			   "description": "The factory name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"factory":{
 			   "description": "Factory resource definition.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The resource group name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"factory_name":{
-			   "description": "The factory name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"error":{
 			   "description": "The error details.",
 			   "type": "Optional[String[1]]"
@@ -14,13 +20,13 @@
 			,
 		    
 			"device_name":{
-			   "description": "Name of the device.",
+			   "description": "The device name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"name":{
-			   "description": "Name of the share which needs to be deleted.",
+			   "description": "The share name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,12 +39,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The resource group name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

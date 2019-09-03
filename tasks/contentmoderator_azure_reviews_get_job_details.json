@@ -1,0 +1,34 @@
+{
+	"description": "Get the Job Details for a Job Id.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"team_name":{
+			   "description": "Your Team Name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_id":{
+			   "description": "Id of the job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

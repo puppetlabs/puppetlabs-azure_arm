@@ -1,0 +1,22 @@
+{
+	"description": "List face lists’ faceListId, name, userData and recognitionModel.  To get face information inside faceList use [FaceList - Get](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524c)",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"return_recognition_model":{
+			   "description": "A value indicating whether the operation should return 'recognitionModel' in response.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

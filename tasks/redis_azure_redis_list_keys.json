@@ -7,8 +7,8 @@
 		
 		
 		    
-			"primarykey":{
-			   "description": "The current primary key that clients can use to authenticate with Redis cache.",
+			"secondarykey":{
+			   "description": "The current secondary key that clients can use to authenticate with Redis cache.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,8 +37,8 @@
 			}
 			,
 		    
-			"secondarykey":{
-			   "description": "The current secondary key that clients can use to authenticate with Redis cache.",
+			"primarykey":{
+			   "description": "The current primary key that clients can use to authenticate with Redis cache.",
 			   "type": "Optional[String[1]]"
 			}
 			

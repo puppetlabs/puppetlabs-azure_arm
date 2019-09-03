@@ -74,13 +74,12 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('aggregatedhealthstate', 'body', 'aggregated_health_state', 'aggregatedhealthstate'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('ApplicationsHealthStateFilter', 'query', 'applications_health_state_filter', 'applications_health_state_filter'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('EventsHealthStateFilter', 'query', 'events_health_state_filter', 'events_health_state_filter'),
       op_param('ExcludeHealthStatistics', 'query', 'exclude_health_statistics', 'exclude_health_statistics'),
       op_param('IncludeSystemApplicationHealthStatistics', 'query', 'include_system_application_health_statistics', 'include_system_application_health_statistics'),
-      op_param('name', 'body', 'name', 'name'),
       op_param('NodesHealthStateFilter', 'query', 'nodes_health_state_filter', 'nodes_health_state_filter'),
       op_param('timeout', 'query', 'timeout', 'timeout'),
     ]

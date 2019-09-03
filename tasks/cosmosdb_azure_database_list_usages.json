@@ -1,0 +1,52 @@
+{
+	"description": "Retrieves the usages (most recent data) for the given database.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of an Azure resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "Cosmos DB database account name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_rid":{
+			   "description": "Cosmos DB database rid.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2015-04-08.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "An OData filter expression that describes a subset of usages to return. The supported parameter is name.value (name of the metric, can have an or of multiple names).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of usages for the database. A usage is a point in time metric",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

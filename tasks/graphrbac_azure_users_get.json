@@ -1,0 +1,34 @@
+{
+	"description": "Gets user information from the directory.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"odataerror":{
+			   "description": "A Graph API error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"upn_or_object_id":{
+			   "description": "The object ID or principal name of the user for which to get information.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

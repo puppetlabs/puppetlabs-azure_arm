@@ -7,14 +7,14 @@
 		
 		
 		    
-			"error":{
-			   "description": "Error data",
+			"reference_pipeline_run_id":{
+			   "description": "The pipeline run identifier. If run ID is specified the parameters of the specified run will be used to create a new run.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
+			"is_recovery":{
+			   "description": "Recovery mode flag. If recovery mode is set to true, the specified referenced pipeline run and the new run will be grouped under the same groupId.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,26 +31,38 @@
 			}
 			,
 		    
-			"pipeline_name":{
-			   "description": "The pipeline name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"reference_pipeline_run_id":{
-			   "description": "The pipeline run identifier. If run ID is specified the parameters of the specified run will be used to create a new run.",
+			"start_activity_name":{
+			   "description": "In recovery mode, the rerun will start from this activity. If not specified, all activities will run.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"parameters":{
 			   "description": "Parameters of the pipeline run. These parameters will be used only if the runId is not specified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"runid":{
+			   "description": "Identifier of a run.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pipeline_name":{
+			   "description": "The pipeline name.",
 			   "type": "Optional[String[1]]"
 			}
 			

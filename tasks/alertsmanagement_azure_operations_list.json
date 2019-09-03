@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the operation",
+			"value":{
+			   "description": "Array of operations",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "Properties of the operation",
+			"nextlink":{
+			   "description": "URL to fetch the next set of alerts.",
 			   "type": "Optional[String[1]]"
 			}
 			

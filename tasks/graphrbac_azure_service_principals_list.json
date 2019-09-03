@@ -1,0 +1,40 @@
+{
+	"description": "Gets a list of service principals from the current tenant.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"value":{
+			   "description": "the list of service principals.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odatanextlink":{
+			   "description": "the URL to get the next set of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The filter to apply to the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

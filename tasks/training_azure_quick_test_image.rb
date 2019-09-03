@@ -74,13 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('created', 'body', 'created', 'created'),
-      op_param('id', 'body', 'id', 'id'),
+      op_param('code', 'body', 'code', 'code'),
       op_param('imageData', 'formData', 'image_data', 'image_data'),
-      op_param('iteration', 'body', 'iteration', 'iteration'),
       op_param('iterationId', 'query', 'iteration_id', 'iteration_id'),
-      op_param('predictions', 'body', 'predictions', 'predictions'),
-      op_param('project', 'body', 'project', 'project'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
     ]

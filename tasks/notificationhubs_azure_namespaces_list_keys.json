@@ -7,6 +7,18 @@
 		
 		
 		    
+			"namespace_name":{
+			   "description": "The namespace name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authorization_rule_name":{
+			   "description": "The connection string of the namespace for the specified authorizationRule.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
@@ -33,18 +45,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"namespace_name":{
-			   "description": "The namespace name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"authorization_rule_name":{
-			   "description": "The connection string of the namespace for the specified authorizationRule.",
 			   "type": "Optional[String[1]]"
 			}
 			

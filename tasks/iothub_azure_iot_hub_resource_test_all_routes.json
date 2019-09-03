@@ -7,24 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "The error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"httpstatuscode":{
-			   "description": "The HTTP status code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"message":{
 			   "description": "The error message.",
 			   "type": "Optional[String[1]]"
@@ -37,14 +19,32 @@
 			}
 			,
 		    
-			"iot_hub_name":{
-			   "description": "IotHub to be tested",
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"httpstatuscode":{
+			   "description": "The HTTP status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"details":{
 			   "description": "The error details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iot_hub_name":{
+			   "description": "IotHub to be tested",
 			   "type": "Optional[String[1]]"
 			}
 			,

@@ -25,8 +25,8 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"operationurl":{
+			   "description": "The operation url of long running operation",
 			   "type": "Optional[String[1]]"
 			}
 			

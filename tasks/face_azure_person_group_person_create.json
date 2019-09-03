@@ -7,8 +7,8 @@
 		
 		
 		    
-			"error":{
-			   "description": "",
+			"userdata":{
+			   "description": "User specified data. Length should not exceed 16KB.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -21,6 +21,24 @@
 		    
 			"body":{
 			   "description": "Request body for creating new person.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"personid":{
+			   "description": "PersonId of the target face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"persistedfaceids":{
+			   "description": "PersistedFaceIds of registered faces in the person. These persistedFaceIds are returned from Person - Add a Person Face, and will not expire.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "User defined name, maximum length is 128.",
 			   "type": "Optional[String[1]]"
 			}
 			

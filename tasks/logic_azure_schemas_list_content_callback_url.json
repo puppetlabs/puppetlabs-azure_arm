@@ -7,8 +7,38 @@
 		
 		
 		    
-			"keytype":{
-			   "description": "The key type.",
+			"list_content_callback_url":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"queries":{
+			   "description": "Gets the workflow trigger callback URL query parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relativepath":{
+			   "description": "Gets the workflow trigger callback URL relative path.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relativepathparameters":{
+			   "description": "Gets the workflow trigger callback URL relative path parameters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "Gets the workflow trigger callback URL.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"method":{
+			   "description": "Gets the workflow trigger callback URL HTTP method.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,14 +73,8 @@
 			}
 			,
 		    
-			"list_content_callback_url":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"notafter":{
-			   "description": "The expiry time.",
+			"basepath":{
+			   "description": "Gets the workflow trigger callback URL base path.",
 			   "type": "Optional[String[1]]"
 			}
 			

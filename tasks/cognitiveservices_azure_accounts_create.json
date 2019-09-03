@@ -13,20 +13,32 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. Current version is 2017-04-18",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "Azure Subscription ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"error":{
-			   "description": "The error body.",
+			"sku":{
+			   "description": "Required. Gets or sets the SKU of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Required. Gets or sets the location of the resource. This will be one of the supported and registered Azure Geo Regions (e.g. West US, East US, Southeast Asia, etc.). The geo region of a resource cannot be changed once it is created, but if an identical geo region is specified on update the request will succeed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Gets or sets a list of key value pairs that describe the resource. These tags can be used in viewing and grouping this resource (across resource groups). A maximum of 15 tags can be provided for a resource. Each tag must have a key no greater than 128 characters and value no greater than 256 characters.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Must exist in the request. Must be an empty object. Must not be null.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,6 +51,18 @@
 		    
 			"account_name":{
 			   "description": "The name of Cognitive Services account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-18",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kind":{
+			   "description": "Required. Gets or sets the Kind of the resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

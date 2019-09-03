@@ -7,12 +7,6 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "Parameters that define the create packet capture operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
@@ -25,8 +19,8 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"properties":{
+			   "description": "Properties of the packet capture.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -45,6 +39,12 @@
 		    
 			"packet_capture_name":{
 			   "description": "The name of the packet capture session.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters that define the create packet capture operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

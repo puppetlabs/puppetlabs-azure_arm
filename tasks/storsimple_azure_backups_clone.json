@@ -7,32 +7,14 @@
 		
 		
 		    
-			"device_name":{
-			   "description": "The device name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"backup_name":{
-			   "description": "The backup name.",
+			"resource_group_name":{
+			   "description": "The resource group name",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"manager_name":{
 			   "description": "The manager name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"backupelement":{
-			   "description": "The backup element that is cloned.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targetdeviceid":{
-			   "description": "The path ID of the device which will act as the clone target.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,6 +31,18 @@
 			}
 			,
 		    
+			"backupelement":{
+			   "description": "The backup element that is cloned.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backup_name":{
+			   "description": "The backup name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"backup_element_name":{
 			   "description": "The backup element name.",
 			   "type": "Optional[String[1]]"
@@ -61,14 +55,20 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The subscription id",
+			"targetdeviceid":{
+			   "description": "The path ID of the device which will act as the clone target.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The resource group name",
+			"device_name":{
+			   "description": "The device name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription id",
 			   "type": "Optional[String[1]]"
 			}
 			,

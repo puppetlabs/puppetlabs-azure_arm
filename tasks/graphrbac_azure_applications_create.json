@@ -7,68 +7,38 @@
 		
 		
 		    
-			"keycredentials":{
-			   "description": "The list of KeyCredential objects.",
+			"publicclient":{
+			   "description": "Specifies whether this application is a public client (such as an installed application running on a mobile device). Default is false.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"requiredresourceaccess":{
-			   "description": "Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience.",
+			"publisherdomain":{
+			   "description": "Reliable domain which can be used to identify an application.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"displayname":{
-			   "description": "The display name of the application.",
+			"allowguestssignin":{
+			   "description": "A property on the application to indicate if the application accepts other IDPs or not or partially accepts.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"replyurls":{
-			   "description": "A collection of reply URLs for the application.",
+			"knownclientapplications":{
+			   "description": "Client applications that are tied to this resource application. Consent to any of the known client applications will result in implicit consent to the resource application through a combined consent dialog (showing the OAuth permission scopes required by the client and the resource).",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"parameters":{
-			   "description": "The parameters for creating an application.",
+			"orgrestrictions":{
+			   "description": "A list of tenants allowed to access application.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"identifieruris":{
-			   "description": "A collection of URIs for the application.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"passwordcredentials":{
-			   "description": "The list of PasswordCredential objects.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"oauth2allowimplicitflow":{
-			   "description": "Whether to allow implicit grant flow for OAuth2",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"availabletoothertenants":{
-			   "description": "Whether the application is available to other tenants.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"homepage":{
-			   "description": "The home page of the application.",
+			"apppermissions":{
+			   "description": "The application permissions.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -79,8 +49,164 @@
 			}
 			,
 		    
+			"identifieruris":{
+			   "description": "A collection of URIs for the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"applogourl":{
+			   "description": "The url for the application logo image stored in a CDN.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"passwordcredentials":{
+			   "description": "A collection of PasswordCredential objects",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "The display name of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"preauthorizedapplications":{
+			   "description": "list of pre-authorized applications.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"wwwhomepage":{
+			   "description": "The primary Web page.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"oauth2requirepostresponse":{
+			   "description": "Specifies whether, as part of OAuth 2.0 token requests, Azure AD will allow POST requests, as opposed to GET requests. The default is false, which specifies that only GET requests will be allowed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errorurl":{
+			   "description": "A URL provided by the author of the application to report errors when using the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"samlmetadataurl":{
+			   "description": "The URL to the SAML metadata for the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"availabletoothertenants":{
+			   "description": "Whether the application is available to other tenants.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"logouturl":{
+			   "description": "the url of the logout page",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"signinaudience":{
+			   "description": "Audience for signing in to the application (AzureADMyOrganization, AzureADAllOrganizations, AzureADAndMicrosoftAccounts).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"approles":{
 			   "description": "The collection of application roles that an application may declare. These roles can be assigned to users, groups or service principals.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"oauth2allowimplicitflow":{
+			   "description": "Whether to allow implicit grant flow for OAuth2",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"optionalclaims":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"oauth2permissions":{
+			   "description": "The collection of OAuth 2.0 permission scopes that the web API (resource) application exposes to client applications. These permission scopes may be granted to client applications during consent.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isdeviceonlyauthsupported":{
+			   "description": "Specifies whether this application supports device authentication without a user. The default is false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"requiredresourceaccess":{
+			   "description": "Specifies resources that this application requires access to and the set of OAuth permission scopes and application roles that it needs under each of those resources. This pre-configuration of required resource access drives the consent experience.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keycredentials":{
+			   "description": "A collection of KeyCredential objects.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"allowpassthroughusers":{
+			   "description": "Indicates that the application supports pass through users who have no presence in the resource tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"homepage":{
+			   "description": "The home page of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The parameters for creating an application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"informationalurls":{
+			   "description": "URLs with more information about the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"oauth2allowurlpathmatching":{
+			   "description": "Specifies whether during a token Request Azure AD will allow path matching of the redirect URI against the applications collection of replyURLs. The default is false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"groupmembershipclaims":{
+			   "description": "Configures the groups claim issued in a user or OAuth 2.0 access token that the app expects.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replyurls":{
+			   "description": "A collection of reply URLs for the application.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,40 @@
+{
+	"description": "Retrieves the specified database from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

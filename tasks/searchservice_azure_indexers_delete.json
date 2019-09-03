@@ -1,0 +1,106 @@
+{
+	"description": "Deletes an Azure Search indexer.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"fieldmappings":{
+			   "description": "Defines mappings between fields in the data source and corresponding target fields in the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skillsetname":{
+			   "description": "The name of the cognitive skillset executing with this indexer.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_none_match":{
+			   "description": "Defines the If-None-Match condition. The operation will be performed only if the ETag on the server does not match this value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetindexname":{
+			   "description": "The name of the index to which this indexer writes data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"outputfieldmappings":{
+			   "description": "Output field mappings are applied after enrichment and immediately before indexing.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"datasourcename":{
+			   "description": "The name of the datasource from which this indexer reads data.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters for indexer execution.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disabled":{
+			   "description": "A value indicating whether the indexer is disabled. Default is false.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule":{
+			   "description": "The schedule for this indexer.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"odataetag":{
+			   "description": "The ETag of the Indexer.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "The description of the indexer.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"indexer_name":{
+			   "description": "The name of the indexer to delete.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"if_match":{
+			   "description": "Defines the If-Match condition. The operation will be performed only if the ETag on the server matches this value.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The name of the indexer.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

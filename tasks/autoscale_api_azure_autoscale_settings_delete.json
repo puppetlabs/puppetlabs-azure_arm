@@ -7,26 +7,8 @@
 		
 		
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"autoscale_setting_name":{
-			   "description": "The autoscale setting name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targetresourceuri":{
-			   "description": "the resource identifier of the resource that the autoscale setting should be added to.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +25,38 @@
 			}
 			,
 		    
-			"notifications":{
-			   "description": "the collection of notifications.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"enabled":{
 			   "description": "the enabled flag. Specifies whether automatic scaling is enabled for the resource. The default value is 'true'.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"autoscale_setting_name":{
+			   "description": "The autoscale setting name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notifications":{
+			   "description": "the collection of notifications.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "the name of the autoscale setting.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targetresourceuri":{
+			   "description": "the resource identifier of the resource that the autoscale setting should be added to.",
 			   "type": "Optional[String[1]]"
 			}
 			

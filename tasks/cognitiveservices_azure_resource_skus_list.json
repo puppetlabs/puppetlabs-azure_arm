@@ -7,36 +7,6 @@
 		
 		
 		    
-			"tier":{
-			   "description": "Specifies the tier of Cognitive Services account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kind":{
-			   "description": "The Kind of resources that are supported in this SKU.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"locations":{
-			   "description": "The set of locations that the SKU is available.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"restrictions":{
-			   "description": "The restrictions because of which SKU cannot be used. This is empty if there are no restrictions.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resourcetype":{
-			   "description": "The type of resource the SKU applies to.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "Version of the API to be used with the client request. Current version is 2017-04-18",
 			   "type": "Optional[String[1]]"
@@ -49,8 +19,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The name of SKU.",
+			"value":{
+			   "description": "The list of skus available for the subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The uri to fetch the next page of Skus.",
 			   "type": "Optional[String[1]]"
 			}
 			

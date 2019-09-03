@@ -1,0 +1,94 @@
+{
+	"description": "Retrieves the specified table partition from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"table_name":{
+			   "description": "The name of the table containing the partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partitionname":{
+			   "description": "the name of the table partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schemaname":{
+			   "description": "the name of the schema associated with this table partition and database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"indexid":{
+			   "description": "the index ID for this partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"createdate":{
+			   "description": "the creation time of the partition",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parentname":{
+			   "description": "the Ddl object of the partition's parent.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"label":{
+			   "description": "the list of labels associated with this partition.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"partition_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

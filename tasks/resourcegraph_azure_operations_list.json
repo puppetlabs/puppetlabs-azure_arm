@@ -1,0 +1,34 @@
+{
+	"description": "Lists all of the available REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"origin":{
+			   "description": "The origin of operations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: {provider}/{resource}/{operation}",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Display metadata associated with the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

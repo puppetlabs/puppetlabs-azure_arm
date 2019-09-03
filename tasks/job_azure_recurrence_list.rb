@@ -75,17 +75,10 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('auhourscanceled', 'body', 'au_hours_canceled', 'auhourscanceled'),
-      op_param('auhoursfailed', 'body', 'au_hours_failed', 'auhoursfailed'),
-      op_param('auhourssucceeded', 'body', 'au_hours_succeeded', 'auhourssucceeded'),
       op_param('endDateTime', 'query', 'end_date_time', 'end_date_time'),
-      op_param('lastsubmittime', 'body', 'last_submit_time', 'lastsubmittime'),
-      op_param('numjobscanceled', 'body', 'num_jobs_canceled', 'numjobscanceled'),
-      op_param('numjobsfailed', 'body', 'num_jobs_failed', 'numjobsfailed'),
-      op_param('numjobssucceeded', 'body', 'num_jobs_succeeded', 'numjobssucceeded'),
-      op_param('recurrenceid', 'body', 'recurrence_id', 'recurrenceid'),
-      op_param('recurrencename', 'body', 'recurrence_name', 'recurrencename'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
       op_param('startDateTime', 'query', 'start_date_time', 'start_date_time'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

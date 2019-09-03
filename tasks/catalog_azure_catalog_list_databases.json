@@ -7,20 +7,26 @@
 		
 		
 		    
-			"top":{
-			   "description": "The number of items to return. Optional.",
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"select":{
 			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"orderby":{
-			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +43,8 @@
 			}
 			,
 		    
-			"computeaccountname":{
-			   "description": "the name of the Data Lake Analytics account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter":{
-			   "description": "OData filter. Optional.",
+			"top":{
+			   "description": "The number of items to return. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +55,14 @@
 			}
 			,
 		    
-			"version":{
-			   "description": "the version of the catalog item.",
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"databasename":{
-			   "description": "the name of the database.",
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,32 +7,8 @@
 		
 		
 		    
-			"logfilepatterns":{
-			   "description": "the list of log file name patterns to find in the logFolder. '*' is the only matching character allowed. Example format: jobExecution*.log or *mylog*.txt",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"top":{
-			   "description": "The number of items to return. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"submitter":{
-			   "description": "the user or account that submitted the job.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"degreeofparallelismpercent":{
 			   "description": "the degree of parallelism in percentage used for this job.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "the job type of the current job (Hive or USql).",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,38 +19,8 @@
 			}
 			,
 		    
-			"jobid":{
-			   "description": "the job's unique identifier (a GUID).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"degreeofparallelism":{
-			   "description": "the degree of parallelism used for this job.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"select":{
-			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"orderby":{
-			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"result":{
-			   "description": "the result of job execution or the current result of the running job.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "the friendly name of the job.",
+			"type":{
+			   "description": "the job type of the current job (Hive or USql).",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -85,32 +31,8 @@
 			}
 			,
 		    
-			"priority":{
-			   "description": "the priority value for the current job. Lower numbers have a higher priority. By default, a job has a priority of 1000. This must be greater than 0.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter":{
-			   "description": "OData filter. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"skip":{
 			   "description": "The number of items to skip over before returning elements. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"endtime":{
-			   "description": "the completion time of the job.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"submittime":{
-			   "description": "the time the job was submitted to the service.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -121,14 +43,44 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
+			"priority":{
+			   "description": "the priority value for the current job. Lower numbers have a higher priority. By default, a job has a priority of 1000. This must be greater than 0.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"related":{
-			   "description": "the recurring job relationship information properties.",
+			"submittime":{
+			   "description": "the time the job was submitted to the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"submitter":{
+			   "description": "the user or account that submitted the job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"logfilepatterns":{
+			   "description": "the list of log file name patterns to find in the logFolder. '*' is the only matching character allowed. Example format: jobExecution*.log or *mylog*.txt",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of items to return. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -139,8 +91,56 @@
 			}
 			,
 		    
+			"related":{
+			   "description": "the recurring job relationship information properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endtime":{
+			   "description": "the completion time of the job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"result":{
+			   "description": "the result of job execution or the current result of the running job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"degreeofparallelism":{
+			   "description": "the degree of parallelism used for this job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"starttime":{
 			   "description": "the start time of the job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"jobid":{
+			   "description": "the job's unique identifier (a GUID).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "the friendly name of the job.",
 			   "type": "Optional[String[1]]"
 			}
 			

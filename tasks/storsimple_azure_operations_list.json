@@ -7,6 +7,18 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "The api version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"origin":{
+			   "description": "The intended executor of the operation; governs the display of the operation in the RBAC UX and the audit logs UX. Default value is 'user,system'",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"properties":{
 			   "description": "Reserved for future use.",
 			   "type": "Optional[String[1]]"
@@ -21,18 +33,6 @@
 		    
 			"display":{
 			   "description": "Contains the localized display information for this particular operation/action.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The api version",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
-			   "description": "The intended executor of the operation; governs the display of the operation in the RBAC UX and the audit logs UX. Default value is 'user,system'",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,52 @@
+{
+	"description": "Gets a provided Security Center pricing configuration in the subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "Resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version for the operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pricing_name":{
+			   "description": "name of the pricing configuration",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Pricing data",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

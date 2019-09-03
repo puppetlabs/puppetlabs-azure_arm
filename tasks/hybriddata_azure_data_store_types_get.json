@@ -1,0 +1,64 @@
+{
+	"description": "Gets the data store/repository type given its name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "Id of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_store_type_name":{
+			   "description": "The data store/repository type name for which details are needed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The Resource Group Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_manager_name":{
+			   "description": "The name of the DataManager Resource within the specified resource group. DataManager names must be between 3 and 24 characters in length and use any alphanumeric and underscore only",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "DataStoreType properties.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

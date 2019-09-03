@@ -1,0 +1,40 @@
+{
+	"description": "Suggests documents in the Azure Search index that match the given partial query text.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The sequence of results returned by the query.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"searchcoverage":{
+			   "description": "A value indicating the percentage of the index that was included in the query, or null if minimumCoverage was not set in the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"suggest_request":{
+			   "description": "The Suggest request.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

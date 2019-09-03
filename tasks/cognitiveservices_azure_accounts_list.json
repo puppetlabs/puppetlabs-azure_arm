@@ -1,0 +1,34 @@
+{
+	"description": "Returns all the resources of a particular type belonging to a subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"nextlink":{
+			   "description": "The link used to get the next page of accounts.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. Current version is 2017-04-18",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "Gets the list of Cognitive Services accounts and their properties.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -82,17 +82,9 @@ def format_params(key_values)
       op_param('$top', 'query', '$top', '$top'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('basic', 'query', 'basic', 'basic'),
-      op_param('columnlist', 'body', 'columnlist', 'columnlist'),
-      op_param('computeaccountname', 'body', 'computeaccountname', 'computeaccountname'),
-      op_param('database_name', 'path', 'database_name', 'database_name'),
-      op_param('databasename', 'body', 'databasename', 'databasename'),
-      op_param('distributioninfo', 'body', 'distributioninfo', 'distributioninfo'),
-      op_param('externaltable', 'body', 'externaltable', 'externaltable'),
-      op_param('indexlist', 'body', 'indexlist', 'indexlist'),
-      op_param('partitionkeylist', 'body', 'partitionkeylist', 'partitionkeylist'),
-      op_param('schemaname', 'body', 'schemaname', 'schemaname'),
-      op_param('tablename', 'body', 'tablename', 'tablename'),
-      op_param('version', 'body', 'version', 'version'),
+      op_param('databaseName', 'path', 'database_name', 'database_name'),
+      op_param('nextlink', 'body', 'nextlink', 'nextlink'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

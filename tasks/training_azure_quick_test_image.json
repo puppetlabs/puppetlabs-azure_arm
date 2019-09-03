@@ -7,30 +7,6 @@
 		
 		
 		    
-			"iteration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"created":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"predictions":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"project_id":{
 			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
@@ -44,19 +20,25 @@
 			,
 		    
 			"image_data":{
-			   "description": "Binary image data.",
+			   "description": "Binary image data. Supported formats are JPEG, GIF, PNG, and BMP. Supports images up to 6MB.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"training_key":{
-			   "description": "",
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"project":{
-			   "description": "",
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
 			   "type": "Optional[String[1]]"
 			}
 			

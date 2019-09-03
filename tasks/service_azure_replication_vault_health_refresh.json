@@ -7,12 +7,6 @@
 		
 		
 		    
-			"name":{
-			   "description": "Resource Name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"location":{
 			   "description": "Resource Location",
 			   "type": "Optional[String[1]]"
@@ -25,8 +19,8 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group where the recovery services vault is present.",
+			"properties":{
+			   "description": "The vault health related data.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,14 +31,14 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "The vault health related data.",
+			"name":{
+			   "description": "Resource Name",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_name":{
-			   "description": "The name of the recovery services vault.",
+			"type":{
+			   "description": "Resource Type",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,8 +49,14 @@
 			}
 			,
 		    
-			"type":{
-			   "description": "Resource Type",
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
 			   "type": "Optional[String[1]]"
 			}
 			

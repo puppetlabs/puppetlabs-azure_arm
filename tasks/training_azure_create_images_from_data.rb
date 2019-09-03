@@ -74,9 +74,9 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('code', 'body', 'code', 'code'),
       op_param('imageData', 'formData', 'image_data', 'image_data'),
-      op_param('images', 'body', 'images', 'images'),
-      op_param('isbatchsuccessful', 'body', 'isbatchsuccessful', 'isbatchsuccessful'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
       op_param('tagIds', 'query', 'tag_ids', 'tag_ids'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),

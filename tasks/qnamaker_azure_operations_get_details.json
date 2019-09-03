@@ -1,0 +1,22 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"operation_id":{
+			   "description": "Operation id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error object.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

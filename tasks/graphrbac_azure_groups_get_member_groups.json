@@ -7,8 +7,20 @@
 		
 		
 		    
-			"securityenabledonly":{
-			   "description": "If true, only membership in security-enabled groups should be checked. Otherwise, membership in all groups should be checked.",
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A collection of group IDs of which the group is a member.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -21,18 +33,6 @@
 		    
 			"parameters":{
 			   "description": "Group filtering parameters.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tenant_id":{
-			   "description": "The tenant ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

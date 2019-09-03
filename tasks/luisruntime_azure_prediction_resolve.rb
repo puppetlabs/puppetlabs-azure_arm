@@ -74,20 +74,15 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('alteredquery', 'body', 'altered_query', 'alteredquery'),
       op_param('appId', 'path', 'app_id', 'app_id'),
       op_param('bing-spell-check-subscription-key', 'query', 'bing_spell_check_subscription_key', 'bing_spell_check_subscription_key'),
-      op_param('compositeentities', 'body', 'composite_entities', 'compositeentities'),
-      op_param('entities', 'body', 'entities', 'entities'),
-      op_param('intents', 'body', 'intents', 'intents'),
       op_param('log', 'query', 'log', 'log'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('q', 'body', 'q', 'q'),
-      op_param('query', 'body', 'query', 'query'),
-      op_param('sentimentanalysis', 'body', 'sentiment_analysis', 'sentimentanalysis'),
       op_param('spellCheck', 'query', 'spell_check', 'spell_check'),
       op_param('staging', 'query', 'staging', 'staging'),
+      op_param('statuscode', 'body', 'status_code', 'statuscode'),
       op_param('timezoneOffset', 'query', 'timezone_offset', 'timezone_offset'),
-      op_param('topscoringintent', 'body', 'top_scoring_intent', 'topscoringintent'),
       op_param('verbose', 'query', 'verbose', 'verbose'),
     ]
   op_params.each do |i|

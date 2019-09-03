@@ -1,0 +1,58 @@
+{
+	"description": "Gets a connection monitor by name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"network_watcher_name":{
+			   "description": "The name of the Network Watcher resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connection_monitor_name":{
+			   "description": "The name of the connection monitor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Connection monitor tags.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the connection monitor.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Connection monitor location.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group containing Network Watcher.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Gets the available application domains.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

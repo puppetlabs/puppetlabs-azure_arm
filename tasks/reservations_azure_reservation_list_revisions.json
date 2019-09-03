@@ -1,0 +1,40 @@
+{
+	"description": "List of all the revisions for the `Reservation`.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Supported version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "Url to get the next page of reservations.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reservation_id":{
+			   "description": "Id of the Reservation Item",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reservation_order_id":{
+			   "description": "Order Id of the reservation",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

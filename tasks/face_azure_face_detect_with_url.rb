@@ -74,11 +74,14 @@ def format_params(key_values)
   end
 
   op_params = [
+      op_param('detectionModel', 'query', 'detection_model', 'detection_model'),
       op_param('error', 'body', 'error', 'error'),
       op_param('ImageUrl', 'body', 'image_url', 'image_url'),
+      op_param('recognitionModel', 'query', 'recognition_model', 'recognition_model'),
       op_param('returnFaceAttributes', 'query', 'return_face_attributes', 'return_face_attributes'),
       op_param('returnFaceId', 'query', 'return_face_id', 'return_face_id'),
       op_param('returnFaceLandmarks', 'query', 'return_face_landmarks', 'return_face_landmarks'),
+      op_param('returnRecognitionModel', 'query', 'return_recognition_model', 'return_recognition_model'),
     ]
   op_params.each do |i|
     location = i[:location]

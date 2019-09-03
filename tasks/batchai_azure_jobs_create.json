@@ -7,18 +7,6 @@
 		
 		
 		    
-			"experiment_name":{
-			   "description": "The name of the experiment. Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_). The name must be from 1 through 64 characters long.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"job_name":{
-			   "description": "The name of the job within the specified resource group. Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_). The name must be from 1 through 64 characters long.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "The parameters to provide for job creation.",
 			   "type": "Optional[String[1]]"
@@ -37,8 +25,8 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "An error response from the Batch AI service.",
+			"properties":{
+			   "description": "The properties of the Job.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -51,6 +39,18 @@
 		    
 			"workspace_name":{
 			   "description": "The name of the workspace. Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_). The name must be from 1 through 64 characters long.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"experiment_name":{
+			   "description": "The name of the experiment. Experiment names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_). The name must be from 1 through 64 characters long.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "The name of the job within the specified resource group. Job names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_). The name must be from 1 through 64 characters long.",
 			   "type": "Optional[String[1]]"
 			}
 			

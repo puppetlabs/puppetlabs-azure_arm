@@ -1,5 +1,5 @@
 {
-	"description": "Adds a batch of labeled examples to the application.",
+	"description": "Adds a batch of labeled example utterances to a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -20,7 +20,7 @@
 			,
 		    
 			"example_label_object_array":{
-			   "description": "Array of examples.",
+			   "description": "Array of example utterances.",
 			   "type": "Optional[String[1]]"
 			}
 			

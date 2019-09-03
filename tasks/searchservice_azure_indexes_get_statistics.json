@@ -1,0 +1,40 @@
+{
+	"description": "Returns statistics for the given index, including a document count and storage usage.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"index_name":{
+			   "description": "The name of the index for which to retrieve statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_id":{
+			   "description": "The tracking ID sent with the request to help with debugging.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"documentcount":{
+			   "description": "The number of documents in the index.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storagesize":{
+			   "description": "The amount of storage in bytes consumed by the index.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

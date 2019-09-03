@@ -75,20 +75,9 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('apiversions', 'body', 'api_versions', 'apiversions'),
-      op_param('capabilities', 'body', 'capabilities', 'capabilities'),
-      op_param('capacity', 'body', 'capacity', 'capacity'),
-      op_param('costs', 'body', 'costs', 'costs'),
-      op_param('family', 'body', 'family', 'family'),
-      op_param('kind', 'body', 'kind', 'kind'),
-      op_param('locationinfo', 'body', 'location_info', 'locationinfo'),
-      op_param('locations', 'body', 'locations', 'locations'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('resourcetype', 'body', 'resource_type', 'resourcetype'),
-      op_param('restrictions', 'body', 'restrictions', 'restrictions'),
-      op_param('size', 'body', 'size', 'size'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('tier', 'body', 'tier', 'tier'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

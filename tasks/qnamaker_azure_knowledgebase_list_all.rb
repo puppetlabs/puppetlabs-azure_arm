@@ -74,15 +74,7 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('hostname', 'body', 'host_name', 'hostname'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('lastaccessedtimestamp', 'body', 'last_accessed_timestamp', 'lastaccessedtimestamp'),
-      op_param('lastchangedtimestamp', 'body', 'last_changed_timestamp', 'lastchangedtimestamp'),
-      op_param('lastpublishedtimestamp', 'body', 'last_published_timestamp', 'lastpublishedtimestamp'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('sources', 'body', 'sources', 'sources'),
-      op_param('urls', 'body', 'urls', 'urls'),
-      op_param('userid', 'body', 'user_id', 'userid'),
+      op_param('error', 'body', 'error', 'error'),
     ]
   op_params.each do |i|
     location = i[:location]

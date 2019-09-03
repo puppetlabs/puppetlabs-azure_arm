@@ -79,8 +79,8 @@ def format_params(key_values)
       op_param('HealthInformation', 'body', 'health_information', 'health_information'),
       op_param('Immediate', 'query', 'immediate', 'immediate'),
       op_param('partitionId', 'path', 'partition_id', 'partition_id'),
-      op_param('ReplicaHealthReportServiceKind', 'query', 'replica_health_report_service_kind', 'replica_health_report_service_kind'),
       op_param('replicaId', 'path', 'replica_id', 'replica_id'),
+      op_param('ServiceKind', 'query', 'service_kind', 'service_kind'),
       op_param('timeout', 'query', 'timeout', 'timeout'),
     ]
   op_params.each do |i|

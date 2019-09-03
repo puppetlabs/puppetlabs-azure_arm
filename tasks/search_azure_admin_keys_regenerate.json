@@ -7,30 +7,6 @@
 		
 		
 		    
-			"search_service_name":{
-			   "description": "The name of the Azure Search service associated with the specified resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"key_kind":{
-			   "description": "Specifies which key to regenerate. Valid values include 'primary' and 'secondary'.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"x_ms_client_request_id":{
-			   "description": "A client-generated GUID value that identifies this request. If specified, this will be included in response information as a way to track the request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version to use for each request. The current version is 2015-08-19.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "The unique identifier for a Microsoft Azure subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +27,30 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group within the current subscription. You can obtain this value from the Azure Resource Manager API or the portal.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"search_service_name":{
+			   "description": "The name of the Azure Search service associated with the specified resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_kind":{
+			   "description": "Specifies which key to regenerate. Valid values include 'primary' and 'secondary'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x_ms_client_request_id":{
+			   "description": "A client-generated GUID value that identifies this request. If specified, this will be included in response information as a way to track the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for each request. The current version is 2015-08-19.",
 			   "type": "Optional[String[1]]"
 			}
 			

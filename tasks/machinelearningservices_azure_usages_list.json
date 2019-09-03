@@ -1,0 +1,64 @@
+{
+	"description": "Gets the current usage information as well as limits for AML resources for given subscription and location.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "The name of the type of usage.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Specifies the resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of Azure Machine Learning resource provider API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"currentvalue":{
+			   "description": "The current usage of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "The maximum permitted usage of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unit":{
+			   "description": "An enum describing the unit of usage measurement.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The location for which resource usage is queried.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Specifies the resource ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

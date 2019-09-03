@@ -1,5 +1,5 @@
 {
-	"description": "List the available operations supported by the Microsoft.EventGrid resource provider",
+	"description": "List the available operations supported by the Microsoft.EventGrid resource provider.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,26 +13,8 @@
 			}
 			,
 		    
-			"origin":{
-			   "description": "Origin of the operation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Properties of the operation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Name of the operation",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "Display name of the operation",
+			"value":{
+			   "description": "A collection of operations",
 			   "type": "Optional[String[1]]"
 			}
 			

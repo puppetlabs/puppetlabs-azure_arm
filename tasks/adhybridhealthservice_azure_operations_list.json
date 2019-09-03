@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The name of the operation.",
+			"display":{
+			   "description": "The display details for the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "The display details for the operation.",
+			"name":{
+			   "description": "The name of the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

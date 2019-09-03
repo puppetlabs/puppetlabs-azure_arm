@@ -7,6 +7,12 @@
 		
 		
 		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"team_name":{
 			   "description": "Your team name.",
 			   "type": "Optional[String[1]]"
@@ -45,12 +51,6 @@
 		    
 			"content":{
 			   "description": "Content to evaluate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"jobid":{
-			   "description": "Id of the created job.",
 			   "type": "Optional[String[1]]"
 			}
 			

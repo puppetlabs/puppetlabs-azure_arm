@@ -1,0 +1,70 @@
+{
+	"description": "Get marketplace terms.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"type":{
+			   "description": "Resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Represents the properties of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"offer_type":{
+			   "description": "Offer Type, currently only virtualmachine type is supported.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"offer_id":{
+			   "description": "Offer identifier string of image being deployed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"publisher_id":{
+			   "description": "Publisher identifier string of image being deployed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"plan_id":{
+			   "description": "Plan identifier string of image being deployed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID that identifies an Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

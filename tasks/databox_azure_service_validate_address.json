@@ -7,6 +7,12 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"location":{
 			   "description": "The location of the resource",
 			   "type": "Optional[String[1]]"
@@ -27,12 +33,6 @@
 		    
 			"properties":{
 			   "description": "The address validation properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The Subscription Id",
 			   "type": "Optional[String[1]]"
 			}
 			

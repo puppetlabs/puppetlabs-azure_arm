@@ -1,0 +1,28 @@
+{
+	"description": "List all faces in a large face list, and retrieve face information (including userData and persistedFaceIds of registered faces of the face).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"large_face_list_id":{
+			   "description": "Id referencing a particular large face list.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start":{
+			   "description": "Starting face id to return (used to list a range of faces).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "Number of faces to return starting with the face id indicated by the 'start' parameter.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

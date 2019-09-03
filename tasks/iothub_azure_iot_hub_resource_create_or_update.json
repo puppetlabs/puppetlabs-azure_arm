@@ -7,20 +7,8 @@
 		
 		
 		    
-			"resource_name":{
-			   "description": "The name of the IoT hub.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"if_match":{
 			   "description": "ETag of the IoT Hub. Do not specify for creating a brand new IoT Hub. Required to update an existing IoT Hub.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,20 +25,14 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "The version of the API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group that contains the IoT hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the IoT hub.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -63,6 +45,24 @@
 		    
 			"httpstatuscode":{
 			   "description": "The HTTP status code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

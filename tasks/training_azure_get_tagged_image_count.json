@@ -1,0 +1,46 @@
+{
+	"description": "The filtering is on an and/or relationship. For example, if the provided tag ids are for the 'Dog' and'Cat' tags, then only images tagged with Dog and/or Cat will be returned",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tag_ids":{
+			   "description": "A list of tags ids to filter the images to count. Defaults to all tags when null.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iteration_id":{
+			   "description": "The iteration id. Defaults to workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -78,11 +78,9 @@ def format_params(key_values)
       op_param('$skipToken', 'query', '$skip_token', '$skip_token'),
       op_param('$top', 'query', '$top', '$top'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('properties', 'body', 'properties', 'properties'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('type', 'body', 'type', 'type'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

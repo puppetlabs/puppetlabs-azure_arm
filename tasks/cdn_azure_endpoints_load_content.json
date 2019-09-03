@@ -7,6 +7,12 @@
 		
 		
 		    
+			"content_file_paths":{
+			   "description": "The path to the content to be loaded. Path should be a full URL, e.g. ‘/pictures/city.png' which loads a single file ",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Azure Subscription ID.",
 			   "type": "Optional[String[1]]"
@@ -19,8 +25,14 @@
 			}
 			,
 		    
-			"contentpaths":{
-			   "description": "The path to the content to be loaded. Path should be a relative file URL of the origin.",
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,12 +51,6 @@
 		    
 			"endpoint_name":{
 			   "description": "Name of the endpoint under the profile which is unique globally.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"content_file_paths":{
-			   "description": "The path to the content to be loaded. Path should be a full URL, e.g. ‘/pictures/city.png' which loads a single file ",
 			   "type": "Optional[String[1]]"
 			}
 			

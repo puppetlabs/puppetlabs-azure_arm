@@ -7,20 +7,14 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "The required parameters for exporting a database.",
+			"administratorlogin":{
+			   "description": "The name of the SQL administrator.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "The import/export operation properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
+			"administratorloginpassword":{
+			   "description": "The password of the SQL administrator.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,8 +37,26 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource name.",
+			"database_name":{
+			   "description": "The name of the database to be exported.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The required parameters for exporting a database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storageuri":{
+			   "description": "The storage uri to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authenticationtype":{
+			   "description": "The authentication type.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -55,14 +67,14 @@
 			}
 			,
 		    
-			"database_name":{
-			   "description": "The name of the database to be exported.",
+			"storagekeytype":{
+			   "description": "The type of the storage key to use.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource ID.",
+			"storagekey":{
+			   "description": "The storage key to use.  If storage key type is SharedAccessKey, it must be preceded with a '?.'",
 			   "type": "Optional[String[1]]"
 			}
 			

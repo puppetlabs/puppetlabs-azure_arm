@@ -13,14 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Operation name: {provider}/{resource}/{operation}",
+			"nextlink":{
+			   "description": "URL to get the next set of operation list results if there are any.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "Display metadata associated with the operation.",
+			"value":{
+			   "description": "List of operations supported by the Microsoft.Insights provider.",
 			   "type": "Optional[String[1]]"
 			}
 			

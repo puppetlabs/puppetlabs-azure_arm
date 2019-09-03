@@ -7,6 +7,24 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "The unique identifier for a Microsoft Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group within the Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_name":{
+			   "description": "The Media Services account name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"transform_name":{
 			   "description": "The Transform name.",
 			   "type": "Optional[String[1]]"
@@ -27,24 +45,6 @@
 		    
 			"error":{
 			   "description": "The error properties.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The unique identifier for a Microsoft Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group within the Azure subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"account_name":{
-			   "description": "The Media Services account name.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,142 @@
+{
+	"description": "Retrieves the specified table type from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"istabletype":{
+			   "description": "the the switch indicating if this type is a table type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"systemtypeid":{
+			   "description": "the system type ID for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"csharpname":{
+			   "description": "the C# name for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"typefamily":{
+			   "description": "the type family for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"usertypeid":{
+			   "description": "the user type ID for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"principalid":{
+			   "description": "the principal ID for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schemaname":{
+			   "description": "the name of the schema associated with this table and database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"columns":{
+			   "description": "the type field information associated with this table type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schemaid":{
+			   "description": "the schema ID for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iscomplextype":{
+			   "description": "the the switch indicating if this type is a complex type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fullcsharpname":{
+			   "description": "the fully qualified C# name for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isassemblytype":{
+			   "description": "the the switch indicating if this type is an assembly type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isnullable":{
+			   "description": "the the switch indicating if this type is nullable.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isuserdefined":{
+			   "description": "the the switch indicating if this type is user defined.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"table_type_name":{
+			   "description": "The name of the table type to retrieve.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"typename":{
+			   "description": "the name of type for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"remoteexception":{
-			   "description": "the object representing the actual WebHDFS exception being returned.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"path":{
 			   "description": "The Data Lake Store path (starting with '/') of the file on which to set or remove the expiration time.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +27,18 @@
 		    
 			"op":{
 			   "description": "The constant value for the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"remoteexception":{
+			   "description": "the object representing the actual WebHDFS exception being returned.",
 			   "type": "Optional[String[1]]"
 			}
 			

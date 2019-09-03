@@ -1,0 +1,94 @@
+{
+	"description": "Gets a widget type in the specified hub.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"imageurl":{
+			   "description": "The image URL.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"definition":{
+			   "description": "Definition for widget type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"widgettypename":{
+			   "description": "Name of the widget type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
+			   "description": "Date time when widget type was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hub_name":{
+			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"changed":{
+			   "description": "Date time when widget type was last modified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"widgetversion":{
+			   "description": "The widget version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "Description for widget type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "Localized display name for the widget type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"widget_type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

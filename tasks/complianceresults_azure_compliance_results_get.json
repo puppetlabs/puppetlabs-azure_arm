@@ -1,0 +1,52 @@
+{
+	"description": "Security Compliance Result",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "API version for the operation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "The identifier of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"compliance_result_name":{
+			   "description": "name of the desired assessment compliance result",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Compliance result data",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

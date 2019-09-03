@@ -7,12 +7,6 @@
 		
 		
 		    
-			"manager_name":{
-			   "description": "The manager name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The api version",
 			   "type": "Optional[String[1]]"
@@ -51,6 +45,12 @@
 		    
 			"resource_group_name":{
 			   "description": "The resource group name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manager_name":{
+			   "description": "The manager name",
 			   "type": "Optional[String[1]]"
 			}
 			

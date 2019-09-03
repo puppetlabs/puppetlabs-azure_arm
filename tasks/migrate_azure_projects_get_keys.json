@@ -7,6 +7,30 @@
 		
 		
 		    
+			"workspaceid":{
+			   "description": "ID of Migration Project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workspacekey":{
+			   "description": "Key of Migration Project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure Subscription Id in which project was created.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of the Azure Resource Group that project is part of.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"project_name":{
 			   "description": "Name of the Azure Migrate project.",
 			   "type": "Optional[String[1]]"
@@ -21,24 +45,6 @@
 		    
 			"accept_language":{
 			   "description": "Standard request header. Used by service to respond to client in appropriate language.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"error":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Azure Subscription Id in which project was created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of the Azure Resource Group that project is part of.",
 			   "type": "Optional[String[1]]"
 			}
 			

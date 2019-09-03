@@ -1,0 +1,28 @@
+{
+	"description": "Retrieve person group name, userData and recognitionModel. To get person information under this personGroup, use [PersonGroup Person - List](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395241).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"person_group_id":{
+			   "description": "Id referencing a particular person group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"return_recognition_model":{
+			   "description": "A value indicating whether the operation should return 'recognitionModel' in response.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

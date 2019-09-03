@@ -7,18 +7,6 @@
 		
 		
 		    
-			"deployment_name":{
-			   "description": "The name of the deployment.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Additional parameters supplied to the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
@@ -31,20 +19,26 @@
 			}
 			,
 		    
-			"location":{
-			   "description": "The location to store the deployment data.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The deployment properties.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"resource_group_name":{
 			   "description": "The name of the resource group to deploy the resources to. The name is case insensitive. The resource group must already exist.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_name":{
+			   "description": "The name of the deployment.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Additional parameters supplied to the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

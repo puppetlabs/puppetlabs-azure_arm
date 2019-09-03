@@ -75,13 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('kind', 'body', 'kind', 'kind'),
-      op_param('location', 'body', 'location', 'location'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('properties', 'body', 'properties', 'properties'),
-      op_param('tags', 'body', 'tags', 'tags'),
-      op_param('type', 'body', 'type', 'type'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

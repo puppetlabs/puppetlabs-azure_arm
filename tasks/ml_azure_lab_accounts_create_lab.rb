@@ -76,10 +76,14 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('createLabProperties', 'body', 'create_lab_properties', 'create_lab_properties'),
-      op_param('error', 'body', 'error', 'error'),
+      op_param('environmentsettingcreationparameters', 'body', 'environment_setting_creation_parameters', 'environmentsettingcreationparameters'),
       op_param('labAccountName', 'path', 'lab_account_name', 'lab_account_name'),
+      op_param('labcreationparameters', 'body', 'lab_creation_parameters', 'labcreationparameters'),
+      op_param('location', 'body', 'location', 'location'),
+      op_param('name', 'body', 'name', 'name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('tags', 'body', 'tags', 'tags'),
     ]
   op_params.each do |i|
     location = i[:location]

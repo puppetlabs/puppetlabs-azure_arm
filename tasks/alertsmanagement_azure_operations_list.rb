@@ -14,7 +14,7 @@ def operations_list(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https:////providers/Microsoft.AlertsManagement/operations" % path_params
+  uri_string = "https://management.azure.com//providers/Microsoft.AlertsManagement/operations" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)
@@ -75,8 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('display', 'body', 'display', 'display'),
-      op_param('name', 'body', 'name', 'name'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

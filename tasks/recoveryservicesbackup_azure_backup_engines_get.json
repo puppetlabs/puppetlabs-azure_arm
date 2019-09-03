@@ -1,0 +1,58 @@
+{
+	"description": "The backup management servers registered to a Recovery Services vault. This returns a pageable list of servers.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group associated with the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "Use this filter to choose the specific backup management server. backupManagementType { AzureIaasVM, MAB, DPM, AzureBackupServer, AzureSql }.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip_token":{
+			   "description": "The Skip Token filter.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "List of resources.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URI to GET the next page of resources. Call ListNext() gets the next page of resources.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vault_name":{
+			   "description": "The name of the Recovery Services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

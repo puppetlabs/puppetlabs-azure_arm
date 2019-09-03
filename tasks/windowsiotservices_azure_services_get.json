@@ -1,0 +1,58 @@
+{
+	"description": "Get the non-security related metadata of a Windows IoT Device Service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"device_name":{
+			   "description": "The name of the Windows IoT Device Service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A human-readable representation of the error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target":{
+			   "description": "The target of the particular error.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"details":{
+			   "description": "A human-readable representation of the error's details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "One of a server-defined set of error codes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group that contains the Windows IoT Device Service.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

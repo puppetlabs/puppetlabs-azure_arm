@@ -7,44 +7,8 @@
 		
 		
 		    
-			"parameters":{
-			   "description": "Parameters supplied to create a subscription resource.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"message":{
 			   "description": "Error message indicating why the operation failed.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "Error code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"topic_name":{
-			   "description": "The topic name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_name":{
-			   "description": "The subscription name.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -57,6 +21,42 @@
 		    
 			"namespace_name":{
 			   "description": "The namespace name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"topic_name":{
+			   "description": "The topic name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials that uniquely identify a Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_name":{
+			   "description": "The subscription name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "Parameters supplied to create a subscription resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

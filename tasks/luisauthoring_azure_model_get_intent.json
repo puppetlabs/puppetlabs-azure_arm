@@ -1,0 +1,34 @@
+{
+	"description": "Gets information about the intent model in a version of the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"intent_id":{
+			   "description": "The intent classifier ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

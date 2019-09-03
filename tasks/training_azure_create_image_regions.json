@@ -7,6 +7,12 @@
 		
 		
 		    
+			"exceeded":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"project_id":{
 			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,18 @@
 			,
 		    
 			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"regions":{
+			"duplicated":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

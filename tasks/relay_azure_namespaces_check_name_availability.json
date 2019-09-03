@@ -25,8 +25,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The namespace name to check for availability. The namespace name can contain only letters, numbers, and hyphens. The namespace must start with a letter, and it must end with a letter or number.",
+			"code":{
+			   "description": "Error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
 			   "type": "Optional[String[1]]"
 			}
 			

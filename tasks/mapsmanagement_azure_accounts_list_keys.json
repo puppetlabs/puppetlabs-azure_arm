@@ -7,20 +7,26 @@
 		
 		
 		    
-			"target":{
-			   "description": "If available, the component generating the error.",
+			"account_name":{
+			   "description": "The name of the Maps Account.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"details":{
-			   "description": "If available, a list of additional details about the error.",
+			"id":{
+			   "description": "The full Azure resource identifier of the Maps Account.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"code":{
-			   "description": "Error code.",
+			"primarykey":{
+			   "description": "The primary key for accessing the Maps REST APIs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondarykey":{
+			   "description": "The secondary key for accessing the Maps REST APIs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -39,18 +45,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The name of the Azure Resource Group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"account_name":{
-			   "description": "The name of the Maps Account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"message":{
-			   "description": "If available, a human readable description of the error.",
 			   "type": "Optional[String[1]]"
 			}
 			

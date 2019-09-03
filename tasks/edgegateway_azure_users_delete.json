@@ -7,6 +7,18 @@
 		
 		
 		    
+			"device_name":{
+			   "description": "The device name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "The user name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "The subscription ID.",
 			   "type": "Optional[String[1]]"
@@ -27,18 +39,6 @@
 		    
 			"error":{
 			   "description": "The error details.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"device_name":{
-			   "description": "The device name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The name of the user who needs to be deleted.",
 			   "type": "Optional[String[1]]"
 			}
 			

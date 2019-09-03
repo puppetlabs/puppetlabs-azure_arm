@@ -1,0 +1,76 @@
+{
+	"description": "Gets the details of a logical network.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"properties":{
+			   "description": "The Logical Network Properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group where the recovery services vault is present.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fabric_name":{
+			   "description": "Server Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"logical_network_name":{
+			   "description": "Logical network name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Resource Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the recovery services vault.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription Id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Resource Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource Type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "Resource Location",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

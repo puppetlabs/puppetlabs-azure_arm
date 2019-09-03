@@ -7,8 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API Version",
+			"display":{
+			   "description": "Operation display values.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,14 +25,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "Name of the operation. Format: {resourceProviderNamespace}/{resourceType}/{read|write|delete|action}",
+			"api_version":{
+			   "description": "The API Version",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "Operation display values.",
+			"name":{
+			   "description": "Name of the operation. Format: {resourceProviderNamespace}/{resourceType}/{read|write|delete|action}",
 			   "type": "Optional[String[1]]"
 			}
 			

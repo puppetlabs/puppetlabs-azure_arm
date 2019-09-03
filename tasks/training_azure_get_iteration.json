@@ -1,0 +1,118 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"iteration_id":{
+			   "description": "The id of the iteration to get.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trainingtype":{
+			   "description": "Gets the training type of the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trainedat":{
+			   "description": "Gets the time this iteration was last modified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
+			   "description": "Gets the time this iteration was completed.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exportable":{
+			   "description": "Whether the iteration can be exported to another format for download.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domainid":{
+			   "description": "Get or sets a guid of the domain the iteration has been trained on.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Gets the id of the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exportableto":{
+			   "description": "A set of platforms this iteration can export to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"projectid":{
+			   "description": "Gets the project id of the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classificationtype":{
+			   "description": "Gets the classification type of the project.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"originalpublishresourceid":{
+			   "description": "Resource Provider Id this iteration was originally published to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Gets or sets the name of the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
+			   "description": "Gets the current iteration status.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reservedbudgetinhours":{
+			   "description": "Gets the reserved advanced training budget for the iteration.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"publishname":{
+			   "description": "Name of the published model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastmodified":{
+			   "description": "Gets the time this iteration was last modified.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

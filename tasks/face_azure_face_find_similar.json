@@ -1,5 +1,5 @@
 {
-	"description": "Given query face's faceId, find the similar-looking faces from a faceId array, a face list or a large face list.",
+	"description": "Given query face's faceId, to search the similar-looking faces from a faceId array, a face list or a large face list. faceId array contains the faces created by [Face - Detect](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f30395236), which will expire 24 hours after creation. A 'faceListId' is created by [FaceList - Create](/docs/services/563879b61984550e40cbbe8d/operations/563879b61984550f3039524b) containing persistedFaceIds that will not expire. And a 'largeFaceListId' is created by [LargeFaceList - Create](/docs/services/563879b61984550e40cbbe8d/operations/5a157b68d2de3616c086f2cc) containing persistedFaceIds that will also not expire. Depending on the input the returned similar faces list contains faceIds or persistedFaceIds ranked by similarity.Find similar has two working modes, 'matchPerson' and 'matchFace'. 'matchPerson' is the default mode that it tries to find faces of the same person as possible by using internal same-person thresholds. It is useful to find a known person's other photos. Note that an empty list will be returned if no faces pass the internal thresholds. 'matchFace' mode ignores same-person thresholds and returns ranked similar faces anyway, even the similarity is low. It can be used in the cases like searching celebrity-looking faces.The 'recognitionModel' associated with the query face's faceId should be the same as the 'recognitionModel' used by the target faceId array, face list or large face list.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,14 +7,14 @@
 		
 		
 		    
-			"body":{
-			   "description": "Request body for Find Similar.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"body":{
+			   "description": "Request body for Find Similar.",
 			   "type": "Optional[String[1]]"
 			}
 			

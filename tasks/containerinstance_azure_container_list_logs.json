@@ -1,0 +1,52 @@
+{
+	"description": "Get the logs for a specified container instance in a specified resource group and container group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"container_name":{
+			   "description": "The name of the container instance.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tail":{
+			   "description": "The number of lines to show from the tail of the container instance log. If not provided, all available logs are shown up to 4mb.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container_group_name":{
+			   "description": "The name of the container group.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

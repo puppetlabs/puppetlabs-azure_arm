@@ -1,0 +1,64 @@
+{
+	"description": "This method gets the public keys.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"properties":{
+			   "description": "Public key property.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Id of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Type of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the object.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"public_key_name":{
+			   "description": "Name of the public key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Subscription Id",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The Resource Group Name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_manager_name":{
+			   "description": "The name of the DataManager Resource within the specified resource group. DataManager names must be between 3 and 24 characters in length and use any alphanumeric and underscore only",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API Version",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

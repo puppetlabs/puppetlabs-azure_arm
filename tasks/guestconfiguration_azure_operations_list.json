@@ -1,0 +1,34 @@
+{
+	"description": "Lists all of the available GuestConfiguration REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Operation name: For ex. providers/Microsoft.GuestConfiguration/guestConfigurationAssignments/write or read",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display":{
+			   "description": "Provider, Resource, Operation and description values.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Provider, Resource, Operation and description values.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,6 +7,36 @@
 		
 		
 		    
+			"x5t":{
+			   "description": "Thumbprint of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sid":{
+			   "description": "The secret id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "The certificate attributes.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy":{
+			   "description": "The management policy.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"certificate_name":{
 			   "description": "The name of the deleted certificate",
 			   "type": "Optional[String[1]]"
@@ -19,8 +49,26 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "",
+			"id":{
+			   "description": "The certificate id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contenttype":{
+			   "description": "The content type of the secret.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kid":{
+			   "description": "The key id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cer":{
+			   "description": "CER contents of x509 certificate.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -7,30 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The version of the API.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The subscription identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"export_devices_parameters":{
-			   "description": "The parameters that specify the export devices operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"httpstatuscode":{
-			   "description": "The HTTP status code.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_group_name":{
 			   "description": "The name of the resource group that contains the IoT hub.",
 			   "type": "Optional[String[1]]"
@@ -43,20 +19,32 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "The error code.",
+			"export_devices_parameters":{
+			   "description": "The parameters that specify the export devices operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"message":{
-			   "description": "The error message.",
+			"exportblobcontaineruri":{
+			   "description": "The export blob container URI.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"details":{
-			   "description": "The error details.",
+			"excludekeys":{
+			   "description": "The value indicating whether keys should be excluded during export.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the API.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription identifier.",
 			   "type": "Optional[String[1]]"
 			}
 			

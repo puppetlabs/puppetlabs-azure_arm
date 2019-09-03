@@ -1,0 +1,34 @@
+{
+	"description": "Get information about AAD Metadata",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"metadata":{
+			   "description": "This must be set to 'true'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "This is the API version to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error code",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error_description":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

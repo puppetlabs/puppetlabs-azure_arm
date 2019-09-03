@@ -8,7 +8,7 @@
 		
 		    
 			"location":{
-			   "description": "The location of the resource",
+			   "description": "Location for data transfer. For locations check: https://management.azure.com/subscriptions/SUBSCRIPTIONID/locations?api-version=2018-01-01",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,14 +25,20 @@
 			}
 			,
 		    
-			"nextlink":{
-			   "description": "Link for the next set of skus.",
+			"transfertype":{
+			   "description": "Type of the transfer.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"value":{
-			   "description": "List of available skus.",
+			"country":{
+			   "description": "ISO country code. Country for hardware shipment. For codes check: https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skunames":{
+			   "description": "Sku Names to filter for available skus",
 			   "type": "Optional[String[1]]"
 			}
 			,

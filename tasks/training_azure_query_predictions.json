@@ -7,38 +7,8 @@
 		
 		
 		    
-			"training_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"orderby":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"continuation":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"starttime":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"session":{
-			   "description": "",
+			"project_id":{
+			   "description": "The project id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,32 +19,20 @@
 			}
 			,
 		    
-			"iterationid":{
-			   "description": "",
+			"training_key":{
+			   "description": "API key.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"application":{
-			   "description": "",
+			"code":{
+			   "description": "The error code.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"endtime":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"maxcount":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"project_id":{
-			   "description": "The project id.",
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -75,7 +75,7 @@ def format_params(key_values)
 
   op_params = [
       op_param('body', 'body', 'body', 'body'),
-      op_param('tables', 'body', 'tables', 'tables'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('workspaceId', 'path', 'workspace_id', 'workspace_id'),
     ]
   op_params.each do |i|

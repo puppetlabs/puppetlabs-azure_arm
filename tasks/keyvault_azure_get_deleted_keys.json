@@ -7,32 +7,14 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client API version.",
+			"value":{
+			   "description": "A response message containing a list of deleted keys in the vault along with a link to the next page of deleted keys",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"managed":{
-			   "description": "True if the key's lifetime is managed by key vault. If this is a key backing a certificate, then managed will be true.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"recoveryid":{
-			   "description": "The url of the recovery object, used to identify and recover the deleted key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deleteddate":{
-			   "description": "The time when the key was deleted, in UTC",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs.",
+			"nextlink":{
+			   "description": "The URL to get the next set of deleted keys.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +25,8 @@
 			}
 			,
 		    
-			"kid":{
-			   "description": "Key identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attributes":{
-			   "description": "The key management attributes.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"scheduledpurgedate":{
-			   "description": "The time when the key is scheduled to be purged, in UTC",
+			"api_version":{
+			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

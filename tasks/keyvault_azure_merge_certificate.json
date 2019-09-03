@@ -7,14 +7,26 @@
 		
 		
 		    
-			"certificate_name":{
-			   "description": "The name of the certificate.",
+			"kid":{
+			   "description": "The key id.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"parameters":{
-			   "description": "The parameters to merge certificate.",
+			"sid":{
+			   "description": "The secret id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cer":{
+			   "description": "CER contents of x509 certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application specific metadata in the form of key-value pairs",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,20 +37,44 @@
 			}
 			,
 		    
+			"parameters":{
+			   "description": "The parameters to merge certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The certificate id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"x5t":{
+			   "description": "Thumbprint of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contenttype":{
+			   "description": "The content type of the secret.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"attributes":{
-			   "description": "The attributes of the certificate (optional).",
+			   "description": "The certificate attributes.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
-			   "description": "Application specific metadata in the form of key-value pairs.",
+			"policy":{
+			   "description": "The management policy.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"x5c":{
-			   "description": "The certificate or the certificate chain to merge.",
+			"certificate_name":{
+			   "description": "The name of the certificate.",
 			   "type": "Optional[String[1]]"
 			}
 			

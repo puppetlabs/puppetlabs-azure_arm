@@ -7,6 +7,12 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"location":{
 			   "description": "The supported Azure location where the key vault should be created.",
 			   "type": "Optional[String[1]]"
@@ -45,12 +51,6 @@
 		    
 			"parameters":{
 			   "description": "Parameters to create or update the vault",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			

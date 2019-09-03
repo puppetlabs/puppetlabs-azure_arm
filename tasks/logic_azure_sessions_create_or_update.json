@@ -7,12 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"session":{
 			   "description": "The integration account session.",
 			   "type": "Optional[String[1]]"
@@ -45,6 +39,12 @@
 		    
 			"session_name":{
 			   "description": "The integration account session name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

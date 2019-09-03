@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the available Healthcare service REST API operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"nextlink":{
+			   "description": "The link used to get the next page of service description objects.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A list of service operations supported by the Microsoft.HealthcareApis resource provider.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

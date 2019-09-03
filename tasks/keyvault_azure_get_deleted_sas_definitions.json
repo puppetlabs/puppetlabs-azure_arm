@@ -1,0 +1,40 @@
+{
+	"description": "The Get Deleted Sas Definitions operation returns the SAS definitions that have been deleted for a vault enabled for soft-delete. This operation requires the storage/listsas permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"storage_account_name":{
+			   "description": "The name of the storage account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A response message containing a list of the deleted SAS definitions in the vault along with a link to the next page of deleted sas definitions",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URL to get the next set of deleted SAS definitions.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

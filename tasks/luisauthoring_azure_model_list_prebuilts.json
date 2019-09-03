@@ -1,0 +1,34 @@
+{
+	"description": "Gets information about all the prebuilt entities in a version of the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip":{
+			   "description": "The number of entries to skip. Default value is 0.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"take":{
+			   "description": "The number of entries to return. Maximum page size is 500. Default is 100.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

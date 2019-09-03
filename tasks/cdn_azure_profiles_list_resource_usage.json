@@ -31,14 +31,14 @@
 			}
 			,
 		    
-			"value":{
-			   "description": "List of resource usages.",
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"nextlink":{
-			   "description": "URL to get the next set of custom domain objects if there are any.",
+			"code":{
+			   "description": "Error code.",
 			   "type": "Optional[String[1]]"
 			}
 			

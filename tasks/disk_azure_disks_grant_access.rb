@@ -74,10 +74,9 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('access', 'body', 'access', 'access'),
+      op_param('accesssas', 'body', 'accesssas', 'accesssas'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('diskName', 'path', 'disk_name', 'disk_name'),
-      op_param('durationinseconds', 'body', 'durationinseconds', 'durationinseconds'),
       op_param('grantAccessData', 'body', 'grant_access_data', 'grant_access_data'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),

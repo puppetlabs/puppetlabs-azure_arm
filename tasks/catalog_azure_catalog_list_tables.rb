@@ -82,18 +82,10 @@ def format_params(key_values)
       op_param('$top', 'query', '$top', '$top'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('basic', 'query', 'basic', 'basic'),
-      op_param('columnlist', 'body', 'column_list', 'columnlist'),
-      op_param('computeaccountname', 'body', 'compute_account_name', 'computeaccountname'),
-      op_param('database_name', 'path', 'database_name', 'database_name'),
-      op_param('databasename', 'body', 'database_name', 'databasename'),
-      op_param('distributioninfo', 'body', 'distribution_info', 'distributioninfo'),
-      op_param('externaltable', 'body', 'external_table', 'externaltable'),
-      op_param('indexlist', 'body', 'index_list', 'indexlist'),
-      op_param('partitionkeylist', 'body', 'partition_key_list', 'partitionkeylist'),
-      op_param('schema_name', 'path', 'schema_name', 'schema_name'),
-      op_param('schemaname', 'body', 'schema_name', 'schemaname'),
-      op_param('tablename', 'body', 'table_name', 'tablename'),
-      op_param('version', 'body', 'version', 'version'),
+      op_param('databaseName', 'path', 'database_name', 'database_name'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('schemaName', 'path', 'schema_name', 'schema_name'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

@@ -1,0 +1,40 @@
+{
+	"description": "Gets the job debug data information specified by the job ID.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_identity":{
+			   "description": "Job identifier. Uniquely identifies the job across all jobs submitted to the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"jobid":{
+			   "description": "the id of the job this data is for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"command":{
+			   "description": "the command that this job data relates to.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"paths":{
+			   "description": "the list of paths to all of the job data.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

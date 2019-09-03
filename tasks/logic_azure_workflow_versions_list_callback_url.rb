@@ -75,12 +75,16 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('keytype', 'body', 'key_type', 'keytype'),
-      op_param('notafter', 'body', 'not_after', 'notafter'),
+      op_param('basepath', 'body', 'basepath', 'basepath'),
+      op_param('method', 'body', 'method', 'method'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
+      op_param('queries', 'body', 'queries', 'queries'),
+      op_param('relativepath', 'body', 'relativepath', 'relativepath'),
+      op_param('relativepathparameters', 'body', 'relativepathparameters', 'relativepathparameters'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('triggerName', 'path', 'trigger_name', 'trigger_name'),
+      op_param('value', 'body', 'value', 'value'),
       op_param('versionId', 'path', 'version_id', 'version_id'),
       op_param('workflowName', 'path', 'workflow_name', 'workflow_name'),
     ]

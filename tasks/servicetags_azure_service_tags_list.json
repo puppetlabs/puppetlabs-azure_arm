@@ -1,0 +1,64 @@
+{
+	"description": "Gets a list of service tag information resources.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "The name of the cloud.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"changenumber":{
+			   "description": "The iteration number.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"values":{
+			   "description": "The list of service tag information resources.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "The location that will be used as a reference for version (not as a filter based on location, you will get the list of service tags with prefix details across all regions but limited to the cloud that your subscription belongs to).",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription credentials which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The azure resource type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cloud":{
+			   "description": "The name of the cloud.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The ID of the cloud.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

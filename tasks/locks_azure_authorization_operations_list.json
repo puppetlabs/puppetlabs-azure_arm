@@ -7,6 +7,12 @@
 		
 		
 		    
+			"display":{
+			   "description": "The object that represents the operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_version":{
 			   "description": "The API version to use for the operation.",
 			   "type": "Optional[String[1]]"
@@ -15,12 +21,6 @@
 		    
 			"name":{
 			   "description": "Operation name: {provider}/{resource}/{operation}",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display":{
-			   "description": "The object that represents the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

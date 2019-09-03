@@ -7,24 +7,6 @@
 		
 		
 		    
-			"endpoint_name":{
-			   "description": "The name of the Traffic Manager endpoint to be created or updated.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "The Traffic Manager endpoint parameters supplied to the CreateOrUpdate operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subscription_id":{
 			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
@@ -51,6 +33,24 @@
 		    
 			"endpoint_type":{
 			   "description": "The type of the Traffic Manager endpoint to be created or updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpoint_name":{
+			   "description": "The name of the Traffic Manager endpoint to be created or updated.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The Traffic Manager endpoint parameters supplied to the CreateOrUpdate operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			

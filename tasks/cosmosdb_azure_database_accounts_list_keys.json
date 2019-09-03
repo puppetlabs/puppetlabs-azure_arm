@@ -43,8 +43,14 @@
 			}
 			,
 		    
-			"properties":{
-			   "description": "",
+			"primaryreadonlymasterkey":{
+			   "description": "Base 64 encoded value of the primary read-only key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondaryreadonlymasterkey":{
+			   "description": "Base 64 encoded value of the secondary read-only key.",
 			   "type": "Optional[String[1]]"
 			}
 			

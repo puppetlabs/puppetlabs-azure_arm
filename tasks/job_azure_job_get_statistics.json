@@ -1,0 +1,40 @@
+{
+	"description": "Gets statistics of the specified job.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"finalizingtimeutc":{
+			   "description": "the job finalizing start time.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stages":{
+			   "description": "the list of stages for the job.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastupdatetimeutc":{
+			   "description": "the last update time for the statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_identity":{
+			   "description": "Job Information ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

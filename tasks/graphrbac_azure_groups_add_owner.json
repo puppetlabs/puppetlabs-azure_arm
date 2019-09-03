@@ -7,6 +7,12 @@
 		
 		
 		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tenant_id":{
 			   "description": "The tenant ID.",
 			   "type": "Optional[String[1]]"
@@ -27,12 +33,6 @@
 		    
 			"parameters":{
 			   "description": "The URL of the owner object, such as https://graph.windows.net/0b1f9851-1bf0-433f-aec3-cb9272f093dc/directoryObjects/f260bbc4-c254-447b-94cf-293b5ec434dd.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

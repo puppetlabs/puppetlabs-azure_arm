@@ -7,26 +7,26 @@
 		
 		
 		    
+			"resource_group_name":{
+			   "description": "The name of the resource group to which the container registry belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_name":{
+			   "description": "The name of the container registry.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameters":{
 			   "description": "The parameters specifying the image to copy and the source container registry.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"targettags":{
-			   "description": "List of strings of the form repo[:tag]. When tag is omitted the source will be used (or 'latest' if source tag is also omitted).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"untaggedtargetrepositories":{
-			   "description": "List of strings of repository names to do a manifest only copy. No tag will be created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"source":{
-			   "description": "The source of the image.",
+			"mode":{
+			   "description": "When Force, any existing target tags will be overwritten. When NoForce, any existing target tags will fail the operation before any copying begins.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,20 +43,20 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group to which the container registry belongs.",
+			"source":{
+			   "description": "The source of the image.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"registry_name":{
-			   "description": "The name of the container registry.",
+			"targettags":{
+			   "description": "List of strings of the form repo[:tag]. When tag is omitted the source will be used (or 'latest' if source tag is also omitted).",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"mode":{
-			   "description": "When Force, any existing target tags will be overwritten. When NoForce, any existing target tags will fail the operation before any copying begins.",
+			"untaggedtargetrepositories":{
+			   "description": "List of strings of repository names to do a manifest only copy. No tag will be created.",
 			   "type": "Optional[String[1]]"
 			}
 			

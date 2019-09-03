@@ -1,0 +1,40 @@
+{
+	"description": "The GetCertificateVersions operation returns the versions of a certificate in the specified key vault. This operation requires the certificates/list permission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"certificate_name":{
+			   "description": "The name of the certificate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"maxresults":{
+			   "description": "Maximum number of results to return in a page. If not specified the service will return up to 25 results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A response message containing a list of certificates in the key vault along with a link to the next page of certificates.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URL to get the next set of certificates.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

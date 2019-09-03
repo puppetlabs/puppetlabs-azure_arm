@@ -74,17 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('application', 'body', 'application', 'application'),
-      op_param('continuation', 'body', 'continuation', 'continuation'),
-      op_param('endtime', 'body', 'end_time', 'endtime'),
-      op_param('iterationid', 'body', 'iteration_id', 'iterationid'),
-      op_param('maxcount', 'body', 'max_count', 'maxcount'),
-      op_param('orderby', 'body', 'order_by', 'orderby'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('projectId', 'path', 'project_id', 'project_id'),
       op_param('query', 'body', 'query', 'query'),
-      op_param('session', 'body', 'session', 'session'),
-      op_param('starttime', 'body', 'start_time', 'starttime'),
-      op_param('tags', 'body', 'tags', 'tags'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
     ]
   op_params.each do |i|

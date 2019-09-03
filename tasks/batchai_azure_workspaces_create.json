@@ -7,12 +7,6 @@
 		
 		
 		    
-			"workspace_name":{
-			   "description": "The name of the workspace. Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_). The name must be from 1 through 64 characters long.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "Workspace creation parameters.",
 			   "type": "Optional[String[1]]"
@@ -31,14 +25,26 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "An error response from the Batch AI service.",
+			"location":{
+			   "description": "The region in which to create the Workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "The user specified tags associated with the Workspace.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"resource_group_name":{
 			   "description": "Name of the resource group to which the resource belongs.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workspace_name":{
+			   "description": "The name of the workspace. Workspace names can only contain a combination of alphanumeric characters along with dash (-) and underscore (_). The name must be from 1 through 64 characters long.",
 			   "type": "Optional[String[1]]"
 			}
 			

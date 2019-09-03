@@ -7,6 +7,18 @@
 		
 		
 		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_group_name":{
 			   "description": "The name of the resource group with the deployment to delete. The name is case insensitive.",
 			   "type": "Optional[String[1]]"
@@ -14,31 +26,13 @@
 			,
 		    
 			"deployment_name":{
-			   "description": "The name of the deployment to delete.",
+			   "description": "The name of the deployment.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "The ID of the target subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "The location to store the deployment data.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "The deployment properties.",
 			   "type": "Optional[String[1]]"
 			}
 			

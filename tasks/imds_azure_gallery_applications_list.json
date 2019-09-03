@@ -1,0 +1,28 @@
+{
+	"description": "Get list of the gallery applications.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "This is the API version to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metadata":{
+			   "description": "This must be set to 'true'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

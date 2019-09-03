@@ -7,26 +7,38 @@
 		
 		
 		    
-			"sort_order":{
-			   "description": "Sort the query results order in either ascending or descending.  Default value is 'desc' for time fields and 'asc' for others.",
+			"page_count":{
+			   "description": "Determines number of alerts returned per page in response. Permissible value is between 1 to 250. When the 'includeContent'  filter is selected, maximum value allowed is 25. Default value is 25.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"custom_time_range":{
-			   "description": "Filter by custom time range in the format /  where time is in (ISO-8601 format)'. Permissible values is within 30 days from  query time. Either timeRange or customTimeRange could be used but not both. Default is none.",
+			"sort_by":{
+			   "description": "Sort the query results by input field,  Default value is 'lastModifiedDateTime'.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"alert_state":{
-			   "description": "Filter by state of the alert instance. Default value is to select all.",
+			"select":{
+			   "description": "This filter allows to selection of the fields(comma separated) which would  be part of the essential section. This would allow to project only the  required fields rather than getting entire content.  Default is to fetch all the fields in the essentials section.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"include_context":{
-			   "description": "Include context which has contextual data specific to the monitor service. Default value is false'",
+			"target_resource_type":{
+			   "description": "Filter by target resource type. Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_resource_group":{
+			   "description": "Filter by target resource group name. Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alert_rule":{
+			   "description": "Filter by specific alert rule.  Default value is to select all.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,62 +55,8 @@
 			}
 			,
 		    
-			"time_range":{
-			   "description": "Filter by time range by below listed values. Default value is 1 day.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Azure resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Azure resource name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Azure resource Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_resource_type":{
-			   "description": "Filter by target resource type. Default value is select all.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"alert_rule":{
-			   "description": "Filter by specific alert rule.  Default value is to select all.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"page_count":{
-			   "description": "Determines number of alerts returned per page in response. Permissible value is between 1 to 250. When the 'includeContent'  filter is selected, maximum value allowed is 25. Default value is 25.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"select":{
-			   "description": "This filter allows to selection of the fields(comma separated) which would  be part of the essential section. This would allow to project only the  required fields rather than getting entire content.  Default is to fetch all the fields in the essentials section.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_resource_group":{
-			   "description": "Filter by target resource group name. Default value is select all.",
+			"monitor_service":{
+			   "description": "Filter by monitor service which generates the alert instance. Default value is select all.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -109,26 +67,20 @@
 			}
 			,
 		    
-			"severity":{
-			   "description": "Filter by severity.  Default value is select all.",
+			"include_context":{
+			   "description": "Include context which has contextual data specific to the monitor service. Default value is false'",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"sort_by":{
-			   "description": "Sort the query results by input field,  Default value is 'lastModifiedDateTime'.",
+			"custom_time_range":{
+			   "description": "Filter by custom time range in the format /  where time is in (ISO-8601 format)'. Permissible values is within 30 days from  query time. Either timeRange or customTimeRange could be used but not both. Default is none.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"api_version":{
-			   "description": "API version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "",
+			"scope":{
+			   "description": "scope here is resourceId for which alert is created.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -139,8 +91,38 @@
 			}
 			,
 		    
-			"monitor_service":{
-			   "description": "Filter by monitor service which generates the alert instance. Default value is select all.",
+			"alert_state":{
+			   "description": "Filter by state of the alert instance. Default value is to select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"severity":{
+			   "description": "Filter by severity.  Default value is select all.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_order":{
+			   "description": "Sort the query results order in either ascending or descending.  Default value is 'desc' for time fields and 'asc' for others.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"time_range":{
+			   "description": "Filter by time range by below listed values. Default value is 1 day.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "API version.",
 			   "type": "Optional[String[1]]"
 			}
 			

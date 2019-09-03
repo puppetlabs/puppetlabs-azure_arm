@@ -7,32 +7,14 @@
 		
 		
 		    
+			"vm_name":{
+			   "description": "The name of the virtual machine where the extension should be deleted.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"type":{
 			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Resource Id",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vm_extension_name":{
-			   "description": "The name of the virtual machine extension.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,14 +25,14 @@
 			}
 			,
 		    
-			"tags":{
-			   "description": "Resource tags",
+			"properties":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "",
+			"id":{
+			   "description": "Resource Id",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -67,8 +49,26 @@
 			}
 			,
 		    
-			"vm_name":{
-			   "description": "The name of the virtual machine where the extension should be deleted.",
+			"vm_extension_name":{
+			   "description": "The name of the virtual machine extension.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Resource tags",
 			   "type": "Optional[String[1]]"
 			}
 			

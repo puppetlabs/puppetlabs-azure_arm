@@ -1,0 +1,70 @@
+{
+	"description": "Gets a workflow run action.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_id":{
+			   "description": "The subscription id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workflow_name":{
+			   "description": "The workflow name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action_name":{
+			   "description": "The workflow action name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The resource id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Gets the workflow run action name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Gets the workflow run action type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The resource group name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"run_name":{
+			   "description": "The workflow run name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "The workflow run action properties.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

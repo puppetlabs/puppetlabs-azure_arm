@@ -75,9 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
-      op_param('code', 'body', 'code', 'code'),
+      op_param('errortype', 'body', 'errortype', 'errortype'),
       op_param('force', 'query', 'force', 'force'),
-      op_param('message', 'body', 'message', 'message'),
     ]
   op_params.each do |i|
     location = i[:location]

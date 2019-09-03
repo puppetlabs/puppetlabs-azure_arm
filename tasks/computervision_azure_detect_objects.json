@@ -7,8 +7,14 @@
 		
 		
 		    
-			"message":{
-			   "description": "A message explaining the error reported by the service.",
+			"requestid":{
+			   "description": "Id of the REST API request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metadata":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,14 +25,8 @@
 			}
 			,
 		    
-			"requestid":{
-			   "description": "A unique request identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"code":{
-			   "description": "The error code.",
+			"objects":{
+			   "description": "An array of detected objects.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -76,14 +76,7 @@ def format_params(key_values)
   op_params = [
       op_param('appId', 'path', 'app_id', 'app_id'),
       op_param('applicationPublishObject', 'body', 'application_publish_object', 'application_publish_object'),
-      op_param('assignedendpointkey', 'body', 'assigned_endpoint_key', 'assignedendpointkey'),
-      op_param('endpointregion', 'body', 'endpoint_region', 'endpointregion'),
-      op_param('endpointurl', 'body', 'endpoint_url', 'endpointurl'),
-      op_param('failedregions', 'body', 'failed_regions', 'failedregions'),
-      op_param('isstaging', 'body', 'is_staging', 'isstaging'),
-      op_param('publisheddatetime', 'body', 'published_date_time', 'publisheddatetime'),
-      op_param('region', 'body', 'region', 'region'),
-      op_param('versionid', 'body', 'version_id', 'versionid'),
+      op_param('errortype', 'body', 'errortype', 'errortype'),
     ]
   op_params.each do |i|
     location = i[:location]

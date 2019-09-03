@@ -7,24 +7,6 @@
 		
 		
 		    
-			"subscription_id":{
-			   "description": "The ID of the target subscription.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resources":{
-			   "description": "The IDs of the resources.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targetresourcegroup":{
-			   "description": "The target resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"source_resource_group_name":{
 			   "description": "The name of the resource group containing the resources to move.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +21,18 @@
 		    
 			"api_version":{
 			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

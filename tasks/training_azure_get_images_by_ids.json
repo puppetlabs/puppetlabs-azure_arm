@@ -1,0 +1,46 @@
+{
+	"description": "This API will return a set of Images for the specified tags and optionally iteration. If no iteration is specified thecurrent workspace is used.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"iteration_id":{
+			   "description": "The iteration id. Defaults to workspace.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_key":{
+			   "description": "API key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "The error code.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "A message explaining the error reported by the service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_id":{
+			   "description": "The project id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_ids":{
+			   "description": "The list of image ids to retrieve. Limited to 256.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

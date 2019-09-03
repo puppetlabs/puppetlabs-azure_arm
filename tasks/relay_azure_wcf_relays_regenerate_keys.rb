@@ -76,15 +76,12 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('authorizationRuleName', 'path', 'authorization_rule_name', 'authorization_rule_name'),
-      op_param('keyname', 'body', 'keyname', 'keyname'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('message', 'body', 'message', 'message'),
       op_param('namespaceName', 'path', 'namespace_name', 'namespace_name'),
       op_param('parameters', 'body', 'parameters', 'parameters'),
-      op_param('primaryconnectionstring', 'body', 'primaryconnectionstring', 'primaryconnectionstring'),
-      op_param('primarykey', 'body', 'primarykey', 'primarykey'),
       op_param('relayName', 'path', 'relay_name', 'relay_name'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
-      op_param('secondaryconnectionstring', 'body', 'secondaryconnectionstring', 'secondaryconnectionstring'),
-      op_param('secondarykey', 'body', 'secondarykey', 'secondarykey'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
     ]
   op_params.each do |i|

@@ -7,26 +7,8 @@
 		
 		
 		    
-			"name":{
-			   "description": "Resource name",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "Resource location",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "Resource tags",
+			"parent_resource_path":{
+			   "description": "The parent resource identity.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,20 +19,14 @@
 			}
 			,
 		    
-			"api_version":{
-			   "description": "The API version to use for the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parent_resource_path":{
-			   "description": "The parent resource identity.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_name":{
 			   "description": "The name of the resource to delete.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the operation.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -61,8 +37,8 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource ID",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,

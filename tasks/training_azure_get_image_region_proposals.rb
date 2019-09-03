@@ -14,7 +14,7 @@ def get_image_region_proposals(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https://southcentralus.api.cognitive.microsoft.com//%{project_id}/images/%{image_id}/regionproposals" % path_params
+  uri_string = "https://southcentralus.api.cognitive.microsoft.com//projects/%{project_id}/images/%{image_id}/regionproposals" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)
@@ -74,11 +74,10 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('image_id', 'path', 'image_id', 'image_id'),
-      op_param('imageid', 'body', 'image_id', 'imageid'),
-      op_param('project_id', 'path', 'project_id', 'project_id'),
-      op_param('projectid', 'body', 'project_id', 'projectid'),
-      op_param('proposals', 'body', 'proposals', 'proposals'),
+      op_param('code', 'body', 'code', 'code'),
+      op_param('imageId', 'path', 'image_id', 'image_id'),
+      op_param('message', 'body', 'message', 'message'),
+      op_param('projectId', 'path', 'project_id', 'project_id'),
       op_param('Training-Key', 'header', 'training_key', 'training_key'),
     ]
   op_params.each do |i|

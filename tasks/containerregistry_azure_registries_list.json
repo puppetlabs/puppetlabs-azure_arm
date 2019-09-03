@@ -1,0 +1,34 @@
+{
+	"description": "Lists all the container registries under the specified subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "The client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Microsoft Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "The list of container registries. Since this list may be incomplete, the nextLink field should be used to request the next list of container registries.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The URI that can be used to request the next list of container registries.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

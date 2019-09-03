@@ -76,10 +76,11 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('availableSkuRequest', 'body', 'available_sku_request', 'available_sku_request'),
+      op_param('country', 'body', 'country', 'country'),
       op_param('location', 'path', 'location', 'location'),
-      op_param('nextlink', 'body', 'next_link', 'nextlink'),
+      op_param('skunames', 'body', 'sku_names', 'skunames'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('value', 'body', 'value', 'value'),
+      op_param('transfertype', 'body', 'transfer_type', 'transfertype'),
     ]
   op_params.each do |i|
     location = i[:location]

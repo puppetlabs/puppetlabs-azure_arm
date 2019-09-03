@@ -19,14 +19,8 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "Certificate Identifier.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"provider":{
-			   "description": "The issuer provider.",
+			"error":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

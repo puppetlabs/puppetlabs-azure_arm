@@ -14,7 +14,7 @@ def budgets_delete(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https://management.azure.com//subscriptions/%{subscription_id}/providers/Microsoft.Consumption/budgets/%{budget_name}" % path_params
+  uri_string = "https://management.azure.com//%{scope}/providers/Microsoft.Consumption/budgets/%{budget_name}" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)
@@ -77,7 +77,7 @@ def format_params(key_values)
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('budgetName', 'path', 'budget_name', 'budget_name'),
       op_param('error', 'body', 'error', 'error'),
-      op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('scope', 'path', 'scope', 'scope'),
     ]
   op_params.each do |i|
     location = i[:location]

@@ -7,8 +7,20 @@
 		
 		
 		    
-			"secondarykey":{
-			   "description": "The secondary access key.",
+			"parameters":{
+			   "description": "Parameter that describes the Regenerate Key Operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Gets subscription Id which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -25,38 +37,8 @@
 			}
 			,
 		    
-			"primaryconnectionstring":{
-			   "description": "SignalR connection string constructed via the primaryKey",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"secondaryconnectionstring":{
-			   "description": "SignalR connection string constructed via the secondaryKey",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"primarykey":{
-			   "description": "The primary access key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "Parameter that describes the Regenerate Key Operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Gets subscription Id which uniquely identify the Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
+			"keytype":{
+			   "description": "The keyType to regenerate. Must be either 'primary' or 'secondary'(case-insensitive).",
 			   "type": "Optional[String[1]]"
 			}
 			

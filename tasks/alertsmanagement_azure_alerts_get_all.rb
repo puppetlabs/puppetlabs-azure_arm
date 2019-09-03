@@ -14,7 +14,7 @@ def alerts_get_all(*args)
 
   query_params, body_params, path_params = format_params(arg_hash)
 
-  uri_string = "https:////subscriptions/%{subscription_id}/providers/Microsoft.AlertsManagement/alerts" % path_params
+  uri_string = "https://management.azure.com//%{scope}/providers/Microsoft.AlertsManagement/alerts" % path_params
 
   unless query_params.empty?
     uri_string = uri_string + '?' + to_query(query_params)
@@ -78,25 +78,22 @@ def format_params(key_values)
       op_param('alertState', 'query', 'alert_state', 'alert_state'),
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('customTimeRange', 'query', 'custom_time_range', 'custom_time_range'),
-      op_param('id', 'body', 'id', 'id'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('includeContext', 'query', 'include_context', 'include_context'),
       op_param('includeEgressConfig', 'query', 'include_egress_config', 'include_egress_config'),
       op_param('monitorCondition', 'query', 'monitor_condition', 'monitor_condition'),
       op_param('monitorService', 'query', 'monitor_service', 'monitor_service'),
-      op_param('name', 'body', 'name', 'name'),
       op_param('pageCount', 'query', 'page_count', 'page_count'),
-      op_param('properties', 'body', 'properties', 'properties'),
+      op_param('scope', 'path', 'scope', 'scope'),
       op_param('select', 'query', 'select', 'select'),
       op_param('severity', 'query', 'severity', 'severity'),
       op_param('smartGroupId', 'query', 'smart_group_id', 'smart_group_id'),
       op_param('sortBy', 'query', 'sort_by', 'sort_by'),
       op_param('sortOrder', 'query', 'sort_order', 'sort_order'),
-      op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
       op_param('targetResource', 'query', 'target_resource', 'target_resource'),
       op_param('targetResourceGroup', 'query', 'target_resource_group', 'target_resource_group'),
       op_param('targetResourceType', 'query', 'target_resource_type', 'target_resource_type'),
       op_param('timeRange', 'query', 'time_range', 'time_range'),
-      op_param('type', 'body', 'type', 'type'),
     ]
   op_params.each do |i|
     location = i[:location]

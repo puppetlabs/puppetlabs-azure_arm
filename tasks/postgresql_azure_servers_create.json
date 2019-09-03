@@ -7,8 +7,14 @@
 		
 		
 		    
-			"tags":{
-			   "description": "Application-specific metadata in the form of key-value pairs.",
+			"subscription_id":{
+			   "description": "The subscription ID that identifies an Azure subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "The required parameters for creating or updating a server.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -19,8 +25,14 @@
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The subscription ID that identifies an Azure subscription.",
+			"location":{
+			   "description": "The location the resource resides in.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for the request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -37,26 +49,14 @@
 			}
 			,
 		    
-			"parameters":{
-			   "description": "The required parameters for creating or updating a server.",
+			"tags":{
+			   "description": "Application-specific metadata in the form of key-value pairs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"properties":{
 			   "description": "Properties of the server.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"location":{
-			   "description": "The location the resource resides in.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "The API version to use for the request.",
 			   "type": "Optional[String[1]]"
 			}
 			

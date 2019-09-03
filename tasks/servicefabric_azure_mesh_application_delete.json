@@ -19,8 +19,20 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "Error object containing error code and error message.",
+			"properties":{
+			   "description": "Describes properties of a application resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"identity":{
+			   "description": "Describes the identity of the application.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the Application resource.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,0 +1,46 @@
+{
+	"description": "Returns resource pool templates by its name",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"region_id":{
+			   "description": "The region Id (westus, eastus)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pc_name":{
+			   "description": "The private cloud name",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_pool_name":{
+			   "description": "resource pool id (vsphereId)",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "Error's body",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

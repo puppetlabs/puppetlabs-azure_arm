@@ -1,0 +1,52 @@
+{
+	"description": "Gets a specific domain in the current tenant.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tenant_id":{
+			   "description": "The tenant ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authenticationtype":{
+			   "description": "the type of the authentication into the domain.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isdefault":{
+			   "description": "if this is the default domain in the tenant.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"isverified":{
+			   "description": "if this domain's ownership is verified.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "the domain name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_name":{
+			   "description": "name of the domain.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client API version.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,102 +7,6 @@
 		
 		
 		    
-			"filter":{
-			   "description": "OData filter. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"colnames":{
-			   "description": "the list of column names associated with these statistics.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"statisticsname":{
-			   "description": "the name of the table statistics.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"userstatname":{
-			   "description": "the name of the user statistics.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"isusercreated":{
-			   "description": "the switch indicating if these statistics are user created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"isautocreated":{
-			   "description": "the switch indicating if these statistics are automatically created.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"computeaccountname":{
-			   "description": "the name of the Data Lake Analytics account.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"database_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"select":{
-			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"createtime":{
-			   "description": "the creation time of the statistics.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"hasfilter":{
-			   "description": "the switch indicating if these statistics have a filter.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"updatetime":{
-			   "description": "the last time the statistics were updated.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"databasename":{
-			   "description": "the name of the database.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schemaname":{
-			   "description": "the name of the schema associated with this table and database.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tablename":{
-			   "description": "the name of the table.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"top":{
 			   "description": "The number of items to return. Optional.",
 			   "type": "Optional[String[1]]"
@@ -115,8 +19,32 @@
 			}
 			,
 		    
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"orderby":{
 			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "The name of the database containing the statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"table_name":{
+			   "description": "The name of the table containing the statistics.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -127,32 +55,26 @@
 			}
 			,
 		    
-			"statdatapath":{
-			   "description": "the path to the statistics data.",
+			"api_version":{
+			   "description": "Client Api Version.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filterdefinition":{
-			   "description": "the filter definition for the statistics.",
+			"nextlink":{
+			   "description": "the link to the next page of results.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"version":{
-			   "description": "the version of the catalog item.",
+			"value":{
+			   "description": "the list of table statistics in the database, schema and table combination",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"schema_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"table_name":{
-			   "description": "",
+			   "description": "The name of the schema containing the statistics.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,11 +1,17 @@
 {
-	"description": "Updates the closed list model.",
+	"description": "Updates the list entity in a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"version_id":{
 			   "description": "The version ID.",
@@ -14,31 +20,19 @@
 			,
 		    
 			"cl_entity_id":{
-			   "description": "The closed list model ID.",
+			   "description": "The list model ID.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"closed_list_model_update_object":{
-			   "description": "The new entity name and words list.",
+			   "description": "The new list entity name and words list.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"sublists":{
-			   "description": "The new sublists for the feature.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "The new name of the closed list feature.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"app_id":{
-			   "description": "The application ID.",
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

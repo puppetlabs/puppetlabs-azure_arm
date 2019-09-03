@@ -7,32 +7,14 @@
 		
 		
 		    
-			"top":{
-			   "description": "The number of items to return. Optional.",
+			"orderby":{
+			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"skip":{
-			   "description": "The number of items to skip over before returning elements. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"acetype":{
-			   "description": "the access control list (ACL) entry type. UserObj and GroupObj denote the owning user and group, respectively.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"principalid":{
-			   "description": "the Azure AD object ID of the user or group being specified in the access control list (ACL) entry.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"permission":{
-			   "description": "the permission type of the access control list (ACL) entry.",
+			"value":{
+			   "description": "the access control list (ACL).",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,14 +25,14 @@
 			}
 			,
 		    
-			"select":{
-			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			"skip":{
+			   "description": "The number of items to skip over before returning elements. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"orderby":{
-			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -63,6 +45,18 @@
 		    
 			"api_version":{
 			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "the link to the next page of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The number of items to return. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			

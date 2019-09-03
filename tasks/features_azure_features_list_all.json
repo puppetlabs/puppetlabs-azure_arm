@@ -7,14 +7,20 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version to use for this operation.",
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_id":{
-			   "description": "The ID of the target subscription.",
+			"id":{
+			   "description": "The resource ID of the feature.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "The resource type of the feature.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,14 +37,8 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "The resource ID of the feature.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "The resource type of the feature.",
+			"api_version":{
+			   "description": "The API version to use for this operation.",
 			   "type": "Optional[String[1]]"
 			}
 			

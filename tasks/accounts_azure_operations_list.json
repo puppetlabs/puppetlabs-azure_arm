@@ -13,26 +13,14 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "The operation name.",
+			"value":{
+			   "description": "A collection of Operation items.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display":{
-			   "description": "The operation display name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"origin":{
-			   "description": "Origin of the operation.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "Operation properties format.",
+			"odatanextlink":{
+			   "description": "A link to the next page of the collection (when the collection contains too many results to return in one response).",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -76,9 +76,9 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('deploymentName', 'path', 'deployment_name', 'deployment_name'),
+      op_param('error', 'body', 'error', 'error'),
       op_param('resourceGroupName', 'path', 'resource_group_name', 'resource_group_name'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('template', 'body', 'template', 'template'),
     ]
   op_params.each do |i|
     location = i[:location]

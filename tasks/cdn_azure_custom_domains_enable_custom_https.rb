@@ -76,6 +76,7 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('code', 'body', 'code', 'code'),
+      op_param('customDomainHttpsParameters', 'body', 'custom_domain_https_parameters', 'custom_domain_https_parameters'),
       op_param('customDomainName', 'path', 'custom_domain_name', 'custom_domain_name'),
       op_param('endpointName', 'path', 'endpoint_name', 'endpoint_name'),
       op_param('message', 'body', 'message', 'message'),

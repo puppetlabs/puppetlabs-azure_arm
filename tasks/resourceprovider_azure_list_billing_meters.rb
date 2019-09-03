@@ -76,13 +76,10 @@ def format_params(key_values)
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
       op_param('billingLocation', 'query', 'billing_location', 'billing_location'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('kind', 'body', 'kind', 'kind'),
-      op_param('name', 'body', 'name', 'name'),
+      op_param('nextlink', 'body', 'next_link', 'nextlink'),
       op_param('osType', 'query', 'os_type', 'os_type'),
-      op_param('properties', 'body', 'properties', 'properties'),
       op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
-      op_param('type', 'body', 'type', 'type'),
+      op_param('value', 'body', 'value', 'value'),
     ]
   op_params.each do |i|
     location = i[:location]

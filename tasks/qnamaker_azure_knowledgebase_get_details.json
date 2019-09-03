@@ -1,0 +1,22 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"kb_id":{
+			   "description": "Knowledgebase id.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"error":{
+			   "description": "The error object.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,46 @@
+{
+	"description": "Get information about a topic type.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"type":{
+			   "description": "Type of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"topic_type_name":{
+			   "description": "Name of the topic type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Properties of the topic type info",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "Fully qualified identifier of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

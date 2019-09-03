@@ -1,5 +1,5 @@
 {
-	"description": "Lists the usage details for a scope by current billing period. Usage details are available via this API only for May 1, 2014 or later.",
+	"description": "Lists the usage details for the defined scope. Usage details are available via this API only for May 1, 2014 or later.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,68 +7,50 @@
 		
 		
 		    
-			"tags":{
-			   "description": "Resource tags.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Azure Subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"top":{
 			   "description": "May be used to limit the number of results to the most recent N usageDetails.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"apply":{
-			   "description": "OData apply expression to aggregate usageDetails by tags or (tags and properties/usageStart)",
+			"api_version":{
+			   "description": "Version of the API to be used with the client request. The current version is 2019-05-01.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
-			   "description": "Resource Id.",
+			"metric":{
+			   "description": "Allows to select different type of cost/usage records.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "Resource name.",
+			"value":{
+			   "description": "The list of usage details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nextlink":{
+			   "description": "The link (url) to the next page of results.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scope":{
+			   "description": "The scope associated with usage details operations. This includes '/subscriptions/{subscriptionId}/' for subscription scope, '/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}' for resourceGroup scope, '/providers/Microsoft.Billing/billingAccounts/{billingAccountId}' for Billing Account scope, '/providers/Microsoft.Billing/departments/{departmentId}' for Department scope, '/providers/Microsoft.Billing/enrollmentAccounts/{enrollmentAccountId}' for EnrollmentAccount scope and '/providers/Microsoft.Management/managementGroups/{managementGroupId}' for Management Group scope. For subscription, billing account, department, enrollment account and management group, you can also add billing period to the scope using '/providers/Microsoft.Billing/billingPeriods/{billingPeriodName}'. For e.g. to specify billing period at department scope use '/providers/Microsoft.Billing/departments/{departmentId}/providers/Microsoft.Billing/billingPeriods/{billingPeriodName}'",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"filter":{
-			   "description": "May be used to filter usageDetails by properties/usageEnd (Utc time), properties/usageStart (Utc time), properties/resourceGroup, properties/instanceName, properties/instanceId or tags. The filter supports 'eq', 'lt', 'gt', 'le', 'ge', and 'and'. It does not currently support 'ne', 'or', or 'not'. Tag filter is a key value pair string where key and value is separated by a colon (:).",
+			   "description": "May be used to filter usageDetails by properties/resourceGroup, properties/resourceName, properties/resourceId, properties/chargeType, properties/reservationId, properties/publisherType or tags. The filter supports 'eq', 'lt', 'gt', 'le', 'ge', and 'and'. It does not currently support 'ne', 'or', or 'not'. Tag filter is a key value pair string where key and value is separated by a colon (:). PublisherType Filter accepts two values azure and marketplace and it is currently supported for Web Direct Offer Type",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"skiptoken":{
 			   "description": "Skiptoken is only used if a previous operation returned a partial result. If a previous response contains a nextLink element, the value of the nextLink element will include a skiptoken parameter that specifies a starting point to use for subsequent calls.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Version of the API to be used with the client request. The current version is 2018-10-01.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "Resource type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"properties":{
-			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			

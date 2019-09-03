@@ -13,6 +13,78 @@
 			}
 			,
 		    
+			"isnullable":{
+			   "description": "the the switch indicating if this type is nullable.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"typename":{
+			   "description": "the name of type for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"istabletype":{
+			   "description": "the the switch indicating if this type is a table type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fullcsharpname":{
+			   "description": "the fully qualified C# name for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schemaname":{
+			   "description": "the name of the schema associated with this table and database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "OData filter. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip":{
+			   "description": "The number of items to skip over before returning elements. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"csharpname":{
+			   "description": "the C# name for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"typefamily":{
+			   "description": "the type family for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"principalid":{
+			   "description": "the principal ID for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"orderby":{
 			   "description": "OrderBy clause. One or more comma-separated expressions with an optional 'asc' (the default) or 'desc' depending on the order you'd like the values sorted, e.g. Categories?$orderby=CategoryName desc. Optional.",
 			   "type": "Optional[String[1]]"
@@ -25,62 +97,32 @@
 			}
 			,
 		    
-			"usertypeid":{
-			   "description": "the user type ID for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"isassemblytype":{
-			   "description": "the the switch indicating if this type is an assembly type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version":{
-			   "description": "the version of the catalog item.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"typefamily":{
-			   "description": "the type family for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schemaname":{
-			   "description": "the name of the schema associated with this table and database.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"typename":{
-			   "description": "the name of type for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"systemtypeid":{
-			   "description": "the system type ID for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"csharpname":{
-			   "description": "the C# name for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"computeaccountname":{
 			   "description": "the name of the Data Lake Analytics account.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"isuserdefined":{
-			   "description": "the the switch indicating if this type is user defined.",
+			"schemaid":{
+			   "description": "the schema ID for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"usertypeid":{
+			   "description": "the user type ID for this type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iscomplextype":{
+			   "description": "the the switch indicating if this type is a complex type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"systemtypeid":{
+			   "description": "the system type ID for this type.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -97,50 +139,8 @@
 			}
 			,
 		    
-			"filter":{
-			   "description": "OData filter. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"select":{
-			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"principalid":{
-			   "description": "the principal ID for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"istabletype":{
-			   "description": "the the switch indicating if this type is a table type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schemaid":{
-			   "description": "the schema ID for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fullcsharpname":{
-			   "description": "the fully qualified C# name for this type.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"databasename":{
 			   "description": "the name of the database.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"skip":{
-			   "description": "The number of items to skip over before returning elements. Optional.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -151,14 +151,14 @@
 			}
 			,
 		    
-			"iscomplextype":{
-			   "description": "the the switch indicating if this type is a complex type.",
+			"isassemblytype":{
+			   "description": "the the switch indicating if this type is an assembly type.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"isnullable":{
-			   "description": "the the switch indicating if this type is nullable.",
+			"isuserdefined":{
+			   "description": "the the switch indicating if this type is user defined.",
 			   "type": "Optional[String[1]]"
 			}
 			

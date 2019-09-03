@@ -1,0 +1,58 @@
+{
+	"description": "Get the annotation for given id.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"code":{
+			   "description": "Error detail code and explanation",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group. The name is case insensitive.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The API version to use for this operation.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The ID of the target subscription.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "The name of the Application Insights component resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"annotation_id":{
+			   "description": "The unique annotation ID. This is unique within a Application Insights component.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"innererror":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

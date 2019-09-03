@@ -7,6 +7,12 @@
 		
 		
 		    
+			"requestid":{
+			   "description": "Id of the REST API request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"model":{
 			   "description": "The domain-specific content to recognize.",
 			   "type": "Optional[String[1]]"
@@ -25,20 +31,14 @@
 			}
 			,
 		    
-			"code":{
-			   "description": "The error code.",
+			"metadata":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"message":{
-			   "description": "A message explaining the error reported by the service.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"requestid":{
-			   "description": "A unique request identifier.",
+			"result":{
+			   "description": "Model-specific response.",
 			   "type": "Optional[String[1]]"
 			}
 			

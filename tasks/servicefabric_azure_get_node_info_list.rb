@@ -75,28 +75,11 @@ def format_params(key_values)
 
   op_params = [
       op_param('api-version', 'query', 'api_version', 'api_version'),
-      op_param('codeversion', 'body', 'code_version', 'codeversion'),
-      op_param('configversion', 'body', 'config_version', 'configversion'),
-      op_param('ContinuationToken', 'query', 'continuation_token', 'continuation_token'),
-      op_param('faultdomain', 'body', 'fault_domain', 'faultdomain'),
-      op_param('healthstate', 'body', 'health_state', 'healthstate'),
-      op_param('id', 'body', 'id', 'id'),
-      op_param('instanceid', 'body', 'instance_id', 'instanceid'),
-      op_param('ipaddressorfqdn', 'body', 'ip_address_or_fqdn', 'ipaddressorfqdn'),
-      op_param('isseednode', 'body', 'is_seed_node', 'isseednode'),
-      op_param('isstopped', 'body', 'is_stopped', 'isstopped'),
+      op_param('continuationtoken', 'body', 'continuation_token', 'continuationtoken'),
+      op_param('items', 'body', 'items', 'items'),
       op_param('MaxResults', 'query', 'max_results', 'max_results'),
-      op_param('name', 'body', 'name', 'name'),
-      op_param('nodedeactivationinfo', 'body', 'node_deactivation_info', 'nodedeactivationinfo'),
-      op_param('nodedownat', 'body', 'node_down_at', 'nodedownat'),
-      op_param('nodedowntimeinseconds', 'body', 'node_down_time_in_seconds', 'nodedowntimeinseconds'),
-      op_param('nodestatus', 'body', 'node_status', 'nodestatus'),
       op_param('NodeStatusFilter', 'query', 'node_status_filter', 'node_status_filter'),
-      op_param('nodeupat', 'body', 'node_up_at', 'nodeupat'),
-      op_param('nodeuptimeinseconds', 'body', 'node_up_time_in_seconds', 'nodeuptimeinseconds'),
       op_param('timeout', 'query', 'timeout', 'timeout'),
-      op_param('type', 'body', 'type', 'type'),
-      op_param('upgradedomain', 'body', 'upgrade_domain', 'upgradedomain'),
     ]
   op_params.each do |i|
     location = i[:location]

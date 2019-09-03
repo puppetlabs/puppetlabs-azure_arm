@@ -7,24 +7,6 @@
 		
 		
 		    
-			"keykind":{
-			   "description": "The access key to regenerate.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_id":{
-			   "description": "Azure subscription ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "Name of an Azure resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"account_name":{
 			   "description": "Cosmos DB database account name.",
 			   "type": "Optional[String[1]]"
@@ -39,6 +21,24 @@
 		    
 			"key_to_regenerate":{
 			   "description": "The name of the key to regenerate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keykind":{
+			   "description": "The access key to regenerate.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "Name of an Azure resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			

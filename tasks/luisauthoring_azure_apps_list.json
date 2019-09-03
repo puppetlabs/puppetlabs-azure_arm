@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the user's applications.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"skip":{
+			   "description": "The number of entries to skip. Default value is 0.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"take":{
+			   "description": "The number of entries to return. Maximum page size is 500. Default is 100.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"errortype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,62 +7,20 @@
 		
 		
 		    
-			"app_id":{
-			   "description": "The application ID.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"application_publish_object":{
 			   "description": "The application publish object. The region is the target region that the application is published to.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"isstaging":{
-			   "description": "Indicates if the staging slot should be used, instead of the Production one.",
+			"errortype":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"region":{
-			   "description": "The target region that the application is published to.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"assignedendpointkey":{
-			   "description": "The endpoint key.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"endpointregion":{
-			   "description": "The endpoint's region.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"failedregions":{
-			   "description": "Regions where publishing failed.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"publisheddatetime":{
-			   "description": "Timestamp when was last published.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"versionid":{
-			   "description": "The version ID to publish.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"endpointurl":{
-			   "description": "The Runtime endpoint URL for this model version.",
+			"app_id":{
+			   "description": "The application ID.",
 			   "type": "Optional[String[1]]"
 			}
 			

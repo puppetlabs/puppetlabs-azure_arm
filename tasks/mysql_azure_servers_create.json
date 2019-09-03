@@ -7,12 +7,6 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "The API version to use for the request.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"server_name":{
 			   "description": "The name of the server.",
 			   "type": "Optional[String[1]]"
@@ -25,14 +19,20 @@
 			}
 			,
 		    
-			"sku":{
-			   "description": "The SKU (pricing tier) of the server.",
+			"properties":{
+			   "description": "Properties of the server.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"properties":{
-			   "description": "Properties of the server.",
+			"location":{
+			   "description": "The location the resource resides in.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "Application-specific metadata in the form of key-value pairs.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -49,14 +49,14 @@
 			}
 			,
 		    
-			"location":{
-			   "description": "The location the resource resides in.",
+			"api_version":{
+			   "description": "The API version to use for the request.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
-			   "description": "Application-specific metadata in the form of key-value pairs.",
+			"sku":{
+			   "description": "The SKU (pricing tier) of the server.",
 			   "type": "Optional[String[1]]"
 			}
 			

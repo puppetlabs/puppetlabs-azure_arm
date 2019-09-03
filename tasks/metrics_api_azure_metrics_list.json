@@ -1,0 +1,88 @@
+{
+	"description": "**Lists the metric values for a resource**.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"result_type":{
+			   "description": "Reduces the set of data collected. The syntax allowed depends on the operation. See the operation's description for details.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"code":{
+			   "description": "Error code",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_uri":{
+			   "description": "The identifier of the resource.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timespan":{
+			   "description": "The timespan of the query. It is a string with the following format 'startDateTime_ISO/endDateTime_ISO'.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"interval":{
+			   "description": "The interval (i.e. timegrain) of the query.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metricnames":{
+			   "description": "The names of the metrics (comma separated) to retrieve.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"aggregation":{
+			   "description": "The list of aggregation types (comma separated) to retrieve.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"top":{
+			   "description": "The maximum number of records to retrieve.Valid only if $filter is specified.Defaults to 10.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"orderby":{
+			   "description": "The aggregation to use for sorting results and the direction of the sort.Only one order can be specified.Examples: sum asc.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "The **$filter** is used to reduce the set of metric data returned.Example:Metric contains metadata A, B and C.- Return all time series of C where A = a1 and B = b1 or b2**$filter=A eq ‘a1’ and B eq ‘b1’ or B eq ‘b2’ and C eq ‘*’**- Invalid variant:**$filter=A eq ‘a1’ and B eq ‘b1’ and C eq ‘*’ or B = ‘b2’**This is invalid because the logical or operator cannot separate two different metadata names.- Return all time series where A = a1, B = b1 and C = c1:**$filter=A eq ‘a1’ and B eq ‘b1’ and C eq ‘c1’**- Return all time series where A = a1**$filter=A eq ‘a1’ and B eq ‘*’ and C eq ‘*’**.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metricnamespace":{
+			   "description": "Metric namespace to query metric definitions for.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"message":{
+			   "description": "Error message indicating why the operation failed.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

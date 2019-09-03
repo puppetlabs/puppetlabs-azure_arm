@@ -7,20 +7,8 @@
 		
 		
 		    
-			"resources":{
-			   "description": "The virtual machine child extension resources.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"properties":{
 			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"zones":{
-			   "description": "The virtual machine zones.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -31,8 +19,14 @@
 			}
 			,
 		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
+			"tags":{
+			   "description": "Resource tags",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resources":{
+			   "description": "The virtual machine child extension resources.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -43,14 +37,8 @@
 			}
 			,
 		    
-			"type":{
-			   "description": "Resource type",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"plan":{
-			   "description": "Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.",
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -67,8 +55,20 @@
 			}
 			,
 		    
-			"tags":{
-			   "description": "Resource tags",
+			"plan":{
+			   "description": "Specifies information about the marketplace image used to create the virtual machine. This element is only used for marketplace images. Before you can use a marketplace image from an API, you must enable the image for programmatic use.  In the Azure portal, find the marketplace image that you want to use and then click **Want to deploy programmatically, Get Started ->**. Enter any required information and then click **Save**.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "Resource type",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"zones":{
+			   "description": "The virtual machine zones.",
 			   "type": "Optional[String[1]]"
 			}
 			,

@@ -1,0 +1,64 @@
+{
+	"description": "Gets information about a list entity in a version of the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"roles":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "The ID of the Entity Model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cl_entity_id":{
+			   "description": "The list model ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sublists":{
+			   "description": "List of sublists.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "Name of the Entity Model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"typeid":{
+			   "description": "The type ID of the Entity Model.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"readabletype":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"app_id":{
+			   "description": "The application ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "The version ID.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

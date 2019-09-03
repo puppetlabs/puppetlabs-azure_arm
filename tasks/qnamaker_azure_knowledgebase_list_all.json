@@ -7,56 +7,8 @@
 		
 		
 		    
-			"userid":{
-			   "description": "User who created / owns the knowledgebase.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"hostname":{
-			   "description": "URL host name at which the knowledgebase is hosted.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "Friendly name of the knowledgebase.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "Unique id that identifies a knowledgebase.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"lastpublishedtimestamp":{
-			   "description": "Time stamp at which the knowledgebase was last published (UTC).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"urls":{
-			   "description": "URL sources from which Q-A were extracted and added to the knowledgebase.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sources":{
-			   "description": "Custom sources from which Q-A were extracted or explicitly added to the knowledgebase.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"lastchangedtimestamp":{
-			   "description": "Time stamp at which the knowledgebase was last modified (UTC).",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"lastaccessedtimestamp":{
-			   "description": "Time stamp at which the knowledgebase was last accessed (UTC).",
+			"error":{
+			   "description": "The error object.",
 			   "type": "Optional[String[1]]"
 			}
 			

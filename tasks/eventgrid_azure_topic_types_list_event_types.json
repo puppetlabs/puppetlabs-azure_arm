@@ -1,0 +1,28 @@
+{
+	"description": "List event types for a topic type.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"topic_type_name":{
+			   "description": "Name of the topic type.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Version of the API to be used with the client request.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "A collection of event types",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

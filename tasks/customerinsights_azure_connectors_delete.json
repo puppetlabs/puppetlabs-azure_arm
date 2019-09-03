@@ -7,74 +7,8 @@
 		
 		
 		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"connectortype":{
-			   "description": "Type of connector.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "Description of the connector.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_group_name":{
-			   "description": "The name of the resource group.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"created":{
-			   "description": "The created time.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tenantid":{
-			   "description": "The hub name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"isinternal":{
-			   "description": "If this is an internal connector.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"displayname":{
-			   "description": "Display name of the connector.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"lastmodified":{
-			   "description": "The last modified time.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"hub_name":{
-			   "description": "The name of the hub.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"connectorname":{
-			   "description": "Name of the connector.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"connectorproperties":{
-			   "description": "The connector properties.",
+			"state":{
+			   "description": "State of connector.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -85,20 +19,86 @@
 			}
 			,
 		    
+			"connectorname":{
+			   "description": "Name of the connector.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_id":{
 			   "description": "Gets subscription credentials which uniquely identify Microsoft Azure subscription. The subscription ID forms part of the URI for every service call.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"state":{
-			   "description": "State of connector.",
+			"isinternal":{
+			   "description": "If this is an internal connector.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"created":{
+			   "description": "The created time.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_group_name":{
+			   "description": "The name of the resource group.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hub_name":{
+			   "description": "The name of the hub.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenantid":{
+			   "description": "The hub name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lastmodified":{
+			   "description": "The last modified time.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"connector_name":{
 			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connectortype":{
+			   "description": "Type of connector.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connectorproperties":{
+			   "description": "The connector properties.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "Description of the connector.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"displayname":{
+			   "description": "Display name of the connector.",
 			   "type": "Optional[String[1]]"
 			}
 			

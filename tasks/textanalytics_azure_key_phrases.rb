@@ -75,7 +75,8 @@ def format_params(key_values)
 
   op_params = [
       op_param('documents', 'body', 'documents', 'documents'),
-      op_param('input', 'body', 'input', 'input'),
+      op_param('multiLanguageBatchInput', 'body', 'multi_language_batch_input', 'multi_language_batch_input'),
+      op_param('showStats', 'query', 'show_stats', 'show_stats'),
     ]
   op_params.each do |i|
     location = i[:location]

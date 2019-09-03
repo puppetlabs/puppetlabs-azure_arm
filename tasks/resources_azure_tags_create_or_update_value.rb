@@ -74,13 +74,11 @@ def format_params(key_values)
   end
 
   op_params = [
-      op_param('api-version', 'query', 'tag_value', 'api_version'),
-      op_param('count', 'body', 'tag_value', 'count'),
-      op_param('id', 'body', 'tag_value', 'id'),
-      op_param('subscriptionId', 'path', 'tag_value', 'subscription_id'),
-      op_param('tag_value', 'path', 'tag_value', 'tag_value'),
-      op_param('tagName', 'path', 'tag_value', 'tag_name'),
-      op_param('tagvalue', 'body', 'tag_value', 'tagvalue'),
+      op_param('api-version', 'query', 'api_version', 'api_version'),
+      op_param('error', 'body', 'error', 'error'),
+      op_param('subscriptionId', 'path', 'subscription_id', 'subscription_id'),
+      op_param('tagName', 'path', 'tag_name', 'tag_name'),
+      op_param('tagValue', 'path', 'tag_value', 'tag_value'),
     ]
   op_params.each do |i|
     location = i[:location]

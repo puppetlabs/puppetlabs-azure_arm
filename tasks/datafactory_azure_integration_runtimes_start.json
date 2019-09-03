@@ -7,6 +7,12 @@
 		
 		
 		    
+			"factory_name":{
+			   "description": "The factory name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"integration_runtime_name":{
 			   "description": "The integration runtime name.",
 			   "type": "Optional[String[1]]"
@@ -19,8 +25,14 @@
 			}
 			,
 		    
-			"error":{
-			   "description": "Error data",
+			"name":{
+			   "description": "The integration runtime name.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"properties":{
+			   "description": "Integration runtime properties.",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -33,12 +45,6 @@
 		    
 			"resource_group_name":{
 			   "description": "The resource group name.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"factory_name":{
-			   "description": "The factory name.",
 			   "type": "Optional[String[1]]"
 			}
 			

@@ -1,5 +1,5 @@
 {
-	"description": "Adds an intent classifier to the application.",
+	"description": "Adds an intent to a version of the application.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -20,7 +20,7 @@
 			,
 		    
 			"intent_create_object":{
-			   "description": "A model object containing the name of the new intent classifier.",
+			   "description": "A model object containing the name of the new intent.",
 			   "type": "Optional[String[1]]"
 			}
 			,

@@ -7,24 +7,6 @@
 		
 		
 		    
-			"select":{
-			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"api_version":{
-			   "description": "Client Api Version.",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"database_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"skip":{
 			   "description": "The number of items to skip over before returning elements. Optional.",
 			   "type": "Optional[String[1]]"
@@ -43,14 +25,26 @@
 			}
 			,
 		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"assemblyclrname":{
 			   "description": "the name of the assembly.",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"clrname":{
-			   "description": "the name of the CLR.",
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
@@ -73,8 +67,14 @@
 			}
 			,
 		    
-			"computeaccountname":{
-			   "description": "the name of the Data Lake Analytics account.",
+			"select":{
+			   "description": "OData Select statement. Limits the properties on each entry to just those requested, e.g. Categories?$select=CategoryName,Description. Optional.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"clrname":{
+			   "description": "the name of the CLR.",
 			   "type": "Optional[String[1]]"
 			}
 			,

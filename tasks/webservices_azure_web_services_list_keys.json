@@ -1,0 +1,46 @@
+{
+	"description": "Gets the access keys for the specified web service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_name":{
+			   "description": "Name of the resource group in which the web service is located.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"web_service_name":{
+			   "description": "The name of the web service.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "The version of the Microsoft.MachineLearning resource provider API to use.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_id":{
+			   "description": "The Azure subscription ID.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"primary":{
+			   "description": "The primary access key.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"secondary":{
+			   "description": "The secondary access key.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

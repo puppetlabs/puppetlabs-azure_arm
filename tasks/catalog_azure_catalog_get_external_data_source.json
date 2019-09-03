@@ -1,0 +1,70 @@
+{
+	"description": "Retrieves the specified external data source from the Data Lake Analytics catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"version":{
+			   "description": "the version of the catalog item.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"external_data_source_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"providerstring":{
+			   "description": "the name of the provider string for the external data source.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pushdowntypes":{
+			   "description": "the list of types to push down from the external data source.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"computeaccountname":{
+			   "description": "the name of the Data Lake Analytics account.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"databasename":{
+			   "description": "the name of the database.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"externaldatasourcename":{
+			   "description": "the name of the external data source.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_version":{
+			   "description": "Client Api Version.",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provider":{
+			   "description": "the name of the provider for the external data source.",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

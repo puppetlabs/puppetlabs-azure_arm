@@ -13,6 +13,10 @@
 4. [Reference](#reference)
    * [Types and providers](#types-and-providers)
 
+## Deprecation notice
+
+We are no longer developing [this module](https://github.com/puppetlabs/puppetlabs-azure_arm) and will be eventually deprecating in the future.
+
 ## Description
 
 Microsoft Azure exposes a powerful API for creating and managing its Infrastructure as a Service platform. Using Puppet code, the azure arm (Azure Resource Manager) module enables you to interact with that API to create and destroy virtual machines, and to manage other resources.
